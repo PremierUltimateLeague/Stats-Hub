@@ -13,12 +13,14 @@ read_stat <- function(path){
   match = str_extract(path, "(?<before>\\w+) @ (?<after>\\w+)") # teams
   match.date = str_remove(word(path, -1), ".csv") # date
   team = word(path, -2, sep = "/") # this team these stats apply to
+  opponent = str_remove_all(match, paste(team, "@", " ", sep = "|"))
   
   read_csv(path, col_types = cols(.default = "c")) |>
     mutate(match = match,
            date = match.date,
-           team = team) |>
-    select(match, date, team, everything())
+           team = team,
+           opponent = opponent) |>
+    select(match, date, team, opponent, everything())
 }
 
 
