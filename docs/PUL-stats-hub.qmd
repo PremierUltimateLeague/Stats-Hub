@@ -1,0 +1,94 @@
+---
+title: "Premier Ultimate League Stats Hub"
+format: dashboard
+---
+
+```{r setup, include=FALSE}
+library(reactable)
+library(tidyverse)
+team.stats <- read_csv(here::here("stats/team-stats.csv"))
+player.stats <- read_csv(here::here("stats/player-stats.csv"))
+data.coverage <- read_csv(here::here("stats/game-coverage.csv"))
+
+incomplete.data <- data.coverage |>
+  filter(if_any(.cols = where(is.logical), ~.x == F))
+
+incomplete.games <- if_else(nrow(incomplete.data) == 0,
+                            "All games have complete data.",
+                            paste0("The following games have missing data: ",
+                                  knitr::combine_words(unique(incomplete.data$match)), "."))
+
+incomplete.teams <- if_else(nrow(incomplete.data) == 0,
+                            "All teams have complete data.",
+                            paste0("The following teams have missing data: ",
+                                  knitr::combine_words(unique(incomplete.data$team)), "."))
+```
+
+# Team Stats
+
+```{r}
+team.stats |>
+  reactable(sortable = T,
+            columns = list(
+              team = colDef(name = "team", filterable = TRUE),
+              break_goals = colDef(name = "break goals"),
+              defensive_blocks = colDef(name = "defensive blocks"),
+              clean_holds = colDef(name = "clean holds"),
+              pass_attempts = colDef(name = "pass attempts"),
+              completed_passess = colDef(name = "comp. passes"),
+              completion_rate = colDef(name = "comp. rate",
+                                       format = colFormat(percent = T, digits = 1))
+            ))
+```
+
+# Player Stats
+
+```{r}
+player.stats |>
+  select(team, Player, goals, assists, secondary_assists, defensive_blocks,
+         turnovers, offensive_points_played, defensive_points_played,
+         touches, throws, possessions_initiated, thrower_errors, receiver_errors,
+         total_throw_gain, total_catch_gain, avg_completed_throw_gain, avg_caught_pass_gain) |>
+  reactable(sortable = T, showPageSizeOptions = T,
+            columns = list(
+              team = colDef(name = "team", filterable = TRUE),
+              Player = colDef(name = "player", filterable = TRUE),
+              secondary_assists = colDef(name = "secondary assists"),
+              defensive_blocks = colDef(name = "def. blocks"),
+              total_throw_gain = colDef(name = "throw",
+                                        format = colFormat(suffix = "m.", digits = 0)),
+              total_catch_gain = colDef(name = "catch",
+                                        format = colFormat(suffix = "m.", digits = 0)),
+              offensive_points_played = colDef(name = "offensive"),
+              defensive_points_played = colDef(name = "defensive"),
+              possessions_initiated = colDef(name = "possessions initiated"),
+              thrower_errors = colDef(name = "thrower"),
+              receiver_errors = colDef(name = "receiver"),
+              avg_completed_throw_gain = colDef(name = "throw",
+                                                format = colFormat(suffix = "m.", digits = 1)),
+              avg_caught_pass_gain = colDef(name = "catch",
+                                            format = colFormat(suffix = "m.", digits = 1))
+            ),
+            columnGroups = list(
+              colGroup(name = "2024 season", columns = c("team", "Player"),
+                       sticky = "left"),
+              colGroup(name = "total gain",
+                       columns = c("total_throw_gain", "total_catch_gain")),
+              colGroup(name = "points played", 
+                       columns = c("offensive_points_played","defensive_points_played")),
+              colGroup(name = "errors",
+                       columns = c("thrower_errors", "receiver_errors")),
+              colGroup(name = "avg. completed gain",
+                       columns = c("avg_completed_throw_gain", "avg_caught_pass_gain"))
+            ))
+```
+
+# Data Coverage
+
+`r incomplete.games`
+
+`r incomplete.teams`
+
+```{r}
+reactable(data.coverage, filterable = T, showPageSizeOptions = T, defaultPageSize = 20)
+```
