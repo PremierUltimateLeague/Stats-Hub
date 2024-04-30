@@ -80,4 +80,4 @@ game.coverage <- data.element.coverage |>
   mutate(across(.cols = where(is.logical), .fns = ~ifelse(is.na(.x), FALSE, TRUE))) |>
   arrange(week, match, home_away)
 
-write_csv(game.coverage, "integ-data/game-coverage.csv")
+write_csv(game.coverage, "stats/game-coverage.csv")
