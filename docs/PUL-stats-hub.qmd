@@ -1,13 +1,17 @@
 ---
 title: "Premier Ultimate League Stats Hub"
-format: dashboard
+format: 
+  dashboard:
+    embed-resources: true
 ---
 
 ```{r setup, include=FALSE}
 library(reactable)
 library(tidyverse)
-team.stats <- read_csv(here::here("stats/team-stats.csv"))
-player.stats <- read_csv(here::here("stats/player-stats.csv"))
+team.stats.overall <- read_csv(here::here("stats/team-stats-overall.csv"))
+team.stats.game <- read_csv(here::here("stats/team-stats-game.csv"))
+player.stats.overall <- read_csv(here::here("stats/player-stats-overall.csv"))
+player.stats.game <- read_csv(here::here("stats/player-stats-game.csv"))
 data.coverage <- read_csv(here::here("stats/game-coverage.csv"))
 
 incomplete.data <- data.coverage |>
@@ -24,10 +28,10 @@ incomplete.teams <- if_else(nrow(incomplete.data) == 0,
                                   knitr::combine_words(unique(incomplete.data$team)), "."))
 ```
 
-# Team Stats
+# Teams, overall
 
 ```{r}
-team.stats |>
+team.stats.overall |>
   reactable(sortable = T,
             columns = list(
               team = colDef(name = "team", filterable = TRUE),
@@ -41,10 +45,29 @@ team.stats |>
             ))
 ```
 
-# Player Stats
+# Teams, by game
 
 ```{r}
-player.stats |>
+team.stats.game |>
+  reactable(sortable = T,
+            columns = list(
+              team = colDef(name = "team", filterable = TRUE, sticky = "left"),
+              match = colDef(name = "match", filterable = TRUE, sticky = "left"),
+              week = colDef(name = "week", filterable = TRUE, sticky = "left"),
+              break_goals = colDef(name = "break goals"),
+              defensive_blocks = colDef(name = "defensive blocks"),
+              clean_holds = colDef(name = "clean holds"),
+              pass_attempts = colDef(name = "pass attempts"),
+              completed_passess = colDef(name = "comp. passes"),
+              completion_rate = colDef(name = "comp. rate",
+                                       format = colFormat(percent = T, digits = 1))
+            ))
+```
+
+# Players, overall
+
+```{r}
+player.stats.overall |>
   select(team, Player, goals, assists, secondary_assists, defensive_blocks,
          turnovers, offensive_points_played, defensive_points_played,
          touches, throws, possessions_initiated, thrower_errors, receiver_errors,
@@ -71,6 +94,48 @@ player.stats |>
             ),
             columnGroups = list(
               colGroup(name = "2024 season", columns = c("team", "Player"),
+                       sticky = "left"),
+              colGroup(name = "total gain",
+                       columns = c("total_throw_gain", "total_catch_gain")),
+              colGroup(name = "points played", 
+                       columns = c("offensive_points_played","defensive_points_played")),
+              colGroup(name = "errors",
+                       columns = c("thrower_errors", "receiver_errors")),
+              colGroup(name = "avg. completed gain",
+                       columns = c("avg_completed_throw_gain", "avg_caught_pass_gain"))
+            ))
+```
+
+# Players, by game
+
+```{r}
+player.stats.game |>
+  select(team, Player, match, week, goals, assists, secondary_assists, defensive_blocks,
+         turnovers, offensive_points_played, defensive_points_played,
+         touches, throws, possessions_initiated, thrower_errors, receiver_errors,
+         total_throw_gain, total_catch_gain, avg_completed_throw_gain, avg_caught_pass_gain) |>
+  reactable(sortable = T, showPageSizeOptions = T,
+            columns = list(
+              team = colDef(name = "team", filterable = TRUE),
+              Player = colDef(name = "player", filterable = TRUE),
+              secondary_assists = colDef(name = "secondary assists"),
+              defensive_blocks = colDef(name = "def. blocks"),
+              total_throw_gain = colDef(name = "throw",
+                                        format = colFormat(suffix = "m.", digits = 0)),
+              total_catch_gain = colDef(name = "catch",
+                                        format = colFormat(suffix = "m.", digits = 0)),
+              offensive_points_played = colDef(name = "offensive"),
+              defensive_points_played = colDef(name = "defensive"),
+              possessions_initiated = colDef(name = "possessions initiated"),
+              thrower_errors = colDef(name = "thrower"),
+              receiver_errors = colDef(name = "receiver"),
+              avg_completed_throw_gain = colDef(name = "throw",
+                                                format = colFormat(suffix = "m.", digits = 1)),
+              avg_caught_pass_gain = colDef(name = "catch",
+                                            format = colFormat(suffix = "m.", digits = 1))
+            ),
+            columnGroups = list(
+              colGroup(name = "2024 season", columns = c("team", "Player", "match", "week"),
                        sticky = "left"),
               colGroup(name = "total gain",
                        columns = c("total_throw_gain", "total_catch_gain")),
