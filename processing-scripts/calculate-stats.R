@@ -11,6 +11,14 @@ passes.df <- read_csv("integ-data/Passes.csv")
 stat.priority <- read_csv("PUL Stats Hub Priority.csv")
 
 ################################################################################
+# PUL field dimensions are different than those assumed by the STATTO app,
+#   so we rescale them here
+# PUL field dimensions are 40 yards wide by 120 yards long (including 20-yard endzones)
+
+
+
+
+################################################################################
 # Team stats
 stat.priority  |> filter(`Priority Tier` == "1 - Must Have", Type == "Team")
 stat.priority  |> filter(`Priority Tier` == "2 - Nice To Have", Type == "Team")
