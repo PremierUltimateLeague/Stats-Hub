@@ -1,31 +1,57 @@
 match,week,team,opponent,Created,Point,Our score at pull,Opponent's score at pull,Started on offense?,Scored?,Possessions,Passes,Turnovers,Thrower errors,Receiver errors,Defensive blocks,Opposition errors,Secondary assist,Assist,Goal
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 01:16:50,1,0,0,0,0,2,5,2,2,0,1,1,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 01:24:09,2,0,1,1,0,1,13,1,1,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 01:32:50,3,0,2,1,1,1,12,0,0,0,0,0,55 Trystan Grzyll,26 Morgan Lally,18 Naomi Anderson
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 01:36:59,4,1,2,0,0,3,14,3,2,1,1,2,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 01:44:10,5,1,3,1,1,3,12,2,1,1,1,1,29 Charlotte Doran,19 Elle Mayer,45 Jennifer Lin
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 01:51:33,6,2,3,0,1,1,1,0,0,0,1,0,NA,13 Hannah Abraham,18 Naomi Anderson
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 02:00:40,7,3,3,1,1,3,25,2,2,0,0,2,13 Hannah Abraham,08 Dani Ortiz,13 Hannah Abraham
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 02:10:02,8,4,3,0,0,2,6,2,2,0,1,1,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 02:19:17,9,4,4,1,1,1,22,0,0,0,0,0,29 Charlotte Doran,08 Dani Ortiz,03 Alex Krueger
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 02:23:33,10,5,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 02:25:56,11,5,5,1,0,1,8,1,1,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 02:32:39,12,5,6,1,1,2,8,1,1,0,0,1,NA,31 María Vargas,18 Naomi Anderson
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 02:36:34,13,6,6,0,1,3,15,2,2,0,3,0,NA,31 María Vargas,12 Emma Jaschke
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 02:50:03,14,7,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 02:56:56,15,7,7,1,0,2,14,2,2,0,0,1,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:09:10,16,7,8,1,0,1,3,1,1,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:10:54,17,7,9,1,0,1,7,1,1,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:15:54,18,7,10,1,1,1,10,0,0,0,0,0,08 Dani Ortiz,20 Soju Hokari,75 Sarah Kingsley-Hart
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:19:14,19,8,10,0,1,1,8,0,0,0,1,0,72 Annalise Paul,10 Mia Griner,18 Naomi Anderson
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:21:38,20,9,10,0,0,0,0,0,0,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:22:46,21,9,11,1,0,1,10,1,1,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:26:31,22,9,12,1,1,1,7,0,0,0,0,0,12 Emma Jaschke,31 María Vargas,10 Mia Griner
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:30:38,23,10,12,0,0,0,0,0,0,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:31:30,24,10,13,1,1,1,12,0,0,0,0,0,29 Charlotte Doran,05 Megan Jarriel,75 Sarah Kingsley-Hart
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:33:18,25,11,13,0,0,0,0,0,0,0,0,0,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:34:50,26,11,14,1,0,2,41,2,2,0,0,1,NA,NA,NA
-ATL @ ATX,Week 1,ATL,ATX,2024-04-10 03:43:28,27,11,15,1,0,2,10,2,1,1,1,1,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 01:16:50,1,0,0,0,0,2,5,2,2,0,1,1,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 01:24:09,2,0,1,1,0,1,13,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 01:32:50,3,0,2,1,1,1,12,0,0,0,0,0,55 Trystan Grzyll,26 Morgan Lally,18 Naomi Anderson
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 01:36:59,4,1,2,0,0,3,14,3,2,1,1,2,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 01:44:10,5,1,3,1,1,3,12,2,1,1,1,1,29 Charlotte Doran,19 Elle Mayer,45 Jennifer Lin
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 01:51:33,6,2,3,0,1,1,1,0,0,0,1,0,NA,13 Hannah Abraham,18 Naomi Anderson
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 02:00:40,7,3,3,1,1,3,25,2,2,0,0,2,13 Hannah Abraham,08 Dani Ortiz,13 Hannah Abraham
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 02:10:02,8,4,3,0,0,2,6,2,2,0,1,1,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 02:19:17,9,4,4,1,1,1,22,0,0,0,0,0,29 Charlotte Doran,08 Dani Ortiz,03 Alex Krueger
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 02:23:33,10,5,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 02:25:56,11,5,5,1,0,1,8,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 02:32:39,12,5,6,1,1,2,8,1,1,0,0,1,NA,31 María Vargas,18 Naomi Anderson
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 02:36:34,13,6,6,0,1,3,15,2,2,0,3,0,NA,31 María Vargas,12 Emma Jaschke
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 02:50:03,14,7,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 02:56:56,15,7,7,1,0,2,14,2,2,0,0,1,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:09:10,16,7,8,1,0,1,3,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:10:54,17,7,9,1,0,1,7,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:15:54,18,7,10,1,1,1,10,0,0,0,0,0,08 Dani Ortiz,20 Soju Hokari,75 Sarah Kingsley-Hart
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:19:14,19,8,10,0,1,1,8,0,0,0,1,0,72 Annalise Paul,10 Mia Griner,18 Naomi Anderson
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:21:38,20,9,10,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:22:46,21,9,11,1,0,1,10,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:26:31,22,9,12,1,1,1,7,0,0,0,0,0,12 Emma Jaschke,31 María Vargas,10 Mia Griner
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:30:38,23,10,12,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:31:30,24,10,13,1,1,1,12,0,0,0,0,0,29 Charlotte Doran,05 Megan Jarriel,75 Sarah Kingsley-Hart
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:33:18,25,11,13,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:34:50,26,11,14,1,0,2,41,2,2,0,0,1,NA,NA,NA
+ATL @ ATX,Week 1,original stats,ATLATX,2024-04-10 03:43:28,27,11,15,1,0,2,10,2,1,1,1,1,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 1:16:50,1,0,0,0,0,2,5,2,2,0,1,1,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 1:24:09,2,0,1,1,0,1,13,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 1:32:50,3,0,2,1,1,1,12,0,0,0,0,0,55 Trystan Grzyll,26 Morgan Lally,18 Naomi Anderson
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 1:36:59,4,1,2,0,0,3,14,3,2,1,1,2,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 1:44:10,5,1,3,1,1,3,12,2,1,1,1,1,29 Charlotte Doran,19 Elle Mayer,45 Jennifer Lin
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 2:00:40,7,3,3,1,1,3,25,2,2,0,0,2,13 Hannah Abraham,08 Dani Ortiz,13 Hannah Abraham
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 2:10:02,8,4,3,0,0,2,6,2,2,0,1,1,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 2:19:17,9,4,4,1,1,1,22,0,0,0,0,0,29 Charlotte Doran,08 Dani Ortiz,03 Alex Krueger
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 2:23:33,10,5,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 2:25:56,11,5,5,1,0,1,8,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 2:32:39,12,5,6,1,0,2,7,1,1,0,0,1,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 2:36:34,13,6,6,0,1,3,15,2,2,0,3,0,NA,31 María Vargas,12 Emma Jaschke
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 2:50:03,14,7,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 2:56:56,15,7,7,1,0,2,14,2,2,0,0,1,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:09:10,16,7,8,1,0,1,3,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:10:54,17,7,9,1,0,1,7,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:15:54,18,7,10,1,1,1,10,0,0,0,0,0,08 Dani Ortiz,20 Soju Hokari,75 Sarah Kingsley-Hart
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:19:14,19,8,10,0,1,1,8,0,0,0,1,0,72 Annalise Paul,10 Mia Griner,18 Naomi Anderson
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:21:38,20,9,10,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:22:46,21,9,11,1,0,1,10,1,1,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:26:31,22,9,12,1,1,1,7,0,0,0,0,0,12 Emma Jaschke,31 María Vargas,10 Mia Griner
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:30:38,23,10,12,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:31:30,24,10,13,1,1,1,12,0,0,0,0,0,29 Charlotte Doran,05 Megan Jarriel,75 Sarah Kingsley-Hart
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:33:18,25,11,13,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:34:50,26,11,14,1,0,2,41,2,2,0,0,1,NA,NA,NA
+ATL @ ATX,Week 1,ATL,ATX,2024-04-10 3:43:28,27,11,15,1,0,2,10,2,1,1,1,1,NA,NA,NA
 ATL @ ATX,Week 1,ATX,ATL,2024-04-08 23:47:15,1,0,0,1,1,3,23,2,2,0,1,1,00 Maggie Rowell,02 Elise Bjork,69 Jaime Estes
 ATL @ ATX,Week 1,ATX,ATL,2024-04-09 18:17:06,2,1,0,0,1,1,21,0,0,0,0,1,95 Megan Mendieta,05 Dre Esparza,19 Vanessa Bacorn
 ATL @ ATX,Week 1,ATX,ATL,2024-04-09 18:44:44,3,2,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
@@ -203,6 +229,46 @@ MKE @ NY,Week 2,MKE,NY,2024-04-13 20:57:55,35,16,18,0,0,1,1,1,1,0,1,0,NA,NA,NA
 MKE @ NY,Week 2,MKE,NY,2024-04-13 20:59:46,36,16,19,1,1,1,3,0,0,0,0,0,52 Erynn Schroeder,97 Eileen Bequette,99 Dana Demmert
 MKE @ NY,Week 2,MKE,NY,2024-04-13 21:01:50,37,17,19,0,0,0,0,0,0,0,0,0,NA,NA,NA
 MKE @ NY,Week 2,MKE,NY,2024-04-13 21:04:33,38,17,20,1,0,2,5,2,2,0,0,1,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 18:18:29,1,0,0,1,0,4,16,4,2,2,1,2,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 18:28:22,2,0,1,1,1,2,15,1,1,0,0,1,NA,24 Jolie Krebs,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 18:35:57,3,1,1,0,1,1,7,0,0,0,0,1,88 Nikki Hair,65 Anna Lieberman,62 Casey Banta-Ryan
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 18:37:07,4,2,1,0,1,3,14,2,1,1,0,3,NA,96 Nina Finley,44 Kayla Seeger
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 18:41:20,5,3,1,0,1,1,1,0,0,0,0,1,NA,20 Yina Cartagena,31 Eli Presberg
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 18:44:28,6,4,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 18:46:09,7,4,2,1,0,2,6,2,1,1,1,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 18:50:10,8,4,3,1,0,1,6,1,1,0,0,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 18:52:24,9,4,4,1,1,2,7,2,2,0,2,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:22:04,10,5,4,0,1,2,4,1,1,0,1,1,NA,96 Nina Finley,88 Nikki Hair
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:25:07,11,6,4,0,1,4,15,3,3,1,1,3,33 Valeria Cardenas,20 Yina Cartagena,33 Valeria Cardenas
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:31:03,12,7,4,0,0,1,2,1,1,1,1,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:33:25,13,7,5,1,1,1,7,0,0,0,0,0,02 Jolene Zheng,20 Yina Cartagena,23 Linnea Soo
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:36:35,14,8,5,0,1,2,12,1,1,0,0,2,97 Hannah Glick,20 Yina Cartagena,00 Genny De Jesus
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:39:52,15,9,5,0,0,1,3,1,1,0,0,1,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:42:02,16,9,6,1,0,3,7,3,3,1,1,1,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:44:40,17,9,7,1,1,1,8,0,0,0,0,0,20 Yina Cartagena,33 Valeria Cardenas,00 Genny De Jesus
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:46:30,18,10,7,0,0,1,6,1,1,0,1,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:50:36,19,10,8,1,1,1,7,0,0,0,0,0,20 Yina Cartagena,33 Valeria Cardenas,20 Yina Cartagena
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:52:55,20,11,8,0,1,1,5,0,0,0,0,1,96 Nina Finley,33 Valeria Cardenas,24 Jolie Krebs
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:55:16,21,12,8,0,1,1,4,0,0,0,0,1,62 Casey Banta-Ryan,18 Kylie Sterling,26 Mariabelen Restrepo
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:56:33,22,13,8,0,0,1,3,1,1,0,1,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 19:58:38,23,13,9,1,0,2,14,2,2,0,1,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:01:03,24,13,10,1,0,1,7,1,1,0,0,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:03:11,25,13,11,1,1,1,14,0,0,0,0,0,00 Genny De Jesus,24 Jolie Krebs,00 Genny De Jesus
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:05:59,26,14,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:08:28,27,14,12,1,1,1,9,0,0,0,0,0,20 Yina Cartagena,97 Hannah Glick,02 Jolene Zheng
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:10:24,28,15,12,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:11:32,29,15,13,1,1,1,5,0,0,0,0,0,33 Valeria Cardenas,09 Cassandra Brown,33 Valeria Cardenas
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:12:51,30,16,13,0,0,2,10,2,1,1,0,2,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:16:51,31,16,14,0,1,1,8,0,0,0,1,0,31 Eli Presberg,20 Yina Cartagena,00 Genny De Jesus
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:19:05,32,17,14,0,1,3,11,2,2,0,0,3,33 Valeria Cardenas,24 Jolie Krebs,44 Kayla Seeger
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:22:48,33,18,14,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:24:35,34,18,15,1,1,3,19,2,2,0,2,0,24 Jolie Krebs,20 Yina Cartagena,11 Emma Berrigan
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:30:45,35,19,15,0,0,1,3,1,1,0,1,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:33:04,36,19,16,1,1,2,9,1,0,1,0,1,00 Genny De Jesus,20 Yina Cartagena,33 Valeria Cardenas
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:35:29,37,20,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:36:38,38,20,17,1,1,1,9,0,0,0,0,0,33 Valeria Cardenas,20 Yina Cartagena,09 Cassandra Brown
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:38:15,39,21,17,0,1,1,15,1,1,0,1,1,NA,NA,NA
+MKE @ NY,Week 2,original stats,MKENY,2024-04-15 20:41:19,40,22,17,0,0,0,0,0,0,0,0,0,NA,NA,NA
 MKE @ NY,Week 2,NY,MKE,2024-04-15 18:18:29,1,0,0,1,0,4,16,4,2,2,1,2,NA,NA,NA
 MKE @ NY,Week 2,NY,MKE,2024-04-15 18:28:22,2,0,1,1,1,2,15,1,1,0,0,1,NA,24 Jolie Krebs,NA
 MKE @ NY,Week 2,NY,MKE,2024-04-15 18:35:57,3,1,1,0,1,1,7,0,0,0,0,1,88 Nikki Hair,65 Anna Lieberman,62 Casey Banta-Ryan
@@ -211,7 +277,7 @@ MKE @ NY,Week 2,NY,MKE,2024-04-15 18:41:20,5,3,1,0,1,1,1,0,0,0,0,1,NA,20 Yina Ca
 MKE @ NY,Week 2,NY,MKE,2024-04-15 18:44:28,6,4,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
 MKE @ NY,Week 2,NY,MKE,2024-04-15 18:46:09,7,4,2,1,0,2,6,2,1,1,1,0,NA,NA,NA
 MKE @ NY,Week 2,NY,MKE,2024-04-15 18:50:10,8,4,3,1,0,1,6,1,1,0,0,0,NA,NA,NA
-MKE @ NY,Week 2,NY,MKE,2024-04-15 18:52:24,9,4,4,1,1,2,7,2,2,0,2,0,NA,NA,NA
+MKE @ NY,Week 2,NY,MKE,2024-04-15 18:52:24,9,4,4,1,0,2,7,2,2,0,1,0,NA,NA,NA
 MKE @ NY,Week 2,NY,MKE,2024-04-15 19:22:04,10,5,4,0,1,2,4,1,1,0,1,1,NA,96 Nina Finley,88 Nikki Hair
 MKE @ NY,Week 2,NY,MKE,2024-04-15 19:25:07,11,6,4,0,1,4,15,3,3,1,1,3,33 Valeria Cardenas,20 Yina Cartagena,33 Valeria Cardenas
 MKE @ NY,Week 2,NY,MKE,2024-04-15 19:31:03,12,7,4,0,0,1,2,1,1,1,1,0,NA,NA,NA
@@ -241,8 +307,8 @@ MKE @ NY,Week 2,NY,MKE,2024-04-15 20:30:45,35,19,15,0,0,1,3,1,1,0,1,0,NA,NA,NA
 MKE @ NY,Week 2,NY,MKE,2024-04-15 20:33:04,36,19,16,1,1,2,9,1,0,1,0,1,00 Genny De Jesus,20 Yina Cartagena,33 Valeria Cardenas
 MKE @ NY,Week 2,NY,MKE,2024-04-15 20:35:29,37,20,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
 MKE @ NY,Week 2,NY,MKE,2024-04-15 20:36:38,38,20,17,1,1,1,9,0,0,0,0,0,33 Valeria Cardenas,20 Yina Cartagena,09 Cassandra Brown
-MKE @ NY,Week 2,NY,MKE,2024-04-15 20:38:15,39,21,17,0,1,1,15,1,1,0,1,1,NA,NA,NA
-MKE @ NY,Week 2,NY,MKE,2024-04-15 20:41:19,40,22,17,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ NY,Week 2,NY,MKE,2024-04-15 20:38:15,39,20,17,0,0,1,15,1,1,0,0,1,NA,NA,NA
+MKE @ NY,Week 2,NY,MKE,2024-04-15 20:41:19,40,20,17,0,0,0,0,0,0,0,0,0,NA,NA,NA
 MKE @ PHL,Week 2,MKE,PHL,2024-04-16 21:00:54,1,0,0,1,0,3,11,3,3,0,2,0,NA,NA,NA
 MKE @ PHL,Week 2,MKE,PHL,2024-04-16 21:05:25,2,0,1,1,0,5,10,5,3,2,2,2,NA,NA,NA
 MKE @ PHL,Week 2,MKE,PHL,2024-04-16 21:14:29,3,0,2,1,0,4,9,4,3,1,0,3,NA,NA,NA
@@ -264,22 +330,47 @@ MKE @ PHL,Week 2,MKE,PHL,2024-04-16 22:31:17,18,3,14,1,0,2,3,2,1,1,0,1,NA,NA,NA
 MKE @ PHL,Week 2,MKE,PHL,2024-04-16 22:35:34,19,3,15,1,1,1,8,0,0,0,0,0,22 Alex Ballinger,10 Chelsea Twohig,72 Jacqueline Jarik
 MKE @ PHL,Week 2,MKE,PHL,2024-04-16 22:37:10,20,4,15,0,0,4,10,4,4,0,2,2,NA,NA,NA
 MKE @ PHL,Week 2,MKE,PHL,2024-04-16 22:42:35,21,4,16,1,0,1,1,1,1,0,0,1,NA,NA,NA
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 08:24:16,1,0,0,0,1,3,13,2,2,1,2,1,NA,04 Raha Mozaffari,08 Emma Soiles
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 08:38:07,2,1,0,0,1,5,25,4,3,2,1,4,10 Andrea DeSabato,23 Natalie Bova,00 Emilie Mohler
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 08:55:02,3,2,0,0,1,4,9,3,0,3,1,3,13 Kat Harper,21 Linda Morse,08 Emma Soiles
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:02:20,4,3,0,0,0,1,4,1,1,0,0,1,NA,NA,NA
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:05:44,5,3,1,1,1,2,4,1,1,0,1,0,23 Natalie Bova,10 Andrea DeSabato,01 Emily Shields
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:11:07,6,4,1,0,1,3,7,2,1,1,2,1,08 Emma Soiles,21 Linda Morse,18 Sumi Onoe
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:16:24,7,5,1,0,1,5,6,4,2,2,3,2,NA,04 Raha Mozaffari,13 Kat Harper
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:22:58,8,6,1,0,1,1,3,0,0,0,0,1,15 Layne Dodge,21 Linda Morse,08 Emma Soiles
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:25:43,9,7,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:29:33,10,7,2,1,1,2,40,1,1,0,0,1,16 Grace Maroon,03 Rachel Alfano,16 Grace Maroon
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:39:47,11,8,2,0,0,1,6,1,0,1,1,0,NA,NA,NA
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:42:50,12,8,3,0,1,1,9,0,0,0,0,1,00 Emilie Mohler,11 Sara Liang,08 Emma Soiles
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:49:25,13,9,3,0,1,2,4,1,1,0,1,1,04 Raha Mozaffari,05 Lindsay McKenna,13 Kat Harper
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:55:45,14,10,3,0,0,0,0,0,0,0,0,0,NA,NA,NA
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:57:28,15,10,4,1,1,1,3,0,0,0,0,0,16 Grace Maroon,20 Danielle Walsh,09 Sarah Hirannet
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 09:59:44,16,11,4,0,1,1,1,0,0,0,0,1,NA,04 Raha Mozaffari,18 Sumi Onoe
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 08:24:16,1,0,0,0,1,3,13,2,2,1,2,1,NA,04 Raha Mozaffari,08 Emma Soiles
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 08:38:07,2,1,0,0,1,5,25,4,3,2,1,4,10 Andrea DeSabato,23 Natalie Bova,00 Emilie Mohler
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 08:55:02,3,2,0,0,1,4,9,3,0,3,1,3,13 Kat Harper,21 Linda Morse,08 Emma Soiles
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:02:20,4,3,0,0,0,1,4,1,1,0,0,1,NA,NA,NA
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:05:44,5,3,1,1,1,2,4,1,1,0,1,0,23 Natalie Bova,10 Andrea DeSabato,01 Emily Shields
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:11:07,6,4,1,0,1,3,7,2,1,1,2,1,08 Emma Soiles,21 Linda Morse,18 Sumi Onoe
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:16:24,7,5,1,0,1,5,6,4,2,2,3,2,NA,04 Raha Mozaffari,13 Kat Harper
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:22:58,8,6,1,0,1,1,3,0,0,0,0,1,15 Layne Dodge,21 Linda Morse,08 Emma Soiles
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:25:43,9,7,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:29:33,10,7,2,1,1,2,40,1,1,0,0,1,16 Grace Maroon,03 Rachel Alfano,16 Grace Maroon
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:39:47,11,8,2,0,0,1,6,1,0,1,1,0,NA,NA,NA
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:42:50,12,8,3,0,1,1,9,0,0,0,0,1,00 Emilie Mohler,11 Sara Liang,08 Emma Soiles
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:49:25,13,9,3,0,1,2,4,1,1,0,1,1,04 Raha Mozaffari,05 Lindsay McKenna,13 Kat Harper
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:55:45,14,10,3,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:57:28,15,10,4,1,1,1,3,0,0,0,0,0,16 Grace Maroon,20 Danielle Walsh,09 Sarah Hirannet
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 09:59:44,16,11,4,0,1,1,1,0,0,0,0,1,NA,04 Raha Mozaffari,18 Sumi Onoe
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 10:01:17,17,12,4,0,1,9,19,8,5,4,6,3,NA,11 Sara Liang,21 Linda Morse
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 10:29:23,18,13,4,0,0,1,1,1,1,0,0,1,NA,NA,NA
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 10:33:00,19,13,5,1,0,4,49,4,1,3,1,2,NA,NA,NA
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 11:00:19,20,13,6,1,1,1,2,0,0,0,0,0,04 Raha Mozaffari,21 Linda Morse,15 Layne Dodge
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 11:02:48,21,14,6,0,1,2,8,1,1,0,1,1,04 Raha Mozaffari,13 Kat Harper,24 Casey Gorman
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 11:06:53,22,15,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 11:08:40,23,15,7,1,1,5,27,4,4,0,2,2,09 Sarah Hirannet,01 Emily Shields,16 Grace Maroon
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 11:17:40,24,16,7,0,1,1,2,0,0,0,1,0,05 Lindsay McKenna,08 Emma Soiles,05 Lindsay McKenna
+MKE @ PHL,Week 2,original stats,MKEPHL,2024-04-15 11:21:58,25,17,7,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 8:24:16,1,0,0,0,1,3,13,2,2,1,2,1,NA,04 Raha Mozaffari,08 Emma Soiles
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 8:38:07,2,1,0,0,1,5,25,4,3,2,1,4,10 Andrea DeSabato,23 Natalie Bova,00 Emilie Mohler
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 8:55:02,3,2,0,0,1,4,9,3,0,3,1,3,13 Kat Harper,21 Linda Morse,08 Emma Soiles
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:02:20,4,3,0,0,0,1,4,1,1,0,0,1,NA,NA,NA
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:05:44,5,3,1,1,1,2,4,1,1,0,1,0,23 Natalie Bova,10 Andrea DeSabato,01 Emily Shields
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:11:07,6,4,1,0,1,3,7,2,1,1,2,1,08 Emma Soiles,21 Linda Morse,18 Sumi Onoe
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:16:24,7,5,1,0,1,5,6,4,2,2,3,2,NA,04 Raha Mozaffari,13 Kat Harper
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:22:58,8,6,1,0,1,1,3,0,0,0,0,1,15 Layne Dodge,21 Linda Morse,08 Emma Soiles
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:25:43,9,7,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:29:33,10,7,2,1,1,2,40,1,1,0,0,1,16 Grace Maroon,03 Rachel Alfano,16 Grace Maroon
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:39:47,11,8,2,0,0,1,6,1,0,1,1,0,NA,NA,NA
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:42:50,12,8,3,0,1,1,9,0,0,0,0,1,00 Emilie Mohler,11 Sara Liang,08 Emma Soiles
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:49:25,13,9,3,0,1,2,4,1,1,0,1,1,04 Raha Mozaffari,05 Lindsay McKenna,13 Kat Harper
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:55:45,14,10,3,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:57:28,15,10,4,1,1,1,3,0,0,0,0,0,16 Grace Maroon,20 Danielle Walsh,09 Sarah Hirannet
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 9:59:44,16,11,4,0,1,1,1,0,0,0,0,1,NA,04 Raha Mozaffari,18 Sumi Onoe
 MKE @ PHL,Week 2,PHL,MKE,2024-04-15 10:01:17,17,12,4,0,1,9,19,8,5,4,6,3,NA,11 Sara Liang,21 Linda Morse
 MKE @ PHL,Week 2,PHL,MKE,2024-04-15 10:29:23,18,13,4,0,0,1,1,1,1,0,0,1,NA,NA,NA
 MKE @ PHL,Week 2,PHL,MKE,2024-04-15 10:33:00,19,13,5,1,0,4,49,4,1,3,1,2,NA,NA,NA
@@ -287,7 +378,7 @@ MKE @ PHL,Week 2,PHL,MKE,2024-04-15 11:00:19,20,13,6,1,1,1,2,0,0,0,0,0,04 Raha M
 MKE @ PHL,Week 2,PHL,MKE,2024-04-15 11:02:48,21,14,6,0,1,2,8,1,1,0,1,1,04 Raha Mozaffari,13 Kat Harper,24 Casey Gorman
 MKE @ PHL,Week 2,PHL,MKE,2024-04-15 11:06:53,22,15,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
 MKE @ PHL,Week 2,PHL,MKE,2024-04-15 11:08:40,23,15,7,1,1,5,27,4,4,0,2,2,09 Sarah Hirannet,01 Emily Shields,16 Grace Maroon
-MKE @ PHL,Week 2,PHL,MKE,2024-04-15 11:17:40,24,16,7,0,1,1,2,0,0,0,1,0,05 Lindsay McKenna,08 Emma Soiles,05 Lindsay McKenna
+MKE @ PHL,Week 2,PHL,MKE,2024-04-15 11:17:40,24,16,7,0,0,1,2,0,0,0,1,0,05 Lindsay McKenna,NA,NA
 MKE @ PHL,Week 2,PHL,MKE,2024-04-15 11:21:58,25,17,7,0,0,0,0,0,0,0,0,0,NA,NA,NA
 NASH @ DC,Week 2,DC,NASH,4/14/2024 10:04,1,0,0,1,1,2,16,1,0,1,0,1,23 Lisa Dang,08 Kathryn Ritzman,19 Allie Wallace
 NASH @ DC,Week 2,DC,NASH,4/14/2024 10:11,2,1,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
@@ -350,13 +441,46 @@ NASH @ DC,Week 2,NASH,DC,2024-04-14 23:36:15,27,4,22,1,1,1,18,0,0,0,0,0,82 Mary 
 NASH @ DC,Week 2,NASH,DC,2024-04-14 23:40:26,28,5,22,0,0,0,0,0,0,0,0,0,NA,NA,NA
 NASH @ DC,Week 2,NASH,DC,2024-04-14 23:41:26,29,5,23,1,0,1,4,1,1,0,0,0,NA,NA,NA
 NASH @ DC,Week 2,NASH,DC,2024-04-14 23:43:33,30,5,24,1,0,1,8,1,1,0,1,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-16 07:23:16,1,0,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-16 07:37:40,2,0,1,1,0,1,14,1,0,1,0,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-16 08:14:20,3,0,2,1,0,1,19,1,0,1,0,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-16 08:22:45,4,0,3,1,0,1,3,1,1,0,0,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-16 08:46:11,5,0,4,1,0,1,3,1,1,0,0,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-16 08:48:43,6,0,5,1,1,2,10,1,1,0,0,1,10 Mia Griner,31 María Vargas,10 Mia Griner
-RAL @ ATL,Week 2,ATL,RAL,2024-04-16 08:54:43,7,1,5,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 07:23:16,1,0,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 07:37:40,2,0,1,1,0,1,14,1,0,1,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 08:14:20,3,0,2,1,0,1,19,1,0,1,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 08:22:45,4,0,3,1,0,1,3,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 08:46:11,5,0,4,1,0,1,3,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 08:48:43,6,0,5,1,1,2,10,1,1,0,0,1,10 Mia Griner,31 María Vargas,10 Mia Griner
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 08:54:43,7,1,5,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 15:52:06,8,1,6,1,1,1,6,0,0,0,0,0,26 Morgan Lally,54 Liv Ford,10 Mia Griner
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 15:55:15,9,2,6,0,0,1,9,1,1,0,1,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 16:02:54,10,2,7,1,1,1,11,0,0,0,0,0,03 Alex Krueger,51 Lilli Popovich,13 Hannah Abraham
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 16:31:33,11,3,7,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 16:35:55,12,3,8,1,0,1,4,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 16:44:36,13,3,9,1,0,1,11,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 16:53:46,14,3,10,1,0,1,4,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 16:58:53,15,3,11,1,1,2,9,1,1,0,0,1,NA,10 Mia Griner,72 Annalise Paul
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 17:13:37,16,4,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 17:14:47,17,4,12,1,0,1,2,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 17:16:57,18,4,13,1,0,1,17,1,0,1,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 17:21:55,19,4,14,1,1,1,10,0,0,0,0,0,26 Morgan Lally,42 Martha Wilber,51 Lilli Popovich
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 17:25:26,20,5,14,0,1,2,7,1,1,0,1,1,NA,31 María Vargas,42 Martha Wilber
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-16 18:08:17,21,6,14,0,0,1,1,1,1,0,0,1,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 00:00:44,22,6,15,1,1,1,10,0,0,0,0,0,05 Megan Jarriel,08 Dani Ortiz,21 Samantha Li
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 00:16:49,23,7,15,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 00:18:25,24,7,16,1,1,1,11,0,0,0,0,0,42 Martha Wilber,08 Dani Ortiz,42 Martha Wilber
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 00:23:34,25,8,16,0,1,7,30,6,6,0,5,2,26 Morgan Lally,42 Martha Wilber,51 Lilli Popovich
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 02:19:51,26,9,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 02:29:44,27,9,17,1,1,1,9,0,0,0,0,0,12 Emma Jaschke,42 Martha Wilber,75 Sarah Kingsley-Hart
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 02:33:11,28,10,17,0,1,3,11,2,1,1,3,0,NA,29 Charlotte Doran,42 Martha Wilber
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 02:45:07,29,11,17,1,0,3,21,3,3,0,1,1,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 02:54:18,30,11,18,1,0,3,10,3,3,0,2,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 02:59:58,31,11,19,1,0,1,3,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 03:02:48,32,11,20,1,0,1,2,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,original stats,RALATL,2024-04-17 03:06:18,33,11,21,1,0,2,10,2,1,1,2,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-16 7:23:16,1,0,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-16 7:37:40,2,0,1,1,0,1,14,1,0,1,0,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-16 8:14:20,3,0,2,1,0,1,19,1,0,1,0,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-16 8:22:45,4,0,3,1,0,1,3,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-16 8:46:11,5,0,4,1,0,1,3,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-16 8:48:43,6,0,5,1,1,2,10,1,1,0,0,1,10 Mia Griner,31 María Vargas,10 Mia Griner
+RAL @ ATL,Week 2,ATL,RAL,2024-04-16 8:54:43,7,1,5,0,0,0,0,0,0,0,0,0,NA,NA,NA
 RAL @ ATL,Week 2,ATL,RAL,2024-04-16 15:52:06,8,1,6,1,1,1,6,0,0,0,0,0,26 Morgan Lally,54 Liv Ford,10 Mia Griner
 RAL @ ATL,Week 2,ATL,RAL,2024-04-16 15:55:15,9,2,6,0,0,1,9,1,1,0,1,0,NA,NA,NA
 RAL @ ATL,Week 2,ATL,RAL,2024-04-16 16:02:54,10,2,7,1,1,1,11,0,0,0,0,0,03 Alex Krueger,51 Lilli Popovich,13 Hannah Abraham
@@ -369,20 +493,20 @@ RAL @ ATL,Week 2,ATL,RAL,2024-04-16 17:13:37,16,4,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
 RAL @ ATL,Week 2,ATL,RAL,2024-04-16 17:14:47,17,4,12,1,0,1,2,1,1,0,0,0,NA,NA,NA
 RAL @ ATL,Week 2,ATL,RAL,2024-04-16 17:16:57,18,4,13,1,0,1,17,1,0,1,0,0,NA,NA,NA
 RAL @ ATL,Week 2,ATL,RAL,2024-04-16 17:21:55,19,4,14,1,1,1,10,0,0,0,0,0,26 Morgan Lally,42 Martha Wilber,51 Lilli Popovich
-RAL @ ATL,Week 2,ATL,RAL,2024-04-16 17:25:26,20,5,14,0,1,2,7,1,1,0,1,1,NA,31 María Vargas,42 Martha Wilber
+RAL @ ATL,Week 2,ATL,RAL,2024-04-16 17:25:26,20,5,14,0,0,2,6,1,1,0,1,1,NA,NA,NA
 RAL @ ATL,Week 2,ATL,RAL,2024-04-16 18:08:17,21,6,14,0,0,1,1,1,1,0,0,1,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 00:00:44,22,6,15,1,1,1,10,0,0,0,0,0,05 Megan Jarriel,08 Dani Ortiz,21 Samantha Li
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 00:16:49,23,7,15,0,0,0,0,0,0,0,0,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 00:18:25,24,7,16,1,1,1,11,0,0,0,0,0,42 Martha Wilber,08 Dani Ortiz,42 Martha Wilber
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 00:23:34,25,8,16,0,1,7,30,6,6,0,5,2,26 Morgan Lally,42 Martha Wilber,51 Lilli Popovich
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 02:19:51,26,9,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 02:29:44,27,9,17,1,1,1,9,0,0,0,0,0,12 Emma Jaschke,42 Martha Wilber,75 Sarah Kingsley-Hart
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 02:33:11,28,10,17,0,1,3,11,2,1,1,3,0,NA,29 Charlotte Doran,42 Martha Wilber
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 02:45:07,29,11,17,1,0,3,21,3,3,0,1,1,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 02:54:18,30,11,18,1,0,3,10,3,3,0,2,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 02:59:58,31,11,19,1,0,1,3,1,1,0,0,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 03:02:48,32,11,20,1,0,1,2,1,1,0,0,0,NA,NA,NA
-RAL @ ATL,Week 2,ATL,RAL,2024-04-17 03:06:18,33,11,21,1,0,2,10,2,1,1,2,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 0:00:44,22,6,15,1,1,1,10,0,0,0,0,0,05 Megan Jarriel,08 Dani Ortiz,21 Samantha Li
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 0:16:49,23,7,15,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 0:18:25,24,7,16,1,1,1,11,0,0,0,0,0,42 Martha Wilber,08 Dani Ortiz,42 Martha Wilber
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 0:23:34,25,8,16,0,1,7,30,6,6,0,5,2,26 Morgan Lally,42 Martha Wilber,51 Lilli Popovich
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 2:19:51,26,9,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 2:29:44,27,9,17,1,1,1,9,0,0,0,0,0,12 Emma Jaschke,42 Martha Wilber,75 Sarah Kingsley-Hart
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 2:33:11,28,10,17,0,0,3,10,2,1,1,3,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 2:45:07,29,11,17,1,0,3,21,3,3,0,1,1,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 2:54:18,30,11,18,1,0,3,10,3,3,0,2,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 2:59:58,31,11,19,1,0,1,3,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 3:02:48,32,11,20,1,0,1,2,1,1,0,0,0,NA,NA,NA
+RAL @ ATL,Week 2,ATL,RAL,2024-04-17 3:06:18,33,11,21,1,0,2,10,2,1,1,2,0,NA,NA,NA
 NY @ PORT,Week 3,NY,PORT,4/25/2024 12:50,1,0,0,0,1,1,5,0,0,0,0,1,08 Manuela Cardenas,09 Cassandra Brown,88 Nikki Hair
 NY @ PORT,Week 3,NY,PORT,4/25/2024 12:55,2,1,0,0,0,1,2,1,1,0,0,1,NA,NA,NA
 NY @ PORT,Week 3,NY,PORT,4/25/2024 13:01,3,1,1,1,0,1,4,1,0,1,0,0,NA,NA,NA
@@ -414,6 +538,36 @@ NY @ PORT,Week 3,NY,PORT,4/25/2024 14:45,28,16,11,1,1,2,8,1,1,0,0,1,00 Genny De 
 NY @ PORT,Week 3,NY,PORT,4/25/2024 14:48,29,17,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
 NY @ PORT,Week 3,NY,PORT,4/25/2024 14:51,30,17,12,1,0,1,11,1,1,0,0,0,NA,NA,NA
 NY @ PORT,Week 3,NY,PORT,4/25/2024 14:53,31,17,13,1,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 19:52:32,1,0,0,1,0,1,7,1,0,1,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 19:59:50,2,0,1,1,1,2,13,1,1,0,1,0,76 Emma Palacio,15 Caitlin Fitzgerald,19 Olivia Hampton
+NY @ PORT,Week 3,PORT,NY,2024-04-23 20:07:01,3,1,1,0,1,1,5,0,0,0,0,1,03 Liv Player,32 Megan Wilson,03 Liv Player
+NY @ PORT,Week 3,PORT,NY,2024-04-23 20:11:50,4,2,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 20:13:40,5,2,2,1,1,1,9,0,0,0,0,0,36 Jaelee Cruz,23 Colette Pellegrini,30 Jean Huang
+NY @ PORT,Week 3,PORT,NY,2024-04-23 20:19:22,6,3,2,0,0,1,16,1,1,0,0,1,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 20:29:20,7,3,3,1,0,2,16,2,2,0,0,1,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 21:47:53,8,3,4,0,0,2,17,2,1,1,1,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 21:56:22,9,3,5,1,1,1,8,0,0,0,0,0,33 Yuge Xiao,23 Colette Pellegrini,16 Erin Rea
+NY @ PORT,Week 3,PORT,NY,2024-04-23 21:58:29,10,4,5,0,1,4,21,3,2,1,4,0,03 Liv Player,08 Nicki Chan,04 Adelle Pitsas
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:12:23,11,5,5,0,0,1,5,1,1,0,0,1,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:29:47,12,5,6,1,0,1,3,1,1,0,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:33:35,13,5,7,1,1,4,12,3,2,1,1,2,30 Jean Huang,45 Sarah Jeung,33 Yuge Xiao
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:39:21,14,6,7,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:41:06,15,6,8,0,1,2,17,1,1,0,0,1,55 Sophie Knowles,37 Hannah Henkin,32 Megan Wilson
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:47:16,16,7,8,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:48:45,17,7,9,1,0,1,2,1,0,1,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:52:24,18,7,10,1,1,1,8,0,0,0,0,0,51 Tess Johnson,15 Caitlin Fitzgerald,30 Jean Huang
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:55:21,19,8,10,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:57:23,20,8,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 22:59:37,21,8,12,1,0,1,3,1,1,0,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 23:02:34,22,8,13,1,0,2,8,2,2,0,0,1,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 23:06:56,23,8,14,1,1,2,12,1,1,0,0,1,NA,33 Yuge Xiao,23 Colette Pellegrini
+NY @ PORT,Week 3,PORT,NY,2024-04-23 23:09:54,24,9,14,0,1,1,7,0,0,0,1,0,08 Nicki Chan,03 Liv Player,08 Nicki Chan
+NY @ PORT,Week 3,PORT,NY,2024-04-23 23:12:28,25,10,14,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 23:14:04,26,10,15,1,1,3,18,2,2,0,1,1,16 Erin Rea,23 Colette Pellegrini,52 Caitlin Connell
+NY @ PORT,Week 3,PORT,NY,2024-04-23 23:20:31,27,11,15,0,0,1,6,1,1,1,0,1,NA,NA,NA
+NY @ PORT,Week 3,PORT,NY,2024-04-23 23:24:20,28,11,16,1,1,1,5,0,0,0,0,0,29 Elana Schwam,23 Colette Pellegrini,30 Jean Huang
+NY @ PORT,Week 3,PORT,NY,2024-04-23 23:26:21,29,12,16,0,1,1,4,0,0,0,1,0,55 Sophie Knowles,32 Megan Wilson,13 Samantha Munson
+NY @ PORT,Week 3,PORT,NY,2024-04-23 23:29:24,30,13,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
 INDY @ PHL,Week 4,INDY,PHL,2024-04-28 06:48:57,1,0,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
 INDY @ PHL,Week 4,INDY,PHL,2024-04-28 06:49:55,2,0,1,1,1,1,9,0,0,0,0,0,04 Rachel Mast,17 Kristin Dudley,32 Shani Rosenthal
 INDY @ PHL,Week 4,INDY,PHL,2024-04-28 09:07:02,3,1,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
@@ -486,37 +640,467 @@ INDY @ PHL,Week 4,PHL,INDY,2024-04-27 21:40:53,33,19,13,1,1,2,5,1,1,0,0,1,04 Rah
 INDY @ PHL,Week 4,PHL,INDY,2024-04-27 21:44:34,34,20,13,0,0,1,2,1,1,0,0,1,NA,NA,NA
 INDY @ PHL,Week 4,PHL,INDY,2024-04-27 21:49:39,35,20,14,1,1,2,8,1,1,0,1,0,01 Emily Shields,09 Sarah Hirannet,22 Liz Hart
 INDY @ PHL,Week 4,PHL,INDY,2024-04-27 21:52:03,36,21,14,0,0,1,0,0,0,0,1,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 08:25:41,1,0,0,0,0,1,2,1,1,0,1,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 08:31:56,2,0,1,1,1,3,20,2,2,0,0,2,02 Steph Wood,53 Emma Piorier,45 Emery Otapalik
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 08:39:21,3,1,1,0,0,1,1,1,1,1,0,1,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 08:45:09,4,1,2,1,0,1,4,1,1,0,0,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 08:47:23,5,1,3,1,0,1,2,1,1,0,0,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 08:49:24,6,1,4,1,1,1,6,0,0,0,0,0,05 Steph Rupp,45 Emery Otapalik,53 Emma Piorier
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 08:51:06,7,2,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 08:53:15,8,2,5,1,1,1,7,0,0,0,0,0,04 Erica Baken,44 Sarah Meckstroth,53 Emma Piorier
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 08:54:57,9,3,5,0,0,4,11,4,3,2,1,3,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:02:58,10,3,6,1,1,1,23,0,0,0,0,0,02 Steph Wood,24 Allegra Johnson McKee,21 Sarah Mondschein
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:06:00,11,4,6,0,0,2,7,2,2,0,0,2,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:11:23,12,4,7,1,1,1,2,0,0,0,0,0,03 Makella Daley,04 Erica Baken,07 Danielle Byers
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:12:39,13,5,7,0,0,2,3,2,1,1,0,2,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:17:14,14,5,8,1,1,2,5,1,1,0,0,1,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:20:51,15,6,8,0,1,1,2,0,0,0,0,1,11 Rachel Johnson,21 Sarah Mondschein,09 Sara Helm
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:25:39,16,7,8,0,0,0,0,0,0,0,0,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:27:14,17,7,9,1,1,1,5,0,0,0,0,0,02 Steph Wood,04 Erica Baken,44 Sarah Meckstroth
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:28:31,18,8,9,0,0,2,6,2,2,0,1,1,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:32:03,19,8,10,1,1,2,11,1,1,0,0,1,05 Steph Rupp,04 Erica Baken,44 Sarah Meckstroth
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:33:51,20,9,10,0,0,0,0,0,0,0,0,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:35:28,21,9,11,1,1,1,3,0,0,0,0,0,02 Steph Wood,44 Sarah Meckstroth,53 Emma Piorier
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:36:13,22,10,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:38:12,23,10,12,1,1,1,10,0,0,0,0,0,53 Emma Piorier,02 Steph Wood,07 Danielle Byers
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:39:45,24,11,12,0,0,1,1,1,1,0,0,1,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:41:51,25,11,13,1,1,2,16,1,1,0,1,0,02 Steph Wood,04 Erica Baken,05 Steph Rupp
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:44:22,26,12,13,0,1,1,1,0,0,0,0,1,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:46:05,27,13,13,1,1,1,4,0,0,0,0,0,53 Emma Piorier,44 Sarah Meckstroth,07 Danielle Byers
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:47:08,28,14,13,0,0,0,0,0,0,0,0,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:49:03,29,14,14,1,0,1,8,1,1,1,0,0,NA,NA,NA
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:55:08,30,14,15,1,1,4,24,3,2,1,0,3,44 Sarah Meckstroth,04 Erica Baken,53 Emma Piorier
-PORT @ MINN,Week 4,MINN,PORT,2024-04-28 09:59:00,31,15,15,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:02:00,1,0,0,1,0,1,5,1,1,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:08:57,2,0,1,1,1,4,10,3,3,0,2,1,08 Grace Robinson,72 Grace Castro,22 Rebecca Henley
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:14:28,3,1,1,0,0,2,4,2,2,0,1,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:19:14,4,1,2,1,0,2,18,2,2,0,0,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:23:33,5,1,3,1,1,1,8,0,0,0,0,0,06 Micah Roberts,12 Meaghan Creamer,20 Noel Holmes
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:26:46,6,2,3,0,0,1,2,1,1,0,0,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:29:40,7,2,4,1,0,1,1,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:32:38,8,2,5,1,1,3,25,2,1,1,0,2,24 Mia Letterie,10 Tori Taylor,22 Rebecca Henley
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:41:09,9,3,5,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:43:51,10,3,6,1,1,1,5,0,0,0,0,0,27 Katharine Gilbert,10 Tori Taylor,08 Grace Robinson
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:49:21,11,4,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:51:48,12,4,7,1,1,1,10,0,0,0,0,0,10 Tori Taylor,22 Rebecca Henley,27 Katharine Gilbert
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:54:30,13,5,7,0,0,2,4,2,2,0,1,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 19:59:04,14,5,8,1,0,2,18,2,2,0,0,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 20:04:28,15,5,9,1,1,2,4,1,1,0,0,1,NA,45 Sylvia Brown,25 Nadine Rowen
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 20:06:29,16,6,9,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 20:07:49,17,6,10,1,0,2,6,2,2,0,0,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 20:12:02,18,6,11,1,0,1,3,1,0,1,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 20:15:38,19,6,12,1,0,1,6,1,0,1,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 22:34:26,20,6,13,1,1,1,11,0,0,0,0,0,45 Sylvia Brown,25 Nadine Rowen,06 Micah Roberts
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 22:38:38,21,7,13,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 22:40:40,22,7,14,1,1,2,24,1,0,1,0,1,45 Sylvia Brown,10 Tori Taylor,72 Grace Castro
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 22:45:04,23,8,14,0,1,2,9,1,0,1,1,1,27 Katharine Gilbert,10 Tori Taylor,45 Sylvia Brown
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 22:51:41,24,9,14,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 22:52:56,25,9,15,1,0,2,3,2,2,0,0,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 22:57:04,26,9,16,1,1,1,9,0,0,0,0,0,20 Noel Holmes,24 Mia Letterie,06 Micah Roberts
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 23:00:30,27,10,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 23:02:29,28,10,17,1,0,1,13,1,1,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 23:14:12,29,10,18,0,0,1,1,1,0,1,0,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 23:16:31,30,10,19,1,0,3,16,3,3,0,1,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 23:22:51,31,10,20,1,0,2,5,2,1,1,0,1,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 23:55:55,32,10,21,1,0,1,8,1,1,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-29 23:58:16,33,10,22,1,0,1,10,1,1,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-30 00:02:40,34,10,23,1,1,1,13,0,0,0,0,0,08 Grace Robinson,04 Ashley West,10 Tori Taylor
+NASH @ RAL,Week 4,NASH,RAL,2024-04-30 00:05:57,35,11,23,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-30 00:07:21,36,11,24,1,0,1,3,1,1,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,NASH,RAL,2024-04-30 00:08:57,37,11,25,1,0,2,13,2,2,0,1,1,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-29 17:01:49,1,0,0,0,1,1,2,0,0,0,1,0,20 Bridget Mizener,22 Julia Zwierzynski,09 Jinny Riedel
+NASH @ RAL,Week 4,RAL,NASH,2024-04-29 17:07:25,2,1,0,0,0,3,7,3,3,0,0,3,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-29 17:16:57,3,1,1,1,1,3,9,2,2,0,0,2,07 Allison Reilly,13 Tyler Smith,12 Katie Backus Meilstrup
+NASH @ RAL,Week 4,RAL,NASH,2024-04-29 17:22:08,4,2,1,0,1,2,3,1,1,0,0,2,NA,20 Bridget Mizener,11 Dawn Culton
+NASH @ RAL,Week 4,RAL,NASH,2024-04-29 17:26:27,5,3,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-29 17:28:11,6,3,2,1,1,2,10,1,1,0,0,1,90 Qxhna Titcomb,13 Tyler Smith,90 Qxhna Titcomb
+NASH @ RAL,Week 4,RAL,NASH,2024-04-29 17:30:54,7,4,2,0,1,1,2,0,0,0,1,0,59 Audrey Lyman,20 Bridget Mizener,18 Sarah McKee
+NASH @ RAL,Week 4,RAL,NASH,2024-04-29 17:33:06,8,5,2,0,0,2,5,2,2,0,0,2,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-29 17:38:50,9,5,3,1,1,1,6,0,0,0,0,0,02 Claire Bidigaire-Curtis,12 Katie Backus Meilstrup,27 Mary Rippe
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 14:34:18,10,6,3,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 14:35:46,11,6,4,1,1,1,9,0,0,0,0,0,90 Qxhna Titcomb,13 Tyler Smith,27 Mary Rippe
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 14:39:22,12,7,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 14:40:27,13,7,5,1,1,3,16,2,2,0,1,1,13 Tyler Smith,27 Mary Rippe,45 Caitlin Gross
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 18:39:20,14,8,5,0,1,2,7,1,1,0,1,1,20 Bridget Mizener,88 Maddie Pletzke,20 Bridget Mizener
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 18:45:53,15,9,5,0,0,1,1,1,1,0,0,1,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 18:50:35,16,9,6,1,1,1,4,0,0,0,0,0,27 Mary Rippe,12 Katie Backus Meilstrup,02 Claire Bidigaire-Curtis
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 18:53:28,17,10,6,0,1,2,12,1,1,0,1,1,11 Dawn Culton,59 Audrey Lyman,33 Erica Birdsong
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 18:58:19,18,11,6,0,0,1,8,1,1,0,0,1,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 19:08:58,19,11,7,0,1,1,7,0,0,0,0,1,03 Grace Conerly,17 Emily Przykucki,09 Jinny Riedel
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 19:29:11,20,12,7,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 19:32:56,21,12,8,1,1,1,10,0,0,0,0,0,13 Tyler Smith,90 Qxhna Titcomb,45 Caitlin Gross
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 19:36:49,22,13,8,0,0,1,3,1,1,0,0,1,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 19:42:30,23,13,9,1,0,2,5,2,2,0,0,1,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 19:46:19,24,13,10,1,1,1,7,0,0,0,0,0,27 Mary Rippe,45 Caitlin Gross,90 Qxhna Titcomb
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 19:48:30,25,14,10,0,1,2,10,1,0,1,1,1,NA,17 Emily Przykucki,09 Jinny Riedel
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 19:51:38,26,15,10,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 19:57:48,27,15,11,1,1,1,11,0,0,0,0,0,07 Allison Reilly,02 Claire Bidigaire-Curtis,06 Jenny Wei
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 20:00:10,28,16,11,0,0,1,14,1,1,0,1,0,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-04-30 20:09:47,29,16,12,1,1,2,12,1,1,0,0,1,27 Mary Rippe,13 Tyler Smith,12 Katie Backus Meilstrup
+NASH @ RAL,Week 4,RAL,NASH,2024-05-01 14:29:40,30,17,12,0,1,3,17,2,2,0,1,2,24 Hannah Boettcher,20 Bridget Mizener,59 Audrey Lyman
+NASH @ RAL,Week 4,RAL,NASH,2024-05-01 14:47:49,31,18,12,0,1,2,10,1,0,1,0,2,03 Grace Conerly,11 Dawn Culton,18 Sarah McKee
+NASH @ RAL,Week 4,RAL,NASH,2024-05-01 15:07:29,32,19,12,0,1,1,5,0,0,0,0,1,24 Hannah Boettcher,59 Audrey Lyman,10 Paige Carver
+NASH @ RAL,Week 4,RAL,NASH,2024-05-01 16:42:39,33,20,12,0,1,1,4,0,0,0,0,1,09 Jinny Riedel,03 Grace Conerly,11 Dawn Culton
+NASH @ RAL,Week 4,RAL,NASH,2024-05-01 16:48:11,34,21,12,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NASH @ RAL,Week 4,RAL,NASH,2024-05-01 16:49:07,35,21,13,1,1,1,7,0,0,0,0,0,90 Qxhna Titcomb,45 Caitlin Gross,27 Mary Rippe
+NASH @ RAL,Week 4,RAL,NASH,2024-05-01 16:51:32,36,22,13,0,1,1,4,0,0,0,1,0,11 Dawn Culton,33 Erica Birdsong,17 Emily Przykucki
+NASH @ RAL,Week 4,RAL,NASH,2024-05-01 16:53:53,37,23,13,0,0,2,6,2,1,1,1,1,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 08:25:41,1,0,0,0,0,1,2,1,1,0,1,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 08:31:56,2,0,1,1,1,3,20,2,2,0,0,2,02 Steph Wood,53 Emma Piorier,45 Emery Otapalik
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 08:39:21,3,1,1,0,0,1,1,1,1,1,0,1,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 08:45:09,4,1,2,1,0,1,4,1,1,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 08:47:23,5,1,3,1,0,1,2,1,1,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 08:49:24,6,1,4,1,1,1,6,0,0,0,0,0,05 Steph Rupp,45 Emery Otapalik,53 Emma Piorier
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 08:51:06,7,2,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 08:53:15,8,2,5,1,1,1,7,0,0,0,0,0,04 Erica Baken,44 Sarah Meckstroth,53 Emma Piorier
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 08:54:57,9,3,5,0,0,4,11,4,3,2,1,3,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:02:58,10,3,6,1,1,1,23,0,0,0,0,0,02 Steph Wood,24 Allegra Johnson McKee,21 Sarah Mondschein
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:06:00,11,4,6,0,0,2,7,2,2,0,0,2,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:11:23,12,4,7,1,1,1,2,0,0,0,0,0,03 Makella Daley,04 Erica Baken,07 Danielle Byers
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:12:39,13,5,7,0,0,2,3,2,1,1,0,2,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:17:14,14,5,8,1,1,2,5,1,1,0,0,1,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:20:51,15,6,8,0,1,1,2,0,0,0,0,1,11 Rachel Johnson,21 Sarah Mondschein,09 Sara Helm
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:25:39,16,7,8,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:27:14,17,7,9,1,1,1,5,0,0,0,0,0,02 Steph Wood,04 Erica Baken,44 Sarah Meckstroth
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:28:31,18,8,9,0,0,2,6,2,2,0,1,1,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:32:03,19,8,10,1,1,2,11,1,1,0,0,1,05 Steph Rupp,04 Erica Baken,44 Sarah Meckstroth
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:33:51,20,9,10,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:35:28,21,9,11,1,1,1,3,0,0,0,0,0,02 Steph Wood,44 Sarah Meckstroth,53 Emma Piorier
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:36:13,22,10,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:38:12,23,10,12,1,1,1,10,0,0,0,0,0,53 Emma Piorier,02 Steph Wood,07 Danielle Byers
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:39:45,24,11,12,0,0,1,1,1,1,0,0,1,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:41:51,25,11,13,1,1,2,16,1,1,0,1,0,02 Steph Wood,04 Erica Baken,05 Steph Rupp
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:44:22,26,12,13,0,1,1,1,0,0,0,0,1,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:46:05,27,13,13,1,1,1,4,0,0,0,0,0,53 Emma Piorier,44 Sarah Meckstroth,07 Danielle Byers
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:47:08,28,14,13,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:49:03,29,14,14,1,0,1,8,1,1,1,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:55:08,30,14,15,1,1,4,24,3,2,1,0,3,44 Sarah Meckstroth,04 Erica Baken,53 Emma Piorier
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 09:59:00,31,15,15,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 10:00:20,32,15,16,1,1,2,11,1,1,0,1,0,NA,03 Makella Daley,44 Sarah Meckstroth
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 10:01:50,33,16,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,original stats,PORTMINN,2024-04-28 10:03:39,34,16,17,1,0,1,2,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 8:25:41,1,0,0,0,0,1,2,1,1,0,1,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 8:31:56,2,0,1,1,1,3,20,2,2,0,0,2,02 Steph Wood,53 Emma Piorier,45 Emery Otapalik
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 8:39:21,3,1,1,0,0,1,1,1,1,1,0,1,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 8:45:09,4,1,2,1,0,1,4,1,1,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 8:47:23,5,1,3,1,0,1,2,1,1,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 8:49:24,6,1,4,1,1,1,6,0,0,0,0,0,05 Steph Rupp,45 Emery Otapalik,53 Emma Piorier
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 8:51:06,7,2,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 8:53:15,8,2,5,1,1,1,7,0,0,0,0,0,04 Erica Baken,44 Sarah Meckstroth,53 Emma Piorier
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 8:54:57,9,3,5,0,0,4,11,4,3,2,1,3,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:02:58,10,3,6,1,1,1,23,0,0,0,0,0,02 Steph Wood,24 Allegra Johnson McKee,21 Sarah Mondschein
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:06:00,11,4,6,0,0,2,7,2,2,0,0,2,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:11:23,12,4,7,1,1,1,2,0,0,0,0,0,03 Makella Daley,04 Erica Baken,07 Danielle Byers
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:12:39,13,5,7,0,0,2,3,2,1,1,0,2,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:17:14,14,5,8,1,0,2,5,1,1,0,0,1,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:20:51,15,6,8,0,1,1,2,0,0,0,0,1,11 Rachel Johnson,21 Sarah Mondschein,09 Sara Helm
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:25:39,16,7,8,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:27:14,17,7,9,1,1,1,5,0,0,0,0,0,02 Steph Wood,04 Erica Baken,44 Sarah Meckstroth
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:28:31,18,8,9,0,0,2,6,2,2,0,1,1,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:32:03,19,8,10,1,1,2,11,1,1,0,0,1,05 Steph Rupp,04 Erica Baken,44 Sarah Meckstroth
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:33:51,20,9,10,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:35:28,21,9,11,1,1,1,3,0,0,0,0,0,02 Steph Wood,44 Sarah Meckstroth,53 Emma Piorier
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:36:13,22,10,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:38:12,23,10,12,1,1,1,10,0,0,0,0,0,53 Emma Piorier,02 Steph Wood,07 Danielle Byers
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:39:45,24,11,12,0,0,1,1,1,1,0,0,1,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:41:51,25,11,13,1,1,2,16,1,1,0,1,0,02 Steph Wood,04 Erica Baken,05 Steph Rupp
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:44:22,26,12,13,0,0,1,1,0,0,0,0,1,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:46:05,27,13,13,1,1,1,4,0,0,0,0,0,53 Emma Piorier,44 Sarah Meckstroth,07 Danielle Byers
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:47:08,28,14,13,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:49:03,29,14,14,1,0,1,8,1,1,1,0,0,NA,NA,NA
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:55:08,30,14,15,1,1,4,24,3,2,1,0,3,44 Sarah Meckstroth,04 Erica Baken,53 Emma Piorier
+PORT @ MINN,Week 4,MINN,PORT,2024-04-28 9:59:00,31,15,15,0,0,0,0,0,0,0,0,0,NA,NA,NA
 PORT @ MINN,Week 4,MINN,PORT,2024-04-28 10:00:20,32,15,16,1,1,2,11,1,1,0,1,0,NA,03 Makella Daley,44 Sarah Meckstroth
 PORT @ MINN,Week 4,MINN,PORT,2024-04-28 10:01:50,33,16,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
 PORT @ MINN,Week 4,MINN,PORT,2024-04-28 10:03:39,34,16,17,1,0,1,2,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 20:32:35,1,0,0,1,1,2,23,1,1,0,0,1,36 Jaelee Cruz,33 Yuge Xiao,36 Jaelee Cruz
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 20:37:16,2,1,0,0,0,2,11,2,1,1,0,2,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 20:43:24,3,1,1,1,1,2,15,1,1,0,1,0,71 Shirlee Wohl,36 Jaelee Cruz,03 Liv Player
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 20:50:29,4,2,1,0,1,1,8,0,0,0,0,1,32 Megan Wilson,55 Sophie Knowles,08 Nicki Chan
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 20:52:57,5,3,1,0,1,1,5,0,0,0,1,0,19 Olivia Hampton,15 Caitlin Fitzgerald,45 Sarah Jeung
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 20:55:52,6,4,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 20:57:11,7,4,2,1,1,1,9,0,0,0,0,0,17 Kelsey Devlin,33 Yuge Xiao,23 Colette Pellegrini
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 20:59:19,8,5,2,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:00:52,9,5,3,0,1,4,21,3,1,3,3,1,19 Olivia Hampton,55 Sophie Knowles,06 Rowse
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:08:24,10,6,3,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:10:41,11,6,4,0,1,3,14,2,2,0,2,0,37 Hannah Henkin,55 Sophie Knowles,06 Rowse
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:15:33,12,7,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:16:46,13,7,5,1,1,3,18,2,1,1,1,1,23 Colette Pellegrini,03 Liv Player,16 Erin Rea
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:21:16,14,8,5,1,0,2,13,2,1,1,1,1,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:27:27,15,8,6,1,1,1,4,0,0,0,0,0,19 Olivia Hampton,76 Emma Palacio,15 Caitlin Fitzgerald
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:29:07,16,9,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:30:11,17,9,7,1,1,3,22,2,2,1,2,0,17 Kelsey Devlin,23 Colette Pellegrini,33 Yuge Xiao
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:34:25,18,10,7,0,0,1,1,1,0,1,0,1,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:35:55,19,10,8,1,1,1,9,0,0,0,0,0,17 Kelsey Devlin,36 Jaelee Cruz,17 Kelsey Devlin
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:37:34,20,11,8,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:38:26,21,11,9,1,1,1,9,0,0,0,0,0,23 Colette Pellegrini,71 Shirlee Wohl,52 Caitlin Connell
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:40:34,22,12,9,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:41:48,23,12,10,1,1,2,15,1,0,1,0,1,17 Kelsey Devlin,71 Shirlee Wohl,36 Jaelee Cruz
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:44:31,24,13,10,0,0,1,1,1,1,0,0,1,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:46:55,25,13,11,0,0,1,2,1,0,1,0,0,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:50:45,26,13,12,1,1,1,9,0,0,0,0,0,17 Kelsey Devlin,23 Colette Pellegrini,16 Erin Rea
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 21:52:36,27,14,12,0,1,1,27,0,0,0,0,1,36 Jaelee Cruz,23 Colette Pellegrini,16 Erin Rea
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 22:00:30,28,15,12,0,0,3,4,3,3,0,2,1,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 22:05:18,29,15,13,1,1,1,10,0,0,0,0,0,36 Jaelee Cruz,33 Yuge Xiao,23 Colette Pellegrini
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 22:07:03,30,16,13,0,0,1,1,1,1,1,0,1,NA,NA,NA
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 22:09:58,31,16,14,1,1,1,10,0,0,0,0,0,71 Shirlee Wohl,36 Jaelee Cruz,33 Yuge Xiao
+PORT @ MINN,Week 4,PORT,MINN,2024-04-30 22:11:31,32,17,14,0,0,1,0,0,0,0,1,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/13/24 22:20,1,0,0,1,1,3,6,2,1,1,0,2,31 María Vargas,08 Dani Ortiz,06 Willy (Natalie Wilson)
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 4:44,2,1,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 4:46,3,1,1,1,1,1,7,0,0,0,0,0,08 Dani Ortiz,20 Soju Hokari,31 María Vargas
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 4:51,4,2,1,0,1,2,17,1,0,1,0,2,26 Morgan Lally,27 Therese Doebler,03 Alex Krueger
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 4:59,5,3,1,0,0,2,7,2,2,0,0,2,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:05,6,3,2,1,1,1,9,0,0,0,0,0,21 Samantha Li,08 Dani Ortiz,51 Lilli Popovich
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:09,7,4,2,0,0,1,5,1,0,1,0,1,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:19,8,4,3,1,0,2,7,2,2,0,0,1,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:25,9,4,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:28,10,4,5,1,0,4,20,4,4,0,1,2,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:39,11,4,6,1,1,1,5,0,0,0,0,0,26 Morgan Lally,54 Liv Ford,10 Mia Griner
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:46,12,5,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:48,13,5,7,1,1,1,3,0,0,0,0,0,29 Charlotte Doran,31 María Vargas,14 Lindsay Allman
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:50,14,6,7,0,1,1,5,0,0,0,1,0,05 Megan Jarriel,54 Liv Ford,10 Mia Griner
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:53,15,7,7,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 5:55,16,7,8,1,0,1,10,1,1,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 6:00,17,7,9,1,0,3,12,3,2,1,1,1,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 6:12,18,7,10,1,1,3,14,2,2,0,0,2,10 Mia Griner,54 Liv Ford,13 Hannah Abraham
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 6:18,19,8,10,0,0,2,23,2,1,1,2,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 6:28,20,8,11,1,1,1,8,0,0,0,0,0,08 Dani Ortiz,29 Charlotte Doran,51 Lilli Popovich
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 6:31,21,9,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 6:32,22,9,12,1,0,1,4,1,1,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 6:34,23,9,13,1,1,1,3,0,0,0,0,0,54 Liv Ford,26 Morgan Lally,54 Liv Ford
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 6:51,25,11,13,0,0,1,1,1,1,0,0,1,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 7:16,26,11,14,1,0,1,8,1,1,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 7:18,27,11,15,1,1,1,11,0,0,0,0,0,19 Elle Mayer,54 Liv Ford,27 Therese Doebler
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 7:21,28,12,15,0,0,1,1,1,0,1,0,1,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 7:23,29,12,16,1,1,2,8,1,0,1,0,1,26 Morgan Lally,08 Dani Ortiz,26 Morgan Lally
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 7:26,30,13,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 7:27,31,13,17,1,1,3,12,2,2,0,2,0,31 María Vargas,20 Soju Hokari,75 Sarah Kingsley-Hart
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 7:32,32,14,17,0,1,1,2,0,0,0,0,1,18 Naomi Anderson,13 Hannah Abraham,51 Lilli Popovich
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 7:34,33,15,17,0,1,1,7,0,0,0,0,1,51 Lilli Popovich,26 Morgan Lally,06 Willy (Natalie Wilson)
+ATL @ NASH,Week 5,ATL,NASH,5/14/24 7:36,34,16,17,0,0,1,4,1,1,0,1,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/12/24 12:15,1,0,0,0,0,2,13,2,1,1,1,1,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/12/24 12:19,2,0,1,1,1,1,15,0,0,0,0,0,72 Grace Castro,28 Margie Quinn,10 Tori Taylor
+ATL @ NASH,Week 5,NASH,ATL,5/12/24 12:24,3,1,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/12/24 12:26,4,1,2,1,0,2,4,2,2,0,0,1,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/12/24 12:32,5,1,3,1,1,3,19,2,2,0,1,1,82 Mary Turner,25 Nadine Rowen,82 Mary Turner
+ATL @ NASH,Week 5,NASH,ATL,5/12/24 12:37,6,2,3,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 17:02,7,2,4,1,1,2,24,1,1,0,0,1,27 Katharine Gilbert,10 Tori Taylor,28 Margie Quinn
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 17:09,8,3,4,0,1,2,19,1,1,0,1,1,28 Margie Quinn,10 Tori Taylor,16 Emily Branson
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 17:18,9,4,4,1,1,1,19,0,0,0,0,0,27 Katharine Gilbert,28 Margie Quinn,22 Rebecca Henley
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 17:25,10,5,4,0,1,4,36,3,3,0,2,2,28 Margie Quinn,10 Tori Taylor,16 Emily Branson
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 17:37,11,6,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:04,12,6,5,1,1,1,8,0,0,0,0,0,22 Rebecca Henley,10 Tori Taylor,22 Rebecca Henley
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:09,13,7,5,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:11,14,7,6,1,0,1,2,1,1,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:14,15,7,7,1,1,1,15,0,0,0,0,0,24 Mia Letterie,08 Grace Robinson,24 Mia Letterie
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:19,16,8,7,0,1,2,15,1,1,0,1,1,24 Mia Letterie,26 Leah Shorb,23 Breanna Snipes
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:25,17,9,7,0,1,3,13,2,2,0,2,1,72 Grace Castro,28 Margie Quinn,10 Tori Taylor
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:33,18,10,7,0,0,2,11,2,2,0,0,2,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:39,19,10,8,1,1,3,15,2,2,0,1,1,28 Margie Quinn,22 Rebecca Henley,72 Grace Castro
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:45,20,11,8,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:47,21,11,9,1,1,1,10,0,0,0,0,0,72 Grace Castro,28 Margie Quinn,08 Grace Robinson
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:53,22,12,9,0,1,1,4,0,0,0,0,1,23 Breanna Snipes,09 Emma Patterson,21 Elena Rubino
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:56,23,13,9,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 22:58,24,13,10,1,0,1,9,1,1,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:00,25,13,11,1,1,2,19,1,0,1,1,0,72 Grace Castro,10 Tori Taylor,22 Rebecca Henley
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:06,26,14,11,0,1,1,12,0,0,0,0,1,28 Margie Quinn,10 Tori Taylor,22 Rebecca Henley
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:11,27,15,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:13,28,15,12,1,1,2,16,1,1,0,0,1,08 Grace Robinson,27 Katharine Gilbert,10 Tori Taylor
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:18,29,16,12,0,0,1,3,1,1,0,1,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:21,30,16,13,1,1,1,8,0,0,0,0,0,28 Margie Quinn,72 Grace Castro,10 Tori Taylor
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:22,31,17,13,0,0,2,11,2,2,0,2,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:28,32,17,14,1,0,1,3,1,1,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:29,33,17,15,1,0,1,2,1,1,0,0,0,NA,NA,NA
+ATL @ NASH,Week 5,NASH,ATL,5/6/24 23:33,34,17,16,1,0,2,7,1,1,0,1,0,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:11:16,1,0,0,0,1,2,9,1,1,0,0,2,55 Courtney Walbe,21 Sarah Mondschein,14 Jessica Hendrickson
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:14:23,2,1,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:15:58,3,1,1,1,1,4,28,3,2,1,2,1,53 Emma Piorier,04 Erica Baken,28 Emma Peaslee
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:23:36,4,2,1,0,1,4,9,3,1,3,3,1,05 Steph Rupp,44 Sarah Meckstroth,07 Danielle Byers
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:31:10,5,3,1,0,0,1,4,1,1,1,0,1,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:33:35,6,3,2,1,1,1,4,0,0,0,0,0,03 Makella Daley,02 Steph Wood,07 Danielle Byers
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:36:20,7,4,2,0,1,1,9,0,0,0,0,1,01 Amelia Zdechlik,55 Courtney Walbe,10 Jane Koch
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:39:12,8,5,2,0,1,1,5,0,0,0,1,0,45 Emery Otapalik,00 Alicia Carr,33 Julia Hill
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:41:36,9,6,2,0,1,4,24,3,3,1,0,4,28 Emma Peaslee,02 Steph Wood,04 Erica Baken
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:49:06,10,7,2,0,1,1,3,0,0,0,0,1,00 Alicia Carr,21 Sarah Mondschein,49 Elly Fireside-Ostergaard
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:51:03,11,8,2,0,1,1,6,0,0,0,1,0,11 Rachel Johnson,10 Jane Koch,02 Steph Wood
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:53:16,12,9,2,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:54:49,13,9,3,1,1,1,14,0,0,0,0,0,03 Makella Daley,05 Steph Rupp,44 Sarah Meckstroth
+MKE @ MINN,Week 5,MINN,MKE,2024-05-04 18:57:16,14,10,3,0,1,1,2,0,0,0,1,0,11 Rachel Johnson,21 Sarah Mondschein,14 Jessica Hendrickson
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 15:59:24,15,11,3,0,0,2,16,2,2,0,2,0,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:08:26,16,11,4,1,1,1,7,0,0,0,0,0,53 Emma Piorier,03 Makella Daley,28 Emma Peaslee
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:10:28,17,12,4,0,1,1,5,0,0,0,0,1,00 Alicia Carr,33 Julia Hill,49 Elly Fireside-Ostergaard
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:13:56,18,13,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:15:41,19,13,5,1,1,1,5,0,0,0,0,0,53 Emma Piorier,44 Sarah Meckstroth,53 Emma Piorier
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:16:50,20,14,5,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:18:32,21,14,6,1,1,3,15,2,2,0,0,2,04 Erica Baken,07 Danielle Byers,53 Emma Piorier
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:22:13,22,15,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:23:34,23,15,7,1,0,1,2,1,1,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:25:53,24,15,8,1,0,1,8,1,1,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:28:20,25,15,9,1,1,1,9,0,0,0,0,0,03 Makella Daley,04 Erica Baken,44 Sarah Meckstroth
+MKE @ MINN,Week 5,MINN,MKE,2024-05-06 16:30:41,26,16,9,0,1,1,11,0,0,0,1,0,14 Jessica Hendrickson,10 Jane Koch,21 Sarah Mondschein
+MKE @ MINN,Week 5,MINN,MKE,2024-05-07 15:04:10,27,17,9,0,1,1,4,0,0,0,0,1,15 Chelsea Semper,02 Steph Wood,47 Tori Gray
+MKE @ MINN,Week 5,MINN,MKE,2024-05-07 15:07:23,28,18,9,0,1,1,2,0,0,0,0,1,21 Sarah Mondschein,10 Jane Koch,49 Elly Fireside-Ostergaard
+MKE @ MINN,Week 5,MINN,MKE,2024-05-07 15:10:26,29,19,9,0,0,2,8,2,2,0,1,1,NA,NA,NA
+MKE @ MINN,Week 5,MINN,MKE,2024-05-07 15:13:25,30,19,10,1,1,1,2,0,0,0,0,0,03 Makella Daley,04 Erica Baken,44 Sarah Meckstroth
+MKE @ MINN,Week 5,MINN,MKE,2024-05-07 15:14:55,31,20,10,0,1,3,17,2,2,1,2,1,21 Sarah Mondschein,11 Rachel Johnson,49 Elly Fireside-Ostergaard
+MKE @ MINN,Week 5,MINN,MKE,2024-05-07 15:19:25,32,21,10,0,0,2,8,2,2,1,0,2,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 10:22:48,1,0,0,1,0,2,5,2,2,0,0,1,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 10:28:00,2,0,1,1,1,1,5,0,0,0,0,0,52 Erynn Schroeder,27 Steph Bugasch,07 Sydney Stelzer
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 10:33:12,3,1,1,0,0,3,3,3,2,1,1,2,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 10:41:16,4,1,2,1,0,4,27,4,4,0,1,2,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 10:50:49,5,1,3,1,1,2,7,1,1,0,1,0,10 Chelsea Twohig,22 Alex Ballinger,72 Jacqueline Jarik
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 10:54:03,6,2,3,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 11:22:55,7,2,4,1,0,1,4,1,1,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 11:25:41,8,2,5,1,0,1,8,1,1,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 11:28:26,9,2,6,1,0,4,10,4,3,1,2,1,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 11:34:12,10,2,7,1,0,1,7,1,0,1,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 11:36:58,11,2,8,1,0,1,4,1,1,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 11:38:29,12,2,9,1,1,1,7,0,0,0,0,0,22 Alex Ballinger,72 Jacqueline Jarik,12 Sydney French
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 11:40:55,13,3,9,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 11:42:07,14,3,10,1,0,1,5,1,1,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 11:58:15,15,3,11,1,1,3,19,2,2,0,0,2,27 Steph Bugasch,52 Erynn Schroeder,07 Sydney Stelzer
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:03:19,16,4,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:05:53,17,4,12,1,0,1,2,1,1,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:06:57,18,4,13,1,1,1,10,0,0,0,0,0,32 Mickela Heilicher,20 Madison Lang,21 Annie Shriver
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:09:04,19,5,13,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:11:20,20,5,14,1,1,1,7,0,0,0,0,0,21 Annie Shriver,52 Erynn Schroeder,27 Steph Bugasch
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:13:18,21,6,14,0,0,2,7,2,1,1,1,1,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:17:05,22,6,15,1,1,1,5,0,0,0,0,0,13 Erin Newman,20 Madison Lang,32 Mickela Heilicher
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:18:45,23,7,15,0,1,1,7,0,0,0,1,0,22 Alex Ballinger,47 Penny Wu,10 Chelsea Twohig
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:22:32,24,8,15,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:26:08,25,8,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:27:44,26,8,17,1,0,1,4,1,1,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:29:23,27,8,18,1,0,1,1,1,0,1,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:31:32,28,8,19,1,0,1,1,1,1,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:33:49,29,8,20,1,1,3,8,2,2,0,0,2,22 Alex Ballinger,12 Sydney French,10 Chelsea Twohig
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:36:56,30,9,20,0,0,0,0,0,0,0,0,0,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:38:40,31,9,21,1,0,3,14,3,3,0,1,1,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:42:53,32,9,22,1,0,2,5,2,1,2,0,1,NA,NA,NA
+MKE @ MINN,Week 5,MKE,MINN,2024-05-05 12:45:36,33,9,23,1,0,1,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 13:22,1,0,0,0,0,1,12,1,1,0,0,1,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 19:07,2,0,1,1,1,4,23,3,2,1,2,1,92 Charlotte Wilson,77 Katrina Mcguire,40 Claire Milton
+NY @ INDY,Week 5,INDY,NY,5/5/24 19:25,3,1,1,0,0,1,2,1,0,1,0,1,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 19:31,4,1,2,1,0,1,3,1,1,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 19:39,5,1,3,1,0,1,3,1,1,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/6/24 22:11,6,1,4,1,1,1,12,0,0,0,0,0,29 Emily Schloneger,04 Rachel Mast,20 Shirley Saunders
+NY @ INDY,Week 5,INDY,NY,5/6/24 22:21,7,1,4,2,0,1,1,1,1,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 19:53,8,2,5,1,1,1,16,0,0,0,0,0,77 Katrina Mcguire,11 Tracey Lo,40 Claire Milton
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:02,9,3,5,0,0,1,9,1,1,0,0,1,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:13,10,3,6,1,1,1,4,0,0,0,0,0,18 Laura Gerencser,40 Claire Milton,77 Katrina Mcguire
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:16,11,4,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:21,12,4,7,1,1,1,19,0,0,0,0,0,18 Laura Gerencser,77 Katrina Mcguire,34 Lauren Kitten
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:28,13,5,7,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:33,14,5,8,1,1,1,7,0,0,0,0,0,34 Lauren Kitten,11 Tracey Lo,24 Abby Swensen
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:37,15,6,8,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:41,16,6,9,1,0,1,7,1,1,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:45,17,6,10,1,0,1,1,1,1,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 20:48,18,6,11,0,1,5,15,4,4,0,3,2,NA,18 Laura Gerencser,11 Tracey Lo
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:10,19,7,11,0,1,1,10,0,0,0,0,1,14 Briana Burriss,23 Lili Hobday,33 Jalyn Baumgartner
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:16,20,8,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:19,21,8,12,1,1,1,4,0,0,0,0,0,11 Tracey Lo,40 Claire Milton,77 Katrina Mcguire
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:23,22,9,12,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:25,23,9,13,1,0,2,8,2,2,0,0,1,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:31,24,9,14,1,0,1,4,1,1,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:36,25,9,15,1,0,2,6,2,2,0,0,1,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:42,26,9,16,1,1,1,15,0,0,0,0,0,02 Maketa Mattimore,06 Risa Umeno,03 Mary Timmons
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:50,27,10,16,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:53,28,10,17,1,0,1,3,1,1,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 21:55,29,10,18,1,0,1,3,1,0,1,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 22:00,30,10,19,1,1,1,5,0,0,0,0,0,04 Rachel Mast,24 Abby Swensen,20 Shirley Saunders
+NY @ INDY,Week 5,INDY,NY,5/5/24 22:03,31,11,19,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 22:06,32,11,20,1,0,1,4,1,1,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,INDY,NY,5/5/24 22:09,33,11,21,1,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 11:19,1,0,0,1,1,2,15,1,1,0,0,1,31 Eli Presberg,20 Yina Cartagena,00 Genny De Jesus
+NY @ INDY,Week 5,NY,INDY,5/9/2024 11:49,2,1,0,0,0,3,13,3,3,0,0,3,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 11:56,3,1,1,1,1,2,7,1,0,1,0,1,24 Jolie Krebs,20 Yina Cartagena,31 Eli Presberg
+NY @ INDY,Week 5,NY,INDY,5/9/2024 11:59,4,2,1,0,1,1,11,0,0,0,0,1,31 Eli Presberg,09 Cassandra Brown,05 Emily Wang
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:02,5,3,1,0,1,1,13,0,0,0,1,0,09 Cassandra Brown,20 Yina Cartagena,96 Nina Finley
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:06,6,4,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:06,7,4,2,1,1,1,1,0,0,0,0,0,NA,31 Eli Presberg,00 Genny De Jesus
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:06,8,5,2,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:08,9,5,3,1,1,2,10,1,1,0,1,0,24 Jolie Krebs,19 Estelle Ding,24 Jolie Krebs
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:15,10,6,3,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:16,11,6,4,1,1,1,9,0,0,0,0,0,00 Genny De Jesus,20 Yina Cartagena,24 Jolie Krebs
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:18,12,7,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:20,13,7,5,1,1,1,12,0,0,0,0,0,31 Eli Presberg,20 Yina Cartagena,00 Genny De Jesus
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:22,14,8,5,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:24,15,8,6,1,1,1,7,0,0,0,0,0,20 Yina Cartagena,02 Jolene Zheng,24 Jolie Krebs
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:25,16,9,6,0,1,1,7,0,0,0,1,0,19 Estelle Ding,24 Jolie Krebs,00 Genny De Jesus
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:27,17,10,6,0,0,1,11,0,0,0,0,1,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:31,18,11,6,1,0,5,30,5,5,0,1,3,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:40,19,11,7,1,0,1,4,1,1,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:42,20,11,8,1,1,1,10,0,0,0,0,0,24 Jolie Krebs,20 Yina Cartagena,31 Eli Presberg
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:43,21,12,8,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:45,22,12,9,1,1,1,7,0,0,0,0,0,20 Yina Cartagena,21 Montana Roberts,00 Genny De Jesus
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:46,23,13,9,0,1,2,16,2,2,1,2,1,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:51,24,14,9,0,1,1,9,0,0,0,1,0,20 Yina Cartagena,09 Cassandra Brown,97 Hannah Glick
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:52,25,15,9,0,1,2,12,1,1,0,1,1,24 Jolie Krebs,00 Genny De Jesus,19 Estelle Ding
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:56,26,16,9,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:58,27,16,10,1,1,1,6,0,0,0,0,0,20 Yina Cartagena,21 Montana Roberts,24 Jolie Krebs
+NY @ INDY,Week 5,NY,INDY,5/9/2024 12:59,28,17,10,0,1,1,5,0,0,0,1,0,31 Eli Presberg,24 Jolie Krebs,00 Genny De Jesus
+NY @ INDY,Week 5,NY,INDY,5/9/2024 13:00,29,18,10,0,1,1,2,0,0,0,0,1,96 Nina Finley,09 Cassandra Brown,88 Nikki Hair
+NY @ INDY,Week 5,NY,INDY,5/9/2024 13:02,30,19,10,0,0,0,0,0,0,0,0,0,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 13:03,31,19,11,1,1,1,9,0,0,0,0,0,02 Jolene Zheng,21 Montana Roberts,00 Genny De Jesus
+NY @ INDY,Week 5,NY,INDY,5/9/2024 13:05,32,20,11,0,0,1,3,0,0,0,0,1,NA,NA,NA
+NY @ INDY,Week 5,NY,INDY,5/9/2024 13:07,33,21,11,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 09:49:52,1,0,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 09:54:31,2,0,1,1,0,1,13,1,1,1,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 09:58:41,3,0,2,1,1,1,9,0,0,0,0,0,71 Wren Vogel,31 Nikki Gilbert,26 Amy Broome
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 10:04:15,4,1,2,0,0,2,7,2,2,1,0,2,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 10:10:36,5,1,3,0,0,5,28,5,5,2,2,2,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 10:28:36,6,1,4,1,1,2,17,1,1,0,0,1,31 Nikki Gilbert,03 Madi Cannon,31 Nikki Gilbert
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 10:44:00,7,2,4,0,1,1,12,0,0,0,0,1,08 Mindy Radike,19 Vanessa Bacorn,12 Annie Ortiz
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 10:47:21,8,3,4,1,0,1,13,1,1,0,1,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 10:56:51,9,3,5,1,0,1,7,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 10:59:15,10,3,6,0,0,1,6,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:04:43,11,3,7,1,0,2,17,2,2,1,1,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:10:43,12,3,8,1,0,1,1,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:13:21,13,3,9,1,0,1,3,1,0,1,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:15:22,14,3,10,0,1,1,5,0,0,0,1,0,08 Mindy Radike,07 Shiru Liu,19 Vanessa Bacorn
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:23:23,15,4,10,0,0,1,1,1,0,1,0,1,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:26:08,16,4,11,1,0,1,8,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:28:45,17,4,12,1,0,1,5,1,1,1,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:31:33,18,4,13,0,0,2,16,2,2,0,0,1,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:41:35,19,4,14,1,0,1,11,1,0,1,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:43:29,20,4,15,1,0,1,7,1,0,1,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:46:04,21,4,16,1,0,1,8,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:49:24,22,4,17,1,0,1,9,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 11:51:35,23,4,18,1,1,1,17,0,0,0,0,0,69 Jaime Estes,03 Madi Cannon,69 Jaime Estes
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 12:02:22,24,5,18,0,0,2,8,2,2,0,1,1,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 12:09:35,25,5,19,1,1,1,5,0,0,0,0,0,15 Elise Franke,31 Nikki Gilbert,03 Madi Cannon
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 12:11:16,26,6,19,0,1,1,8,0,0,0,0,1,27 Jocelyn Jessop,81 Mackenzie Bailey,22 Sydney Loughran
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 12:13:53,27,7,19,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 12:16:42,28,7,20,1,0,2,18,2,2,0,0,1,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 12:25:14,29,7,21,1,0,2,8,2,2,0,1,0,NA,NA,NA
+PHL @ ATX,Week 5,ATX,PHL,2024-05-12 12:30:54,30,7,22,1,0,1,7,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 18:04:23,1,0,0,1,1,1,2,0,0,0,0,0,10 Andrea DeSabato,20 Danielle Walsh,01 Emily Shields
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 18:17:18,2,1,0,0,1,1,8,0,0,0,0,1,05 Lindsay McKenna,04 Raha Mozaffari,05 Lindsay McKenna
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 18:20:26,3,2,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 18:21:48,4,2,1,1,1,3,23,2,1,1,0,2,03 Rachel Alfano,23 Natalie Bova,01 Emily Shields
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 18:26:51,5,3,1,0,1,5,28,4,3,2,3,2,20 Danielle Walsh,23 Natalie Bova,03 Rachel Alfano
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 18:46:41,6,4,1,0,1,1,1,0,0,0,1,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 18:50:33,7,5,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:18:08,8,5,2,1,0,1,5,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:20:24,9,5,3,1,1,2,29,1,1,0,0,1,18 Sumi Onoe,11 Sara Liang,15 Layne Dodge
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:28:37,10,6,3,0,1,1,1,0,0,0,0,1,NA,00 Emilie Mohler,05 Lindsay McKenna
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:30:21,11,7,3,0,1,1,8,0,0,0,0,1,22 Liz Hart,23 Natalie Bova,03 Rachel Alfano
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:34:16,12,8,3,0,1,2,4,1,1,0,1,1,NA,08 Emma Soiles,13 Kat Harper
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:37:30,13,9,3,0,1,1,2,0,0,0,0,1,04 Raha Mozaffari,08 Emma Soiles,00 Emilie Mohler
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:39:30,14,10,3,0,1,1,5,0,0,0,0,1,05 Lindsay McKenna,04 Raha Mozaffari,00 Emilie Mohler
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:41:54,15,11,3,1,0,1,2,1,0,1,0,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:48:28,16,11,4,1,1,2,8,1,1,0,1,0,20 Danielle Walsh,01 Emily Shields,09 Sarah Hirannet
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:50:34,17,12,4,0,1,1,4,0,0,0,0,1,00 Emilie Mohler,08 Emma Soiles,13 Kat Harper
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:55:24,18,13,4,0,1,1,7,0,0,0,1,0,04 Raha Mozaffari,00 Emilie Mohler,33 Jana Graham
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 19:57:53,19,14,4,0,1,2,15,1,0,1,2,0,09 Sarah Hirannet,10 Andrea DeSabato,01 Emily Shields
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:06:12,20,15,4,0,1,1,1,0,0,0,1,0,NA,11 Sara Liang,21 Linda Morse
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:08:19,21,16,4,0,1,1,5,0,0,0,1,0,04 Raha Mozaffari,08 Emma Soiles,00 Emilie Mohler
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:10:35,22,17,4,0,1,1,15,0,0,0,0,1,33 Jana Graham,24 Casey Gorman,33 Jana Graham
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:13:34,23,18,4,0,1,1,3,0,0,0,1,0,15 Layne Dodge,11 Sara Liang,00 Emilie Mohler
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:15:40,24,19,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:17:46,25,19,5,1,1,3,5,2,2,0,2,0,20 Danielle Walsh,01 Emily Shields,23 Natalie Bova
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:21:06,26,20,5,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:21:53,27,20,6,1,0,1,3,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:23:11,28,20,7,1,1,1,5,0,0,0,0,0,10 Andrea DeSabato,20 Danielle Walsh,09 Sarah Hirannet
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:25:09,29,21,7,0,1,2,16,1,1,0,2,0,11 Sara Liang,21 Linda Morse,13 Kat Harper
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:32:05,30,22,7,0,1,2,8,1,0,1,0,2,18 Sumi Onoe,21 Linda Morse,05 Lindsay McKenna
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:35:47,31,23,7,0,1,1,1,0,0,0,1,0,NA,NA,NA
+PHL @ ATX,Week 5,original stats,PHLATX,2024-05-04 20:38:19,32,24,7,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 18:04:23,1,0,0,1,1,1,2,0,0,0,0,0,10 Andrea DeSabato,20 Danielle Walsh,01 Emily Shields
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 18:17:18,2,1,0,0,1,1,8,0,0,0,0,1,05 Lindsay McKenna,04 Raha Mozaffari,05 Lindsay McKenna
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 18:20:26,3,2,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 18:21:48,4,2,1,1,1,3,23,2,1,1,0,2,03 Rachel Alfano,23 Natalie Bova,01 Emily Shields
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 18:26:51,5,3,1,0,1,5,28,4,3,2,3,2,20 Danielle Walsh,23 Natalie Bova,03 Rachel Alfano
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 18:50:33,7,5,1,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:18:08,8,5,2,1,0,1,5,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:20:24,9,5,3,1,1,2,29,1,1,0,0,1,18 Sumi Onoe,11 Sara Liang,15 Layne Dodge
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:28:37,10,6,3,0,1,1,1,0,0,0,0,1,NA,00 Emilie Mohler,05 Lindsay McKenna
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:30:21,11,7,3,0,1,1,8,0,0,0,0,1,22 Liz Hart,23 Natalie Bova,03 Rachel Alfano
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:34:16,12,8,3,0,1,2,4,1,1,0,1,1,NA,08 Emma Soiles,13 Kat Harper
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:37:30,13,9,3,0,1,1,2,0,0,0,0,1,04 Raha Mozaffari,08 Emma Soiles,00 Emilie Mohler
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:39:30,14,10,3,0,1,1,5,0,0,0,0,1,05 Lindsay McKenna,04 Raha Mozaffari,00 Emilie Mohler
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:41:54,15,11,3,1,0,1,2,1,0,1,0,0,NA,NA,NA
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:48:28,16,11,4,1,1,2,8,1,1,0,1,0,20 Danielle Walsh,01 Emily Shields,09 Sarah Hirannet
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:50:34,17,12,4,0,1,1,4,0,0,0,0,1,00 Emilie Mohler,08 Emma Soiles,13 Kat Harper
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:55:24,18,13,4,0,1,1,7,0,0,0,1,0,04 Raha Mozaffari,00 Emilie Mohler,33 Jana Graham
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 19:57:53,19,14,4,0,1,2,15,1,0,1,2,0,09 Sarah Hirannet,10 Andrea DeSabato,01 Emily Shields
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:06:12,20,15,4,0,1,1,1,0,0,0,1,0,NA,11 Sara Liang,21 Linda Morse
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:08:19,21,16,4,0,1,1,5,0,0,0,1,0,04 Raha Mozaffari,08 Emma Soiles,00 Emilie Mohler
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:10:35,22,17,4,0,1,1,15,0,0,0,0,1,33 Jana Graham,24 Casey Gorman,33 Jana Graham
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:13:34,23,18,4,0,1,1,3,0,0,0,1,0,15 Layne Dodge,11 Sara Liang,00 Emilie Mohler
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:15:40,24,19,4,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:17:46,25,19,5,1,1,3,5,2,2,0,2,0,20 Danielle Walsh,01 Emily Shields,23 Natalie Bova
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:21:06,26,20,5,0,0,0,0,0,0,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:21:53,27,20,6,1,0,1,3,1,1,0,0,0,NA,NA,NA
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:23:11,28,20,7,1,1,1,5,0,0,0,0,0,10 Andrea DeSabato,20 Danielle Walsh,09 Sarah Hirannet
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:25:09,29,21,7,0,1,2,16,1,1,0,2,0,11 Sara Liang,21 Linda Morse,13 Kat Harper
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:32:05,30,22,7,0,1,2,8,1,0,1,0,2,18 Sumi Onoe,21 Linda Morse,05 Lindsay McKenna
+PHL @ ATX,Week 5,PHL,ATX,2024-05-04 20:38:19,32,24,7,0,0,0,0,0,0,0,0,0,NA,NA,NA
