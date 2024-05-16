@@ -3,20 +3,25 @@ rm(list = ls())
 library(tidyverse)
 
 possession.df <- read_csv("integ-data/Possessions.csv")
-player.stats.df <- read_csv("integ-data/Player-Stats.csv")
+
+# this is per-game player statistics computed by Statto
+player.stats.df <- read_csv("integ-data/Player-Stats.csv") |>
+  # convert meters to yards
+  mutate(across(.cols = contains("(m)"), .fn = ~.x * 1.094)) |>
+  rename_with(.fn = \(x)sub("[(]m[)]","(yd)",x))
+
 defensive.blocks.df <- read_csv("integ-data/Defensive-Blocks.csv")
+
 points.df <- read_csv("integ-data/Points.csv")
-passes.df <- read_csv("integ-data/Passes.csv")
+
+# this is 1-row per pass
+##  use it to calculate the OVERALL pass and reception average distance
+passes.df <- read_csv("integ-data/Passes.csv") |>
+  # convert meters to yards
+  mutate(across(.cols = contains("(m)"), .fn = ~.x * 1.094)) |>
+  rename_with(.fn = \(x)sub("[(]m[)]","(yd)",x))
 
 stat.priority <- read_csv("PUL Stats Hub Priority.csv")
-
-################################################################################
-# PUL field dimensions are different than those assumed by the STATTO app,
-#   so we rescale them here
-# PUL field dimensions are 40 yards wide by 120 yards long (including 20-yard endzones)
-
-
-
 
 ################################################################################
 # Team stats
@@ -67,47 +72,39 @@ team.stats.game <- inner_join(team.goal.stats.game, team.pass.stats.game)
 stat.priority  |> filter(`Priority Tier` == "1 - Must Have", Type == "Individual")
 stat.priority  |> filter(`Priority Tier` == "2 - Nice To Have", Type == "Individual")
 
-player.stats.overall <- player.stats.df |>
-  group_by(team, Player) |>
-  summarise(assists = sum(Assists),
-            secondary_assists = sum(`Secondary assists`),
-            goals = sum(Goals),
-            turnovers = sum(Turnovers),
-            defensive_blocks = sum(`Defensive blocks`),
-            total_throw_gain = sum(`Total completed throw gain (m)`),
-            total_catch_gain = sum(`Total caught pass gain (m)`),
-            offensive_points_played = sum(`Offense points played`),
-            defensive_points_played = sum(`Defense points played`),
-            touches = sum(Touches),
-            throws = sum(Throws),
-            possessions_initiated = sum(`Possessions initiated`),
-            thrower_errors = sum(`Thrower errors`),
-            receiver_errors = sum(`Receiver errors`),
-            avg_completed_throw_gain = mean(`Average completed throw gain (m)`),
-            avg_caught_pass_gain = mean(`Average caught pass gain (m)`),
-            .groups = "drop")
 
 player.stats.game <- player.stats.df |>
-  group_by(team, Player, match, week) |>
-  # # 07 Kami Groom (DC) has duplicate rows in NASH @ DC Week 2
-  slice_max(`Points played total`, n = 1, with_ties = F) |>
-  summarise(assists = sum(Assists),
-            secondary_assists = sum(`Secondary assists`),
-            goals = sum(Goals),
-            turnovers = sum(Turnovers),
-            defensive_blocks = sum(`Defensive blocks`),
-            total_throw_gain = sum(`Total completed throw gain (m)`),
-            total_catch_gain = sum(`Total caught pass gain (m)`),
-            offensive_points_played = sum(`Offense points played`),
-            defensive_points_played = sum(`Defense points played`),
-            touches = sum(Touches),
-            throws = sum(Throws),
-            possessions_initiated = sum(`Possessions initiated`),
-            thrower_errors = sum(`Thrower errors`),
-            receiver_errors = sum(`Receiver errors`),
-            avg_completed_throw_gain = mean(`Average completed throw gain (m)`),
-            avg_caught_pass_gain = mean(`Average caught pass gain (m)`),
-            .groups = "drop")
+  select(week, match, team, Player, Touches, Throws, Catches, `Defensive blocks`,
+         Goals, Turnovers, `Total completed throw gain (yd)`, `Average completed throw gain (yd)`,
+         `Total caught pass gain (yd)`, `Average caught pass gain (yd)`,
+         `Offense points played`, `Defense points played`, `Possessions initiated`,
+         `Thrower errors`, `Receiver errors`, Assists, `Secondary assists`)
+
+overall.pass.dist <- passes.df |>
+  filter(`Turnover?` == 0) |>
+  group_by(team, Player = Thrower) |>
+  summarise(`Average completed throw gain (yd)` = mean(`Forward distance (yd)`))
+
+overall.receive.dist <- passes.df |>
+  filter(`Turnover?` == 0) |>
+  group_by(team, Player = Receiver) |>
+  summarise(`Average caught pass gain (yd)` = mean(`Forward distance (yd)`))
+
+player.stats.overall <- player.stats.game |>
+  select(-contains("Average")) |> # remove averages which can't be summed
+  # aggregate
+  group_by(Player, team) |>
+  summarise(across(.cols = where(is.numeric), .fn = sum),
+            .groups = "drop") |>
+  # add overall pass & reception averages
+  left_join(overall.pass.dist) |>
+  left_join(overall.receive.dist) |>
+  select(team, Player, Touches, Throws, Catches, `Defensive blocks`,
+         Goals, Turnovers, `Total completed throw gain (yd)`, `Average completed throw gain (yd)`,
+         `Total caught pass gain (yd)`, `Average caught pass gain (yd)`,
+         `Offense points played`, `Defense points played`, `Possessions initiated`,
+         `Thrower errors`, `Receiver errors`, Assists, `Secondary assists`)
+
 
 ################################################################################
 # save stats
