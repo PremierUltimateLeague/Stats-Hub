@@ -32,7 +32,7 @@ incomplete.teams <- if_else(nrow(incomplete.data) == 0,
 
 ```{r}
 team.stats.overall |>
-  reactable(sortable = T,
+  reactable(sortable = T, defaultPageSize = 11,
             columns = list(
               team = colDef(name = "team", filterable = TRUE),
               break_goals = colDef(name = "break goals"),
