@@ -12,6 +12,9 @@ library(tidyverse)
 all.files <- list.files("2024 Game Day Info/", pattern = ".csv",
                         full.names = T, recursive = T)
 
+# remove the "original stats" subdirectories
+all.files <- all.files[str_detect(all.files, "original stats", negate = T)]
+
 # this function reads a given path
 #   it adds match info to the file
 read_stat <- function(path){
