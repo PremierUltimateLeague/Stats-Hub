@@ -33,7 +33,7 @@ team.goal.stats.overall <- points.df |>
   summarise(goals = sum(`Scored?`),
             break_goals = sum(`Scored?`[`Started on offense?` == 0]),
             defensive_blocks = sum(`Defensive blocks`),
-            holds = sum(`Started on offense?`),
+            holds = sum(`Started on offense?` == 1 & `Scored?` == 1),
             clean_holds = sum(`Scored?` == 1 &
                                 `Started on offense?` == 1 &
                                 Turnovers == 0))
