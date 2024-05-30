@@ -8,10 +8,24 @@ format:
 ```{r setup, include=FALSE}
 library(reactable)
 library(tidyverse)
-team.stats.overall <- read_csv(here::here("stats/team-stats-overall.csv"))
-team.stats.game <- read_csv(here::here("stats/team-stats-game.csv"))
-player.stats.overall <- read_csv(here::here("stats/player-stats-overall.csv"))
-player.stats.game <- read_csv(here::here("stats/player-stats-game.csv"))
+team.stats.overall <- read_csv(here::here("stats/team-stats-overall.csv")) |> 
+  select(team, goals, break_goals, holds, clean_holds, defensive_blocks, everything())
+team.stats.game <- read_csv(here::here("stats/team-stats-game.csv")) |> 
+  select(team, match, week, goals, break_goals, holds, clean_holds, defensive_blocks, everything())
+player.stats.overall <- read_csv(here::here("stats/player-stats-overall.csv")) |>
+  select(team, Player, Goals, Assists, `Secondary assists`, `Defensive blocks`,
+         Turnovers, `Offense points played`, `Defense points played`,
+         Touches, Throws, Catches, `Thrower errors`, `Receiver errors`,
+         `Possessions initiated`, `Total completed throw gain (yd)`,
+         `Average completed throw gain (yd)`,
+         `Total caught pass gain (yd)`, `Average caught pass gain (yd)`)
+player.stats.game <- read_csv(here::here("stats/player-stats-game.csv")) |>
+  select(team, match, week, Player, Goals, Assists, `Secondary assists`, `Defensive blocks`,
+         Turnovers, `Offense points played`, `Defense points played`,
+         Touches, Throws, Catches, `Thrower errors`, `Receiver errors`,
+         `Possessions initiated`, `Total completed throw gain (yd)`,
+         `Average completed throw gain (yd)`,
+         `Total caught pass gain (yd)`, `Average caught pass gain (yd)`)
 data.coverage <- read_csv(here::here("stats/game-coverage.csv"))
 
 incomplete.data <- data.coverage |>
@@ -49,7 +63,7 @@ team.stats.overall |>
 
 ```{r}
 team.stats.game |>
-  reactable(sortable = T,
+  reactable(sortable = T, showPageSizeOptions = T,
             columns = list(
               team = colDef(name = "team", filterable = TRUE, sticky = "left"),
               match = colDef(name = "match", filterable = TRUE, sticky = "left"),
