@@ -21,7 +21,7 @@ read_stat <- function(path){
   path
   match = str_extract(path, "(?<before>\\w+) @ (?<after>\\w+)") # teams
   # this regex could be improved
-  match.week <- str_extract(path, "2024 Game Day Info//(.*?)_") |> str_remove("2024 Game Day Info//") |> str_remove("_")
+  match.week <- str_extract(path, "2024 Game Day Info/(.*?)_") |> str_remove("2024 Game Day Info/") |> str_remove("_") |> str_remove(coll("/"))
   team = word(path, -2, sep = "/") # this team these stats apply to
   opponent = str_remove_all(match, paste(team, "@", " ", sep = "|"))
   
