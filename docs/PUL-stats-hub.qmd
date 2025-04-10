@@ -8,44 +8,83 @@ format:
 ```{r setup, include=FALSE}
 library(reactable)
 library(tidyverse)
-team.stats.overall <- read_csv(here::here("stats/team-stats-overall.csv")) |> 
+
+# 2024 stats
+team.stats.overall.24 <- read_csv(here::here("stats/team-stats-overall.csv")) |> 
   select(team, goals, break_goals, holds, clean_holds, defensive_blocks, everything())
-team.stats.game <- read_csv(here::here("stats/team-stats-game.csv")) |> 
+team.stats.game.24 <- read_csv(here::here("stats/team-stats-game.csv")) |> 
   select(team, match, week, goals, break_goals, holds, clean_holds, defensive_blocks, everything())
-player.stats.overall <- read_csv(here::here("stats/player-stats-overall.csv")) |>
+player.stats.overall.24 <- read_csv(here::here("stats/player-stats-overall.csv")) |>
   select(team, Player, Goals, Assists, `Secondary assists`, `Defensive blocks`,
          Turnovers, `Offense points played`, `Defense points played`,
          Touches, Throws, Catches, `Thrower errors`, `Receiver errors`,
          `Possessions initiated`, `Total completed throw gain (yd)`,
          `Average completed throw gain (yd)`,
          `Total caught pass gain (yd)`, `Average caught pass gain (yd)`)
-player.stats.game <- read_csv(here::here("stats/player-stats-game.csv")) |>
+player.stats.game.24 <- read_csv(here::here("stats/player-stats-game.csv")) |>
   select(team, match, week, Player, Goals, Assists, `Secondary assists`, `Defensive blocks`,
          Turnovers, `Offense points played`, `Defense points played`,
          Touches, Throws, Catches, `Thrower errors`, `Receiver errors`,
          `Possessions initiated`, `Total completed throw gain (yd)`,
          `Average completed throw gain (yd)`,
          `Total caught pass gain (yd)`, `Average caught pass gain (yd)`)
-data.coverage <- read_csv(here::here("stats/game-coverage.csv"))
+data.coverage.24 <- read_csv(here::here("stats/game-coverage.csv"))
 
-incomplete.data <- data.coverage |>
+incomplete.data.24 <- data.coverage.24 |>
   filter(if_any(.cols = where(is.logical), ~.x == F))
 
-incomplete.games <- if_else(nrow(incomplete.data) == 0,
-                            "All games have complete data.",
-                            paste0("The following games have missing data: ",
-                                  knitr::combine_words(unique(incomplete.data$match)), "."))
+incomplete.games.24 <- if_else(nrow(incomplete.data.24) == 0,
+                               "All games have complete data.",
+                               paste0("The following games have missing data: ",
+                                      knitr::combine_words(unique(incomplete.data.24$match)), "."))
 
-incomplete.teams <- if_else(nrow(incomplete.data) == 0,
-                            "All teams have complete data.",
-                            paste0("The following teams have missing data: ",
-                                  knitr::combine_words(unique(incomplete.data$team)), "."))
+incomplete.teams.24 <- if_else(nrow(incomplete.data.24) == 0,
+                               "All teams have complete data.",
+                               paste0("The following teams have missing data: ",
+                                      knitr::combine_words(unique(incomplete.data.24$team)), "."))
+
+# 2025 stats
+team.stats.overall.25 <- read_csv(here::here("2025/stats/team-stats-overall.csv")) |> 
+  select(team, goals, break_goals, holds, clean_holds, defensive_blocks, everything())
+team.stats.game.25 <- read_csv(here::here("2025/stats/team-stats-game.csv")) |> 
+  select(team, match, week, goals, break_goals, holds, clean_holds, defensive_blocks, everything())
+player.stats.overall.25 <- read_csv(here::here("2025/stats/player-stats-overall.csv")) |>
+  select(team, Player, Goals, Assists, `Secondary assists`, `Defensive blocks`,
+         Turnovers, `Offense points played`, `Defense points played`,
+         Touches, Throws, Catches, `Thrower errors`, `Receiver errors`,
+         `Possessions initiated`, `Total completed throw gain (yd)`,
+         `Average completed throw gain (yd)`,
+         `Total caught pass gain (yd)`, `Average caught pass gain (yd)`)
+player.stats.game.25 <- read_csv(here::here("2025/stats/player-stats-game.csv")) |>
+  select(team, match, week, Player, Goals, Assists, `Secondary assists`, `Defensive blocks`,
+         Turnovers, `Offense points played`, `Defense points played`,
+         Touches, Throws, Catches, `Thrower errors`, `Receiver errors`,
+         `Possessions initiated`, `Total completed throw gain (yd)`,
+         `Average completed throw gain (yd)`,
+         `Total caught pass gain (yd)`, `Average caught pass gain (yd)`)
+data.coverage.25 <- read_csv(here::here("2025/stats/game-coverage.csv"))
+
+incomplete.data.25 <- data.coverage.25 |>
+  filter(if_any(.cols = where(is.logical), ~.x == F))
+
+incomplete.games.25 <- if_else(nrow(incomplete.data.25) == 0,
+                               "All games have complete data.",
+                               paste0("The following games have missing data: ",
+                                      knitr::combine_words(unique(incomplete.data.25$match)), "."))
+
+incomplete.teams.25 <- if_else(nrow(incomplete.data.25) == 0,
+                               "All teams have complete data.",
+                               paste0("The following teams have missing data: ",
+                                      knitr::combine_words(unique(incomplete.data.25$team)), "."))
 ```
 
-# Teams, overall
+# 2025
+
+## Row {.tabset}
 
 ```{r}
-team.stats.overall |>
+#| title: Teams, overall
+team.stats.overall.25 |>
   reactable(sortable = T, defaultPageSize = 11,
             columns = list(
               team = colDef(name = "team", filterable = TRUE, sticky = "left"),
@@ -59,10 +98,10 @@ team.stats.overall |>
             ))
 ```
 
-# Teams, by game
 
 ```{r}
-team.stats.game |>
+#| title: Teams, by game
+team.stats.game.25 |>
   reactable(sortable = T, showPageSizeOptions = T,
             columns = list(
               team = colDef(name = "team", filterable = TRUE, sticky = "left"),
@@ -78,10 +117,10 @@ team.stats.game |>
             ))
 ```
 
-# Players, overall
 
 ```{r}
-player.stats.overall |>
+#| title: Players, overall
+player.stats.overall.25 |>
   reactable(searchable = T, showPageSizeOptions = T,
             columns = list(
               team = colDef(filterable = T),
@@ -103,7 +142,7 @@ player.stats.overall |>
               `Secondary assists` = colDef(name = "sec.")
             ),
             columnGroups = list(
-              colGroup(name = "2024 season",
+              colGroup(name = "2025 season",
                        columns = c("team", "Player"), sticky = "left"),
               colGroup(name = "Comp. Throw Gain (yd)",
                        columns = c("Total completed throw gain (yd)",
@@ -121,10 +160,10 @@ player.stats.overall |>
             ))
 ```
 
-# Players, by game
 
 ```{r}
-player.stats.game |>
+#| title: Players, by game
+player.stats.game.25 |>
   reactable(searchable = T, showPageSizeOptions = T,
             columns = list(
               team = colDef(filterable = T, sticky = "left"),
@@ -165,12 +204,146 @@ player.stats.game |>
             ))
 ```
 
-# Data Coverage
-
-`r incomplete.games`
-
-`r incomplete.teams`
 
 ```{r}
-reactable(data.coverage, filterable = T, showPageSizeOptions = T, defaultPageSize = 20)
+#| title: Data Coverage
+
+paste(incomplete.games.25)
+paste(incomplete.teams.25)
+reactable(data.coverage.25, filterable = T, showPageSizeOptions = T, defaultPageSize = 20)
+```
+
+# 2024 
+
+## Row {.tabset}
+
+```{r}
+#| title: Teams, overall
+team.stats.overall.24 |>
+  reactable(sortable = T, defaultPageSize = 11,
+            columns = list(
+              team = colDef(name = "team", filterable = TRUE, sticky = "left"),
+              break_goals = colDef(name = "break goals"),
+              defensive_blocks = colDef(name = "defensive blocks"),
+              clean_holds = colDef(name = "clean holds"),
+              pass_attempts = colDef(name = "pass attempts"),
+              completed_passess = colDef(name = "comp. passes"),
+              completion_rate = colDef(name = "comp. rate",
+                                       format = colFormat(percent = T, digits = 1))
+            ))
+```
+
+
+```{r}
+#| title: Teams, by game
+team.stats.game.24 |>
+  reactable(sortable = T, showPageSizeOptions = T,
+            columns = list(
+              team = colDef(name = "team", filterable = TRUE, sticky = "left"),
+              match = colDef(name = "match", filterable = TRUE, sticky = "left"),
+              week = colDef(name = "week", filterable = TRUE),
+              break_goals = colDef(name = "break goals"),
+              defensive_blocks = colDef(name = "defensive blocks"),
+              clean_holds = colDef(name = "clean holds"),
+              pass_attempts = colDef(name = "pass attempts"),
+              completed_passess = colDef(name = "comp. passes"),
+              completion_rate = colDef(name = "comp. rate",
+                                       format = colFormat(percent = T, digits = 1))
+            ))
+```
+
+
+```{r}
+#| title: Players, overall
+player.stats.overall.24 |>
+  reactable(searchable = T, showPageSizeOptions = T,
+            columns = list(
+              team = colDef(filterable = T),
+              Player = colDef(filterable = T),
+              `Defensive blocks` = colDef(name = "Def. blocks", sortable = T),
+              `Total completed throw gain (yd)` = colDef(name = "tot.",
+                                                         format = colFormat(digits = 0)),
+              `Average completed throw gain (yd)` = colDef(name = "avg.",
+                                                           format = colFormat(digits = 1)),
+              `Total caught pass gain (yd)` = colDef(name = "tot.",
+                                                     format = colFormat(digits = 0)),
+              `Average caught pass gain (yd)` = colDef(name = "avg.",
+                                                       format = colFormat(digits = 1)),
+              `Offense points played` = colDef(name = "off."),
+              `Defense points played` = colDef(name = "def."),
+              `Thrower errors` = colDef(name = "throw."),
+              `Receiver errors` = colDef(name = "rec."),
+              Assists = colDef(name = "primary"),
+              `Secondary assists` = colDef(name = "sec.")
+            ),
+            columnGroups = list(
+              colGroup(name = "2024 season",
+                       columns = c("team", "Player"), sticky = "left"),
+              colGroup(name = "Comp. Throw Gain (yd)",
+                       columns = c("Total completed throw gain (yd)",
+                                   "Average completed throw gain (yd)")),
+              colGroup(name = "Caught Pass Gain (yd)",
+                       columns = c("Total caught pass gain (yd)",
+                                   "Average caught pass gain (yd)")),
+              colGroup(name = "Points Played",
+                       columns = c("Offense points played",
+                                   "Defense points played")),
+              colGroup(name = "Errors",
+                       columns = c("Thrower errors","Receiver errors")),
+              colGroup(name = "Assists",
+                       columns = c("Assists","Secondary assists"))
+            ))
+```
+
+
+```{r}
+#| title: Players, by game
+player.stats.game.24 |>
+  reactable(searchable = T, showPageSizeOptions = T,
+            columns = list(
+              team = colDef(filterable = T, sticky = "left"),
+              Player = colDef(filterable = T, sticky = "left"),
+              match = colDef(filterable = T, sticky = "left"),
+              `Defensive blocks` = colDef(name = "Def. blocks", sortable = T),
+              `Total completed throw gain (yd)` = colDef(name = "tot.",
+                                                         format = colFormat(digits = 0)),
+              `Average completed throw gain (yd)` = colDef(name = "avg.",
+                                                           format = colFormat(digits = 1)),
+              `Total caught pass gain (yd)` = colDef(name = "tot.",
+                                                     format = colFormat(digits = 0)),
+              `Average caught pass gain (yd)` = colDef(name = "avg.",
+                                                       format = colFormat(digits = 1)),
+              `Offense points played` = colDef(name = "off."),
+              `Defense points played` = colDef(name = "def."),
+              `Thrower errors` = colDef(name = "throw."),
+              `Receiver errors` = colDef(name = "rec."),
+              Assists = colDef(name = "primary"),
+              `Secondary assists` = colDef(name = "sec.")
+            ),
+            columnGroups = list(
+              colGroup(name = "2024 season",
+                       columns = c("team", "Player","match")),
+              colGroup(name = "Comp. Throw Gain (yd)",
+                       columns = c("Total completed throw gain (yd)",
+                                   "Average completed throw gain (yd)")),
+              colGroup(name = "Caught Pass Gain (yd)",
+                       columns = c("Total caught pass gain (yd)",
+                                   "Average caught pass gain (yd)")),
+              colGroup(name = "Points Played",
+                       columns = c("Offense points played",
+                                   "Defense points played")),
+              colGroup(name = "Errors",
+                       columns = c("Thrower errors","Receiver errors")),
+              colGroup(name = "Assists",
+                       columns = c("Assists","Secondary assists"))
+            ))
+```
+
+
+```{r}
+#| title: Data Coverage
+
+paste(incomplete.games.24)
+paste(incomplete.teams.24)
+reactable(data.coverage.24, filterable = T, showPageSizeOptions = T, defaultPageSize = 20)
 ```
