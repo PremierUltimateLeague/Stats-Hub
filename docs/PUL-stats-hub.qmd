@@ -82,7 +82,7 @@ incomplete.teams.25 <- if_else(nrow(incomplete.data.25) == 0,
 
 ## Row {.tabset}
 
-```{r}
+```{r, include=FALSE}
 #| title: Teams, overall
 team.stats.overall.25 |>
   reactable(sortable = T, defaultPageSize = 11,
@@ -99,7 +99,7 @@ team.stats.overall.25 |>
 ```
 
 
-```{r}
+```{r, include=FALSE}
 #| title: Teams, by game
 team.stats.game.25 |>
   reactable(sortable = T, showPageSizeOptions = T,
@@ -118,7 +118,7 @@ team.stats.game.25 |>
 ```
 
 
-```{r}
+```{r, include=FALSE}
 #| title: Players, overall
 player.stats.overall.25 |>
   reactable(searchable = T, showPageSizeOptions = T,
@@ -161,7 +161,7 @@ player.stats.overall.25 |>
 ```
 
 
-```{r}
+```{r, include=FALSE}
 #| title: Players, by game
 player.stats.game.25 |>
   reactable(searchable = T, showPageSizeOptions = T,
@@ -205,7 +205,7 @@ player.stats.game.25 |>
 ```
 
 
-```{r}
+```{r, include=FALSE}
 #| title: Data Coverage
 
 paste(incomplete.games.25)
