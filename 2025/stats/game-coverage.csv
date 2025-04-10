@@ -1,0 +1,5 @@
+match,week,home_away,team,possessions,player_stats,defensive_blocks,points,passes
+PHL @ INDY,Week 1,away,PHL,TRUE,TRUE,TRUE,TRUE,TRUE
+PHL @ INDY,Week 1,home,INDY,TRUE,TRUE,TRUE,TRUE,TRUE
+RAL @ LA,Week 1,away,RAL,TRUE,TRUE,TRUE,TRUE,TRUE
+RAL @ LA,Week 1,home,LA,TRUE,TRUE,TRUE,TRUE,TRUE

@@ -1,0 +1,5 @@
+team,match,week,goals,break_goals,defensive_blocks,holds,clean_holds,pass_attempts,turnovers,completed_passess,completion_rate,hucks
+INDY,PHL @ INDY,Week 1,10,3,9,7,2,231,27,204,0.8831168831168831,4
+LA,RAL @ LA,Week 1,9,1,15,8,4,233,38,195,0.8369098712446352,5
+PHL,PHL @ INDY,Week 1,11,4,15,7,4,221,25,196,0.8868778280542986,1
+RAL,RAL @ LA,Week 1,12,4,11,8,2,177,37,140,0.7909604519774012,6
