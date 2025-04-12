@@ -1,26 +1,67 @@
 match,week,team,opponent,Created,Point,Our score at pull,Opponent's score at pull,Started on offense?,Scored?,Possessions,Passes,Turnovers,Thrower errors,Receiver errors,Defensive blocks,Opposition errors,Secondary assist,Assist,Goal
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 16:24,1,0,0,1,0,1,7,1,1,0,0,0,NA,NA,NA
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 16:37,2,0,1,1,0,3,20,3,3,0,2,0,NA,NA,NA
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 17:26,3,0,2,1,1,2,14,1,1,0,1,0,33 Georgia Tse,29 Soju Hokari,26 Morgan Lally
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 17:46,4,1,2,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 17:57,5,1,3,1,1,2,13,1,0,1,1,0,04 Chloe Greene,33 Georgia Tse,57 Ximena Montana
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 18:03,6,2,3,0,0,3,13,3,3,0,1,2,NA,NA,NA
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 18:23,7,2,4,1,1,1,11,0,0,0,0,0,11 Quincy Booth,29 Soju Hokari,11 Quincy Booth
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 18:27,8,3,4,0,1,1,9,0,0,0,0,1,09 Liv Ford,75 Sarah Kingsley-Hart,57 Ximena Montana
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 18:37,9,4,4,0,0,2,2,2,1,1,1,1,NA,NA,NA
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 18:46,10,4,5,1,1,5,25,4,3,2,2,2,NA,08 Dani Ortiz,09 Liv Ford
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 19:11,11,5,5,0,1,2,2,1,1,0,1,1,NA,11 Quincy Booth,26 Morgan Lally
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 22:07,12,6,5,0,0,1,4,1,1,0,1,0,NA,NA,NA
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 22:29,13,6,6,1,1,3,14,2,2,0,1,1,06 Lylah Bannister,25 Katie Sanders,11 Quincy Booth
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 22:54,14,7,6,0,0,3,6,3,2,2,1,2,NA,NA,NA
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 23:12,15,7,7,1,0,3,22,3,2,2,2,0,NA,NA,NA
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 23:21,16,7,8,1,0,2,18,1,1,0,1,0,NA,NA,NA
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 23:34,17,7,8,0,1,4,24,3,3,0,3,1,33 Georgia Tse,11 Quincy Booth,05 Megan Jarriel
+ATX @ ATL,Week 1,ATL,ATX,4/10/2025 23:55,18,8,8,0,1,1,6,0,0,0,1,0,09 Liv Ford,11 Quincy Booth,51 Lilli Popovich
+ATX @ ATL,Week 1,ATL,ATX,4/11/2025 0:05,19,9,8,0,1,1,1,0,0,0,1,0,NA,04 Chloe Greene,57 Ximena Montana
+ATX @ ATL,Week 1,ATL,ATX,4/11/2025 0:09,20,10,8,0,1,3,17,2,1,1,1,2,12 Emma Jaschke,26 Morgan Lally,14 Charlotte Doran
+ATX @ ATL,Week 1,ATL,ATX,4/11/2025 0:20,21,11,8,0,0,1,0,0,0,0,0,1,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-04 14:36:25,1,0,0,0,1,1,1,0,0,0,0,1,NA,NA,00 Margaret Maggie Rowell
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 18:11:22,2,1,0,0,1,3,3,2,2,0,1,2,NA,NA,10 Gabriella Gabi Cuina
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 18:20:03,3,2,0,0,0,1,1,1,0,1,0,1,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 18:26:06,4,2,1,1,1,1,1,0,0,0,0,0,NA,NA,09 Summer Sum Sum Wilson
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 18:30:45,5,3,1,0,0,1,1,1,1,0,0,1,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 18:33:25,6,3,2,1,1,4,4,3,3,1,2,1,NA,NA,26 Amy Broome
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 21:23:10,7,4,2,0,0,0,0,0,0,0,0,0,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 21:25:41,8,4,3,1,0,1,1,1,1,0,0,0,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 21:29:37,9,4,4,1,1,3,3,2,2,0,1,1,NA,NA,04 MaryClare MC Robbins
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 21:34:53,10,5,4,0,0,5,4,4,4,0,2,2,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 21:42:46,11,5,5,1,0,2,2,2,2,0,0,1,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 21:45:28,12,5,6,0,1,1,1,0,0,0,0,1,NA,07 Shiru Liu,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 21:51:59,13,6,6,0,0,2,2,2,2,0,0,2,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 21:57:54,14,6,7,1,1,3,3,3,3,0,1,2,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 22:04:37,15,7,7,0,1,3,3,2,2,0,0,3,NA,NA,05 Elise Franke Franke
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 22:10:14,16,8,7,1,0,5,5,5,5,0,1,4,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 22:19:58,17,8,8,1,0,1,1,1,1,0,0,0,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 22:22:25,18,8,9,1,0,1,1,1,1,0,0,0,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 22:23:35,19,8,10,1,0,3,3,3,2,1,1,1,NA,NA,NA
+ATX @ ATL,Week 1,ATX,ATL,2025-04-05 22:28:51,20,8,11,1,0,1,1,1,0,1,0,0,NA,NA,NA
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 18:30,1,0,0,0,0,0,0,0,0,0,0,0,NA,NA,NA
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 20:48,2,0,1,1,1,3,19,2,2,0,1,1,11 T-Lo (Tracey Lo),18 LG (Laura Grencser),27 Eliza (Eliza Hutchins)
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 20:48,2,0,1,1,1,3,19,2,2,0,1,1,11 Tracey Lo,18 Laura Grencser,27 Eliza Hutchins
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 20:56,3,1,1,0,0,2,8,2,2,0,1,1,NA,NA,NA
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:02,4,1,2,1,1,3,22,2,2,0,1,1,04 Mast (Rachel Mast),11 T-Lo (Tracey Lo),04 Mast (Rachel Mast)
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:02,4,1,2,1,1,3,22,2,2,0,1,1,04 Rachel Mast,11 Tracey Lo,04 Rachel Mast
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:08,5,2,2,0,0,0,0,0,0,0,0,0,NA,NA,NA
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:09,6,2,3,1,0,2,8,2,0,2,0,1,NA,NA,NA
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:15,7,2,4,1,1,2,7,1,1,0,0,1,77 Kat (Katrina McGuire),18 LG (Laura Grencser),77 Kat (Katrina McGuire)
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:15,7,2,4,1,1,2,7,1,1,0,0,1,77 Katrina McGuire,18 Laura Grencser,77 Katrina McGuire
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:18,8,3,4,0,0,3,17,2,2,0,0,3,NA,NA,NA
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:26,9,3,5,1,0,2,13,2,1,1,1,0,NA,NA,NA
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:30,10,3,6,1,1,1,12,0,0,0,0,0,32 Shani (Shani Rosenthal),18 LG (Laura Grencser),77 Kat (Katrina McGuire)
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:30,10,3,6,1,1,1,12,0,0,0,0,0,32 Shani Rosenthal,18 Laura Grencser,77 Katrina McGuire
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:33,11,4,6,0,0,0,0,0,0,0,0,0,NA,NA,NA
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:34,12,4,7,1,0,1,7,1,1,0,0,0,NA,NA,NA
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:36,13,4,8,0,1,3,15,2,2,0,2,1,04 Mast (Rachel Mast),18 LG (Laura Grencser),27 Eliza (Eliza Hutchins)
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:36,13,4,8,0,1,3,15,2,2,0,2,1,04 Rachel Mast,18 Laura Grencser,27 Eliza Hutchins
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:48,14,5,8,0,0,0,0,0,0,0,0,0,NA,NA,NA
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:56,15,5,9,1,1,4,13,3,2,1,0,3,18 LG (Laura Grencser),77 Kat (Katrina McGuire),18 LG (Laura Grencser)
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:09,16,6,9,0,1,1,7,0,0,0,0,1,18 LG (Laura Grencser),11 T-Lo (Tracey Lo),91 Sammy (Samantha Phillips)
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:19,17,7,9,0,1,1,12,0,0,0,0,1,18 LG (Laura Grencser),11 T-Lo (Tracey Lo),77 Kat (Katrina McGuire)
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:28,18,8,9,1,1,1,7,0,0,0,0,0,18 LG (Laura Grencser),04 Mast (Rachel Mast),19 Gibbs (Melissa Gibbs)
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 21:56,15,5,9,1,1,4,13,3,2,1,0,3,18 Laura Grencser,77 Katrina McGuire,18 Laura Grencser
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:09,16,6,9,0,1,1,7,0,0,0,0,1,18 Laura Grencser,11 Tracey Lo,91 Samantha Phillips
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:19,17,7,9,0,1,1,12,0,0,0,0,1,18 Laura Grencser,11 Tracey Lo,77 Katrina McGuire
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:28,18,8,9,1,1,1,7,0,0,0,0,0,18 Laura Grencser,04 Rachel Mast,19 Melissa Gibbs
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:35,19,9,9,0,0,0,0,0,0,0,0,0,NA,NA,NA
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:37,20,9,10,1,0,3,18,3,3,0,2,0,NA,NA,NA
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:46,21,9,11,1,0,2,3,2,2,0,0,1,NA,NA,NA
-PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:52,22,9,12,1,1,2,28,1,1,0,1,0,11 T-Lo (Tracey Lo),18 LG (Laura Grencser),15 Squid (Sydney Loughran)
+PHL @ INDY,Week 1,INDY,PHL,4/6/2025 22:52,22,9,12,1,1,2,28,1,1,0,1,0,11 Tracey Lo,18 Laura Grencser,15 Sydney Loughran
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 23:01,23,10,12,0,0,1,2,1,1,0,0,1,NA,NA,NA
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 23:04,24,10,13,1,0,1,13,1,1,0,0,0,NA,NA,NA
 PHL @ INDY,Week 1,INDY,PHL,4/6/2025 23:08,25,10,14,1,0,0,0,0,0,0,0,0,NA,NA,NA
