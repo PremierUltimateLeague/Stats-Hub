@@ -11,6 +11,7 @@ library(tidyverse)
 #   I download this entire folder through the web interface to google drive
 all.files <- list.files("2024 Game Day Info/", pattern = ".csv",
                         full.names = T, recursive = T)
+all.files <- all.files[str_detect(all.files, "Champion", negate = T)]
 
 # remove the "original stats" subdirectories
 all.files <- all.files[str_detect(all.files, "original stats", negate = T)]
