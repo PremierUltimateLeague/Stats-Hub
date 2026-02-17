@@ -11,7 +11,8 @@
     "throws": 54.0,
     "catches": 44.0,
     "offensePoints": 13.0,
-    "defensePoints": 41.0
+    "defensePoints": 41.0,
+    "+/-": -3.0
   },
   {
     "player": "00 Donna Johnston",
@@ -25,7 +26,8 @@
     "throws": 32.0,
     "catches": 31.0,
     "offensePoints": 9.0,
-    "defensePoints": 44.0
+    "defensePoints": 44.0,
+    "+/-": -4.0
   },
   {
     "player": "00 Emilie Mohler",
@@ -39,7 +41,8 @@
     "throws": 27.0,
     "catches": 27.0,
     "offensePoints": 2.0,
-    "defensePoints": 30.0
+    "defensePoints": 30.0,
+    "+/-": 7.0
   },
   {
     "player": "00 Emma Jones",
@@ -53,7 +56,8 @@
     "throws": 34.0,
     "catches": 27.0,
     "offensePoints": 5.0,
-    "defensePoints": 35.0
+    "defensePoints": 35.0,
+    "+/-": 2.0
   },
   {
     "player": "00 Genny De Jesus",
@@ -67,7 +71,8 @@
     "throws": 131.0,
     "catches": 153.0,
     "offensePoints": 85.0,
-    "defensePoints": 35.0
+    "defensePoints": 35.0,
+    "+/-": 26.0
   },
   {
     "player": "00 Maggie Rowell",
@@ -81,7 +86,8 @@
     "throws": 39.0,
     "catches": 43.0,
     "offensePoints": 30.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": 3.0
   },
   {
     "player": "01 Amelia Zdechlik",
@@ -95,7 +101,8 @@
     "throws": 13.0,
     "catches": 13.0,
     "offensePoints": 5.0,
-    "defensePoints": 46.0
+    "defensePoints": 46.0,
+    "+/-": 1.0
   },
   {
     "player": "01 Ashleigh Jentilet",
@@ -109,7 +116,8 @@
     "throws": 52.0,
     "catches": 58.0,
     "offensePoints": 12.0,
-    "defensePoints": 48.0
+    "defensePoints": 48.0,
+    "+/-": 6.0
   },
   {
     "player": "01 Emily Shields",
@@ -123,7 +131,8 @@
     "throws": 72.0,
     "catches": 83.0,
     "offensePoints": 67.0,
-    "defensePoints": 13.0
+    "defensePoints": 13.0,
+    "+/-": 13.0
   },
   {
     "player": "01 Lindsay Soo",
@@ -137,7 +146,8 @@
     "throws": 31.0,
     "catches": 34.0,
     "offensePoints": 17.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": 5.0
   },
   {
     "player": "01 Quincy Booth",
@@ -151,7 +161,8 @@
     "throws": 60.0,
     "catches": 46.0,
     "offensePoints": 23.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": 3.0
   },
   {
     "player": "02 Claire Bidigare-Curtis",
@@ -165,7 +176,8 @@
     "throws": 85.0,
     "catches": 92.0,
     "offensePoints": 63.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": -1.0
   },
   {
     "player": "02 Elise Bjork",
@@ -179,7 +191,8 @@
     "throws": 168.0,
     "catches": 132.0,
     "offensePoints": 57.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": -4.0
   },
   {
     "player": "02 Jolene Zheng",
@@ -193,7 +206,8 @@
     "throws": 51.0,
     "catches": 60.0,
     "offensePoints": 79.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": 5.0
   },
   {
     "player": "02 Maketa Mattimore",
@@ -207,7 +221,8 @@
     "throws": 194.0,
     "catches": 157.0,
     "offensePoints": 45.0,
-    "defensePoints": 45.0
+    "defensePoints": 45.0,
+    "+/-": 1.0
   },
   {
     "player": "02 Sierra Rimmer",
@@ -221,7 +236,8 @@
     "throws": 18.0,
     "catches": 12.0,
     "offensePoints": 3.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": -2.0
   },
   {
     "player": "02 Stephanie Wood",
@@ -235,7 +251,8 @@
     "throws": 103.0,
     "catches": 110.0,
     "offensePoints": 80.0,
-    "defensePoints": 17.0
+    "defensePoints": 17.0,
+    "+/-": 12.0
   },
   {
     "player": "03 Alex Krueger",
@@ -249,7 +266,8 @@
     "throws": 57.0,
     "catches": 59.0,
     "offensePoints": 34.0,
-    "defensePoints": 26.0
+    "defensePoints": 26.0,
+    "+/-": -7.0
   },
   {
     "player": "03 Grace Conerly",
@@ -263,7 +281,8 @@
     "throws": 38.0,
     "catches": 25.0,
     "offensePoints": 6.0,
-    "defensePoints": 23.0
+    "defensePoints": 23.0,
+    "+/-": -7.0
   },
   {
     "player": "03 Liv Player",
@@ -277,7 +296,8 @@
     "throws": 55.0,
     "catches": 50.0,
     "offensePoints": 5.0,
-    "defensePoints": 56.0
+    "defensePoints": 56.0,
+    "+/-": 1.0
   },
   {
     "player": "03 Madi Cannon",
@@ -291,7 +311,8 @@
     "throws": 106.0,
     "catches": 119.0,
     "offensePoints": 56.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": 16.0
   },
   {
     "player": "03 Makella Daley",
@@ -305,7 +326,8 @@
     "throws": 224.0,
     "catches": 161.0,
     "offensePoints": 83.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": 0.0
   },
   {
     "player": "03 Mary Timmons",
@@ -319,7 +341,8 @@
     "throws": 22.0,
     "catches": 26.0,
     "offensePoints": 11.0,
-    "defensePoints": 48.0
+    "defensePoints": 48.0,
+    "+/-": 1.0
   },
   {
     "player": "03 Metta Devine-Qin",
@@ -333,7 +356,8 @@
     "throws": 0.0,
     "catches": 0.0,
     "offensePoints": 1.0,
-    "defensePoints": 5.0
+    "defensePoints": 5.0,
+    "+/-": 0.0
   },
   {
     "player": "03 Rachel Alfano",
@@ -347,7 +371,8 @@
     "throws": 65.0,
     "catches": 75.0,
     "offensePoints": 63.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": 10.0
   },
   {
     "player": "04 Adelle Pitsas",
@@ -361,7 +386,8 @@
     "throws": 8.0,
     "catches": 9.0,
     "offensePoints": 2.0,
-    "defensePoints": 27.0
+    "defensePoints": 27.0,
+    "+/-": 0.0
   },
   {
     "player": "04 Ashley Powell",
@@ -375,7 +401,8 @@
     "throws": 2.0,
     "catches": 2.0,
     "offensePoints": 3.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": 0.0
   },
   {
     "player": "04 Ashley West",
@@ -389,7 +416,8 @@
     "throws": 10.0,
     "catches": 8.0,
     "offensePoints": 11.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": -1.0
   },
   {
     "player": "04 Ellen Mueller",
@@ -403,7 +431,8 @@
     "throws": 26.0,
     "catches": 35.0,
     "offensePoints": 7.0,
-    "defensePoints": 37.0
+    "defensePoints": 37.0,
+    "+/-": 7.0
   },
   {
     "player": "04 Erica Baken",
@@ -417,7 +446,8 @@
     "throws": 187.0,
     "catches": 146.0,
     "offensePoints": 67.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": 3.0
   },
   {
     "player": "04 Rachel Mast",
@@ -431,7 +461,8 @@
     "throws": 79.0,
     "catches": 85.0,
     "offensePoints": 56.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": 4.0
   },
   {
     "player": "04 Raha Mozaffari",
@@ -445,7 +476,8 @@
     "throws": 139.0,
     "catches": 81.0,
     "offensePoints": 9.0,
-    "defensePoints": 77.0
+    "defensePoints": 77.0,
+    "+/-": -4.0
   },
   {
     "player": "04 Regina Barcio",
@@ -459,7 +491,8 @@
     "throws": 0.0,
     "catches": 0.0,
     "offensePoints": 0.0,
-    "defensePoints": 5.0
+    "defensePoints": 5.0,
+    "+/-": 0.0
   },
   {
     "player": "05 Dre Esparza",
@@ -473,7 +506,8 @@
     "throws": 23.0,
     "catches": 20.0,
     "offensePoints": 0.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": 0.0
   },
   {
     "player": "05 Elise Erickson",
@@ -487,7 +521,8 @@
     "throws": 5.0,
     "catches": 5.0,
     "offensePoints": 3.0,
-    "defensePoints": 1.0
+    "defensePoints": 1.0,
+    "+/-": -1.0
   },
   {
     "player": "05 Emily Wang",
@@ -501,7 +536,8 @@
     "throws": 32.0,
     "catches": 33.0,
     "offensePoints": 3.0,
-    "defensePoints": 43.0
+    "defensePoints": 43.0,
+    "+/-": 0.0
   },
   {
     "player": "05 Lindsay McKenna",
@@ -515,7 +551,8 @@
     "throws": 17.0,
     "catches": 20.0,
     "offensePoints": 1.0,
-    "defensePoints": 41.0
+    "defensePoints": 41.0,
+    "+/-": 4.0
   },
   {
     "player": "05 Marie Perivier",
@@ -529,7 +566,8 @@
     "throws": 56.0,
     "catches": 59.0,
     "offensePoints": 23.0,
-    "defensePoints": 36.0
+    "defensePoints": 36.0,
+    "+/-": 2.0
   },
   {
     "player": "05 Megan Jarriel",
@@ -543,7 +581,8 @@
     "throws": 101.0,
     "catches": 103.0,
     "offensePoints": 54.0,
-    "defensePoints": 37.0
+    "defensePoints": 37.0,
+    "+/-": 1.0
   },
   {
     "player": "05 Rose Glinka",
@@ -557,7 +596,8 @@
     "throws": 96.0,
     "catches": 73.0,
     "offensePoints": 61.0,
-    "defensePoints": 4.0
+    "defensePoints": 4.0,
+    "+/-": 1.0
   },
   {
     "player": "05 Stephanie Rupp",
@@ -571,7 +611,8 @@
     "throws": 130.0,
     "catches": 92.0,
     "offensePoints": 68.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": 1.0
   },
   {
     "player": "06 Carly Eckstrom",
@@ -585,7 +626,8 @@
     "throws": 6.0,
     "catches": 4.0,
     "offensePoints": 0.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": -2.0
   },
   {
     "player": "06 Gwen Rauch",
@@ -599,7 +641,8 @@
     "throws": 1.0,
     "catches": 1.0,
     "offensePoints": 0.0,
-    "defensePoints": 3.0
+    "defensePoints": 3.0,
+    "+/-": 0.0
   },
   {
     "player": "06 Jenny Wei",
@@ -613,7 +656,8 @@
     "throws": 59.0,
     "catches": 59.0,
     "offensePoints": 40.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": -3.0
   },
   {
     "player": "06 Laureen Johnson",
@@ -627,7 +671,8 @@
     "throws": 15.0,
     "catches": 23.0,
     "offensePoints": 9.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": 9.0
   },
   {
     "player": "06 Micah Roberts",
@@ -641,7 +686,8 @@
     "throws": 39.0,
     "catches": 44.0,
     "offensePoints": 31.0,
-    "defensePoints": 28.0
+    "defensePoints": 28.0,
+    "+/-": 0.0
   },
   {
     "player": "06 Risa Umeno",
@@ -655,7 +701,8 @@
     "throws": 95.0,
     "catches": 68.0,
     "offensePoints": 18.0,
-    "defensePoints": 53.0
+    "defensePoints": 53.0,
+    "+/-": -3.0
   },
   {
     "player": "06 Rowse",
@@ -669,7 +716,8 @@
     "throws": 28.0,
     "catches": 30.0,
     "offensePoints": 13.0,
-    "defensePoints": 38.0
+    "defensePoints": 38.0,
+    "+/-": -1.0
   },
   {
     "player": "06 Willy (Natalie Wilson)",
@@ -683,7 +731,8 @@
     "throws": 17.0,
     "catches": 22.0,
     "offensePoints": 23.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": 4.0
   },
   {
     "player": "07 Allison Reilly",
@@ -697,7 +746,8 @@
     "throws": 18.0,
     "catches": 12.0,
     "offensePoints": 11.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": -1.0
   },
   {
     "player": "07 Danielle Byers",
@@ -711,7 +761,8 @@
     "throws": 78.0,
     "catches": 91.0,
     "offensePoints": 82.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": 2.0
   },
   {
     "player": "07 Kami Groom",
@@ -725,7 +776,8 @@
     "throws": 103.0,
     "catches": 106.0,
     "offensePoints": 13.0,
-    "defensePoints": 56.0
+    "defensePoints": 56.0,
+    "+/-": 16.0
   },
   {
     "player": "07 Mary Cowart",
@@ -739,7 +791,8 @@
     "throws": 5.0,
     "catches": 6.0,
     "offensePoints": 9.0,
-    "defensePoints": 19.0
+    "defensePoints": 19.0,
+    "+/-": 1.0
   },
   {
     "player": "07 Nikki Ross",
@@ -753,7 +806,8 @@
     "throws": 28.0,
     "catches": 19.0,
     "offensePoints": 10.0,
-    "defensePoints": 2.0
+    "defensePoints": 2.0,
+    "+/-": 1.0
   },
   {
     "player": "07 Shiru Liu",
@@ -767,7 +821,8 @@
     "throws": 116.0,
     "catches": 78.0,
     "offensePoints": 24.0,
-    "defensePoints": 41.0
+    "defensePoints": 41.0,
+    "+/-": -10.0
   },
   {
     "player": "07 Sydney Stelzer",
@@ -781,7 +836,8 @@
     "throws": 7.0,
     "catches": 11.0,
     "offensePoints": 22.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": -2.0
   },
   {
     "player": "08 Dani Ortiz",
@@ -795,7 +851,8 @@
     "throws": 125.0,
     "catches": 110.0,
     "offensePoints": 66.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": -6.0
   },
   {
     "player": "08 Emma Soiles",
@@ -809,7 +866,8 @@
     "throws": 38.0,
     "catches": 45.0,
     "offensePoints": 7.0,
-    "defensePoints": 67.0
+    "defensePoints": 67.0,
+    "+/-": 8.0
   },
   {
     "player": "08 Georgia Tse",
@@ -823,7 +881,8 @@
     "throws": 0.0,
     "catches": 0.0,
     "offensePoints": 0.0,
-    "defensePoints": 1.0
+    "defensePoints": 1.0,
+    "+/-": 0.0
   },
   {
     "player": "08 Georgia Tso",
@@ -837,7 +896,8 @@
     "throws": 5.0,
     "catches": 5.0,
     "offensePoints": 3.0,
-    "defensePoints": 2.0
+    "defensePoints": 2.0,
+    "+/-": 0.0
   },
   {
     "player": "08 Grace Robinson",
@@ -851,7 +911,8 @@
     "throws": 143.0,
     "catches": 126.0,
     "offensePoints": 68.0,
-    "defensePoints": 18.0
+    "defensePoints": 18.0,
+    "+/-": -7.0
   },
   {
     "player": "08 Jamie Smets",
@@ -865,7 +926,8 @@
     "throws": 6.0,
     "catches": 8.0,
     "offensePoints": 2.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": 1.0
   },
   {
     "player": "08 Kathryn Ritzman",
@@ -879,7 +941,8 @@
     "throws": 49.0,
     "catches": 50.0,
     "offensePoints": 17.0,
-    "defensePoints": 17.0
+    "defensePoints": 17.0,
+    "+/-": 0.0
   },
   {
     "player": "08 ManHua Zhu",
@@ -893,7 +956,8 @@
     "throws": 67.0,
     "catches": 47.0,
     "offensePoints": 30.0,
-    "defensePoints": 18.0
+    "defensePoints": 18.0,
+    "+/-": -5.0
   },
   {
     "player": "08 Mandy Radike",
@@ -907,7 +971,8 @@
     "throws": 12.0,
     "catches": 8.0,
     "offensePoints": 2.0,
-    "defensePoints": 13.0
+    "defensePoints": 13.0,
+    "+/-": -1.0
   },
   {
     "player": "08 Manuela Cardenas",
@@ -921,7 +986,8 @@
     "throws": 56.0,
     "catches": 57.0,
     "offensePoints": 6.0,
-    "defensePoints": 34.0
+    "defensePoints": 34.0,
+    "+/-": 2.0
   },
   {
     "player": "08 Mindy Radike",
@@ -935,7 +1001,8 @@
     "throws": 22.0,
     "catches": 18.0,
     "offensePoints": 5.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": -3.0
   },
   {
     "player": "08 Nicki Chan",
@@ -949,7 +1016,8 @@
     "throws": 25.0,
     "catches": 28.0,
     "offensePoints": 3.0,
-    "defensePoints": 54.0
+    "defensePoints": 54.0,
+    "+/-": -1.0
   },
   {
     "player": "09 Annelise Peters",
@@ -963,7 +1031,8 @@
     "throws": 56.0,
     "catches": 39.0,
     "offensePoints": 6.0,
-    "defensePoints": 32.0
+    "defensePoints": 32.0,
+    "+/-": -1.0
   },
   {
     "player": "09 Cassandra Brown",
@@ -977,7 +1046,8 @@
     "throws": 145.0,
     "catches": 99.0,
     "offensePoints": 23.0,
-    "defensePoints": 76.0
+    "defensePoints": 76.0,
+    "+/-": 1.0
   },
   {
     "player": "09 Emma Patterson",
@@ -991,7 +1061,8 @@
     "throws": 45.0,
     "catches": 29.0,
     "offensePoints": 12.0,
-    "defensePoints": 41.0
+    "defensePoints": 41.0,
+    "+/-": -4.0
   },
   {
     "player": "09 Fiona Cashin",
@@ -1005,7 +1076,8 @@
     "throws": 12.0,
     "catches": 13.0,
     "offensePoints": 7.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": 0.0
   },
   {
     "player": "09 Jinny Riedel",
@@ -1019,7 +1091,8 @@
     "throws": 30.0,
     "catches": 32.0,
     "offensePoints": 6.0,
-    "defensePoints": 42.0
+    "defensePoints": 42.0,
+    "+/-": 2.0
   },
   {
     "player": "09 Sara Helm",
@@ -1033,7 +1106,8 @@
     "throws": 5.0,
     "catches": 6.0,
     "offensePoints": 6.0,
-    "defensePoints": 46.0
+    "defensePoints": 46.0,
+    "+/-": 0.0
   },
   {
     "player": "09 Sarah Hirannet",
@@ -1047,7 +1121,8 @@
     "throws": 49.0,
     "catches": 61.0,
     "offensePoints": 64.0,
-    "defensePoints": 13.0
+    "defensePoints": 13.0,
+    "+/-": 13.0
   },
   {
     "player": "09 Summer Wilson",
@@ -1061,7 +1136,8 @@
     "throws": 87.0,
     "catches": 69.0,
     "offensePoints": 24.0,
-    "defensePoints": 20.0
+    "defensePoints": 20.0,
+    "+/-": -12.0
   },
   {
     "player": "10 Andrea DeSabato",
@@ -1075,7 +1151,8 @@
     "throws": 225.0,
     "catches": 185.0,
     "offensePoints": 68.0,
-    "defensePoints": 13.0
+    "defensePoints": 13.0,
+    "+/-": -7.0
   },
   {
     "player": "10 Ariel Choi",
@@ -1089,7 +1166,8 @@
     "throws": 3.0,
     "catches": 3.0,
     "offensePoints": 1.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": -1.0
   },
   {
     "player": "10 Chelsea Twohig",
@@ -1103,7 +1181,8 @@
     "throws": 59.0,
     "catches": 48.0,
     "offensePoints": 33.0,
-    "defensePoints": 24.0
+    "defensePoints": 24.0,
+    "+/-": 5.0
   },
   {
     "player": "10 Gaby Cuina",
@@ -1117,7 +1196,8 @@
     "throws": 16.0,
     "catches": 17.0,
     "offensePoints": 20.0,
-    "defensePoints": 23.0
+    "defensePoints": 23.0,
+    "+/-": 0.0
   },
   {
     "player": "10 Jane Koch",
@@ -1131,7 +1211,8 @@
     "throws": 30.0,
     "catches": 32.0,
     "offensePoints": 9.0,
-    "defensePoints": 41.0
+    "defensePoints": 41.0,
+    "+/-": 8.0
   },
   {
     "player": "10 Lauren Baecher",
@@ -1145,7 +1226,8 @@
     "throws": 14.0,
     "catches": 11.0,
     "offensePoints": 6.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": -2.0
   },
   {
     "player": "10 Mia Griner",
@@ -1159,7 +1241,8 @@
     "throws": 143.0,
     "catches": 105.0,
     "offensePoints": 50.0,
-    "defensePoints": 46.0
+    "defensePoints": 46.0,
+    "+/-": 4.0
   },
   {
     "player": "10 Paige Carver",
@@ -1173,7 +1256,8 @@
     "throws": 7.0,
     "catches": 8.0,
     "offensePoints": 5.0,
-    "defensePoints": 23.0
+    "defensePoints": 23.0,
+    "+/-": -1.0
   },
   {
     "player": "10 Tori Taylor",
@@ -1187,7 +1271,8 @@
     "throws": 148.0,
     "catches": 153.0,
     "offensePoints": 86.0,
-    "defensePoints": 17.0
+    "defensePoints": 17.0,
+    "+/-": 19.0
   },
   {
     "player": "11 Dawn Culton",
@@ -1201,7 +1286,8 @@
     "throws": 34.0,
     "catches": 34.0,
     "offensePoints": 8.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": 3.0
   },
   {
     "player": "11 Emma Berrigan",
@@ -1215,7 +1301,8 @@
     "throws": 7.0,
     "catches": 6.0,
     "offensePoints": 9.0,
-    "defensePoints": 37.0
+    "defensePoints": 37.0,
+    "+/-": 2.0
   },
   {
     "player": "11 Jamie Ferrie",
@@ -1229,7 +1316,8 @@
     "throws": 11.0,
     "catches": 10.0,
     "offensePoints": 2.0,
-    "defensePoints": 24.0
+    "defensePoints": 24.0,
+    "+/-": -4.0
   },
   {
     "player": "11 Rachel Johnson",
@@ -1243,7 +1331,8 @@
     "throws": 93.0,
     "catches": 50.0,
     "offensePoints": 24.0,
-    "defensePoints": 53.0
+    "defensePoints": 53.0,
+    "+/-": -5.0
   },
   {
     "player": "11 Sara Liang",
@@ -1257,7 +1346,8 @@
     "throws": 122.0,
     "catches": 81.0,
     "offensePoints": 11.0,
-    "defensePoints": 87.0
+    "defensePoints": 87.0,
+    "+/-": 8.0
   },
   {
     "player": "11 Tayara Romero Pena",
@@ -1271,7 +1361,8 @@
     "throws": 2.0,
     "catches": 2.0,
     "offensePoints": 0.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": 0.0
   },
   {
     "player": "11 Tracey Lo",
@@ -1285,7 +1376,8 @@
     "throws": 72.0,
     "catches": 48.0,
     "offensePoints": 37.0,
-    "defensePoints": 19.0
+    "defensePoints": 19.0,
+    "+/-": 5.0
   },
   {
     "player": "12 Annie Ortiz",
@@ -1299,7 +1391,8 @@
     "throws": 69.0,
     "catches": 47.0,
     "offensePoints": 30.0,
-    "defensePoints": 24.0
+    "defensePoints": 24.0,
+    "+/-": -2.0
   },
   {
     "player": "12 Clare Frantz",
@@ -1313,7 +1406,8 @@
     "throws": 30.0,
     "catches": 36.0,
     "offensePoints": 16.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": 6.0
   },
   {
     "player": "12 Emma Jaschke",
@@ -1327,7 +1421,8 @@
     "throws": 42.0,
     "catches": 40.0,
     "offensePoints": 17.0,
-    "defensePoints": 33.0
+    "defensePoints": 33.0,
+    "+/-": -4.0
   },
   {
     "player": "12 Katie Backus Meilstrup",
@@ -1341,7 +1436,8 @@
     "throws": 61.0,
     "catches": 65.0,
     "offensePoints": 42.0,
-    "defensePoints": 7.0
+    "defensePoints": 7.0,
+    "+/-": 6.0
   },
   {
     "player": "12 Meaghan Creamer",
@@ -1355,7 +1451,8 @@
     "throws": 11.0,
     "catches": 12.0,
     "offensePoints": 16.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": 2.0
   },
   {
     "player": "12 Sally Roberts",
@@ -1369,7 +1466,8 @@
     "throws": 0.0,
     "catches": 0.0,
     "offensePoints": 0.0,
-    "defensePoints": 1.0
+    "defensePoints": 1.0,
+    "+/-": 0.0
   },
   {
     "player": "12 Sydney French",
@@ -1383,7 +1481,8 @@
     "throws": 56.0,
     "catches": 53.0,
     "offensePoints": 32.0,
-    "defensePoints": 44.0
+    "defensePoints": 44.0,
+    "+/-": -2.0
   },
   {
     "player": "13 Erin Newman",
@@ -1397,7 +1496,8 @@
     "throws": 8.0,
     "catches": 10.0,
     "offensePoints": 35.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": 0.0
   },
   {
     "player": "13 Hannah Abraham",
@@ -1411,7 +1511,8 @@
     "throws": 54.0,
     "catches": 57.0,
     "offensePoints": 25.0,
-    "defensePoints": 36.0
+    "defensePoints": 36.0,
+    "+/-": 3.0
   },
   {
     "player": "13 Kat Harper",
@@ -1425,7 +1526,8 @@
     "throws": 30.0,
     "catches": 35.0,
     "offensePoints": 5.0,
-    "defensePoints": 57.0
+    "defensePoints": 57.0,
+    "+/-": 7.0
   },
   {
     "player": "13 Samantha Munson",
@@ -1439,7 +1541,8 @@
     "throws": 0.0,
     "catches": 1.0,
     "offensePoints": 0.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": 0.0
   },
   {
     "player": "13 Sami Smalling",
@@ -1453,7 +1556,8 @@
     "throws": 80.0,
     "catches": 65.0,
     "offensePoints": 11.0,
-    "defensePoints": 35.0
+    "defensePoints": 35.0,
+    "+/-": 3.0
   },
   {
     "player": "13 Tyler Smith",
@@ -1467,7 +1571,8 @@
     "throws": 242.0,
     "catches": 185.0,
     "offensePoints": 62.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": -7.0
   },
   {
     "player": "14 Briana Burriss",
@@ -1481,7 +1586,8 @@
     "throws": 19.0,
     "catches": 17.0,
     "offensePoints": 11.0,
-    "defensePoints": 50.0
+    "defensePoints": 50.0,
+    "+/-": 0.0
   },
   {
     "player": "14 Jessica Hendrickson",
@@ -1495,7 +1601,8 @@
     "throws": 16.0,
     "catches": 19.0,
     "offensePoints": 2.0,
-    "defensePoints": 48.0
+    "defensePoints": 48.0,
+    "+/-": 2.0
   },
   {
     "player": "14 Lindsay Allman",
@@ -1509,7 +1616,8 @@
     "throws": 27.0,
     "catches": 21.0,
     "offensePoints": 12.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": -2.0
   },
   {
     "player": "14 Sarah Spall",
@@ -1523,7 +1631,8 @@
     "throws": 2.0,
     "catches": 2.0,
     "offensePoints": 4.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": 0.0
   },
   {
     "player": "15 Caitlin Fitzgerald",
@@ -1537,7 +1646,8 @@
     "throws": 36.0,
     "catches": 37.0,
     "offensePoints": 20.0,
-    "defensePoints": 31.0
+    "defensePoints": 31.0,
+    "+/-": 3.0
   },
   {
     "player": "15 Chelsea Semper",
@@ -1551,7 +1661,8 @@
     "throws": 55.0,
     "catches": 32.0,
     "offensePoints": 19.0,
-    "defensePoints": 44.0
+    "defensePoints": 44.0,
+    "+/-": -4.0
   },
   {
     "player": "15 Elise Franke",
@@ -1565,7 +1676,8 @@
     "throws": 38.0,
     "catches": 43.0,
     "offensePoints": 15.0,
-    "defensePoints": 44.0
+    "defensePoints": 44.0,
+    "+/-": 5.0
   },
   {
     "player": "15 Florence Brooks",
@@ -1579,7 +1691,8 @@
     "throws": 22.0,
     "catches": 30.0,
     "offensePoints": 9.0,
-    "defensePoints": 28.0
+    "defensePoints": 28.0,
+    "+/-": 7.0
   },
   {
     "player": "15 Justine Neville",
@@ -1593,7 +1706,8 @@
     "throws": 6.0,
     "catches": 5.0,
     "offensePoints": 6.0,
-    "defensePoints": 22.0
+    "defensePoints": 22.0,
+    "+/-": 1.0
   },
   {
     "player": "15 Layne Dodge",
@@ -1607,7 +1721,8 @@
     "throws": 24.0,
     "catches": 26.0,
     "offensePoints": 8.0,
-    "defensePoints": 62.0
+    "defensePoints": 62.0,
+    "+/-": 6.0
   },
   {
     "player": "16 Emily Branson",
@@ -1621,7 +1736,8 @@
     "throws": 130.0,
     "catches": 117.0,
     "offensePoints": 63.0,
-    "defensePoints": 13.0
+    "defensePoints": 13.0,
+    "+/-": -5.0
   },
   {
     "player": "16 Erin Rea",
@@ -1635,7 +1751,8 @@
     "throws": 46.0,
     "catches": 50.0,
     "offensePoints": 55.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": -4.0
   },
   {
     "player": "16 Grace Maroon",
@@ -1649,7 +1766,8 @@
     "throws": 71.0,
     "catches": 76.0,
     "offensePoints": 42.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": 10.0
   },
   {
     "player": "16 Kinsey Neas",
@@ -1663,7 +1781,8 @@
     "throws": 27.0,
     "catches": 29.0,
     "offensePoints": 6.0,
-    "defensePoints": 32.0
+    "defensePoints": 32.0,
+    "+/-": -2.0
   },
   {
     "player": "16 Margaret Walker",
@@ -1677,7 +1796,8 @@
     "throws": 109.0,
     "catches": 87.0,
     "offensePoints": 21.0,
-    "defensePoints": 21.0
+    "defensePoints": 21.0,
+    "+/-": 1.0
   },
   {
     "player": "16 Riely Kuznicki",
@@ -1691,7 +1811,8 @@
     "throws": 2.0,
     "catches": 2.0,
     "offensePoints": 2.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": -1.0
   },
   {
     "player": "16 Tania Proksch",
@@ -1705,7 +1826,8 @@
     "throws": 5.0,
     "catches": 6.0,
     "offensePoints": 7.0,
-    "defensePoints": 23.0
+    "defensePoints": 23.0,
+    "+/-": -3.0
   },
   {
     "player": "17 Allie Milligan",
@@ -1719,7 +1841,8 @@
     "throws": 8.0,
     "catches": 3.0,
     "offensePoints": 2.0,
-    "defensePoints": 16.0
+    "defensePoints": 16.0,
+    "+/-": -2.0
   },
   {
     "player": "17 Caitlin Duffner",
@@ -1733,7 +1856,8 @@
     "throws": 62.0,
     "catches": 67.0,
     "offensePoints": 67.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": 0.0
   },
   {
     "player": "17 Candy Bolte",
@@ -1747,7 +1871,8 @@
     "throws": 5.0,
     "catches": 5.0,
     "offensePoints": 3.0,
-    "defensePoints": 2.0
+    "defensePoints": 2.0,
+    "+/-": -2.0
   },
   {
     "player": "17 Emily Przykucki",
@@ -1761,7 +1886,8 @@
     "throws": 19.0,
     "catches": 15.0,
     "offensePoints": 3.0,
-    "defensePoints": 13.0
+    "defensePoints": 13.0,
+    "+/-": 0.0
   },
   {
     "player": "17 Evelina Pierce",
@@ -1775,7 +1901,8 @@
     "throws": 2.0,
     "catches": 2.0,
     "offensePoints": 4.0,
-    "defensePoints": 1.0
+    "defensePoints": 1.0,
+    "+/-": 1.0
   },
   {
     "player": "17 Kelsey Devlin",
@@ -1789,7 +1916,8 @@
     "throws": 168.0,
     "catches": 117.0,
     "offensePoints": 47.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": -11.0
   },
   {
     "player": "17 Kristin Dudley",
@@ -1803,7 +1931,8 @@
     "throws": 111.0,
     "catches": 88.0,
     "offensePoints": 40.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": -2.0
   },
   {
     "player": "17 Olympia Walker",
@@ -1817,7 +1946,8 @@
     "throws": 1.0,
     "catches": 1.0,
     "offensePoints": 1.0,
-    "defensePoints": 3.0
+    "defensePoints": 3.0,
+    "+/-": 0.0
   },
   {
     "player": "17 Rachel Barr",
@@ -1831,7 +1961,8 @@
     "throws": 12.0,
     "catches": 12.0,
     "offensePoints": 18.0,
-    "defensePoints": 17.0
+    "defensePoints": 17.0,
+    "+/-": -4.0
   },
   {
     "player": "18 Caroline Tornquist",
@@ -1845,7 +1976,8 @@
     "throws": 8.0,
     "catches": 10.0,
     "offensePoints": 10.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": 2.0
   },
   {
     "player": "18 Kylie Sterling",
@@ -1859,7 +1991,8 @@
     "throws": 16.0,
     "catches": 18.0,
     "offensePoints": 3.0,
-    "defensePoints": 29.0
+    "defensePoints": 29.0,
+    "+/-": -3.0
   },
   {
     "player": "18 Laura Gerencser",
@@ -1873,7 +2006,8 @@
     "throws": 122.0,
     "catches": 101.0,
     "offensePoints": 53.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": 5.0
   },
   {
     "player": "18 Naomi Anderson",
@@ -1887,7 +2021,8 @@
     "throws": 36.0,
     "catches": 26.0,
     "offensePoints": 12.0,
-    "defensePoints": 17.0
+    "defensePoints": 17.0,
+    "+/-": -8.0
   },
   {
     "player": "18 Sarah McKee",
@@ -1901,7 +2036,8 @@
     "throws": 16.0,
     "catches": 17.0,
     "offensePoints": 10.0,
-    "defensePoints": 33.0
+    "defensePoints": 33.0,
+    "+/-": -1.0
   },
   {
     "player": "18 Sumi Onoe",
@@ -1915,7 +2051,8 @@
     "throws": 51.0,
     "catches": 53.0,
     "offensePoints": 9.0,
-    "defensePoints": 53.0
+    "defensePoints": 53.0,
+    "+/-": -4.0
   },
   {
     "player": "19 Allie Wallace",
@@ -1929,7 +2066,8 @@
     "throws": 54.0,
     "catches": 60.0,
     "offensePoints": 20.0,
-    "defensePoints": 39.0
+    "defensePoints": 39.0,
+    "+/-": 13.0
   },
   {
     "player": "19 Bethany Bailey",
@@ -1943,7 +2081,8 @@
     "throws": 1.0,
     "catches": 1.0,
     "offensePoints": 4.0,
-    "defensePoints": 14.0
+    "defensePoints": 14.0,
+    "+/-": 0.0
   },
   {
     "player": "19 Eastelle Ding",
@@ -1957,7 +2096,8 @@
     "throws": 32.0,
     "catches": 36.0,
     "offensePoints": 13.0,
-    "defensePoints": 58.0
+    "defensePoints": 58.0,
+    "+/-": 6.0
   },
   {
     "player": "19 Elle Mayer",
@@ -1971,7 +2111,8 @@
     "throws": 20.0,
     "catches": 20.0,
     "offensePoints": 18.0,
-    "defensePoints": 4.0
+    "defensePoints": 4.0,
+    "+/-": -2.0
   },
   {
     "player": "19 Emily Cohen",
@@ -1985,7 +2126,8 @@
     "throws": 6.0,
     "catches": 6.0,
     "offensePoints": 7.0,
-    "defensePoints": 1.0
+    "defensePoints": 1.0,
+    "+/-": -1.0
   },
   {
     "player": "19 Megan Randall",
@@ -1999,7 +2141,8 @@
     "throws": 4.0,
     "catches": 4.0,
     "offensePoints": 2.0,
-    "defensePoints": 18.0
+    "defensePoints": 18.0,
+    "+/-": 0.0
   },
   {
     "player": "19 Olivia Hampton",
@@ -2013,7 +2156,8 @@
     "throws": 58.0,
     "catches": 61.0,
     "offensePoints": 19.0,
-    "defensePoints": 36.0
+    "defensePoints": 36.0,
+    "+/-": 0.0
   },
   {
     "player": "19 Sydney Kelley",
@@ -2027,7 +2171,8 @@
     "throws": 2.0,
     "catches": 1.0,
     "offensePoints": 6.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": -2.0
   },
   {
     "player": "19 Vanessa Bacorn",
@@ -2041,7 +2186,8 @@
     "throws": 27.0,
     "catches": 32.0,
     "offensePoints": 9.0,
-    "defensePoints": 35.0
+    "defensePoints": 35.0,
+    "+/-": 1.0
   },
   {
     "player": "20 Bridget Mizener",
@@ -2055,7 +2201,8 @@
     "throws": 36.0,
     "catches": 22.0,
     "offensePoints": 2.0,
-    "defensePoints": 16.0
+    "defensePoints": 16.0,
+    "+/-": 2.0
   },
   {
     "player": "20 Danielle Walsh",
@@ -2069,7 +2216,8 @@
     "throws": 230.0,
     "catches": 188.0,
     "offensePoints": 55.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": -3.0
   },
   {
     "player": "20 Madison Lang",
@@ -2083,7 +2231,8 @@
     "throws": 68.0,
     "catches": 52.0,
     "offensePoints": 30.0,
-    "defensePoints": 4.0
+    "defensePoints": 4.0,
+    "+/-": -3.0
   },
   {
     "player": "20 Noel Holmes",
@@ -2097,7 +2246,8 @@
     "throws": 38.0,
     "catches": 33.0,
     "offensePoints": 22.0,
-    "defensePoints": 23.0
+    "defensePoints": 23.0,
+    "+/-": -4.0
   },
   {
     "player": "20 Shirley Saunders",
@@ -2111,7 +2261,8 @@
     "throws": 20.0,
     "catches": 23.0,
     "offensePoints": 27.0,
-    "defensePoints": 14.0
+    "defensePoints": 14.0,
+    "+/-": 2.0
   },
   {
     "player": "20 Soju Hokari",
@@ -2125,7 +2276,8 @@
     "throws": 61.0,
     "catches": 46.0,
     "offensePoints": 29.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": -3.0
   },
   {
     "player": "20 Yina Cartagena",
@@ -2139,7 +2291,8 @@
     "throws": 292.0,
     "catches": 253.0,
     "offensePoints": 86.0,
-    "defensePoints": 29.0
+    "defensePoints": 29.0,
+    "+/-": 31.0
   },
   {
     "player": "21 Annie Shriver",
@@ -2153,7 +2306,8 @@
     "throws": 57.0,
     "catches": 56.0,
     "offensePoints": 59.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": -13.0
   },
   {
     "player": "21 Elena Rubino",
@@ -2167,7 +2321,8 @@
     "throws": 12.0,
     "catches": 18.0,
     "offensePoints": 20.0,
-    "defensePoints": 37.0
+    "defensePoints": 37.0,
+    "+/-": 5.0
   },
   {
     "player": "21 Elizabeth Burkhardt",
@@ -2181,7 +2336,8 @@
     "throws": 14.0,
     "catches": 11.0,
     "offensePoints": 4.0,
-    "defensePoints": 18.0
+    "defensePoints": 18.0,
+    "+/-": 0.0
   },
   {
     "player": "21 Jess Oh",
@@ -2195,7 +2351,8 @@
     "throws": 109.0,
     "catches": 94.0,
     "offensePoints": 10.0,
-    "defensePoints": 49.0
+    "defensePoints": 49.0,
+    "+/-": 5.0
   },
   {
     "player": "21 Linda Morse",
@@ -2209,7 +2366,8 @@
     "throws": 61.0,
     "catches": 69.0,
     "offensePoints": 27.0,
-    "defensePoints": 43.0
+    "defensePoints": 43.0,
+    "+/-": 10.0
   },
   {
     "player": "21 Montana Roberts",
@@ -2223,7 +2381,8 @@
     "throws": 17.0,
     "catches": 19.0,
     "offensePoints": 24.0,
-    "defensePoints": 30.0
+    "defensePoints": 30.0,
+    "+/-": 4.0
   },
   {
     "player": "21 Samantha Li",
@@ -2237,7 +2396,8 @@
     "throws": 55.0,
     "catches": 50.0,
     "offensePoints": 46.0,
-    "defensePoints": 2.0
+    "defensePoints": 2.0,
+    "+/-": -2.0
   },
   {
     "player": "21 Sarah Mondschein",
@@ -2251,7 +2411,8 @@
     "throws": 36.0,
     "catches": 38.0,
     "offensePoints": 26.0,
-    "defensePoints": 65.0
+    "defensePoints": 65.0,
+    "+/-": 0.0
   },
   {
     "player": "22 Alex Ballinger",
@@ -2265,7 +2426,8 @@
     "throws": 99.0,
     "catches": 75.0,
     "offensePoints": 31.0,
-    "defensePoints": 55.0
+    "defensePoints": 55.0,
+    "+/-": -7.0
   },
   {
     "player": "22 Emily Wycoff",
@@ -2279,7 +2441,8 @@
     "throws": 23.0,
     "catches": 22.0,
     "offensePoints": 16.0,
-    "defensePoints": 47.0
+    "defensePoints": 47.0,
+    "+/-": -3.0
   },
   {
     "player": "22 Erin McCann",
@@ -2293,7 +2456,8 @@
     "throws": 41.0,
     "catches": 40.0,
     "offensePoints": 12.0,
-    "defensePoints": 40.0
+    "defensePoints": 40.0,
+    "+/-": 5.0
   },
   {
     "player": "22 Julia Zwierzynski",
@@ -2307,7 +2471,8 @@
     "throws": 8.0,
     "catches": 10.0,
     "offensePoints": 9.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": -1.0
   },
   {
     "player": "22 Liz Hart",
@@ -2321,7 +2486,8 @@
     "throws": 49.0,
     "catches": 53.0,
     "offensePoints": 36.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": 5.0
   },
   {
     "player": "22 Rebecca Henley",
@@ -2335,7 +2501,8 @@
     "throws": 65.0,
     "catches": 72.0,
     "offensePoints": 71.0,
-    "defensePoints": 14.0
+    "defensePoints": 14.0,
+    "+/-": 8.0
   },
   {
     "player": "22 Sydney Loughran",
@@ -2349,7 +2516,8 @@
     "throws": 38.0,
     "catches": 42.0,
     "offensePoints": 24.0,
-    "defensePoints": 26.0
+    "defensePoints": 26.0,
+    "+/-": 3.0
   },
   {
     "player": "23 Allie Mueting",
@@ -2363,7 +2531,8 @@
     "throws": 4.0,
     "catches": 5.0,
     "offensePoints": 7.0,
-    "defensePoints": 24.0
+    "defensePoints": 24.0,
+    "+/-": 1.0
   },
   {
     "player": "23 Breanna Snipes",
@@ -2377,7 +2546,8 @@
     "throws": 6.0,
     "catches": 7.0,
     "offensePoints": 9.0,
-    "defensePoints": 21.0
+    "defensePoints": 21.0,
+    "+/-": 0.0
   },
   {
     "player": "23 Colette Pellegrini",
@@ -2391,7 +2561,8 @@
     "throws": 58.0,
     "catches": 65.0,
     "offensePoints": 51.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": 9.0
   },
   {
     "player": "23 Lili Hobday",
@@ -2405,7 +2576,8 @@
     "throws": 58.0,
     "catches": 52.0,
     "offensePoints": 13.0,
-    "defensePoints": 49.0
+    "defensePoints": 49.0,
+    "+/-": 2.0
   },
   {
     "player": "23 Linnea Soo",
@@ -2419,7 +2591,8 @@
     "throws": 24.0,
     "catches": 25.0,
     "offensePoints": 27.0,
-    "defensePoints": 7.0
+    "defensePoints": 7.0,
+    "+/-": -2.0
   },
   {
     "player": "23 Lisa Dang",
@@ -2433,7 +2606,8 @@
     "throws": 151.0,
     "catches": 117.0,
     "offensePoints": 26.0,
-    "defensePoints": 26.0
+    "defensePoints": 26.0,
+    "+/-": -2.0
   },
   {
     "player": "23 Natalie Bova",
@@ -2447,7 +2621,8 @@
     "throws": 126.0,
     "catches": 120.0,
     "offensePoints": 53.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": 15.0
   },
   {
     "player": "23 Nicole Patterson",
@@ -2461,7 +2636,8 @@
     "throws": 3.0,
     "catches": 2.0,
     "offensePoints": 3.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": 1.0
   },
   {
     "player": "23 Nicole Petersen",
@@ -2475,7 +2651,8 @@
     "throws": 0.0,
     "catches": 0.0,
     "offensePoints": 0.0,
-    "defensePoints": 5.0
+    "defensePoints": 5.0,
+    "+/-": 0.0
   },
   {
     "player": "24 Abby Swensen",
@@ -2489,7 +2666,8 @@
     "throws": 46.0,
     "catches": 61.0,
     "offensePoints": 55.0,
-    "defensePoints": 21.0
+    "defensePoints": 21.0,
+    "+/-": 16.0
   },
   {
     "player": "24 Allegra Johnson McKee",
@@ -2503,7 +2681,8 @@
     "throws": 2.0,
     "catches": 2.0,
     "offensePoints": 5.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": 1.0
   },
   {
     "player": "24 Annika Chan",
@@ -2517,7 +2696,8 @@
     "throws": 34.0,
     "catches": 21.0,
     "offensePoints": 10.0,
-    "defensePoints": 20.0
+    "defensePoints": 20.0,
+    "+/-": -3.0
   },
   {
     "player": "24 Casey Gorman",
@@ -2531,7 +2711,8 @@
     "throws": 10.0,
     "catches": 11.0,
     "offensePoints": 2.0,
-    "defensePoints": 37.0
+    "defensePoints": 37.0,
+    "+/-": -3.0
   },
   {
     "player": "24 Hannah Boettcher",
@@ -2545,7 +2726,8 @@
     "throws": 35.0,
     "catches": 35.0,
     "offensePoints": 9.0,
-    "defensePoints": 41.0
+    "defensePoints": 41.0,
+    "+/-": -6.0
   },
   {
     "player": "24 Heidi Umhoefer",
@@ -2559,7 +2741,8 @@
     "throws": 10.0,
     "catches": 11.0,
     "offensePoints": 10.0,
-    "defensePoints": 19.0
+    "defensePoints": 19.0,
+    "+/-": 3.0
   },
   {
     "player": "24 Jamie Eriksson",
@@ -2573,7 +2756,8 @@
     "throws": 33.0,
     "catches": 34.0,
     "offensePoints": 6.0,
-    "defensePoints": 26.0
+    "defensePoints": 26.0,
+    "+/-": 3.0
   },
   {
     "player": "24 Jesse Shofner",
@@ -2587,7 +2771,8 @@
     "throws": 22.0,
     "catches": 16.0,
     "offensePoints": 6.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": 1.0
   },
   {
     "player": "24 Jolie Krebs",
@@ -2601,7 +2786,8 @@
     "throws": 123.0,
     "catches": 133.0,
     "offensePoints": 59.0,
-    "defensePoints": 41.0
+    "defensePoints": 41.0,
+    "+/-": 19.0
   },
   {
     "player": "24 Mia Letterie",
@@ -2615,7 +2801,8 @@
     "throws": 107.0,
     "catches": 74.0,
     "offensePoints": 38.0,
-    "defensePoints": 44.0
+    "defensePoints": 44.0,
+    "+/-": -9.0
   },
   {
     "player": "25 Anna Wozniak",
@@ -2629,7 +2816,8 @@
     "throws": 4.0,
     "catches": 6.0,
     "offensePoints": 4.0,
-    "defensePoints": 17.0
+    "defensePoints": 17.0,
+    "+/-": 2.0
   },
   {
     "player": "25 Jasmine Anand",
@@ -2643,7 +2831,8 @@
     "throws": 2.0,
     "catches": 1.0,
     "offensePoints": 0.0,
-    "defensePoints": 3.0
+    "defensePoints": 3.0,
+    "+/-": 0.0
   },
   {
     "player": "25 Meg Manning",
@@ -2657,7 +2846,8 @@
     "throws": 32.0,
     "catches": 35.0,
     "offensePoints": 19.0,
-    "defensePoints": 26.0
+    "defensePoints": 26.0,
+    "+/-": 1.0
   },
   {
     "player": "25 Nadine Rowen",
@@ -2671,7 +2861,8 @@
     "throws": 36.0,
     "catches": 36.0,
     "offensePoints": 31.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": -2.0
   },
   {
     "player": "25 Sabrina Bonaci",
@@ -2685,7 +2876,8 @@
     "throws": 1.0,
     "catches": 1.0,
     "offensePoints": 1.0,
-    "defensePoints": 5.0
+    "defensePoints": 5.0,
+    "+/-": -1.0
   },
   {
     "player": "26 Amy Broome",
@@ -2699,7 +2891,8 @@
     "throws": 72.0,
     "catches": 45.0,
     "offensePoints": 27.0,
-    "defensePoints": 29.0
+    "defensePoints": 29.0,
+    "+/-": -6.0
   },
   {
     "player": "26 Gigi Paulig",
@@ -2713,7 +2906,8 @@
     "throws": 3.0,
     "catches": 3.0,
     "offensePoints": 0.0,
-    "defensePoints": 1.0
+    "defensePoints": 1.0,
+    "+/-": 0.0
   },
   {
     "player": "26 Jessica Sourbeer",
@@ -2727,7 +2921,8 @@
     "throws": 95.0,
     "catches": 67.0,
     "offensePoints": 11.0,
-    "defensePoints": 36.0
+    "defensePoints": 36.0,
+    "+/-": -1.0
   },
   {
     "player": "26 Leah Shorb",
@@ -2741,7 +2936,8 @@
     "throws": 9.0,
     "catches": 11.0,
     "offensePoints": 9.0,
-    "defensePoints": 26.0
+    "defensePoints": 26.0,
+    "+/-": 2.0
   },
   {
     "player": "26 Mariabelen Restrepo",
@@ -2755,7 +2951,8 @@
     "throws": 31.0,
     "catches": 32.0,
     "offensePoints": 7.0,
-    "defensePoints": 66.0
+    "defensePoints": 66.0,
+    "+/-": 2.0
   },
   {
     "player": "26 Morgan Lally",
@@ -2769,7 +2966,8 @@
     "throws": 97.0,
     "catches": 98.0,
     "offensePoints": 32.0,
-    "defensePoints": 51.0
+    "defensePoints": 51.0,
+    "+/-": 7.0
   },
   {
     "player": "27 Jocelyn Jessop",
@@ -2783,7 +2981,8 @@
     "throws": 55.0,
     "catches": 58.0,
     "offensePoints": 31.0,
-    "defensePoints": 23.0
+    "defensePoints": 23.0,
+    "+/-": 3.0
   },
   {
     "player": "27 Katharine Gilbert",
@@ -2797,7 +2996,8 @@
     "throws": 315.0,
     "catches": 255.0,
     "offensePoints": 91.0,
-    "defensePoints": 19.0
+    "defensePoints": 19.0,
+    "+/-": -23.0
   },
   {
     "player": "27 Mary Rippe",
@@ -2811,7 +3011,8 @@
     "throws": 49.0,
     "catches": 56.0,
     "offensePoints": 37.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": 6.0
   },
   {
     "player": "27 Stef Bugasch",
@@ -2825,7 +3026,8 @@
     "throws": 38.0,
     "catches": 34.0,
     "offensePoints": 37.0,
-    "defensePoints": 2.0
+    "defensePoints": 2.0,
+    "+/-": -1.0
   },
   {
     "player": "27 Therese Doebler",
@@ -2839,7 +3041,8 @@
     "throws": 45.0,
     "catches": 44.0,
     "offensePoints": 33.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": 0.0
   },
   {
     "player": "28 Claire Revere",
@@ -2853,7 +3056,8 @@
     "throws": 21.0,
     "catches": 20.0,
     "offensePoints": 8.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": 2.0
   },
   {
     "player": "28 Emma Peaslee",
@@ -2867,7 +3071,8 @@
     "throws": 34.0,
     "catches": 39.0,
     "offensePoints": 46.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": 1.0
   },
   {
     "player": "28 Margie Quinn",
@@ -2881,7 +3086,8 @@
     "throws": 202.0,
     "catches": 168.0,
     "offensePoints": 38.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": 6.0
   },
   {
     "player": "29 Charlotte Doran",
@@ -2895,7 +3101,8 @@
     "throws": 83.0,
     "catches": 63.0,
     "offensePoints": 27.0,
-    "defensePoints": 14.0
+    "defensePoints": 14.0,
+    "+/-": -3.0
   },
   {
     "player": "29 Elana Schwam",
@@ -2909,7 +3116,8 @@
     "throws": 20.0,
     "catches": 20.0,
     "offensePoints": 21.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": -3.0
   },
   {
     "player": "29 Emily Schloneger",
@@ -2923,7 +3131,8 @@
     "throws": 61.0,
     "catches": 63.0,
     "offensePoints": 63.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": 1.0
   },
   {
     "player": "30 Jean Huang",
@@ -2937,7 +3146,8 @@
     "throws": 68.0,
     "catches": 53.0,
     "offensePoints": 18.0,
-    "defensePoints": 14.0
+    "defensePoints": 14.0,
+    "+/-": -2.0
   },
   {
     "player": "30 Louise Beck",
@@ -2951,7 +3161,8 @@
     "throws": 14.0,
     "catches": 13.0,
     "offensePoints": 14.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": 0.0
   },
   {
     "player": "31 Caitlin Aycock",
@@ -2965,7 +3176,8 @@
     "throws": 2.0,
     "catches": 1.0,
     "offensePoints": 6.0,
-    "defensePoints": 3.0
+    "defensePoints": 3.0,
+    "+/-": -2.0
   },
   {
     "player": "31 Eli Presberg",
@@ -2979,7 +3191,8 @@
     "throws": 104.0,
     "catches": 91.0,
     "offensePoints": 28.0,
-    "defensePoints": 49.0
+    "defensePoints": 49.0,
+    "+/-": 3.0
   },
   {
     "player": "31 Mar\u00eda Vargas",
@@ -2993,7 +3206,8 @@
     "throws": 81.0,
     "catches": 59.0,
     "offensePoints": 23.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": -1.0
   },
   {
     "player": "31 Nikki Gilbert",
@@ -3007,7 +3221,8 @@
     "throws": 76.0,
     "catches": 84.0,
     "offensePoints": 54.0,
-    "defensePoints": 18.0
+    "defensePoints": 18.0,
+    "+/-": 9.0
   },
   {
     "player": "32 Annie Bocko",
@@ -3021,7 +3236,8 @@
     "throws": 67.0,
     "catches": 42.0,
     "offensePoints": 48.0,
-    "defensePoints": 13.0
+    "defensePoints": 13.0,
+    "+/-": -1.0
   },
   {
     "player": "32 Megan Wilson",
@@ -3035,7 +3251,8 @@
     "throws": 29.0,
     "catches": 30.0,
     "offensePoints": 2.0,
-    "defensePoints": 53.0
+    "defensePoints": 53.0,
+    "+/-": 1.0
   },
   {
     "player": "32 Mickela Heilicher",
@@ -3049,7 +3266,8 @@
     "throws": 42.0,
     "catches": 21.0,
     "offensePoints": 13.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": -8.0
   },
   {
     "player": "32 Shani Rosenthal",
@@ -3063,7 +3281,8 @@
     "throws": 34.0,
     "catches": 40.0,
     "offensePoints": 32.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": 6.0
   },
   {
     "player": "33 Amanda Murphy",
@@ -3077,7 +3296,8 @@
     "throws": 49.0,
     "catches": 44.0,
     "offensePoints": 9.0,
-    "defensePoints": 20.0
+    "defensePoints": 20.0,
+    "+/-": 5.0
   },
   {
     "player": "33 Erica Birdsong",
@@ -3091,7 +3311,8 @@
     "throws": 16.0,
     "catches": 16.0,
     "offensePoints": 6.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": -1.0
   },
   {
     "player": "33 Jalyn Baumgartner",
@@ -3105,7 +3326,8 @@
     "throws": 9.0,
     "catches": 10.0,
     "offensePoints": 9.0,
-    "defensePoints": 34.0
+    "defensePoints": 34.0,
+    "+/-": -2.0
   },
   {
     "player": "33 Jana Graham",
@@ -3119,7 +3341,8 @@
     "throws": 10.0,
     "catches": 18.0,
     "offensePoints": 7.0,
-    "defensePoints": 59.0
+    "defensePoints": 59.0,
+    "+/-": 2.0
   },
   {
     "player": "33 Julia Hill",
@@ -3133,7 +3356,8 @@
     "throws": 17.0,
     "catches": 17.0,
     "offensePoints": 1.0,
-    "defensePoints": 43.0
+    "defensePoints": 43.0,
+    "+/-": 0.0
   },
   {
     "player": "33 Valeria Cardenas",
@@ -3147,7 +3371,8 @@
     "throws": 226.0,
     "catches": 182.0,
     "offensePoints": 57.0,
-    "defensePoints": 42.0
+    "defensePoints": 42.0,
+    "+/-": 3.0
   },
   {
     "player": "33 Yuge Xiao",
@@ -3161,7 +3386,8 @@
     "throws": 140.0,
     "catches": 139.0,
     "offensePoints": 55.0,
-    "defensePoints": 14.0
+    "defensePoints": 14.0,
+    "+/-": 6.0
   },
   {
     "player": "34 Alex Barnett",
@@ -3175,7 +3401,8 @@
     "throws": 93.0,
     "catches": 68.0,
     "offensePoints": 22.0,
-    "defensePoints": 20.0
+    "defensePoints": 20.0,
+    "+/-": -2.0
   },
   {
     "player": "34 Lauren Kitten",
@@ -3189,7 +3416,8 @@
     "throws": 95.0,
     "catches": 73.0,
     "offensePoints": 27.0,
-    "defensePoints": 43.0
+    "defensePoints": 43.0,
+    "+/-": -7.0
   },
   {
     "player": "36 Adilina Malave",
@@ -3203,7 +3431,8 @@
     "throws": 8.0,
     "catches": 7.0,
     "offensePoints": 1.0,
-    "defensePoints": 13.0
+    "defensePoints": 13.0,
+    "+/-": -5.0
   },
   {
     "player": "36 Carolyn Normile",
@@ -3217,7 +3446,8 @@
     "throws": 92.0,
     "catches": 75.0,
     "offensePoints": 22.0,
-    "defensePoints": 22.0
+    "defensePoints": 22.0,
+    "+/-": 0.0
   },
   {
     "player": "36 Jaelee Cruz",
@@ -3231,7 +3461,8 @@
     "throws": 108.0,
     "catches": 113.0,
     "offensePoints": 47.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": -4.0
   },
   {
     "player": "37 Claire Trop",
@@ -3245,7 +3476,8 @@
     "throws": 52.0,
     "catches": 54.0,
     "offensePoints": 14.0,
-    "defensePoints": 17.0
+    "defensePoints": 17.0,
+    "+/-": 4.0
   },
   {
     "player": "37 Hannah Henkin",
@@ -3259,7 +3491,8 @@
     "throws": 91.0,
     "catches": 68.0,
     "offensePoints": 10.0,
-    "defensePoints": 53.0
+    "defensePoints": 53.0,
+    "+/-": -6.0
   },
   {
     "player": "40 Claire Milton",
@@ -3273,7 +3506,8 @@
     "throws": 75.0,
     "catches": 87.0,
     "offensePoints": 63.0,
-    "defensePoints": 20.0
+    "defensePoints": 20.0,
+    "+/-": 16.0
   },
   {
     "player": "42 Kelly Kerker",
@@ -3287,7 +3521,8 @@
     "throws": 20.0,
     "catches": 22.0,
     "offensePoints": 11.0,
-    "defensePoints": 44.0
+    "defensePoints": 44.0,
+    "+/-": -2.0
   },
   {
     "player": "42 Lisi Lohre",
@@ -3301,7 +3536,8 @@
     "throws": 30.0,
     "catches": 31.0,
     "offensePoints": 8.0,
-    "defensePoints": 23.0
+    "defensePoints": 23.0,
+    "+/-": 1.0
   },
   {
     "player": "42 Martha Wilber",
@@ -3315,7 +3551,8 @@
     "throws": 92.0,
     "catches": 78.0,
     "offensePoints": 36.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": -6.0
   },
   {
     "player": "42 Meg Duffy",
@@ -3329,7 +3566,8 @@
     "throws": 38.0,
     "catches": 30.0,
     "offensePoints": 18.0,
-    "defensePoints": 17.0
+    "defensePoints": 17.0,
+    "+/-": -4.0
   },
   {
     "player": "44 Chloe Green",
@@ -3343,7 +3581,8 @@
     "throws": 21.0,
     "catches": 20.0,
     "offensePoints": 1.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": -2.0
   },
   {
     "player": "44 Chloe Greene",
@@ -3357,7 +3596,8 @@
     "throws": 32.0,
     "catches": 27.0,
     "offensePoints": 6.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": -3.0
   },
   {
     "player": "44 Jordan Harn",
@@ -3371,7 +3611,8 @@
     "throws": 56.0,
     "catches": 55.0,
     "offensePoints": 20.0,
-    "defensePoints": 34.0
+    "defensePoints": 34.0,
+    "+/-": -9.0
   },
   {
     "player": "44 Kayla Seeger",
@@ -3385,7 +3626,8 @@
     "throws": 6.0,
     "catches": 7.0,
     "offensePoints": 0.0,
-    "defensePoints": 18.0
+    "defensePoints": 18.0,
+    "+/-": 0.0
   },
   {
     "player": "44 Sarah Meckstroth",
@@ -3399,7 +3641,8 @@
     "throws": 55.0,
     "catches": 68.0,
     "offensePoints": 43.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": 1.0
   },
   {
     "player": "45 Caitlin Gross",
@@ -3413,7 +3656,8 @@
     "throws": 76.0,
     "catches": 75.0,
     "offensePoints": 50.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": -3.0
   },
   {
     "player": "45 Emery Otopalik",
@@ -3427,7 +3671,8 @@
     "throws": 28.0,
     "catches": 32.0,
     "offensePoints": 33.0,
-    "defensePoints": 36.0
+    "defensePoints": 36.0,
+    "+/-": -1.0
   },
   {
     "player": "45 Jennifer Lin",
@@ -3441,7 +3686,8 @@
     "throws": 18.0,
     "catches": 19.0,
     "offensePoints": 13.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": -1.0
   },
   {
     "player": "45 Sarah Jeung",
@@ -3455,7 +3701,8 @@
     "throws": 42.0,
     "catches": 42.0,
     "offensePoints": 18.0,
-    "defensePoints": 32.0
+    "defensePoints": 32.0,
+    "+/-": 1.0
   },
   {
     "player": "45 Sylvia Brown",
@@ -3469,7 +3716,8 @@
     "throws": 163.0,
     "catches": 141.0,
     "offensePoints": 49.0,
-    "defensePoints": 36.0
+    "defensePoints": 36.0,
+    "+/-": -12.0
   },
   {
     "player": "46 Graham Cunningham",
@@ -3483,7 +3731,8 @@
     "throws": 32.0,
     "catches": 32.0,
     "offensePoints": 5.0,
-    "defensePoints": 27.0
+    "defensePoints": 27.0,
+    "+/-": 1.0
   },
   {
     "player": "47 Alex Rowell",
@@ -3497,7 +3746,8 @@
     "throws": 3.0,
     "catches": 2.0,
     "offensePoints": 1.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": 0.0
   },
   {
     "player": "47 Penny Wu",
@@ -3511,7 +3761,8 @@
     "throws": 101.0,
     "catches": 61.0,
     "offensePoints": 14.0,
-    "defensePoints": 44.0
+    "defensePoints": 44.0,
+    "+/-": -20.0
   },
   {
     "player": "47 Tori Gray",
@@ -3525,7 +3776,8 @@
     "throws": 38.0,
     "catches": 40.0,
     "offensePoints": 18.0,
-    "defensePoints": 50.0
+    "defensePoints": 50.0,
+    "+/-": -2.0
   },
   {
     "player": "48 Caroline Weinberg",
@@ -3539,7 +3791,8 @@
     "throws": 2.0,
     "catches": 3.0,
     "offensePoints": 0.0,
-    "defensePoints": 7.0
+    "defensePoints": 7.0,
+    "+/-": 2.0
   },
   {
     "player": "48 Natalie Baumgarten",
@@ -3553,7 +3806,8 @@
     "throws": 7.0,
     "catches": 9.0,
     "offensePoints": 0.0,
-    "defensePoints": 11.0
+    "defensePoints": 11.0,
+    "+/-": 0.0
   },
   {
     "player": "49 Elly Fireside-Ostergaard",
@@ -3567,7 +3821,8 @@
     "throws": 11.0,
     "catches": 16.0,
     "offensePoints": 16.0,
-    "defensePoints": 48.0
+    "defensePoints": 48.0,
+    "+/-": 5.0
   },
   {
     "player": "51 Lilli Popovich",
@@ -3581,7 +3836,8 @@
     "throws": 27.0,
     "catches": 31.0,
     "offensePoints": 28.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": 3.0
   },
   {
     "player": "51 Tess Johnson",
@@ -3595,7 +3851,8 @@
     "throws": 64.0,
     "catches": 45.0,
     "offensePoints": 17.0,
-    "defensePoints": 23.0
+    "defensePoints": 23.0,
+    "+/-": -2.0
   },
   {
     "player": "52 Caitlin Connell",
@@ -3609,7 +3866,8 @@
     "throws": 16.0,
     "catches": 21.0,
     "offensePoints": 44.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": 3.0
   },
   {
     "player": "52 Erynn Schroeder",
@@ -3623,7 +3881,8 @@
     "throws": 219.0,
     "catches": 136.0,
     "offensePoints": 77.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": -39.0
   },
   {
     "player": "53 Emma Piorier",
@@ -3637,7 +3896,8 @@
     "throws": 51.0,
     "catches": 65.0,
     "offensePoints": 64.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": 8.0
   },
   {
     "player": "54 Liv Ford",
@@ -3651,7 +3911,8 @@
     "throws": 124.0,
     "catches": 94.0,
     "offensePoints": 43.0,
-    "defensePoints": 29.0
+    "defensePoints": 29.0,
+    "+/-": -9.0
   },
   {
     "player": "55 Courtney Walbe",
@@ -3665,7 +3926,8 @@
     "throws": 24.0,
     "catches": 20.0,
     "offensePoints": 6.0,
-    "defensePoints": 40.0
+    "defensePoints": 40.0,
+    "+/-": -6.0
   },
   {
     "player": "55 Mia Wieben",
@@ -3679,7 +3941,8 @@
     "throws": 4.0,
     "catches": 4.0,
     "offensePoints": 5.0,
-    "defensePoints": 9.0
+    "defensePoints": 9.0,
+    "+/-": -1.0
   },
   {
     "player": "55 Molly Roy",
@@ -3693,7 +3956,8 @@
     "throws": 8.0,
     "catches": 6.0,
     "offensePoints": 3.0,
-    "defensePoints": 5.0
+    "defensePoints": 5.0,
+    "+/-": -1.0
   },
   {
     "player": "55 Sophie Knowles",
@@ -3707,7 +3971,8 @@
     "throws": 89.0,
     "catches": 65.0,
     "offensePoints": 8.0,
-    "defensePoints": 59.0
+    "defensePoints": 59.0,
+    "+/-": 2.0
   },
   {
     "player": "55 Trystan Grzyll",
@@ -3721,7 +3986,8 @@
     "throws": 14.0,
     "catches": 13.0,
     "offensePoints": 16.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": 0.0
   },
   {
     "player": "59 Audrey Lyman",
@@ -3735,7 +4001,8 @@
     "throws": 129.0,
     "catches": 84.0,
     "offensePoints": 18.0,
-    "defensePoints": 54.0
+    "defensePoints": 54.0,
+    "+/-": -8.0
   },
   {
     "player": "59 Maple Adkins-Threats",
@@ -3749,7 +4016,8 @@
     "throws": 4.0,
     "catches": 3.0,
     "offensePoints": 1.0,
-    "defensePoints": 15.0
+    "defensePoints": 15.0,
+    "+/-": -1.0
   },
   {
     "player": "62 Casey Banta-Ryan",
@@ -3763,7 +4031,8 @@
     "throws": 28.0,
     "catches": 29.0,
     "offensePoints": 10.0,
-    "defensePoints": 47.0
+    "defensePoints": 47.0,
+    "+/-": 1.0
   },
   {
     "player": "64 Rachel Hildebrand",
@@ -3777,7 +4046,8 @@
     "throws": 3.0,
     "catches": 2.0,
     "offensePoints": 3.0,
-    "defensePoints": 4.0
+    "defensePoints": 4.0,
+    "+/-": -1.0
   },
   {
     "player": "65 Anna Lieberman",
@@ -3791,7 +4061,8 @@
     "throws": 8.0,
     "catches": 9.0,
     "offensePoints": 0.0,
-    "defensePoints": 41.0
+    "defensePoints": 41.0,
+    "+/-": -1.0
   },
   {
     "player": "66 Jackie Wang",
@@ -3805,7 +4076,8 @@
     "throws": 115.0,
     "catches": 87.0,
     "offensePoints": 11.0,
-    "defensePoints": 48.0
+    "defensePoints": 48.0,
+    "+/-": 3.0
   },
   {
     "player": "66 Janine Hlavaty",
@@ -3819,7 +4091,8 @@
     "throws": 41.0,
     "catches": 47.0,
     "offensePoints": 42.0,
-    "defensePoints": 14.0
+    "defensePoints": 14.0,
+    "+/-": 4.0
   },
   {
     "player": "66 Jess Brand",
@@ -3833,7 +4106,8 @@
     "throws": 3.0,
     "catches": 4.0,
     "offensePoints": 3.0,
-    "defensePoints": 29.0
+    "defensePoints": 29.0,
+    "+/-": 1.0
   },
   {
     "player": "66 Mya Hernandez",
@@ -3847,7 +4121,8 @@
     "throws": 57.0,
     "catches": 63.0,
     "offensePoints": 38.0,
-    "defensePoints": 18.0
+    "defensePoints": 18.0,
+    "+/-": 1.0
   },
   {
     "player": "69 Jaime Estes",
@@ -3861,7 +4136,8 @@
     "throws": 81.0,
     "catches": 84.0,
     "offensePoints": 59.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": 2.0
   },
   {
     "player": "69 Tahlia Quartin",
@@ -3875,7 +4151,8 @@
     "throws": 10.0,
     "catches": 4.0,
     "offensePoints": 11.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": -3.0
   },
   {
     "player": "70 Benish Benjamin",
@@ -3889,7 +4166,8 @@
     "throws": 1.0,
     "catches": 0.0,
     "offensePoints": 0.0,
-    "defensePoints": 4.0
+    "defensePoints": 4.0,
+    "+/-": 0.0
   },
   {
     "player": "71 Mattea Swegles",
@@ -3903,7 +4181,8 @@
     "throws": 9.0,
     "catches": 8.0,
     "offensePoints": 11.0,
-    "defensePoints": 18.0
+    "defensePoints": 18.0,
+    "+/-": -2.0
   },
   {
     "player": "71 Shirlee Wohl",
@@ -3917,7 +4196,8 @@
     "throws": 176.0,
     "catches": 140.0,
     "offensePoints": 46.0,
-    "defensePoints": 3.0
+    "defensePoints": 3.0,
+    "+/-": 0.0
   },
   {
     "player": "71 Wren Vogel",
@@ -3931,7 +4211,8 @@
     "throws": 7.0,
     "catches": 8.0,
     "offensePoints": 11.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": -4.0
   },
   {
     "player": "72 Annalise Paul",
@@ -3945,7 +4226,8 @@
     "throws": 26.0,
     "catches": 26.0,
     "offensePoints": 12.0,
-    "defensePoints": 22.0
+    "defensePoints": 22.0,
+    "+/-": -1.0
   },
   {
     "player": "72 Grace Castro",
@@ -3959,7 +4241,8 @@
     "throws": 82.0,
     "catches": 87.0,
     "offensePoints": 71.0,
-    "defensePoints": 13.0
+    "defensePoints": 13.0,
+    "+/-": 5.0
   },
   {
     "player": "72 Jacqueline Jarik",
@@ -3973,7 +4256,8 @@
     "throws": 55.0,
     "catches": 55.0,
     "offensePoints": 44.0,
-    "defensePoints": 33.0
+    "defensePoints": 33.0,
+    "+/-": -4.0
   },
   {
     "player": "73 Clara Stewart",
@@ -3987,7 +4271,8 @@
     "throws": 199.0,
     "catches": 164.0,
     "offensePoints": 56.0,
-    "defensePoints": 14.0
+    "defensePoints": 14.0,
+    "+/-": -4.0
   },
   {
     "player": "75 Sarah Kingsley-Hart",
@@ -4001,7 +4286,8 @@
     "throws": 28.0,
     "catches": 33.0,
     "offensePoints": 35.0,
-    "defensePoints": 10.0
+    "defensePoints": 10.0,
+    "+/-": 4.0
   },
   {
     "player": "76 Emma Palacio",
@@ -4015,7 +4301,8 @@
     "throws": 19.0,
     "catches": 22.0,
     "offensePoints": 17.0,
-    "defensePoints": 21.0
+    "defensePoints": 21.0,
+    "+/-": 1.0
   },
   {
     "player": "77 Anna Tortorici",
@@ -4029,7 +4316,8 @@
     "throws": 6.0,
     "catches": 9.0,
     "offensePoints": 0.0,
-    "defensePoints": 12.0
+    "defensePoints": 12.0,
+    "+/-": 2.0
   },
   {
     "player": "77 Katrina Mcguire",
@@ -4043,7 +4331,8 @@
     "throws": 54.0,
     "catches": 55.0,
     "offensePoints": 26.0,
-    "defensePoints": 25.0
+    "defensePoints": 25.0,
+    "+/-": -1.0
   },
   {
     "player": "77 Kerry Younts",
@@ -4057,7 +4346,8 @@
     "throws": 4.0,
     "catches": 5.0,
     "offensePoints": 1.0,
-    "defensePoints": 7.0
+    "defensePoints": 7.0,
+    "+/-": 0.0
   },
   {
     "player": "77 Melissa Gronske",
@@ -4071,7 +4361,8 @@
     "throws": 13.0,
     "catches": 15.0,
     "offensePoints": 44.0,
-    "defensePoints": 7.0
+    "defensePoints": 7.0,
+    "+/-": -1.0
   },
   {
     "player": "81 Mackenzie Bailey",
@@ -4085,7 +4376,8 @@
     "throws": 19.0,
     "catches": 19.0,
     "offensePoints": 11.0,
-    "defensePoints": 8.0
+    "defensePoints": 8.0,
+    "+/-": 1.0
   },
   {
     "player": "81 Mckenzie Bailey",
@@ -4099,7 +4391,8 @@
     "throws": 6.0,
     "catches": 6.0,
     "offensePoints": 2.0,
-    "defensePoints": 2.0
+    "defensePoints": 2.0,
+    "+/-": 0.0
   },
   {
     "player": "82 Mary Turner",
@@ -4113,7 +4406,8 @@
     "throws": 24.0,
     "catches": 22.0,
     "offensePoints": 27.0,
-    "defensePoints": 19.0
+    "defensePoints": 19.0,
+    "+/-": -4.0
   },
   {
     "player": "87 Christina Marsciano",
@@ -4127,7 +4421,8 @@
     "throws": 2.0,
     "catches": 2.0,
     "offensePoints": 4.0,
-    "defensePoints": 5.0
+    "defensePoints": 5.0,
+    "+/-": -1.0
   },
   {
     "player": "88 Claire Kelley",
@@ -4141,7 +4436,8 @@
     "throws": 15.0,
     "catches": 18.0,
     "offensePoints": 19.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": 1.0
   },
   {
     "player": "88 Grace Hodges",
@@ -4155,7 +4451,8 @@
     "throws": 3.0,
     "catches": 3.0,
     "offensePoints": 0.0,
-    "defensePoints": 4.0
+    "defensePoints": 4.0,
+    "+/-": -1.0
   },
   {
     "player": "88 Maddie Pletzke",
@@ -4169,7 +4466,8 @@
     "throws": 11.0,
     "catches": 11.0,
     "offensePoints": 6.0,
-    "defensePoints": 27.0
+    "defensePoints": 27.0,
+    "+/-": -3.0
   },
   {
     "player": "88 Maddy Easton",
@@ -4183,7 +4481,8 @@
     "throws": 37.0,
     "catches": 38.0,
     "offensePoints": 25.0,
-    "defensePoints": 32.0
+    "defensePoints": 32.0,
+    "+/-": -2.0
   },
   {
     "player": "88 Nikki Hair",
@@ -4197,7 +4496,8 @@
     "throws": 22.0,
     "catches": 27.0,
     "offensePoints": 11.0,
-    "defensePoints": 75.0
+    "defensePoints": 75.0,
+    "+/-": 5.0
   },
   {
     "player": "90 Qxhna Titcomb",
@@ -4211,7 +4511,8 @@
     "throws": 75.0,
     "catches": 65.0,
     "offensePoints": 42.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": 3.0
   },
   {
     "player": "90 Qxnha Titcomb",
@@ -4225,7 +4526,8 @@
     "throws": 35.0,
     "catches": 30.0,
     "offensePoints": 8.0,
-    "defensePoints": 6.0
+    "defensePoints": 6.0,
+    "+/-": 3.0
   },
   {
     "player": "91 Samantha Philips",
@@ -4239,7 +4541,8 @@
     "throws": 109.0,
     "catches": 98.0,
     "offensePoints": 36.0,
-    "defensePoints": 16.0
+    "defensePoints": 16.0,
+    "+/-": -1.0
   },
   {
     "player": "92 Charlotte Wilson",
@@ -4253,7 +4556,8 @@
     "throws": 97.0,
     "catches": 76.0,
     "offensePoints": 45.0,
-    "defensePoints": 21.0
+    "defensePoints": 21.0,
+    "+/-": 1.0
   },
   {
     "player": "95 Megan Mendieta",
@@ -4267,7 +4571,8 @@
     "throws": 39.0,
     "catches": 30.0,
     "offensePoints": 0.0,
-    "defensePoints": 18.0
+    "defensePoints": 18.0,
+    "+/-": -2.0
   },
   {
     "player": "96 Nina Finley",
@@ -4281,7 +4586,8 @@
     "throws": 187.0,
     "catches": 137.0,
     "offensePoints": 75.0,
-    "defensePoints": 58.0
+    "defensePoints": 58.0,
+    "+/-": 13.0
   },
   {
     "player": "97 Eileen Bequette",
@@ -4295,7 +4601,8 @@
     "throws": 16.0,
     "catches": 20.0,
     "offensePoints": 23.0,
-    "defensePoints": 39.0
+    "defensePoints": 39.0,
+    "+/-": 4.0
   },
   {
     "player": "97 Hannah Glick",
@@ -4309,7 +4616,8 @@
     "throws": 11.0,
     "catches": 12.0,
     "offensePoints": 13.0,
-    "defensePoints": 22.0
+    "defensePoints": 22.0,
+    "+/-": 1.0
   },
   {
     "player": "99 Carmen Tormey",
@@ -4323,7 +4631,8 @@
     "throws": 10.0,
     "catches": 12.0,
     "offensePoints": 3.0,
-    "defensePoints": 17.0
+    "defensePoints": 17.0,
+    "+/-": 0.0
   },
   {
     "player": "99 Dana Demmert",
@@ -4337,7 +4646,8 @@
     "throws": 45.0,
     "catches": 46.0,
     "offensePoints": 40.0,
-    "defensePoints": 27.0
+    "defensePoints": 27.0,
+    "+/-": -8.0
   },
   {
     "player": "99 Veronica Kolegue-Spalaris",
@@ -4351,7 +4661,8 @@
     "throws": 1.0,
     "catches": 1.0,
     "offensePoints": 0.0,
-    "defensePoints": 7.0
+    "defensePoints": 7.0,
+    "+/-": 0.0
   },
   {
     "player": 0,
@@ -4365,6 +4676,7 @@
     "throws": 0.0,
     "catches": 0.0,
     "offensePoints": 0.0,
-    "defensePoints": 0.0
+    "defensePoints": 0.0,
+    "+/-": 0.0
   }
 ]
