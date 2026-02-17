@@ -39,7 +39,7 @@ const topTeams = getTop3(teams, 'goals');
 <Layout title="Home">
   <div class="space-y-12">
     <!-- Hero Section -->
-    <section class="py-4">
+    <section class="py-4 animate-fade-in">
       <h1 class="text-4xl md:text-5xl font-semibold mb-3">
         {currentSeason} Season
       </h1>
@@ -48,7 +48,7 @@ const topTeams = getTop3(teams, 'goals');
       </p>
 
       <!-- Main CTAs -->
-      <div class="grid sm:grid-cols-2 gap-4">
+      <div class="grid sm:grid-cols-2 gap-4 animate-fade-in-delay-1">
         <a 
           href="/Stats-Hub/teams" 
           class="block p-6 bg-pul-black text-pul-white rounded-lg hover:bg-pul-dark-gray transition-colors"
@@ -70,14 +70,14 @@ const topTeams = getTop3(teams, 'goals');
     <!-- Leaders Preview -->
     {players.length > 0 && (
       <section>
-        <div class="flex items-baseline justify-between mb-4">
+        <div class="flex items-baseline justify-between mb-4 animate-fade-in-delay-2">
           <h2 class="text-xl font-semibold">Season Leaders</h2>
           <a href="/Stats-Hub/leaders" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
             View all →
           </a>
         </div>
-        
-        <div class="grid sm:grid-cols-3 gap-4">
+
+        <div class="grid sm:grid-cols-3 gap-4 animate-fade-in-delay-3">        
          <!-- Goals Leaders -->
           <div class="border border-pul-border rounded-lg overflow-hidden">
             <div class="bg-pul-light px-4 py-2 border-b border-pul-border">

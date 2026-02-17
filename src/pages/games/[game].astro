@@ -121,9 +121,12 @@ const homeWon = homeGoals > awayGoals;
 <Layout title={decodedGame}>
   <div class="space-y-8">
     <!-- Back link -->
-    <a href="/Stats-Hub/teams" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
-      ← Back to teams
-    </a>
+    <button 
+      onclick="if (document.referrer && document.referrer.includes('/Stats-Hub')) { history.back(); } else { window.location.href = '/Stats-Hub/teams'; }"
+      class="text-sm text-pul-gray hover:text-pul-black transition-colors cursor-pointer"
+    >
+      ← Back
+    </button>
 
     <!-- Game Header -->
     <div class="text-center">

@@ -3,9 +3,30 @@ interface Props {
   title: string;
   description?: string;
 }
-
 const { title, description = "Premier Ultimate League Statistics" } = Astro.props;
 const currentYear = new Date().getFullYear();
+
+// Get current path for nav highlighting
+const currentPath = Astro.url.pathname;
+
+// Helper to check if a nav item is active
+const isActive = (href: string) => {
+  if (href === '/Stats-Hub' || href === '/Stats-Hub/') {
+    return currentPath === '/Stats-Hub' || currentPath === '/Stats-Hub/';
+  }
+  return currentPath.startsWith(href);
+};
+
+// Nav items
+const navItems = [
+  { href: '/Stats-Hub/search', label: 'Search' },
+  { href: '/Stats-Hub/compare', label: 'Compare' },
+  { href: '/Stats-Hub/leaders', label: 'Leaders' },
+  { href: '/Stats-Hub/standings', label: 'Standings' },
+  { href: '/Stats-Hub/records', label: 'Records' },
+  { href: '/Stats-Hub/teams', label: 'Teams' },
+  { href: '/Stats-Hub/players', label: 'Players' },
+];
 ---
 
 <!doctype html>
@@ -30,48 +51,18 @@ const currentYear = new Date().getFullYear();
 
           <!-- Desktop Navigation -->
           <nav class="hidden sm:flex items-center gap-8">
-            <a 
-              href="/Stats-Hub/search" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Search
-            </a>
-            <a 
-              href="/Stats-Hub/compare" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Compare
-            </a>
-            <a 
-              href="/Stats-Hub/leaders" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Leaders
-            </a>
-               <a 
-              href="/Stats-Hub/standings" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Standings
-            </a>
-            <a 
-              href="/Stats-Hub/records" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Records
-            </a>
-            <a 
-              href="/Stats-Hub/teams" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Teams
-            </a>
-            <a 
-              href="/Stats-Hub/players" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Players
-            </a>
+            {navItems.map(item => (
+              <a 
+                href={item.href}
+                class={`text-sm transition-colors ${
+                  isActive(item.href) 
+                    ? 'text-pul-black font-medium' 
+                    : 'text-pul-gray hover:text-pul-black'
+                }`}
+              >
+                {item.label}
+              </a>
+            ))}
             <a 
               href="https://www.premierultimateleague.com/" 
               target="_blank"
@@ -97,48 +88,18 @@ const currentYear = new Date().getFullYear();
         <!-- Mobile Navigation -->
         <nav id="mobile-menu" class="hidden sm:hidden pb-4 border-t border-pul-border mt-2 pt-4">
           <div class="flex flex-col gap-4">
-            <a 
-              href="/Stats-Hub/search" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Search
-            </a>
-            <a 
-              href="/Stats-Hub/compare" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Compare
-            </a>
-            <a 
-              href="/Stats-Hub/leaders" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Leaders
-            </a>
-            <a 
-              href="/Stats-Hub/standings" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Standings
-            </a>
-            <a 
-              href="/Stats-Hub/records" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Records
-            </a>
-            <a 
-              href="/Stats-Hub/teams" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Teams
-            </a>
-            <a 
-              href="/Stats-Hub/players" 
-              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
-            >
-              Players
-            </a>
+            {navItems.map(item => (
+              <a 
+                href={item.href}
+                class={`text-sm transition-colors ${
+                  isActive(item.href) 
+                    ? 'text-pul-black font-medium' 
+                    : 'text-pul-gray hover:text-pul-black'
+                }`}
+              >
+                {item.label}
+              </a>
+            ))}
             <a 
               href="https://www.premierultimateleague.com/" 
               target="_blank"

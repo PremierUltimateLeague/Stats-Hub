@@ -94,8 +94,20 @@ try {
       </div>
 
       <!-- No results -->
-      <div id="no-results" class="hidden text-center py-12 text-pul-gray">
-        <p>No results found</p>
+      <div id="no-results" class="hidden text-center py-12">
+        <p class="text-pul-gray mb-4">No results found</p>
+        <div class="text-sm text-pul-gray">
+          <p class="mb-2">Try:</p>
+          <ul class="space-y-1">
+            <li>• Checking your spelling</li>
+            <li>• Using fewer keywords</li>
+            <li>• Searching by team name or player number</li>
+          </ul>
+        </div>
+        <div class="mt-6 flex justify-center gap-4">
+          <a href="/Stats-Hub/teams" class="text-sm text-pul-black hover:underline">Browse Teams</a>
+          <a href="/Stats-Hub/players" class="text-sm text-pul-black hover:underline">Browse Players</a>
+        </div>
       </div>
 
       <!-- Team Results -->
