@@ -208,8 +208,8 @@ export function StatsTable<T extends Record<string, unknown>>({
                   key={suggestion}
                   onClick={() => selectSuggestion(suggestion)}
                   className={`px-4 py-2 cursor-pointer text-sm ${index === selectedSuggestionIndex
-                      ? 'bg-pul-light text-pul-black'
-                      : 'hover:bg-pul-light'
+                    ? 'bg-pul-light text-pul-black'
+                    : 'hover:bg-pul-light'
                     }`}
                 >
                   {suggestion}
@@ -251,18 +251,30 @@ export function StatsTable<T extends Record<string, unknown>>({
                     <th
                       key={header.id}
                       onClick={header.column.getToggleSortingHandler()}
-                      data-sorted={header.column.getIsSorted() || undefined}
                       style={{
                         width: header.getSize(),
-                        textAlign: isNumeric ? 'right' : 'left'
+                        textAlign: isNumeric ? 'right' : 'left',
+                        cursor: 'pointer',
+                        userSelect: 'none',
                       }}
                     >
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                          header.column.columnDef.header,
-                          header.getContext()
+                      <span className="inline-flex items-center gap-1">
+                        {header.isPlaceholder
+                          ? null
+                          : flexRender(
+                            header.column.columnDef.header,
+                            header.getContext()
+                          )}
+                        {header.column.getIsSorted() === 'asc' && (
+                          <span className="text-pul-black">↑</span>
                         )}
+                        {header.column.getIsSorted() === 'desc' && (
+                          <span className="text-pul-black">↓</span>
+                        )}
+                        {!header.column.getIsSorted() && (
+                          <span className="text-pul-gray/50">↕</span>
+                        )}
+                      </span>
                     </th>
                   );
                 })}
