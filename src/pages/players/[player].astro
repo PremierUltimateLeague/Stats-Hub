@@ -1,0 +1,252 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { StatsTable } from '../../components/StatsTable';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Get the player from the URL
+const { player } = Astro.params;
+const decodedPlayer = decodeURIComponent(player || '');
+
+// Parse player number and name
+const playerMatch = decodedPlayer.match(/^(\d+)\s+(.+)$/);
+const playerNumber = playerMatch ? playerMatch[1] : null;
+const playerName = playerMatch ? playerMatch[2] : decodedPlayer;
+
+// Team logo mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'Columbus Pride': 'columbus.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'LA Astra': 'la.png',
+  'Medellin Revolution': 'medellin.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Portland Rising': 'portland.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
+// Load all seasons data
+const seasons = ['2025', '2024'];
+const playerSeasonStats: Record<string, any> = {};
+const playerGameStats: Record<string, any[]> = {};
+
+for (const season of seasons) {
+  // Season stats
+  try {
+    const dataPath = path.join(process.cwd(), 'data', season, 'players_season.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const allPlayers = JSON.parse(rawData);
+    const found = allPlayers.find((p: any) => p.player === decodedPlayer);
+    if (found) {
+      playerSeasonStats[season] = found;
+    }
+  } catch (e) {}
+
+  // Game stats
+  try {
+    const dataPath = path.join(process.cwd(), 'data', season, 'players_games.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const allGames = JSON.parse(rawData);
+    const games = allGames.filter((p: any) => p.player === decodedPlayer);
+    if (games.length > 0) {
+      playerGameStats[season] = games;
+    }
+  } catch (e) {}
+}
+
+// Get teams played for
+const teamsPlayed = Object.entries(playerSeasonStats).map(([season, stats]) => ({
+  season,
+  team: stats.team,
+  logo: teamLogos[stats.team] ? `/Stats-Hub/images/teams/${teamLogos[stats.team]}` : null,
+}));
+
+// Calculate career totals
+const careerStats = {
+  goals: 0,
+  assists: 0,
+  blocks: 0,
+  turnovers: 0,
+  touches: 0,
+  games: 0,
+};
+
+Object.values(playerSeasonStats).forEach((stats: any) => {
+  careerStats.goals += stats.goals || 0;
+  careerStats.assists += stats.assists || 0;
+  careerStats.blocks += stats.blocks || 0;
+  careerStats.turnovers += stats.turnovers || 0;
+  careerStats.touches += stats.touches || 0;
+});
+
+Object.values(playerGameStats).forEach((games: any[]) => {
+  careerStats.games += games.length;
+});
+
+// Generate static paths for all players
+export async function getStaticPaths() {
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  
+  const players = new Set<string>();
+  
+  // Get players from all seasons
+  for (const season of ['2025', '2024']) {
+    try {
+      const dataPath = path.join(process.cwd(), 'data', season, 'players_season.json');
+      const rawData = fs.readFileSync(dataPath, 'utf-8');
+      const allPlayers = JSON.parse(rawData);
+      allPlayers.forEach((p: any) => players.add(p.player));
+    } catch (e) {}
+  }
+  
+  return Array.from(players).map(player => ({
+    params: { player: player }
+  }));
+}
+
+const gameColumns = [
+  { accessorKey: 'match', header: 'Match', size: 150 },
+  { accessorKey: 'week', header: 'Week', size: 80 },
+  { accessorKey: 'goals', header: 'Goals', size: 70 },
+  { accessorKey: 'assists', header: 'Assists', size: 80 },
+  { accessorKey: 'blocks', header: 'Blocks', size: 80 },
+  { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+];
+---
+
+<Layout title={playerName}>
+  <div class="space-y-8">
+    <!-- Back link -->
+    <a href="/Stats-Hub/players" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
+      ← Back to all players
+    </a>
+
+    <!-- Player Header -->
+    <div class="flex items-center gap-6">
+      <!-- Headshot placeholder -->
+      <div class="w-24 h-24 sm:w-32 sm:h-32 bg-pul-light rounded-full flex items-center justify-center text-3xl font-bold text-pul-gray">
+        {playerNumber || '?'}
+      </div>
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-semibold">{playerName}</h1>
+        {playerNumber && (
+          <p class="text-xl text-pul-gray">#{playerNumber}</p>
+        )}
+      </div>
+    </div>
+
+    <!-- Teams Played For -->
+    {teamsPlayed.length > 0 && (
+      <div>
+        <h2 class="text-lg font-semibold mb-3">Teams</h2>
+        <div class="flex flex-wrap gap-4">
+          {teamsPlayed.map(({ season, team, logo }) => (
+            <a 
+              href={`/Stats-Hub/teams/${encodeURIComponent(team)}`}
+              class="flex items-center gap-3 p-3 border border-pul-border rounded-lg hover:border-pul-black transition-colors"
+            >
+              {logo && (
+                <img src={logo} alt={team} class="w-10 h-10 object-contain" />
+              )}
+              <div>
+                <div class="font-medium">{team}</div>
+                <div class="text-sm text-pul-gray">{season}</div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Career Stats -->
+    <div>
+      <h2 class="text-lg font-semibold mb-3">Career Stats</h2>
+      <div class="grid grid-cols-3 sm:grid-cols-6 gap-4">
+        <div class="p-4 border border-pul-border rounded text-center">
+          <div class="text-2xl font-semibold">{careerStats.games}</div>
+          <div class="text-sm text-pul-gray">Games</div>
+        </div>
+        <div class="p-4 border border-pul-border rounded text-center">
+          <div class="text-2xl font-semibold">{careerStats.goals}</div>
+          <div class="text-sm text-pul-gray">Goals</div>
+        </div>
+        <div class="p-4 border border-pul-border rounded text-center">
+          <div class="text-2xl font-semibold">{careerStats.assists}</div>
+          <div class="text-sm text-pul-gray">Assists</div>
+        </div>
+        <div class="p-4 border border-pul-border rounded text-center">
+          <div class="text-2xl font-semibold">{careerStats.blocks}</div>
+          <div class="text-sm text-pul-gray">Blocks</div>
+        </div>
+        <div class="p-4 border border-pul-border rounded text-center">
+          <div class="text-2xl font-semibold">{careerStats.turnovers}</div>
+          <div class="text-sm text-pul-gray">Turnovers</div>
+        </div>
+        <div class="p-4 border border-pul-border rounded text-center">
+          <div class="text-2xl font-semibold">{careerStats.touches}</div>
+          <div class="text-sm text-pul-gray">Touches</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Season-by-Season Stats -->
+    {Object.entries(playerSeasonStats).length > 0 && (
+      <div>
+        <h2 class="text-lg font-semibold mb-3">Season Stats</h2>
+        <div class="overflow-x-auto border border-pul-border rounded">
+          <table class="stats-table w-full">
+            <thead>
+              <tr>
+                <th class="text-left">Season</th>
+                <th class="text-left">Team</th>
+                <th class="text-right">Goals</th>
+                <th class="text-right">Assists</th>
+                <th class="text-right">Blocks</th>
+                <th class="text-right">Turnovers</th>
+                <th class="text-right">Touches</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Object.entries(playerSeasonStats).map(([season, stats]: [string, any]) => (
+                <tr>
+                  <td>{season}</td>
+                  <td>
+                    <a href={`/Stats-Hub/teams/${encodeURIComponent(stats.team)}`} class="hover:underline">
+                      {stats.team}
+                    </a>
+                  </td>
+                  <td class="text-right tabular-nums">{stats.goals}</td>
+                  <td class="text-right tabular-nums">{stats.assists}</td>
+                  <td class="text-right tabular-nums">{stats.blocks}</td>
+                  <td class="text-right tabular-nums">{stats.turnovers}</td>
+                  <td class="text-right tabular-nums">{stats.touches}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    )}
+
+    <!-- Game-by-Game Stats -->
+    {Object.entries(playerGameStats).map(([season, games]) => (
+      <div>
+        <h2 class="text-lg font-semibold mb-3">{season} Game Log</h2>
+        <StatsTable 
+          client:load
+          data={games}
+          columns={gameColumns}
+          searchPlaceholder="Search games..."
+          searchableColumns={['match']}
+        />
+      </div>
+    ))}
+  </div>
+</Layout>

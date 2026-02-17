@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { StatsTable } from '../components/StatsTable';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const seasons = ['2025', '2024'];
+
+// Load overall data
+const teamsOverallBySeason: Record<string, any[]> = {};
+const teamsGamesBySeason: Record<string, any[]> = {};
+
+// Load 2025
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'teams_season.json'), 'utf-8');
+  teamsOverallBySeason['2025'] = JSON.parse(data);
+} catch (e) {
+  teamsOverallBySeason['2025'] = [];
+}
+
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'teams_games.json'), 'utf-8');
+  teamsGamesBySeason['2025'] = JSON.parse(data);
+} catch (e) {
+  teamsGamesBySeason['2025'] = [];
+}
+
+// Load 2024
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'teams_season.json'), 'utf-8');
+  teamsOverallBySeason['2024'] = JSON.parse(data);
+} catch (e) {
+  teamsOverallBySeason['2024'] = [];
+}
+
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'teams_games.json'), 'utf-8');
+  teamsGamesBySeason['2024'] = JSON.parse(data);
+} catch (e) {
+  teamsGamesBySeason['2024'] = [];
+}
+
+const overallColumns = [
+  { accessorKey: 'team', header: 'Team', size: 180 },
+  { accessorKey: 'goals', header: 'Goals', size: 70 },
+  { accessorKey: 'breakGoals', header: 'Breaks', size: 80 },
+  { accessorKey: 'blocks', header: 'Blocks', size: 80 },
+  { accessorKey: 'holds', header: 'Holds', size: 70 },
+  { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+  { accessorKey: 'completionRate', header: 'Completion %', size: 110 },
+];
+
+const gameColumns = [
+  { accessorKey: 'team', header: 'Team', size: 150 },
+  { accessorKey: 'match', header: 'Match', size: 140 },
+  { accessorKey: 'week', header: 'Week', size: 80 },
+  { accessorKey: 'goals', header: 'Goals', size: 70 },
+  { accessorKey: 'breakGoals', header: 'Breaks', size: 80 },
+  { accessorKey: 'blocks', header: 'Blocks', size: 80 },
+  { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+  { accessorKey: 'completionRate', header: 'Completion %', size: 110 },
+];
+---
+
+<Layout title="Team Stats">
+  <div class="space-y-6">
+    <div class="flex items-baseline justify-between flex-wrap gap-4">
+      <h1 class="text-3xl font-semibold">Team Stats</h1>
+      <select id="season-select" class="search-input text-sm">
+        {seasons.map(season => (
+          <option value={season}>{season} Season</option>
+        ))}
+      </select>
+    </div>
+
+    <!-- Tabs -->
+    <div class="border-b border-pul-border">
+      <nav class="flex gap-6">
+        <button class="tab-btn py-3 text-sm font-medium border-b-2 border-pul-black" data-tab="overall">
+          Overall
+        </button>
+        <button class="tab-btn py-3 text-sm font-medium border-b-2 border-transparent text-pul-gray hover:text-pul-black" data-tab="by-game">
+          By Game
+        </button>
+      </nav>
+    </div>
+
+    {seasons.map(season => (
+      <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+        <!-- Overall Tab -->
+        <div data-tab-content="overall">
+          {teamsOverallBySeason[season].length > 0 ? (
+            <StatsTable 
+              client:load
+              data={teamsOverallBySeason[season]}
+              columns={overallColumns}
+              searchPlaceholder="Search teams..."
+              searchableColumns={['team']}
+              linkColumn="team"
+              linkPrefix="/Stats-Hub/teams/"
+              showTeamColors={true}
+            />
+          ) : (
+            <p class="text-pul-gray py-8">No team data available for {season}.</p>
+          )}
+        </div>
+
+        <!-- By Game Tab -->
+        <div data-tab-content="by-game" class="hidden">
+          {teamsGamesBySeason[season].length > 0 ? (
+            <StatsTable 
+            client:load
+            data={teamsGamesBySeason[season]}
+            columns={gameColumns}
+            searchPlaceholder="Search teams or matches..."
+            searchableColumns={['team', 'match']}
+            filterColumn="week"
+            filterLabel="Weeks"
+            showTeamLogos={true}
+            linkColumn="team"
+            linkPrefix="/Stats-Hub/teams/"
+          />
+          ) : (
+            <p class="text-pul-gray py-8">No game data available for {season}.</p>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <script>
+    // Season switcher
+    const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
+    const seasonDivs = document.querySelectorAll('[data-season]');
+    const teamsTitle = document.getElementById('teams-title');
+    
+    seasonSelect?.addEventListener('change', () => {
+      const selected = seasonSelect.value;
+      
+      // Update title
+      if (teamsTitle) {
+        teamsTitle.textContent = selected;
+      }
+      
+      // Show/hide content
+      seasonDivs.forEach(div => {
+        if (div.getAttribute('data-season') === selected) {
+          div.classList.remove('hidden');
+        } else {
+          div.classList.add('hidden');
+        }
+      });
+    });
+
+    // Tab switcher
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.getAttribute('data-tab');
+        
+        tabBtns.forEach(b => {
+          b.classList.remove('border-pul-black', 'text-pul-black');
+          b.classList.add('border-transparent', 'text-pul-gray');
+        });
+        btn.classList.remove('border-transparent', 'text-pul-gray');
+        btn.classList.add('border-pul-black', 'text-pul-black');
+        
+        document.querySelectorAll('[data-tab-content]').forEach(content => {
+          if (content.getAttribute('data-tab-content') === tab) {
+            content.classList.remove('hidden');
+          } else {
+            content.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</Layout>

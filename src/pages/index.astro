@@ -1,0 +1,194 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const currentSeason = '2025';
+
+// Load player data for leaders preview
+let players: any[] = [];
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_season.json'), 'utf-8');
+  players = JSON.parse(data);
+} catch (e) {
+  players = [];
+}
+
+// Load team data
+let teams: any[] = [];
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'teams_season.json'), 'utf-8');
+  teams = JSON.parse(data);
+} catch (e) {
+  teams = [];
+}
+
+// Get top 3 for key stats
+const getTop3 = (data: any[], stat: string) => {
+  return [...data].sort((a, b) => (b[stat] || 0) - (a[stat] || 0)).slice(0, 3);
+};
+
+const goalLeaders = getTop3(players, 'goals');
+const assistLeaders = getTop3(players, 'assists');
+const blockLeaders = getTop3(players, 'blocks');
+
+// Top teams by goals
+const topTeams = getTop3(teams, 'goals');
+---
+
+<Layout title="Home">
+  <div class="space-y-12">
+    <!-- Hero Section -->
+    <section class="py-4">
+      <h1 class="text-4xl md:text-5xl font-semibold mb-3">
+        {currentSeason} Season
+      </h1>
+      <p class="text-pul-gray text-lg mb-8">
+        Comprehensive statistics for the Premier Ultimate League.
+      </p>
+
+      <!-- Main CTAs -->
+      <div class="grid sm:grid-cols-2 gap-4">
+        <a 
+          href="/Stats-Hub/teams" 
+          class="block p-6 bg-pul-black text-pul-white rounded-lg hover:bg-pul-dark-gray transition-colors"
+        >
+          <h2 class="text-2xl font-semibold mb-1">Team Stats →</h2>
+          <p class="text-pul-white/70 text-sm">Season totals and game-by-game breakdowns for all {teams.length} teams</p>
+        </a>
+
+        <a 
+          href="/Stats-Hub/players" 
+          class="block p-6 bg-pul-black text-pul-white rounded-lg hover:bg-pul-dark-gray transition-colors"
+        >
+          <h2 class="text-2xl font-semibold mb-1">Player Stats →</h2>
+          <p class="text-pul-white/70 text-sm">Individual stats across all {players.length} players</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Leaders Preview -->
+    {players.length > 0 && (
+      <section>
+        <div class="flex items-baseline justify-between mb-4">
+          <h2 class="text-xl font-semibold">Season Leaders</h2>
+          <a href="/Stats-Hub/leaders" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
+            View all →
+          </a>
+        </div>
+        
+        <div class="grid sm:grid-cols-3 gap-4">
+          <!-- Goals Leaders -->
+          <div class="border border-pul-border rounded-lg overflow-hidden">
+            <div class="bg-pul-light px-4 py-2 border-b border-pul-border">
+              <h3 class="font-medium text-sm">🥏 Goals</h3>
+            </div>
+            <div class="divide-y divide-pul-border">
+              {goalLeaders.map((player, i) => (
+                <div class="flex items-center justify-between px-4 py-2">
+                  <div class="flex items-center gap-2">
+                    <span class={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold ${
+                      i === 0 ? 'bg-yellow-400 text-yellow-900' : 
+                      i === 1 ? 'bg-gray-300 text-gray-700' : 
+                      'bg-amber-600 text-amber-100'
+                    }`}>{i + 1}</span>
+                    <span class="text-sm truncate">{player.player}</span>
+                  </div>
+                  <span class="font-semibold tabular-nums">{player.goals}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Assists Leaders -->
+          <div class="border border-pul-border rounded-lg overflow-hidden">
+            <div class="bg-pul-light px-4 py-2 border-b border-pul-border">
+              <h3 class="font-medium text-sm">🎯 Assists</h3>
+            </div>
+            <div class="divide-y divide-pul-border">
+              {assistLeaders.map((player, i) => (
+                <div class="flex items-center justify-between px-4 py-2">
+                  <div class="flex items-center gap-2">
+                    <span class={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold ${
+                      i === 0 ? 'bg-yellow-400 text-yellow-900' : 
+                      i === 1 ? 'bg-gray-300 text-gray-700' : 
+                      'bg-amber-600 text-amber-100'
+                    }`}>{i + 1}</span>
+                    <span class="text-sm truncate">{player.player}</span>
+                  </div>
+                  <span class="font-semibold tabular-nums">{player.assists}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Blocks Leaders -->
+          <div class="border border-pul-border rounded-lg overflow-hidden">
+            <div class="bg-pul-light px-4 py-2 border-b border-pul-border">
+              <h3 class="font-medium text-sm">🛡️ Blocks</h3>
+            </div>
+            <div class="divide-y divide-pul-border">
+              {blockLeaders.map((player, i) => (
+                <div class="flex items-center justify-between px-4 py-2">
+                  <div class="flex items-center gap-2">
+                    <span class={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold ${
+                      i === 0 ? 'bg-yellow-400 text-yellow-900' : 
+                      i === 1 ? 'bg-gray-300 text-gray-700' : 
+                      'bg-amber-600 text-amber-100'
+                    }`}>{i + 1}</span>
+                    <span class="text-sm truncate">{player.player}</span>
+                  </div>
+                  <span class="font-semibold tabular-nums">{player.blocks}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- Top Teams -->
+    {teams.length > 0 && (
+      <section>
+        <div class="flex items-baseline justify-between mb-4">
+          <h2 class="text-xl font-semibold">Top Teams by Goals</h2>
+          <a href="/Stats-Hub/teams" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
+            View all →
+          </a>
+        </div>
+        
+        <div class="grid sm:grid-cols-3 gap-4">
+          {topTeams.map((team, i) => (
+            <a 
+              href={`/Stats-Hub/teams/${encodeURIComponent(team.team)}`}
+              class="border border-pul-border rounded-lg p-4 hover:border-pul-black transition-colors"
+            >
+              <div class="flex items-center gap-3 mb-2">
+                <span class={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold ${
+                  i === 0 ? 'bg-yellow-400 text-yellow-900' : 
+                  i === 1 ? 'bg-gray-300 text-gray-700' : 
+                  'bg-amber-600 text-amber-100'
+                }`}>{i + 1}</span>
+                <span class="font-semibold">{team.team}</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2 text-center text-sm">
+                <div>
+                  <div class="font-semibold">{team.goals}</div>
+                  <div class="text-pul-gray text-xs">Goals</div>
+                </div>
+                <div>
+                  <div class="font-semibold">{team.blocks}</div>
+                  <div class="text-pul-gray text-xs">Blocks</div>
+                </div>
+                <div>
+                  <div class="font-semibold">{team.completionRate}%</div>
+                  <div class="text-pul-gray text-xs">Comp</div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</Layout>

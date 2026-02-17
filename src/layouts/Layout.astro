@@ -1,0 +1,180 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Premier Ultimate League Statistics" } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/x-icon" href="/Stats-Hub/favicon.ico" />
+    <title>{title} | PUL Stats Hub</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="border-b border-pul-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14 sm:h-16">
+          <!-- Logo / Home -->
+          <a href="/Stats-Hub/" class="flex items-center gap-3 hover:opacity-70 transition-opacity">
+            <img src="/Stats-Hub/images/pul-logo.png" alt="PUL" class="h-8 sm:h-10" />
+            <span class="text-base sm:text-lg font-semibold tracking-tight">PUL Stats Hub</span>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden sm:flex items-center gap-8">
+            <a 
+              href="/Stats-Hub/leaders" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Leaders
+            </a>
+               <a 
+              href="/Stats-Hub/standings" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Standings
+            </a>
+            <a 
+              href="/Stats-Hub/records" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Records
+            </a>
+            <a 
+              href="/Stats-Hub/teams" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Teams
+            </a>
+            <a 
+              href="/Stats-Hub/players" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Players
+            </a>
+            <a 
+              href="https://www.premierultimateleague.com/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              PUL Home ↗
+            </a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button 
+            id="mobile-menu-button"
+            class="sm:hidden p-2 text-pul-gray hover:text-pul-black"
+            aria-label="Toggle menu"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu" class="hidden sm:hidden pb-4 border-t border-pul-border mt-2 pt-4">
+          <div class="flex flex-col gap-4">
+            <a 
+              href="/Stats-Hub/leaders" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Leaders
+            </a>
+            <a 
+              href="/Stats-Hub/standings" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Standings
+            </a>
+            <a 
+              href="/Stats-Hub/records" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Records
+            </a>
+            <a 
+              href="/Stats-Hub/teams" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Teams
+            </a>
+            <a 
+              href="/Stats-Hub/players" 
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Players
+            </a>
+            <a 
+              href="https://www.premierultimateleague.com/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              PUL Home ↗
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+        <slot />
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-pul-border mt-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p class="text-sm text-pul-gray">
+            © {currentYear} Premier Ultimate League
+          </p>
+          <div class="flex items-center gap-6">
+            <a 
+              href="https://github.com/PremierUltimateLeague/Stats-Hub" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              GitHub
+            </a>
+            <a 
+              href="https://www.premierultimateleague.com/sponsors" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+            >
+              Sponsors
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const button = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      
+      button?.addEventListener('click', () => {
+        menu?.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  @import "../styles/global.css";
+</style>

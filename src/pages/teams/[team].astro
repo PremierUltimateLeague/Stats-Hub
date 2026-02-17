@@ -1,0 +1,238 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { StatsTable } from '../../components/StatsTable';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const seasons = ['2025', '2024'];
+
+// Team name to logo filename mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'Columbus Pride': 'columbus.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'LA Astra': 'la.png',
+  'Medellin Revolution': 'medellin.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Portland Rising': 'portland.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
+// Get the team from the URL
+const { team } = Astro.params;
+const decodedTeam = decodeURIComponent(team || '');
+
+// Get logo path
+const logoFile = teamLogos[decodedTeam];
+const logoPath = logoFile ? `/Stats-Hub/images/teams/${logoFile}` : null;
+
+// Load data for all seasons
+const playersBySeason: Record<string, any[]> = {};
+const teamStatsBySeason: Record<string, any> = {};
+const standingsBySeason: Record<string, any> = {};
+
+for (const season of seasons) {
+  // Players
+  try {
+    const dataPath = path.join(process.cwd(), 'data', season, 'players_season.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const allPlayers = JSON.parse(rawData);
+    playersBySeason[season] = allPlayers.filter((p: any) => p.team === decodedTeam);
+  } catch (e) {
+    playersBySeason[season] = [];
+  }
+
+  // Team stats
+  try {
+    const dataPath = path.join(process.cwd(), 'data', season, 'teams_season.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const allTeams = JSON.parse(rawData);
+    teamStatsBySeason[season] = allTeams.find((t: any) => t.team === decodedTeam);
+  } catch (e) {
+    teamStatsBySeason[season] = null;
+  }
+
+  // Standings
+  try {
+    const dataPath = path.join(process.cwd(), 'data', season, 'standings.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const standings = JSON.parse(rawData);
+    standingsBySeason[season] = standings.find((t: any) => t.team === decodedTeam);
+  } catch (e) {
+    standingsBySeason[season] = null;
+  }
+}
+
+// Generate static paths for all teams
+export async function getStaticPaths() {
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  
+  const teams = new Set<string>();
+  
+  for (const season of ['2025', '2024']) {
+    try {
+      const dataPath = path.join(process.cwd(), 'data', season, 'teams_season.json');
+      const rawData = fs.readFileSync(dataPath, 'utf-8');
+      const teamsData = JSON.parse(rawData);
+      teamsData.forEach((t: any) => teams.add(t.team));
+    } catch (e) {}
+  }
+  
+  return Array.from(teams).map(team => ({
+    params: { team: team }
+  }));
+}
+
+const playerColumns = [
+  { accessorKey: 'player', header: 'Player', size: 200 },
+  { accessorKey: 'goals', header: 'Goals', size: 70 },
+  { accessorKey: 'assists', header: 'Assists', size: 80 },
+  { accessorKey: 'blocks', header: 'Blocks', size: 80 },
+  { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+  { accessorKey: 'touches', header: 'Touches', size: 90 },
+];
+---
+
+<Layout title={decodedTeam}>
+  <div class="space-y-8">
+    <!-- Back link -->
+    <a href="/Stats-Hub/teams" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
+      ← Back to all teams
+    </a>
+
+    <!-- Team Header -->
+    <div class="flex items-start justify-between flex-wrap gap-6">
+      <div class="flex items-center gap-6">
+        {logoPath && (
+          <img 
+            src={logoPath} 
+            alt={`${decodedTeam} logo`} 
+            class="w-20 h-20 sm:w-24 sm:h-24 object-contain"
+          />
+        )}
+        <div>
+          <h1 class="text-3xl font-semibold">{decodedTeam}</h1>
+          {seasons.map(season => {
+            const record = standingsBySeason[season];
+            return (
+              <div 
+                class={`flex items-center gap-3 mt-1 ${season === '2025' ? '' : 'hidden'}`}
+                data-record-season={season}
+              >
+                {record ? (
+                  <>
+                    <span class="text-xl font-semibold">
+                      {record.wins}-{record.losses}
+                    </span>
+                    <span class="text-pul-gray">•</span>
+                    <span class="text-pul-gray">{season} Season</span>
+                    {record.division && (
+                      <>
+                        <span class="text-pul-gray">•</span>
+                        <span class="text-pul-gray">{record.division} Division</span>
+                      </>
+                    )}
+                  </>
+                ) : (
+                  <span class="text-pul-gray">{season} Season</span>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      
+      <select id="season-select" class="search-input text-sm">
+        {seasons.map(season => (
+          <option value={season}>{season} Season</option>
+        ))}
+      </select>
+    </div>
+
+    {seasons.map(season => {
+      const teamStats = teamStatsBySeason[season];
+      const teamPlayers = playersBySeason[season];
+      const teamRecord = standingsBySeason[season];
+      
+      return (
+        <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+          <!-- Team Stats Summary -->
+          {teamStats ? (
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+              <div class="p-4 border border-pul-border rounded">
+                <div class="text-2xl font-semibold">{teamStats.goals}</div>
+                <div class="text-sm text-pul-gray">Goals</div>
+              </div>
+              <div class="p-4 border border-pul-border rounded">
+                <div class="text-2xl font-semibold">{teamStats.blocks}</div>
+                <div class="text-sm text-pul-gray">Blocks</div>
+              </div>
+              <div class="p-4 border border-pul-border rounded">
+                <div class="text-2xl font-semibold">{teamStats.holds}</div>
+                <div class="text-sm text-pul-gray">Holds</div>
+              </div>
+              <div class="p-4 border border-pul-border rounded">
+                <div class="text-2xl font-semibold">{teamStats.completionRate}%</div>
+                <div class="text-sm text-pul-gray">Completion</div>
+              </div>
+            </div>
+          ) : (
+            <p class="text-pul-gray mb-8">No team stats available for {season}.</p>
+          )}
+
+          <!-- Players Table -->
+          <div>
+            <h2 class="text-xl font-semibold mb-4">Players ({teamPlayers.length})</h2>
+            {teamPlayers.length > 0 ? (
+              <StatsTable 
+                client:load
+                data={teamPlayers}
+                columns={playerColumns}
+                searchPlaceholder="Search players..."
+                searchableColumns={['player']}
+                playerLinkColumn="player"
+              />
+            ) : (
+              <p class="text-pul-gray">No player data available for {season}.</p>
+            )}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+
+<script>
+    const seasonSelect = document.getElementById('season-select');
+    const seasonDivs = document.querySelectorAll('div[data-season]');
+    const recordDivs = document.querySelectorAll('div[data-record-season]');
+    
+    seasonSelect?.addEventListener('change', (e) => {
+      const selected = (e.target as HTMLSelectElement).value;
+      
+      // Show/hide content
+      seasonDivs.forEach(div => {
+        if (div.getAttribute('data-season') === selected) {
+          div.classList.remove('hidden');
+        } else {
+          div.classList.add('hidden');
+        }
+      });
+      
+      // Show/hide record
+      recordDivs.forEach(div => {
+        if (div.getAttribute('data-record-season') === selected) {
+          div.classList.remove('hidden');
+        } else {
+          div.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</Layout>

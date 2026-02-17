@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pul-white text-pul-black antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+
+  /* Stats table styling */
+  .stats-table {
+    @apply w-full text-sm;
+    min-width: 600px;
+    /* Ensures table doesn't squish on mobile */
+  }
+
+  .stats-table thead {
+    @apply bg-pul-light sticky top-0 border-b border-pul-border;
+  }
+
+  .stats-table th {
+    @apply px-3 sm:px-4 py-2 sm:py-3 font-medium text-pul-gray text-xs uppercase tracking-wider hover:text-pul-black transition-colors;
+  }
+
+  .stats-table tbody tr {
+    @apply border-b border-pul-border hover:bg-pul-light transition-colors;
+  }
+
+  .stats-table td {
+    @apply px-3 sm:px-4 py-2 sm:py-3;
+  }
+
+  .stats-table td.numeric {
+    @apply text-right tabular-nums font-medium;
+  }
+
+  .team-badge {
+    @apply inline-flex items-center gap-2 px-2.5 py-1 rounded text-xs font-medium;
+  }
+
+  .search-input {
+    @apply bg-pul-white border border-pul-border rounded px-3 sm:px-4 py-2 text-sm sm:text-base text-pul-black placeholder-pul-gray focus:outline-none focus:border-pul-gray transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-pul-black text-pul-white px-5 py-2.5 font-medium rounded hover:bg-pul-dark-gray transition-colors;
+  }
+
+  .btn-secondary {
+    @apply border border-pul-border text-pul-black px-5 py-2.5 font-medium rounded hover:border-pul-black transition-colors;
+  }
+}
