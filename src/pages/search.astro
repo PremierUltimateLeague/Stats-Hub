@@ -45,9 +45,13 @@ for (const season of seasons) {
     const data = fs.readFileSync(path.join(process.cwd(), 'data', season, 'players_season.json'), 'utf-8');
     const players = JSON.parse(data);
     players.forEach((p: any) => {
-      if (p.player && typeof p.player === 'string' && !seenPlayers.has(p.player)) {
-        seenPlayers.add(p.player);
-        allPlayers.push({ ...p, season });
+      if (p.player && typeof p.player === 'string') {
+        // Normalize for dedup check
+        const normalizedName = p.player.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        if (!seenPlayers.has(normalizedName)) {
+          seenPlayers.add(normalizedName);
+          allPlayers.push({ ...p, season });
+        }
       }
     });
   } catch (e) {}
@@ -137,11 +141,18 @@ try {
         t.team && t.team.toLowerCase().includes(q)
       );
 
+      // Helper to normalize accented characters
+      function normalizeString(str) {
+        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+      }
+
       // Search players
-      const matchedPlayers = allPlayers.filter((p) => 
-        (p.player && typeof p.player === 'string' && p.player.toLowerCase().includes(q)) || 
-        (p.team && typeof p.team === 'string' && p.team.toLowerCase().includes(q))
-      ).slice(0, 20);
+      const matchedPlayers = allPlayers.filter((p) => {
+        const normalizedQuery = normalizeString(q);
+        const normalizedPlayer = p.player ? normalizeString(p.player) : '';
+        const normalizedTeam = p.team ? normalizeString(p.team) : '';
+        return normalizedPlayer.includes(normalizedQuery) || normalizedTeam.includes(normalizedQuery);
+      }).slice(0, 20);
 
       // Show/hide sections
       if (matchedTeams.length === 0 && matchedPlayers.length === 0) {

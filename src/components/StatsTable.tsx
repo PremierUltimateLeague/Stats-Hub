@@ -66,7 +66,10 @@ export function StatsTable<T extends Record<string, unknown>>({
   const suggestions = useMemo(() => {
     if (!globalFilter || globalFilter.length < 2) return [];
 
-    const search = globalFilter.toLowerCase();
+    const normalizeString = (str: string) =>
+      str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+    const search = normalizeString(globalFilter);
     const matches: string[] = [];
 
     const columnsToSearch = searchableColumns.length > 0
@@ -78,14 +81,14 @@ export function StatsTable<T extends Record<string, unknown>>({
         const value = row[col];
         if (value != null) {
           const strValue = String(value);
-          if (strValue.toLowerCase().includes(search) && !matches.includes(strValue)) {
+          if (normalizeString(strValue).includes(search) && !matches.includes(strValue)) {
             matches.push(strValue);
           }
         }
       });
     });
 
-    return matches.slice(0, 8); // Limit to 8 suggestions
+    return matches.slice(0, 8);
   }, [globalFilter, filteredData, searchableColumns, columns]);
 
   // Track which columns are numeric (for alignment)
@@ -110,17 +113,20 @@ export function StatsTable<T extends Record<string, unknown>>({
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
-    globalFilterFn: (row, columnId, filterValue) => {
+    globalFilterFn: (row, _columnId, filterValue) => {
+      const normalizeString = (str: string) =>
+        str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
       const columnsToSearch = searchableColumns.length > 0
         ? searchableColumns
         : columns.map(c => (c as { accessorKey?: string }).accessorKey).filter(Boolean);
 
-      const search = String(filterValue).toLowerCase();
+      const search = normalizeString(String(filterValue));
 
       return columnsToSearch.some(col => {
         const value = row.getValue(col as string);
         if (value == null) return false;
-        return String(value).toLowerCase().includes(search);
+        return normalizeString(String(value)).includes(search);
       });
     },
   });
