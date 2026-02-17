@@ -42,11 +42,11 @@ try {
 const overallColumns = [
   { accessorKey: 'player', header: 'Player', size: 200 },
   { accessorKey: 'team', header: 'Team', size: 160 },
-  { accessorKey: 'goals', header: 'G', size: 50 },
-  { accessorKey: 'assists', header: 'A', size: 50 },
-  { accessorKey: 'blocks', header: 'D', size: 50 },
-  { accessorKey: 'turnovers', header: 'TO', size: 50 },
-  { accessorKey: 'touches', header: 'TCH', size: 60 },
+  { accessorKey: 'goals', header: 'Goals', size: 70 },
+  { accessorKey: 'assists', header: 'Assists', size: 80 },
+  { accessorKey: 'blocks', header: 'Blocks', size: 80 },
+  { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+  { accessorKey: 'touches', header: 'Touches', size: 90 },
 ];
 
 const gameColumns = [
@@ -54,10 +54,10 @@ const gameColumns = [
   { accessorKey: 'team', header: 'Team', size: 140 },
   { accessorKey: 'match', header: 'Match', size: 130 },
   { accessorKey: 'week', header: 'Week', size: 80 },
-  { accessorKey: 'goals', header: 'G', size: 50 },
-  { accessorKey: 'assists', header: 'A', size: 50 },
-  { accessorKey: 'blocks', header: 'D', size: 50 },
-  { accessorKey: 'turnovers', header: 'TO', size: 50 },
+  { accessorKey: 'goals', header: 'Goals', size: 70 },
+  { accessorKey: 'assists', header: 'Assists', size: 80 },
+  { accessorKey: 'blocks', header: 'Blocks', size: 80 },
+  { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
 ];
 ---
 
@@ -90,14 +90,16 @@ const gameColumns = [
         <div data-tab-content="overall">
           {playersOverallBySeason[season].length > 0 ? (
             <StatsTable 
-              client:load
-              data={playersOverallBySeason[season]}
-              columns={overallColumns}
-              searchPlaceholder="Search players..."
-              searchableColumns={['player']}
-              filterColumn="team"
-              filterLabel="Teams"
-            />
+            client:load
+            data={playersOverallBySeason[season]}
+            columns={overallColumns}
+            searchPlaceholder="Search players..."
+            searchableColumns={['player']}
+            filterColumn="team"
+            filterLabel="Teams"
+            linkColumn="team"
+            linkPrefix="/Stats-Hub/teams/"
+          />
           ) : (
             <p class="text-pul-gray py-8">No player data available for {season}.</p>
           )}
@@ -107,14 +109,16 @@ const gameColumns = [
         <div data-tab-content="by-game" class="hidden">
           {playersGamesBySeason[season].length > 0 ? (
             <StatsTable 
-              client:load
-              data={playersGamesBySeason[season]}
-              columns={gameColumns}
-              searchPlaceholder="Search players..."
-              searchableColumns={['player']}
-              filterColumn="team"
-              filterLabel="Teams"
-            />
+            client:load
+            data={playersGamesBySeason[season]}
+            columns={gameColumns}
+            searchPlaceholder="Search players..."
+            searchableColumns={['player']}
+            filterColumn="team"
+            filterLabel="Teams"
+            linkColumn="team"
+            linkPrefix="/Stats-Hub/teams/"
+          />
           ) : (
             <p class="text-pul-gray py-8">No game data available for {season}.</p>
           )}
