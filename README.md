@@ -20,6 +20,17 @@ A modern, fast statistics dashboard for the Premier Ultimate League built with A
 - Python 3.9+
 - npm or yarn
 
+git clone <https://github.com/PremierUltimateLeague/Stats-Hub.git>
+cd Stats-Hub
+
+# Install Node dependencies
+
+npm install
+
+# Install Python dependencies
+
+pip install -r processing/requirements.txt
+
 ### Installation
 
 ```bash
@@ -27,20 +38,24 @@ A modern, fast statistics dashboard for the Premier Ultimate League built with A
 git clone https://github.com/PremierUltimateLeague/Stats-Hub.git
 cd Stats-Hub
 
+# Install Node dependencies
+npm install
 
 # Set up Python virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 
-# Install Pre-Commit Hooks (Linting)
-pre-commit install
-
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Install Node dependencies
-npm install
+# Install Python dependencies into the virtual environment
+pip install -r processing/requirements.txt
 ```
+
+> **Note:** Each time you start a new terminal session, activate the environment with:
+>
+> ```bash
+> source .venv/bin/activate
+> ```
+>
+> To deactivate, run `deactivate`.
 
 ### Development
 
@@ -95,9 +110,10 @@ Google Drive CSVs → Python scripts → JSON → Astro build → Static HTML
 │   └── 2025/
 │       ├── teams_season.json
 │       ├── players_season.json
-│       └── _metadata.json
+│       └── metadata.json
 │
 ├── processing/              # Python data pipeline
+│   ├── requirements.txt
 │   └── export_json.py
 │
 ├── src/
@@ -112,6 +128,8 @@ Google Drive CSVs → Python scripts → JSON → Astro build → Static HTML
 │   │   └── players.astro
 │   └── styles/
 │       └── global.css       # Tailwind + custom styles
+│
+├── stats/                   # Processed CSV stats (from R scripts)
 └── public/                  # Static assets
 ```
 

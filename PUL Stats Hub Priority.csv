@@ -1,0 +1,38 @@
+﻿Name,Type,Priority Tier
+Goals,Team,1 - Must Have
+Total Holds,Team,2 - Nice To Have
+Clean Holds,Team,2 - Nice To Have
+Breaks Scored,Team,1 - Must Have
+Total Break Opportunities,Team,2 - Nice To Have
+Total Passes,Team,2 - Nice To Have
+Completed Passes,Team,2 - Nice To Have
+Completion Rate,Team,1 - Must Have
+Hucks,Team,1 - Must Have
+Defensive Blocks,Team,1 - Must Have
+Turnovers,Team,1 - Must Have
+Offense points played,Individual,2 - Nice To Have
+Defense points played,Individual,2 - Nice To Have
+Offense points won,Individual,3 - Not a Priority
+Defense points won,Individual,3 - Not a Priority
+Touches,Individual,2 - Nice To Have
+Points played with touches,Individual,3 - Not a Priority
+Throws,Individual,2 - Nice To Have
+Catches,Individual,3 - Not a Priority
+Possessions initiated,Individual,2 - Nice To Have
+Assists,Individual,1 - Must Have
+Secondary assists,Individual,1 - Must Have
+Goals,Individual,1 - Must Have
+Turnovers,Individual,1 - Must Have
+Thrower errors,Individual,2 - Nice To Have
+Receiver errors,Individual,2 - Nice To Have
+Defensive blocks,Individual,1 - Must Have
+Stall outs for,Individual,3 - Not a Priority
+Stall outs against,Individual,3 - Not a Priority
+Total completed throw distance (m),Individual,3 - Not a Priority
+Total completed throw gain (m),Individual,1 - Must Have
+Average completed throw distance (m),Individual,3 - Not a Priority
+Average completed throw gain (m),Individual,2 - Nice To Have
+Total caught pass distance (m),Individual,3 - Not a Priority
+Total caught pass gain (m),Individual,1 - Must Have
+Average caught pass distance (m),Individual,3 - Not a Priority
+Average caught pass gain (m),Individual,2 - Nice To Have

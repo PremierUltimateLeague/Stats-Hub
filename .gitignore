@@ -32,6 +32,3 @@ venv/
 # (uncomment if you want to regenerate on every build)
 # data/**/*.json
 node_modules
-
-# Ruff
-.ruff_cache/
