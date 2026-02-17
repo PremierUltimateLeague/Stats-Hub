@@ -109,15 +109,17 @@ const gameColumns = [
         <div data-tab-content="by-game" class="hidden">
           {teamsGamesBySeason[season].length > 0 ? (
             <StatsTable 
-              client:load
-              data={teamsGamesBySeason[season]}
-              columns={gameColumns}
-              searchPlaceholder="Search teams or matches..."
-              searchableColumns={['team', 'match']}
-              filterColumn="week"
-              filterLabel="Weeks"
-              showTeamLogos={true}
-            />
+            client:load
+            data={teamsGamesBySeason[season]}
+            columns={gameColumns}
+            searchPlaceholder="Search teams or matches..."
+            searchableColumns={['team', 'match']}
+            filterColumn="week"
+            filterLabel="Weeks"
+            showTeamLogos={true}
+            linkColumn="team"
+            linkPrefix="/Stats-Hub/teams/"
+          />
           ) : (
             <p class="text-pul-gray py-8">No game data available for {season}.</p>
           )}
@@ -130,9 +132,17 @@ const gameColumns = [
     // Season switcher
     const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
     const seasonDivs = document.querySelectorAll('[data-season]');
+    const teamsTitle = document.getElementById('teams-title');
     
     seasonSelect?.addEventListener('change', () => {
       const selected = seasonSelect.value;
+      
+      // Update title
+      if (teamsTitle) {
+        teamsTitle.textContent = selected;
+      }
+      
+      // Show/hide content
       seasonDivs.forEach(div => {
         if (div.getAttribute('data-season') === selected) {
           div.classList.remove('hidden');
@@ -149,7 +159,6 @@ const gameColumns = [
       btn.addEventListener('click', () => {
         const tab = btn.getAttribute('data-tab');
         
-        // Update button styles
         tabBtns.forEach(b => {
           b.classList.remove('border-pul-black', 'text-pul-black');
           b.classList.add('border-transparent', 'text-pul-gray');
@@ -157,7 +166,6 @@ const gameColumns = [
         btn.classList.remove('border-transparent', 'text-pul-gray');
         btn.classList.add('border-pul-black', 'text-pul-black');
         
-        // Show/hide content for all seasons
         document.querySelectorAll('[data-tab-content]').forEach(content => {
           if (content.getAttribute('data-tab-content') === tab) {
             content.classList.remove('hidden');
