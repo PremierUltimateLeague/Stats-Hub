@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import {
   useReactTable,
   getCoreRowModel,
@@ -14,6 +14,10 @@ interface StatsTableProps<T extends Record<string, unknown>> {
   columns: ColumnDef<T, unknown>[];
   searchPlaceholder?: string;
   searchableColumns?: string[];
+  filterColumn?: string;
+  filterLabel?: string;
+  linkColumn?: string;    // Column to make clickable
+  linkPrefix?: string;    // URL prefix for links
 }
 
 export function StatsTable<T extends Record<string, unknown>>({
@@ -21,9 +25,33 @@ export function StatsTable<T extends Record<string, unknown>>({
   columns,
   searchPlaceholder = "Search...",
   searchableColumns = [],
+  filterColumn,
+  filterLabel = "Filter",
+  linkColumn,
+  linkPrefix = "",
 }: StatsTableProps<T>) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [globalFilter, setGlobalFilter] = useState('');
+  const [columnFilter, setColumnFilter] = useState<string>('all');
+
+  // Get unique values for the filter dropdown
+  const filterOptions = useMemo(() => {
+    if (!filterColumn) return [];
+    const uniqueValues = new Set<string>();
+    data.forEach(row => {
+      const value = row[filterColumn];
+      if (value != null) {
+        uniqueValues.add(String(value));
+      }
+    });
+    return Array.from(uniqueValues).sort();
+  }, [data, filterColumn]);
+
+  // Filter data by column filter first
+  const filteredData = useMemo(() => {
+    if (!filterColumn || columnFilter === 'all') return data;
+    return data.filter(row => String(row[filterColumn]) === columnFilter);
+  }, [data, filterColumn, columnFilter]);
 
   // Track which columns are numeric (for alignment)
   const numericColumns = new Set<string>();
@@ -36,7 +64,7 @@ export function StatsTable<T extends Record<string, unknown>>({
   }
 
   const table = useReactTable({
-    data,
+    data: filteredData,
     columns,
     state: {
       sorting,
@@ -66,17 +94,50 @@ export function StatsTable<T extends Record<string, unknown>>({
     return header.column.columnDef.accessorKey || header.id;
   };
 
+  // Render cell content, with optional link
+  const renderCell = (cell: any) => {
+    const colId = cell.column.columnDef.accessorKey || cell.column.id;
+    const value = cell.getValue();
+    
+    if (linkColumn && colId === linkColumn && value) {
+      const href = `${linkPrefix}${encodeURIComponent(String(value))}`;
+      return (
+        <a href={href} className="text-pul-black hover:underline font-medium">
+          {flexRender(cell.column.columnDef.cell, cell.getContext())}
+        </a>
+      );
+    }
+    
+    return flexRender(cell.column.columnDef.cell, cell.getContext());
+  };
+
   return (
     <div className="space-y-4">
-      {/* Search Input */}
-      <div className="flex items-center gap-4">
+      {/* Filters Row */}
+      <div className="flex flex-wrap items-center gap-4">
+        {/* Search Input */}
         <input
           type="text"
           value={globalFilter}
           onChange={(e) => setGlobalFilter(e.target.value)}
           placeholder={searchPlaceholder}
-          className="search-input w-full max-w-sm"
+          className="search-input w-full max-w-xs"
         />
+        
+        {/* Dropdown Filter */}
+        {filterColumn && filterOptions.length > 0 && (
+          <select
+            value={columnFilter}
+            onChange={(e) => setColumnFilter(e.target.value)}
+            className="search-input"
+          >
+            <option value="all">All {filterLabel}</option>
+            {filterOptions.map(option => (
+              <option key={option} value={option}>{option}</option>
+            ))}
+          </select>
+        )}
+
         <span className="text-sm text-pul-gray">
           {table.getFilteredRowModel().rows.length} results
         </span>
@@ -123,7 +184,7 @@ export function StatsTable<T extends Record<string, unknown>>({
                       key={cell.id}
                       className={isNumeric ? 'text-right tabular-nums' : ''}
                     >
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                      {renderCell(cell)}
                     </td>
                   );
                 })}
@@ -136,7 +197,7 @@ export function StatsTable<T extends Record<string, unknown>>({
       {/* Empty State */}
       {table.getFilteredRowModel().rows.length === 0 && (
         <div className="text-center py-8 text-pul-gray">
-          No results found for "{globalFilter}"
+          No results found
         </div>
       )}
     </div>

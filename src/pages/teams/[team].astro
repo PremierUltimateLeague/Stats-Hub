@@ -1,0 +1,118 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { StatsTable } from '../../components/StatsTable';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Get the team from the URL
+const { team } = Astro.params;
+const decodedTeam = decodeURIComponent(team || '');
+
+// Read player data
+let allPlayers = [];
+try {
+  const dataPath = path.join(process.cwd(), 'data', '2025', 'players_season.json');
+  const rawData = fs.readFileSync(dataPath, 'utf-8');
+  allPlayers = JSON.parse(rawData);
+} catch (e) {
+  console.warn('Could not load players data');
+}
+
+// Read team data
+let allTeams = [];
+try {
+  const dataPath = path.join(process.cwd(), 'data', '2025', 'teams_season.json');
+  const rawData = fs.readFileSync(dataPath, 'utf-8');
+  allTeams = JSON.parse(rawData);
+} catch (e) {
+  console.warn('Could not load teams data');
+}
+
+// Filter players for this team
+const teamPlayers = allPlayers.filter((p: any) => p.team === decodedTeam);
+
+// Get team stats
+const teamStats = allTeams.find((t: any) => t.team === decodedTeam);
+
+// Generate static paths for all teams
+export async function getStaticPaths() {
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  
+  let teams: string[] = [];
+  try {
+    const dataPath = path.join(process.cwd(), 'data', '2025', 'teams_season.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const teamsData = JSON.parse(rawData);
+    teams = teamsData.map((t: any) => t.team);
+  } catch (e) {
+    console.warn('Could not load teams for static paths:', e);
+  }
+    
+  return teams.map(team => ({
+    params: { team: team }
+  }));
+}
+
+const playerColumns = [
+  { accessorKey: 'player', header: 'Player', size: 200 },
+  { accessorKey: 'goals', header: 'G', size: 60 },
+  { accessorKey: 'assists', header: 'A', size: 60 },
+  { accessorKey: 'blocks', header: 'D', size: 60 },
+  { accessorKey: 'turnovers', header: 'TO', size: 60 },
+  { accessorKey: 'touches', header: 'TCH', size: 70 },
+];
+---
+
+<Layout title={decodedTeam}>
+  <div class="space-y-8">
+    <!-- Back link -->
+    <a href="/Stats-Hub/teams" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
+      ← Back to all teams
+    </a>
+
+    <!-- Team Header -->
+    <div>
+      <h1 class="text-3xl font-semibold">{decodedTeam}</h1>
+      <p class="text-pul-gray mt-1">2025 Season Roster</p>
+    </div>
+
+    <!-- Team Stats Summary -->
+    {teamStats && (
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-4 border border-pul-border rounded">
+          <div class="text-2xl font-semibold">{teamStats.goals}</div>
+          <div class="text-sm text-pul-gray">Goals</div>
+        </div>
+        <div class="p-4 border border-pul-border rounded">
+          <div class="text-2xl font-semibold">{teamStats.blocks}</div>
+          <div class="text-sm text-pul-gray">Blocks</div>
+        </div>
+        <div class="p-4 border border-pul-border rounded">
+          <div class="text-2xl font-semibold">{teamStats.holds}</div>
+          <div class="text-sm text-pul-gray">Holds</div>
+        </div>
+        <div class="p-4 border border-pul-border rounded">
+          <div class="text-2xl font-semibold">{teamStats.completionRate}%</div>
+          <div class="text-sm text-pul-gray">Completion</div>
+        </div>
+      </div>
+    )}
+
+    <!-- Players Table -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Players ({teamPlayers.length})</h2>
+      {teamPlayers.length > 0 ? (
+        <StatsTable 
+          client:load
+          data={teamPlayers}
+          columns={playerColumns}
+          searchPlaceholder="Search players..."
+          searchableColumns={['player']}
+        />
+      ) : (
+        <p class="text-pul-gray">No player data available for this team.</p>
+      )}
+    </div>
+  </div>
+</Layout>

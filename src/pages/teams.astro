@@ -39,6 +39,8 @@ const columns = [
         columns={columns}
         searchPlaceholder="Search teams..."
         searchableColumns={['team']}
+        linkColumn="team"
+        linkPrefix="/Stats-Hub/teams/"
       />
     ) : (
       <p class="text-pul-gray">No team data available. Run the data export script.</p>

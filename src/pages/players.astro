@@ -37,8 +37,10 @@ const columns = [
         client:load
         data={playersData}
         columns={columns}
-        searchPlaceholder="Search players or teams..."
-        searchableColumns={['player', 'team']}
+        searchPlaceholder="Search players..."
+        searchableColumns={['player']}
+        filterColumn="team"
+        filterLabel="Teams"
       />
     ) : (
       <p class="text-pul-gray">No player data available. Run the data export script.</p>
