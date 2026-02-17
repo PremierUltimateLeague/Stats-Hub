@@ -1,0 +1,123 @@
+[
+  {
+    "abbrev": "DC",
+    "team": "DC Shadow",
+    "wins": 6,
+    "losses": 0,
+    "pointsFor": 116,
+    "pointsAgainst": 41,
+    "games": 6,
+    "winPct": 100.0,
+    "pointDiff": 75
+  },
+  {
+    "abbrev": "NY",
+    "team": "New York Gridlock",
+    "wins": 6,
+    "losses": 0,
+    "pointsFor": 124,
+    "pointsAgainst": 86,
+    "games": 6,
+    "winPct": 100.0,
+    "pointDiff": 38
+  },
+  {
+    "abbrev": "PHL",
+    "team": "Philadelphia Surge",
+    "wins": 5,
+    "losses": 1,
+    "pointsFor": 112,
+    "pointsAgainst": 69,
+    "games": 6,
+    "winPct": 83.3,
+    "pointDiff": 43
+  },
+  {
+    "abbrev": "RAL",
+    "team": "Raleigh Radiance",
+    "wins": 3,
+    "losses": 3,
+    "pointsFor": 86,
+    "pointsAgainst": 79,
+    "games": 6,
+    "winPct": 50.0,
+    "pointDiff": 7
+  },
+  {
+    "abbrev": "INDY",
+    "team": "Indy Red",
+    "wins": 3,
+    "losses": 3,
+    "pointsFor": 89,
+    "pointsAgainst": 103,
+    "games": 6,
+    "winPct": 50.0,
+    "pointDiff": -14
+  },
+  {
+    "abbrev": "ATX",
+    "team": "Austin Torch",
+    "wins": 3,
+    "losses": 3,
+    "pointsFor": 74,
+    "pointsAgainst": 94,
+    "games": 6,
+    "winPct": 50.0,
+    "pointDiff": -20
+  },
+  {
+    "abbrev": "MINN",
+    "team": "Minnesota Strike",
+    "wins": 2,
+    "losses": 4,
+    "pointsFor": 101,
+    "pointsAgainst": 103,
+    "games": 6,
+    "winPct": 33.3,
+    "pointDiff": -2
+  },
+  {
+    "abbrev": "PORT",
+    "team": "Portland Rising",
+    "wins": 2,
+    "losses": 4,
+    "pointsFor": 80,
+    "pointsAgainst": 84,
+    "games": 6,
+    "winPct": 33.3,
+    "pointDiff": -4
+  },
+  {
+    "abbrev": "MKE",
+    "team": "Milwaukee Monarchs",
+    "wins": 1,
+    "losses": 5,
+    "pointsFor": 66,
+    "pointsAgainst": 101,
+    "games": 6,
+    "winPct": 16.7,
+    "pointDiff": -35
+  },
+  {
+    "abbrev": "ATL",
+    "team": "Atlanta Soul",
+    "wins": 1,
+    "losses": 5,
+    "pointsFor": 66,
+    "pointsAgainst": 108,
+    "games": 6,
+    "winPct": 16.7,
+    "pointDiff": -42
+  },
+  {
+    "abbrev": "NASH",
+    "team": "Nashville NightShade",
+    "wins": 1,
+    "losses": 5,
+    "pointsFor": 74,
+    "pointsAgainst": 120,
+    "games": 6,
+    "winPct": 16.7,
+    "pointDiff": -46
+  }
+]

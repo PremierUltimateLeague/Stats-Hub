@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const seasons = ['2025', '2024'];
+
+const standingsBySeason: Record<string, any[]> = {};
+
+// Team logo mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'Columbus Pride': 'columbus.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'LA Astra': 'la.png',
+  'Medellin Revolution': 'medellin.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Portland Rising': 'portland.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
+// Load 2025
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'standings.json'), 'utf-8');
+  standingsBySeason['2025'] = JSON.parse(data);
+} catch (e) {
+  standingsBySeason['2025'] = [];
+}
+
+// Load 2024
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'standings.json'), 'utf-8');
+  standingsBySeason['2024'] = JSON.parse(data);
+} catch (e) {
+  standingsBySeason['2024'] = [];
+}
+---
+
+<Layout title="Standings">
+    <div class="flex items-baseline justify-between flex-wrap gap-4">
+      <h1 class="text-3xl font-semibold">
+        <span id="standings-title">2025</span> Standings
+      </h1>
+      <select id="season-select" class="search-input text-sm">
+        {seasons.map(season => (
+          <option value={season}>{season} Season</option>
+        ))}
+      </select>
+    </div>
+
+    {seasons.map(season => (
+      <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+        {standingsBySeason[season].length > 0 ? (
+          <div class="overflow-x-auto border border-pul-border rounded-lg">
+            <table class="stats-table w-full">
+             <thead>
+                <tr>
+                  <th class="text-left w-12">Rank</th>
+                  <th class="text-left">Team</th>
+                  <th class="text-center">Wins</th>
+                  <th class="text-center">Losses</th>
+                  <th class="text-center">Win %</th>
+                  <th class="text-center">Points For</th>
+                  <th class="text-center">Points Against</th>
+                  <th class="text-center">Differential</th>
+                </tr>
+              </thead>
+              <tbody>
+                {standingsBySeason[season].map((team: any, index: number) => {
+                  const logo = teamLogos[team.team] ? `/Stats-Hub/images/teams/${teamLogos[team.team]}` : null;
+                  return (
+                    <tr>
+                      <td class="font-semibold text-pul-gray">{index + 1}</td>
+                      <td>
+                        <a 
+                          href={`/Stats-Hub/teams/${encodeURIComponent(team.team)}`}
+                          class="flex items-center gap-3 hover:underline"
+                        >
+                          {logo && (
+                            <img src={logo} alt={team.team} class="w-8 h-8 object-contain" />
+                          )}
+                          <span class="font-medium">{team.team}</span>
+                        </a>
+                      </td>
+                      <td class="text-center tabular-nums font-semibold">{team.wins}</td>
+                      <td class="text-center tabular-nums">{team.losses}</td>
+                      <td class="text-center tabular-nums">{team.winPct}%</td>
+                      <td class="text-center tabular-nums">{team.pointsFor}</td>
+                      <td class="text-center tabular-nums">{team.pointsAgainst}</td>
+                      <td class={`text-center tabular-nums font-semibold ${team.pointDiff > 0 ? 'text-green-600' : team.pointDiff < 0 ? 'text-red-500' : ''}`}>
+                        {team.pointDiff > 0 ? '+' : ''}{team.pointDiff}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <p class="text-pul-gray py-8">No standings data available for {season}.</p>
+        )}
+      </div>
+    ))}
+  </div>
+
+<script>
+    const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
+    const seasonDivs = document.querySelectorAll('[data-season]');
+    const standingsTitle = document.getElementById('standings-title');
+    
+    seasonSelect?.addEventListener('change', () => {
+      const selected = seasonSelect.value;
+      
+      // Update title
+      if (standingsTitle) {
+        standingsTitle.textContent = selected;
+      }
+      
+      // Show/hide content
+      seasonDivs.forEach(div => {
+        if (div.getAttribute('data-season') === selected) {
+          div.classList.remove('hidden');
+        } else {
+          div.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</Layout>
