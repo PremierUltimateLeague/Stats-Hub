@@ -139,7 +139,7 @@ def export_players_overall(csv_path: Path, json_path: Path) -> None:
     columns_to_keep = [c for c in columns_to_keep if c in df.columns]
     df = df[columns_to_keep]
 
-    df["+/-"] = df['goals'] + df['assists'] - df['turnovers']
+    df["+/-"] = df['goals'] + df['assists'] + df['blocks'] - df['turnovers']
     
     df = df.fillna(0)
     records = df.to_dict(orient='records')
@@ -183,8 +183,8 @@ def export_players_by_game(csv_path: Path, json_path: Path) -> None:
     columns_to_keep = [c for c in columns_to_keep if c in df.columns]
     df = df[columns_to_keep]
     
-    df["+/-"] = df['goals'] + df['assists'] - df['turnovers']
-    
+    df["+/-"] = df['goals'] + df['assists'] + df['blocks'] - df['turnovers']
+
     df = df.fillna(0)
     records = df.to_dict(orient='records')
     

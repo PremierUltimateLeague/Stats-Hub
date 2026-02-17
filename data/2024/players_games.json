@@ -27,7 +27,7 @@
     "touches": 15.0,
     "offensePoints": 10.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "13 Hannah Abraham",
@@ -57,7 +57,7 @@
     "touches": 22.0,
     "offensePoints": 9.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "29 Charlotte Doran",
@@ -117,7 +117,7 @@
     "touches": 33.0,
     "offensePoints": 5.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "12 Emma Jaschke",
@@ -147,7 +147,7 @@
     "touches": 25.0,
     "offensePoints": 5.0,
     "defensePoints": 5.0,
-    "+/-": -2.0
+    "+/-": 0.0
   },
   {
     "player": "18 Naomi Anderson",
@@ -162,7 +162,7 @@
     "touches": 12.0,
     "offensePoints": 4.0,
     "defensePoints": 6.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "75 Sarah Kingsley-Hart",
@@ -237,7 +237,7 @@
     "touches": 10.0,
     "offensePoints": 4.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "19 Elle Mayer",
@@ -267,7 +267,7 @@
     "touches": 7.0,
     "offensePoints": 2.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "03 Madi Cannon",
@@ -327,7 +327,7 @@
     "touches": 3.0,
     "offensePoints": 5.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "26 Amy Broome",
@@ -357,7 +357,7 @@
     "touches": 16.0,
     "offensePoints": 7.0,
     "defensePoints": 3.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "31 Nikki Gilbert",
@@ -372,7 +372,7 @@
     "touches": 13.0,
     "offensePoints": 5.0,
     "defensePoints": 5.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "00 Maggie Rowell",
@@ -432,7 +432,7 @@
     "touches": 23.0,
     "offensePoints": 6.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "88 Maddy Easton",
@@ -477,7 +477,7 @@
     "touches": 7.0,
     "offensePoints": 0.0,
     "defensePoints": 7.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "22 Sydney Loughran",
@@ -492,7 +492,7 @@
     "touches": 10.0,
     "offensePoints": 5.0,
     "defensePoints": 3.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "15 Elise Franke",
@@ -522,7 +522,7 @@
     "touches": 4.0,
     "offensePoints": 5.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "12 Annie Ortiz",
@@ -537,7 +537,7 @@
     "touches": 12.0,
     "offensePoints": 0.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "16 Kinsey Neas",
@@ -567,7 +567,7 @@
     "touches": 13.0,
     "offensePoints": 0.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "95 Megan Mendieta",
@@ -582,7 +582,7 @@
     "touches": 25.0,
     "offensePoints": 0.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "07 Kami Groom",
@@ -597,7 +597,7 @@
     "touches": 19.0,
     "offensePoints": 2.0,
     "defensePoints": 16.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "21 Jess Oh",
@@ -627,7 +627,7 @@
     "touches": 9.0,
     "offensePoints": 1.0,
     "defensePoints": 10.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "22 Erin McCann",
@@ -642,7 +642,7 @@
     "touches": 6.0,
     "offensePoints": 1.0,
     "defensePoints": 10.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "09 Annelise Peters",
@@ -657,7 +657,7 @@
     "touches": 18.0,
     "offensePoints": 1.0,
     "defensePoints": 10.0,
-    "+/-": -4.0
+    "+/-": -3.0
   },
   {
     "player": "66 Jackie Wang",
@@ -762,7 +762,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 7.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "12 Clare Frantz",
@@ -792,7 +792,7 @@
     "touches": 17.0,
     "offensePoints": 6.0,
     "defensePoints": 0.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "24 Jamie Eriksson",
@@ -807,7 +807,7 @@
     "touches": 5.0,
     "offensePoints": 0.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "05 Marie Perivier",
@@ -822,7 +822,7 @@
     "touches": 8.0,
     "offensePoints": 4.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "36 Carolyn Normile",
@@ -867,7 +867,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "13 Sami Smalling",
@@ -897,7 +897,7 @@
     "touches": 17.0,
     "offensePoints": 5.0,
     "defensePoints": 3.0,
-    "+/-": -2.0
+    "+/-": 0.0
   },
   {
     "player": "28 Claire Revere",
@@ -927,7 +927,7 @@
     "touches": 2.0,
     "offensePoints": 5.0,
     "defensePoints": 3.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "01 Lindsay Soo",
@@ -942,7 +942,7 @@
     "touches": 10.0,
     "offensePoints": 6.0,
     "defensePoints": 2.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "18 Sarah McKee",
@@ -957,7 +957,7 @@
     "touches": 4.0,
     "offensePoints": 5.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "44 Chloe Greene",
@@ -1002,7 +1002,7 @@
     "touches": 15.0,
     "offensePoints": 6.0,
     "defensePoints": 1.0,
-    "+/-": -2.0
+    "+/-": 1.0
   },
   {
     "player": "11 Dawn Culton",
@@ -1062,7 +1062,7 @@
     "touches": 21.0,
     "offensePoints": 5.0,
     "defensePoints": 2.0,
-    "+/-": -5.0
+    "+/-": -3.0
   },
   {
     "player": "15 Justine Neville",
@@ -1092,7 +1092,7 @@
     "touches": 25.0,
     "offensePoints": 6.0,
     "defensePoints": 1.0,
-    "+/-": -5.0
+    "+/-": -4.0
   },
   {
     "player": "32 Annie Bocko",
@@ -1167,7 +1167,7 @@
     "touches": 7.0,
     "offensePoints": 5.0,
     "defensePoints": 1.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "59 Audrey Lyman",
@@ -1257,7 +1257,7 @@
     "touches": 9.0,
     "offensePoints": 3.0,
     "defensePoints": 2.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "14 Sarah Spall",
@@ -1272,7 +1272,7 @@
     "touches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "27 Mary Rippe",
@@ -1287,7 +1287,7 @@
     "touches": 6.0,
     "offensePoints": 3.0,
     "defensePoints": 0.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "17 Kristin Dudley",
@@ -1347,7 +1347,7 @@
     "touches": 12.0,
     "offensePoints": 8.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "40 Claire Milton",
@@ -1392,7 +1392,7 @@
     "touches": 11.0,
     "offensePoints": 6.0,
     "defensePoints": 5.0,
-    "+/-": 8.0
+    "+/-": 9.0
   },
   {
     "player": "14 Briana Burriss",
@@ -1407,7 +1407,7 @@
     "touches": 10.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "18 Laura Gerencser",
@@ -1422,7 +1422,7 @@
     "touches": 10.0,
     "offensePoints": 8.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "04 Rachel Mast",
@@ -1437,7 +1437,7 @@
     "touches": 16.0,
     "offensePoints": 6.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "34 Lauren Kitten",
@@ -1452,7 +1452,7 @@
     "touches": 13.0,
     "offensePoints": 7.0,
     "defensePoints": 2.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "29 Emily Schloneger",
@@ -1542,7 +1542,7 @@
     "touches": 3.0,
     "offensePoints": 1.0,
     "defensePoints": 7.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "59 Maple Adkins-Threats",
@@ -1557,7 +1557,7 @@
     "touches": 3.0,
     "offensePoints": 1.0,
     "defensePoints": 7.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "16 Riely Kuznicki",
@@ -1572,7 +1572,7 @@
     "touches": 2.0,
     "offensePoints": 1.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "+/-": 2.0
   },
   {
     "player": "20 Shirley Saunders",
@@ -1587,7 +1587,7 @@
     "touches": 2.0,
     "offensePoints": 2.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "23 Lili Hobday",
@@ -1602,7 +1602,7 @@
     "touches": 8.0,
     "offensePoints": 1.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "27 Katharine Gilbert",
@@ -1632,7 +1632,7 @@
     "touches": 28.0,
     "offensePoints": 10.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 3.0
   },
   {
     "player": "22 Rebecca Henley",
@@ -1647,7 +1647,7 @@
     "touches": 9.0,
     "offensePoints": 10.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "45 Sylvia Brown",
@@ -1692,7 +1692,7 @@
     "touches": 23.0,
     "offensePoints": 10.0,
     "defensePoints": 3.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "28 Margie Quinn",
@@ -1767,7 +1767,7 @@
     "touches": 1.0,
     "offensePoints": 2.0,
     "defensePoints": 8.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "25 Nadine Rowen",
@@ -1782,7 +1782,7 @@
     "touches": 11.0,
     "offensePoints": 5.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "20 Noel Holmes",
@@ -1812,7 +1812,7 @@
     "touches": 3.0,
     "offensePoints": 4.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "09 Emma Patterson",
@@ -1842,7 +1842,7 @@
     "touches": 4.0,
     "offensePoints": 1.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "12 Meaghan Creamer",
@@ -1932,7 +1932,7 @@
     "touches": 36.0,
     "offensePoints": 14.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "01 Quincy Booth",
@@ -2007,7 +2007,7 @@
     "touches": 20.0,
     "offensePoints": 7.0,
     "defensePoints": 9.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "44 Jordan Harn",
@@ -2022,7 +2022,7 @@
     "touches": 14.0,
     "offensePoints": 6.0,
     "defensePoints": 9.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "27 Therese Doebler",
@@ -2127,7 +2127,7 @@
     "touches": 10.0,
     "offensePoints": 5.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "55 Trystan Grzyll",
@@ -2172,7 +2172,7 @@
     "touches": 10.0,
     "offensePoints": 9.0,
     "defensePoints": 0.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "29 Charlotte Doran",
@@ -2262,7 +2262,7 @@
     "touches": 19.0,
     "offensePoints": 3.0,
     "defensePoints": 9.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "05 Marie Perivier",
@@ -2277,7 +2277,7 @@
     "touches": 15.0,
     "offensePoints": 4.0,
     "defensePoints": 8.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "23 Lisa Dang",
@@ -2292,7 +2292,7 @@
     "touches": 26.0,
     "offensePoints": 4.0,
     "defensePoints": 8.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "07 Kami Groom",
@@ -2307,7 +2307,7 @@
     "touches": 20.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": 4.0
+    "+/-": 7.0
   },
   {
     "player": "13 Sami Smalling",
@@ -2352,7 +2352,7 @@
     "touches": 11.0,
     "offensePoints": 5.0,
     "defensePoints": 6.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "26 Jessica Sourbeer",
@@ -2382,7 +2382,7 @@
     "touches": 19.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "16 Margaret Walker",
@@ -2397,7 +2397,7 @@
     "touches": 27.0,
     "offensePoints": 4.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "21 Jess Oh",
@@ -2442,7 +2442,7 @@
     "touches": 17.0,
     "offensePoints": 3.0,
     "defensePoints": 7.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "06 Laureen Johnson",
@@ -2502,7 +2502,7 @@
     "touches": 7.0,
     "offensePoints": 1.0,
     "defensePoints": 8.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "22 Erin McCann",
@@ -2562,7 +2562,7 @@
     "touches": 53.0,
     "offensePoints": 13.0,
     "defensePoints": 7.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "77 Katrina Mcguire",
@@ -2592,7 +2592,7 @@
     "touches": 17.0,
     "offensePoints": 8.0,
     "defensePoints": 9.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "66 Mya Hernandez",
@@ -2607,7 +2607,7 @@
     "touches": 17.0,
     "offensePoints": 11.0,
     "defensePoints": 6.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "04 Rachel Mast",
@@ -2652,7 +2652,7 @@
     "touches": 7.0,
     "offensePoints": 7.0,
     "defensePoints": 9.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "06 Risa Umeno",
@@ -2667,7 +2667,7 @@
     "touches": 16.0,
     "offensePoints": 7.0,
     "defensePoints": 7.0,
-    "+/-": -2.0
+    "+/-": 0.0
   },
   {
     "player": "42 Kelly Kerker",
@@ -2682,7 +2682,7 @@
     "touches": 8.0,
     "offensePoints": 4.0,
     "defensePoints": 10.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "24 Abby Swensen",
@@ -2697,7 +2697,7 @@
     "touches": 10.0,
     "offensePoints": 7.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "40 Claire Milton",
@@ -2712,7 +2712,7 @@
     "touches": 7.0,
     "offensePoints": 7.0,
     "defensePoints": 6.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "20 Shirley Saunders",
@@ -2862,7 +2862,7 @@
     "touches": 0.0,
     "offensePoints": 3.0,
     "defensePoints": 1.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "44 Sarah Meckstroth",
@@ -2877,7 +2877,7 @@
     "touches": 18.0,
     "offensePoints": 15.0,
     "defensePoints": 3.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "47 Tori Gray",
@@ -2907,7 +2907,7 @@
     "touches": 17.0,
     "offensePoints": 3.0,
     "defensePoints": 14.0,
-    "+/-": 5.0
+    "+/-": 7.0
   },
   {
     "player": "21 Sarah Mondschein",
@@ -2937,7 +2937,7 @@
     "touches": 4.0,
     "offensePoints": 2.0,
     "defensePoints": 13.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "02 Stephanie Wood",
@@ -2952,7 +2952,7 @@
     "touches": 18.0,
     "offensePoints": 14.0,
     "defensePoints": 1.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "30 Louise Beck",
@@ -2997,7 +2997,7 @@
     "touches": 7.0,
     "offensePoints": 11.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "03 Makella Daley",
@@ -3027,7 +3027,7 @@
     "touches": 12.0,
     "offensePoints": 3.0,
     "defensePoints": 11.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "07 Danielle Byers",
@@ -3042,7 +3042,7 @@
     "touches": 11.0,
     "offensePoints": 14.0,
     "defensePoints": 0.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "04 Erica Baken",
@@ -3072,7 +3072,7 @@
     "touches": 5.0,
     "offensePoints": 1.0,
     "defensePoints": 12.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "33 Julia Hill",
@@ -3087,7 +3087,7 @@
     "touches": 4.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "00 Alicia Carr",
@@ -3132,7 +3132,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 9.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "01 Amelia Zdechlik",
@@ -3237,7 +3237,7 @@
     "touches": 58.0,
     "offensePoints": 19.0,
     "defensePoints": 2.0,
-    "+/-": -4.0
+    "+/-": -3.0
   },
   {
     "player": "24 Mia Letterie",
@@ -3252,7 +3252,7 @@
     "touches": 13.0,
     "offensePoints": 5.0,
     "defensePoints": 16.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "10 Tori Taylor",
@@ -3297,7 +3297,7 @@
     "touches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 11.0,
-    "+/-": 0.0
+    "+/-": 3.0
   },
   {
     "player": "26 Leah Shorb",
@@ -3312,7 +3312,7 @@
     "touches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 8.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "71 Mattea Swegles",
@@ -3342,7 +3342,7 @@
     "touches": 7.0,
     "offensePoints": 3.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "+/-": 3.0
   },
   {
     "player": "07 Mary Cowart",
@@ -3462,7 +3462,7 @@
     "touches": 45.0,
     "offensePoints": 16.0,
     "defensePoints": 10.0,
-    "+/-": 8.0
+    "+/-": 9.0
   },
   {
     "player": "20 Yina Cartagena",
@@ -3477,7 +3477,7 @@
     "touches": 44.0,
     "offensePoints": 16.0,
     "defensePoints": 9.0,
-    "+/-": 6.0
+    "+/-": 7.0
   },
   {
     "player": "00 Genny De Jesus",
@@ -3492,7 +3492,7 @@
     "touches": 39.0,
     "offensePoints": 15.0,
     "defensePoints": 7.0,
-    "+/-": 5.0
+    "+/-": 9.0
   },
   {
     "player": "66 Janine Hlavaty",
@@ -3507,7 +3507,7 @@
     "touches": 23.0,
     "offensePoints": 15.0,
     "defensePoints": 7.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "24 Jolie Krebs",
@@ -3522,7 +3522,7 @@
     "touches": 28.0,
     "offensePoints": 15.0,
     "defensePoints": 7.0,
-    "+/-": 5.0
+    "+/-": 7.0
   },
   {
     "player": "02 Jolene Zheng",
@@ -3552,7 +3552,7 @@
     "touches": 3.0,
     "offensePoints": 3.0,
     "defensePoints": 17.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "26 Mariabelen Restrepo",
@@ -3582,7 +3582,7 @@
     "touches": 11.0,
     "offensePoints": 3.0,
     "defensePoints": 16.0,
-    "+/-": 0.0
+    "+/-": 3.0
   },
   {
     "player": "88 Nikki Hair",
@@ -3642,7 +3642,7 @@
     "touches": 33.0,
     "offensePoints": 1.0,
     "defensePoints": 14.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "05 Emily Wang",
@@ -3702,7 +3702,7 @@
     "touches": 29.0,
     "offensePoints": 3.0,
     "defensePoints": 12.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "16 Grace Maroon",
@@ -3717,7 +3717,7 @@
     "touches": 24.0,
     "offensePoints": 12.0,
     "defensePoints": 3.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "18 Sumi Onoe",
@@ -3747,7 +3747,7 @@
     "touches": 14.0,
     "offensePoints": 12.0,
     "defensePoints": 3.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "13 Kat Harper",
@@ -3762,7 +3762,7 @@
     "touches": 8.0,
     "offensePoints": 1.0,
     "defensePoints": 12.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "15 Layne Dodge",
@@ -3777,7 +3777,7 @@
     "touches": 7.0,
     "offensePoints": 2.0,
     "defensePoints": 11.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "33 Jana Graham",
@@ -3837,7 +3837,7 @@
     "touches": 33.0,
     "offensePoints": 2.0,
     "defensePoints": 10.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "20 Danielle Walsh",
@@ -3867,7 +3867,7 @@
     "touches": 9.0,
     "offensePoints": 8.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "88 Grace Hodges",
@@ -3927,7 +3927,7 @@
     "touches": 1.0,
     "offensePoints": 0.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "08 Emma Soiles",
@@ -3942,7 +3942,7 @@
     "touches": 1.0,
     "offensePoints": 0.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "70 Benish Benjamin",
@@ -4017,7 +4017,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "08 Nicki Chan",
@@ -4032,7 +4032,7 @@
     "touches": 4.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "55 Sophie Knowles",
@@ -4092,7 +4092,7 @@
     "touches": 7.0,
     "offensePoints": 8.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "52 Caitlin Connell",
@@ -4152,7 +4152,7 @@
     "touches": 21.0,
     "offensePoints": 7.0,
     "defensePoints": 1.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "17 Kelsey Devlin",
@@ -4182,7 +4182,7 @@
     "touches": 11.0,
     "offensePoints": 8.0,
     "defensePoints": 0.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "71 Shirlee Wohl",
@@ -4212,7 +4212,7 @@
     "touches": 8.0,
     "offensePoints": 8.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "45 Sarah Jeung",
@@ -4227,7 +4227,7 @@
     "touches": 2.0,
     "offensePoints": 3.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "51 Tess Johnson",
@@ -4242,7 +4242,7 @@
     "touches": 10.0,
     "offensePoints": 4.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "76 Emma Palacio",
@@ -4317,7 +4317,7 @@
     "touches": 17.0,
     "offensePoints": 11.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "03 Madi Cannon",
@@ -4332,7 +4332,7 @@
     "touches": 25.0,
     "offensePoints": 11.0,
     "defensePoints": 1.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "73 Clara Stewart",
@@ -4347,7 +4347,7 @@
     "touches": 34.0,
     "offensePoints": 11.0,
     "defensePoints": 1.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "02 Elise Bjork",
@@ -4377,7 +4377,7 @@
     "touches": 14.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "07 Shiru Liu",
@@ -4392,7 +4392,7 @@
     "touches": 11.0,
     "offensePoints": 2.0,
     "defensePoints": 8.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "15 Elise Franke",
@@ -4407,7 +4407,7 @@
     "touches": 9.0,
     "offensePoints": 1.0,
     "defensePoints": 9.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "27 Jocelyn Jessop",
@@ -4452,7 +4452,7 @@
     "touches": 18.0,
     "offensePoints": 5.0,
     "defensePoints": 2.0,
-    "+/-": -5.0
+    "+/-": -4.0
   },
   {
     "player": "19 Vanessa Bacorn",
@@ -4467,7 +4467,7 @@
     "touches": 5.0,
     "offensePoints": 2.0,
     "defensePoints": 6.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "77 Kerry Younts",
@@ -4482,7 +4482,7 @@
     "touches": 5.0,
     "offensePoints": 1.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "26 Amy Broome",
@@ -4512,7 +4512,7 @@
     "touches": 13.0,
     "offensePoints": 1.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "00 Maggie Rowell",
@@ -4527,7 +4527,7 @@
     "touches": 2.0,
     "offensePoints": 3.0,
     "defensePoints": 4.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "22 Sydney Loughran",
@@ -4542,7 +4542,7 @@
     "touches": 8.0,
     "offensePoints": 2.0,
     "defensePoints": 4.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "12 Annie Ortiz",
@@ -4557,7 +4557,7 @@
     "touches": 3.0,
     "offensePoints": 1.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "16 Kinsey Neas",
@@ -4572,7 +4572,7 @@
     "touches": 1.0,
     "offensePoints": 1.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "81 Mckenzie Bailey",
@@ -4707,7 +4707,7 @@
     "touches": 25.0,
     "offensePoints": 5.0,
     "defensePoints": 12.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "34 Alex Barnett",
@@ -4722,7 +4722,7 @@
     "touches": 32.0,
     "offensePoints": 9.0,
     "defensePoints": 8.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "02 Claire Bidigare-Curtis",
@@ -4782,7 +4782,7 @@
     "touches": 10.0,
     "offensePoints": 13.0,
     "defensePoints": 0.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "25 Meg Manning",
@@ -5022,7 +5022,7 @@
     "touches": 56.0,
     "offensePoints": 18.0,
     "defensePoints": 4.0,
-    "+/-": -9.0
+    "+/-": -8.0
   },
   {
     "player": "21 Annie Shriver",
@@ -5037,7 +5037,7 @@
     "touches": 18.0,
     "offensePoints": 17.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "12 Sydney French",
@@ -5052,7 +5052,7 @@
     "touches": 16.0,
     "offensePoints": 4.0,
     "defensePoints": 15.0,
-    "+/-": -3.0
+    "+/-": -1.0
   },
   {
     "player": "72 Jacqueline Jarik",
@@ -5067,7 +5067,7 @@
     "touches": 18.0,
     "offensePoints": 3.0,
     "defensePoints": 15.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "22 Alex Ballinger",
@@ -5082,7 +5082,7 @@
     "touches": 20.0,
     "offensePoints": 5.0,
     "defensePoints": 12.0,
-    "+/-": -3.0
+    "+/-": 0.0
   },
   {
     "player": "05 Rose Glinka",
@@ -5097,7 +5097,7 @@
     "touches": 18.0,
     "offensePoints": 15.0,
     "defensePoints": 1.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "17 Caitlin Duffner",
@@ -5112,7 +5112,7 @@
     "touches": 15.0,
     "offensePoints": 16.0,
     "defensePoints": 1.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "13 Erin Newman",
@@ -5142,7 +5142,7 @@
     "touches": 8.0,
     "offensePoints": 4.0,
     "defensePoints": 11.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "32 Mickela Heilicher",
@@ -5157,7 +5157,7 @@
     "touches": 16.0,
     "offensePoints": 3.0,
     "defensePoints": 12.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "99 Dana Demmert",
@@ -5172,7 +5172,7 @@
     "touches": 2.0,
     "offensePoints": 3.0,
     "defensePoints": 10.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "08 ManHua Zhu",
@@ -5292,7 +5292,7 @@
     "touches": 66.0,
     "offensePoints": 16.0,
     "defensePoints": 11.0,
-    "+/-": -2.0
+    "+/-": 1.0
   },
   {
     "player": "00 Genny De Jesus",
@@ -5307,7 +5307,7 @@
     "touches": 19.0,
     "offensePoints": 16.0,
     "defensePoints": 6.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "20 Yina Cartagena",
@@ -5322,7 +5322,7 @@
     "touches": 69.0,
     "offensePoints": 16.0,
     "defensePoints": 5.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "96 Nina Finley",
@@ -5337,7 +5337,7 @@
     "touches": 24.0,
     "offensePoints": 3.0,
     "defensePoints": 18.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "24 Jolie Krebs",
@@ -5352,7 +5352,7 @@
     "touches": 28.0,
     "offensePoints": 3.0,
     "defensePoints": 15.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "23 Linnea Soo",
@@ -5367,7 +5367,7 @@
     "touches": 12.0,
     "offensePoints": 14.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "02 Jolene Zheng",
@@ -5382,7 +5382,7 @@
     "touches": 7.0,
     "offensePoints": 14.0,
     "defensePoints": 2.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "09 Cassandra Brown",
@@ -5397,7 +5397,7 @@
     "touches": 21.0,
     "offensePoints": 14.0,
     "defensePoints": 1.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "97 Hannah Glick",
@@ -5427,7 +5427,7 @@
     "touches": 3.0,
     "offensePoints": 4.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "88 Nikki Hair",
@@ -5472,7 +5472,7 @@
     "touches": 12.0,
     "offensePoints": 1.0,
     "defensePoints": 10.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "18 Kylie Sterling",
@@ -5487,7 +5487,7 @@
     "touches": 10.0,
     "offensePoints": 1.0,
     "defensePoints": 10.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "05 Emily Wang",
@@ -5517,7 +5517,7 @@
     "touches": 10.0,
     "offensePoints": 0.0,
     "defensePoints": 10.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "65 Anna Lieberman",
@@ -5562,7 +5562,7 @@
     "touches": 9.0,
     "offensePoints": 10.0,
     "defensePoints": 4.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "99 Dana Demmert",
@@ -5592,7 +5592,7 @@
     "touches": 11.0,
     "offensePoints": 10.0,
     "defensePoints": 1.0,
-    "+/-": -3.0
+    "+/-": -1.0
   },
   {
     "player": "52 Erynn Schroeder",
@@ -5607,7 +5607,7 @@
     "touches": 37.0,
     "offensePoints": 10.0,
     "defensePoints": 1.0,
-    "+/-": -12.0
+    "+/-": -10.0
   },
   {
     "player": "22 Alex Ballinger",
@@ -5622,7 +5622,7 @@
     "touches": 18.0,
     "offensePoints": 7.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 2.0
   },
   {
     "player": "12 Sydney French",
@@ -5667,7 +5667,7 @@
     "touches": 6.0,
     "offensePoints": 8.0,
     "defensePoints": 1.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "97 Eileen Bequette",
@@ -5682,7 +5682,7 @@
     "touches": 5.0,
     "offensePoints": 4.0,
     "defensePoints": 4.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "05 Rose Glinka",
@@ -5802,7 +5802,7 @@
     "touches": 4.0,
     "offensePoints": 2.0,
     "defensePoints": 1.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "11 Sara Liang",
@@ -5817,7 +5817,7 @@
     "touches": 24.0,
     "offensePoints": 1.0,
     "defensePoints": 13.0,
-    "+/-": -1.0
+    "+/-": 3.0
   },
   {
     "player": "08 Emma Soiles",
@@ -5832,7 +5832,7 @@
     "touches": 13.0,
     "offensePoints": 1.0,
     "defensePoints": 12.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "04 Raha Mozaffari",
@@ -5847,7 +5847,7 @@
     "touches": 33.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
-    "+/-": -2.0
+    "+/-": 1.0
   },
   {
     "player": "18 Sumi Onoe",
@@ -5877,7 +5877,7 @@
     "touches": 5.0,
     "offensePoints": 1.0,
     "defensePoints": 9.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "21 Linda Morse",
@@ -5907,7 +5907,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 10.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "22 Liz Hart",
@@ -5937,7 +5937,7 @@
     "touches": 4.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "+/-": 3.0
   },
   {
     "player": "24 Casey Gorman",
@@ -5952,7 +5952,7 @@
     "touches": 3.0,
     "offensePoints": 0.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 3.0
   },
   {
     "player": "36 Adilina Malave",
@@ -5982,7 +5982,7 @@
     "touches": 40.0,
     "offensePoints": 5.0,
     "defensePoints": 1.0,
-    "+/-": -5.0
+    "+/-": -4.0
   },
   {
     "player": "23 Natalie Bova",
@@ -5997,7 +5997,7 @@
     "touches": 28.0,
     "offensePoints": 5.0,
     "defensePoints": 1.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "10 Andrea DeSabato",
@@ -6027,7 +6027,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 6.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "33 Jana Graham",
@@ -6057,7 +6057,7 @@
     "touches": 10.0,
     "offensePoints": 4.0,
     "defensePoints": 1.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "16 Grace Maroon",
@@ -6117,7 +6117,7 @@
     "touches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "03 Rachel Alfano",
@@ -6162,7 +6162,7 @@
     "touches": 16.0,
     "offensePoints": 3.0,
     "defensePoints": 8.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "36 Carolyn Normile",
@@ -6177,7 +6177,7 @@
     "touches": 15.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "26 Jessica Sourbeer",
@@ -6192,7 +6192,7 @@
     "touches": 16.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "09 Annelise Peters",
@@ -6207,7 +6207,7 @@
     "touches": 15.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "07 Kami Groom",
@@ -6222,7 +6222,7 @@
     "touches": 12.0,
     "offensePoints": 1.0,
     "defensePoints": 8.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "13 Sami Smalling",
@@ -6237,7 +6237,7 @@
     "touches": 17.0,
     "offensePoints": 2.0,
     "defensePoints": 7.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "01 Ashleigh Jentilet",
@@ -6252,7 +6252,7 @@
     "touches": 10.0,
     "offensePoints": 1.0,
     "defensePoints": 9.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "05 Marie Perivier",
@@ -6267,7 +6267,7 @@
     "touches": 7.0,
     "offensePoints": 2.0,
     "defensePoints": 8.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "16 Margaret Walker",
@@ -6297,7 +6297,7 @@
     "touches": 7.0,
     "offensePoints": 1.0,
     "defensePoints": 9.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "66 Jackie Wang",
@@ -6312,7 +6312,7 @@
     "touches": 22.0,
     "offensePoints": 1.0,
     "defensePoints": 7.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "22 Erin McCann",
@@ -6342,7 +6342,7 @@
     "touches": 22.0,
     "offensePoints": 2.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "00 Emma Jones",
@@ -6387,7 +6387,7 @@
     "touches": 5.0,
     "offensePoints": 2.0,
     "defensePoints": 7.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "42 Lisi Lohre",
@@ -6477,7 +6477,7 @@
     "touches": 6.0,
     "offensePoints": 2.0,
     "defensePoints": 3.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "07 Kami Groom",
@@ -6507,7 +6507,7 @@
     "touches": 21.0,
     "offensePoints": 13.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 2.0
   },
   {
     "player": "27 Katharine Gilbert",
@@ -6567,7 +6567,7 @@
     "touches": 12.0,
     "offensePoints": 13.0,
     "defensePoints": 3.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "45 Sylvia Brown",
@@ -6597,7 +6597,7 @@
     "touches": 30.0,
     "offensePoints": 10.0,
     "defensePoints": 3.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "82 Mary Turner",
@@ -6612,7 +6612,7 @@
     "touches": 10.0,
     "offensePoints": 11.0,
     "defensePoints": 2.0,
-    "+/-": -2.0
+    "+/-": 0.0
   },
   {
     "player": "17 Rachel Barr",
@@ -6672,7 +6672,7 @@
     "touches": 5.0,
     "offensePoints": 8.0,
     "defensePoints": 3.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "77 Melissa Gronske",
@@ -6687,7 +6687,7 @@
     "touches": 5.0,
     "offensePoints": 7.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "04 Ashley West",
@@ -6747,7 +6747,7 @@
     "touches": 3.0,
     "offensePoints": 5.0,
     "defensePoints": 0.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "42 Martha Wilber",
@@ -6762,7 +6762,7 @@
     "touches": 35.0,
     "offensePoints": 11.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "10 Mia Griner",
@@ -6792,7 +6792,7 @@
     "touches": 34.0,
     "offensePoints": 8.0,
     "defensePoints": 5.0,
-    "+/-": -2.0
+    "+/-": 1.0
   },
   {
     "player": "08 Dani Ortiz",
@@ -6897,7 +6897,7 @@
     "touches": 6.0,
     "offensePoints": 8.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "31 Mar\u00eda Vargas",
@@ -6912,7 +6912,7 @@
     "touches": 23.0,
     "offensePoints": 6.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "18 Naomi Anderson",
@@ -6942,7 +6942,7 @@
     "touches": 9.0,
     "offensePoints": 5.0,
     "defensePoints": 5.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "21 Samantha Li",
@@ -6972,7 +6972,7 @@
     "touches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "44 Jordan Harn",
@@ -6987,7 +6987,7 @@
     "touches": 11.0,
     "offensePoints": 5.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "75 Sarah Kingsley-Hart",
@@ -7092,7 +7092,7 @@
     "touches": 35.0,
     "offensePoints": 8.0,
     "defensePoints": 6.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "01 Lindsay Soo",
@@ -7107,7 +7107,7 @@
     "touches": 16.0,
     "offensePoints": 2.0,
     "defensePoints": 10.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "09 Jinny Riedel",
@@ -7137,7 +7137,7 @@
     "touches": 46.0,
     "offensePoints": 9.0,
     "defensePoints": 3.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "44 Chloe Green",
@@ -7212,7 +7212,7 @@
     "touches": 10.0,
     "offensePoints": 8.0,
     "defensePoints": 1.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "32 Annie Bocko",
@@ -7257,7 +7257,7 @@
     "touches": 5.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "02 Claire Bidigare-Curtis",
@@ -7287,7 +7287,7 @@
     "touches": 11.0,
     "offensePoints": 2.0,
     "defensePoints": 6.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "12 Katie Backus Meilstrup",
@@ -7302,7 +7302,7 @@
     "touches": 10.0,
     "offensePoints": 4.0,
     "defensePoints": 2.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "77 Anna Tortorici",
@@ -7452,7 +7452,7 @@
     "touches": 28.0,
     "offensePoints": 3.0,
     "defensePoints": 14.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "08 Manuela Cardenas",
@@ -7467,7 +7467,7 @@
     "touches": 21.0,
     "offensePoints": 3.0,
     "defensePoints": 13.0,
-    "+/-": 2.0
+    "+/-": 5.0
   },
   {
     "player": "23 Linnea Soo",
@@ -7482,7 +7482,7 @@
     "touches": 14.0,
     "offensePoints": 13.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "20 Yina Cartagena",
@@ -7512,7 +7512,7 @@
     "touches": 21.0,
     "offensePoints": 1.0,
     "defensePoints": 14.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "66 Janine Hlavaty",
@@ -7527,7 +7527,7 @@
     "touches": 9.0,
     "offensePoints": 12.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "00 Genny De Jesus",
@@ -7632,7 +7632,7 @@
     "touches": 3.0,
     "offensePoints": 0.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "33 Yuge Xiao",
@@ -7647,7 +7647,7 @@
     "touches": 19.0,
     "offensePoints": 11.0,
     "defensePoints": 1.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "30 Jean Huang",
@@ -7677,7 +7677,7 @@
     "touches": 15.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "04 Adelle Pitsas",
@@ -7692,7 +7692,7 @@
     "touches": 3.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "08 Nicki Chan",
@@ -7737,7 +7737,7 @@
     "touches": 17.0,
     "offensePoints": 0.0,
     "defensePoints": 10.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "36 Jaelee Cruz",
@@ -7812,7 +7812,7 @@
     "touches": 8.0,
     "offensePoints": 4.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "51 Tess Johnson",
@@ -7857,7 +7857,7 @@
     "touches": 7.0,
     "offensePoints": 3.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "15 Caitlin Fitzgerald",
@@ -7977,7 +7977,7 @@
     "touches": 2.0,
     "offensePoints": 1.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "69 Tahlia Quartin",
@@ -7992,7 +7992,7 @@
     "touches": 4.0,
     "offensePoints": 4.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "29 Elana Schwam",
@@ -8157,7 +8157,7 @@
     "touches": 13.0,
     "offensePoints": 16.0,
     "defensePoints": 1.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": 0,
@@ -8217,7 +8217,7 @@
     "touches": 20.0,
     "offensePoints": 16.0,
     "defensePoints": 0.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": 0,
@@ -8337,7 +8337,7 @@
     "touches": 3.0,
     "offensePoints": 1.0,
     "defensePoints": 12.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": 0,
@@ -8397,7 +8397,7 @@
     "touches": 0.0,
     "offensePoints": 1.0,
     "defensePoints": 10.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": 0,
@@ -8592,7 +8592,7 @@
     "touches": 16.0,
     "offensePoints": 1.0,
     "defensePoints": 16.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "20 Danielle Walsh",
@@ -8607,7 +8607,7 @@
     "touches": 48.0,
     "offensePoints": 13.0,
     "defensePoints": 3.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "04 Raha Mozaffari",
@@ -8712,7 +8712,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 14.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "33 Jana Graham",
@@ -8727,7 +8727,7 @@
     "touches": 4.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "13 Kat Harper",
@@ -8757,7 +8757,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "05 Lindsay McKenna",
@@ -8772,7 +8772,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 10.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "36 Adilina Malave",
@@ -8802,7 +8802,7 @@
     "touches": 1.0,
     "offensePoints": 1.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "17 Allie Milligan",
@@ -8907,7 +8907,7 @@
     "touches": 43.0,
     "offensePoints": 9.0,
     "defensePoints": 12.0,
-    "+/-": -5.0
+    "+/-": -3.0
   },
   {
     "player": "24 Mia Letterie",
@@ -8922,7 +8922,7 @@
     "touches": 32.0,
     "offensePoints": 15.0,
     "defensePoints": 5.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "10 Tori Taylor",
@@ -8937,7 +8937,7 @@
     "touches": 22.0,
     "offensePoints": 16.0,
     "defensePoints": 1.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "72 Grace Castro",
@@ -8967,7 +8967,7 @@
     "touches": 12.0,
     "offensePoints": 16.0,
     "defensePoints": 1.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "77 Melissa Gronske",
@@ -8997,7 +8997,7 @@
     "touches": 5.0,
     "offensePoints": 8.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "82 Mary Turner",
@@ -9042,7 +9042,7 @@
     "touches": 10.0,
     "offensePoints": 4.0,
     "defensePoints": 8.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "06 Micah Roberts",
@@ -9192,7 +9192,7 @@
     "touches": 27.0,
     "offensePoints": 11.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "20 Bridget Mizener",
@@ -9207,7 +9207,7 @@
     "touches": 21.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "13 Tyler Smith",
@@ -9252,7 +9252,7 @@
     "touches": 6.0,
     "offensePoints": 1.0,
     "defensePoints": 10.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "06 Jenny Wei",
@@ -9282,7 +9282,7 @@
     "touches": 7.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "17 Emily Przykucki",
@@ -9297,7 +9297,7 @@
     "touches": 11.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "18 Sarah McKee",
@@ -9312,7 +9312,7 @@
     "touches": 5.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "27 Mary Rippe",
@@ -9402,7 +9402,7 @@
     "touches": 7.0,
     "offensePoints": 0.0,
     "defensePoints": 10.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "12 Katie Backus Meilstrup",
@@ -9477,7 +9477,7 @@
     "touches": 2.0,
     "offensePoints": 0.0,
     "defensePoints": 9.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "16 Tania Proksch",
@@ -9567,7 +9567,7 @@
     "touches": 47.0,
     "offensePoints": 13.0,
     "defensePoints": 2.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "02 Stephanie Wood",
@@ -9627,7 +9627,7 @@
     "touches": 14.0,
     "offensePoints": 13.0,
     "defensePoints": 1.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "44 Sarah Meckstroth",
@@ -9672,7 +9672,7 @@
     "touches": 1.0,
     "offensePoints": 2.0,
     "defensePoints": 10.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "55 Courtney Walbe",
@@ -9867,7 +9867,7 @@
     "touches": 15.0,
     "offensePoints": 12.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "19 Olivia Hampton",
@@ -9897,7 +9897,7 @@
     "touches": 23.0,
     "offensePoints": 12.0,
     "defensePoints": 1.0,
-    "+/-": 5.0
+    "+/-": 6.0
   },
   {
     "player": "36 Jaelee Cruz",
@@ -9912,7 +9912,7 @@
     "touches": 39.0,
     "offensePoints": 12.0,
     "defensePoints": 1.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "17 Kelsey Devlin",
@@ -9972,7 +9972,7 @@
     "touches": 3.0,
     "offensePoints": 1.0,
     "defensePoints": 9.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "52 Caitlin Connell",
@@ -9987,7 +9987,7 @@
     "touches": 2.0,
     "offensePoints": 9.0,
     "defensePoints": 2.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "30 Jean Huang",
@@ -10002,7 +10002,7 @@
     "touches": 8.0,
     "offensePoints": 1.0,
     "defensePoints": 9.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "51 Tess Johnson",
@@ -10062,7 +10062,7 @@
     "touches": 9.0,
     "offensePoints": 3.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "55 Sophie Knowles",
@@ -10077,7 +10077,7 @@
     "touches": 14.0,
     "offensePoints": 0.0,
     "defensePoints": 9.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "06 Rowse",
@@ -10092,7 +10092,7 @@
     "touches": 5.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 2.0
+    "+/-": 7.0
   },
   {
     "player": "37 Hannah Henkin",
@@ -10152,7 +10152,7 @@
     "touches": 18.0,
     "offensePoints": 7.0,
     "defensePoints": 9.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "54 Liv Ford",
@@ -10182,7 +10182,7 @@
     "touches": 10.0,
     "offensePoints": 7.0,
     "defensePoints": 7.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "26 Morgan Lally",
@@ -10227,7 +10227,7 @@
     "touches": 7.0,
     "offensePoints": 5.0,
     "defensePoints": 8.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "20 Soju Hokari",
@@ -10272,7 +10272,7 @@
     "touches": 21.0,
     "offensePoints": 12.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "06 Willy (Natalie Wilson)",
@@ -10302,7 +10302,7 @@
     "touches": 5.0,
     "offensePoints": 2.0,
     "defensePoints": 10.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "31 Mar\u00eda Vargas",
@@ -10377,7 +10377,7 @@
     "touches": 11.0,
     "offensePoints": 1.0,
     "defensePoints": 8.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "29 Charlotte Doran",
@@ -10437,7 +10437,7 @@
     "touches": 2.0,
     "offensePoints": 6.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "45 Jennifer Lin",
@@ -10497,7 +10497,7 @@
     "touches": 38.0,
     "offensePoints": 14.0,
     "defensePoints": 4.0,
-    "+/-": 9.0
+    "+/-": 11.0
   },
   {
     "player": "16 Emily Branson",
@@ -10527,7 +10527,7 @@
     "touches": 31.0,
     "offensePoints": 13.0,
     "defensePoints": 4.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "27 Katharine Gilbert",
@@ -10542,7 +10542,7 @@
     "touches": 48.0,
     "offensePoints": 13.0,
     "defensePoints": 4.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "28 Margie Quinn",
@@ -10557,7 +10557,7 @@
     "touches": 66.0,
     "offensePoints": 13.0,
     "defensePoints": 4.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "72 Grace Castro",
@@ -10587,7 +10587,7 @@
     "touches": 30.0,
     "offensePoints": 3.0,
     "defensePoints": 12.0,
-    "+/-": -5.0
+    "+/-": -3.0
   },
   {
     "player": "24 Mia Letterie",
@@ -10602,7 +10602,7 @@
     "touches": 14.0,
     "offensePoints": 3.0,
     "defensePoints": 12.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "09 Emma Patterson",
@@ -10647,7 +10647,7 @@
     "touches": 8.0,
     "offensePoints": 3.0,
     "defensePoints": 5.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "12 Meaghan Creamer",
@@ -10662,7 +10662,7 @@
     "touches": 2.0,
     "offensePoints": 1.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "21 Elena Rubino",
@@ -10677,7 +10677,7 @@
     "touches": 4.0,
     "offensePoints": 0.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "04 Ashley West",
@@ -10722,7 +10722,7 @@
     "touches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 1.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "11 Jamie Ferrie",
@@ -10752,7 +10752,7 @@
     "touches": 5.0,
     "offensePoints": 2.0,
     "defensePoints": 3.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "19 Bethany Bailey",
@@ -10782,7 +10782,7 @@
     "touches": 1.0,
     "offensePoints": 0.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "23 Breanna Snipes",
@@ -10827,7 +10827,7 @@
     "touches": 13.0,
     "offensePoints": 1.0,
     "defensePoints": 13.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "49 Elly Fireside-Ostergaard",
@@ -10857,7 +10857,7 @@
     "touches": 16.0,
     "offensePoints": 5.0,
     "defensePoints": 7.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "45 Emery Otopalik",
@@ -10887,7 +10887,7 @@
     "touches": 12.0,
     "offensePoints": 1.0,
     "defensePoints": 10.0,
-    "+/-": -2.0
+    "+/-": 2.0
   },
   {
     "player": "04 Erica Baken",
@@ -10917,7 +10917,7 @@
     "touches": 18.0,
     "offensePoints": 9.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "03 Makella Daley",
@@ -11052,7 +11052,7 @@
     "touches": 13.0,
     "offensePoints": 0.0,
     "defensePoints": 10.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "01 Amelia Zdechlik",
@@ -11082,7 +11082,7 @@
     "touches": 13.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "44 Sarah Meckstroth",
@@ -11097,7 +11097,7 @@
     "touches": 16.0,
     "offensePoints": 7.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "10 Jane Koch",
@@ -11112,7 +11112,7 @@
     "touches": 13.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "28 Emma Peaslee",
@@ -11127,7 +11127,7 @@
     "touches": 4.0,
     "offensePoints": 6.0,
     "defensePoints": 2.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "12 Sydney French",
@@ -11142,7 +11142,7 @@
     "touches": 7.0,
     "offensePoints": 7.0,
     "defensePoints": 10.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "22 Alex Ballinger",
@@ -11202,7 +11202,7 @@
     "touches": 12.0,
     "offensePoints": 13.0,
     "defensePoints": 1.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "52 Erynn Schroeder",
@@ -11217,7 +11217,7 @@
     "touches": 38.0,
     "offensePoints": 13.0,
     "defensePoints": 1.0,
-    "+/-": -5.0
+    "+/-": -4.0
   },
   {
     "player": "21 Annie Shriver",
@@ -11232,7 +11232,7 @@
     "touches": 14.0,
     "offensePoints": 13.0,
     "defensePoints": 0.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "00 Donna Johnston",
@@ -11307,7 +11307,7 @@
     "touches": 4.0,
     "offensePoints": 4.0,
     "defensePoints": 5.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "13 Erin Newman",
@@ -11382,7 +11382,7 @@
     "touches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "25 Anna Wozniak",
@@ -11397,7 +11397,7 @@
     "touches": 0.0,
     "offensePoints": 1.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "23 Allie Mueting",
@@ -11502,7 +11502,7 @@
     "touches": 18.0,
     "offensePoints": 14.0,
     "defensePoints": 2.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "40 Claire Milton",
@@ -11517,7 +11517,7 @@
     "touches": 13.0,
     "offensePoints": 14.0,
     "defensePoints": 1.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "11 Tracey Lo",
@@ -11532,7 +11532,7 @@
     "touches": 20.0,
     "offensePoints": 14.0,
     "defensePoints": 1.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "18 Laura Gerencser",
@@ -11562,7 +11562,7 @@
     "touches": 14.0,
     "offensePoints": 14.0,
     "defensePoints": 1.0,
-    "+/-": -2.0
+    "+/-": 0.0
   },
   {
     "player": "23 Lili Hobday",
@@ -11832,7 +11832,7 @@
     "touches": 31.0,
     "offensePoints": 12.0,
     "defensePoints": 6.0,
-    "+/-": 7.0
+    "+/-": 8.0
   },
   {
     "player": "31 Eli Presberg",
@@ -11847,7 +11847,7 @@
     "touches": 38.0,
     "offensePoints": 12.0,
     "defensePoints": 6.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "24 Jolie Krebs",
@@ -11862,7 +11862,7 @@
     "touches": 31.0,
     "offensePoints": 11.0,
     "defensePoints": 6.0,
-    "+/-": 5.0
+    "+/-": 6.0
   },
   {
     "player": "19 Eastelle Ding",
@@ -11892,7 +11892,7 @@
     "touches": 46.0,
     "offensePoints": 11.0,
     "defensePoints": 5.0,
-    "+/-": 5.0
+    "+/-": 6.0
   },
   {
     "player": "09 Cassandra Brown",
@@ -11937,7 +11937,7 @@
     "touches": 5.0,
     "offensePoints": 1.0,
     "defensePoints": 13.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "97 Hannah Glick",
@@ -11967,7 +11967,7 @@
     "touches": 8.0,
     "offensePoints": 11.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "65 Anna Lieberman",
@@ -12027,7 +12027,7 @@
     "touches": 6.0,
     "offensePoints": 6.0,
     "defensePoints": 1.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "26 Amy Broome",
@@ -12042,7 +12042,7 @@
     "touches": 20.0,
     "offensePoints": 7.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "31 Nikki Gilbert",
@@ -12102,7 +12102,7 @@
     "touches": 5.0,
     "offensePoints": 6.0,
     "defensePoints": 4.0,
-    "+/-": -4.0
+    "+/-": -3.0
   },
   {
     "player": "12 Annie Ortiz",
@@ -12117,7 +12117,7 @@
     "touches": 12.0,
     "offensePoints": 4.0,
     "defensePoints": 7.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "16 Kinsey Neas",
@@ -12192,7 +12192,7 @@
     "touches": 29.0,
     "offensePoints": 8.0,
     "defensePoints": 2.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "88 Maddy Easton",
@@ -12222,7 +12222,7 @@
     "touches": 23.0,
     "offensePoints": 2.0,
     "defensePoints": 7.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "22 Sydney Loughran",
@@ -12282,7 +12282,7 @@
     "touches": 7.0,
     "offensePoints": 2.0,
     "defensePoints": 7.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "42 Meg Duffy",
@@ -12342,7 +12342,7 @@
     "touches": 10.0,
     "offensePoints": 7.0,
     "defensePoints": 1.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "11 Sara Liang",
@@ -12357,7 +12357,7 @@
     "touches": 27.0,
     "offensePoints": 1.0,
     "defensePoints": 15.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "04 Raha Mozaffari",
@@ -12387,7 +12387,7 @@
     "touches": 11.0,
     "offensePoints": 1.0,
     "defensePoints": 14.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "21 Linda Morse",
@@ -12402,7 +12402,7 @@
     "touches": 14.0,
     "offensePoints": 0.0,
     "defensePoints": 15.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "08 Emma Soiles",
@@ -12417,7 +12417,7 @@
     "touches": 8.0,
     "offensePoints": 0.0,
     "defensePoints": 13.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "33 Jana Graham",
@@ -12432,7 +12432,7 @@
     "touches": 4.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "15 Layne Dodge",
@@ -12447,7 +12447,7 @@
     "touches": 4.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "18 Sumi Onoe",
@@ -12462,7 +12462,7 @@
     "touches": 11.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "23 Natalie Bova",
@@ -12477,7 +12477,7 @@
     "touches": 12.0,
     "offensePoints": 8.0,
     "defensePoints": 3.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "01 Emily Shields",
@@ -12492,7 +12492,7 @@
     "touches": 15.0,
     "offensePoints": 8.0,
     "defensePoints": 3.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "10 Andrea DeSabato",
@@ -12537,7 +12537,7 @@
     "touches": 13.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 6.0
+    "+/-": 9.0
   },
   {
     "player": "22 Liz Hart",
@@ -12552,7 +12552,7 @@
     "touches": 13.0,
     "offensePoints": 8.0,
     "defensePoints": 3.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "03 Rachel Alfano",
@@ -12597,7 +12597,7 @@
     "touches": 2.0,
     "offensePoints": 1.0,
     "defensePoints": 9.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "13 Kat Harper",
@@ -12627,7 +12627,7 @@
     "touches": 19.0,
     "offensePoints": 6.0,
     "defensePoints": 4.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "05 Marie Perivier",
@@ -12657,7 +12657,7 @@
     "touches": 28.0,
     "offensePoints": 6.0,
     "defensePoints": 2.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "07 Kami Groom",
@@ -12672,7 +12672,7 @@
     "touches": 19.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 2.0
+    "+/-": 5.0
   },
   {
     "player": "21 Jess Oh",
@@ -12702,7 +12702,7 @@
     "touches": 10.0,
     "offensePoints": 1.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 3.0
   },
   {
     "player": "16 Margaret Walker",
@@ -12777,7 +12777,7 @@
     "touches": 7.0,
     "offensePoints": 1.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "26 Jessica Sourbeer",
@@ -12822,7 +12822,7 @@
     "touches": 15.0,
     "offensePoints": 0.0,
     "defensePoints": 6.0,
-    "+/-": -2.0
+    "+/-": 0.0
   },
   {
     "player": "22 Erin McCann",
@@ -12837,7 +12837,7 @@
     "touches": 4.0,
     "offensePoints": 1.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "23 Lisa Dang",
@@ -12852,7 +12852,7 @@
     "touches": 33.0,
     "offensePoints": 5.0,
     "defensePoints": 0.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "18 Caroline Tornquist",
@@ -12882,7 +12882,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "13 Sami Smalling",
@@ -12912,7 +12912,7 @@
     "touches": 4.0,
     "offensePoints": 1.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "12 Clare Frantz",
@@ -12942,7 +12942,7 @@
     "touches": 7.0,
     "offensePoints": 0.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "00 Emma Jones",
@@ -12972,7 +12972,7 @@
     "touches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "13 Tyler Smith",
@@ -12987,7 +12987,7 @@
     "touches": 64.0,
     "offensePoints": 12.0,
     "defensePoints": 0.0,
-    "+/-": -7.0
+    "+/-": -6.0
   },
   {
     "player": "02 Claire Bidigare-Curtis",
@@ -13002,7 +13002,7 @@
     "touches": 15.0,
     "offensePoints": 12.0,
     "defensePoints": 0.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "34 Alex Barnett",
@@ -13032,7 +13032,7 @@
     "touches": 14.0,
     "offensePoints": 11.0,
     "defensePoints": 0.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "32 Annie Bocko",
@@ -13062,7 +13062,7 @@
     "touches": 15.0,
     "offensePoints": 10.0,
     "defensePoints": 0.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "06 Jenny Wei",
@@ -13092,7 +13092,7 @@
     "touches": 10.0,
     "offensePoints": 9.0,
     "defensePoints": 0.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "59 Audrey Lyman",
@@ -13122,7 +13122,7 @@
     "touches": 1.0,
     "offensePoints": 2.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "20 Bridget Mizener",
@@ -13152,7 +13152,7 @@
     "touches": 2.0,
     "offensePoints": 1.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "09 Jinny Riedel",
@@ -13347,7 +13347,7 @@
     "touches": 22.0,
     "offensePoints": 5.0,
     "defensePoints": 12.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "54 Liv Ford",
@@ -13392,7 +13392,7 @@
     "touches": 21.0,
     "offensePoints": 9.0,
     "defensePoints": 5.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "26 Morgan Lally",
@@ -13422,7 +13422,7 @@
     "touches": 9.0,
     "offensePoints": 6.0,
     "defensePoints": 5.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "13 Hannah Abraham",
@@ -13692,7 +13692,7 @@
     "touches": 20.0,
     "offensePoints": 9.0,
     "defensePoints": 2.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "07 Shiru Liu",
@@ -13827,7 +13827,7 @@
     "touches": 4.0,
     "offensePoints": 2.0,
     "defensePoints": 5.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "09 Summer Wilson",
@@ -13872,7 +13872,7 @@
     "touches": 8.0,
     "offensePoints": 2.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "10 Gaby Cuina",
@@ -13917,7 +13917,7 @@
     "touches": 32.0,
     "offensePoints": 12.0,
     "defensePoints": 4.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "69 Jaime Estes",
@@ -13992,7 +13992,7 @@
     "touches": 21.0,
     "offensePoints": 10.0,
     "defensePoints": 1.0,
-    "+/-": 6.0
+    "+/-": 7.0
   },
   {
     "player": "15 Elise Franke",
@@ -14007,7 +14007,7 @@
     "touches": 6.0,
     "offensePoints": 1.0,
     "defensePoints": 9.0,
-    "+/-": 2.0
+    "+/-": 5.0
   },
   {
     "player": "00 Maggie Rowell",
@@ -14022,7 +14022,7 @@
     "touches": 8.0,
     "offensePoints": 2.0,
     "defensePoints": 8.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "09 Summer Wilson",
@@ -14037,7 +14037,7 @@
     "touches": 9.0,
     "offensePoints": 2.0,
     "defensePoints": 8.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "16 Kinsey Neas",
@@ -14247,7 +14247,7 @@
     "touches": 23.0,
     "offensePoints": 15.0,
     "defensePoints": 3.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "16 Emily Branson",
@@ -14262,7 +14262,7 @@
     "touches": 36.0,
     "offensePoints": 15.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "10 Tori Taylor",
@@ -14277,7 +14277,7 @@
     "touches": 20.0,
     "offensePoints": 15.0,
     "defensePoints": 3.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "27 Katharine Gilbert",
@@ -14292,7 +14292,7 @@
     "touches": 59.0,
     "offensePoints": 16.0,
     "defensePoints": 2.0,
-    "+/-": -4.0
+    "+/-": -3.0
   },
   {
     "player": "09 Emma Patterson",
@@ -14307,7 +14307,7 @@
     "touches": 17.0,
     "offensePoints": 5.0,
     "defensePoints": 11.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "06 Micah Roberts",
@@ -14322,7 +14322,7 @@
     "touches": 15.0,
     "offensePoints": 15.0,
     "defensePoints": 2.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "24 Jesse Shofner",
@@ -14367,7 +14367,7 @@
     "touches": 6.0,
     "offensePoints": 6.0,
     "defensePoints": 9.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "20 Noel Holmes",
@@ -14412,7 +14412,7 @@
     "touches": 7.0,
     "offensePoints": 4.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "03 Metta Devine-Qin",
@@ -14547,7 +14547,7 @@
     "touches": 7.0,
     "offensePoints": 5.0,
     "defensePoints": 6.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "24 Jamie Eriksson",
@@ -14577,7 +14577,7 @@
     "touches": 11.0,
     "offensePoints": 4.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 5.0
   },
   {
     "player": "21 Jess Oh",
@@ -14607,7 +14607,7 @@
     "touches": 20.0,
     "offensePoints": 4.0,
     "defensePoints": 6.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "01 Ashleigh Jentilet",
@@ -14637,7 +14637,7 @@
     "touches": 11.0,
     "offensePoints": 4.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "12 Clare Frantz",
@@ -14682,7 +14682,7 @@
     "touches": 6.0,
     "offensePoints": 4.0,
     "defensePoints": 4.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "33 Amanda Murphy",
@@ -14697,7 +14697,7 @@
     "touches": 21.0,
     "offensePoints": 3.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "55 Molly Roy",
@@ -14727,7 +14727,7 @@
     "touches": 9.0,
     "offensePoints": 3.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "42 Lisi Lohre",
@@ -14757,7 +14757,7 @@
     "touches": 18.0,
     "offensePoints": 3.0,
     "defensePoints": 6.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "00 Emma Jones",
@@ -14802,7 +14802,7 @@
     "touches": 25.0,
     "offensePoints": 12.0,
     "defensePoints": 1.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "36 Jaelee Cruz",
@@ -14847,7 +14847,7 @@
     "touches": 14.0,
     "offensePoints": 5.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "37 Hannah Henkin",
@@ -14922,7 +14922,7 @@
     "touches": 12.0,
     "offensePoints": 2.0,
     "defensePoints": 8.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "17 Kelsey Devlin",
@@ -14952,7 +14952,7 @@
     "touches": 4.0,
     "offensePoints": 9.0,
     "defensePoints": 0.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "08 Nicki Chan",
@@ -15027,7 +15027,7 @@
     "touches": 3.0,
     "offensePoints": 2.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "24 Annika Chan",
@@ -15072,7 +15072,7 @@
     "touches": 2.0,
     "offensePoints": 3.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "45 Sarah Jeung",
@@ -15117,7 +15117,7 @@
     "touches": 5.0,
     "offensePoints": 1.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "15 Caitlin Fitzgerald",
@@ -15147,7 +15147,7 @@
     "touches": 66.0,
     "offensePoints": 13.0,
     "defensePoints": 7.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "91 Samantha Philips",
@@ -15192,7 +15192,7 @@
     "touches": 22.0,
     "offensePoints": 12.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "23 Lili Hobday",
@@ -15207,7 +15207,7 @@
     "touches": 21.0,
     "offensePoints": 3.0,
     "defensePoints": 14.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "08 Jamie Smets",
@@ -15222,7 +15222,7 @@
     "touches": 8.0,
     "offensePoints": 2.0,
     "defensePoints": 15.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "24 Abby Swensen",
@@ -15237,7 +15237,7 @@
     "touches": 14.0,
     "offensePoints": 10.0,
     "defensePoints": 6.0,
-    "+/-": 6.0
+    "+/-": 8.0
   },
   {
     "player": "22 Emily Wycoff",
@@ -15252,7 +15252,7 @@
     "touches": 5.0,
     "offensePoints": 3.0,
     "defensePoints": 13.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "40 Claire Milton",
@@ -15312,7 +15312,7 @@
     "touches": 34.0,
     "offensePoints": 3.0,
     "defensePoints": 12.0,
-    "+/-": -4.0
+    "+/-": -3.0
   },
   {
     "player": "33 Jalyn Baumgartner",
@@ -15342,7 +15342,7 @@
     "touches": 9.0,
     "offensePoints": 2.0,
     "defensePoints": 12.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "66 Mya Hernandez",
@@ -15372,7 +15372,7 @@
     "touches": 3.0,
     "offensePoints": 3.0,
     "defensePoints": 10.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "22 Alex Ballinger",
@@ -15417,7 +15417,7 @@
     "touches": 19.0,
     "offensePoints": 2.0,
     "defensePoints": 16.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "12 Sydney French",
@@ -15432,7 +15432,7 @@
     "touches": 15.0,
     "offensePoints": 13.0,
     "defensePoints": 4.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "17 Caitlin Duffner",
@@ -15447,7 +15447,7 @@
     "touches": 17.0,
     "offensePoints": 13.0,
     "defensePoints": 2.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "97 Eileen Bequette",
@@ -15462,7 +15462,7 @@
     "touches": 6.0,
     "offensePoints": 4.0,
     "defensePoints": 12.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "23 Allie Mueting",
@@ -15477,7 +15477,7 @@
     "touches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 11.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "05 Rose Glinka",
@@ -15507,7 +15507,7 @@
     "touches": 27.0,
     "offensePoints": 13.0,
     "defensePoints": 0.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "72 Jacqueline Jarik",
@@ -15522,7 +15522,7 @@
     "touches": 11.0,
     "offensePoints": 12.0,
     "defensePoints": 2.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "00 Donna Johnston",
@@ -15792,7 +15792,7 @@
     "touches": 6.0,
     "offensePoints": 4.0,
     "defensePoints": 12.0,
-    "+/-": -2.0
+    "+/-": 0.0
   },
   {
     "player": "53 Emma Piorier",
@@ -15867,7 +15867,7 @@
     "touches": 14.0,
     "offensePoints": 3.0,
     "defensePoints": 8.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "49 Elly Fireside-Ostergaard",
@@ -15897,7 +15897,7 @@
     "touches": 3.0,
     "offensePoints": 2.0,
     "defensePoints": 8.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "15 Chelsea Semper",
@@ -16017,7 +16017,7 @@
     "touches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "32 Annie Bocko",
@@ -16077,7 +16077,7 @@
     "touches": 3.0,
     "offensePoints": 2.0,
     "defensePoints": 12.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "59 Audrey Lyman",
@@ -16092,7 +16092,7 @@
     "touches": 17.0,
     "offensePoints": 2.0,
     "defensePoints": 12.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "45 Caitlin Gross",
@@ -16122,7 +16122,7 @@
     "touches": 17.0,
     "offensePoints": 2.0,
     "defensePoints": 12.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "13 Tyler Smith",
@@ -16152,7 +16152,7 @@
     "touches": 24.0,
     "offensePoints": 13.0,
     "defensePoints": 1.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "28 Claire Revere",
@@ -16167,7 +16167,7 @@
     "touches": 11.0,
     "offensePoints": 3.0,
     "defensePoints": 9.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "27 Mary Rippe",
@@ -16197,7 +16197,7 @@
     "touches": 3.0,
     "offensePoints": 2.0,
     "defensePoints": 10.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "18 Sarah McKee",
@@ -16242,7 +16242,7 @@
     "touches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "10 Paige Carver",
@@ -16317,7 +16317,7 @@
     "touches": 2.0,
     "offensePoints": 0.0,
     "defensePoints": 4.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "19 Sydney Kelley",
@@ -16407,7 +16407,7 @@
     "touches": 68.0,
     "offensePoints": 14.0,
     "defensePoints": 10.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "31 Eli Presberg",
@@ -16437,7 +16437,7 @@
     "touches": 27.0,
     "offensePoints": 15.0,
     "defensePoints": 5.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "00 Genny De Jesus",
@@ -16467,7 +16467,7 @@
     "touches": 28.0,
     "offensePoints": 15.0,
     "defensePoints": 4.0,
-    "+/-": 5.0
+    "+/-": 6.0
   },
   {
     "player": "21 Montana Roberts",
@@ -16497,7 +16497,7 @@
     "touches": 19.0,
     "offensePoints": 2.0,
     "defensePoints": 16.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "20 Yina Cartagena",
@@ -16572,7 +16572,7 @@
     "touches": 3.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "62 Casey Banta-Ryan",
@@ -16587,7 +16587,7 @@
     "touches": 2.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "97 Hannah Glick",
@@ -16707,7 +16707,7 @@
     "touches": 69.0,
     "offensePoints": 19.0,
     "defensePoints": 1.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "23 Natalie Bova",
@@ -16812,7 +16812,7 @@
     "touches": 0.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "22 Liz Hart",
@@ -16827,7 +16827,7 @@
     "touches": 10.0,
     "offensePoints": 10.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "18 Sumi Onoe",
@@ -16857,7 +16857,7 @@
     "touches": 0.0,
     "offensePoints": 2.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "13 Kat Harper",
@@ -16917,7 +16917,7 @@
     "touches": 1.0,
     "offensePoints": 1.0,
     "defensePoints": 7.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "66 Jess Brand",
@@ -16977,7 +16977,7 @@
     "touches": 23.0,
     "offensePoints": 8.0,
     "defensePoints": 8.0,
-    "+/-": 2.0
+    "+/-": 6.0
   },
   {
     "player": "10 Mia Griner",
@@ -17007,7 +17007,7 @@
     "touches": 31.0,
     "offensePoints": 10.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "42 Martha Wilber",
@@ -17022,7 +17022,7 @@
     "touches": 29.0,
     "offensePoints": 10.0,
     "defensePoints": 4.0,
-    "+/-": -5.0
+    "+/-": -4.0
   },
   {
     "player": "08 Dani Ortiz",
@@ -17052,7 +17052,7 @@
     "touches": 37.0,
     "offensePoints": 11.0,
     "defensePoints": 2.0,
-    "+/-": -9.0
+    "+/-": -6.0
   },
   {
     "player": "06 Willy (Natalie Wilson)",
@@ -17082,7 +17082,7 @@
     "touches": 9.0,
     "offensePoints": 5.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 2.0
   },
   {
     "player": "21 Samantha Li",
@@ -17157,7 +17157,7 @@
     "touches": 6.0,
     "offensePoints": 5.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "55 Trystan Grzyll",
@@ -17202,7 +17202,7 @@
     "touches": 4.0,
     "offensePoints": 5.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "75 Sarah Kingsley-Hart",
@@ -17352,7 +17352,7 @@
     "touches": 14.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
-    "+/-": 3.0
+    "+/-": 7.0
   },
   {
     "player": "13 Erin Newman",
@@ -17382,7 +17382,7 @@
     "touches": 9.0,
     "offensePoints": 7.0,
     "defensePoints": 3.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "20 Madison Lang",
@@ -17427,7 +17427,7 @@
     "touches": 21.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "23 Allie Mueting",
@@ -17472,7 +17472,7 @@
     "touches": 5.0,
     "offensePoints": 0.0,
     "defensePoints": 4.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "27 Stef Bugasch",
@@ -17517,7 +17517,7 @@
     "touches": 37.0,
     "offensePoints": 1.0,
     "defensePoints": 14.0,
-    "+/-": -8.0
+    "+/-": -6.0
   },
   {
     "player": "52 Erynn Schroeder",
@@ -17532,7 +17532,7 @@
     "touches": 28.0,
     "offensePoints": 8.0,
     "defensePoints": 2.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "55 Mia Wieben",
@@ -17577,7 +17577,7 @@
     "touches": 8.0,
     "offensePoints": 7.0,
     "defensePoints": 2.0,
-    "+/-": -1.0
+    "+/-": 1.0
   },
   {
     "player": "88 Claire Kelley",
@@ -17607,7 +17607,7 @@
     "touches": 5.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "+/-": 5.0
   },
   {
     "player": "99 Dana Demmert",
@@ -17682,7 +17682,7 @@
     "touches": 7.0,
     "offensePoints": 7.0,
     "defensePoints": 6.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "03 Madi Cannon",
@@ -17697,7 +17697,7 @@
     "touches": 16.0,
     "offensePoints": 12.0,
     "defensePoints": 1.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "31 Nikki Gilbert",
@@ -17712,7 +17712,7 @@
     "touches": 7.0,
     "offensePoints": 11.0,
     "defensePoints": 2.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "88 Maddy Easton",
@@ -17742,7 +17742,7 @@
     "touches": 6.0,
     "offensePoints": 7.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 4.0
   },
   {
     "player": "27 Jocelyn Jessop",
@@ -17787,7 +17787,7 @@
     "touches": 16.0,
     "offensePoints": 11.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "12 Annie Ortiz",
@@ -17862,7 +17862,7 @@
     "touches": 0.0,
     "offensePoints": 2.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "66 Jackie Wang",
@@ -17877,7 +17877,7 @@
     "touches": 25.0,
     "offensePoints": 3.0,
     "defensePoints": 10.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "07 Kami Groom",
@@ -17892,7 +17892,7 @@
     "touches": 23.0,
     "offensePoints": 3.0,
     "defensePoints": 9.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "19 Allie Wallace",
@@ -17907,7 +17907,7 @@
     "touches": 14.0,
     "offensePoints": 4.0,
     "defensePoints": 7.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "21 Jess Oh",
@@ -17922,7 +17922,7 @@
     "touches": 23.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 2.0
+    "+/-": 5.0
   },
   {
     "player": "01 Ashleigh Jentilet",
@@ -17937,7 +17937,7 @@
     "touches": 14.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "+/-": 4.0
   },
   {
     "player": "05 Marie Perivier",
@@ -17952,7 +17952,7 @@
     "touches": 12.0,
     "offensePoints": 3.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "46 Graham Cunningham",
@@ -17967,7 +17967,7 @@
     "touches": 9.0,
     "offensePoints": 3.0,
     "defensePoints": 7.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "22 Erin McCann",
@@ -17982,7 +17982,7 @@
     "touches": 12.0,
     "offensePoints": 0.0,
     "defensePoints": 10.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "13 Sami Smalling",
@@ -17997,7 +17997,7 @@
     "touches": 15.0,
     "offensePoints": 3.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "33 Amanda Murphy",
@@ -18012,7 +18012,7 @@
     "touches": 16.0,
     "offensePoints": 3.0,
     "defensePoints": 6.0,
-    "+/-": 4.0
+    "+/-": 5.0
   },
   {
     "player": "26 Jessica Sourbeer",
@@ -18057,7 +18057,7 @@
     "touches": 15.0,
     "offensePoints": 4.0,
     "defensePoints": 4.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "16 Margaret Walker",
@@ -18177,7 +18177,7 @@
     "touches": 4.0,
     "offensePoints": 2.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "42 Lisi Lohre",
@@ -18207,7 +18207,7 @@
     "touches": 15.0,
     "offensePoints": 17.0,
     "defensePoints": 3.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "02 Stephanie Wood",
@@ -18222,7 +18222,7 @@
     "touches": 10.0,
     "offensePoints": 17.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "04 Erica Baken",
@@ -18237,7 +18237,7 @@
     "touches": 41.0,
     "offensePoints": 16.0,
     "defensePoints": 3.0,
-    "+/-": -4.0
+    "+/-": -2.0
   },
   {
     "player": "05 Stephanie Rupp",
@@ -18297,7 +18297,7 @@
     "touches": 8.0,
     "offensePoints": 15.0,
     "defensePoints": 3.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "49 Elly Fireside-Ostergaard",
@@ -18477,7 +18477,7 @@
     "touches": 3.0,
     "offensePoints": 0.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "33 Valeria Cardenas",
@@ -18492,7 +18492,7 @@
     "touches": 48.0,
     "offensePoints": 15.0,
     "defensePoints": 11.0,
-    "+/-": 3.0
+    "+/-": 5.0
   },
   {
     "player": "96 Nina Finley",
@@ -18507,7 +18507,7 @@
     "touches": 34.0,
     "offensePoints": 15.0,
     "defensePoints": 9.0,
-    "+/-": 4.0
+    "+/-": 6.0
   },
   {
     "player": "24 Jolie Krebs",
@@ -18567,7 +18567,7 @@
     "touches": 15.0,
     "offensePoints": 15.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "09 Cassandra Brown",
@@ -18582,7 +18582,7 @@
     "touches": 28.0,
     "offensePoints": 2.0,
     "defensePoints": 16.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "19 Eastelle Ding",
@@ -18597,7 +18597,7 @@
     "touches": 8.0,
     "offensePoints": 2.0,
     "defensePoints": 15.0,
-    "+/-": 1.0
+    "+/-": 3.0
   },
   {
     "player": "02 Jolene Zheng",
@@ -18627,7 +18627,7 @@
     "touches": 6.0,
     "offensePoints": 2.0,
     "defensePoints": 13.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "26 Mariabelen Restrepo",
@@ -18687,7 +18687,7 @@
     "touches": 3.0,
     "offensePoints": 2.0,
     "defensePoints": 9.0,
-    "+/-": 1.0
+    "+/-": 4.0
   },
   {
     "player": "65 Anna Lieberman",
@@ -18732,7 +18732,7 @@
     "touches": 6.0,
     "offensePoints": 0.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "07 Danielle Byers",
@@ -18777,7 +18777,7 @@
     "touches": 26.0,
     "offensePoints": 16.0,
     "defensePoints": 3.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "04 Erica Baken",
@@ -18807,7 +18807,7 @@
     "touches": 28.0,
     "offensePoints": 15.0,
     "defensePoints": 3.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "53 Emma Piorier",
@@ -18837,7 +18837,7 @@
     "touches": 12.0,
     "offensePoints": 15.0,
     "defensePoints": 2.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "49 Elly Fireside-Ostergaard",
@@ -18852,7 +18852,7 @@
     "touches": 3.0,
     "offensePoints": 5.0,
     "defensePoints": 10.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "47 Tori Gray",
@@ -18867,7 +18867,7 @@
     "touches": 11.0,
     "offensePoints": 7.0,
     "defensePoints": 8.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "45 Emery Otopalik",
@@ -18897,7 +18897,7 @@
     "touches": 8.0,
     "offensePoints": 6.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "21 Sarah Mondschein",
@@ -18912,7 +18912,7 @@
     "touches": 6.0,
     "offensePoints": 6.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "00 Alicia Carr",
@@ -18957,7 +18957,7 @@
     "touches": 0.0,
     "offensePoints": 1.0,
     "defensePoints": 10.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "09 Sara Helm",
@@ -19062,7 +19062,7 @@
     "touches": 11.0,
     "offensePoints": 3.0,
     "defensePoints": 15.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "16 Grace Maroon",
@@ -19092,7 +19092,7 @@
     "touches": 22.0,
     "offensePoints": 11.0,
     "defensePoints": 6.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "15 Layne Dodge",
@@ -19167,7 +19167,7 @@
     "touches": 6.0,
     "offensePoints": 3.0,
     "defensePoints": 11.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "33 Jana Graham",
@@ -19197,7 +19197,7 @@
     "touches": 8.0,
     "offensePoints": 11.0,
     "defensePoints": 2.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "66 Jess Brand",
@@ -19272,7 +19272,7 @@
     "touches": 25.0,
     "offensePoints": 8.0,
     "defensePoints": 0.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "48 Caroline Weinberg",
@@ -19332,7 +19332,7 @@
     "touches": 43.0,
     "offensePoints": 12.0,
     "defensePoints": 5.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "77 Katrina Mcguire",
@@ -19362,7 +19362,7 @@
     "touches": 19.0,
     "offensePoints": 2.0,
     "defensePoints": 13.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "17 Kristin Dudley",
@@ -19407,7 +19407,7 @@
     "touches": 14.0,
     "offensePoints": 9.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "23 Lili Hobday",
@@ -19437,7 +19437,7 @@
     "touches": 3.0,
     "offensePoints": 2.0,
     "defensePoints": 11.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "29 Emily Schloneger",
@@ -19542,7 +19542,7 @@
     "touches": 11.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "32 Shani Rosenthal",
@@ -19617,7 +19617,7 @@
     "touches": 11.0,
     "offensePoints": 1.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "55 Sophie Knowles",
@@ -19692,7 +19692,7 @@
     "touches": 17.0,
     "offensePoints": 6.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "03 Liv Player",
@@ -19707,7 +19707,7 @@
     "touches": 5.0,
     "offensePoints": 0.0,
     "defensePoints": 13.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "06 Rowse",
@@ -19722,7 +19722,7 @@
     "touches": 11.0,
     "offensePoints": 7.0,
     "defensePoints": 6.0,
-    "+/-": 2.0
+    "+/-": 3.0
   },
   {
     "player": "32 Megan Wilson",
@@ -19752,7 +19752,7 @@
     "touches": 12.0,
     "offensePoints": 7.0,
     "defensePoints": 5.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "36 Jaelee Cruz",
@@ -19767,7 +19767,7 @@
     "touches": 17.0,
     "offensePoints": 9.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "16 Erin Rea",
@@ -19782,7 +19782,7 @@
     "touches": 8.0,
     "offensePoints": 10.0,
     "defensePoints": 0.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "45 Sarah Jeung",
@@ -19827,7 +19827,7 @@
     "touches": 31.0,
     "offensePoints": 9.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "17 Kelsey Devlin",
@@ -19857,7 +19857,7 @@
     "touches": 8.0,
     "offensePoints": 8.0,
     "defensePoints": 1.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "76 Emma Palacio",
@@ -19902,7 +19902,7 @@
     "touches": 9.0,
     "offensePoints": 11.0,
     "defensePoints": 1.0,
-    "+/-": -5.0
+    "+/-": -4.0
   },
   {
     "player": "05 Rose Glinka",
@@ -19947,7 +19947,7 @@
     "touches": 10.0,
     "offensePoints": 10.0,
     "defensePoints": 0.0,
-    "+/-": -4.0
+    "+/-": -3.0
   },
   {
     "player": "97 Eileen Bequette",
@@ -19977,7 +19977,7 @@
     "touches": 30.0,
     "offensePoints": 4.0,
     "defensePoints": 5.0,
-    "+/-": -9.0
+    "+/-": -7.0
   },
   {
     "player": "99 Dana Demmert",
@@ -19992,7 +19992,7 @@
     "touches": 16.0,
     "offensePoints": 7.0,
     "defensePoints": 1.0,
-    "+/-": -3.0
+    "+/-": -2.0
   },
   {
     "player": "22 Alex Ballinger",
@@ -20022,7 +20022,7 @@
     "touches": 6.0,
     "offensePoints": 4.0,
     "defensePoints": 4.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "20 Madison Lang",
@@ -20052,7 +20052,7 @@
     "touches": 9.0,
     "offensePoints": 5.0,
     "defensePoints": 1.0,
-    "+/-": -4.0
+    "+/-": -1.0
   },
   {
     "player": "07 Sydney Stelzer",
@@ -20097,7 +20097,7 @@
     "touches": 7.0,
     "offensePoints": 2.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "27 Stef Bugasch",
@@ -20112,7 +20112,7 @@
     "touches": 4.0,
     "offensePoints": 4.0,
     "defensePoints": 0.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "55 Mia Wieben",
@@ -20232,7 +20232,7 @@
     "touches": 30.0,
     "offensePoints": 1.0,
     "defensePoints": 7.0,
-    "+/-": -2.0
+    "+/-": -1.0
   },
   {
     "player": "55 Sophie Knowles",
@@ -20247,7 +20247,7 @@
     "touches": 19.0,
     "offensePoints": 1.0,
     "defensePoints": 7.0,
-    "+/-": -1.0
+    "+/-": 0.0
   },
   {
     "player": "06 Rowse",
@@ -20262,7 +20262,7 @@
     "touches": 9.0,
     "offensePoints": 2.0,
     "defensePoints": 6.0,
-    "+/-": -2.0
+    "+/-": 0.0
   },
   {
     "player": "23 Colette Pellegrini",
@@ -20277,7 +20277,7 @@
     "touches": 9.0,
     "offensePoints": 5.0,
     "defensePoints": 4.0,
-    "+/-": 0.0
+    "+/-": 1.0
   },
   {
     "player": "17 Kelsey Devlin",
@@ -20307,7 +20307,7 @@
     "touches": 20.0,
     "offensePoints": 4.0,
     "defensePoints": 5.0,
-    "+/-": -3.0
+    "+/-": -1.0
   },
   {
     "player": "52 Caitlin Connell",
@@ -20322,7 +20322,7 @@
     "touches": 7.0,
     "offensePoints": 5.0,
     "defensePoints": 3.0,
-    "+/-": 3.0
+    "+/-": 4.0
   },
   {
     "player": "33 Yuge Xiao",
@@ -20337,7 +20337,7 @@
     "touches": 16.0,
     "offensePoints": 5.0,
     "defensePoints": 3.0,
-    "+/-": 0.0
+    "+/-": 3.0
   },
   {
     "player": "16 Erin Rea",
@@ -20382,7 +20382,7 @@
     "touches": 18.0,
     "offensePoints": 3.0,
     "defensePoints": 4.0,
-    "+/-": 2.0
+    "+/-": 4.0
   },
   {
     "player": "32 Megan Wilson",
@@ -20397,7 +20397,7 @@
     "touches": 9.0,
     "offensePoints": 0.0,
     "defensePoints": 6.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "45 Sarah Jeung",
@@ -20412,7 +20412,7 @@
     "touches": 11.0,
     "offensePoints": 2.0,
     "defensePoints": 4.0,
-    "+/-": 1.0
+    "+/-": 5.0
   },
   {
     "player": "71 Shirlee Wohl",
@@ -20442,7 +20442,7 @@
     "touches": 9.0,
     "offensePoints": 2.0,
     "defensePoints": 5.0,
-    "+/-": 1.0
+    "+/-": 2.0
   },
   {
     "player": "08 Nicki Chan",
@@ -20457,7 +20457,7 @@
     "touches": 8.0,
     "offensePoints": 0.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "+/-": 3.0
   },
   {
     "player": "03 Liv Player",
@@ -20472,7 +20472,7 @@
     "touches": 13.0,
     "offensePoints": 0.0,
     "defensePoints": 6.0,
-    "+/-": -2.0
+    "+/-": 0.0
   },
   {
     "player": "51 Tess Johnson",
