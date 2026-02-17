@@ -1,0 +1,342 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Load all player data
+const seasons = ['2025', '2024'];
+
+// Team logo mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'Columbus Pride': 'columbus.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'LA Astra': 'la.png',
+  'Medellin Revolution': 'medellin.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Portland Rising': 'portland.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
+// Aggregate career stats
+const allPlayers: Map<string, any> = new Map();
+
+for (const season of seasons) {
+  try {
+    const dataPath = path.join(process.cwd(), 'data', season, 'players_season.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const players = JSON.parse(rawData);
+    
+    players.forEach((player: any) => {
+      const key = player.player;
+      if (allPlayers.has(key)) {
+        const existing = allPlayers.get(key);
+        existing.goals += player.goals || 0;
+        existing.assists += player.assists || 0;
+        existing.blocks += player.blocks || 0;
+        existing.turnovers += player.turnovers || 0;
+        existing.touches += player.touches || 0;
+        existing.seasons.push(season);
+      } else {
+        allPlayers.set(key, {
+          player: player.player,
+          team: player.team,
+          goals: player.goals || 0,
+          assists: player.assists || 0,
+          blocks: player.blocks || 0,
+          turnovers: player.turnovers || 0,
+          touches: player.touches || 0,
+          seasons: [season],
+        });
+      }
+    });
+  } catch (e) {}
+}
+
+const playerList = Array.from(allPlayers.values())
+  .filter(p => p.player && typeof p.player === 'string')
+  .sort((a, b) => a.player.localeCompare(b.player));
+---
+
+<Layout title="Compare Players">
+  <div class="space-y-6">
+    <div>
+      <h1 class="text-3xl font-semibold">Compare Players</h1>
+      <p class="text-pul-gray mt-1">Select 2-3 players to compare their stats side-by-side</p>
+    </div>
+
+    <!-- Player Selection -->
+    <div class="grid sm:grid-cols-3 gap-4">
+      {[1, 2, 3].map(num => (
+        <div>
+          <label class="block text-sm font-medium mb-2">
+            Player {num} {num === 3 && <span class="text-pul-gray font-normal">(optional)</span>}
+          </label>
+          <div class="relative" data-player-select={num}>
+            <input 
+              type="text" 
+              id={`player${num}`}
+              class="search-input w-full pr-8" 
+              placeholder="Type to search..." 
+              autocomplete="off" 
+            />
+            <button 
+              type="button"
+              class="absolute right-2 top-1/2 -translate-y-1/2 text-pul-gray hover:text-pul-black"
+              data-toggle={num}
+            >
+              ▼
+            </button>
+            <div 
+              id={`dropdown-${num}`}
+              class="absolute z-20 w-full mt-1 bg-white border border-pul-border rounded-lg shadow-lg max-h-60 overflow-auto hidden"
+            >
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Comparison Results -->
+    <div id="comparison" class="hidden">
+      <div class="border border-pul-border rounded-lg overflow-hidden">
+        <div id="player-headers" class="grid border-b border-pul-border bg-pul-light"></div>
+        <div id="stats-rows" class="divide-y divide-pul-border"></div>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div id="empty-state" class="text-center py-12 text-pul-gray">
+      <p>Select at least 2 players to compare</p>
+    </div>
+  </div>
+
+  <script define:vars={{ playerList, teamLogos }}>
+    const inputs = [
+      document.getElementById('player1'),
+      document.getElementById('player2'),
+      document.getElementById('player3')
+    ];
+    const dropdowns = [
+      document.getElementById('dropdown-1'),
+      document.getElementById('dropdown-2'),
+      document.getElementById('dropdown-3')
+    ];
+    const toggles = document.querySelectorAll('[data-toggle]');
+    const comparison = document.getElementById('comparison');
+    const emptyState = document.getElementById('empty-state');
+    const playerHeaders = document.getElementById('player-headers');
+    const statsRows = document.getElementById('stats-rows');
+
+    // Track selected players
+    const selectedPlayers = [null, null, null];
+
+    function getPlayerDisplay(player) {
+      const match = player.player.match(/^(\d+)\s+(.+)$/);
+      const name = match ? match[2] : player.player;
+      const number = match ? match[1] : '';
+      return { name, number, full: `${name}${number ? ' #' + number : ''} (${player.team})` };
+    }
+
+    function renderDropdown(index, filter = '') {
+      const dropdown = dropdowns[index];
+      const q = filter.toLowerCase();
+      
+      const filtered = q 
+        ? playerList.filter(p => getPlayerDisplay(p).full.toLowerCase().includes(q))
+        : playerList;
+      
+      const limited = filtered.slice(0, 50);
+      
+      dropdown.innerHTML = limited.map(player => {
+        const display = getPlayerDisplay(player);
+        const logo = teamLogos[player.team];
+        return `
+          <div 
+            class="flex items-center gap-3 px-3 py-2 cursor-pointer hover:bg-pul-light"
+            data-player-value="${player.player}"
+          >
+            ${logo ? `<img src="/Stats-Hub/images/teams/${logo}" class="w-6 h-6 object-contain" />` : '<div class="w-6"></div>'}
+            <div>
+              <div class="text-sm font-medium">${display.name} ${display.number ? `<span class="text-pul-gray">#${display.number}</span>` : ''}</div>
+              <div class="text-xs text-pul-gray">${player.team}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      if (filtered.length > 50) {
+        dropdown.innerHTML += `<div class="px-3 py-2 text-xs text-pul-gray text-center">Type to narrow results...</div>`;
+      }
+
+      if (filtered.length === 0) {
+        dropdown.innerHTML = `<div class="px-3 py-2 text-sm text-pul-gray text-center">No players found</div>`;
+      }
+
+      // Add click handlers
+      dropdown.querySelectorAll('[data-player-value]').forEach(el => {
+        el.addEventListener('mousedown', (e) => {
+          e.preventDefault();
+          const playerName = el.getAttribute('data-player-value');
+          selectPlayer(index, playerName);
+        });
+      });
+    }
+
+    function selectPlayer(index, playerName) {
+      const player = playerList.find(p => p.player === playerName);
+      if (player) {
+        selectedPlayers[index] = player;
+        inputs[index].value = getPlayerDisplay(player).full;
+        dropdowns[index].classList.add('hidden');
+        updateComparison();
+      }
+    }
+
+    function showDropdown(index) {
+      dropdowns.forEach((d, i) => {
+        if (i === index) {
+          d.classList.remove('hidden');
+          renderDropdown(i, inputs[i].value);
+        } else {
+          d.classList.add('hidden');
+        }
+      });
+    }
+
+    function hideAllDropdowns() {
+      dropdowns.forEach(d => d.classList.add('hidden'));
+    }
+
+    // Input handlers
+    inputs.forEach((input, index) => {
+      input.addEventListener('focus', () => showDropdown(index));
+      input.addEventListener('input', () => {
+        selectedPlayers[index] = null;
+        renderDropdown(index, input.value);
+        updateComparison();
+      });
+      input.addEventListener('blur', () => {
+        setTimeout(hideAllDropdowns, 150);
+      });
+    });
+
+    // Toggle button handlers
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const index = parseInt(toggle.getAttribute('data-toggle')) - 1;
+        const dropdown = dropdowns[index];
+        if (dropdown.classList.contains('hidden')) {
+          showDropdown(index);
+          inputs[index].focus();
+        } else {
+          hideAllDropdowns();
+        }
+      });
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('[data-player-select]')) {
+        hideAllDropdowns();
+      }
+    });
+
+    // Stats config
+    const stats = [
+      { key: 'goals', label: 'Goals', icon: '🥏' },
+      { key: 'assists', label: 'Assists', icon: '🎯' },
+      { key: 'blocks', label: 'Blocks', icon: '🛡️' },
+      { key: 'turnovers', label: 'Turnovers', icon: '↩️', inverse: true },
+      { key: 'touches', label: 'Touches', icon: '✋' },
+    ];
+
+    function updateComparison() {
+      const players = selectedPlayers.filter(Boolean);
+
+      if (players.length < 2) {
+        comparison.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      comparison.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+
+      const numPlayers = players.length;
+      const gridCols = numPlayers === 2 ? 'grid-cols-3' : 'grid-cols-4';
+
+      // Render headers
+      playerHeaders.className = `grid ${gridCols} border-b border-pul-border bg-pul-light`;
+      playerHeaders.innerHTML = `
+        <div class="p-4 font-medium text-sm text-pul-gray">Stat</div>
+        ${players.map(player => {
+          const display = getPlayerDisplay(player);
+          const logo = teamLogos[player.team];
+          return `
+            <div class="p-4 text-center">
+              <a href="/Stats-Hub/players/${encodeURIComponent(player.player)}" class="hover:underline">
+                ${logo ? `<img src="/Stats-Hub/images/teams/${logo}" alt="${player.team}" class="w-10 h-10 object-contain mx-auto mb-2" />` : ''}
+                <div class="font-semibold">${display.name}</div>
+                ${display.number ? `<div class="text-sm text-pul-gray">#${display.number}</div>` : ''}
+                <div class="text-xs text-pul-gray">${player.team}</div>
+              </a>
+            </div>
+          `;
+        }).join('')}
+      `;
+
+      // Render stats
+      statsRows.innerHTML = stats.map(stat => {
+        const values = players.map(p => p[stat.key] || 0);
+        const best = stat.inverse ? Math.min(...values) : Math.max(...values);
+        
+        return `
+          <div class="grid ${gridCols}">
+            <div class="p-4 flex items-center gap-2">
+              <span>${stat.icon}</span>
+              <span class="font-medium">${stat.label}</span>
+            </div>
+            ${players.map(player => {
+              const value = player[stat.key] || 0;
+              const isBest = value === best && values.filter(v => v === best).length === 1;
+              return `
+                <div class="p-4 text-center">
+                  <span class="text-2xl font-bold ${isBest ? 'text-green-600' : ''}">${value}</span>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        `;
+      }).join('');
+
+      // Add totals row
+      const totals = players.map(p => (p.goals || 0) + (p.assists || 0));
+      const bestTotal = Math.max(...totals);
+      statsRows.innerHTML += `
+        <div class="grid ${gridCols} bg-pul-light">
+          <div class="p-4 flex items-center gap-2">
+            <span>⭐</span>
+            <span class="font-medium">Goals + Assists</span>
+          </div>
+          ${players.map((player, i) => {
+            const total = totals[i];
+            const isBest = total === bestTotal && totals.filter(t => t === bestTotal).length === 1;
+            return `
+              <div class="p-4 text-center">
+                <span class="text-2xl font-bold ${isBest ? 'text-green-600' : ''}">${total}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+  </script>
+</Layout>

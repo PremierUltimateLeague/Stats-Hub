@@ -1,0 +1,223 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const seasons = ['2025', '2024'];
+
+// Team logo mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'Columbus Pride': 'columbus.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'LA Astra': 'la.png',
+  'Medellin Revolution': 'medellin.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Portland Rising': 'portland.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
+// Load teams
+const allTeams: any[] = [];
+for (const season of seasons) {
+  try {
+    const data = fs.readFileSync(path.join(process.cwd(), 'data', season, 'teams_season.json'), 'utf-8');
+    const teams = JSON.parse(data);
+    teams.forEach((t: any) => {
+      if (!allTeams.find(existing => existing.team === t.team)) {
+        allTeams.push({ ...t, season });
+      }
+    });
+  } catch (e) {}
+}
+
+// Load players (deduplicated)
+const allPlayers: any[] = [];
+const seenPlayers = new Set<string>();
+for (const season of seasons) {
+  try {
+    const data = fs.readFileSync(path.join(process.cwd(), 'data', season, 'players_season.json'), 'utf-8');
+    const players = JSON.parse(data);
+    players.forEach((p: any) => {
+      if (p.player && typeof p.player === 'string' && !seenPlayers.has(p.player)) {
+        seenPlayers.add(p.player);
+        allPlayers.push({ ...p, season });
+      }
+    });
+  } catch (e) {}
+}
+
+// Load standings for team records
+const standingsByTeam: Record<string, any> = {};
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'standings.json'), 'utf-8');
+  const standings = JSON.parse(data);
+  standings.forEach((s: any) => {
+    standingsByTeam[s.team] = s;
+  });
+} catch (e) {}
+---
+
+<Layout title="Search">
+  <div class="space-y-6">
+    <div>
+      <h1 class="text-3xl font-semibold">Search</h1>
+      <p class="text-pul-gray mt-1">Find players, teams, and stats</p>
+    </div>
+
+    <!-- Search Input -->
+    <div class="relative">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search for players or teams..."
+        class="search-input w-full text-lg py-3"
+        autofocus
+      />
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="space-y-8">
+      <!-- Initial state -->
+      <div id="initial-state" class="text-center py-12 text-pul-gray">
+        <p>Start typing to search across all players and teams</p>
+      </div>
+
+      <!-- No results -->
+      <div id="no-results" class="hidden text-center py-12 text-pul-gray">
+        <p>No results found</p>
+      </div>
+
+      <!-- Team Results -->
+      <div id="team-results" class="hidden">
+        <h2 class="text-lg font-semibold mb-4">Teams</h2>
+        <div id="team-list" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        </div>
+      </div>
+
+      <!-- Player Results -->
+      <div id="player-results" class="hidden">
+        <h2 class="text-lg font-semibold mb-4">Players</h2>
+        <div id="player-list" class="space-y-2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script define:vars={{ allTeams, allPlayers, teamLogos, standingsByTeam }}>
+    const searchInput = document.getElementById('search-input');
+    const initialState = document.getElementById('initial-state');
+    const noResults = document.getElementById('no-results');
+    const teamResults = document.getElementById('team-results');
+    const playerResults = document.getElementById('player-results');
+    const teamList = document.getElementById('team-list');
+    const playerList = document.getElementById('player-list');
+
+    function search(query) {
+      const q = query.toLowerCase().trim();
+      
+      if (!q) {
+        initialState?.classList.remove('hidden');
+        noResults?.classList.add('hidden');
+        teamResults?.classList.add('hidden');
+        playerResults?.classList.add('hidden');
+        return;
+      }
+
+      initialState?.classList.add('hidden');
+
+      // Search teams
+      const matchedTeams = allTeams.filter((t) => 
+        t.team && t.team.toLowerCase().includes(q)
+      );
+
+      // Search players
+      const matchedPlayers = allPlayers.filter((p) => 
+        (p.player && typeof p.player === 'string' && p.player.toLowerCase().includes(q)) || 
+        (p.team && typeof p.team === 'string' && p.team.toLowerCase().includes(q))
+      ).slice(0, 20);
+
+      // Show/hide sections
+      if (matchedTeams.length === 0 && matchedPlayers.length === 0) {
+        noResults?.classList.remove('hidden');
+        teamResults?.classList.add('hidden');
+        playerResults?.classList.add('hidden');
+        return;
+      }
+
+      noResults?.classList.add('hidden');
+
+      // Render teams
+      if (matchedTeams.length > 0 && teamList) {
+        teamResults?.classList.remove('hidden');
+        teamList.innerHTML = matchedTeams.map((team) => {
+          const logo = teamLogos[team.team];
+          const record = standingsByTeam[team.team];
+          return `
+            <a href="/Stats-Hub/teams/${encodeURIComponent(team.team)}" 
+               class="flex items-center gap-4 p-4 border border-pul-border rounded-lg hover:border-pul-black transition-colors">
+              ${logo ? `<img src="/Stats-Hub/images/teams/${logo}" alt="${team.team}" class="w-12 h-12 object-contain" />` : ''}
+              <div>
+                <div class="font-semibold">${team.team}</div>
+                ${record ? `<div class="text-sm text-pul-gray">${record.wins}-${record.losses} • ${record.division} Division</div>` : ''}
+              </div>
+            </a>
+          `;
+        }).join('');
+      } else {
+        teamResults?.classList.add('hidden');
+      }
+
+      // Render players
+      if (matchedPlayers.length > 0 && playerList) {
+        playerResults?.classList.remove('hidden');
+        playerList.innerHTML = matchedPlayers.map((player) => {
+          const logo = teamLogos[player.team];
+          const match = player.player.match(/^(\d+)\s+(.+)$/);
+          const number = match ? match[1] : '';
+          const name = match ? match[2] : player.player;
+          return `
+            <a href="/Stats-Hub/players/${encodeURIComponent(player.player)}" 
+               class="flex items-center justify-between p-3 border border-pul-border rounded-lg hover:border-pul-black transition-colors">
+              <div class="flex items-center gap-3">
+                ${logo ? `<img src="/Stats-Hub/images/teams/${logo}" alt="${player.team}" class="w-8 h-8 object-contain" />` : ''}
+                <div>
+                  <div class="font-medium">${name} ${number ? `<span class="text-pul-gray">#${number}</span>` : ''}</div>
+                  <div class="text-sm text-pul-gray">${player.team}</div>
+                </div>
+              </div>
+              <div class="text-sm text-pul-gray">
+                ${player.goals}G ${player.assists}A ${player.blocks}D
+              </div>
+            </a>
+          `;
+        }).join('');
+      } else {
+        playerResults?.classList.add('hidden');
+      }
+    }
+
+    // Debounce search
+    let timeout;
+    searchInput?.addEventListener('input', (e) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        search(e.target.value);
+      }, 150);
+    });
+
+    // Search on load if there's a query param
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialQuery = urlParams.get('q');
+    if (initialQuery && searchInput) {
+      searchInput.value = initialQuery;
+      search(initialQuery);
+    }
+  </script>
+</Layout>
