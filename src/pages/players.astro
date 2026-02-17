@@ -4,88 +4,164 @@ import { StatsTable } from '../components/StatsTable';
 import fs from 'node:fs';
 import path from 'node:path';
 
-// Available seasons
 const seasons = ['2025', '2024'];
 
-// Load data for all seasons
-const playersDataBySeason: Record<string, any[]> = {};
+const playersOverallBySeason: Record<string, any[]> = {};
+const playersGamesBySeason: Record<string, any[]> = {};
 
 // Load 2025
 try {
-  const data2025 = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_season.json'), 'utf-8');
-  playersDataBySeason['2025'] = JSON.parse(data2025);
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_season.json'), 'utf-8');
+  playersOverallBySeason['2025'] = JSON.parse(data);
 } catch (e) {
-  playersDataBySeason['2025'] = [];
+  playersOverallBySeason['2025'] = [];
+}
+
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_games.json'), 'utf-8');
+  playersGamesBySeason['2025'] = JSON.parse(data);
+} catch (e) {
+  playersGamesBySeason['2025'] = [];
 }
 
 // Load 2024
 try {
-  const data2024 = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'players_season.json'), 'utf-8');
-  playersDataBySeason['2024'] = JSON.parse(data2024);
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'players_season.json'), 'utf-8');
+  playersOverallBySeason['2024'] = JSON.parse(data);
 } catch (e) {
-  playersDataBySeason['2024'] = [];
-};
+  playersOverallBySeason['2024'] = [];
+}
 
-const columns = [
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'players_games.json'), 'utf-8');
+  playersGamesBySeason['2024'] = JSON.parse(data);
+} catch (e) {
+  playersGamesBySeason['2024'] = [];
+}
+
+const overallColumns = [
   { accessorKey: 'player', header: 'Player', size: 200 },
   { accessorKey: 'team', header: 'Team', size: 160 },
-  { accessorKey: 'goals', header: 'G', size: 60 },
-  { accessorKey: 'assists', header: 'A', size: 60 },
-  { accessorKey: 'blocks', header: 'D', size: 60 },
-  { accessorKey: 'turnovers', header: 'TO', size: 60 },
-  { accessorKey: 'touches', header: 'TCH', size: 70 },
+  { accessorKey: 'goals', header: 'G', size: 50 },
+  { accessorKey: 'assists', header: 'A', size: 50 },
+  { accessorKey: 'blocks', header: 'D', size: 50 },
+  { accessorKey: 'turnovers', header: 'TO', size: 50 },
+  { accessorKey: 'touches', header: 'TCH', size: 60 },
+];
+
+const gameColumns = [
+  { accessorKey: 'player', header: 'Player', size: 180 },
+  { accessorKey: 'team', header: 'Team', size: 140 },
+  { accessorKey: 'match', header: 'Match', size: 130 },
+  { accessorKey: 'week', header: 'Week', size: 80 },
+  { accessorKey: 'goals', header: 'G', size: 50 },
+  { accessorKey: 'assists', header: 'A', size: 50 },
+  { accessorKey: 'blocks', header: 'D', size: 50 },
+  { accessorKey: 'turnovers', header: 'TO', size: 50 },
 ];
 ---
 
 <Layout title="Player Stats">
-  <div class="space-y-8">
+  <div class="space-y-6">
     <div class="flex items-baseline justify-between flex-wrap gap-4">
       <h1 class="text-3xl font-semibold">Player Stats</h1>
-      <select 
-        id="season-select"
-        class="search-input text-sm"
-      >
+      <select id="season-select" class="search-input text-sm">
         {seasons.map(season => (
           <option value={season}>{season} Season</option>
         ))}
       </select>
     </div>
 
+    <!-- Tabs -->
+    <div class="border-b border-pul-border">
+      <nav class="flex gap-6">
+        <button class="tab-btn py-3 text-sm font-medium border-b-2 border-pul-black" data-tab="overall">
+          Overall
+        </button>
+        <button class="tab-btn py-3 text-sm font-medium border-b-2 border-transparent text-pul-gray hover:text-pul-black" data-tab="by-game">
+          By Game
+        </button>
+      </nav>
+    </div>
+
     {seasons.map(season => (
-      <div 
-        id={`season-${season}`} 
-        class={season === '2025' ? '' : 'hidden'}
-        data-season={season}
-      >
-        {playersDataBySeason[season].length > 0 ? (
-          <StatsTable 
-            client:load
-            data={playersDataBySeason[season]}
-            columns={columns}
-            searchPlaceholder="Search players..."
-            searchableColumns={['player']}
-            filterColumn="team"
-            filterLabel="Teams"
-          />
-        ) : (
-          <p class="text-pul-gray">No player data available for {season}.</p>
-        )}
+      <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+        <!-- Overall Tab -->
+        <div data-tab-content="overall">
+          {playersOverallBySeason[season].length > 0 ? (
+            <StatsTable 
+              client:load
+              data={playersOverallBySeason[season]}
+              columns={overallColumns}
+              searchPlaceholder="Search players..."
+              searchableColumns={['player']}
+              filterColumn="team"
+              filterLabel="Teams"
+            />
+          ) : (
+            <p class="text-pul-gray py-8">No player data available for {season}.</p>
+          )}
+        </div>
+
+        <!-- By Game Tab -->
+        <div data-tab-content="by-game" class="hidden">
+          {playersGamesBySeason[season].length > 0 ? (
+            <StatsTable 
+              client:load
+              data={playersGamesBySeason[season]}
+              columns={gameColumns}
+              searchPlaceholder="Search players..."
+              searchableColumns={['player']}
+              filterColumn="team"
+              filterLabel="Teams"
+            />
+          ) : (
+            <p class="text-pul-gray py-8">No game data available for {season}.</p>
+          )}
+        </div>
       </div>
     ))}
   </div>
 
   <script>
-    const select = document.getElementById('season-select') as HTMLSelectElement;
+    // Season switcher
+    const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
     const seasonDivs = document.querySelectorAll('[data-season]');
     
-    select?.addEventListener('change', () => {
-      const selected = select.value;
+    seasonSelect?.addEventListener('change', () => {
+      const selected = seasonSelect.value;
       seasonDivs.forEach(div => {
         if (div.getAttribute('data-season') === selected) {
           div.classList.remove('hidden');
         } else {
           div.classList.add('hidden');
         }
+      });
+    });
+
+    // Tab switcher
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.getAttribute('data-tab');
+        
+        // Update button styles
+        tabBtns.forEach(b => {
+          b.classList.remove('border-pul-black', 'text-pul-black');
+          b.classList.add('border-transparent', 'text-pul-gray');
+        });
+        btn.classList.remove('border-transparent', 'text-pul-gray');
+        btn.classList.add('border-pul-black', 'text-pul-black');
+        
+        // Show/hide content for all seasons
+        document.querySelectorAll('[data-tab-content]').forEach(content => {
+          if (content.getAttribute('data-tab-content') === tab) {
+            content.classList.remove('hidden');
+          } else {
+            content.classList.add('hidden');
+          }
+        });
       });
     });
   </script>
