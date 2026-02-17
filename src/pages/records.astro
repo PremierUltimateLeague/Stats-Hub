@@ -1,0 +1,140 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Load all player data from all seasons
+const seasons = ['2025', '2024'];
+const allPlayerStats: Map<string, any> = new Map();
+
+// Team logo mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'Columbus Pride': 'columbus.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'LA Astra': 'la.png',
+  'Medellin Revolution': 'medellin.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Portland Rising': 'portland.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
+// Aggregate stats across seasons
+for (const season of seasons) {
+  try {
+    const dataPath = path.join(process.cwd(), 'data', season, 'players_season.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const players = JSON.parse(rawData);
+    
+    players.forEach((player: any) => {
+      const key = player.player;
+      
+      if (allPlayerStats.has(key)) {
+        const existing = allPlayerStats.get(key);
+        existing.goals += player.goals || 0;
+        existing.assists += player.assists || 0;
+        existing.blocks += player.blocks || 0;
+        existing.turnovers += player.turnovers || 0;
+        existing.touches += player.touches || 0;
+        existing.seasons.push({ season, team: player.team });
+      } else {
+        allPlayerStats.set(key, {
+          player: player.player,
+          goals: player.goals || 0,
+          assists: player.assists || 0,
+          blocks: player.blocks || 0,
+          turnovers: player.turnovers || 0,
+          touches: player.touches || 0,
+          seasons: [{ season, team: player.team }],
+          currentTeam: player.team,
+        });
+      }
+    });
+  } catch (e) {}
+}
+
+const allPlayers = Array.from(allPlayerStats.values());
+
+// Get top 10 for each category
+const getTop10 = (stat: string) => {
+  return [...allPlayers]
+    .sort((a, b) => b[stat] - a[stat])
+    .slice(0, 10);
+};
+
+const categories = [
+  { key: 'goals', title: 'Goals', icon: '🥏' },
+  { key: 'assists', title: 'Assists', icon: '🎯' },
+  { key: 'blocks', title: 'Blocks', icon: '🛡️' },
+  { key: 'touches', title: 'Touches', icon: '✋' },
+];
+---
+
+<Layout title="League Records">
+  <div class="space-y-8">
+    <div>
+      <h1 class="text-3xl font-semibold">League Records</h1>
+      <p class="text-pul-gray mt-1">All-time career leaders across all PUL seasons</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-6">
+      {categories.map(cat => {
+        const leaders = getTop10(cat.key);
+        return (
+          <div class="border border-pul-border rounded-lg overflow-hidden">
+            <div class="bg-pul-light px-4 py-3 border-b border-pul-border">
+              <h2 class="font-semibold flex items-center gap-2">
+                <span>{cat.icon}</span>
+                <span>Career {cat.title}</span>
+              </h2>
+            </div>
+            <div class="divide-y divide-pul-border">
+              {leaders.map((player, index) => {
+                const logo = teamLogos[player.currentTeam] 
+                  ? `/Stats-Hub/images/teams/${teamLogos[player.currentTeam]}` 
+                  : null;
+                const seasonsPlayed = player.seasons.length;
+                
+                return (
+                  <a 
+                    href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`}
+                    class="flex items-center justify-between px-4 py-3 hover:bg-pul-light transition-colors"
+                  >
+                    <div class="flex items-center gap-3">
+                      <span class={`w-7 h-7 rounded-full flex items-center justify-center text-sm font-semibold ${
+                        index === 0 ? 'bg-yellow-400 text-yellow-900' : 
+                        index === 1 ? 'bg-gray-300 text-gray-700' : 
+                        index === 2 ? 'bg-amber-600 text-amber-100' : 
+                        'bg-pul-light text-pul-gray'
+                      }`}>
+                        {index + 1}
+                      </span>
+                      {logo && (
+                        <img src={logo} alt={player.currentTeam} class="w-8 h-8 object-contain" />
+                      )}
+                      <div>
+                        <div class="font-medium">{player.player.replace(/^\d+\s+/, '')}</div>
+                        <div class="text-sm text-pul-gray">
+                          {seasonsPlayed} season{seasonsPlayed > 1 ? 's' : ''}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-xl font-semibold tabular-nums">
+                      {player[cat.key]}
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</Layout>
