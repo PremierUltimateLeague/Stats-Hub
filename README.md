@@ -32,6 +32,9 @@ cd Stats-Hub
 python3 -m venv .venv
 source .venv/bin/activate
 
+# Install Pre-Commit Hooks (Linting)
+pre-commit install
+
 # Install Python dependencies
 pip install -r requirements.txt
 
