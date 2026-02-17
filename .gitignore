@@ -1,9 +1,33 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-2024 Game Day Info
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Astro
+.astro/
+
+# Environment
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
-Stats-Hub.Rproj
-2025/2025 Game Day Info
-handle-error
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Raw data (too large for git)
+**/Game Day Info/
+
+# Keep data directory structure but ignore generated JSON
+# (uncomment if you want to regenerate on every build)
+# data/**/*.json

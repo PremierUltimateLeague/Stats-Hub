@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// In production, this would read from data/2025/metadata.json
+const currentSeason = 2025;
+---
+
+<Layout title="Home">
+  <div class="space-y-8">
+    <!-- Hero Section -->
+    <section class="text-center py-12">
+      <h1 class="text-4xl md:text-5xl font-display mb-4">
+        {currentSeason} Season Stats
+      </h1>
+      <p class="text-pul-gray text-lg max-w-2xl mx-auto">
+        Comprehensive statistics for the Premier Ultimate League. 
+        Track team performance, player stats, and game-by-game breakdowns.
+      </p>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="grid md:grid-cols-2 gap-6">
+      <a 
+        href="/Stats-Hub/teams" 
+        class="group block p-6 bg-pul-dark rounded-xl border border-pul-gray/30 hover:border-pul-accent transition-colors"
+      >
+        <h2 class="text-2xl font-display mb-2 group-hover:text-pul-accent transition-colors">
+          Team Stats →
+        </h2>
+        <p class="text-pul-gray">
+          Season standings, win-loss records, and aggregate team statistics.
+        </p>
+      </a>
+
+      <a 
+        href="/Stats-Hub/players" 
+        class="group block p-6 bg-pul-dark rounded-xl border border-pul-gray/30 hover:border-pul-accent transition-colors"
+      >
+        <h2 class="text-2xl font-display mb-2 group-hover:text-pul-accent transition-colors">
+          Player Stats →
+        </h2>
+        <p class="text-pul-gray">
+          Individual player statistics including goals, assists, blocks, and more.
+        </p>
+      </a>
+    </section>
+
+    <!-- Season Selector (for when you have multiple seasons) -->
+    <section class="pt-8">
+      <h3 class="text-sm font-medium text-pul-gray uppercase tracking-wider mb-4">
+        Previous Seasons
+      </h3>
+      <div class="flex gap-2">
+        <a 
+          href="/Stats-Hub/2024/teams" 
+          class="px-4 py-2 bg-pul-dark rounded-lg text-sm hover:bg-pul-gray transition-colors"
+        >
+          2024
+        </a>
+        <!-- Add more seasons as needed -->
+      </div>
+    </section>
+  </div>
+</Layout>

@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { StatsTable } from '../components/StatsTable';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Read player data from JSON
+let playersData = [];
+try {
+  const dataPath = path.join(process.cwd(), 'data', '2025', 'players_season.json');
+  const rawData = fs.readFileSync(dataPath, 'utf-8');
+  playersData = JSON.parse(rawData);
+} catch (e) {
+  console.warn('Could not load players data, using empty array');
+}
+
+const columns = [
+  { accessorKey: 'player', header: 'Player', size: 200 },
+  { accessorKey: 'team', header: 'Team', size: 160 },
+  { accessorKey: 'goals', header: 'G', size: 60 },
+  { accessorKey: 'assists', header: 'A', size: 60 },
+  { accessorKey: 'blocks', header: 'D', size: 60 },
+  { accessorKey: 'turnovers', header: 'TO', size: 60 },
+  { accessorKey: 'touches', header: 'TCH', size: 70 },
+];
+---
+
+<Layout title="Player Stats">
+  <div class="space-y-8">
+    <div class="flex items-baseline justify-between">
+      <h1 class="text-3xl font-semibold">Player Stats</h1>
+      <span class="text-pul-gray">2025 Season</span>
+    </div>
+
+    {playersData.length > 0 ? (
+      <StatsTable 
+        client:load
+        data={playersData}
+        columns={columns}
+        searchPlaceholder="Search players or teams..."
+        searchableColumns={['player', 'team']}
+      />
+    ) : (
+      <p class="text-pul-gray">No player data available. Run the data export script.</p>
+    )}
+  </div>
+</Layout>

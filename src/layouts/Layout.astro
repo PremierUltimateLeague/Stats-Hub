@@ -1,0 +1,97 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Premier Ultimate League Statistics" } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/x-icon" href="/Stats-Hub/favicon.ico" />
+    <title>{title} | PUL Stats Hub</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-pul-dark border-b border-pul-gray/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo / Home -->
+          <a href="/Stats-Hub/" class="flex items-center gap-3">
+            <span class="font-display text-xl tracking-wide">PUL STATS HUB</span>
+          </a>
+
+          <!-- Navigation -->
+          <nav class="flex items-center gap-6">
+            <a 
+              href="/Stats-Hub/teams" 
+              class="text-sm font-medium text-pul-gray hover:text-pul-white transition-colors"
+            >
+              Teams
+            </a>
+            <a 
+              href="/Stats-Hub/players" 
+              class="text-sm font-medium text-pul-gray hover:text-pul-white transition-colors"
+            >
+              Players
+            </a>
+            <a 
+              href="https://www.premierultimateleague.com/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-medium text-pul-gray hover:text-pul-white transition-colors"
+            >
+              PUL Home ↗
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <slot />
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pul-dark border-t border-pul-gray/30 mt-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p class="text-sm text-pul-gray">
+            © {currentYear} Premier Ultimate League
+          </p>
+          <div class="flex items-center gap-4">
+            <a 
+              href="https://github.com/PremierUltimateLeague/Stats-Hub" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-pul-gray hover:text-pul-white transition-colors"
+            >
+              GitHub
+            </a>
+            <a 
+              href="https://www.premierultimateleague.com/sponsors" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-pul-gray hover:text-pul-white transition-colors"
+            >
+              Sponsors
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  @import "../styles/global.css";
+</style>
