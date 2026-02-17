@@ -251,16 +251,23 @@ def export_standings(csv_path: Path, json_path: Path) -> None:
     
     df = pd.read_csv(csv_path)
     
+    # Division assignments (2024-2025 structure)
+    north_division = ['New York Gridlock', 'Indy Red', 'Minnesota Strike', 
+                      'Milwaukee Monarchs', 'Philadelphia Surge', 'Portland Rising']
+    south_division = ['Atlanta Soul', 'Austin Torch', 'DC Shadow', 
+                      'Nashville NightShade', 'Raleigh Radiance', 'LA Astra']
+    
     # Get unique matches
     matches = df['match'].unique()
     
-    # Track wins/losses for each team
+    # Track wins/losses for each team, and game results in order
     standings = {}
+    game_results = {}  # team -> list of (week_num, result)
     
     for match in matches:
         match_data = df[df['match'] == match]
         if len(match_data) != 2:
-            continue  # Skip if we don't have both teams
+            continue
         
         team1 = match_data.iloc[0]
         team2 = match_data.iloc[1]
@@ -269,18 +276,29 @@ def export_standings(csv_path: Path, json_path: Path) -> None:
         team2_name = team2['team']
         team1_goals = team1['goals']
         team2_goals = team2['goals']
+        week_str = team1['week']
+        
+        # Parse week number
+        try:
+            week_num = int(week_str.replace('Week ', ''))
+        except:
+            week_num = 0
         
         # Initialize teams if not seen
         for team in [team1_name, team2_name]:
             if team not in standings:
+                team_full = TEAM_NAMES.get(team, team)
+                division = 'North' if team_full in north_division else 'South' if team_full in south_division else 'Unknown'
                 standings[team] = {
                     'abbrev': team,
-                    'team': TEAM_NAMES.get(team, team),
+                    'team': team_full,
+                    'division': division,
                     'wins': 0,
                     'losses': 0,
                     'pointsFor': 0,
                     'pointsAgainst': 0,
                 }
+                game_results[team] = []
         
         # Record result
         standings[team1_name]['pointsFor'] += team1_goals
@@ -291,20 +309,32 @@ def export_standings(csv_path: Path, json_path: Path) -> None:
         if team1_goals > team2_goals:
             standings[team1_name]['wins'] += 1
             standings[team2_name]['losses'] += 1
+            game_results[team1_name].append((week_num, 'W'))
+            game_results[team2_name].append((week_num, 'L'))
         elif team2_goals > team1_goals:
             standings[team2_name]['wins'] += 1
             standings[team1_name]['losses'] += 1
-        # Ties are rare in ultimate, but we could add if needed
+            game_results[team2_name].append((week_num, 'W'))
+            game_results[team1_name].append((week_num, 'L'))
+        else:
+            # Tie (rare)
+            game_results[team1_name].append((week_num, 'T'))
+            game_results[team2_name].append((week_num, 'T'))
     
-    # Convert to list and calculate win percentage
+    # Convert to list and calculate derived stats
     records = []
-    for team_data in standings.values():
+    for team, team_data in standings.items():
         total_games = team_data['wins'] + team_data['losses']
         team_data['games'] = total_games
         team_data['winPct'] = round(team_data['wins'] / total_games * 100, 1) if total_games > 0 else 0
         team_data['pointDiff'] = team_data['pointsFor'] - team_data['pointsAgainst']
         
-        # Convert numpy types to Python types for JSON serialization
+        # Calculate last 5 games (sorted by week, most recent last)
+        results = sorted(game_results[team], key=lambda x: x[0])
+        last_5_results = [r[1] for r in results[-5:]]
+        team_data['last5'] = last_5_results
+        
+        # Convert numpy types to Python types
         team_data['wins'] = int(team_data['wins'])
         team_data['losses'] = int(team_data['losses'])
         team_data['pointsFor'] = int(team_data['pointsFor'])
@@ -314,14 +344,13 @@ def export_standings(csv_path: Path, json_path: Path) -> None:
         
         records.append(team_data)
     
-    # Sort by wins (desc), then point differential (desc)
-    records.sort(key=lambda x: (-x['wins'], -x['pointDiff']))
+    # Sort by division, then wins (desc), then point differential (desc)
+    records.sort(key=lambda x: (x['division'], -x['wins'], -x['pointDiff']))
     
     with open(json_path, 'w') as f:
         json.dump(records, f, indent=2)
     
     print(f"Exported {len(records)} team standings to {json_path}")
-
 
 if __name__ == "__main__":
     main()

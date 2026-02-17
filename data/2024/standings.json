@@ -1,123 +1,211 @@
 [
   {
-    "abbrev": "DC",
-    "team": "DC Shadow",
-    "wins": 6,
-    "losses": 0,
-    "pointsFor": 116,
-    "pointsAgainst": 41,
-    "games": 6,
-    "winPct": 100.0,
-    "pointDiff": 75
-  },
-  {
     "abbrev": "NY",
     "team": "New York Gridlock",
+    "division": "North",
     "wins": 6,
     "losses": 0,
     "pointsFor": 124,
     "pointsAgainst": 86,
     "games": 6,
     "winPct": 100.0,
-    "pointDiff": 38
+    "pointDiff": 38,
+    "last5": [
+      "W",
+      "W",
+      "W",
+      "W",
+      "W"
+    ]
   },
   {
     "abbrev": "PHL",
     "team": "Philadelphia Surge",
+    "division": "North",
     "wins": 5,
     "losses": 1,
     "pointsFor": 112,
     "pointsAgainst": 69,
     "games": 6,
     "winPct": 83.3,
-    "pointDiff": 43
-  },
-  {
-    "abbrev": "RAL",
-    "team": "Raleigh Radiance",
-    "wins": 3,
-    "losses": 3,
-    "pointsFor": 86,
-    "pointsAgainst": 79,
-    "games": 6,
-    "winPct": 50.0,
-    "pointDiff": 7
+    "pointDiff": 43,
+    "last5": [
+      "W",
+      "W",
+      "L",
+      "W",
+      "W"
+    ]
   },
   {
     "abbrev": "INDY",
     "team": "Indy Red",
+    "division": "North",
     "wins": 3,
     "losses": 3,
     "pointsFor": 89,
     "pointsAgainst": 103,
     "games": 6,
     "winPct": 50.0,
-    "pointDiff": -14
-  },
-  {
-    "abbrev": "ATX",
-    "team": "Austin Torch",
-    "wins": 3,
-    "losses": 3,
-    "pointsFor": 74,
-    "pointsAgainst": 94,
-    "games": 6,
-    "winPct": 50.0,
-    "pointDiff": -20
+    "pointDiff": -14,
+    "last5": [
+      "L",
+      "L",
+      "W",
+      "W",
+      "L"
+    ]
   },
   {
     "abbrev": "MINN",
     "team": "Minnesota Strike",
+    "division": "North",
     "wins": 2,
     "losses": 4,
     "pointsFor": 101,
     "pointsAgainst": 103,
     "games": 6,
     "winPct": 33.3,
-    "pointDiff": -2
+    "pointDiff": -2,
+    "last5": [
+      "W",
+      "L",
+      "L",
+      "L",
+      "W"
+    ]
   },
   {
     "abbrev": "PORT",
     "team": "Portland Rising",
+    "division": "North",
     "wins": 2,
     "losses": 4,
     "pointsFor": 80,
     "pointsAgainst": 84,
     "games": 6,
     "winPct": 33.3,
-    "pointDiff": -4
+    "pointDiff": -4,
+    "last5": [
+      "W",
+      "L",
+      "L",
+      "W",
+      "L"
+    ]
   },
   {
     "abbrev": "MKE",
     "team": "Milwaukee Monarchs",
+    "division": "North",
     "wins": 1,
     "losses": 5,
     "pointsFor": 66,
     "pointsAgainst": 101,
     "games": 6,
     "winPct": 16.7,
-    "pointDiff": -35
+    "pointDiff": -35,
+    "last5": [
+      "L",
+      "L",
+      "L",
+      "W",
+      "L"
+    ]
+  },
+  {
+    "abbrev": "DC",
+    "team": "DC Shadow",
+    "division": "South",
+    "wins": 6,
+    "losses": 0,
+    "pointsFor": 116,
+    "pointsAgainst": 41,
+    "games": 6,
+    "winPct": 100.0,
+    "pointDiff": 75,
+    "last5": [
+      "W",
+      "W",
+      "W",
+      "W",
+      "W"
+    ]
+  },
+  {
+    "abbrev": "RAL",
+    "team": "Raleigh Radiance",
+    "division": "South",
+    "wins": 3,
+    "losses": 3,
+    "pointsFor": 86,
+    "pointsAgainst": 79,
+    "games": 6,
+    "winPct": 50.0,
+    "pointDiff": 7,
+    "last5": [
+      "W",
+      "W",
+      "L",
+      "W",
+      "L"
+    ]
+  },
+  {
+    "abbrev": "ATX",
+    "team": "Austin Torch",
+    "division": "South",
+    "wins": 3,
+    "losses": 3,
+    "pointsFor": 74,
+    "pointsAgainst": 94,
+    "games": 6,
+    "winPct": 50.0,
+    "pointDiff": -20,
+    "last5": [
+      "L",
+      "L",
+      "W",
+      "L",
+      "W"
+    ]
   },
   {
     "abbrev": "ATL",
     "team": "Atlanta Soul",
+    "division": "South",
     "wins": 1,
     "losses": 5,
     "pointsFor": 66,
     "pointsAgainst": 108,
     "games": 6,
     "winPct": 16.7,
-    "pointDiff": -42
+    "pointDiff": -42,
+    "last5": [
+      "L",
+      "L",
+      "W",
+      "L",
+      "L"
+    ]
   },
   {
     "abbrev": "NASH",
     "team": "Nashville NightShade",
+    "division": "South",
     "wins": 1,
     "losses": 5,
     "pointsFor": 74,
     "pointsAgainst": 120,
     "games": 6,
     "winPct": 16.7,
-    "pointDiff": -46
+    "pointDiff": -46,
+    "last5": [
+      "L",
+      "L",
+      "W",
+      "L",
+      "L"
+    ]
   }
 ]
