@@ -4,14 +4,26 @@ import { StatsTable } from '../components/StatsTable';
 import fs from 'node:fs';
 import path from 'node:path';
 
-// Read team data from JSON
-let teamsData = [];
+// Available seasons
+const seasons = ['2025', '2024'];
+
+// Load data for all seasons
+const teamsDataBySeason: Record<string, any[]> = {};
+
+// Load 2025
 try {
-  const dataPath = path.join(process.cwd(), 'data', '2025', 'teams_season.json');
-  const rawData = fs.readFileSync(dataPath, 'utf-8');
-  teamsData = JSON.parse(rawData);
+  const data2025 = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'teams_season.json'), 'utf-8');
+  teamsDataBySeason['2025'] = JSON.parse(data2025);
 } catch (e) {
-  console.warn('Could not load teams data, using empty array');
+  teamsDataBySeason['2025'] = [];
+}
+
+// Load 2024
+try {
+  const data2024 = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'teams_season.json'), 'utf-8');
+  teamsDataBySeason['2024'] = JSON.parse(data2024);
+} catch (e) {
+  teamsDataBySeason['2024'] = [];
 }
 
 const columns = [
@@ -27,23 +39,54 @@ const columns = [
 
 <Layout title="Team Stats">
   <div class="space-y-8">
-    <div class="flex items-baseline justify-between">
+    <div class="flex items-baseline justify-between flex-wrap gap-4">
       <h1 class="text-3xl font-semibold">Team Stats</h1>
-      <span class="text-pul-gray">2025 Season</span>
+      <select 
+        id="season-select"
+        class="search-input text-sm"
+      >
+        {seasons.map(season => (
+          <option value={season}>{season} Season</option>
+        ))}
+      </select>
     </div>
 
-    {teamsData.length > 0 ? (
-      <StatsTable 
-        client:load
-        data={teamsData}
-        columns={columns}
-        searchPlaceholder="Search teams..."
-        searchableColumns={['team']}
-        linkColumn="team"
-        linkPrefix="/Stats-Hub/teams/"
-      />
-    ) : (
-      <p class="text-pul-gray">No team data available. Run the data export script.</p>
-    )}
+    {seasons.map(season => (
+      <div 
+        id={`season-${season}`} 
+        class={season === '2025' ? '' : 'hidden'}
+        data-season={season}
+      >
+        {teamsDataBySeason[season].length > 0 ? (
+          <StatsTable 
+            client:load
+            data={teamsDataBySeason[season]}
+            columns={columns}
+            searchPlaceholder="Search teams..."
+            searchableColumns={['team']}
+            linkColumn="team"
+            linkPrefix="/Stats-Hub/teams/"
+          />
+        ) : (
+          <p class="text-pul-gray">No team data available for {season}.</p>
+        )}
+      </div>
+    ))}
   </div>
+
+  <script>
+    const select = document.getElementById('season-select') as HTMLSelectElement;
+    const seasonDivs = document.querySelectorAll('[data-season]');
+    
+    select?.addEventListener('change', () => {
+      const selected = select.value;
+      seasonDivs.forEach(div => {
+        if (div.getAttribute('data-season') === selected) {
+          div.classList.remove('hidden');
+        } else {
+          div.classList.add('hidden');
+        }
+      });
+    });
+  </script>
 </Layout>

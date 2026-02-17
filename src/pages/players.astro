@@ -4,15 +4,27 @@ import { StatsTable } from '../components/StatsTable';
 import fs from 'node:fs';
 import path from 'node:path';
 
-// Read player data from JSON
-let playersData = [];
+// Available seasons
+const seasons = ['2025', '2024'];
+
+// Load data for all seasons
+const playersDataBySeason: Record<string, any[]> = {};
+
+// Load 2025
 try {
-  const dataPath = path.join(process.cwd(), 'data', '2025', 'players_season.json');
-  const rawData = fs.readFileSync(dataPath, 'utf-8');
-  playersData = JSON.parse(rawData);
+  const data2025 = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_season.json'), 'utf-8');
+  playersDataBySeason['2025'] = JSON.parse(data2025);
 } catch (e) {
-  console.warn('Could not load players data, using empty array');
+  playersDataBySeason['2025'] = [];
 }
+
+// Load 2024
+try {
+  const data2024 = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'players_season.json'), 'utf-8');
+  playersDataBySeason['2024'] = JSON.parse(data2024);
+} catch (e) {
+  playersDataBySeason['2024'] = [];
+};
 
 const columns = [
   { accessorKey: 'player', header: 'Player', size: 200 },
@@ -27,23 +39,54 @@ const columns = [
 
 <Layout title="Player Stats">
   <div class="space-y-8">
-    <div class="flex items-baseline justify-between">
+    <div class="flex items-baseline justify-between flex-wrap gap-4">
       <h1 class="text-3xl font-semibold">Player Stats</h1>
-      <span class="text-pul-gray">2025 Season</span>
+      <select 
+        id="season-select"
+        class="search-input text-sm"
+      >
+        {seasons.map(season => (
+          <option value={season}>{season} Season</option>
+        ))}
+      </select>
     </div>
 
-    {playersData.length > 0 ? (
-      <StatsTable 
-        client:load
-        data={playersData}
-        columns={columns}
-        searchPlaceholder="Search players..."
-        searchableColumns={['player']}
-        filterColumn="team"
-        filterLabel="Teams"
-      />
-    ) : (
-      <p class="text-pul-gray">No player data available. Run the data export script.</p>
-    )}
+    {seasons.map(season => (
+      <div 
+        id={`season-${season}`} 
+        class={season === '2025' ? '' : 'hidden'}
+        data-season={season}
+      >
+        {playersDataBySeason[season].length > 0 ? (
+          <StatsTable 
+            client:load
+            data={playersDataBySeason[season]}
+            columns={columns}
+            searchPlaceholder="Search players..."
+            searchableColumns={['player']}
+            filterColumn="team"
+            filterLabel="Teams"
+          />
+        ) : (
+          <p class="text-pul-gray">No player data available for {season}.</p>
+        )}
+      </div>
+    ))}
   </div>
+
+  <script>
+    const select = document.getElementById('season-select') as HTMLSelectElement;
+    const seasonDivs = document.querySelectorAll('[data-season]');
+    
+    select?.addEventListener('change', () => {
+      const selected = select.value;
+      seasonDivs.forEach(div => {
+        if (div.getAttribute('data-season') === selected) {
+          div.classList.remove('hidden');
+        } else {
+          div.classList.add('hidden');
+        }
+      });
+    });
+  </script>
 </Layout>

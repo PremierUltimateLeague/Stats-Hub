@@ -4354,17 +4354,17 @@
     "defensePoints": 7.0
   },
   {
-    "player": NaN,
+    "player": 0,
     "team": "Indy Red",
     "teamAbbrev": "INDY",
-    "goals": NaN,
-    "assists": NaN,
-    "blocks": NaN,
-    "turnovers": NaN,
-    "touches": NaN,
-    "throws": NaN,
-    "catches": NaN,
-    "offensePoints": NaN,
-    "defensePoints": NaN
+    "goals": 0.0,
+    "assists": 0.0,
+    "blocks": 0.0,
+    "turnovers": 0.0,
+    "touches": 0.0,
+    "throws": 0.0,
+    "catches": 0.0,
+    "offensePoints": 0.0,
+    "defensePoints": 0.0
   }
 ]

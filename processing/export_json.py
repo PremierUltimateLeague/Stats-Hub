@@ -71,6 +71,10 @@ def export_teams_overall(csv_path: Path, json_path: Path) -> None:
     # Format completion rate as percentage
     if 'completionRate' in df.columns:
         df['completionRate'] = (df['completionRate'] * 100).round(1)
+
+    # Replace NaN with None (null in JSON)
+    df = df.fillna(0)  # Or use df.replace({float('nan'): None}) for null   
+
     records = df.to_dict(orient='records')
     
     with open(json_path, 'w') as f:
@@ -116,6 +120,9 @@ def export_players_overall(csv_path: Path, json_path: Path) -> None:
     # Only keep columns that exist
     columns_to_keep = [c for c in columns_to_keep if c in df.columns]
     df = df[columns_to_keep]
+
+    # Replace NaN with None (null in JSON)
+    df = df.fillna(0)  # Or use df.replace({float('nan'): None}) for null   
     
     records = df.to_dict(orient='records')
     
