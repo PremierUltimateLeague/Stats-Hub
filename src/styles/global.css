@@ -7,14 +7,20 @@
     @apply bg-pul-white text-pul-black antialiased;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     @apply font-display font-semibold tracking-tight;
   }
 }
 
 @layer components {
+
+  /* Stats table styling */
   .stats-table {
     @apply w-full text-sm;
+    min-width: 600px;
+    /* Ensures table doesn't squish on mobile */
   }
 
   .stats-table thead {
@@ -22,17 +28,7 @@
   }
 
   .stats-table th {
-    @apply px-4 py-3 text-left font-medium text-pul-gray text-xs uppercase tracking-wider cursor-pointer hover:text-pul-black transition-colors;
-  }
-
-  .stats-table th[data-sorted="asc"]::after {
-    content: " ↑";
-    @apply text-pul-black;
-  }
-
-  .stats-table th[data-sorted="desc"]::after {
-    content: " ↓";
-    @apply text-pul-black;
+    @apply px-3 sm:px-4 py-2 sm:py-3 font-medium text-pul-gray text-xs uppercase tracking-wider hover:text-pul-black transition-colors;
   }
 
   .stats-table tbody tr {
@@ -40,7 +36,7 @@
   }
 
   .stats-table td {
-    @apply px-4 py-3;
+    @apply px-3 sm:px-4 py-2 sm:py-3;
   }
 
   .stats-table td.numeric {
@@ -52,7 +48,7 @@
   }
 
   .search-input {
-    @apply bg-pul-white border border-pul-border rounded px-4 py-2.5 text-pul-black placeholder-pul-gray focus:outline-none focus:border-pul-gray transition-colors;
+    @apply bg-pul-white border border-pul-border rounded px-3 sm:px-4 py-2 text-sm sm:text-base text-pul-black placeholder-pul-gray focus:outline-none focus:border-pul-gray transition-colors;
   }
 
   .btn-primary {
