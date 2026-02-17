@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const seasons = ['2025', '2024'];
+
+const playersBySeason: Record<string, any[]> = {};
+
+// Load 2025
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_season.json'), 'utf-8');
+  playersBySeason['2025'] = JSON.parse(data);
+} catch (e) {
+  playersBySeason['2025'] = [];
+}
+
+// Load 2024
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'players_season.json'), 'utf-8');
+  playersBySeason['2024'] = JSON.parse(data);
+} catch (e) {
+  playersBySeason['2024'] = [];
+}
+
+// Helper to get top N players by a stat
+const getLeaders = (players: any[], stat: string, n: number = 5) => {
+  return [...players]
+    .sort((a, b) => (b[stat] || 0) - (a[stat] || 0))
+    .slice(0, n);
+};
+
+// Define leader categories
+const categories = [
+  { key: 'goals', title: 'Goals', icon: '🥏' },
+  { key: 'assists', title: 'Assists', icon: '🎯' },
+  { key: 'blocks', title: 'Blocks', icon: '🛡️' },
+  { key: 'touches', title: 'Touches', icon: '✋' },
+];
+---
+
+<Layout title="Season Leaders">
+  <div class="space-y-8">
+    <div class="flex items-baseline justify-between flex-wrap gap-4">
+      <div>
+        <h1 class="text-3xl font-semibold">Season Leaders</h1>
+        <p class="text-pul-gray mt-1">Top performers in key statistical categories</p>
+      </div>
+      <select id="season-select" class="search-input text-sm">
+        {seasons.map(season => (
+          <option value={season}>{season} Season</option>
+        ))}
+      </select>
+    </div>
+
+    {seasons.map(season => (
+      <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+        {playersBySeason[season].length > 0 ? (
+          <div class="grid md:grid-cols-2 gap-6">
+            {categories.map(cat => {
+              const leaders = getLeaders(playersBySeason[season], cat.key);
+              return (
+                <div class="border border-pul-border rounded-lg overflow-hidden">
+                  <div class="bg-pul-light px-4 py-3 border-b border-pul-border">
+                    <h2 class="font-semibold flex items-center gap-2">
+                      <span>{cat.icon}</span>
+                      <span>{cat.title}</span>
+                    </h2>
+                  </div>
+                  <div class="divide-y divide-pul-border">
+                    {leaders.map((player, index) => (
+                      <div class="flex items-center justify-between px-4 py-3 hover:bg-pul-light transition-colors">
+                        <div class="flex items-center gap-3">
+                          <span class={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold ${
+                            index === 0 ? 'bg-yellow-400 text-yellow-900' : 
+                            index === 1 ? 'bg-gray-300 text-gray-700' : 
+                            index === 2 ? 'bg-amber-600 text-amber-100' : 
+                            'bg-pul-light text-pul-gray'
+                          }`}>
+                            {index + 1}
+                          </span>
+                          <div>
+                            <div class="font-medium">{player.player}</div>
+                            <div class="text-sm text-pul-gray">{player.team}</div>
+                          </div>
+                        </div>
+                        <div class="text-xl font-semibold tabular-nums">
+                          {player[cat.key]}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <p class="text-pul-gray py-8">No player data available for {season}.</p>
+        )}
+      </div>
+    ))}
+  </div>
+
+  <script>
+    const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
+    const seasonDivs = document.querySelectorAll('[data-season]');
+    
+    seasonSelect?.addEventListener('change', () => {
+      const selected = seasonSelect.value;
+      seasonDivs.forEach(div => {
+        if (div.getAttribute('data-season') === selected) {
+          div.classList.remove('hidden');
+        } else {
+          div.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</Layout>
