@@ -76,7 +76,7 @@ Google Drive CSVs → Python scripts → JSON → Astro build → Static HTML
 2. **Process data** (currently R scripts, migrating to Python):
 
    ```bash
-   # These scripts read from stats/ and output to data/
+   # These scripts read from input_data/ and output to data/
    python processing/export_json.py
    ```
 
@@ -89,31 +89,42 @@ Google Drive CSVs → Python scripts → JSON → Astro build → Static HTML
 4. **Deploy** (automatic via GitHub Actions on push to main)
 
 ### Directory Structure
-
 ```
-├── data/                    # Generated JSON for frontend
-│   └── 2025/
-│       ├── teams_season.json
-│       ├── players_season.json
+├── input_data/                 # Source data for transformation
+│   ├── 2025/
+│   │   ├── teams_....json
+│   │   ├── players_....json
+│   │   └── _metadata.json
+│   └── 2024/
+│       ├── teams_....json
+│       ├── players_....json
 │       └── _metadata.json
-│
-├── processing/              # Python data pipeline
-│   └── export_json.py
-│
+├── data/                       # Generated JSON for frontend
+│   ├── 2025/
+│   │   ├── teams_....json
+│   │   ├── players_....json
+│   │   └── _metadata.json
+│   ├── 2024/
+│   │   ├── teams_....json
+│   │   ├── players_....json
+│   │   └── _metadata.json
+│   └── processing/             # Python data pipeline
+│       └── export_json.py
 ├── src/
-│   ├── components/          # React components
-│   │   ├── StatsTable.tsx   # Main table component
+│   ├── components/             # React components
+│   │   ├── StatsTable.tsx      # Main table component
 │   │   └── TeamBadge.tsx
 │   ├── layouts/
-│   │   └── Layout.astro     # Base page layout
-│   ├── pages/               # Route pages
+│   │   └── Layout.astro        # Base page layout
+│   ├── pages/                  # Route pages
 │   │   ├── index.astro
 │   │   ├── teams.astro
 │   │   └── players.astro
 │   └── styles/
-│       └── global.css       # Tailwind + custom styles
-└── public/                  # Static assets
+│       └── global.css          # Tailwind + custom styles
+└── public/                     # Static assets
 ```
+
 
 ## Deployment
 
