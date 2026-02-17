@@ -43,7 +43,7 @@ const categories = [
   <div class="space-y-8">
     <div class="flex items-baseline justify-between flex-wrap gap-4">
       <div>
-        <h1 class="text-3xl font-semibold">Season Leaders</h1>
+        <h1 class="text-3xl font-semibold"><span id="leaders-title">2025</span> Season Leaders</h1>
         <p class="text-pul-gray mt-1">Top performers in key statistical categories</p>
       </div>
       <select id="season-select" class="search-input text-sm">
@@ -60,16 +60,32 @@ const categories = [
             {categories.map(cat => {
               const leaders = getLeaders(playersBySeason[season], cat.key);
               return (
-                <div class="border border-pul-border rounded-lg overflow-hidden">
-                  <div class="bg-pul-light px-4 py-3 border-b border-pul-border">
+                <div class="border border-pul-border rounded-lg overflow-hidden" id={`${season}-${cat.key}`}>
+                  <div class="bg-pul-light px-4 py-3 border-b border-pul-border flex items-center justify-between">
                     <h2 class="font-semibold flex items-center gap-2">
                       <span>{cat.icon}</span>
                       <span>{cat.title}</span>
                     </h2>
+                    <button 
+                      class="share-btn text-pul-gray hover:text-pul-black transition-colors p-1 rounded hover:bg-white"
+                      data-category={cat.key}
+                      data-season={season}
+                      data-title={`${season} PUL ${cat.title} Leaders`}
+                      title="Share this leaderboard"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                        <polyline points="16 6 12 2 8 6"/>
+                        <line x1="12" y1="2" x2="12" y2="15"/>
+                      </svg>
+                    </button>
                   </div>
                   <div class="divide-y divide-pul-border">
                     {leaders.map((player, index) => (
-                      <div class="flex items-center justify-between px-4 py-3 hover:bg-pul-light transition-colors">
+                      <a 
+                        href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`}
+                        class="flex items-center justify-between px-4 py-3 hover:bg-pul-light transition-colors"
+                      >
                         <div class="flex items-center gap-3">
                           <span class={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold ${
                             index === 0 ? 'bg-yellow-400 text-yellow-900' : 
@@ -87,7 +103,7 @@ const categories = [
                         <div class="text-xl font-semibold tabular-nums">
                           {player[cat.key]}
                         </div>
-                      </div>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -99,14 +115,27 @@ const categories = [
         )}
       </div>
     ))}
+
+    <!-- Toast notification -->
+    <div id="toast" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-pul-black text-white px-4 py-2 rounded-lg shadow-lg opacity-0 transition-opacity duration-300 pointer-events-none">
+      Link copied to clipboard!
+    </div>
   </div>
 
   <script>
     const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
     const seasonDivs = document.querySelectorAll('[data-season]');
+    const leadersTitle = document.getElementById('leaders-title');
+    const toast = document.getElementById('toast');
     
     seasonSelect?.addEventListener('change', () => {
       const selected = seasonSelect.value;
+      
+      // Update title
+      if (leadersTitle) {
+        leadersTitle.textContent = selected;
+      }
+      
       seasonDivs.forEach(div => {
         if (div.getAttribute('data-season') === selected) {
           div.classList.remove('hidden');
@@ -115,5 +144,82 @@ const categories = [
         }
       });
     });
+
+    // Share button handlers
+    const shareBtns = document.querySelectorAll('.share-btn');
+    
+    shareBtns.forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const category = btn.getAttribute('data-category');
+        const season = btn.getAttribute('data-season');
+        const title = btn.getAttribute('data-title');
+        
+        const url = `${window.location.origin}/Stats-Hub/leaders#${season}-${category}`;
+        
+        // Try native share first (mobile)
+        if (navigator.share) {
+          try {
+            await navigator.share({
+              title: title,
+              url: url
+            });
+            return;
+          } catch (err) {
+            // User cancelled or share failed, fall back to clipboard
+          }
+        }
+        
+        // Fall back to clipboard
+        try {
+          await navigator.clipboard.writeText(url);
+          showToast();
+        } catch (err) {
+          // Fallback for older browsers
+          const textarea = document.createElement('textarea');
+          textarea.value = url;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+          showToast();
+        }
+      });
+    });
+
+    function showToast() {
+      if (toast) {
+        toast.classList.remove('opacity-0');
+        toast.classList.add('opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100');
+          toast.classList.add('opacity-0');
+        }, 2000);
+      }
+    }
+
+    // Handle hash on page load (scroll to category)
+    if (window.location.hash) {
+      const hash = window.location.hash.slice(1);
+      const [season, category] = hash.split('-');
+      
+      // Switch to correct season
+      if (season && seasonSelect) {
+        seasonSelect.value = season;
+        seasonSelect.dispatchEvent(new Event('change'));
+      }
+      
+      // Scroll to category
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          element.classList.add('ring-2', 'ring-pul-black');
+          setTimeout(() => {
+            element.classList.remove('ring-2', 'ring-pul-black');
+          }, 2000);
+        }
+      }, 100);
+    }
   </script>
 </Layout>

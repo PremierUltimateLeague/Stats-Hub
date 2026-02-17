@@ -103,6 +103,21 @@ const playerList = Array.from(allPlayers.values())
       ))}
     </div>
 
+<!-- Share Button -->
+    <div class="flex justify-end">
+      <button 
+        id="share-btn"
+        class="hidden flex items-center gap-2 px-4 py-2 text-sm text-pul-gray hover:text-pul-black border border-pul-border rounded-lg hover:border-pul-black transition-colors"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+          <polyline points="16 6 12 2 8 6"/>
+          <line x1="12" y1="2" x2="12" y2="15"/>
+        </svg>
+        Share Comparison
+      </button>
+    </div>
+
     <!-- Comparison Results -->
     <div id="comparison" class="hidden">
       <div class="border border-pul-border rounded-lg overflow-hidden">
@@ -115,9 +130,20 @@ const playerList = Array.from(allPlayers.values())
     <div id="empty-state" class="text-center py-12 text-pul-gray">
       <p>Select at least 2 players to compare</p>
     </div>
+
+    <!-- Toast notification -->
+    <div id="toast" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-pul-black text-white px-4 py-2 rounded-lg shadow-lg opacity-0 transition-opacity duration-300 pointer-events-none">
+      Link copied to clipboard!
+    </div>
   </div>
 
-  <script define:vars={{ playerList, teamLogos }}>
+    <!-- Empty State -->
+    <div id="empty-state" class="text-center py-12 text-pul-gray">
+      <p>Select at least 2 players to compare</p>
+    </div>
+  </div>
+
+<script define:vars={{ playerList, teamLogos }}>
     const inputs = [
       document.getElementById('player1'),
       document.getElementById('player2'),
@@ -133,6 +159,7 @@ const playerList = Array.from(allPlayers.values())
     const emptyState = document.getElementById('empty-state');
     const playerHeaders = document.getElementById('player-headers');
     const statsRows = document.getElementById('stats-rows');
+    const toast = document.getElementById('toast');
 
     // Track selected players
     const selectedPlayers = [null, null, null];
@@ -196,6 +223,18 @@ const playerList = Array.from(allPlayers.values())
         inputs[index].value = getPlayerDisplay(player).full;
         dropdowns[index].classList.add('hidden');
         updateComparison();
+        updateURL();
+      }
+    }
+
+    function updateURL() {
+      const players = selectedPlayers.filter(Boolean);
+      if (players.length >= 2) {
+        const params = players.map(p => encodeURIComponent(p.player)).join('&p=');
+        const newURL = `${window.location.pathname}?p=${params}`;
+        window.history.replaceState({}, '', newURL);
+      } else {
+        window.history.replaceState({}, '', window.location.pathname);
       }
     }
 
@@ -221,6 +260,7 @@ const playerList = Array.from(allPlayers.values())
         selectedPlayers[index] = null;
         renderDropdown(index, input.value);
         updateComparison();
+        updateURL();
       });
       input.addEventListener('blur', () => {
         setTimeout(hideAllDropdowns, 150);
@@ -249,6 +289,53 @@ const playerList = Array.from(allPlayers.values())
       }
     });
 
+    // Share button handler
+    const shareBtn = document.getElementById('share-btn');
+    shareBtn?.addEventListener('click', async () => {
+      const players = selectedPlayers.filter(Boolean);
+      if (players.length < 2) return;
+
+      const params = players.map(p => encodeURIComponent(p.player)).join('&p=');
+      const url = `${window.location.origin}${window.location.pathname}?p=${params}`;
+      const names = players.map(p => getPlayerDisplay(p).name).join(' vs ');
+      
+      // Try native share first (mobile)
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: `PUL Stats: ${names}`,
+            url: url
+          });
+          return;
+        } catch (err) {}
+      }
+      
+      // Fall back to clipboard
+      try {
+        await navigator.clipboard.writeText(url);
+        showToast();
+      } catch (err) {
+        const textarea = document.createElement('textarea');
+        textarea.value = url;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        showToast();
+      }
+    });
+
+    function showToast() {
+      if (toast) {
+        toast.classList.remove('opacity-0');
+        toast.classList.add('opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100');
+          toast.classList.add('opacity-0');
+        }, 2000);
+      }
+    }
+
     // Stats config
     const stats = [
       { key: 'goals', label: 'Goals', icon: '🥏' },
@@ -264,11 +351,13 @@ const playerList = Array.from(allPlayers.values())
       if (players.length < 2) {
         comparison.classList.add('hidden');
         emptyState.classList.remove('hidden');
+        shareBtn?.classList.add('hidden');
         return;
       }
 
       comparison.classList.remove('hidden');
       emptyState.classList.add('hidden');
+      shareBtn?.classList.remove('hidden');
 
       const numPlayers = players.length;
       const gridCols = numPlayers === 2 ? 'grid-cols-3' : 'grid-cols-4';
@@ -337,6 +426,21 @@ const playerList = Array.from(allPlayers.values())
           }).join('')}
         </div>
       `;
+    }
+
+    // Load players from URL on page load
+    const urlParams = new URLSearchParams(window.location.search);
+    const playerParams = urlParams.getAll('p');
+    
+    if (playerParams.length >= 2) {
+      playerParams.slice(0, 3).forEach((playerName, index) => {
+        const player = playerList.find(p => p.player === playerName);
+        if (player) {
+          selectedPlayers[index] = player;
+          inputs[index].value = getPlayerDisplay(player).full;
+        }
+      });
+      updateComparison();
     }
   </script>
 </Layout>
