@@ -86,10 +86,18 @@ const playerList = Array.from(allPlayers.values())
             <input 
               type="text" 
               id={`player${num}`}
-              class="search-input w-full pr-8" 
+              class="search-input w-full pr-16" 
               placeholder="Type to search..." 
               autocomplete="off" 
             />
+            <button 
+              type="button"
+              class="clear-btn absolute right-8 top-1/2 -translate-y-1/2 text-pul-gray hover:text-pul-black hidden"
+              data-clear={num}
+              title="Clear"
+            >
+              ✕
+            </button>
             <button 
               type="button"
               class="absolute right-2 top-1/2 -translate-y-1/2 text-pul-gray hover:text-pul-black"
@@ -107,8 +115,15 @@ const playerList = Array.from(allPlayers.values())
       ))}
     </div>
 
-<!-- Share Button -->
-    <div class="flex justify-end">
+<!-- Action Buttons -->
+    <div class="flex justify-between items-center min-h-[40px]">
+      <button 
+        id="clear-all-btn"
+        class="hidden text-sm text-red-600 hover:text-red-800 transition-colors"
+      >
+        ✕ Clear all
+      </button>
+      <div class="flex-1"></div>
       <button 
         id="share-btn"
         class="hidden flex items-center gap-2 px-4 py-2 text-sm text-pul-gray hover:text-pul-black border border-pul-border rounded-lg hover:border-pul-black transition-colors"
@@ -124,6 +139,7 @@ const playerList = Array.from(allPlayers.values())
 
     <!-- Comparison Results -->
     <div id="comparison" class="hidden">
+      <p class="text-sm text-pul-gray mb-3">Comparing career totals across all seasons</p>
       <div class="border border-pul-border rounded-lg overflow-hidden">
         <div id="player-headers" class="grid border-b border-pul-border bg-pul-light"></div>
         <div id="stats-rows" class="divide-y divide-pul-border"></div>
@@ -131,8 +147,20 @@ const playerList = Array.from(allPlayers.values())
     </div>
 
     <!-- Empty State -->
-    <div id="empty-state" class="text-center py-12 text-pul-gray">
-      <p>Select at least 2 players to compare</p>
+    <div id="empty-state" class="text-center py-12">
+      <p class="text-pul-gray mb-4">Select at least 2 players to compare</p>
+      <div class="text-sm text-pul-gray">
+        <p class="mb-2">Try comparing:</p>
+        <ul class="space-y-1">
+          <li>• Top scorers from different teams</li>
+          <li>• Players at the same position</li>
+          <li>• Rookies vs veterans</li>
+        </ul>
+      </div>
+      <div class="mt-6 flex justify-center gap-4">
+        <a href="/Stats-Hub/leaders" class="text-sm text-pul-black hover:underline">View Leaders</a>
+        <a href="/Stats-Hub/search" class="text-sm text-pul-black hover:underline">Search Players</a>
+      </div>
     </div>
 
     <!-- Toast notification -->
@@ -140,11 +168,6 @@ const playerList = Array.from(allPlayers.values())
       Link copied to clipboard!
     </div>
   </div>
-
-    <!-- Empty State -->
-    <div id="empty-state" class="text-center py-12 text-pul-gray">
-      <p>Select at least 2 players to compare</p>
-    </div>
   </div>
 
 <script define:vars={{ playerList, teamLogos }}>
@@ -161,12 +184,41 @@ const playerList = Array.from(allPlayers.values())
     const toggles = document.querySelectorAll('[data-toggle]');
     const comparison = document.getElementById('comparison');
     const emptyState = document.getElementById('empty-state');
+    const clearAllBtn = document.getElementById('clear-all-btn');
     const playerHeaders = document.getElementById('player-headers');
     const statsRows = document.getElementById('stats-rows');
     const toast = document.getElementById('toast');
 
     // Track selected players
     const selectedPlayers = [null, null, null];
+
+    // Clear button handlers
+    const clearBtns = document.querySelectorAll('.clear-btn');
+    clearBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const index = parseInt(btn.getAttribute('data-clear')) - 1;
+        selectedPlayers[index] = null;
+        inputs[index].value = '';
+        btn.classList.add('hidden');
+        updateComparison();
+        updateURL();
+      });
+    });
+
+    // Clear all button handler
+    clearAllBtn?.addEventListener('click', () => {
+      selectedPlayers[0] = null;
+      selectedPlayers[1] = null;
+      selectedPlayers[2] = null;
+      inputs[0].value = '';
+      inputs[1].value = '';
+      inputs[2].value = '';
+      // Hide all clear buttons
+      clearBtns.forEach(btn => btn.classList.add('hidden'));
+      updateComparison();
+      updateURL();
+    });
 
     function getPlayerDisplay(player) {
       const match = player.player.match(/^(\d+)\s+(.+)$/);
@@ -183,9 +235,15 @@ const playerList = Array.from(allPlayers.values())
       const dropdown = dropdowns[index];
       const q = normalizeString(filter);
       
-      const filtered = q 
+      // Get already selected player names (excluding current index)
+      const selectedNames = selectedPlayers
+        .filter((p, i) => p && i !== index)
+        .map(p => p.player);
+      
+      const filtered = (q 
         ? playerList.filter(p => normalizeString(getPlayerDisplay(p).full).includes(q))
-        : playerList;
+        : playerList
+      ).filter(p => !selectedNames.includes(p.player));
       
       const limited = filtered.slice(0, 50);
       
@@ -233,6 +291,8 @@ const playerList = Array.from(allPlayers.values())
         selectedPlayers[index] = player;
         inputs[index].value = getPlayerDisplay(player).full;
         dropdowns[index].classList.add('hidden');
+        // Show clear button
+        document.querySelector(`[data-clear="${index + 1}"]`)?.classList.remove('hidden');
         updateComparison();
         updateURL();
         setTimeout(() => { isUpdating = false; }, 200);
@@ -277,7 +337,7 @@ const playerList = Array.from(allPlayers.values())
       input.addEventListener('blur', () => {
         setTimeout(() => {
           if (!isUpdating) {
-            hideAllDropdowns();
+            dropdowns[index].classList.add('hidden');
           }
         }, 150);
       });
@@ -363,10 +423,40 @@ const playerList = Array.from(allPlayers.values())
 
     function updateComparison() {
       const players = selectedPlayers.filter(Boolean);
+      
+      // Show/hide clear all button
+      if (players.length > 0) {
+        clearAllBtn?.classList.remove('hidden');
+      } else {
+        clearAllBtn?.classList.add('hidden');
+      }
 
-      if (players.length < 2) {
+      if (players.length === 0) {
         comparison.classList.add('hidden');
         emptyState.classList.remove('hidden');
+        emptyState.innerHTML = `
+          <p class="text-pul-gray mb-4">Select at least 2 players to compare</p>
+          <div class="text-sm text-pul-gray">
+            <p class="mb-2">Try comparing:</p>
+            <ul class="space-y-1">
+              <li>• Top scorers from different teams</li>
+              <li>• Players at the same position</li>
+              <li>• Rookies vs veterans</li>
+            </ul>
+          </div>
+          <div class="mt-6 flex justify-center gap-4">
+            <a href="/Stats-Hub/leaders" class="text-sm text-pul-black hover:underline">View Leaders</a>
+            <a href="/Stats-Hub/search" class="text-sm text-pul-black hover:underline">Search Players</a>
+          </div>
+        `;
+        shareBtn?.classList.add('hidden');
+        return;
+      }
+
+      if (players.length === 1) {
+        comparison.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        emptyState.innerHTML = `<p class="text-pul-gray">Select 1 more player to compare</p>`;
         shareBtn?.classList.add('hidden');
         return;
       }
@@ -381,7 +471,7 @@ const playerList = Array.from(allPlayers.values())
       // Render headers
       playerHeaders.className = `grid ${gridCols} border-b border-pul-border bg-pul-light`;
       playerHeaders.innerHTML = `
-        <div class="p-4 font-medium text-sm text-pul-gray">Stat</div>
+        <div class="p-4"></div>
         ${players.map(player => {
           const display = getPlayerDisplay(player);
           const logo = teamLogos[player.team];
@@ -454,6 +544,8 @@ const playerList = Array.from(allPlayers.values())
         if (player) {
           selectedPlayers[index] = player;
           inputs[index].value = getPlayerDisplay(player).full;
+          // Show clear button
+          document.querySelector(`[data-clear="${index + 1}"]`)?.classList.remove('hidden');
         }
       });
       updateComparison();
