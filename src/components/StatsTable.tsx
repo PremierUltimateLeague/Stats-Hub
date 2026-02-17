@@ -20,6 +20,7 @@ interface StatsTableProps<T extends Record<string, unknown>> {
   linkPrefix?: string;
   showTeamLogos?: boolean;
   playerLinkColumn?: string;
+  gameLinkColumn?: string;
 }
 
 export function StatsTable<T extends Record<string, unknown>>({
@@ -33,6 +34,7 @@ export function StatsTable<T extends Record<string, unknown>>({
   linkPrefix = "",
   showTeamLogos = true,
   playerLinkColumn,
+  gameLinkColumn,
 }: StatsTableProps<T>) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [globalFilter, setGlobalFilter] = useState('');
@@ -173,6 +175,19 @@ export function StatsTable<T extends Record<string, unknown>>({
     // Player link
     if (isPlayerLink) {
       const href = `/Stats-Hub/players/${encodeURIComponent(String(value))}`;
+      return (
+        <a href={href} className="text-pul-black hover:underline">
+          {content}
+        </a>
+      );
+    }
+
+    // Check if this is a game column that should link
+    const isGameLink = gameLinkColumn && colId === gameLinkColumn && value;
+
+    // Game link
+    if (isGameLink) {
+      const href = `/Stats-Hub/games/${String(value)}`;
       return (
         <a href={href} className="text-pul-black hover:underline">
           {content}

@@ -86,27 +86,30 @@ const gameColumns = [
       </nav>
     </div>
 
-    {seasons.map(season => (
-      <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
-        <!-- Overall Tab -->
-        <div data-tab-content="overall">
-          {playersOverallBySeason[season].length > 0 ? (
-            <StatsTable 
-            client:load
-            data={playersOverallBySeason[season]}
-            columns={overallColumns}
-            searchPlaceholder="Search players..."
-            searchableColumns={['player']}
-            filterColumn="team"
-            filterLabel="Teams"
-            linkColumn="team"
-            linkPrefix="/Stats-Hub/teams/"
-            playerLinkColumn="player"
-          />
-          ) : (
-            <p class="text-pul-gray py-8">No player data available for {season}.</p>
-          )}
-        </div>
+    <!-- Season View -->
+    <div id="season-view">
+      {seasons.map(season => (
+        <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+          <!-- Overall Tab -->
+          <div data-tab-content="overall">
+            {playersOverallBySeason[season].length > 0 ? (
+              <StatsTable 
+                client:load
+                data={playersOverallBySeason[season]}
+                columns={overallColumns}
+                searchPlaceholder="Search players..."
+                searchableColumns={['player']}
+                filterColumn="team"
+                filterLabel="Teams"
+                linkColumn="team"
+                linkPrefix="/Stats-Hub/teams/"
+                playerLinkColumn="player"
+                gameLinkColumn="match"
+              />
+            ) : (
+              <p class="text-pul-gray py-8">No player data available for {season}.</p>
+            )}
+          </div>
 
         <!-- By Game Tab -->
         <div data-tab-content="by-game" class="hidden">

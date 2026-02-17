@@ -1,0 +1,285 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Generate static paths for all games - MUST be before using Astro.params
+export async function getStaticPaths() {
+  const games = new Set<string>();
+  
+  for (const season of ['2025', '2024']) {
+    try {
+      const dataPath = path.join(process.cwd(), 'data', season, 'teams_games.json');
+      const rawData = fs.readFileSync(dataPath, 'utf-8');
+      const teamGames = JSON.parse(rawData);
+      teamGames.forEach((g: any) => games.add(g.match));
+    } catch (e) {
+      console.error(`Error loading ${season} games:`, e);
+    }
+  }
+  
+  return Array.from(games).map(game => ({
+    params: { game: game }
+  }));
+}
+
+const seasons = ['2025', '2024'];
+
+// Team logo mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'Columbus Pride': 'columbus.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'LA Astra': 'la.png',
+  'Medellin Revolution': 'medellin.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Portland Rising': 'portland.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
+// Team abbreviation to full name
+const teamNames: Record<string, string> = {
+  'ATL': 'Atlanta Soul',
+  'ATX': 'Austin Torch',
+  'DC': 'DC Shadow',
+  'IND': 'Indy Red',
+  'INDY': 'Indy Red',
+  'LA': 'LA Astra',
+  'MKE': 'Milwaukee Monarchs',
+  'MIN': 'Minnesota Strike',
+  'MINN': 'Minnesota Strike',
+  'NSH': 'Nashville NightShade',
+  'NASH': 'Nashville NightShade',
+  'NY': 'New York Gridlock',
+  'PHL': 'Philadelphia Surge',
+  'PORT': 'Portland Rising',
+  'RAL': 'Raleigh Radiance',
+};
+
+// Get the game from the URL
+const { game } = Astro.params;
+const decodedGame = decodeURIComponent(game || '');
+
+// Parse the match to get team abbreviations (e.g., "ATL @ DC" -> ["ATL", "DC"])
+const matchParts = decodedGame.split(' @ ');
+const awayAbbrev = matchParts[0];
+const homeAbbrev = matchParts[1];
+const awayTeam = teamNames[awayAbbrev] || awayAbbrev;
+const homeTeam = teamNames[homeAbbrev] || homeAbbrev;
+
+// Find which season this game is in and load data
+let gameSeason = '';
+let awayTeamStats: any = null;
+let homeTeamStats: any = null;
+let awayPlayerStats: any[] = [];
+let homePlayerStats: any[] = [];
+let week = '';
+
+for (const season of seasons) {
+  try {
+    // Team game stats
+    const teamData = fs.readFileSync(path.join(process.cwd(), 'data', season, 'teams_games.json'), 'utf-8');
+    const teamGames = JSON.parse(teamData);
+    
+    const awayStats = teamGames.find((g: any) => g.match === decodedGame && g.abbrev === awayAbbrev);
+    const homeStats = teamGames.find((g: any) => g.match === decodedGame && g.abbrev === homeAbbrev);
+    
+    if (awayStats && homeStats) {
+      gameSeason = season;
+      awayTeamStats = awayStats;
+      homeTeamStats = homeStats;
+      week = awayStats.week;
+      
+      // Player game stats
+      const playerData = fs.readFileSync(path.join(process.cwd(), 'data', season, 'players_games.json'), 'utf-8');
+      const playerGames = JSON.parse(playerData);
+      
+      awayPlayerStats = playerGames.filter((p: any) => p.match === decodedGame && p.teamAbbrev === awayAbbrev);
+      homePlayerStats = playerGames.filter((p: any) => p.match === decodedGame && p.teamAbbrev === homeAbbrev);
+      
+      break;
+    }
+  } catch (e) {}
+}
+
+const awayLogo = teamLogos[awayTeam] ? `/Stats-Hub/images/teams/${teamLogos[awayTeam]}` : null;
+const homeLogo = teamLogos[homeTeam] ? `/Stats-Hub/images/teams/${teamLogos[homeTeam]}` : null;
+
+// Determine winner
+const awayGoals = awayTeamStats?.goals || 0;
+const homeGoals = homeTeamStats?.goals || 0;
+const awayWon = awayGoals > homeGoals;
+const homeWon = homeGoals > awayGoals;
+---
+
+<Layout title={decodedGame}>
+  <div class="space-y-8">
+    <!-- Back link -->
+    <a href="/Stats-Hub/teams" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
+      ← Back to teams
+    </a>
+
+    <!-- Game Header -->
+    <div class="text-center">
+      <div class="text-sm text-pul-gray mb-2">{gameSeason} • {week}</div>
+      
+      <div class="flex items-center justify-center gap-6 sm:gap-12">
+        <!-- Away Team -->
+        <a href={`/Stats-Hub/teams/${encodeURIComponent(awayTeam)}`} class="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity">
+          {awayLogo && <img src={awayLogo} alt={awayTeam} class="w-16 h-16 sm:w-20 sm:h-20 object-contain" />}
+          <span class="text-sm font-medium">{awayTeam}</span>
+        </a>
+        
+        <!-- Score -->
+        <div class="flex items-center gap-4">
+          <span class={`text-4xl sm:text-5xl font-bold ${awayWon ? 'text-pul-black' : 'text-pul-gray'}`}>
+            {awayGoals}
+          </span>
+          <span class="text-2xl text-pul-gray">-</span>
+          <span class={`text-4xl sm:text-5xl font-bold ${homeWon ? 'text-pul-black' : 'text-pul-gray'}`}>
+            {homeGoals}
+          </span>
+        </div>
+        
+        <!-- Home Team -->
+        <a href={`/Stats-Hub/teams/${encodeURIComponent(homeTeam)}`} class="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity">
+          {homeLogo && <img src={homeLogo} alt={homeTeam} class="w-16 h-16 sm:w-20 sm:h-20 object-contain" />}
+          <span class="text-sm font-medium">{homeTeam}</span>
+        </a>
+      </div>
+      
+      <div class="mt-2 text-sm text-pul-gray">
+        {awayWon ? `${awayTeam} wins` : homeWon ? `${homeTeam} wins` : 'Tie'}
+      </div>
+    </div>
+
+    <!-- Team Stats Comparison -->
+    {awayTeamStats && homeTeamStats && (
+      <div class="border border-pul-border rounded-lg overflow-hidden">
+        <div class="bg-pul-light px-4 py-3 border-b border-pul-border">
+          <h2 class="font-semibold">Team Stats</h2>
+        </div>
+        <div class="divide-y divide-pul-border">
+          <div class="grid grid-cols-3 px-4 py-3">
+            <div class={`text-left font-semibold ${awayTeamStats.goals > homeTeamStats.goals ? 'text-pul-black' : 'text-pul-gray'}`}>{awayTeamStats.goals}</div>
+            <div class="text-center text-sm text-pul-gray">Goals</div>
+            <div class={`text-right font-semibold ${homeTeamStats.goals > awayTeamStats.goals ? 'text-pul-black' : 'text-pul-gray'}`}>{homeTeamStats.goals}</div>
+          </div>
+          <div class="grid grid-cols-3 px-4 py-3">
+            <div class={`text-left font-semibold ${awayTeamStats.breakGoals > homeTeamStats.breakGoals ? 'text-pul-black' : 'text-pul-gray'}`}>{awayTeamStats.breakGoals}</div>
+            <div class="text-center text-sm text-pul-gray">Break Goals</div>
+            <div class={`text-right font-semibold ${homeTeamStats.breakGoals > awayTeamStats.breakGoals ? 'text-pul-black' : 'text-pul-gray'}`}>{homeTeamStats.breakGoals}</div>
+          </div>
+          <div class="grid grid-cols-3 px-4 py-3">
+            <div class={`text-left font-semibold ${awayTeamStats.blocks > homeTeamStats.blocks ? 'text-pul-black' : 'text-pul-gray'}`}>{awayTeamStats.blocks}</div>
+            <div class="text-center text-sm text-pul-gray">Blocks</div>
+            <div class={`text-right font-semibold ${homeTeamStats.blocks > awayTeamStats.blocks ? 'text-pul-black' : 'text-pul-gray'}`}>{homeTeamStats.blocks}</div>
+          </div>
+          <div class="grid grid-cols-3 px-4 py-3">
+            <div class={`text-left font-semibold ${awayTeamStats.turnovers < homeTeamStats.turnovers ? 'text-pul-black' : 'text-pul-gray'}`}>{awayTeamStats.turnovers}</div>
+            <div class="text-center text-sm text-pul-gray">Turnovers</div>
+            <div class={`text-right font-semibold ${homeTeamStats.turnovers < awayTeamStats.turnovers ? 'text-pul-black' : 'text-pul-gray'}`}>{homeTeamStats.turnovers}</div>
+          </div>
+          <div class="grid grid-cols-3 px-4 py-3">
+            <div class={`text-left font-semibold ${awayTeamStats.completionRate > homeTeamStats.completionRate ? 'text-pul-black' : 'text-pul-gray'}`}>{awayTeamStats.completionRate}%</div>
+            <div class="text-center text-sm text-pul-gray">Completion %</div>
+            <div class={`text-right font-semibold ${homeTeamStats.completionRate > awayTeamStats.completionRate ? 'text-pul-black' : 'text-pul-gray'}`}>{homeTeamStats.completionRate}%</div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    <!-- Player Stats -->
+    <div class="grid lg:grid-cols-2 gap-8">
+      <!-- Away Team Players -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          {awayLogo && <img src={awayLogo} alt={awayTeam} class="w-8 h-8 object-contain" />}
+          <h2 class="text-lg font-semibold">{awayTeam}</h2>
+        </div>
+        {awayPlayerStats.length > 0 ? (
+          <div class="border border-pul-border rounded-lg overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="stats-table w-full">
+                <thead>
+                  <tr>
+                    <th class="text-left">Player</th>
+                    <th class="text-right">Goals</th>
+                    <th class="text-right">Assists</th>
+                    <th class="text-right">Blocks</th>
+                    <th class="text-right">Turnovers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {awayPlayerStats.sort((a: any, b: any) => (b.goals + b.assists) - (a.goals + a.assists)).map((player: any) => (
+                    <tr>
+                      <td>
+                        <a href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`} class="hover:underline">
+                          {player.player}
+                        </a>
+                      </td>
+                      <td class="text-right tabular-nums">{player.goals}</td>
+                      <td class="text-right tabular-nums">{player.assists}</td>
+                      <td class="text-right tabular-nums">{player.blocks}</td>
+                      <td class="text-right tabular-nums">{player.turnovers}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ) : (
+          <p class="text-pul-gray">No player stats available.</p>
+        )}
+      </div>
+
+      <!-- Home Team Players -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          {homeLogo && <img src={homeLogo} alt={homeTeam} class="w-8 h-8 object-contain" />}
+          <h2 class="text-lg font-semibold">{homeTeam}</h2>
+        </div>
+        {homePlayerStats.length > 0 ? (
+          <div class="border border-pul-border rounded-lg overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="stats-table w-full">
+                <thead>
+                  <tr>
+                    <th class="text-left">Player</th>
+                    <th class="text-right">Goals</th>
+                    <th class="text-right">Assists</th>
+                    <th class="text-right">Blocks</th>
+                    <th class="text-right">Turnovers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {homePlayerStats.sort((a: any, b: any) => (b.goals + b.assists) - (a.goals + a.assists)).map((player: any) => (
+                    <tr>
+                      <td>
+                        <a href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`} class="hover:underline">
+                          {player.player}
+                        </a>
+                      </td>
+                      <td class="text-right tabular-nums">{player.goals}</td>
+                      <td class="text-right tabular-nums">{player.assists}</td>
+                      <td class="text-right tabular-nums">{player.blocks}</td>
+                      <td class="text-right tabular-nums">{player.turnovers}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ) : (
+          <p class="text-pul-gray">No player stats available.</p>
+        )}
+      </div>
+    </div>
+  </div>
+</Layout>
