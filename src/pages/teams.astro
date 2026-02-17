@@ -98,6 +98,7 @@ const gameColumns = [
               searchableColumns={['team']}
               linkColumn="team"
               linkPrefix="/Stats-Hub/teams/"
+              showTeamColors={true}
             />
           ) : (
             <p class="text-pul-gray py-8">No team data available for {season}.</p>
@@ -115,6 +116,7 @@ const gameColumns = [
               searchableColumns={['team', 'match']}
               filterColumn="week"
               filterLabel="Weeks"
+              showTeamColors={true}
             />
           ) : (
             <p class="text-pul-gray py-8">No game data available for {season}.</p>

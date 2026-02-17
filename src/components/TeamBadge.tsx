@@ -1,31 +1,35 @@
 interface TeamBadgeProps {
   team: string;
-  showLogo?: boolean;
+  showDot?: boolean;
 }
 
-// Team color mapping
-const teamColors: Record<string, { bg: string; text: string }> = {
-  'Atlanta Soul': { bg: 'bg-teams-atlanta', text: 'text-white' },
-  'Austin Torch': { bg: 'bg-teams-austin', text: 'text-white' },
-  'DC Shadow': { bg: 'bg-teams-dc', text: 'text-white' },
-  'Indy Red': { bg: 'bg-teams-indy', text: 'text-black' },
-  'Madison Radicals': { bg: 'bg-teams-madison', text: 'text-white' },
-  'Minnesota Strike': { bg: 'bg-teams-minnesota', text: 'text-white' },
-  'Nashville NightShade': { bg: 'bg-teams-nashville', text: 'text-white' },
-  'New York Gridlock': { bg: 'bg-teams-new-york', text: 'text-white' },
-  'Philadelphia Surge': { bg: 'bg-teams-philadelphia', text: 'text-white' },
-  'Raleigh Radiance': { bg: 'bg-teams-raleigh', text: 'text-white' },
+const teamColors: Record<string, string> = {
+  'Atlanta Soul': '#E31837',
+  'Austin Torch': '#F7941D',
+  'DC Shadow': '#8B2332',
+  'Indy Red': '#ED1C24',
+  'LA Astra': '#6B5B95',
+  'Milwaukee Monarchs': '#1E3A5F',
+  'Minnesota Strike': '#582C83',
+  'Nashville NightShade': '#4B0082',
+  'New York Gridlock': '#FF6B35',
+  'Philadelphia Surge': '#006D77',
+  'Portland Rising': '#2E8B57',
+  'Raleigh Radiance': '#00A651',
 };
 
-// Fallback for unknown teams
-const defaultColors = { bg: 'bg-pul-gray', text: 'text-white' };
-
-export function TeamBadge({ team, showLogo = false }: TeamBadgeProps) {
-  const colors = teamColors[team] || defaultColors;
-
+export function TeamBadge({ team, showDot = true }: TeamBadgeProps) {
+  const color = teamColors[team] || '#666666';
+  
   return (
-    <span className={`team-badge ${colors.bg} ${colors.text}`}>
-      {team}
+    <span className="inline-flex items-center gap-2">
+      {showDot && (
+        <span 
+          className="w-3 h-3 rounded-full flex-shrink-0"
+          style={{ backgroundColor: color }}
+        />
+      )}
+      <span>{team}</span>
     </span>
   );
 }

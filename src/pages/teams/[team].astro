@@ -4,12 +4,34 @@ import { StatsTable } from '../../components/StatsTable';
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Team name to logo filename mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'Columbus Pride': 'columbus.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'LA Astra': 'la.png',
+  'Medellin Revolution': 'medellin.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Portland Rising': 'portland.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
 // Get the team from the URL
 const { team } = Astro.params;
 const decodedTeam = decodeURIComponent(team || '');
 
+// Get logo path
+const logoFile = teamLogos[decodedTeam];
+const logoPath = logoFile ? `/Stats-Hub/images/teams/${logoFile}` : null;
+
 // Read player data
-let allPlayers = [];
+let allPlayers: any[] = [];
 try {
   const dataPath = path.join(process.cwd(), 'data', '2025', 'players_season.json');
   const rawData = fs.readFileSync(dataPath, 'utf-8');
@@ -19,7 +41,7 @@ try {
 }
 
 // Read team data
-let allTeams = [];
+let allTeams: any[] = [];
 try {
   const dataPath = path.join(process.cwd(), 'data', '2025', 'teams_season.json');
   const rawData = fs.readFileSync(dataPath, 'utf-8');
@@ -46,9 +68,20 @@ export async function getStaticPaths() {
     const teamsData = JSON.parse(rawData);
     teams = teamsData.map((t: any) => t.team);
   } catch (e) {
-    console.warn('Could not load teams for static paths:', e);
+    console.warn('Could not load teams for static paths');
   }
-    
+  
+  // Also add 2024 teams
+  try {
+    const dataPath = path.join(process.cwd(), 'data', '2024', 'teams_season.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const teamsData = JSON.parse(rawData);
+    const teams2024 = teamsData.map((t: any) => t.team);
+    teams = [...new Set([...teams, ...teams2024])];
+  } catch (e) {
+    // 2024 data might not exist
+  }
+  
   return teams.map(team => ({
     params: { team: team }
   }));
@@ -72,9 +105,18 @@ const playerColumns = [
     </a>
 
     <!-- Team Header -->
-    <div>
-      <h1 class="text-3xl font-semibold">{decodedTeam}</h1>
-      <p class="text-pul-gray mt-1">2025 Season Roster</p>
+    <div class="flex items-center gap-6">
+      {logoPath && (
+        <img 
+          src={logoPath} 
+          alt={`${decodedTeam} logo`} 
+          class="w-20 h-20 sm:w-24 sm:h-24 object-contain"
+        />
+      )}
+      <div>
+        <h1 class="text-3xl font-semibold">{decodedTeam}</h1>
+        <p class="text-pul-gray mt-1">2025 Season Roster</p>
+      </div>
     </div>
 
     <!-- Team Stats Summary -->

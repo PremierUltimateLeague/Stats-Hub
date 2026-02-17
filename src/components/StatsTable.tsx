@@ -18,6 +18,7 @@ interface StatsTableProps<T extends Record<string, unknown>> {
   filterLabel?: string;
   linkColumn?: string;
   linkPrefix?: string;
+  showTeamColors?: boolean;
 }
 
 export function StatsTable<T extends Record<string, unknown>>({
@@ -29,6 +30,7 @@ export function StatsTable<T extends Record<string, unknown>>({
   filterLabel = "Filter",
   linkColumn,
   linkPrefix = "",
+  showTeamColors = false,
 }: StatsTableProps<T>) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [globalFilter, setGlobalFilter] = useState('');
@@ -123,21 +125,53 @@ export function StatsTable<T extends Record<string, unknown>>({
     return header.column.columnDef.accessorKey || header.id;
   };
 
-  // Render cell content, with optional link
+  // Team colors for badges
+  const teamColors: Record<string, string> = {
+    'Atlanta Soul': '#E31837',
+    'Austin Torch': '#FF6B00',
+    'DC Shadow': '#000000',
+    'Indy Red': '#ED1C24',
+    'LA Astra': '#6B5B95',
+    'Milwaukee Monarchs': '#1E3A5F',
+    'Minnesota Strike': '#00A3E0',
+    'Nashville NightShade': '#4B0082',
+    'New York Gridlock': '#FF1493',
+    'Philadelphia Surge': '#0077B6',
+    'Portland Rising': '#2E8B57',
+    'Raleigh Radiance': '#00A651',
+  };
+
+  // Render cell content, with optional link and team color
   const renderCell = (cell: any) => {
     const colId = cell.column.columnDef.accessorKey || cell.column.id;
     const value = cell.getValue();
+
+    // Check if this is a team column that should show color
+    const isTeamColumn = colId === 'team' && showTeamColors;
+    const teamColor = isTeamColumn && value ? teamColors[String(value)] : null;
+
+    const content = (
+      <span className={isTeamColumn && teamColor ? "inline-flex items-center gap-2" : ""}>
+        {teamColor && (
+          <span
+            className="w-2.5 h-2.5 rounded-full flex-shrink-0"
+            style={{ backgroundColor: teamColor }}
+          />
+        )}
+        {flexRender(cell.column.columnDef.cell, cell.getContext())}
+      </span>
+    );
 
     if (linkColumn && colId === linkColumn && value) {
       const href = `${linkPrefix}${encodeURIComponent(String(value))}`;
       return (
         <a href={href} className="text-pul-black hover:underline font-medium">
-          {flexRender(cell.column.columnDef.cell, cell.getContext())}
+          {content}
         </a>
       );
     }
 
-    return flexRender(cell.column.columnDef.cell, cell.getContext());
+    return content;
   };
 
   // Handle click outside to close suggestions
