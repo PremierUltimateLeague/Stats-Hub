@@ -216,14 +216,18 @@ const playerList = Array.from(allPlayers.values())
       });
     }
 
+    let isUpdating = false;
+
     function selectPlayer(index, playerName) {
       const player = playerList.find(p => p.player === playerName);
       if (player) {
+        isUpdating = true;
         selectedPlayers[index] = player;
         inputs[index].value = getPlayerDisplay(player).full;
         dropdowns[index].classList.add('hidden');
         updateComparison();
         updateURL();
+        setTimeout(() => { isUpdating = false; }, 200);
       }
     }
 
@@ -263,7 +267,11 @@ const playerList = Array.from(allPlayers.values())
         updateURL();
       });
       input.addEventListener('blur', () => {
-        setTimeout(hideAllDropdowns, 150);
+        setTimeout(() => {
+          if (!isUpdating) {
+            hideAllDropdowns();
+          }
+        }, 150);
       });
     });
 

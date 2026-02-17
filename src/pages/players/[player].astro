@@ -13,6 +13,22 @@ const playerMatch = decodedPlayer.match(/^(\d+)\s+(.+)$/);
 const playerNumber = playerMatch ? playerMatch[1] : null;
 const playerName = playerMatch ? playerMatch[2] : decodedPlayer;
 
+// Team name to folder mapping
+const teamFolders: Record<string, string> = {
+  'Atlanta Soul': 'Atlanta',
+  'Austin Torch': 'Austin',
+  'DC Shadow': 'DC',
+  'Indy Red': 'Indy',
+  'LA Astra': 'LA',
+  'Milwaukee Monarchs': 'Milwaukee',
+  'Minnesota Strike': 'Minnesota',
+  'Nashville NightShade': 'Nashville',
+  'New York Gridlock': 'New York City',
+  'Philadelphia Surge': 'Philadelphia',
+  'Portland Rising': 'Portland',
+  'Raleigh Radiance': 'Raleigh',
+};
+
 // Team logo mapping
 const teamLogos: Record<string, string> = {
   'Atlanta Soul': 'atlanta.png',
@@ -59,6 +75,73 @@ for (const season of seasons) {
     }
   } catch (e) {}
 }
+
+// Get current team from most recent season
+const currentTeam = Object.values(playerSeasonStats)[0]?.team || '';
+const teamFolder = teamFolders[currentTeam] || '';
+
+// Generate headshot filename variations
+const nameParts = playerName.split(' ');
+let lastName = nameParts[nameParts.length - 1];
+
+// Handle compound last names like "De Jesus" -> "DeJesus"
+if (nameParts.length >= 2) {
+  const secondLast = nameParts[nameParts.length - 2]?.toLowerCase();
+  if (['de', 'van', 'von', 'la', 'le', 'del', 'di', 'da'].includes(secondLast)) {
+    lastName = nameParts[nameParts.length - 2] + lastName;
+  }
+}
+
+// Create base versions of the last name
+const lastNameWithHyphen = lastName
+  .replace(/'/g, '')
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  .replace(/[^a-zA-Z-]/g, '');
+
+const lastNameNoHyphen = lastNameWithHyphen.replace(/-/g, '');
+
+// Generate all possible variations
+const baseNames = [
+  lastNameWithHyphen,                                           // Keep hyphen: Bidigare-Curtis
+  lastNameNoHyphen,                                             // Remove hyphen: BidigareCurtis
+  lastNameWithHyphen.charAt(0).toUpperCase() + lastNameWithHyphen.slice(1), // Capitalize first
+  lastNameNoHyphen.toLowerCase(),                               // All lowercase: bidigarecurtis
+];
+
+const extensions = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG'];
+const numbers = [playerNumber || '', (playerNumber || '').replace(/^0+/, '')]; // Try with and without leading zeros
+
+// Build all variations
+const variations: string[] = [];
+for (const baseName of baseNames) {
+  for (const num of numbers) {
+    for (const ext of extensions) {
+      variations.push(`${baseName}${num}${ext}`);
+    }
+  }
+}
+
+// Remove duplicates
+const uniqueVariations = [...new Set(variations)];
+
+// Check which file exists
+let headshotFile = '';
+let hasHeadshot = false;
+
+for (const filename of uniqueVariations) {
+  try {
+    const filePath = path.join(process.cwd(), 'public', 'images', 'players', teamFolder, filename);
+    if (fs.existsSync(filePath)) {
+      headshotFile = filename;
+      hasHeadshot = true;
+      break;
+    }
+  } catch (e) {}
+}
+
+const headshotPath = hasHeadshot 
+  ? `/Stats-Hub/images/players/${encodeURIComponent(teamFolder)}/${headshotFile}`
+  : '';
 
 // Get teams played for
 const teamsPlayed = Object.entries(playerSeasonStats).map(([season, stats]) => ({
@@ -128,12 +211,19 @@ const gameColumns = [
       ← Back to all players
     </a>
 
-    <!-- Player Header -->
+    <!-- Player Header -->  
     <div class="flex items-center gap-6">
-      <!-- Headshot placeholder -->
-      <div class="w-24 h-24 sm:w-32 sm:h-32 bg-pul-light rounded-full flex items-center justify-center text-3xl font-bold text-pul-gray">
-        {playerNumber || '?'}
-      </div>
+      {hasHeadshot ? (
+        <img 
+          src={headshotPath} 
+          alt={playerName}
+          class="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover border-2 border-pul-border"
+        />
+      ) : (
+        <div class="w-24 h-24 sm:w-32 sm:h-32 bg-pul-light rounded-full flex items-center justify-center text-3xl font-bold text-pul-gray">
+          {playerNumber || '?'}
+        </div>
+      )}
       <div>
         <h1 class="text-3xl sm:text-4xl font-semibold">{playerName}</h1>
         {playerNumber && (

@@ -78,24 +78,27 @@ const topTeams = getTop3(teams, 'goals');
         </div>
         
         <div class="grid sm:grid-cols-3 gap-4">
-          <!-- Goals Leaders -->
+         <!-- Goals Leaders -->
           <div class="border border-pul-border rounded-lg overflow-hidden">
             <div class="bg-pul-light px-4 py-2 border-b border-pul-border">
               <h3 class="font-medium text-sm">🥏 Goals</h3>
             </div>
             <div class="divide-y divide-pul-border">
               {goalLeaders.map((player, i) => (
-                <div class="flex items-center justify-between px-4 py-2">
+                <a href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`} class="flex items-center justify-between px-4 py-2 hover:bg-pul-light transition-colors">
                   <div class="flex items-center gap-2">
                     <span class={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold ${
                       i === 0 ? 'bg-yellow-400 text-yellow-900' : 
                       i === 1 ? 'bg-gray-300 text-gray-700' : 
                       'bg-amber-600 text-amber-100'
                     }`}>{i + 1}</span>
-                    <span class="text-sm truncate">{player.player}</span>
+                    <div>
+                      <span class="text-sm">{player.player}</span>
+                      <div class="text-xs text-pul-gray">{player.team}</div>
+                    </div>
                   </div>
                   <span class="font-semibold tabular-nums">{player.goals}</span>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -107,17 +110,20 @@ const topTeams = getTop3(teams, 'goals');
             </div>
             <div class="divide-y divide-pul-border">
               {assistLeaders.map((player, i) => (
-                <div class="flex items-center justify-between px-4 py-2">
+                <a href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`} class="flex items-center justify-between px-4 py-2 hover:bg-pul-light transition-colors">
                   <div class="flex items-center gap-2">
                     <span class={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold ${
                       i === 0 ? 'bg-yellow-400 text-yellow-900' : 
                       i === 1 ? 'bg-gray-300 text-gray-700' : 
                       'bg-amber-600 text-amber-100'
                     }`}>{i + 1}</span>
-                    <span class="text-sm truncate">{player.player}</span>
+                    <div>
+                      <span class="text-sm">{player.player}</span>
+                      <div class="text-xs text-pul-gray">{player.team}</div>
+                    </div>
                   </div>
                   <span class="font-semibold tabular-nums">{player.assists}</span>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -129,21 +135,23 @@ const topTeams = getTop3(teams, 'goals');
             </div>
             <div class="divide-y divide-pul-border">
               {blockLeaders.map((player, i) => (
-                <div class="flex items-center justify-between px-4 py-2">
+                <a href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`} class="flex items-center justify-between px-4 py-2 hover:bg-pul-light transition-colors">
                   <div class="flex items-center gap-2">
                     <span class={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold ${
                       i === 0 ? 'bg-yellow-400 text-yellow-900' : 
                       i === 1 ? 'bg-gray-300 text-gray-700' : 
                       'bg-amber-600 text-amber-100'
                     }`}>{i + 1}</span>
-                    <span class="text-sm truncate">{player.player}</span>
+                    <div>
+                      <span class="text-sm">{player.player}</span>
+                      <div class="text-xs text-pul-gray">{player.team}</div>
+                    </div>
                   </div>
                   <span class="font-semibold tabular-nums">{player.blocks}</span>
-                </div>
+                </a>
               ))}
             </div>
           </div>
-        </div>
       </section>
     )}
 
