@@ -19,6 +19,7 @@ interface StatsTableProps<T extends Record<string, unknown>> {
   linkColumn?: string;
   linkPrefix?: string;
   showTeamColors?: boolean;
+  playerLinkColumn?: string;
 }
 
 export function StatsTable<T extends Record<string, unknown>>({
@@ -31,6 +32,7 @@ export function StatsTable<T extends Record<string, unknown>>({
   linkColumn,
   linkPrefix = "",
   showTeamColors = false,
+  playerLinkColumn,
 }: StatsTableProps<T>) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [globalFilter, setGlobalFilter] = useState('');
@@ -145,15 +147,18 @@ export function StatsTable<T extends Record<string, unknown>>({
   const renderCell = (cell: any) => {
     const colId = cell.column.columnDef.accessorKey || cell.column.id;
     const value = cell.getValue();
-
+    
     // Check if this is a team column that should show color
     const isTeamColumn = colId === 'team' && showTeamColors;
     const teamColor = isTeamColumn && value ? teamColors[String(value)] : null;
-
+    
+    // Check if this is a player column that should link
+    const isPlayerLink = playerLinkColumn && colId === playerLinkColumn && value;
+    
     const content = (
       <span className={isTeamColumn && teamColor ? "inline-flex items-center gap-2" : ""}>
         {teamColor && (
-          <span
+          <span 
             className="w-2.5 h-2.5 rounded-full flex-shrink-0"
             style={{ backgroundColor: teamColor }}
           />
@@ -161,7 +166,18 @@ export function StatsTable<T extends Record<string, unknown>>({
         {flexRender(cell.column.columnDef.cell, cell.getContext())}
       </span>
     );
-
+    
+    // Player link
+    if (isPlayerLink) {
+      const href = `/Stats-Hub/players/${encodeURIComponent(String(value))}`;
+      return (
+        <a href={href} className="text-pul-black hover:underline">
+          {content}
+        </a>
+      );
+    }
+    
+    // Team/other link
     if (linkColumn && colId === linkColumn && value) {
       const href = `${linkPrefix}${encodeURIComponent(String(value))}`;
       return (
@@ -170,7 +186,7 @@ export function StatsTable<T extends Record<string, unknown>>({
         </a>
       );
     }
-
+    
     return content;
   };
 
