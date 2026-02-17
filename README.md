@@ -92,10 +92,9 @@ Google Drive CSVs → Python scripts → JSON → Astro build → Static HTML
 │   └── 2025/
 │       ├── teams_season.json
 │       ├── players_season.json
-│       └── metadata.json
+│       └── _metadata.json
 │
 ├── processing/              # Python data pipeline
-│   ├── requirements.txt
 │   └── export_json.py
 │
 ├── src/
@@ -110,8 +109,6 @@ Google Drive CSVs → Python scripts → JSON → Astro build → Static HTML
 │   │   └── players.astro
 │   └── styles/
 │       └── global.css       # Tailwind + custom styles
-│
-├── stats/                   # Processed CSV stats (from R scripts)
 └── public/                  # Static assets
 ```
 
