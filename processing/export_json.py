@@ -9,7 +9,9 @@ from pathlib import Path
 from datetime import datetime
 
 REPO_ROOT = Path(__file__).parent.parent
-DATA_DIR = REPO_ROOT / "data"
+SOURCE_DIR = REPO_ROOT / "input_data"
+OUTPUT_DIR = REPO_ROOT / "data"
+
 
 TEAM_NAMES = {
     'ATL': 'Atlanta Soul',
@@ -31,7 +33,7 @@ TEAM_NAMES = {
 
 
 def ensure_output_dir(year: int) -> Path:
-    output_dir = DATA_DIR / str(year)
+    output_dir = OUTPUT_DIR / str(year)
     output_dir.mkdir(parents=True, exist_ok=True)
     return output_dir
 
@@ -226,21 +228,20 @@ def export_season(year: int, stats_dir: Path) -> None:
         "lastUpdated": datetime.now().isoformat(),
     }
     
-    with open(output_dir / "metadata.json", 'w') as f:
+    with open(output_dir / "_metadata.json", 'w') as f:
         json.dump(metadata, f, indent=2)
     
     print(f"Exported season {year} metadata")
 
 
 def main():
-    repo_root = REPO_ROOT
     
-    stats_2024 = repo_root / "stats"
+    stats_2024 = SOURCE_DIR / "2024"
     if stats_2024.exists() and (stats_2024 / "team-stats-overall.csv").exists():
         print("\nExporting 2024 season...")
         export_season(2024, stats_2024)
     
-    stats_2025 = repo_root / "2025" / "stats"
+    stats_2025 = SOURCE_DIR / "2025"
     if stats_2025.exists() and (stats_2025 / "team-stats-overall.csv").exists():
         print("\nExporting 2025 season...")
         export_season(2025, stats_2025)
