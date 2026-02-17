@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import {
   useReactTable,
   getCoreRowModel,
@@ -16,8 +16,8 @@ interface StatsTableProps<T extends Record<string, unknown>> {
   searchableColumns?: string[];
   filterColumn?: string;
   filterLabel?: string;
-  linkColumn?: string;    // Column to make clickable
-  linkPrefix?: string;    // URL prefix for links
+  linkColumn?: string;
+  linkPrefix?: string;
 }
 
 export function StatsTable<T extends Record<string, unknown>>({
@@ -33,6 +33,9 @@ export function StatsTable<T extends Record<string, unknown>>({
   const [sorting, setSorting] = useState<SortingState>([]);
   const [globalFilter, setGlobalFilter] = useState('');
   const [columnFilter, setColumnFilter] = useState<string>('all');
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [selectedSuggestionIndex, setSelectedSuggestionIndex] = useState(-1);
+  const searchRef = useRef<HTMLDivElement>(null);
 
   // Get unique values for the filter dropdown
   const filterOptions = useMemo(() => {
@@ -52,6 +55,32 @@ export function StatsTable<T extends Record<string, unknown>>({
     if (!filterColumn || columnFilter === 'all') return data;
     return data.filter(row => String(row[filterColumn]) === columnFilter);
   }, [data, filterColumn, columnFilter]);
+
+  // Generate search suggestions
+  const suggestions = useMemo(() => {
+    if (!globalFilter || globalFilter.length < 2) return [];
+
+    const search = globalFilter.toLowerCase();
+    const matches: string[] = [];
+
+    const columnsToSearch = searchableColumns.length > 0
+      ? searchableColumns
+      : columns.map(c => (c as { accessorKey?: string }).accessorKey).filter(Boolean) as string[];
+
+    filteredData.forEach(row => {
+      columnsToSearch.forEach(col => {
+        const value = row[col];
+        if (value != null) {
+          const strValue = String(value);
+          if (strValue.toLowerCase().includes(search) && !matches.includes(strValue)) {
+            matches.push(strValue);
+          }
+        }
+      });
+    });
+
+    return matches.slice(0, 8); // Limit to 8 suggestions
+  }, [globalFilter, filteredData, searchableColumns, columns]);
 
   // Track which columns are numeric (for alignment)
   const numericColumns = new Set<string>();
@@ -76,12 +105,12 @@ export function StatsTable<T extends Record<string, unknown>>({
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     globalFilterFn: (row, columnId, filterValue) => {
-      const columnsToSearch = searchableColumns.length > 0 
-        ? searchableColumns 
+      const columnsToSearch = searchableColumns.length > 0
+        ? searchableColumns
         : columns.map(c => (c as { accessorKey?: string }).accessorKey).filter(Boolean);
-      
+
       const search = String(filterValue).toLowerCase();
-      
+
       return columnsToSearch.some(col => {
         const value = row.getValue(col as string);
         if (value == null) return false;
@@ -98,7 +127,7 @@ export function StatsTable<T extends Record<string, unknown>>({
   const renderCell = (cell: any) => {
     const colId = cell.column.columnDef.accessorKey || cell.column.id;
     const value = cell.getValue();
-    
+
     if (linkColumn && colId === linkColumn && value) {
       const href = `${linkPrefix}${encodeURIComponent(String(value))}`;
       return (
@@ -107,23 +136,89 @@ export function StatsTable<T extends Record<string, unknown>>({
         </a>
       );
     }
-    
+
     return flexRender(cell.column.columnDef.cell, cell.getContext());
+  };
+
+  // Handle click outside to close suggestions
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setShowSuggestions(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Handle keyboard navigation
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (!showSuggestions || suggestions.length === 0) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setSelectedSuggestionIndex(prev =>
+        prev < suggestions.length - 1 ? prev + 1 : prev
+      );
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setSelectedSuggestionIndex(prev => prev > 0 ? prev - 1 : -1);
+    } else if (e.key === 'Enter' && selectedSuggestionIndex >= 0) {
+      e.preventDefault();
+      setGlobalFilter(suggestions[selectedSuggestionIndex]);
+      setShowSuggestions(false);
+      setSelectedSuggestionIndex(-1);
+    } else if (e.key === 'Escape') {
+      setShowSuggestions(false);
+      setSelectedSuggestionIndex(-1);
+    }
+  };
+
+  const selectSuggestion = (suggestion: string) => {
+    setGlobalFilter(suggestion);
+    setShowSuggestions(false);
+    setSelectedSuggestionIndex(-1);
   };
 
   return (
     <div className="space-y-4">
       {/* Filters Row */}
       <div className="flex flex-wrap items-center gap-4">
-        {/* Search Input */}
-        <input
-          type="text"
-          value={globalFilter}
-          onChange={(e) => setGlobalFilter(e.target.value)}
-          placeholder={searchPlaceholder}
-          className="search-input w-full max-w-xs"
-        />
-        
+        {/* Search Input with Suggestions */}
+        <div className="relative" ref={searchRef}>
+          <input
+            type="text"
+            value={globalFilter}
+            onChange={(e) => {
+              setGlobalFilter(e.target.value);
+              setShowSuggestions(true);
+              setSelectedSuggestionIndex(-1);
+            }}
+            onFocus={() => setShowSuggestions(true)}
+            onKeyDown={handleKeyDown}
+            placeholder={searchPlaceholder}
+            className="search-input w-full max-w-xs"
+          />
+
+          {/* Suggestions Dropdown */}
+          {showSuggestions && suggestions.length > 0 && (
+            <ul className="absolute z-10 w-full mt-1 bg-pul-white border border-pul-border rounded shadow-lg max-h-60 overflow-auto">
+              {suggestions.map((suggestion, index) => (
+                <li
+                  key={suggestion}
+                  onClick={() => selectSuggestion(suggestion)}
+                  className={`px-4 py-2 cursor-pointer text-sm ${index === selectedSuggestionIndex
+                      ? 'bg-pul-light text-pul-black'
+                      : 'hover:bg-pul-light'
+                    }`}
+                >
+                  {suggestion}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
         {/* Dropdown Filter */}
         {filterColumn && filterOptions.length > 0 && (
           <select
@@ -157,7 +252,7 @@ export function StatsTable<T extends Record<string, unknown>>({
                       key={header.id}
                       onClick={header.column.getToggleSortingHandler()}
                       data-sorted={header.column.getIsSorted() || undefined}
-                      style={{ 
+                      style={{
                         width: header.getSize(),
                         textAlign: isNumeric ? 'right' : 'left'
                       }}
@@ -165,9 +260,9 @@ export function StatsTable<T extends Record<string, unknown>>({
                       {header.isPlaceholder
                         ? null
                         : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
                     </th>
                   );
                 })}
