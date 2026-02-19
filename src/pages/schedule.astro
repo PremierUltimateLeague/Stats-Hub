@@ -1,0 +1,232 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Team logo mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
+// Load schedule
+let schedule: any[] = [];
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2026', 'schedule.json'), 'utf-8');
+  schedule = JSON.parse(data);
+} catch (e) {
+  console.error('Error loading schedule:', e);
+}
+
+// Determine current/next week based on today's date
+const today = new Date();
+const currentWeek = schedule.find(week => {
+  const weekDate = new Date(week.date);
+  const weekEnd = new Date(weekDate);
+  weekEnd.setDate(weekEnd.getDate() + 3);
+  return today >= weekDate && today <= weekEnd;
+}) || schedule.find(week => new Date(week.date) > today) || schedule[0];
+
+const currentWeekNum = currentWeek?.week || 1;
+---
+
+<Layout title="Schedule">
+  <div class="space-y-8">
+    <div>
+      <h1 class="text-3xl font-semibold">2026 Schedule</h1>
+      <p class="text-pul-gray mt-1">All games and results for the 2026 season</p>
+    </div>
+
+    <!-- Week Navigation -->
+    <div class="flex flex-wrap gap-2">
+      <button
+        data-week="all"
+        class="week-btn px-4 py-2 text-sm rounded-lg border transition-colors border-pul-border hover:border-pul-black"
+      >
+        All Weeks
+      </button>
+      {schedule.map(week => (
+        <button
+          data-week={week.week}
+          class={`week-btn px-4 py-2 text-sm rounded-lg border transition-colors ${
+            week.week === currentWeekNum
+              ? 'bg-pul-black text-white border-pul-black'
+              : 'border-pul-border hover:border-pul-black'
+          }`}
+        >
+          Week {week.week}
+        </button>
+      ))}
+    </div>
+
+    <!-- Week Content -->
+    {schedule.map(week => (
+      <div 
+        data-week-content={week.week} 
+        class={`space-y-4 ${week.week !== currentWeekNum ? 'hidden' : ''}`}
+      >
+        <div class="flex items-baseline justify-between">
+          <h2 class="text-xl font-semibold">Week {week.week}</h2>
+          <span class="text-sm text-pul-gray">{week.weekend}</span>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          {week.games.map((game: any) => {
+            const hasScore = game.awayScore !== null && game.homeScore !== null;
+            const awayWon = hasScore && game.awayScore > game.homeScore;
+            const homeWon = hasScore && game.homeScore > game.awayScore;
+            const awayLogo = teamLogos[game.away];
+            const homeLogo = teamLogos[game.home];
+            const hasDetails = game.gameDate || game.gameTime || game.location;
+            
+            return (
+              <div class="border border-pul-border rounded-lg overflow-hidden">
+                {/* Division badge */}
+                <div class={`px-4 py-1 border-b ${
+                  game.division === 'North' ? 'bg-blue-50 border-blue-100' :
+                  game.division === 'South' ? 'bg-orange-50 border-orange-100' :
+                  'bg-purple-50 border-purple-100'
+                }`}>
+                  <div class="flex justify-between items-center">
+                    <span class={`text-xs font-medium ${
+                      game.division === 'North' ? 'text-blue-700' :
+                      game.division === 'South' ? 'text-orange-700' :
+                      'text-purple-700'
+                    }`}>{game.division} Division</span>
+                    {game.gameDate && (
+                      <span class="text-xs text-pul-gray">{game.gameDate}</span>
+                    )}
+                  </div>
+                </div>
+                
+                <div class="p-4">
+                  {/* Game details if available */}
+                  {hasDetails && (
+                    <div class="mb-3 pb-3 border-b border-pul-border text-sm text-pul-gray">
+                      {game.gameTime && (
+                        <div class="flex items-center gap-1">
+                          <span>🕐</span>
+                          <span>{game.gameTime} EST</span>
+                        </div>
+                      )}
+                      {game.location && (
+                        <div class="flex items-center gap-1 mt-1">
+                          <span>📍</span>
+                          <span>{game.location}</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Away Team */}
+                  <div class={`flex items-center justify-between py-2 ${awayWon ? 'font-semibold' : ''}`}>
+                    <div class="flex items-center gap-3">
+                      {awayLogo && (
+                        <img 
+                          src={`/Stats-Hub/images/teams/${awayLogo}`} 
+                          alt={game.away}
+                          class="w-10 h-10 object-contain"
+                        />
+                      )}
+                      <a href={`/Stats-Hub/teams/${encodeURIComponent(game.away)}`} class="hover:underline">
+                        {game.away}
+                      </a>
+                    </div>
+                    <span class={`text-xl tabular-nums ${awayWon ? 'text-green-600' : ''}`}>
+                      {hasScore ? game.awayScore : '-'}
+                    </span>
+                  </div>
+
+                  {/* Divider */}
+                  <div class="border-t border-pul-border my-2"></div>
+
+                  {/* Home Team */}
+                  <div class={`flex items-center justify-between py-2 ${homeWon ? 'font-semibold' : ''}`}>
+                    <div class="flex items-center gap-3">
+                      {homeLogo && (
+                        <img 
+                          src={`/Stats-Hub/images/teams/${homeLogo}`} 
+                          alt={game.home}
+                          class="w-10 h-10 object-contain"
+                        />
+                      )}
+                      <a href={`/Stats-Hub/teams/${encodeURIComponent(game.home)}`} class="hover:underline">
+                        {game.home}
+                      </a>
+                    </div>
+                    <span class={`text-xl tabular-nums ${homeWon ? 'text-green-600' : ''}`}>
+                      {hasScore ? game.homeScore : '-'}
+                    </span>
+                  </div>
+
+                  {/* Game link if scores exist */}
+                  {hasScore && (
+                    <div class="mt-3 pt-3 border-t border-pul-border">
+                      <a 
+                        href={`/Stats-Hub/games/${game.awayAbbrev} @ ${game.homeAbbrev}`}
+                        class="text-sm text-pul-gray hover:text-pul-black transition-colors"
+                      >
+                        View game stats →
+                      </a>
+                    </div>
+                  )}
+
+                  {/* Upcoming badge if no scores */}
+                  {!hasScore && (
+                    <div class="mt-3 pt-3 border-t border-pul-border">
+                      <span class="text-sm text-pul-gray">Upcoming</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    ))}
+  </div>
+
+<script>
+    const weekBtns = document.querySelectorAll('.week-btn');
+    const weekContents = document.querySelectorAll('[data-week-content]');
+
+    weekBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const week = btn.getAttribute('data-week');
+        
+        // Update buttons
+        weekBtns.forEach(b => {
+          b.classList.remove('bg-pul-black', 'text-white', 'border-pul-black');
+          b.classList.add('border-pul-border');
+        });
+        btn.classList.add('bg-pul-black', 'text-white', 'border-pul-black');
+        btn.classList.remove('border-pul-border');
+
+        // Update content
+        if (week === 'all') {
+          // Show all weeks
+          weekContents.forEach(content => {
+            content.classList.remove('hidden');
+          });
+        } else {
+          // Show only selected week
+          weekContents.forEach(content => {
+            if (content.getAttribute('data-week-content') === week) {
+              content.classList.remove('hidden');
+            } else {
+              content.classList.add('hidden');
+            }
+          });
+        }
+      });
+    });
+  </script>
+</Layout>

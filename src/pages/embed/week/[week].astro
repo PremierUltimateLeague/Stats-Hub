@@ -1,0 +1,287 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Team logo mapping
+const teamLogos: Record<string, string> = {
+  'Atlanta Soul': 'atlanta.png',
+  'Austin Torch': 'austin.png',
+  'DC Shadow': 'dc.png',
+  'Indy Red': 'indy.png',
+  'Milwaukee Monarchs': 'milwaukee.png',
+  'Minnesota Strike': 'minnesota.png',
+  'Nashville NightShade': 'nashville.png',
+  'New York Gridlock': 'new-york.png',
+  'Philadelphia Surge': 'philadelphia.png',
+  'Raleigh Radiance': 'raleigh.png',
+};
+
+// Load schedule
+let schedule: any[] = [];
+try {
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2026', 'schedule.json'), 'utf-8');
+  schedule = JSON.parse(data);
+} catch (e) {}
+
+// Get current week from params
+const { week } = Astro.params;
+const weekNum = parseInt(week || '1');
+const weekData = schedule.find(w => w.week === weekNum);
+
+// Generate static paths
+export async function getStaticPaths() {
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  
+  let schedule: any[] = [];
+  try {
+    const data = fs.readFileSync(path.join(process.cwd(), 'data', '2026', 'schedule.json'), 'utf-8');
+    schedule = JSON.parse(data);
+  } catch (e) {}
+  
+  return schedule.map(week => ({
+    params: { week: week.week.toString() }
+  }));
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week {weekNum} - PUL Stats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: transparent;
+      color: #1C1C1C;
+      padding: 1rem;
+    }
+    .week-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .week-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .week-date {
+      color: #666;
+      font-size: 0.875rem;
+    }
+    .games-grid {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 640px) {
+      .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .game-card {
+      border: 1px solid #E5E5E5;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      background: white;
+    }
+    .division-badge {
+      padding: 0.25rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border-bottom: 1px solid;
+    }
+    .division-north {
+      background: #EFF6FF;
+      color: #1D4ED8;
+      border-color: #DBEAFE;
+    }
+    .division-south {
+      background: #FFF7ED;
+      color: #C2410C;
+      border-color: #FFEDD5;
+    }
+    .division-inter {
+      background: #FAF5FF;
+      color: #7C3AED;
+      border-color: #F3E8FF;
+    }
+    .game-content {
+      padding: 1rem;
+    }
+    .game-details {
+      font-size: 0.875rem;
+      color: #666;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    .game-details div {
+      margin-bottom: 0.25rem;
+    }
+    .team-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+    }
+    .team-info {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .team-logo {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: contain;
+    }
+    .team-name {
+      font-weight: 500;
+    }
+    .team-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .team-name a:hover {
+      text-decoration: underline;
+    }
+    .score {
+      font-size: 1.25rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+    .score.winner {
+      color: #16A34A;
+    }
+    .divider {
+      border-top: 1px solid #E5E5E5;
+      margin: 0.5rem 0;
+    }
+    .game-footer {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid #E5E5E5;
+      font-size: 0.875rem;
+      color: #666;
+    }
+    .game-footer a {
+      color: #666;
+      text-decoration: none;
+    }
+    .game-footer a:hover {
+      color: #1C1C1C;
+    }
+    .powered-by {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: #999;
+    }
+    .powered-by a {
+      color: #666;
+      text-decoration: none;
+    }
+    .powered-by a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  {weekData ? (
+    <div>
+      <div class="week-header">
+        <h1 class="week-title">Week {weekNum}</h1>
+        <p class="week-date">{weekData.weekend}</p>
+      </div>
+
+      <div class="games-grid">
+        {weekData.games.map((game: any) => {
+          const hasScore = game.awayScore !== null && game.homeScore !== null;
+          const awayWon = hasScore && game.awayScore > game.homeScore;
+          const homeWon = hasScore && game.homeScore > game.awayScore;
+          const awayLogo = teamLogos[game.away];
+          const homeLogo = teamLogos[game.home];
+          const hasDetails = game.gameDate || game.gameTime || game.location;
+          const divisionClass = game.division === 'North' ? 'division-north' : 
+                               game.division === 'South' ? 'division-south' : 'division-inter';
+          
+          return (
+            <div class="game-card">
+              <div class={`division-badge ${divisionClass}`}>
+                {game.division} Division
+                {game.gameDate && <span style="float: right;">{game.gameDate}</span>}
+              </div>
+              
+              <div class="game-content">
+                {hasDetails && (
+                  <div class="game-details">
+                    {game.gameTime && <div>🕐 {game.gameTime} EST</div>}
+                    {game.location && <div>📍 {game.location}</div>}
+                  </div>
+                )}
+
+                <div class={`team-row ${awayWon ? 'winner' : ''}`}>
+                  <div class="team-info">
+                    {awayLogo && (
+                      <img 
+                        src={`https://premierultimateleague.github.io/Stats-Hub/images/teams/${awayLogo}`}
+                        alt={game.away}
+                        class="team-logo"
+                      />
+                    )}
+                    <span class="team-name">{game.away}</span>
+                  </div>
+                  <span class={`score ${awayWon ? 'winner' : ''}`}>
+                    {hasScore ? game.awayScore : '-'}
+                  </span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class={`team-row ${homeWon ? 'winner' : ''}`}>
+                  <div class="team-info">
+                    {homeLogo && (
+                      <img 
+                        src={`https://premierultimateleague.github.io/Stats-Hub/images/teams/${homeLogo}`}
+                        alt={game.home}
+                        class="team-logo"
+                      />
+                    )}
+                    <span class="team-name">{game.home}</span>
+                  </div>
+                  <span class={`score ${homeWon ? 'winner' : ''}`}>
+                    {hasScore ? game.homeScore : '-'}
+                  </span>
+                </div>
+
+                <div class="game-footer">
+                  {hasScore ? (
+                    <a href={`https://premierultimateleague.github.io/Stats-Hub/games/${game.awayAbbrev}%20@%20${game.homeAbbrev}`} target="_blank">
+                      View game stats →
+                    </a>
+                  ) : (
+                    <span>Upcoming</span>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div class="powered-by">
+        Powered by <a href="https://premierultimateleague.github.io/Stats-Hub/" target="_blank">PUL Stats Hub</a>
+      </div>
+    </div>
+  ) : (
+    <p>Week not found</p>
+  )}
+</body>
+</html>

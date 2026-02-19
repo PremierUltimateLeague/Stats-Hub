@@ -2,7 +2,6 @@ import csv
 import json
 import re
 from pathlib import Path
-from datetime import datetime
 
 # Team abbreviation to full name mapping
 TEAM_NAMES = {
@@ -16,11 +15,33 @@ TEAM_NAMES = {
     'NYGL': 'New York Gridlock',
     'PHL': 'Philadelphia Surge',
     'RAL': 'Raleigh Radiance',
+    # Short names from details CSV
+    'Atlanta': 'Atlanta Soul',
+    'Austin': 'Austin Torch',
+    'Raleigh': 'Raleigh Radiance',
+    'Philadelphia': 'Philadelphia Surge',
+    'Nashville': 'Nashville NightShade',
+    'Indy': 'Indy Red',
+    'Milwaukee': 'Milwaukee Monarchs',
+    'Minnesota': 'Minnesota Strike',
+    'New York': 'New York Gridlock',
+}
+
+TEAM_ABBREVS = {
+    'Atlanta Soul': 'ATL',
+    'Austin Torch': 'ATX',
+    'DC Shadow': 'DC',
+    'Indy Red': 'INDY',
+    'Milwaukee Monarchs': 'MKE',
+    'Minnesota Strike': 'MINN',
+    'Nashville NightShade': 'NASH',
+    'New York Gridlock': 'NYGL',
+    'Philadelphia Surge': 'PHL',
+    'Raleigh Radiance': 'RAL',
 }
 
 def parse_weekend(weekend_str):
     """Parse weekend string like '4/3 - 4/5' into start date"""
-    # Extract the first date
     match = re.match(r'(\d+)/(\d+)', weekend_str.replace(' ', ''))
     if match:
         month, day = int(match.group(1)), int(match.group(2))
@@ -37,8 +58,45 @@ def get_week_number(weekend_str):
             return i
     return None
 
-def export_schedule(csv_path, json_path):
+def load_game_details(details_path):
+    """Load detailed game info (date, time, location) from CSV"""
+    details = {}
+    
+    if not Path(details_path).exists():
+        return details
+    
+    with open(details_path, 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            week = row.get('Week', '').strip()
+            away = row.get('Away Team', '').strip()
+            home = row.get('Home Team', '').strip()
+            
+            if not week or not away or not home:
+                continue
+            
+            # Normalize team names
+            away_full = TEAM_NAMES.get(away, away)
+            home_full = TEAM_NAMES.get(home, home)
+            
+            # Create a key for matching
+            key = f"{week}-{away_full}-{home_full}"
+            
+            details[key] = {
+                'date': row.get('Game Date', '').strip() or None,
+                'time': row.get('Time (all EST)', '').strip() or None,
+                'location': row.get('Location', '').strip() or None,
+            }
+    
+    return details
+
+def export_schedule(csv_path, json_path, details_path=None):
     """Convert schedule CSV to JSON format"""
+    
+    # Load details if available
+    details = {}
+    if details_path:
+        details = load_game_details(details_path)
     
     games_by_week = {}
     
@@ -66,13 +124,23 @@ def export_schedule(csv_path, json_path):
                     'games': []
                 }
             
+            away_full = TEAM_NAMES.get(away_abbrev, away_abbrev)
+            home_full = TEAM_NAMES.get(home_abbrev, home_abbrev)
+            
+            # Look up details
+            detail_key = f"{week_num}-{away_full}-{home_full}"
+            game_details = details.get(detail_key, {})
+            
             game = {
-                'away': TEAM_NAMES.get(away_abbrev, away_abbrev),
+                'away': away_full,
                 'awayAbbrev': away_abbrev,
-                'home': TEAM_NAMES.get(home_abbrev, home_abbrev),
+                'home': home_full,
                 'homeAbbrev': home_abbrev,
                 'division': division,
-                'awayScore': None,  # To be filled in when game is played
+                'gameDate': game_details.get('date'),
+                'gameTime': game_details.get('time'),
+                'location': game_details.get('location'),
+                'awayScore': None,
                 'homeScore': None,
             }
             
@@ -86,7 +154,19 @@ def export_schedule(csv_path, json_path):
         json.dump(schedule, f, indent=2)
     
     print(f"Exported {sum(len(w['games']) for w in schedule)} games across {len(schedule)} weeks")
+    
+    # Count games with details
+    games_with_details = sum(
+        1 for w in schedule for g in w['games'] 
+        if g.get('gameDate') or g.get('gameTime')
+    )
+    print(f"Games with date/time details: {games_with_details}")
+    
     return schedule
 
 if __name__ == '__main__':
-    export_schedule('data/2026/schedule.csv', 'data/2026/schedule.json')
+    export_schedule(
+        'data/2026/schedule.csv',
+        'data/2026/schedule.json',
+        'data/2026/schedule_details.csv'
+    )

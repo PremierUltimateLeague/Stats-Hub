@@ -303,7 +303,7 @@ for (const seasonKey of [...seasons, 'career']) {
     const leadersTitle = document.getElementById('leaders-title');
     const toast = document.getElementById('toast');
     
-seasonSelect?.addEventListener('change', () => {
+    seasonSelect?.addEventListener('change', () => {
       const selected = seasonSelect.value;
       
       if (leadersTitle && leadersTitle.parentElement) {
@@ -319,15 +319,6 @@ seasonSelect?.addEventListener('change', () => {
           });
         }
       }
-      
-      seasonDivs.forEach(div => {
-        if (div.getAttribute('data-season') === selected) {
-          div.classList.remove('hidden');
-        } else {
-          div.classList.add('hidden');
-        }
-      });
-    });
       
       seasonDivs.forEach(div => {
         if (div.getAttribute('data-season') === selected) {
@@ -354,7 +345,7 @@ seasonSelect?.addEventListener('change', () => {
         if (navigator.share) {
           try {
             await navigator.share({
-              title: title,
+              title: title || 'PUL Leaders',
               url: url
             });
             return;
@@ -394,7 +385,7 @@ seasonSelect?.addEventListener('change', () => {
     // Handle hash on page load (scroll to category)
     if (window.location.hash) {
       const hash = window.location.hash.slice(1);
-      const [season, category] = hash.split('-');
+      const [season] = hash.split('-');
       
       // Switch to correct season
       if (season && seasonSelect) {
