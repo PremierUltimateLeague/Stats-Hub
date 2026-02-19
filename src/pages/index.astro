@@ -23,17 +23,61 @@ try {
   teams = [];
 }
 
-// Get top 3 for key stats
-const getTop3 = (data: any[], stat: string) => {
-  return [...data].sort((a, b) => (b[stat] || 0) - (a[stat] || 0)).slice(0, 3);
+// Get leaders for homepage - ensure all boxes match height
+const getHomeLeaders = (data: any[], stat: string) => {
+  const sorted = [...data].sort((a, b) => (b[stat] || 0) - (a[stat] || 0));
+  const result: any[] = [];
+  
+  for (let i = 0; i < sorted.length && result.length < 3; i++) {
+    const value = sorted[i][stat] || 0;
+    if (i > 0 && value === (sorted[i - 1][stat] || 0)) {
+      result.push({ ...sorted[i], rank: result[result.length - 1].rank });
+    } else {
+      result.push({ ...sorted[i], rank: i + 1 });
+    }
+  }
+  // Include ties at cutoff
+  const lastValue = result.length > 0 ? result[result.length - 1][stat] : -1;
+  for (let i = result.length; i < sorted.length; i++) {
+    if ((sorted[i][stat] || 0) === lastValue) {
+      result.push({ ...sorted[i], rank: result[result.length - 1].rank });
+    } else {
+      break;
+    }
+  }
+  return result;
 };
 
-const goalLeaders = getTop3(players, 'goals');
-const assistLeaders = getTop3(players, 'assists');
-const blockLeaders = getTop3(players, 'blocks');
+const goalLeaders = getHomeLeaders(players, 'goals');
+const assistLeaders = getHomeLeaders(players, 'assists');
+const blockLeaders = getHomeLeaders(players, 'blocks');
 
-// Top teams by goals
-const topTeams = getTop3(teams, 'goals');
+// Find the max count across all three categories
+const maxLeaderCount = Math.max(goalLeaders.length, assistLeaders.length, blockLeaders.length);
+
+// Pad shorter lists to match
+const padLeaders = (leaders: any[], stat: string) => {
+  const sorted = [...players].sort((a, b) => (b[stat] || 0) - (a[stat] || 0));
+  const result = [...leaders];
+  let nextIndex = result.length;
+  
+  while (result.length < maxLeaderCount && nextIndex < sorted.length) {
+    const value = sorted[nextIndex][stat] || 0;
+    const prevValue = sorted[nextIndex - 1]?.[stat] || 0;
+    if (value === prevValue) {
+      result.push({ ...sorted[nextIndex], rank: result[result.length - 1].rank });
+    } else {
+      result.push({ ...sorted[nextIndex], rank: nextIndex + 1 });
+    }
+    nextIndex++;
+  }
+  return result;
+};
+
+const paddedGoalLeaders = padLeaders(goalLeaders, 'goals');
+const paddedAssistLeaders = padLeaders(assistLeaders, 'assists');
+const paddedBlockLeaders = padLeaders(blockLeaders, 'blocks');
+const topTeams = getHomeLeaders(teams, 'goals');
 ---
 
 <Layout title="Home">
@@ -71,7 +115,7 @@ const topTeams = getTop3(teams, 'goals');
     {players.length > 0 && (
       <section>
         <div class="flex items-baseline justify-between mb-4 animate-fade-in-delay-2">
-          <h2 class="text-xl font-semibold">Season Leaders</h2>
+          <a href="/Stats-Hub/leaders" class="text-xl font-semibold hover:underline">Season Leaders</a>
           <a href="/Stats-Hub/leaders" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
             View all →
           </a>
@@ -84,14 +128,15 @@ const topTeams = getTop3(teams, 'goals');
               <h3 class="font-medium text-sm">🥏 Goals</h3>
             </div>
             <div class="divide-y divide-pul-border">
-              {goalLeaders.map((player, i) => (
+              {paddedGoalLeaders.map((player) => (
                 <a href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`} class="flex items-center justify-between px-4 py-2 hover:bg-pul-light transition-colors">
                   <div class="flex items-center gap-2">
                     <span class={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold ${
-                      i === 0 ? 'bg-yellow-400 text-yellow-900' : 
-                      i === 1 ? 'bg-gray-300 text-gray-700' : 
-                      'bg-amber-600 text-amber-100'
-                    }`}>{i + 1}</span>
+                      player.rank === 1 ? 'bg-yellow-400 text-yellow-900' : 
+                      player.rank === 2 ? 'bg-gray-300 text-gray-700' : 
+                      player.rank === 3 ? 'bg-amber-600 text-amber-100' :
+                      'bg-pul-light text-pul-gray'
+                    }`}>{player.rank}</span>
                     <div>
                       <span class="text-sm">{player.player}</span>
                       <div class="text-xs text-pul-gray">{player.team}</div>
@@ -109,14 +154,15 @@ const topTeams = getTop3(teams, 'goals');
               <h3 class="font-medium text-sm">🎯 Assists</h3>
             </div>
             <div class="divide-y divide-pul-border">
-              {assistLeaders.map((player, i) => (
+              {paddedAssistLeaders.map((player) => (
                 <a href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`} class="flex items-center justify-between px-4 py-2 hover:bg-pul-light transition-colors">
                   <div class="flex items-center gap-2">
                     <span class={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold ${
-                      i === 0 ? 'bg-yellow-400 text-yellow-900' : 
-                      i === 1 ? 'bg-gray-300 text-gray-700' : 
-                      'bg-amber-600 text-amber-100'
-                    }`}>{i + 1}</span>
+                      player.rank === 1 ? 'bg-yellow-400 text-yellow-900' : 
+                      player.rank === 2 ? 'bg-gray-300 text-gray-700' : 
+                      player.rank === 3 ? 'bg-amber-600 text-amber-100' :
+                      'bg-pul-light text-pul-gray'
+                    }`}>{player.rank}</span>
                     <div>
                       <span class="text-sm">{player.player}</span>
                       <div class="text-xs text-pul-gray">{player.team}</div>
@@ -134,14 +180,15 @@ const topTeams = getTop3(teams, 'goals');
               <h3 class="font-medium text-sm">🛡️ Blocks</h3>
             </div>
             <div class="divide-y divide-pul-border">
-              {blockLeaders.map((player, i) => (
+              {paddedBlockLeaders.map((player) => (
                 <a href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`} class="flex items-center justify-between px-4 py-2 hover:bg-pul-light transition-colors">
                   <div class="flex items-center gap-2">
                     <span class={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold ${
-                      i === 0 ? 'bg-yellow-400 text-yellow-900' : 
-                      i === 1 ? 'bg-gray-300 text-gray-700' : 
-                      'bg-amber-600 text-amber-100'
-                    }`}>{i + 1}</span>
+                      player.rank === 1 ? 'bg-yellow-400 text-yellow-900' : 
+                      player.rank === 2 ? 'bg-gray-300 text-gray-700' : 
+                      player.rank === 3 ? 'bg-amber-600 text-amber-100' :
+                      'bg-pul-light text-pul-gray'
+                    }`}>{player.rank}</span>
                     <div>
                       <span class="text-sm">{player.player}</span>
                       <div class="text-xs text-pul-gray">{player.team}</div>

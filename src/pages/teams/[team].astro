@@ -141,7 +141,7 @@ const playerColumns = [
             class="w-20 h-20 sm:w-24 sm:h-24 object-contain bg-white rounded-full p-2 shadow-lg"
           />
         )}
-        <div class="text-white">
+        <div class="text-white flex-1">
           <h1 class="text-3xl sm:text-4xl font-bold drop-shadow-md">{decodedTeam}</h1>
           <p id="team-subtitle" class="text-white/80 mt-1 drop-shadow">
             {standingsBySeason['2025'] 
@@ -150,14 +150,12 @@ const playerColumns = [
             }
           </p>
         </div>
+        <select id="season-select" class="search-input text-sm bg-white/90 text-pul-black border-white/50 rounded-lg px-3 py-2">
+          {seasons.map(season => (
+            <option value={season}>{season} Season</option>
+          ))}
+        </select>
       </div>
-    </div>
-      
-      <select id="season-select" class="search-input text-sm">
-        {seasons.map(season => (
-          <option value={season}>{season} Season</option>
-        ))}
-      </select>
     </div>
 
     {seasons.map(season => {

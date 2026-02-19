@@ -36,7 +36,12 @@ export function StatsTable<T extends Record<string, unknown>>({
   playerLinkColumn,
   gameLinkColumn,
 }: StatsTableProps<T>) {
-  const [sorting, setSorting] = useState<SortingState>([]);
+  const [sorting, setSorting] = useState<SortingState>(() => {
+    const hasWeekColumn = columns.some(
+      (col) => (col as any).accessorKey === 'week'
+    );
+    return hasWeekColumn ? [{ id: 'week', desc: false }] : [];
+  });
   const [globalFilter, setGlobalFilter] = useState('');
   const [columnFilter, setColumnFilter] = useState<string>('all');
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -101,9 +106,27 @@ export function StatsTable<T extends Record<string, unknown>>({
     });
   }
 
+  // Add custom sorting for columns with week-like values
+  const enhancedColumns = useMemo(() => {
+    return columns.map(col => {
+      const accessorKey = (col as any).accessorKey;
+      if (accessorKey === 'week') {
+        return {
+          ...col,
+          sortingFn: (rowA: any, rowB: any) => {
+            const a = parseInt(rowA.original.week?.replace(/\D/g, '') || '0');
+            const b = parseInt(rowB.original.week?.replace(/\D/g, '') || '0');
+            return a - b;
+          },
+        };
+      }
+      return col;
+    });
+  }, [columns]);
+
   const table = useReactTable({
     data: filteredData,
-    columns,
+    columns: enhancedColumns,
     state: {
       sorting,
       globalFilter,

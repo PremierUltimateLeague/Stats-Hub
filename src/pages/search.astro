@@ -215,8 +215,9 @@ try {
                   <div class="text-sm text-pul-gray">${player.team}</div>
                 </div>
               </div>
-              <div class="text-sm text-pul-gray">
-                ${player.goals}G ${player.assists}A ${player.blocks}D
+              <div class="text-sm text-pul-gray text-right">
+                <div>${player.goals}G, ${player.assists}A, ${player.blocks}D</div>
+                <div class="text-xs">${player.season}</div>
               </div>
             </a>
           `;
@@ -234,6 +235,61 @@ try {
         search(e.target.value);
       }, 150);
     });
+    
+    // Keyboard navigation
+    let highlightedIndex = -1;
+    
+    function getVisibleLinks() {
+      const links = [];
+      if (!teamResults?.classList.contains('hidden')) {
+        links.push(...teamList.querySelectorAll('a'));
+      }
+      if (!playerResults?.classList.contains('hidden')) {
+        links.push(...playerList.querySelectorAll('a'));
+      }
+      return links;
+    }
+
+    function updateSearchHighlight() {
+      const links = getVisibleLinks();
+      links.forEach((link, i) => {
+        if (i === highlightedIndex) {
+          link.classList.add('border-pul-black', 'bg-pul-light');
+          link.scrollIntoView({ block: 'nearest' });
+        } else {
+          link.classList.remove('border-pul-black', 'bg-pul-light');
+        }
+      });
+    }
+
+    searchInput?.addEventListener('keydown', (e) => {
+      const links = getVisibleLinks();
+      if (!links.length) return;
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        highlightedIndex = Math.min(highlightedIndex + 1, links.length - 1);
+        updateSearchHighlight();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        highlightedIndex = Math.max(highlightedIndex - 1, -1);
+        updateSearchHighlight();
+      } else if (e.key === 'Enter' && highlightedIndex >= 0) {
+        e.preventDefault();
+        links[highlightedIndex].click();
+      } else if (e.key === 'Escape') {
+        highlightedIndex = -1;
+        updateSearchHighlight();
+        searchInput.blur();
+      }
+    });
+
+    // Reset highlight when search changes
+    const originalSearch = search;
+    search = function(query) {
+      highlightedIndex = -1;
+      originalSearch(query);
+    };
 
     // Search on load if there's a query param
     const urlParams = new URLSearchParams(window.location.search);

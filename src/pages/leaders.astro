@@ -23,11 +23,81 @@ try {
   playersBySeason['2024'] = [];
 }
 
-// Helper to get top N players by a stat
-const getLeaders = (players: any[], stat: string, n: number = 5) => {
-  return [...players]
-    .sort((a, b) => (b[stat] || 0) - (a[stat] || 0))
-    .slice(0, n);
+// Aggregate career totals
+const careerPlayers: Map<string, any> = new Map();
+
+for (const season of seasons) {
+  (playersBySeason[season] || []).forEach((player: any) => {
+    if (!player.player || typeof player.player !== 'string') return;
+    const key = player.player.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    
+    if (careerPlayers.has(key)) {
+      const existing = careerPlayers.get(key);
+      existing.goals += player.goals || 0;
+      existing.assists += player.assists || 0;
+      existing.blocks += player.blocks || 0;
+      existing.turnovers += player.turnovers || 0;
+      existing.touches += player.touches || 0;
+    } else {
+      careerPlayers.set(key, {
+        player: player.player,
+        team: player.team + ' (+ more)',
+        goals: player.goals || 0,
+        assists: player.assists || 0,
+        blocks: player.blocks || 0,
+        turnovers: player.turnovers || 0,
+        touches: player.touches || 0,
+      });
+    }
+  });
+}
+
+// For single-season players, clean up the team name
+careerPlayers.forEach((player, key) => {
+  let seasonCount = 0;
+  for (const season of seasons) {
+    if ((playersBySeason[season] || []).some((p: any) => 
+      p.player && typeof p.player === 'string' && p.player.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === key
+    )) {
+      seasonCount++;
+    }
+  }
+  if (seasonCount === 1) {
+    player.team = player.team.replace(' (+ more)', '');
+  }
+});
+
+playersBySeason['career'] = Array.from(careerPlayers.values());
+
+// Helper to get top N players by a stat with tied rankings
+const getLeadersWithRanks = (players: any[], stat: string, n: number = 5) => {
+  const sorted = [...players]
+    .sort((a, b) => (b[stat] || 0) - (a[stat] || 0));
+  
+  const result: any[] = [];
+  let rank = 1;
+  
+  for (let i = 0; i < sorted.length && result.length < n; i++) {
+    const value = sorted[i][stat] || 0;
+    // If same value as previous, same rank
+    if (i > 0 && value === (sorted[i - 1][stat] || 0)) {
+      result.push({ ...sorted[i], rank: result[result.length - 1].rank });
+    } else {
+      result.push({ ...sorted[i], rank: i + 1 });
+    }
+  }
+  
+  // If the last included player is tied with the next one, include those too
+  const lastValue = result.length > 0 ? result[result.length - 1][stat] : -1;
+  for (let i = result.length; i < sorted.length; i++) {
+    if ((sorted[i][stat] || 0) === lastValue) {
+      result.push({ ...sorted[i], rank: result[result.length - 1].rank });
+    } else {
+      break;
+    }
+  }
+  
+  return result;
 };
 
 // Define leader categories
@@ -37,6 +107,49 @@ const categories = [
   { key: 'blocks', title: 'Blocks', icon: '🛡️' },
   { key: 'touches', title: 'Touches', icon: '✋' },
 ];
+
+// Pre-compute leaders for all seasons with matched heights
+const leadersBySeason: Record<string, Record<string, any[]>> = {};
+
+for (const seasonKey of [...seasons, 'career']) {
+  const seasonPlayers = playersBySeason[seasonKey] || [];
+  if (seasonPlayers.length === 0) {
+    leadersBySeason[seasonKey] = {};
+    continue;
+  }
+  
+  // Get raw leaders per category
+  const rawLeaders: Record<string, any[]> = {};
+  categories.forEach(cat => {
+    rawLeaders[cat.key] = getLeadersWithRanks(seasonPlayers, cat.key);
+  });
+  
+  // Find max count across categories
+  const maxCount = Math.max(...Object.values(rawLeaders).map(l => l.length));
+  
+  // Pad shorter lists
+  const padded: Record<string, any[]> = {};
+  categories.forEach(cat => {
+    const leaders = rawLeaders[cat.key];
+    const sorted = [...seasonPlayers].sort((a, b) => (b[cat.key] || 0) - (a[cat.key] || 0));
+    const result = [...leaders];
+    let nextIndex = result.length;
+    
+    while (result.length < maxCount && nextIndex < sorted.length) {
+      const value = sorted[nextIndex][cat.key] || 0;
+      const prevValue = sorted[nextIndex - 1]?.[cat.key] || 0;
+      if (value === prevValue) {
+        result.push({ ...sorted[nextIndex], rank: result[result.length - 1].rank });
+      } else {
+        result.push({ ...sorted[nextIndex], rank: nextIndex + 1 });
+      }
+      nextIndex++;
+    }
+    padded[cat.key] = result;
+  });
+  
+  leadersBySeason[seasonKey] = padded;
+}
 ---
 
 <Layout title="Season Leaders">
@@ -50,6 +163,7 @@ const categories = [
         {seasons.map(season => (
           <option value={season}>{season} Season</option>
         ))}
+        <option value="career">Career Totals</option>  
       </select>
     </div>
 
@@ -58,7 +172,7 @@ const categories = [
         {playersBySeason[season].length > 0 ? (
           <div class="grid md:grid-cols-2 gap-6">
             {categories.map(cat => {
-              const leaders = getLeaders(playersBySeason[season], cat.key);
+              const leaders = leadersBySeason[season]?.[cat.key] || [];
               return (
                 <div class="border border-pul-border rounded-lg overflow-hidden" id={`${season}-${cat.key}`}>
                   <div class="bg-pul-light px-4 py-3 border-b border-pul-border flex items-center justify-between">
@@ -81,19 +195,19 @@ const categories = [
                     </button>
                   </div>
                   <div class="divide-y divide-pul-border">
-                    {leaders.map((player, index) => (
+                    {leaders.map((player) => (
                       <a 
                         href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`}
                         class="flex items-center justify-between px-4 py-3 hover:bg-pul-light transition-colors"
                       >
                         <div class="flex items-center gap-3">
                           <span class={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold ${
-                            index === 0 ? 'bg-yellow-400 text-yellow-900' : 
-                            index === 1 ? 'bg-gray-300 text-gray-700' : 
-                            index === 2 ? 'bg-amber-600 text-amber-100' : 
+                            player.rank === 1 ? 'bg-yellow-400 text-yellow-900' : 
+                            player.rank === 2 ? 'bg-gray-300 text-gray-700' : 
+                            player.rank === 3 ? 'bg-amber-600 text-amber-100' : 
                             'bg-pul-light text-pul-gray'
                           }`}>
-                            {index + 1}
+                            {player.rank}
                           </span>
                           <div>
                             <div class="font-medium">{player.player}</div>
@@ -116,6 +230,67 @@ const categories = [
       </div>
     ))}
 
+    <div data-season="career" class="hidden">
+        {playersBySeason['career'].length > 0 ? (
+          <div class="grid md:grid-cols-2 gap-6">
+            {categories.map(cat => {
+              const leaders = leadersBySeason['career']?.[cat.key] || [];
+              return (
+                <div class="border border-pul-border rounded-lg overflow-hidden" id={`career-${cat.key}`}>
+                <div class="bg-pul-light px-4 py-3 border-b border-pul-border flex items-center justify-between">
+                    <h2 class="font-semibold flex items-center gap-2">
+                      <span>{cat.icon}</span>
+                      <span>{cat.title}</span>
+                    </h2>
+                    <button 
+                      class="share-btn text-pul-gray hover:text-pul-black transition-colors p-1 rounded hover:bg-white"
+                      data-category={cat.key}
+                      data-season="career"
+                      data-title={`PUL Career ${cat.title} Leaders`}
+                      title="Share this leaderboard"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                        <polyline points="16 6 12 2 8 6"/>
+                        <line x1="12" y1="2" x2="12" y2="15"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="divide-y divide-pul-border">
+                    {leaders.map((player) => (
+                      <a 
+                        href={`/Stats-Hub/players/${encodeURIComponent(player.player)}`}
+                        class="flex items-center justify-between px-4 py-3 hover:bg-pul-light transition-colors"
+                      >
+                        <div class="flex items-center gap-3">
+                          <span class={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold ${
+                            player.rank === 1 ? 'bg-yellow-400 text-yellow-900' : 
+                            player.rank === 2 ? 'bg-gray-300 text-gray-700' : 
+                            player.rank === 3 ? 'bg-amber-600 text-amber-100' : 
+                            'bg-pul-light text-pul-gray'
+                          }`}>
+                            {player.rank}
+                          </span>
+                          <div>
+                            <div class="font-medium">{player.player}</div>
+                            <div class="text-sm text-pul-gray">{player.team}</div>
+                          </div>
+                        </div>
+                        <div class="text-xl font-semibold tabular-nums">
+                          {player[cat.key]}
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <p class="text-pul-gray py-8">No career data available.</p>
+        )}
+      </div>
+
     <!-- Toast notification -->
     <div id="toast" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-pul-black text-white px-4 py-2 rounded-lg shadow-lg opacity-0 transition-opacity duration-300 pointer-events-none">
       Link copied to clipboard!
@@ -128,13 +303,31 @@ const categories = [
     const leadersTitle = document.getElementById('leaders-title');
     const toast = document.getElementById('toast');
     
-    seasonSelect?.addEventListener('change', () => {
+seasonSelect?.addEventListener('change', () => {
       const selected = seasonSelect.value;
       
-      // Update title
-      if (leadersTitle) {
-        leadersTitle.textContent = selected;
+      if (leadersTitle && leadersTitle.parentElement) {
+        if (selected === 'career') {
+          leadersTitle.textContent = 'Career';
+          leadersTitle.parentElement.childNodes.forEach(node => {
+            if (node.nodeType === 3) node.textContent = ' Leaders';
+          });
+        } else {
+          leadersTitle.textContent = selected;
+          leadersTitle.parentElement.childNodes.forEach(node => {
+            if (node.nodeType === 3) node.textContent = ' Season Leaders';
+          });
+        }
       }
+      
+      seasonDivs.forEach(div => {
+        if (div.getAttribute('data-season') === selected) {
+          div.classList.remove('hidden');
+        } else {
+          div.classList.add('hidden');
+        }
+      });
+    });
       
       seasonDivs.forEach(div => {
         if (div.getAttribute('data-season') === selected) {

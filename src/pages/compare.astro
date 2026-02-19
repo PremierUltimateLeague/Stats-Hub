@@ -27,6 +27,21 @@ const teamLogos: Record<string, string> = {
 // Aggregate career stats
 const allPlayers: Map<string, any> = new Map();
 
+// Also store per-season data
+const playersBySeason: Record<string, any[]> = {};
+
+for (const season of seasons) {
+  try {
+    const dataPath = path.join(process.cwd(), 'data', season, 'players_season.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const players = JSON.parse(rawData)
+      .filter((p: any) => p.player && typeof p.player === 'string');
+    playersBySeason[season] = players;
+  } catch (e) {
+    playersBySeason[season] = [];
+  }
+}
+
 for (const season of seasons) {
   try {
     const dataPath = path.join(process.cwd(), 'data', season, 'players_season.json');
@@ -70,9 +85,16 @@ const playerList = Array.from(allPlayers.values())
 
 <Layout title="Compare Players">
   <div class="space-y-6">
-    <div>
-      <h1 class="text-3xl font-semibold">Compare Players</h1>
-      <p class="text-pul-gray mt-1">Select 2-3 players to compare their stats side-by-side</p>
+   <div class="flex items-baseline justify-between flex-wrap gap-4">
+      <div>
+        <h1 class="text-3xl font-semibold">Compare Players</h1>
+        <p class="text-pul-gray mt-1">Select 2-3 players to compare their stats side-by-side</p>
+      </div>
+      <select id="compare-season" class="search-input text-sm">
+        <option value="career">Career Totals</option>
+        <option value="2025">2025 Season</option>
+        <option value="2024">2024 Season</option>
+      </select>
     </div>
 
     <!-- Player Selection -->
@@ -139,8 +161,8 @@ const playerList = Array.from(allPlayers.values())
 
     <!-- Comparison Results -->
     <div id="comparison" class="hidden">
-      <p class="text-sm text-pul-gray mb-3">Comparing career totals across all seasons</p>
-      <div class="border border-pul-border rounded-lg overflow-hidden">
+      <p id="compare-subtitle" class="text-sm text-pul-gray mb-3">Comparing career totals across all seasons</p>
+        <div class="border border-pul-border rounded-lg overflow-hidden">
         <div id="player-headers" class="grid border-b border-pul-border bg-pul-light"></div>
         <div id="stats-rows" class="divide-y divide-pul-border"></div>
       </div>
@@ -170,7 +192,7 @@ const playerList = Array.from(allPlayers.values())
   </div>
   </div>
 
-<script define:vars={{ playerList, teamLogos }}>
+<script define:vars={{ playerList, teamLogos, playersBySeason }}>
     const inputs = [
       document.getElementById('player1'),
       document.getElementById('player2'),
@@ -191,6 +213,45 @@ const playerList = Array.from(allPlayers.values())
 
     // Track selected players
     const selectedPlayers = [null, null, null];
+
+    let currentSeason = 'career';
+    const compareSeasonSelect = document.getElementById('compare-season');
+    
+    compareSeasonSelect?.addEventListener('change', (e) => {
+      currentSeason = e.target.value;
+      // Re-resolve selected players with new season data
+      selectedPlayers.forEach((player, index) => {
+        if (player) {
+          const resolved = getPlayerForSeason(player.player);
+          if (resolved) {
+            selectedPlayers[index] = resolved;
+          }
+        }
+      });
+      updateComparison();
+      updateURL();
+      // Re-render any visible dropdowns
+      dropdowns.forEach((dropdown, i) => {
+        if (!dropdown.classList.contains('hidden')) {
+          renderDropdown(i, inputs[i].value);
+        }
+      });
+    });
+    
+    function getPlayerForSeason(playerName) {
+      if (currentSeason === 'career') {
+        return playerList.find(p => p.player === playerName) || null;
+      }
+      const seasonPlayers = playersBySeason[currentSeason] || [];
+      const found = seasonPlayers.find(p => p.player === playerName);
+      if (found) return found;
+      // Return a shell object so the player stays selected but shows no stats
+      const careerPlayer = playerList.find(p => p.player === playerName);
+      if (careerPlayer) {
+        return { player: careerPlayer.player, team: careerPlayer.team, _noData: true };
+      }
+      return null;
+    }
 
     // Clear button handlers
     const clearBtns = document.querySelectorAll('.clear-btn');
@@ -231,9 +292,19 @@ const playerList = Array.from(allPlayers.values())
       return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     }
 
+    function getPlayerListForSeason() { 
+      if (currentSeason === 'career') return playerList;
+      const seasonPlayers = playersBySeason[currentSeason] || [];
+      if (seasonPlayers.length === 0) return playerList;
+      return seasonPlayers
+        .filter(p => p.player && typeof p.player === 'string')
+        .sort((a, b) => a.player.localeCompare(b.player));
+    }
+
     function renderDropdown(index, filter = '') {
       const dropdown = dropdowns[index];
       const q = normalizeString(filter);
+      const currentList = getPlayerListForSeason();
       
       // Get already selected player names (excluding current index)
       const selectedNames = selectedPlayers
@@ -241,8 +312,8 @@ const playerList = Array.from(allPlayers.values())
         .map(p => p.player);
       
       const filtered = (q 
-        ? playerList.filter(p => normalizeString(getPlayerDisplay(p).full).includes(q))
-        : playerList
+        ? currentList.filter(p => normalizeString(getPlayerDisplay(p).full).includes(q))
+        : currentList
       ).filter(p => !selectedNames.includes(p.player));
       
       const limited = filtered.slice(0, 50);
@@ -285,13 +356,12 @@ const playerList = Array.from(allPlayers.values())
     let isUpdating = false;
 
     function selectPlayer(index, playerName) {
-      const player = playerList.find(p => p.player === playerName);
+      const player = getPlayerForSeason(playerName);
       if (player) {
         isUpdating = true;
         selectedPlayers[index] = player;
         inputs[index].value = getPlayerDisplay(player).full;
         dropdowns[index].classList.add('hidden');
-        // Show clear button
         document.querySelector(`[data-clear="${index + 1}"]`)?.classList.remove('hidden');
         updateComparison();
         updateURL();
@@ -303,7 +373,8 @@ const playerList = Array.from(allPlayers.values())
       const players = selectedPlayers.filter(Boolean);
       if (players.length >= 2) {
         const params = players.map(p => encodeURIComponent(p.player)).join('&p=');
-        const newURL = `${window.location.pathname}?p=${params}`;
+        const seasonParam = currentSeason !== 'career' ? `&season=${currentSeason}` : '';
+        const newURL = `${window.location.pathname}?p=${params}${seasonParam}`;
         window.history.replaceState({}, '', newURL);
       } else {
         window.history.replaceState({}, '', window.location.pathname);
@@ -326,18 +397,63 @@ const playerList = Array.from(allPlayers.values())
     }
 
     // Input handlers
+// Track highlighted item per dropdown
+    const highlightIndex = [0, 0, 0];
+
+    function updateHighlight(dropdownIndex) {
+      const items = dropdowns[dropdownIndex].querySelectorAll('[data-player-value]');
+      items.forEach((item, i) => {
+        if (i === highlightIndex[dropdownIndex]) {
+          item.classList.add('bg-pul-light');
+        } else {
+          item.classList.remove('bg-pul-light');
+        }
+      });
+      // Scroll highlighted item into view
+      const highlighted = items[highlightIndex[dropdownIndex]];
+      if (highlighted) {
+        highlighted.scrollIntoView({ block: 'nearest' });
+      }
+    }
+
     inputs.forEach((input, index) => {
       input.addEventListener('focus', () => showDropdown(index));
       input.addEventListener('input', () => {
         selectedPlayers[index] = null;
+        highlightIndex[index] = 0;
         renderDropdown(index, input.value);
         updateComparison();
         updateURL();
+      });
+      input.addEventListener('keydown', (e) => {
+        const items = dropdowns[index].querySelectorAll('[data-player-value]');
+        if (!items.length) return;
+
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          highlightIndex[index] = Math.min(highlightIndex[index] + 1, items.length - 1);
+          updateHighlight(index);
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          highlightIndex[index] = Math.max(highlightIndex[index] - 1, 0);
+          updateHighlight(index);
+        } else if (e.key === 'Enter') {
+          e.preventDefault();
+          const highlighted = items[highlightIndex[index]];
+          if (highlighted) {
+            const playerName = highlighted.getAttribute('data-player-value');
+            selectPlayer(index, playerName);
+          }
+        } else if (e.key === 'Escape') {
+          dropdowns[index].classList.add('hidden');
+          input.blur();
+        }
       });
       input.addEventListener('blur', () => {
         setTimeout(() => {
           if (!isUpdating) {
             dropdowns[index].classList.add('hidden');
+            highlightIndex[index] = 0;
           }
         }, 150);
       });
@@ -465,6 +581,14 @@ const playerList = Array.from(allPlayers.values())
       emptyState.classList.add('hidden');
       shareBtn?.classList.remove('hidden');
 
+      // Update subtitle
+      const subtitle = document.getElementById('compare-subtitle');
+      if (subtitle) {
+        subtitle.textContent = currentSeason === 'career' 
+          ? 'Comparing career totals across all seasons'
+          : `Comparing ${currentSeason} season stats`;
+      }
+
       const numPlayers = players.length;
       const gridCols = numPlayers === 2 ? 'grid-cols-3' : 'grid-cols-4';
 
@@ -489,9 +613,12 @@ const playerList = Array.from(allPlayers.values())
       `;
 
       // Render stats
-      statsRows.innerHTML = stats.map(stat => {
-        const values = players.map(p => p[stat.key] || 0);
-        const best = stat.inverse ? Math.min(...values) : Math.max(...values);
+        statsRows.innerHTML = stats.map(stat => {
+        const values = players.map(p => p._noData ? null : (p[stat.key] !== undefined ? p[stat.key] : null));
+        const numericValues = values.filter(v => v !== null);
+        const best = numericValues.length > 0 
+          ? (stat.inverse ? Math.min(...numericValues) : Math.max(...numericValues))
+          : 0;
         
         return `
           <div class="grid ${gridCols}">
@@ -500,11 +627,15 @@ const playerList = Array.from(allPlayers.values())
               <span class="font-medium">${stat.label}</span>
             </div>
             ${players.map(player => {
-              const value = player[stat.key] || 0;
-              const isBest = value === best && values.filter(v => v === best).length === 1;
+              const value = player[stat.key];
+              const hasData = value !== undefined && value !== null;
+              const isBest = hasData && value === best && numericValues.filter(v => v === best).length === 1;
               return `
                 <div class="p-4 text-center">
-                  <span class="text-2xl font-bold ${isBest ? 'text-green-600' : ''}">${value}</span>
+                  ${hasData 
+                    ? `<span class="text-2xl font-bold ${isBest ? 'text-green-600' : ''}">${value}</span>`
+                    : `<span class="text-sm text-pul-gray">Did not play</span>`
+                  }
                 </div>
               `;
             }).join('')}
@@ -513,8 +644,12 @@ const playerList = Array.from(allPlayers.values())
       }).join('');
 
       // Add totals row
-      const totals = players.map(p => (p.goals || 0) + (p.assists || 0));
-      const bestTotal = Math.max(...totals);
+      const totals = players.map(p => {
+        if (p._noData || (p.goals === undefined && p.assists === undefined)) return null;
+        return (p.goals || 0) + (p.assists || 0);
+      });
+      const numericTotals = totals.filter(t => t !== null);
+      const bestTotal = numericTotals.length > 0 ? Math.max(...numericTotals) : 0;
       statsRows.innerHTML += `
         <div class="grid ${gridCols} bg-pul-light">
           <div class="p-4 flex items-center gap-2">
@@ -523,10 +658,14 @@ const playerList = Array.from(allPlayers.values())
           </div>
           ${players.map((player, i) => {
             const total = totals[i];
-            const isBest = total === bestTotal && totals.filter(t => t === bestTotal).length === 1;
+            const hasData = total !== null;
+            const isBest = hasData && total === bestTotal && numericTotals.filter(t => t === bestTotal).length === 1;
             return `
               <div class="p-4 text-center">
-                <span class="text-2xl font-bold ${isBest ? 'text-green-600' : ''}">${total}</span>
+                ${hasData
+                  ? `<span class="text-2xl font-bold ${isBest ? 'text-green-600' : ''}">${total}</span>`
+                  : `<span class="text-sm text-pul-gray">Did not play</span>`
+                }
               </div>
             `;
           }).join('')}
@@ -537,14 +676,19 @@ const playerList = Array.from(allPlayers.values())
     // Load players from URL on page load
     const urlParams = new URLSearchParams(window.location.search);
     const playerParams = urlParams.getAll('p');
+    const seasonParam = urlParams.get('season');
+    
+    if (seasonParam && compareSeasonSelect) {
+      currentSeason = seasonParam;
+      compareSeasonSelect.value = seasonParam;
+    }
     
     if (playerParams.length >= 2) {
       playerParams.slice(0, 3).forEach((playerName, index) => {
-        const player = playerList.find(p => p.player === playerName);
+        const player = getPlayerForSeason(playerName);
         if (player) {
           selectedPlayers[index] = player;
           inputs[index].value = getPlayerDisplay(player).full;
-          // Show clear button
           document.querySelector(`[data-clear="${index + 1}"]`)?.classList.remove('hidden');
         }
       });

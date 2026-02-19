@@ -1,0 +1,344 @@
+[
+  {
+    "week": 1,
+    "weekend": "4/3 - 4/5",
+    "date": "2026-04-03",
+    "season": "2026",
+    "games": [
+      {
+        "away": "Raleigh Radiance",
+        "awayAbbrev": "RAL",
+        "home": "Austin Torch",
+        "homeAbbrev": "ATX",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Philadelphia Surge",
+        "awayAbbrev": "PHL",
+        "home": "Nashville NightShade",
+        "homeAbbrev": "NASH",
+        "division": "Inter",
+        "awayScore": null,
+        "homeScore": null
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "weekend": "4/10-12",
+    "date": "2026-04-10",
+    "season": "2026",
+    "games": [
+      {
+        "away": "DC Shadow",
+        "awayAbbrev": "DC",
+        "home": "Raleigh Radiance",
+        "homeAbbrev": "RAL",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Indy Red",
+        "awayAbbrev": "INDY",
+        "home": "Milwaukee Monarchs",
+        "homeAbbrev": "MKE",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "weekend": "4/17-19",
+    "date": "2026-04-17",
+    "season": "2026",
+    "games": [
+      {
+        "away": "Nashville NightShade",
+        "awayAbbrev": "NASH",
+        "home": "Atlanta Soul",
+        "homeAbbrev": "ATL",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Minnesota Strike",
+        "awayAbbrev": "MINN",
+        "home": "New York Gridlock",
+        "homeAbbrev": "NYGL",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Minnesota Strike",
+        "awayAbbrev": "MINN",
+        "home": "Philadelphia Surge",
+        "homeAbbrev": "PHL",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "DC Shadow",
+        "awayAbbrev": "DC",
+        "home": "Austin Torch",
+        "homeAbbrev": "ATX",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "weekend": "4/24-26",
+    "date": "2026-04-24",
+    "season": "2026",
+    "games": [
+      {
+        "away": "New York Gridlock",
+        "awayAbbrev": "NYGL",
+        "home": "DC Shadow",
+        "homeAbbrev": "DC",
+        "division": "Inter",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Philadelphia Surge",
+        "awayAbbrev": "PHL",
+        "home": "Indy Red",
+        "homeAbbrev": "INDY",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Milwaukee Monarchs",
+        "awayAbbrev": "MKE",
+        "home": "Minnesota Strike",
+        "homeAbbrev": "MINN",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Raleigh Radiance",
+        "awayAbbrev": "RAL",
+        "home": "Atlanta Soul",
+        "homeAbbrev": "ATL",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      }
+    ]
+  },
+  {
+    "week": 5,
+    "weekend": "5/1-3",
+    "date": "2026-05-01",
+    "season": "2026",
+    "games": [
+      {
+        "away": "Austin Torch",
+        "awayAbbrev": "ATX",
+        "home": "Nashville NightShade",
+        "homeAbbrev": "NASH",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Minnesota Strike",
+        "awayAbbrev": "MINN",
+        "home": "Raleigh Radiance",
+        "homeAbbrev": "RAL",
+        "division": "Inter",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Philadelphia Surge",
+        "awayAbbrev": "PHL",
+        "home": "New York Gridlock",
+        "homeAbbrev": "NYGL",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Atlanta Soul",
+        "awayAbbrev": "ATL",
+        "home": "Nashville NightShade",
+        "homeAbbrev": "NASH",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      }
+    ]
+  },
+  {
+    "week": 6,
+    "weekend": "5/8-10",
+    "date": "2026-05-08",
+    "season": "2026",
+    "games": [
+      {
+        "away": "Milwaukee Monarchs",
+        "awayAbbrev": "MKE",
+        "home": "Philadelphia Surge",
+        "homeAbbrev": "PHL",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "DC Shadow",
+        "awayAbbrev": "DC",
+        "home": "Atlanta Soul",
+        "homeAbbrev": "ATL",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Milwaukee Monarchs",
+        "awayAbbrev": "MKE",
+        "home": "New York Gridlock",
+        "homeAbbrev": "NYGL",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Indy Red",
+        "awayAbbrev": "INDY",
+        "home": "Minnesota Strike",
+        "homeAbbrev": "MINN",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Nashville NightShade",
+        "awayAbbrev": "NASH",
+        "home": "Raleigh Radiance",
+        "homeAbbrev": "RAL",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "weekend": "5/22-24",
+    "date": "2026-05-22",
+    "season": "2026",
+    "games": [
+      {
+        "away": "Atlanta Soul",
+        "awayAbbrev": "ATL",
+        "home": "Austin Torch",
+        "homeAbbrev": "ATX",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Indy Red",
+        "awayAbbrev": "INDY",
+        "home": "Milwaukee Monarchs",
+        "homeAbbrev": "MKE",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "weekend": "5/29-31",
+    "date": "2026-05-29",
+    "season": "2026",
+    "games": [
+      {
+        "away": "Raleigh Radiance",
+        "awayAbbrev": "RAL",
+        "home": "DC Shadow",
+        "homeAbbrev": "DC",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "New York Gridlock",
+        "awayAbbrev": "NYGL",
+        "home": "Indy Red",
+        "homeAbbrev": "INDY",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      }
+    ]
+  },
+  {
+    "week": 10,
+    "weekend": "6/5-7",
+    "date": "2026-06-05",
+    "season": "2026",
+    "games": [
+      {
+        "away": "Atlanta Soul",
+        "awayAbbrev": "ATL",
+        "home": "Indy Red",
+        "homeAbbrev": "INDY",
+        "division": "Inter",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Nashville NightShade",
+        "awayAbbrev": "NASH",
+        "home": "DC Shadow",
+        "homeAbbrev": "DC",
+        "division": "South",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Austin Torch",
+        "awayAbbrev": "ATX",
+        "home": "Minnesota Strike",
+        "homeAbbrev": "MINN",
+        "division": "Inter",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "New York Gridlock",
+        "awayAbbrev": "NYGL",
+        "home": "Philadelphia Surge",
+        "homeAbbrev": "PHL",
+        "division": "North",
+        "awayScore": null,
+        "homeScore": null
+      },
+      {
+        "away": "Austin Torch",
+        "awayAbbrev": "ATX",
+        "home": "Milwaukee Monarchs",
+        "homeAbbrev": "MKE",
+        "division": "Inter",
+        "awayScore": null,
+        "homeScore": null
+      }
+    ]
+  }
+]
