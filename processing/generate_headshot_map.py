@@ -33,7 +33,7 @@ def main():
     # Load all players
     players = set()
     
-    for season in ['2025', '2024']:
+    for season in ['2026', '2025', '2024']:
         try:
             with open(f'data/{season}/players_season.json', 'r') as f:
                 data = json.load(f)

@@ -2,12 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
+import { seasons } from '../config/seasons';
 
 // Generate static paths for all games - MUST be before using Astro.params
 export async function getStaticPaths() {
   const games = new Set<string>();
   
-  for (const season of ['2025', '2024']) {
+  for (const season of seasons) {
     try {
       const dataPath = path.join(process.cwd(), 'data', season, 'teams_games.json');
       const rawData = fs.readFileSync(dataPath, 'utf-8');
@@ -22,8 +23,6 @@ export async function getStaticPaths() {
     params: { game: game }
   }));
 }
-
-const seasons = ['2025', '2024'];
 
 // Team logo mapping
 const teamLogos: Record<string, string> = {

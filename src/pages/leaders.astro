@@ -1,27 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import fs from 'node:fs';
-import path from 'node:path';
 
-const seasons = ['2025', '2024'];
+import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
+import { seasons } from '../config/seasons';
 
-const playersBySeason: Record<string, any[]> = {};
+const playersBySeason = loadSeasonData(seasons, 'players_season.json');
 
-// Load 2025
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_season.json'), 'utf-8');
-  playersBySeason['2025'] = JSON.parse(data);
-} catch (e) {
-  playersBySeason['2025'] = [];
-}
-
-// Load 2024
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'players_season.json'), 'utf-8');
-  playersBySeason['2024'] = JSON.parse(data);
-} catch (e) {
-  playersBySeason['2024'] = [];
-}
+const defaultSeason = findDefaultSeason(
+  seasons,
+  playersBySeason,
+  ['goals', 'assists', 'blocks']
+);
 
 // Aggregate career totals
 const careerPlayers: Map<string, any> = new Map();
@@ -156,19 +145,19 @@ for (const seasonKey of [...seasons, 'career']) {
   <div class="space-y-8">
     <div class="flex items-baseline justify-between flex-wrap gap-4">
       <div>
-        <h1 class="text-3xl font-semibold"><span id="leaders-title">2025</span> Season Leaders</h1>
+        <h1 class="text-3xl font-semibold"><span id="leaders-title">{defaultSeason}</span> Season Leaders</h1>
         <p class="text-pul-gray mt-1">Top performers in key statistical categories</p>
       </div>
       <select id="season-select" class="search-input text-sm">
         {seasons.map(season => (
-          <option value={season}>{season} Season</option>
+          <option value={season} selected={season === defaultSeason}>{season} Season</option>
         ))}
         <option value="career">Career Totals</option>  
       </select>
     </div>
 
     {seasons.map(season => (
-      <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+      <div data-season={season} class={season === defaultSeason ? '' : 'hidden'}>
         {playersBySeason[season].length > 0 ? (
           <div class="grid md:grid-cols-2 gap-6">
             {categories.map(cat => {

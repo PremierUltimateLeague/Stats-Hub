@@ -1,10 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { StatsTable } from '../../components/StatsTable';
-import fs from 'node:fs';
-import path from 'node:path';
 
-const seasons = ['2025', '2024'];
+import { seasons } from '../config/seasons';
 
 // Team name to logo filename mapping
 const teamLogos: Record<string, string> = {
@@ -64,7 +62,13 @@ for (const season of seasons) {
     const dataPath = path.join(process.cwd(), 'data', season, 'players_season.json');
     const rawData = fs.readFileSync(dataPath, 'utf-8');
     const allPlayers = JSON.parse(rawData);
-    playersBySeason[season] = allPlayers.filter((p: any) => p.team === decodedTeam);
+    playersBySeason[season] = allPlayers
+      .filter((p: any) => p.team === decodedTeam)
+      .sort((a: any, b: any) => {
+        const numA = parseInt(String(a.player).match(/^(\d+)/)?.[1] || '999');
+        const numB = parseInt(String(b.player).match(/^(\d+)/)?.[1] || '999');
+        return numA - numB;
+      });
   } catch (e) {
     playersBySeason[season] = [];
   }
@@ -97,7 +101,7 @@ export async function getStaticPaths() {
   
   const teams = new Set<string>();
   
-  for (const season of ['2025', '2024']) {
+  for (const season of seasons) {
     try {
       const dataPath = path.join(process.cwd(), 'data', season, 'teams_season.json');
       const rawData = fs.readFileSync(dataPath, 'utf-8');

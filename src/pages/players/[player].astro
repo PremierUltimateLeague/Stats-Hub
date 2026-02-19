@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { StatsTable } from '../../components/StatsTable';
 import fs from 'node:fs';
 import path from 'node:path';
+import { seasons } from '../config/seasons';
 
 // Get the player from the URL
 const { player } = Astro.params;
@@ -48,7 +49,6 @@ const teamLogos: Record<string, string> = {
 };
 
 // Load all seasons data
-const seasons = ['2025', '2024'];
 const playerSeasonStats: Record<string, any> = {};
 const playerGameStats: Record<string, any[]> = {};
 
@@ -180,7 +180,7 @@ export async function getStaticPaths() {
   const players = new Set<string>();
   
   // Get players from all seasons
-  for (const season of ['2025', '2024']) {
+  for (const season of seasons) {
     try {
       const dataPath = path.join(process.cwd(), 'data', season, 'players_season.json');
       const rawData = fs.readFileSync(dataPath, 'utf-8');

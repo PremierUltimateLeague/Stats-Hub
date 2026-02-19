@@ -3,8 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { StatsTable } from '../components/StatsTable';
 import fs from 'node:fs';
 import path from 'node:path';
-
-const seasons = ['2025', '2024'];
+import { seasons } from '../config/seasons';
 
 const playersOverallBySeason: Record<string, any[]> = {};
 const playersGamesBySeason: Record<string, any[]> = {};

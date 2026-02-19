@@ -1,44 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { StatsTable } from '../components/StatsTable';
-import fs from 'node:fs';
-import path from 'node:path';
 
-const seasons = ['2025', '2024'];
+import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
+import { seasons } from '../config/seasons';
 
-// Load overall data
-const teamsOverallBySeason: Record<string, any[]> = {};
-const teamsGamesBySeason: Record<string, any[]> = {};
+const teamsOverallBySeason = loadSeasonData(seasons, 'teams_season.json');
+const teamsGamesBySeason = loadSeasonData(seasons, 'teams_games.json');
 
-// Load 2025
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'teams_season.json'), 'utf-8');
-  teamsOverallBySeason['2025'] = JSON.parse(data);
-} catch (e) {
-  teamsOverallBySeason['2025'] = [];
-}
-
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'teams_games.json'), 'utf-8');
-  teamsGamesBySeason['2025'] = JSON.parse(data);
-} catch (e) {
-  teamsGamesBySeason['2025'] = [];
-}
-
-// Load 2024
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'teams_season.json'), 'utf-8');
-  teamsOverallBySeason['2024'] = JSON.parse(data);
-} catch (e) {
-  teamsOverallBySeason['2024'] = [];
-}
-
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'teams_games.json'), 'utf-8');
-  teamsGamesBySeason['2024'] = JSON.parse(data);
-} catch (e) {
-  teamsGamesBySeason['2024'] = [];
-}
+const defaultSeason = findDefaultSeason(
+  seasons,
+  teamsOverallBySeason,
+  ['goals', 'breakGoals', 'blocks']
+);
 
 const overallColumns = [
   { accessorKey: 'team', header: 'Team', size: 180 },
@@ -65,10 +39,13 @@ const gameColumns = [
 <Layout title="Team Stats">
   <div class="space-y-6">
     <div class="flex items-baseline justify-between flex-wrap gap-4">
-      <h1 class="text-3xl font-semibold">Team Stats</h1>
+      <h1 class="text-3xl font-semibold">
+      <span id="teams-title">{defaultSeason}</span> Team Stats</h1>
       <select id="season-select" class="search-input text-sm">
         {seasons.map(season => (
-          <option value={season}>{season} Season</option>
+        <option value={season} selected={season === defaultSeason}>
+          {season} Season
+        </option>
         ))}
       </select>
     </div>
@@ -86,7 +63,7 @@ const gameColumns = [
     </div>
 
     {seasons.map(season => (
-      <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+      <div data-season={season} class={season === defaultSeason ? '' : 'hidden'}>
         <!-- Overall Tab -->
         <div data-tab-content="overall">
           {teamsOverallBySeason[season].length > 0 ? (

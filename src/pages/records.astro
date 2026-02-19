@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 // Load all player data from all seasons
-const seasons = ['2025', '2024'];
+import { seasons } from '../config/seasons';
 const allPlayerStats: Map<string, any> = new Map();
 
 // Team logo mapping

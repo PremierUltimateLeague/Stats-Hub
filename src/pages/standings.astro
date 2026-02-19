@@ -2,8 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
-
-const seasons = ['2025', '2024'];
+import { seasons } from '../config/seasons';
 
 const standingsBySeason: Record<string, any[]> = {};
 
@@ -41,20 +40,29 @@ const teamColors: Record<string, string> = {
   'Raleigh Radiance': '#00A651',
 };
 
-// Load 2025
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'standings.json'), 'utf-8');
-  standingsBySeason['2025'] = JSON.parse(data);
-} catch (e) {
-  standingsBySeason['2025'] = [];
-}
+// Load Seasons
+seasons.forEach(season => {
+  try {
+    const filePath = path.join(process.cwd(), 'data', season.toString(), 'standings.json');
+    if (fs.existsSync(filePath)) {
+      const data = fs.readFileSync(filePath, 'utf-8');
+      standingsBySeason[season] = JSON.parse(data);
+    } else {
+      standingsBySeason[season] = [];
+    }
+  } catch (e) {
+    console.error(`Error loading data for ${season}:`, e);
+    standingsBySeason[season] = [];
+  }
+});
 
-// Load 2024
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'standings.json'), 'utf-8');
-  standingsBySeason['2024'] = JSON.parse(data);
-} catch (e) {
-  standingsBySeason['2024'] = [];
+// Find the latest season with actual stats for default selection
+let defaultSeason = seasons[0];
+for (const season of seasons) {
+  if (standingsBySeason[season] && standingsBySeason[season].length > 0) {
+    defaultSeason = season;
+    break;
+  }
 }
 
 // Group by division
@@ -77,11 +85,12 @@ const groupByDivision = (standings: any[]) => {
   <div class="space-y-6">
     <div class="flex items-baseline justify-between flex-wrap gap-4">
       <h1 class="text-3xl font-semibold">
-        <span id="standings-title">2025</span> Standings
+        <span id="standings-title">{defaultSeason}</span> Standings
       </h1>
       <select id="season-select" class="search-input text-sm">
         {seasons.map(season => (
-          <option value={season}>{season} Season</option>
+          <option value={season} selected={season === defaultSeason}>{season} Season
+          </option>
         ))}
       </select>
     </div>
@@ -89,7 +98,7 @@ const groupByDivision = (standings: any[]) => {
     {seasons.map(season => {
       const divisions = groupByDivision(standingsBySeason[season]);
       return (
-        <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+        <div data-season={season} class={season === defaultSeason ? '' : 'hidden'}>
           {standingsBySeason[season].length > 0 ? (
             <div class="space-y-8">
               {['North', 'South'].map(divisionName => {

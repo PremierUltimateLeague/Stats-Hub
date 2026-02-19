@@ -1,0 +1,122 @@
+[
+  {
+    "team": "Atlanta Soul",
+    "abbrev": "ATL",
+    "rosterSize": 28,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Austin Torch",
+    "abbrev": "ATX",
+    "rosterSize": 31,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "DC Shadow",
+    "abbrev": "DC",
+    "rosterSize": 31,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Indy Red",
+    "abbrev": "IND",
+    "rosterSize": 25,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Milwaukee Monarchs",
+    "abbrev": "MKE",
+    "rosterSize": 29,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Minnesota Strike",
+    "abbrev": "MIN",
+    "rosterSize": 30,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Nashville NightShade",
+    "abbrev": "NSH",
+    "rosterSize": 29,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "New York Gridlock",
+    "abbrev": "NY",
+    "rosterSize": 31,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Philadelphia Surge",
+    "abbrev": "PHL",
+    "rosterSize": 29,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Raleigh Radiance",
+    "abbrev": "RAL",
+    "rosterSize": 36,
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0,
+    "holds": 0,
+    "completionRate": 0
+  }
+]

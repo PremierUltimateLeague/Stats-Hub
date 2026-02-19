@@ -2,8 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
-
-const seasons = ['2025', '2024'];
+import { seasons } from '../config/seasons';
 
 // Team logo mapping
 const teamLogos: Record<string, string> = {

@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Samantha Jones",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "role": "Coach"
+  },
+  {
+    "name": "Evelina Jones",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "role": "Coach"
+  },
+  {
+    "name": "Chris Goodson",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "role": "Coach"
+  },
+  {
+    "name": "Kylie Mink",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "role": "Coach"
+  },
+  {
+    "name": "Luis \"Primo\" Ramos",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "role": "Coach"
+  },
+  {
+    "name": "Michael Matthis",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "role": "Coach"
+  },
+  {
+    "name": "Elise Bjork Keeney",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "role": "Coach"
+  },
+  {
+    "name": "Andrea \"Dre\" Esparza",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "role": "Coach"
+  },
+  {
+    "name": "David Maniloff",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "role": "Coach"
+  },
+  {
+    "name": "Layne Kyung",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "role": "Coach"
+  },
+  {
+    "name": "John Agan",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "role": "Coach"
+  },
+  {
+    "name": "Ty Aderhold",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "role": "Coach"
+  },
+  {
+    "name": "Caitlin Murphy",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "role": "Coach"
+  },
+  {
+    "name": "Katy Stanton",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "role": "Coach"
+  },
+  {
+    "name": "Nick Hwang",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "role": "Coach"
+  },
+  {
+    "name": "Donnie Wood",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "role": "Coach"
+  },
+  {
+    "name": "Genghis Philip",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "role": "Coach"
+  },
+  {
+    "name": "Maggie Peck",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "role": "Coach"
+  },
+  {
+    "name": "Robin Kunze",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "role": "Coach"
+  },
+  {
+    "name": "Eugenia Garza",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "role": "Coach"
+  },
+  {
+    "name": "Jared Trevor",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "role": "Coach"
+  },
+  {
+    "name": "Isaiah Mason",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "role": "Coach"
+  },
+  {
+    "name": "Collin Dabbieri",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "role": "Coach"
+  },
+  {
+    "name": "Brittany \"BT\" Taylor",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "role": "Coach"
+  },
+  {
+    "name": "Rena Eleázar",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "role": "Coach"
+  },
+  {
+    "name": "Dmitry Suvorov",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "role": "Coach"
+  },
+  {
+    "name": "Nick Purifico",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "role": "Coach"
+  },
+  {
+    "name": "Bobby Roos",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "role": "Coach"
+  },
+  {
+    "name": "Steve Wherry",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "role": "Coach"
+  },
+  {
+    "name": "David Baer",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "role": "Coach"
+  },
+  {
+    "name": "Jenna Dahl",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "role": "Coach"
+  },
+  {
+    "name": "Brett Matzuka",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "role": "Coach"
+  },
+  {
+    "name": "Marc Rovner",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "role": "Coach"
+  }
+]

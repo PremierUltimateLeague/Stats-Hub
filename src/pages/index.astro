@@ -1,27 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import fs from 'node:fs';
-import path from 'node:path';
+import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
+import { seasons } from '../config/seasons';
 
-const currentSeason = '2025';
+// Load all player and team data
+const playersBySeason = loadSeasonData(seasons, 'players_season.json');
+const teamsBySeason = loadSeasonData(seasons, 'teams_season.json');
 
-// Load player data for leaders preview
-let players: any[] = [];
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_season.json'), 'utf-8');
-  players = JSON.parse(data);
-} catch (e) {
-  players = [];
-}
+// Determine current season
+const currentSeason = findDefaultSeason(
+  seasons,
+  playersBySeason,
+  ['goals', 'assists', 'blocks']
+);
 
-// Load team data
-let teams: any[] = [];
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'teams_season.json'), 'utf-8');
-  teams = JSON.parse(data);
-} catch (e) {
-  teams = [];
-}
+// Use only the active season’s data
+const players = playersBySeason[currentSeason] || [];
+const teams = teamsBySeason[currentSeason] || [];
 
 // Get leaders for homepage - ensure all boxes match height
 const getHomeLeaders = (data: any[], stat: string) => {
@@ -36,6 +31,7 @@ const getHomeLeaders = (data: any[], stat: string) => {
       result.push({ ...sorted[i], rank: i + 1 });
     }
   }
+
   // Include ties at cutoff
   const lastValue = result.length > 0 ? result[result.length - 1][stat] : -1;
   for (let i = result.length; i < sorted.length; i++) {
@@ -45,6 +41,7 @@ const getHomeLeaders = (data: any[], stat: string) => {
       break;
     }
   }
+
   return result;
 };
 
@@ -79,6 +76,7 @@ const paddedAssistLeaders = padLeaders(assistLeaders, 'assists');
 const paddedBlockLeaders = padLeaders(blockLeaders, 'blocks');
 const topTeams = getHomeLeaders(teams, 'goals');
 ---
+
 
 <Layout title="Home">
   <div class="space-y-12">
