@@ -1,0 +1,3232 @@
+[
+  {
+    "player": "00 Alicia Carr",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 4,
+    "assists": 7,
+    "blocks": 2,
+    "turnovers": 4,
+    "touches": 11
+  },
+  {
+    "player": "00 Eileen Duffner",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 3,
+    "blocks": 2,
+    "turnovers": 18,
+    "touches": 4
+  },
+  {
+    "player": "00 Genny De Jesus",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 17,
+    "assists": 8,
+    "blocks": 3,
+    "turnovers": 13,
+    "touches": 25
+  },
+  {
+    "player": "00 Julia Zwierzynski",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 1,
+    "assists": 3,
+    "blocks": 4,
+    "turnovers": 1,
+    "touches": 4
+  },
+  {
+    "player": "00 Katie Cox",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 7,
+    "assists": 6,
+    "blocks": 4,
+    "turnovers": 4,
+    "touches": 13
+  },
+  {
+    "player": "00 Madison Cannon",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 1,
+    "touches": 2
+  },
+  {
+    "player": "00 Maggie Rowell",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 8,
+    "assists": 11,
+    "blocks": 3,
+    "turnovers": 12,
+    "touches": 19
+  },
+  {
+    "player": "01 Alora Reiff",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 3,
+    "touches": 2
+  },
+  {
+    "player": "01 Anna Wysen",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 8,
+    "touches": 0
+  },
+  {
+    "player": "01 Ashleigh Buch",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 5,
+    "assists": 7,
+    "blocks": 7,
+    "turnovers": 9,
+    "touches": 12
+  },
+  {
+    "player": "01 Elizabeth Diamond",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 0,
+    "turnovers": 1,
+    "touches": 4
+  },
+  {
+    "player": "01 Jenny Wang",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 6,
+    "touches": 0
+  },
+  {
+    "player": "01 Quincy Booth",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 6,
+    "assists": 24,
+    "blocks": 2,
+    "turnovers": 27,
+    "touches": 30
+  },
+  {
+    "player": "02 Brittany Kaplan",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 4,
+    "touches": 2
+  },
+  {
+    "player": "02 Claire Bidigare-Curtis",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 11,
+    "assists": 3,
+    "blocks": 3,
+    "turnovers": 11,
+    "touches": 14
+  },
+  {
+    "player": "02 Cori Bradham",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 15,
+    "assists": 7,
+    "blocks": 6,
+    "turnovers": 14,
+    "touches": 22
+  },
+  {
+    "player": "02 Donna Johnston",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 1
+  },
+  {
+    "player": "02 Elise Bjork",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 7,
+    "assists": 7,
+    "blocks": 5,
+    "turnovers": 12,
+    "touches": 14
+  },
+  {
+    "player": "02 Jesse Shofner",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 5,
+    "assists": 21,
+    "blocks": 3,
+    "turnovers": 19,
+    "touches": 26
+  },
+  {
+    "player": "02 Maketa Mattimore",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 2,
+    "assists": 7,
+    "blocks": 3,
+    "turnovers": 7,
+    "touches": 9
+  },
+  {
+    "player": "02 Natalie Barnhart",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 9,
+    "touches": 0
+  },
+  {
+    "player": "02 Stephanie Wood",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 9,
+    "assists": 10,
+    "blocks": 2,
+    "turnovers": 4,
+    "touches": 19
+  },
+  {
+    "player": "02 Wilhelmina Graff",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 4,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 5
+  },
+  {
+    "player": "02 Zoë Lewis",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "03 Abby Cheng",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 3,
+    "turnovers": 7,
+    "touches": 2
+  },
+  {
+    "player": "03 Allison Maddux",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 1,
+    "assists": 4,
+    "blocks": 1,
+    "turnovers": 10,
+    "touches": 5
+  },
+  {
+    "player": "03 Dana Bidot",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 7,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 6,
+    "touches": 8
+  },
+  {
+    "player": "03 Grace Conerly",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 7,
+    "touches": 4
+  },
+  {
+    "player": "03 Liv Player",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 3,
+    "turnovers": 4,
+    "touches": 1
+  },
+  {
+    "player": "03 Makella Daley",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 3,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 5,
+    "touches": 5
+  },
+  {
+    "player": "03 Mary Timmons",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 5,
+    "assists": 1,
+    "blocks": 3,
+    "turnovers": 8,
+    "touches": 6
+  },
+  {
+    "player": "03 Metta Devine-Qin",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 3,
+    "touches": 0
+  },
+  {
+    "player": "03 Rachel Alfano",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 10,
+    "assists": 9,
+    "blocks": 2,
+    "turnovers": 7,
+    "touches": 19
+  },
+  {
+    "player": "04 Ashley Powell",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 6,
+    "touches": 4
+  },
+  {
+    "player": "04 Ashley West",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 1,
+    "touches": 0
+  },
+  {
+    "player": "04 Ashley powell",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 1,
+    "assists": 4,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 5
+  },
+  {
+    "player": "04 Hayley Banas",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 1,
+    "assists": 9,
+    "blocks": 6,
+    "turnovers": 17,
+    "touches": 10
+  },
+  {
+    "player": "04 MC Robbins",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "04 Makk",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 3,
+    "assists": 2,
+    "blocks": 7,
+    "turnovers": 7,
+    "touches": 5
+  },
+  {
+    "player": "04 Rachel Mast",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 18,
+    "assists": 12,
+    "blocks": 7,
+    "turnovers": 12,
+    "touches": 30
+  },
+  {
+    "player": "04 Raha Mozaffari",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 5,
+    "assists": 7,
+    "blocks": 3,
+    "turnovers": 6,
+    "touches": 12
+  },
+  {
+    "player": "04 Stazi Tangherlini",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 2,
+    "assists": 5,
+    "blocks": 6,
+    "turnovers": 10,
+    "touches": 7
+  },
+  {
+    "player": "05 Dre Esparza",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 1,
+    "assists": 4,
+    "blocks": 1,
+    "turnovers": 10,
+    "touches": 5
+  },
+  {
+    "player": "05 Lily Ponitz",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 0,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 6,
+    "touches": 2
+  },
+  {
+    "player": "05 Lindsay McKenna",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 9,
+    "assists": 12,
+    "blocks": 4,
+    "turnovers": 15,
+    "touches": 21
+  },
+  {
+    "player": "05 Rose Glinka",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 9,
+    "touches": 4
+  },
+  {
+    "player": "05 Steph Rupp",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 3,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 5,
+    "touches": 5
+  },
+  {
+    "player": "06 Carly Eckstrom",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 0,
+    "assists": 6,
+    "blocks": 0,
+    "turnovers": 17,
+    "touches": 6
+  },
+  {
+    "player": "06 Chloë Rowse",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 4,
+    "assists": 3,
+    "blocks": 6,
+    "turnovers": 1,
+    "touches": 7
+  },
+  {
+    "player": "06 Corinn Pruitt",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 4,
+    "turnovers": 12,
+    "touches": 3
+  },
+  {
+    "player": "06 Gwen Rauch",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 1
+  },
+  {
+    "player": "06 Jane Zheng",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 15,
+    "touches": 0
+  },
+  {
+    "player": "06 Natalie Wilson",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 9,
+    "assists": 4,
+    "blocks": 2,
+    "turnovers": 4,
+    "touches": 13
+  },
+  {
+    "player": "06 Renata Pepi",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 0,
+    "assists": 2,
+    "blocks": 3,
+    "turnovers": 3,
+    "touches": 2
+  },
+  {
+    "player": "06 Risa Umeno",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 2,
+    "assists": 6,
+    "blocks": 10,
+    "turnovers": 12,
+    "touches": 8
+  },
+  {
+    "player": "07 Allison Reilly",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 0,
+    "assists": 2,
+    "blocks": 0,
+    "turnovers": 5,
+    "touches": 2
+  },
+  {
+    "player": "07 Annie Meilink",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 6,
+    "touches": 1
+  },
+  {
+    "player": "07 Danielle Byers",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 20,
+    "assists": 6,
+    "blocks": 1,
+    "turnovers": 5,
+    "touches": 26
+  },
+  {
+    "player": "07 Delaney Marsalek",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 5,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 6
+  },
+  {
+    "player": "07 Luisa Neves",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 4,
+    "assists": 3,
+    "blocks": 3,
+    "turnovers": 6,
+    "touches": 7
+  },
+  {
+    "player": "07 Nikki Tucker",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 0,
+    "assists": 4,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 4
+  },
+  {
+    "player": "07 Shiru Liu",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 0,
+    "assists": 12,
+    "blocks": 1,
+    "turnovers": 13,
+    "touches": 12
+  },
+  {
+    "player": "08 Alex Hu",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 3,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 18,
+    "touches": 5
+  },
+  {
+    "player": "08 Becky Moore",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 4,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 5
+  },
+  {
+    "player": "08 Dani Ortiz",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 3,
+    "turnovers": 13,
+    "touches": 4
+  },
+  {
+    "player": "08 Emma Soiles",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 6,
+    "assists": 5,
+    "blocks": 9,
+    "turnovers": 11,
+    "touches": 11
+  },
+  {
+    "player": "08 Georgia Tse",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 8,
+    "assists": 2,
+    "blocks": 4,
+    "turnovers": 13,
+    "touches": 10
+  },
+  {
+    "player": "08 Kat Ritzmann",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 3,
+    "assists": 9,
+    "blocks": 1,
+    "turnovers": 10,
+    "touches": 12
+  },
+  {
+    "player": "08 Kelly Hyland",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 4,
+    "assists": 2,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 6
+  },
+  {
+    "player": "08 Margie Quinn",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 3,
+    "assists": 3,
+    "blocks": 3,
+    "turnovers": 14,
+    "touches": 6
+  },
+  {
+    "player": "08 Mindy Radike",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 0,
+    "assists": 3,
+    "blocks": 3,
+    "turnovers": 12,
+    "touches": 3
+  },
+  {
+    "player": "08 Nicki Chan",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 1,
+    "touches": 4
+  },
+  {
+    "player": "08 Sowmya Ragothaman",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 1
+  },
+  {
+    "player": "09 Amanda Giles",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 3,
+    "assists": 6,
+    "blocks": 5,
+    "turnovers": 10,
+    "touches": 9
+  },
+  {
+    "player": "09 Annelise Peters",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 0,
+    "assists": 7,
+    "blocks": 3,
+    "turnovers": 4,
+    "touches": 7
+  },
+  {
+    "player": "09 Becky Malinowski",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 4,
+    "assists": 1,
+    "blocks": 4,
+    "turnovers": 9,
+    "touches": 5
+  },
+  {
+    "player": "09 Cassie Brown",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 7,
+    "assists": 13,
+    "blocks": 3,
+    "turnovers": 32,
+    "touches": 20
+  },
+  {
+    "player": "09 Emily Evans",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 1
+  },
+  {
+    "player": "09 Fiona Cashin",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 9,
+    "assists": 1,
+    "blocks": 3,
+    "turnovers": 3,
+    "touches": 10
+  },
+  {
+    "player": "09 Jinny Riedel",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 1,
+    "assists": 5,
+    "blocks": 6,
+    "turnovers": 16,
+    "touches": 6
+  },
+  {
+    "player": "09 Sara Helm",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 4,
+    "assists": 0,
+    "blocks": 4,
+    "turnovers": 1,
+    "touches": 4
+  },
+  {
+    "player": "09 Sarah Hirannet",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 9,
+    "assists": 4,
+    "blocks": 6,
+    "turnovers": 2,
+    "touches": 13
+  },
+  {
+    "player": "09 Summer Wilson",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 7,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 8,
+    "touches": 9
+  },
+  {
+    "player": "10 Alice Wang",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 3,
+    "turnovers": 3,
+    "touches": 4
+  },
+  {
+    "player": "10 Andrea DeSabato",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 2,
+    "assists": 8,
+    "blocks": 3,
+    "turnovers": 7,
+    "touches": 10
+  },
+  {
+    "player": "10 Charlette Peyer",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 1
+  },
+  {
+    "player": "10 Emilie Garnier",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 1,
+    "touches": 1
+  },
+  {
+    "player": "10 Gaby Cuina",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 1,
+    "assists": 3,
+    "blocks": 0,
+    "turnovers": 7,
+    "touches": 4
+  },
+  {
+    "player": "10 Jane Koch",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 2,
+    "assists": 7,
+    "blocks": 11,
+    "turnovers": 5,
+    "touches": 9
+  },
+  {
+    "player": "10 Jenny Fey",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 1,
+    "assists": 4,
+    "blocks": 2,
+    "turnovers": 5,
+    "touches": 5
+  },
+  {
+    "player": "10 Lauren Baecher",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 6,
+    "touches": 1
+  },
+  {
+    "player": "10 Lexie Thomas",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 1,
+    "assists": 3,
+    "blocks": 0,
+    "turnovers": 1,
+    "touches": 4
+  },
+  {
+    "player": "10 Mia Griner",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 8,
+    "assists": 5,
+    "blocks": 8,
+    "turnovers": 14,
+    "touches": 13
+  },
+  {
+    "player": "10 Tori Taylor",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 11,
+    "assists": 14,
+    "blocks": 10,
+    "turnovers": 16,
+    "touches": 25
+  },
+  {
+    "player": "11 Beata Artz",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 5,
+    "turnovers": 1,
+    "touches": 1
+  },
+  {
+    "player": "11 Dawn Culton",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 4,
+    "assists": 5,
+    "blocks": 4,
+    "turnovers": 5,
+    "touches": 9
+  },
+  {
+    "player": "11 Lisha Chen",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 2,
+    "turnovers": 1,
+    "touches": 1
+  },
+  {
+    "player": "11 Nola Kim-Mayer",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 4,
+    "assists": 2,
+    "blocks": 5,
+    "turnovers": 7,
+    "touches": 6
+  },
+  {
+    "player": "11 Rachel Johnson",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 2,
+    "turnovers": 20,
+    "touches": 2
+  },
+  {
+    "player": "11 Rachel Lensing",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 3
+  },
+  {
+    "player": "11 Tracey Lo",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 3,
+    "assists": 2,
+    "blocks": 0,
+    "turnovers": 8,
+    "touches": 5
+  },
+  {
+    "player": "12 Amy Zhou",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 9,
+    "assists": 7,
+    "blocks": 5,
+    "turnovers": 7,
+    "touches": 16
+  },
+  {
+    "player": "12 Annie Ortiz",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 2,
+    "assists": 8,
+    "blocks": 2,
+    "turnovers": 12,
+    "touches": 10
+  },
+  {
+    "player": "12 Clare Frantz",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 3,
+    "assists": 2,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 5
+  },
+  {
+    "player": "12 Emma Jaschke",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 1
+  },
+  {
+    "player": "12 Evie Clement",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 1
+  },
+  {
+    "player": "12 Morgan Johnson",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 1
+  },
+  {
+    "player": "12 Rachel Bova",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "12 Sarah Russek",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 3,
+    "assists": 0,
+    "blocks": 2,
+    "turnovers": 3,
+    "touches": 3
+  },
+  {
+    "player": "12 Sarak Russek",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 0,
+    "assists": 2,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 2
+  },
+  {
+    "player": "12 Sydney French",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 3
+  },
+  {
+    "player": "12 Sydney Olund",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 0,
+    "assists": 3,
+    "blocks": 4,
+    "turnovers": 9,
+    "touches": 3
+  },
+  {
+    "player": "13 Cassie Doody",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 4,
+    "touches": 4
+  },
+  {
+    "player": "13 Christie Lawry",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 8,
+    "touches": 1
+  },
+  {
+    "player": "13 Emma Jones",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 3,
+    "assists": 8,
+    "blocks": 5,
+    "turnovers": 8,
+    "touches": 11
+  },
+  {
+    "player": "13 Julia Schmaltz",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 13,
+    "assists": 1,
+    "blocks": 5,
+    "turnovers": 4,
+    "touches": 14
+  },
+  {
+    "player": "13 Kath Ratcliff",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 2
+  },
+  {
+    "player": "13 Kristin Thomas",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "13 Maggie Peck",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "13 Samantha Munson",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 1
+  },
+  {
+    "player": "14 Briana Burriss",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 5,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 6
+  },
+  {
+    "player": "14 Emma Berrigan",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 5,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 1,
+    "touches": 7
+  },
+  {
+    "player": "14 Jess Hendrickson",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 0
+  },
+  {
+    "player": "14 Kayla Ferguson",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 6,
+    "assists": 4,
+    "blocks": 5,
+    "turnovers": 12,
+    "touches": 10
+  },
+  {
+    "player": "14 Lina Montenegro",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 7,
+    "touches": 2
+  },
+  {
+    "player": "14 Lindsi Allman",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 4,
+    "touches": 2
+  },
+  {
+    "player": "14 Nada Tramonte",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 5,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 4,
+    "touches": 7
+  },
+  {
+    "player": "14 Sarah Spall",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 4
+  },
+  {
+    "player": "14 Tulsa Douglas",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 4,
+    "assists": 13,
+    "blocks": 5,
+    "turnovers": 13,
+    "touches": 17
+  },
+  {
+    "player": "15 Anna McClurkan",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 3,
+    "assists": 3,
+    "blocks": 2,
+    "turnovers": 9,
+    "touches": 6
+  },
+  {
+    "player": "15 Caitlin Fitzgerald",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 5,
+    "touches": 2
+  },
+  {
+    "player": "15 Elise Franke",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 2,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "15 Elizabeth Mosquera",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 2,
+    "assists": 3,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 5
+  },
+  {
+    "player": "15 Justine Neville",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 5,
+    "assists": 0,
+    "blocks": 7,
+    "turnovers": 3,
+    "touches": 5
+  },
+  {
+    "player": "15 Katie Godfrey",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 1,
+    "touches": 1
+  },
+  {
+    "player": "15 Layne Dodge",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 5,
+    "assists": 5,
+    "blocks": 4,
+    "turnovers": 8,
+    "touches": 10
+  },
+  {
+    "player": "15 Rachel Burzynski",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 4,
+    "touches": 0
+  },
+  {
+    "player": "16 Charlie Andreasen",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "16 Emily Branson",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 3,
+    "turnovers": 4,
+    "touches": 4
+  },
+  {
+    "player": "16 Erin Rea",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 8,
+    "assists": 9,
+    "blocks": 4,
+    "turnovers": 6,
+    "touches": 17
+  },
+  {
+    "player": "16 Kalli Poletto",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 3,
+    "assists": 3,
+    "blocks": 1,
+    "turnovers": 7,
+    "touches": 6
+  },
+  {
+    "player": "16 Marge Walker",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 8,
+    "assists": 12,
+    "blocks": 0,
+    "turnovers": 13,
+    "touches": 20
+  },
+  {
+    "player": "16 Meg Wadlinger",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "16 Sarah Levinn",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 11,
+    "assists": 4,
+    "blocks": 5,
+    "turnovers": 6,
+    "touches": 15
+  },
+  {
+    "player": "17 Adrienne Baker",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 2,
+    "assists": 3,
+    "blocks": 7,
+    "turnovers": 6,
+    "touches": 5
+  },
+  {
+    "player": "17 Allie Milligan",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 0,
+    "assists": 3,
+    "blocks": 2,
+    "turnovers": 3,
+    "touches": 3
+  },
+  {
+    "player": "17 Boost Barr",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 1
+  },
+  {
+    "player": "17 Caitlin Duffner",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 6,
+    "touches": 4
+  },
+  {
+    "player": "17 Emily Przykucki",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 2
+  },
+  {
+    "player": "17 Kelsey Devlin",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 3,
+    "turnovers": 10,
+    "touches": 2
+  },
+  {
+    "player": "17 Kristin Dudley",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 9,
+    "touches": 4
+  },
+  {
+    "player": "17 Olympia Walker",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 3
+  },
+  {
+    "player": "17 Rachel Barr",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 3
+  },
+  {
+    "player": "17 Shirlee Wohl",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 3,
+    "touches": 3
+  },
+  {
+    "player": "17 Susan Matthews",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 1,
+    "touches": 1
+  },
+  {
+    "player": "18 Briana Taylor",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "18 Grace Zucchero",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 1
+  },
+  {
+    "player": "18 Meghan Bartlett",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 9,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 3,
+    "touches": 10
+  },
+  {
+    "player": "18 Morgan Butts",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 2
+  },
+  {
+    "player": "18 Naomi Anderson",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 9,
+    "assists": 12,
+    "blocks": 14,
+    "turnovers": 20,
+    "touches": 21
+  },
+  {
+    "player": "18 Sarah McKee",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 0
+  },
+  {
+    "player": "18 Sarah Mckee",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 5,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 4,
+    "touches": 5
+  },
+  {
+    "player": "18 Sumi Onoe",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 1,
+    "assists": 2,
+    "blocks": 4,
+    "turnovers": 5,
+    "touches": 3
+  },
+  {
+    "player": "19 Allie Wallace",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 5,
+    "assists": 1,
+    "blocks": 5,
+    "turnovers": 7,
+    "touches": 6
+  },
+  {
+    "player": "19 Elle Mayer",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 1
+  },
+  {
+    "player": "19 Emily Cohen",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 11,
+    "assists": 7,
+    "blocks": 4,
+    "turnovers": 14,
+    "touches": 18
+  },
+  {
+    "player": "19 Jenna Dahl",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 0,
+    "assists": 3,
+    "blocks": 2,
+    "turnovers": 5,
+    "touches": 3
+  },
+  {
+    "player": "19 Olivia Hampton",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 6,
+    "assists": 4,
+    "blocks": 9,
+    "turnovers": 12,
+    "touches": 10
+  },
+  {
+    "player": "19 Sadie Reding",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 5,
+    "assists": 2,
+    "blocks": 6,
+    "turnovers": 8,
+    "touches": 7
+  },
+  {
+    "player": "20 Bridget Mizener",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 1,
+    "assists": 3,
+    "blocks": 0,
+    "turnovers": 7,
+    "touches": 4
+  },
+  {
+    "player": "20 Danielle Walsh",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 3,
+    "assists": 12,
+    "blocks": 3,
+    "turnovers": 10,
+    "touches": 15
+  },
+  {
+    "player": "20 Linnea Fraser",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 2,
+    "assists": 4,
+    "blocks": 0,
+    "turnovers": 6,
+    "touches": 6
+  },
+  {
+    "player": "20 Noel Holmes",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 11,
+    "touches": 2
+  },
+  {
+    "player": "20 Sanja Stojcic",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 1
+  },
+  {
+    "player": "20 Yina Cartagena",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 9,
+    "assists": 26,
+    "blocks": 2,
+    "turnovers": 17,
+    "touches": 35
+  },
+  {
+    "player": "21 Elena Rubino",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 4,
+    "assists": 2,
+    "blocks": 10,
+    "turnovers": 3,
+    "touches": 6
+  },
+  {
+    "player": "21 Jess Oh",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 6,
+    "assists": 5,
+    "blocks": 3,
+    "turnovers": 2,
+    "touches": 11
+  },
+  {
+    "player": "21 Linda Morse",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 8,
+    "assists": 7,
+    "blocks": 6,
+    "turnovers": 8,
+    "touches": 15
+  },
+  {
+    "player": "21 Mal Griffith",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 8,
+    "turnovers": 7,
+    "touches": 1
+  },
+  {
+    "player": "21 Sam Li",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 3,
+    "turnovers": 9,
+    "touches": 1
+  },
+  {
+    "player": "21 Sarah Mondschein",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 0,
+    "assists": 2,
+    "blocks": 11,
+    "turnovers": 3,
+    "touches": 2
+  },
+  {
+    "player": "21 Theresa Yu",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 1
+  },
+  {
+    "player": "22 Alex Ballinger",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 7,
+    "touches": 2
+  },
+  {
+    "player": "22 Danni Cordes",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 5,
+    "turnovers": 9,
+    "touches": 1
+  },
+  {
+    "player": "22 Emily Wyckoff",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 2,
+    "assists": 3,
+    "blocks": 2,
+    "turnovers": 7,
+    "touches": 5
+  },
+  {
+    "player": "22 Emma Lowenstein",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 0
+  },
+  {
+    "player": "22 Erin McCann",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 5,
+    "assists": 5,
+    "blocks": 5,
+    "turnovers": 2,
+    "touches": 10
+  },
+  {
+    "player": "22 Heather Zimmerman",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 5,
+    "touches": 4
+  },
+  {
+    "player": "22 Liz Hart",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 9,
+    "assists": 2,
+    "blocks": 6,
+    "turnovers": 6,
+    "touches": 11
+  },
+  {
+    "player": "22 Mary Turner",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 12,
+    "assists": 4,
+    "blocks": 6,
+    "turnovers": 5,
+    "touches": 16
+  },
+  {
+    "player": "22 Rebecca Henley",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 15,
+    "assists": 7,
+    "blocks": 5,
+    "turnovers": 6,
+    "touches": 22
+  },
+  {
+    "player": "22 Sydney Overman",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 4,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 1,
+    "touches": 5
+  },
+  {
+    "player": "23 Allie Mueting",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "23 Bella Russell",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "23 Colette Pellegrini",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 3,
+    "assists": 9,
+    "blocks": 1,
+    "turnovers": 6,
+    "touches": 12
+  },
+  {
+    "player": "23 Grace Fielder",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 2
+  },
+  {
+    "player": "23 Lisa Dang",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 4,
+    "turnovers": 5,
+    "touches": 4
+  },
+  {
+    "player": "23 Melissa Gibbs",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 4,
+    "assists": 9,
+    "blocks": 6,
+    "turnovers": 8,
+    "touches": 13
+  },
+  {
+    "player": "23 Natalie Bova",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 7,
+    "assists": 3,
+    "blocks": 1,
+    "turnovers": 7,
+    "touches": 10
+  },
+  {
+    "player": "23 Rachel Yeager",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 4
+  },
+  {
+    "player": "24 Adi Malavé",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 1
+  },
+  {
+    "player": "24 Casey Gorman",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 4,
+    "turnovers": 3,
+    "touches": 3
+  },
+  {
+    "player": "24 Eliza Hutchings",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 16,
+    "assists": 8,
+    "blocks": 6,
+    "turnovers": 6,
+    "touches": 24
+  },
+  {
+    "player": "24 Hannah Boettcher",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 7,
+    "assists": 5,
+    "blocks": 9,
+    "turnovers": 4,
+    "touches": 12
+  },
+  {
+    "player": "24 Hannah Grace Morrison",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 4,
+    "touches": 0
+  },
+  {
+    "player": "24 Mia Letterie",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 12,
+    "touches": 4
+  },
+  {
+    "player": "25 Erin Goding",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 4,
+    "assists": 2,
+    "blocks": 3,
+    "turnovers": 8,
+    "touches": 6
+  },
+  {
+    "player": "25 Gerene Taylor",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 5,
+    "assists": 3,
+    "blocks": 2,
+    "turnovers": 9,
+    "touches": 8
+  },
+  {
+    "player": "25 Jess Sourbeer",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 5,
+    "assists": 12,
+    "blocks": 2,
+    "turnovers": 11,
+    "touches": 17
+  },
+  {
+    "player": "25 Nadine Rowen",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 4,
+    "assists": 3,
+    "blocks": 10,
+    "turnovers": 3,
+    "touches": 7
+  },
+  {
+    "player": "25 Sabrina Bonaci",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 3,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 3
+  },
+  {
+    "player": "26 Cara Sieber",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 6,
+    "assists": 6,
+    "blocks": 2,
+    "turnovers": 8,
+    "touches": 12
+  },
+  {
+    "player": "26 Leah Shorb",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "26 Morgan Lally",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 5,
+    "assists": 1,
+    "blocks": 4,
+    "turnovers": 5,
+    "touches": 6
+  },
+  {
+    "player": "26 Rachael Westgate",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 4
+  },
+  {
+    "player": "27 Akina Younge",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 4
+  },
+  {
+    "player": "27 Alex Hughes",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 2
+  },
+  {
+    "player": "27 Blaise Sevier",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 4,
+    "touches": 4
+  },
+  {
+    "player": "27 Katharine Gilbert",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 0,
+    "assists": 4,
+    "blocks": 0,
+    "turnovers": 19,
+    "touches": 4
+  },
+  {
+    "player": "27 Mary Rippe",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 5,
+    "assists": 6,
+    "blocks": 2,
+    "turnovers": 1,
+    "touches": 11
+  },
+  {
+    "player": "27 Sierra Jensen",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 3,
+    "turnovers": 4,
+    "touches": 3
+  },
+  {
+    "player": "27 Stef Bugasch Scopoline",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 2
+  },
+  {
+    "player": "27 Therese Doebler",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 3,
+    "touches": 2
+  },
+  {
+    "player": "28 Angela Zhu",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 1,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 3
+  },
+  {
+    "player": "28 Bailey Perkins",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 4,
+    "touches": 1
+  },
+  {
+    "player": "28 Claire Revere",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 3,
+    "assists": 4,
+    "blocks": 1,
+    "turnovers": 5,
+    "touches": 7
+  },
+  {
+    "player": "28 Emma Peaslee",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 11,
+    "assists": 3,
+    "blocks": 5,
+    "turnovers": 7,
+    "touches": 14
+  },
+  {
+    "player": "28 Maddy Boyle",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 2
+  },
+  {
+    "player": "29 Blaise Sevier",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 7,
+    "assists": 5,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 12
+  },
+  {
+    "player": "29 Elana Schwam",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 4,
+    "assists": 3,
+    "blocks": 0,
+    "turnovers": 4,
+    "touches": 7
+  },
+  {
+    "player": "29 Emily Schloneger",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 7,
+    "assists": 3,
+    "blocks": 1,
+    "turnovers": 2,
+    "touches": 10
+  },
+  {
+    "player": "29 Meghan Rutledge",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 3,
+    "turnovers": 7,
+    "touches": 4
+  },
+  {
+    "player": "30 Emily Wehrwein",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 6,
+    "turnovers": 4,
+    "touches": 3
+  },
+  {
+    "player": "30 Jean Huang",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 5,
+    "assists": 6,
+    "blocks": 2,
+    "turnovers": 5,
+    "touches": 11
+  },
+  {
+    "player": "30 Jenn Stewart",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 2,
+    "assists": 2,
+    "blocks": 3,
+    "turnovers": 12,
+    "touches": 4
+  },
+  {
+    "player": "30 Liv Monroe",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 0
+  },
+  {
+    "player": "30 Louise Beck",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 2
+  },
+  {
+    "player": "31 María Vargas",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 0,
+    "assists": 4,
+    "blocks": 3,
+    "turnovers": 9,
+    "touches": 4
+  },
+  {
+    "player": "31 Nikki Gilbert",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 3,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 5
+  },
+  {
+    "player": "32 Megan Wilson",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 11,
+    "touches": 2
+  },
+  {
+    "player": "32 Mickela Heilicher",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 16,
+    "touches": 3
+  },
+  {
+    "player": "33 Amanda Murphy",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 6,
+    "assists": 3,
+    "blocks": 12,
+    "turnovers": 2,
+    "touches": 9
+  },
+  {
+    "player": "33 Brianna Stedman",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 2,
+    "assists": 6,
+    "blocks": 4,
+    "turnovers": 11,
+    "touches": 8
+  },
+  {
+    "player": "33 Emily Barrett",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 15,
+    "assists": 4,
+    "blocks": 4,
+    "turnovers": 6,
+    "touches": 19
+  },
+  {
+    "player": "33 Erica Birdsong",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 4,
+    "assists": 5,
+    "blocks": 2,
+    "turnovers": 0,
+    "touches": 9
+  },
+  {
+    "player": "33 Jalyn Baumgartner",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 4,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 4,
+    "touches": 4
+  },
+  {
+    "player": "33 Jana Graham",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 4,
+    "turnovers": 0,
+    "touches": 2
+  },
+  {
+    "player": "33 Kayla Blanek",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 3,
+    "assists": 4,
+    "blocks": 2,
+    "turnovers": 1,
+    "touches": 7
+  },
+  {
+    "player": "33 Yuge Xiao",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 14,
+    "assists": 6,
+    "blocks": 4,
+    "turnovers": 13,
+    "touches": 20
+  },
+  {
+    "player": "34 Alex Barnett",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 5,
+    "assists": 8,
+    "blocks": 1,
+    "turnovers": 12,
+    "touches": 13
+  },
+  {
+    "player": "34 Kenzie Carpenter",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 0,
+    "assists": 2,
+    "blocks": 3,
+    "turnovers": 9,
+    "touches": 2
+  },
+  {
+    "player": "34 Lauren Kitten",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 0,
+    "assists": 5,
+    "blocks": 0,
+    "turnovers": 8,
+    "touches": 5
+  },
+  {
+    "player": "35 Tess McGrew",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 0
+  },
+  {
+    "player": "36 Carolyn Normile",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 4,
+    "assists": 7,
+    "blocks": 1,
+    "turnovers": 15,
+    "touches": 11
+  },
+  {
+    "player": "36 Jaelee Cruz",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 1
+  },
+  {
+    "player": "36 Kelsea Fitzpatrick",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 1
+  },
+  {
+    "player": "37 Claire Trop",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 17,
+    "assists": 7,
+    "blocks": 8,
+    "turnovers": 11,
+    "touches": 24
+  },
+  {
+    "player": "37 Hannah Henkin",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 4,
+    "assists": 6,
+    "blocks": 3,
+    "turnovers": 12,
+    "touches": 10
+  },
+  {
+    "player": "37 Kristin Bolte Baxter",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 3,
+    "turnovers": 4,
+    "touches": 1
+  },
+  {
+    "player": "37 Nariah-Belle Sims",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 6,
+    "turnovers": 3,
+    "touches": 3
+  },
+  {
+    "player": "38 Jenny Perry",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 1,
+    "assists": 5,
+    "blocks": 0,
+    "turnovers": 10,
+    "touches": 6
+  },
+  {
+    "player": "40 Claire Milton",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 5,
+    "assists": 12,
+    "blocks": 6,
+    "turnovers": 8,
+    "touches": 17
+  },
+  {
+    "player": "42 Ashley Welsh",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 3,
+    "touches": 2
+  },
+  {
+    "player": "42 Chelsea Twohig",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 1
+  },
+  {
+    "player": "42 Kelly Kerker",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 6,
+    "assists": 0,
+    "blocks": 4,
+    "turnovers": 1,
+    "touches": 6
+  },
+  {
+    "player": "42 Lisi Lohre",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 10,
+    "assists": 12,
+    "blocks": 4,
+    "turnovers": 4,
+    "touches": 22
+  },
+  {
+    "player": "42 Meg Duffy",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 2,
+    "assists": 6,
+    "blocks": 2,
+    "turnovers": 8,
+    "touches": 8
+  },
+  {
+    "player": "42 Rachel Kramer",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 23,
+    "assists": 19,
+    "blocks": 7,
+    "turnovers": 27,
+    "touches": 42
+  },
+  {
+    "player": "44 Anastasia Foster",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 5,
+    "assists": 1,
+    "blocks": 7,
+    "turnovers": 7,
+    "touches": 6
+  },
+  {
+    "player": "44 Hannah Frank",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 4,
+    "turnovers": 6,
+    "touches": 2
+  },
+  {
+    "player": "44 Sarah Meckstroth",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 9,
+    "assists": 12,
+    "blocks": 7,
+    "turnovers": 14,
+    "touches": 21
+  },
+  {
+    "player": "44 Tatum Cubrilovic",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "45 Caitlin Gross",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 10,
+    "assists": 11,
+    "blocks": 2,
+    "turnovers": 10,
+    "touches": 21
+  },
+  {
+    "player": "46 Graham Cunningham",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 3,
+    "assists": 5,
+    "blocks": 2,
+    "turnovers": 23,
+    "touches": 8
+  },
+  {
+    "player": "48 Lisa Kowalski",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 1,
+    "assists": 5,
+    "blocks": 10,
+    "turnovers": 10,
+    "touches": 6
+  },
+  {
+    "player": "49 Robyn Fennig",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 1,
+    "assists": 23,
+    "blocks": 6,
+    "turnovers": 14,
+    "touches": 24
+  },
+  {
+    "player": "50 Anna Thorn",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 1
+  },
+  {
+    "player": "51 Tess Johnson",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 2,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 8,
+    "touches": 3
+  },
+  {
+    "player": "52 Annie Shriver",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 5,
+    "assists": 4,
+    "blocks": 5,
+    "turnovers": 13,
+    "touches": 9
+  },
+  {
+    "player": "52 Caitlin O'Connell",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 2,
+    "turnovers": 1,
+    "touches": 2
+  },
+  {
+    "player": "52 Erynn Schroeder",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 6,
+    "assists": 15,
+    "blocks": 4,
+    "turnovers": 16,
+    "touches": 21
+  },
+  {
+    "player": "52 Sydney Harris",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 1,
+    "assists": 1,
+    "blocks": 6,
+    "turnovers": 2,
+    "touches": 2
+  },
+  {
+    "player": "53 Emma Piorier",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 0,
+    "touches": 2
+  },
+  {
+    "player": "55 Courtney Walbe",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 11,
+    "touches": 2
+  },
+  {
+    "player": "55 Sophie Knowles",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 4,
+    "assists": 10,
+    "blocks": 3,
+    "turnovers": 16,
+    "touches": 14
+  },
+  {
+    "player": "59 Maple Adkins-Threats",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 2
+  },
+  {
+    "player": "61 Megan Randall",
+    "team": "Minnesota Strike",
+    "teamAbbrev": "MIN",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 1,
+    "turnovers": 3,
+    "touches": 4
+  },
+  {
+    "player": "64 Rachel Hildebrand",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 10,
+    "touches": 1
+  },
+  {
+    "player": "64 Tracey Lum",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 3,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 8,
+    "touches": 5
+  },
+  {
+    "player": "66 Jackie Wang",
+    "team": "DC Shadow",
+    "teamAbbrev": "DC",
+    "goals": 3,
+    "assists": 5,
+    "blocks": 2,
+    "turnovers": 5,
+    "touches": 8
+  },
+  {
+    "player": "66 Janine Hlavaty",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 7,
+    "assists": 6,
+    "blocks": 2,
+    "turnovers": 6,
+    "touches": 13
+  },
+  {
+    "player": "66 Mya Hernandez",
+    "team": "Indy Red",
+    "teamAbbrev": "IND",
+    "goals": 6,
+    "assists": 3,
+    "blocks": 1,
+    "turnovers": 4,
+    "touches": 9
+  },
+  {
+    "player": "66 Rachel Graber",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 0
+  },
+  {
+    "player": "69 Jaime Estes",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 9,
+    "assists": 12,
+    "blocks": 3,
+    "turnovers": 5,
+    "touches": 21
+  },
+  {
+    "player": "69 Tahlia Quartin",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 2,
+    "turnovers": 2,
+    "touches": 0
+  },
+  {
+    "player": "70 Benish Benjamin",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 2,
+    "touches": 0
+  },
+  {
+    "player": "72 Jacqueline Jarik",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 3,
+    "assists": 2,
+    "blocks": 4,
+    "turnovers": 11,
+    "touches": 5
+  },
+  {
+    "player": "74 Sam Harris",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 7,
+    "turnovers": 2,
+    "touches": 1
+  },
+  {
+    "player": "75 Sarah Kingsley",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 2,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 2,
+    "touches": 2
+  },
+  {
+    "player": "76 Emma Palacio",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 3,
+    "turnovers": 5,
+    "touches": 1
+  },
+  {
+    "player": "77 Katrina McGuire",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 2,
+    "assists": 11,
+    "blocks": 8,
+    "turnovers": 21,
+    "touches": 13
+  },
+  {
+    "player": "77 Kerry Younts",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 3,
+    "assists": 1,
+    "blocks": 5,
+    "turnovers": 4,
+    "touches": 4
+  },
+  {
+    "player": "77 Liz Gardner",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 2,
+    "turnovers": 0,
+    "touches": 1
+  },
+  {
+    "player": "77 Melissa Gronske",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 4,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 2,
+    "touches": 4
+  },
+  {
+    "player": "83 Zoe Hecht",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 5,
+    "assists": 1,
+    "blocks": 0,
+    "turnovers": 3,
+    "touches": 6
+  },
+  {
+    "player": "86 Connie Cui",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 0,
+    "assists": 2,
+    "blocks": 2,
+    "turnovers": 5,
+    "touches": 2
+  },
+  {
+    "player": "87 Amanda Borders",
+    "team": "Nashville NightShade",
+    "teamAbbrev": "NSH",
+    "goals": 1,
+    "assists": 2,
+    "blocks": 1,
+    "turnovers": 12,
+    "touches": 3
+  },
+  {
+    "player": "87 Austin Prucha",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 8,
+    "assists": 14,
+    "blocks": 8,
+    "turnovers": 20,
+    "touches": 22
+  },
+  {
+    "player": "87 Christina Marsicano",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 5,
+    "assists": 1,
+    "blocks": 6,
+    "turnovers": 3,
+    "touches": 6
+  },
+  {
+    "player": "88 Christine Bookhout",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 3,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 3
+  },
+  {
+    "player": "88 Claire Kelley",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 2,
+    "touches": 1
+  },
+  {
+    "player": "88 Grace Hodges",
+    "team": "Philadelphia Surge",
+    "teamAbbrev": "PHL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 0,
+    "touches": 0
+  },
+  {
+    "player": "88 Maddie Pletzke",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 2,
+    "assists": 4,
+    "blocks": 4,
+    "turnovers": 6,
+    "touches": 6
+  },
+  {
+    "player": "88 Maddy Easton",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 1,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 5,
+    "touches": 1
+  },
+  {
+    "player": "88 Nikki Hair",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 0,
+    "assists": 1,
+    "blocks": 3,
+    "turnovers": 3,
+    "touches": 1
+  },
+  {
+    "player": "90 Hayley Soohoo",
+    "team": "Portland Rising",
+    "teamAbbrev": "PORT",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 1,
+    "turnovers": 1,
+    "touches": 0
+  },
+  {
+    "player": "90 Qxhna Titcomb",
+    "team": "Raleigh Radiance",
+    "teamAbbrev": "RAL",
+    "goals": 4,
+    "assists": 11,
+    "blocks": 6,
+    "turnovers": 8,
+    "touches": 15
+  },
+  {
+    "player": "91 Samantha Phillips",
+    "team": "Columbus Pride",
+    "teamAbbrev": "CBUS",
+    "goals": 3,
+    "assists": 9,
+    "blocks": 3,
+    "turnovers": 24,
+    "touches": 12
+  },
+  {
+    "player": "95 Megan Mendieta",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 0,
+    "assists": 5,
+    "blocks": 0,
+    "turnovers": 4,
+    "touches": 5
+  },
+  {
+    "player": "96 Nina Finley",
+    "team": "New York Gridlock",
+    "teamAbbrev": "NY",
+    "goals": 3,
+    "assists": 5,
+    "blocks": 5,
+    "turnovers": 6,
+    "touches": 8
+  },
+  {
+    "player": "99 Dana Demmert",
+    "team": "Milwaukee Monarchs",
+    "teamAbbrev": "MKE",
+    "goals": 1,
+    "assists": 3,
+    "blocks": 2,
+    "turnovers": 3,
+    "touches": 4
+  },
+  {
+    "player": "99 Sierra Rimmer",
+    "team": "Austin Torch",
+    "teamAbbrev": "ATX",
+    "goals": 5,
+    "assists": 5,
+    "blocks": 2,
+    "turnovers": 20,
+    "touches": 10
+  },
+  {
+    "player": "Tash Bedoya-Ross",
+    "team": "Atlanta Soul",
+    "teamAbbrev": "ATL",
+    "goals": 0,
+    "assists": 0,
+    "blocks": 0,
+    "turnovers": 1,
+    "touches": 0
+  }
+]

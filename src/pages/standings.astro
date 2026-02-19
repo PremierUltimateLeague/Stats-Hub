@@ -117,7 +117,7 @@ const groupByDivision = (standings: any[]) => {
                             <th class="text-center">Wins</th>
                             <th class="text-center">Losses</th>
                             <th class="text-center">Win %</th>
-                            <th class="text-center">Last 5</th>
+                            <th class="text-center">Last 6</th>
                             <th class="text-center">Points For</th>
                             <th class="text-center">Points Against</th>
                             <th class="text-center">Differential</th>
@@ -127,7 +127,7 @@ const groupByDivision = (standings: any[]) => {
                           {teams.map((team: any, index: number) => {
                             const logo = teamLogos[team.team] ? `/Stats-Hub/images/teams/${teamLogos[team.team]}` : null;
                             const color = teamColors[team.team] || '#666666';
-                            const last5 = team.last5 || [];
+                            const last6 = team.last6 || [];
                             
                             return (
                               <tr style={`border-left: 4px solid ${color};`}>
@@ -148,7 +148,7 @@ const groupByDivision = (standings: any[]) => {
                                 <td class="text-center tabular-nums">{team.winPct}%</td>
                                 <td class="text-center">
                                   <div class="flex justify-center gap-1">
-                                    {last5.map((result: string, i: number) => (
+                                    {last6.map((result: string, i: number) => (
                                       <span 
                                         class={`w-6 h-6 rounded text-xs font-bold flex items-center justify-center ${
                                           result === 'W' 

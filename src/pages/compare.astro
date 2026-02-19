@@ -3,24 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
 import { seasons } from '../config/seasons';
-
-// Team logo mapping
-const teamLogos: Record<string, string> = {
-  'Atlanta Soul': 'atlanta.png',
-  'Austin Torch': 'austin.png',
-  'Columbus Pride': 'columbus.png',
-  'DC Shadow': 'dc.png',
-  'Indy Red': 'indy.png',
-  'LA Astra': 'la.png',
-  'Medellin Revolution': 'medellin.png',
-  'Milwaukee Monarchs': 'milwaukee.png',
-  'Minnesota Strike': 'minnesota.png',
-  'Nashville NightShade': 'nashville.png',
-  'New York Gridlock': 'new-york.png',
-  'Philadelphia Surge': 'philadelphia.png',
-  'Portland Rising': 'portland.png',
-  'Raleigh Radiance': 'raleigh.png',
-};
+import { teamLogos } from '../utils/teams';
 
 // Aggregate career stats
 const allPlayers: Map<string, any> = new Map();

@@ -1,0 +1,134 @@
+[
+  {
+    "team": "Atlanta Soul",
+    "abbrev": "ATL",
+    "goals": 94,
+    "assists": 94,
+    "blocks": 77,
+    "turnovers": 191,
+    "touches": 188,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Austin Torch",
+    "abbrev": "ATX",
+    "goals": 90,
+    "assists": 91,
+    "blocks": 60,
+    "turnovers": 164,
+    "touches": 181,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Columbus Pride",
+    "abbrev": "CBUS",
+    "goals": 69,
+    "assists": 69,
+    "blocks": 58,
+    "turnovers": 169,
+    "touches": 138,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "DC Shadow",
+    "abbrev": "DC",
+    "goals": 115,
+    "assists": 114,
+    "blocks": 68,
+    "turnovers": 141,
+    "touches": 229,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Indy Red",
+    "abbrev": "IND",
+    "goals": 92,
+    "assists": 94,
+    "blocks": 79,
+    "turnovers": 180,
+    "touches": 186,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Milwaukee Monarchs",
+    "abbrev": "MKE",
+    "goals": 61,
+    "assists": 61,
+    "blocks": 46,
+    "turnovers": 222,
+    "touches": 122,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Minnesota Strike",
+    "abbrev": "MIN",
+    "goals": 98,
+    "assists": 98,
+    "blocks": 85,
+    "turnovers": 154,
+    "touches": 196,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Nashville NightShade",
+    "abbrev": "NSH",
+    "goals": 93,
+    "assists": 93,
+    "blocks": 74,
+    "turnovers": 190,
+    "touches": 186,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "New York Gridlock",
+    "abbrev": "NY",
+    "goals": 107,
+    "assists": 108,
+    "blocks": 86,
+    "turnovers": 163,
+    "touches": 215,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Philadelphia Surge",
+    "abbrev": "PHL",
+    "goals": 85,
+    "assists": 85,
+    "blocks": 72,
+    "turnovers": 105,
+    "touches": 170,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Portland Rising",
+    "abbrev": "PORT",
+    "goals": 71,
+    "assists": 72,
+    "blocks": 66,
+    "turnovers": 150,
+    "touches": 143,
+    "holds": 0,
+    "completionRate": 0
+  },
+  {
+    "team": "Raleigh Radiance",
+    "abbrev": "RAL",
+    "goals": 94,
+    "assists": 95,
+    "blocks": 69,
+    "turnovers": 152,
+    "touches": 189,
+    "holds": 0,
+    "completionRate": 0
+  }
+]

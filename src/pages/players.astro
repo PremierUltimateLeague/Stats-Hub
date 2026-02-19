@@ -3,10 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import { StatsTable } from '../components/StatsTable';
 import fs from 'node:fs';
 import path from 'node:path';
+
+import { loadSeasonData } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
 
-const playersOverallBySeason: Record<string, any[]> = {};
-const playersGamesBySeason: Record<string, any[]> = {};
+const playersOverallBySeason = loadSeasonData(seasons, 'players_season.json');
+const playersGamesBySeason = loadSeasonData(seasons, 'players_games.json');
 
 // Load 2025
 try {
@@ -36,6 +38,15 @@ try {
   playersGamesBySeason['2024'] = JSON.parse(data);
 } catch (e) {
   playersGamesBySeason['2024'] = [];
+}
+
+for (const season of seasons) {
+  if (!playersOverallBySeason[season]) {
+    playersOverallBySeason[season] = [];
+  }
+  if (!playersGamesBySeason[season]) {
+    playersGamesBySeason[season] = [];
+  }
 }
 
 const overallColumns = [

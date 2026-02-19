@@ -157,13 +157,27 @@ try {
         return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
       }
 
-      // Search players
-      const matchedPlayers = allPlayers.filter((p) => {
-        const normalizedQuery = normalizeString(q);
+      // Search players - prioritize starts-with over contains
+      const normalizedQuery = normalizeString(q);
+      const startsWithMatches = [];
+      const containsMatches = [];
+      
+      allPlayers.forEach((p) => {
         const normalizedPlayer = p.player ? normalizeString(p.player) : '';
         const normalizedTeam = p.team ? normalizeString(p.team) : '';
-        return normalizedPlayer.includes(normalizedQuery) || normalizedTeam.includes(normalizedQuery);
-      }).slice(0, 20);
+        
+        // Check if any word in the name starts with the query
+        const words = normalizedPlayer.split(/\s+/);
+        const wordStartsWith = words.some(w => w.startsWith(normalizedQuery));
+        
+        if (wordStartsWith || normalizedTeam.startsWith(normalizedQuery)) {
+          startsWithMatches.push(p);
+        } else if (normalizedPlayer.includes(normalizedQuery) || normalizedTeam.includes(normalizedQuery)) {
+          containsMatches.push(p);
+        }
+      });
+      
+      const matchedPlayers = [...startsWithMatches, ...containsMatches].slice(0, 20);
 
       // Show/hide sections
       if (matchedTeams.length === 0 && matchedPlayers.length === 0) {

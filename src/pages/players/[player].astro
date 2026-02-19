@@ -3,7 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import { StatsTable } from '../../components/StatsTable';
 import fs from 'node:fs';
 import path from 'node:path';
-import { seasons } from '../config/seasons';
+import { seasons } from '../../config/seasons';
+import { teamLogos, teamColors, teamFolders } from '../../utils/teams';
 
 // Get the player from the URL
 const { player } = Astro.params;
@@ -13,40 +14,6 @@ const decodedPlayer = decodeURIComponent(player || '');
 const playerMatch = decodedPlayer.match(/^(\d+)\s+(.+)$/);
 const playerNumber = playerMatch ? playerMatch[1] : null;
 const playerName = playerMatch ? playerMatch[2] : decodedPlayer;
-
-// Team name to folder mapping
-const teamFolders: Record<string, string> = {
-  'Atlanta Soul': 'Atlanta',
-  'Austin Torch': 'Austin',
-  'DC Shadow': 'DC',
-  'Indy Red': 'Indy',
-  'LA Astra': 'LA',
-  'Milwaukee Monarchs': 'Milwaukee',
-  'Minnesota Strike': 'Minnesota',
-  'Nashville NightShade': 'Nashville',
-  'New York Gridlock': 'New York City',
-  'Philadelphia Surge': 'Philadelphia',
-  'Portland Rising': 'Portland',
-  'Raleigh Radiance': 'Raleigh',
-};
-
-// Team logo mapping
-const teamLogos: Record<string, string> = {
-  'Atlanta Soul': 'atlanta.png',
-  'Austin Torch': 'austin.png',
-  'Columbus Pride': 'columbus.png',
-  'DC Shadow': 'dc.png',
-  'Indy Red': 'indy.png',
-  'LA Astra': 'la.png',
-  'Medellin Revolution': 'medellin.png',
-  'Milwaukee Monarchs': 'milwaukee.png',
-  'Minnesota Strike': 'minnesota.png',
-  'Nashville NightShade': 'nashville.png',
-  'New York Gridlock': 'new-york.png',
-  'Philadelphia Surge': 'philadelphia.png',
-  'Portland Rising': 'portland.png',
-  'Raleigh Radiance': 'raleigh.png',
-};
 
 // Load all seasons data
 const playerSeasonStats: Record<string, any> = {};
@@ -102,10 +69,10 @@ const lastNameNoHyphen = lastNameWithHyphen.replace(/-/g, '');
 
 // Generate all possible variations
 const baseNames = [
-  lastNameWithHyphen,                                           // Keep hyphen: Bidigare-Curtis
-  lastNameNoHyphen,                                             // Remove hyphen: BidigareCurtis
+  lastNameWithHyphen,
+  lastNameNoHyphen,
   lastNameWithHyphen.charAt(0).toUpperCase() + lastNameWithHyphen.slice(1), // Capitalize first
-  lastNameNoHyphen.toLowerCase(),                               // All lowercase: bidigarecurtis
+  lastNameNoHyphen.toLowerCase(),                     
 ];
 
 const extensions = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG'];

@@ -1,44 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { StatsTable } from '../../components/StatsTable';
-
-import { seasons } from '../config/seasons';
-
-// Team name to logo filename mapping
-const teamLogos: Record<string, string> = {
-  'Atlanta Soul': 'atlanta.png',
-  'Austin Torch': 'austin.png',
-  'Columbus Pride': 'columbus.png',
-  'DC Shadow': 'dc.png',
-  'Indy Red': 'indy.png',
-  'LA Astra': 'la.png',
-  'Medellin Revolution': 'medellin.png',
-  'Milwaukee Monarchs': 'milwaukee.png',
-  'Minnesota Strike': 'minnesota.png',
-  'Nashville NightShade': 'nashville.png',
-  'New York Gridlock': 'new-york.png',
-  'Philadelphia Surge': 'philadelphia.png',
-  'Portland Rising': 'portland.png',
-  'Raleigh Radiance': 'raleigh.png',
-};
-
-// Team colors for hero banner
-const teamColors: Record<string, { primary: string; secondary: string }> = {
-  'Atlanta Soul': { primary: '#7AC5BE', secondary: '#F7B538' },       // Teal to gold/yellow
-  'Austin Torch': { primary: '#F15A22', secondary: '#1C1C1C' },
-  'Columbus Pride': { primary: '#6B2C91', secondary: '#FFD100' },
-  'DC Shadow': { primary: '#2E1A47', secondary: '#E8B4C8' },          // Dark purple to pink
-  'Indy Red': { primary: '#E84A8A', secondary: '#F7B538' },           // Bright pink to yellow
-  'LA Astra': { primary: '#00A1DE', secondary: '#FFC72C' },
-  'Medellin Revolution': { primary: '#00843D', secondary: '#FFC72C' },
-  'Milwaukee Monarchs': { primary: '#1C1C1C', secondary: '#87CEEB' },  // Black to baby blue
-  'Minnesota Strike': { primary: '#87CEEB', secondary: '#F7D038' },    // Baby blue to yellow
-  'Nashville NightShade': { primary: '#6B2C91', secondary: '#1C1C1C' },
-  'New York Gridlock': { primary: '#E91E8C', secondary: '#1C1C1C' },   // Pink to black
-  'Philadelphia Surge': { primary: '#002D62', secondary: '#C5A572' },  // Navy to gold
-  'Portland Rising': { primary: '#00A651', secondary: '#1C1C1C' },
-  'Raleigh Radiance': { primary: '#1C1C1C', secondary: '#C8102E' },    // Black to red
-};
+import fs from 'node:fs';
+import path from 'node:path';
+import { seasons } from '../../config/seasons';
+import { teamLogos, teamColors, teamFolders } from '../../utils/teams';
 
 // Get the team from the URL
 const { team } = Astro.params;
@@ -173,21 +139,57 @@ const playerColumns = [
           {teamStats ? (
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
               <div class="p-4 border border-pul-border rounded">
-                <div class="text-2xl font-semibold">{teamStats.goals}</div>
+                <div class="text-2xl font-semibold">{teamStats.goals || 0}</div>
                 <div class="text-sm text-pul-gray">Goals</div>
               </div>
+              {teamStats.breakGoals !== undefined && (
+                <div class="p-4 border border-pul-border rounded">
+                  <div class="text-2xl font-semibold">{teamStats.breakGoals}</div>
+                  <div class="text-sm text-pul-gray">Break Goals</div>
+                </div>
+              )}
               <div class="p-4 border border-pul-border rounded">
-                <div class="text-2xl font-semibold">{teamStats.blocks}</div>
-                <div class="text-sm text-pul-gray">Blocks</div>
+                <div class="text-2xl font-semibold">{teamStats.blocks || 0}</div>
+                <div class="text-sm text-pul-gray">Defensive Blocks</div>
               </div>
               <div class="p-4 border border-pul-border rounded">
-                <div class="text-2xl font-semibold">{teamStats.holds}</div>
+                <div class="text-2xl font-semibold">{teamStats.holds || 0}</div>
                 <div class="text-sm text-pul-gray">Holds</div>
               </div>
+              {teamStats.cleanHolds !== undefined && (
+                <div class="p-4 border border-pul-border rounded">
+                  <div class="text-2xl font-semibold">{teamStats.cleanHolds}</div>
+                  <div class="text-sm text-pul-gray">Clean Holds</div>
+                </div>
+              )}
+              {teamStats.passAttempts !== undefined && (
+                <div class="p-4 border border-pul-border rounded">
+                  <div class="text-2xl font-semibold">{teamStats.passAttempts}</div>
+                  <div class="text-sm text-pul-gray">Pass Attempts</div>
+                </div>
+              )}
               <div class="p-4 border border-pul-border rounded">
-                <div class="text-2xl font-semibold">{teamStats.completionRate}%</div>
-                <div class="text-sm text-pul-gray">Completion</div>
+                <div class="text-2xl font-semibold">{teamStats.turnovers || 0}</div>
+                <div class="text-sm text-pul-gray">Turnovers</div>
               </div>
+              {teamStats.completedPasses !== undefined && (
+                <div class="p-4 border border-pul-border rounded">
+                  <div class="text-2xl font-semibold">{teamStats.completedPasses}</div>
+                  <div class="text-sm text-pul-gray">Comp. Passes</div>
+                </div>
+              )}
+              {teamStats.completionRate !== undefined && teamStats.completionRate > 0 && (
+                <div class="p-4 border border-pul-border rounded">
+                  <div class="text-2xl font-semibold">{teamStats.completionRate}%</div>
+                  <div class="text-sm text-pul-gray">Comp. Rate</div>
+                </div>
+              )}
+              {teamStats.hucks !== undefined && (
+                <div class="p-4 border border-pul-border rounded">
+                  <div class="text-2xl font-semibold">{teamStats.hucks}</div>
+                  <div class="text-sm text-pul-gray">Hucks</div>
+                </div>
+              )}
             </div>
           ) : (
             <p class="text-pul-gray mb-8">No team stats available for {season}.</p>

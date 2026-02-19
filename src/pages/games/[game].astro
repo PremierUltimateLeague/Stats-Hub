@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
-import { seasons } from '../config/seasons';
+import { seasons } from '../../config/seasons';
 
 // Generate static paths for all games - MUST be before using Astro.params
 export async function getStaticPaths() {

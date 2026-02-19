@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
+import { teamLogos } from '../utils/teams';
 
 const playersBySeason = loadSeasonData(seasons, 'players_season.json');
 
@@ -158,7 +159,7 @@ for (const seasonKey of [...seasons, 'career']) {
 
     {seasons.map(season => (
       <div data-season={season} class={season === defaultSeason ? '' : 'hidden'}>
-        {playersBySeason[season].length > 0 ? (
+          {playersBySeason[season].length > 0 && playersBySeason[season].some((p: any) => (p.goals || 0) + (p.assists || 0) + (p.blocks || 0) > 0) ? (
           <div class="grid md:grid-cols-2 gap-6">
             {categories.map(cat => {
               const leaders = leadersBySeason[season]?.[cat.key] || [];
@@ -212,6 +213,11 @@ for (const seasonKey of [...seasons, 'career']) {
                 </div>
               );
             })}
+          </div>
+        ) : playersBySeason[season].length > 0 ? (
+          <div class="text-center py-12">
+            <p class="text-pul-gray text-lg mb-2">🏟️ Season hasn't started yet</p>
+            <p class="text-pul-gray text-sm">Leaders will appear once games are played</p>
           </div>
         ) : (
           <p class="text-pul-gray py-8">No player data available for {season}.</p>

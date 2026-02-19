@@ -1,0 +1,722 @@
+[
+  {
+    "abbrev": "ATL",
+    "team": "Atlanta Soul",
+    "match": "ATL @ ATX",
+    "week": "Week 8",
+    "goals": 11,
+    "assists": 11,
+    "blocks": 10,
+    "turnovers": 33
+  },
+  {
+    "abbrev": "ATL",
+    "team": "Atlanta Soul",
+    "match": "ATL @ CBUS",
+    "week": "Week 11",
+    "goals": 23,
+    "assists": 23,
+    "blocks": 13,
+    "turnovers": 28
+  },
+  {
+    "abbrev": "ATL",
+    "team": "Atlanta Soul",
+    "match": "ATL @ IND",
+    "week": "Week 6",
+    "goals": 13,
+    "assists": 13,
+    "blocks": 13,
+    "turnovers": 35
+  },
+  {
+    "abbrev": "ATL",
+    "team": "Atlanta Soul",
+    "match": "MIN @ ATL",
+    "week": "Week 4",
+    "goals": 11,
+    "assists": 11,
+    "blocks": 15,
+    "turnovers": 37
+  },
+  {
+    "abbrev": "ATL",
+    "team": "Atlanta Soul",
+    "match": "NASH @ ATL",
+    "week": "Week 10",
+    "goals": 20,
+    "assists": 20,
+    "blocks": 21,
+    "turnovers": 27
+  },
+  {
+    "abbrev": "ATL",
+    "team": "Atlanta Soul",
+    "match": "RAL @ ATL",
+    "week": "Week 7",
+    "goals": 16,
+    "assists": 16,
+    "blocks": 5,
+    "turnovers": 31
+  },
+  {
+    "abbrev": "ATX",
+    "team": "Austin Torch",
+    "match": "ATL @ ATX",
+    "week": "Week 8",
+    "goals": 23,
+    "assists": 23,
+    "blocks": 11,
+    "turnovers": 14
+  },
+  {
+    "abbrev": "ATX",
+    "team": "Austin Torch",
+    "match": "ATX @ NY",
+    "week": "Week 10",
+    "goals": 11,
+    "assists": 11,
+    "blocks": 13,
+    "turnovers": 44
+  },
+  {
+    "abbrev": "ATX",
+    "team": "Austin Torch",
+    "match": "ATX @ PHL",
+    "week": "Week 10",
+    "goals": 13,
+    "assists": 13,
+    "blocks": 4,
+    "turnovers": 8
+  },
+  {
+    "abbrev": "ATX",
+    "team": "Austin Torch",
+    "match": "ATX @ RAL",
+    "week": "Week 3",
+    "goals": 16,
+    "assists": 16,
+    "blocks": 11,
+    "turnovers": 27
+  },
+  {
+    "abbrev": "ATX",
+    "team": "Austin Torch",
+    "match": "NASH @ ATX",
+    "week": "Week 5",
+    "goals": 14,
+    "assists": 15,
+    "blocks": 13,
+    "turnovers": 46
+  },
+  {
+    "abbrev": "ATX",
+    "team": "Austin Torch",
+    "match": "POR @ ATX",
+    "week": "Week 1",
+    "goals": 13,
+    "assists": 13,
+    "blocks": 8,
+    "turnovers": 25
+  },
+  {
+    "abbrev": "CBUS",
+    "team": "Columbus Pride",
+    "match": "ATL @ CBUS",
+    "week": "Week 11",
+    "goals": 5,
+    "assists": 5,
+    "blocks": 2,
+    "turnovers": 6
+  },
+  {
+    "abbrev": "CBUS",
+    "team": "Columbus Pride",
+    "match": "CBUS @ IND",
+    "week": "Week 10",
+    "goals": 12,
+    "assists": 12,
+    "blocks": 13,
+    "turnovers": 35
+  },
+  {
+    "abbrev": "CBUS",
+    "team": "Columbus Pride",
+    "match": "CBUS @ MIN",
+    "week": "Week 8",
+    "goals": 10,
+    "assists": 10,
+    "blocks": 7,
+    "turnovers": 36
+  },
+  {
+    "abbrev": "CBUS",
+    "team": "Columbus Pride",
+    "match": "CBUS @ RAL",
+    "week": "Week 1",
+    "goals": 10,
+    "assists": 10,
+    "blocks": 16,
+    "turnovers": 41
+  },
+  {
+    "abbrev": "CBUS",
+    "team": "Columbus Pride",
+    "match": "MKE @ CBUS",
+    "week": "Week 7",
+    "goals": 15,
+    "assists": 15,
+    "blocks": 11,
+    "turnovers": 24
+  },
+  {
+    "abbrev": "CBUS",
+    "team": "Columbus Pride",
+    "match": "NASH @ CBUS",
+    "week": "Week 3",
+    "goals": 17,
+    "assists": 17,
+    "blocks": 9,
+    "turnovers": 27
+  },
+  {
+    "abbrev": "DC",
+    "team": "DC Shadow",
+    "match": "DC @ MKE",
+    "week": "Week 3",
+    "goals": 24,
+    "assists": 24,
+    "blocks": 18,
+    "turnovers": 24
+  },
+  {
+    "abbrev": "DC",
+    "team": "DC Shadow",
+    "match": "DC @ NY",
+    "week": "Week 8",
+    "goals": 17,
+    "assists": 17,
+    "blocks": 14,
+    "turnovers": 28
+  },
+  {
+    "abbrev": "DC",
+    "team": "DC Shadow",
+    "match": "DC @ POR",
+    "week": "Week 6",
+    "goals": 15,
+    "assists": 15,
+    "blocks": 9,
+    "turnovers": 30
+  },
+  {
+    "abbrev": "DC",
+    "team": "DC Shadow",
+    "match": "IND @ DC",
+    "week": "Week 2",
+    "goals": 29,
+    "assists": 28,
+    "blocks": 11,
+    "turnovers": 15
+  },
+  {
+    "abbrev": "DC",
+    "team": "DC Shadow",
+    "match": "PHL @ DC",
+    "week": "Week 7",
+    "goals": 15,
+    "assists": 15,
+    "blocks": 7,
+    "turnovers": 19
+  },
+  {
+    "abbrev": "DC",
+    "team": "DC Shadow",
+    "match": "RAL @ DC",
+    "week": "Week 10",
+    "goals": 15,
+    "assists": 15,
+    "blocks": 9,
+    "turnovers": 25
+  },
+  {
+    "abbrev": "IND",
+    "team": "Indy Red",
+    "match": "ATL @ IND",
+    "week": "Week 6",
+    "goals": 18,
+    "assists": 18,
+    "blocks": 10,
+    "turnovers": 30
+  },
+  {
+    "abbrev": "IND",
+    "team": "Indy Red",
+    "match": "CBUS @ IND",
+    "week": "Week 10",
+    "goals": 16,
+    "assists": 18,
+    "blocks": 21,
+    "turnovers": 30
+  },
+  {
+    "abbrev": "IND",
+    "team": "Indy Red",
+    "match": "IND @ DC",
+    "week": "Week 2",
+    "goals": 11,
+    "assists": 11,
+    "blocks": 4,
+    "turnovers": 31
+  },
+  {
+    "abbrev": "IND",
+    "team": "Indy Red",
+    "match": "IND @ MIN",
+    "week": "Week 5",
+    "goals": 4,
+    "assists": 4,
+    "blocks": 16,
+    "turnovers": 43
+  },
+  {
+    "abbrev": "IND",
+    "team": "Indy Red",
+    "match": "IND @ NASH",
+    "week": "Week 9",
+    "goals": 16,
+    "assists": 16,
+    "blocks": 15,
+    "turnovers": 28
+  },
+  {
+    "abbrev": "IND",
+    "team": "Indy Red",
+    "match": "MKE @ IND",
+    "week": "Week 7",
+    "goals": 27,
+    "assists": 27,
+    "blocks": 13,
+    "turnovers": 18
+  },
+  {
+    "abbrev": "MIN",
+    "team": "Minnesota Strike",
+    "match": "CBUS @ MIN",
+    "week": "Week 8",
+    "goals": 16,
+    "assists": 16,
+    "blocks": 9,
+    "turnovers": 26
+  },
+  {
+    "abbrev": "MIN",
+    "team": "Minnesota Strike",
+    "match": "IND @ MIN",
+    "week": "Week 5",
+    "goals": 10,
+    "assists": 10,
+    "blocks": 18,
+    "turnovers": 32
+  },
+  {
+    "abbrev": "MIN",
+    "team": "Minnesota Strike",
+    "match": "MIN @ ATL",
+    "week": "Week 4",
+    "goals": 13,
+    "assists": 13,
+    "blocks": 15,
+    "turnovers": 36
+  },
+  {
+    "abbrev": "MIN",
+    "team": "Minnesota Strike",
+    "match": "MIN @ MKE",
+    "week": "Week 10",
+    "goals": 20,
+    "assists": 20,
+    "blocks": 15,
+    "turnovers": 21
+  },
+  {
+    "abbrev": "MIN",
+    "team": "Minnesota Strike",
+    "match": "MIN @ NASH",
+    "week": "Week 4",
+    "goals": 21,
+    "assists": 21,
+    "blocks": 15,
+    "turnovers": 15
+  },
+  {
+    "abbrev": "MIN",
+    "team": "Minnesota Strike",
+    "match": "NY @ MIN",
+    "week": "Week 6",
+    "goals": 18,
+    "assists": 18,
+    "blocks": 13,
+    "turnovers": 24
+  },
+  {
+    "abbrev": "MKE",
+    "team": "Milwaukee Monarchs",
+    "match": "DC @ MKE",
+    "week": "Week 3",
+    "goals": 6,
+    "assists": 6,
+    "blocks": 7,
+    "turnovers": 49
+  },
+  {
+    "abbrev": "MKE",
+    "team": "Milwaukee Monarchs",
+    "match": "MIN @ MKE",
+    "week": "Week 10",
+    "goals": 14,
+    "assists": 14,
+    "blocks": 5,
+    "turnovers": 29
+  },
+  {
+    "abbrev": "MKE",
+    "team": "Milwaukee Monarchs",
+    "match": "MKE @ CBUS",
+    "week": "Week 7",
+    "goals": 16,
+    "assists": 16,
+    "blocks": 10,
+    "turnovers": 28
+  },
+  {
+    "abbrev": "MKE",
+    "team": "Milwaukee Monarchs",
+    "match": "MKE @ IND",
+    "week": "Week 7",
+    "goals": 10,
+    "assists": 10,
+    "blocks": 9,
+    "turnovers": 38
+  },
+  {
+    "abbrev": "MKE",
+    "team": "Milwaukee Monarchs",
+    "match": "MKE @ POR",
+    "week": "Week 9",
+    "goals": 8,
+    "assists": 8,
+    "blocks": 8,
+    "turnovers": 37
+  },
+  {
+    "abbrev": "MKE",
+    "team": "Milwaukee Monarchs",
+    "match": "NY @ MKE",
+    "week": "Week 6",
+    "goals": 7,
+    "assists": 7,
+    "blocks": 7,
+    "turnovers": 41
+  },
+  {
+    "abbrev": "NSH",
+    "team": "Nashville NightShade",
+    "match": "IND @ NSH",
+    "week": "Week 9",
+    "goals": 9,
+    "assists": 9,
+    "blocks": 14,
+    "turnovers": 40
+  },
+  {
+    "abbrev": "NSH",
+    "team": "Nashville NightShade",
+    "match": "MIN @ NSH",
+    "week": "Week 4",
+    "goals": 13,
+    "assists": 13,
+    "blocks": 14,
+    "turnovers": 38
+  },
+  {
+    "abbrev": "NSH",
+    "team": "Nashville NightShade",
+    "match": "NSH @ ATL",
+    "week": "Week 10",
+    "goals": 16,
+    "assists": 16,
+    "blocks": 9,
+    "turnovers": 32
+  },
+  {
+    "abbrev": "NSH",
+    "team": "Nashville NightShade",
+    "match": "NSH @ ATX",
+    "week": "Week 5",
+    "goals": 17,
+    "assists": 17,
+    "blocks": 19,
+    "turnovers": 33
+  },
+  {
+    "abbrev": "NSH",
+    "team": "Nashville NightShade",
+    "match": "NSH @ CBUS",
+    "week": "Week 3",
+    "goals": 20,
+    "assists": 20,
+    "blocks": 13,
+    "turnovers": 29
+  },
+  {
+    "abbrev": "NSH",
+    "team": "Nashville NightShade",
+    "match": "RAL @ NSH",
+    "week": "Week 8",
+    "goals": 18,
+    "assists": 18,
+    "blocks": 5,
+    "turnovers": 18
+  },
+  {
+    "abbrev": "NY",
+    "team": "New York Gridlock",
+    "match": "ATX @ NY",
+    "week": "Week 10",
+    "goals": 21,
+    "assists": 19,
+    "blocks": 27,
+    "turnovers": 44
+  },
+  {
+    "abbrev": "NY",
+    "team": "New York Gridlock",
+    "match": "DC @ NY",
+    "week": "Week 8",
+    "goals": 19,
+    "assists": 19,
+    "blocks": 13,
+    "turnovers": 32
+  },
+  {
+    "abbrev": "NY",
+    "team": "New York Gridlock",
+    "match": "NY @ MIN",
+    "week": "Week 6",
+    "goals": 17,
+    "assists": 17,
+    "blocks": 8,
+    "turnovers": 34
+  },
+  {
+    "abbrev": "NY",
+    "team": "New York Gridlock",
+    "match": "NY @ MKE",
+    "week": "Week 6",
+    "goals": 16,
+    "assists": 18,
+    "blocks": 21,
+    "turnovers": 25
+  },
+  {
+    "abbrev": "NY",
+    "team": "New York Gridlock",
+    "match": "NY @ PHL",
+    "week": "Week 2",
+    "goals": 12,
+    "assists": 13,
+    "blocks": 9,
+    "turnovers": 13
+  },
+  {
+    "abbrev": "NY",
+    "team": "New York Gridlock",
+    "match": "POR @ NY",
+    "week": "Week 5",
+    "goals": 22,
+    "assists": 22,
+    "blocks": 8,
+    "turnovers": 15
+  },
+  {
+    "abbrev": "PHL",
+    "team": "Philadelphia Surge",
+    "match": "ATX @ PHL",
+    "week": "Week 10",
+    "goals": 18,
+    "assists": 18,
+    "blocks": 15,
+    "turnovers": 15
+  },
+  {
+    "abbrev": "PHL",
+    "team": "Philadelphia Surge",
+    "match": "NY @ PHL",
+    "week": "Week 2",
+    "goals": 17,
+    "assists": 17,
+    "blocks": 12,
+    "turnovers": 13
+  },
+  {
+    "abbrev": "PHL",
+    "team": "Philadelphia Surge",
+    "match": "PHL @ DC",
+    "week": "Week 7",
+    "goals": 10,
+    "assists": 10,
+    "blocks": 9,
+    "turnovers": 22
+  },
+  {
+    "abbrev": "PHL",
+    "team": "Philadelphia Surge",
+    "match": "PHL @ POR",
+    "week": "Week 4",
+    "goals": 17,
+    "assists": 17,
+    "blocks": 15,
+    "turnovers": 18
+  },
+  {
+    "abbrev": "PHL",
+    "team": "Philadelphia Surge",
+    "match": "PHL @ RAL",
+    "week": "Week 5",
+    "goals": 9,
+    "assists": 9,
+    "blocks": 9,
+    "turnovers": 15
+  },
+  {
+    "abbrev": "PHL",
+    "team": "Philadelphia Surge",
+    "match": "POR @ PHL",
+    "week": "Week 8",
+    "goals": 14,
+    "assists": 14,
+    "blocks": 12,
+    "turnovers": 22
+  },
+  {
+    "abbrev": "PORT",
+    "team": "Portland Rising",
+    "match": "DC @ PORT",
+    "week": "Week 6",
+    "goals": 10,
+    "assists": 11,
+    "blocks": 9,
+    "turnovers": 31
+  },
+  {
+    "abbrev": "PORT",
+    "team": "Portland Rising",
+    "match": "MKE @ PORT",
+    "week": "Week 9",
+    "goals": 17,
+    "assists": 17,
+    "blocks": 23,
+    "turnovers": 32
+  },
+  {
+    "abbrev": "PORT",
+    "team": "Portland Rising",
+    "match": "PHL @ PORT",
+    "week": "Week 4",
+    "goals": 7,
+    "assists": 7,
+    "blocks": 13,
+    "turnovers": 26
+  },
+  {
+    "abbrev": "PORT",
+    "team": "Portland Rising",
+    "match": "PORT @ ATX",
+    "week": "Week 1",
+    "goals": 14,
+    "assists": 14,
+    "blocks": 11,
+    "turnovers": 27
+  },
+  {
+    "abbrev": "PORT",
+    "team": "Portland Rising",
+    "match": "PORT @ NY",
+    "week": "Week 5",
+    "goals": 13,
+    "assists": 13,
+    "blocks": 6,
+    "turnovers": 18
+  },
+  {
+    "abbrev": "PORT",
+    "team": "Portland Rising",
+    "match": "PORT @ PHL",
+    "week": "Week 8",
+    "goals": 10,
+    "assists": 10,
+    "blocks": 4,
+    "turnovers": 16
+  },
+  {
+    "abbrev": "RAL",
+    "team": "Raleigh Radiance",
+    "match": "ATX @ RAL",
+    "week": "Week 3",
+    "goals": 17,
+    "assists": 17,
+    "blocks": 17,
+    "turnovers": 32
+  },
+  {
+    "abbrev": "RAL",
+    "team": "Raleigh Radiance",
+    "match": "CBUS @ RAL",
+    "week": "Week 1",
+    "goals": 14,
+    "assists": 14,
+    "blocks": 16,
+    "turnovers": 36
+  },
+  {
+    "abbrev": "RAL",
+    "team": "Raleigh Radiance",
+    "match": "PHL @ RAL",
+    "week": "Week 5",
+    "goals": 4,
+    "assists": 4,
+    "blocks": 10,
+    "turnovers": 16
+  },
+  {
+    "abbrev": "RAL",
+    "team": "Raleigh Radiance",
+    "match": "RAL @ ATL",
+    "week": "Week 7",
+    "goals": 26,
+    "assists": 27,
+    "blocks": 11,
+    "turnovers": 18
+  },
+  {
+    "abbrev": "RAL",
+    "team": "Raleigh Radiance",
+    "match": "RAL @ DC",
+    "week": "Week 10",
+    "goals": 12,
+    "assists": 12,
+    "blocks": 9,
+    "turnovers": 29
+  },
+  {
+    "abbrev": "RAL",
+    "team": "Raleigh Radiance",
+    "match": "RAL @ NASH",
+    "week": "Week 8",
+    "goals": 21,
+    "assists": 21,
+    "blocks": 6,
+    "turnovers": 21
+  }
+]
