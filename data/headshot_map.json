@@ -1,0 +1,3822 @@
+{
+  "00 Alicia Carr": {
+    "filename": "Carr00",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Carr00.jpg"
+  },
+  "00 Donna Johnston": {
+    "filename": "Johnston00",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "00 Eileen Duffner": {
+    "filename": "Duffner00",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Duffner00.jpg"
+  },
+  "00 Emilie Mohler": {
+    "filename": "Mohler00",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Mohler00.jpg"
+  },
+  "00 Emma Jones": {
+    "filename": "Jones00",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "00 Genny De Jesus": {
+    "filename": "DeJesus00",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Dejesus00.jpg"
+  },
+  "00 Jordan Sorensen": {
+    "filename": "Sorensen00",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "00 Julia Zwierzynski": {
+    "filename": "Zwierzynski00",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Zwierzynski0.jpg"
+  },
+  "00 Katie Cox": {
+    "filename": "Cox00",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Cox0.jpg"
+  },
+  "00 Madison Cannon": {
+    "filename": "Cannon00",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Cannon0.jpg"
+  },
+  "00 Maggie Rowell": {
+    "filename": "Rowell00",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Rowell00.jpg"
+  },
+  "00 Margaret Rowell": {
+    "filename": "Rowell00",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Rowell00.jpg"
+  },
+  "00 Stephanie Pritchard": {
+    "filename": "Pritchard00",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "01 Alora Reiff": {
+    "filename": "Reiff01",
+    "team": "Columbus Pride",
+    "headshot": null
+  },
+  "01 Amelia Zdechlik": {
+    "filename": "Zdechlik01",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "01 Anat Gross": {
+    "filename": "Gross01",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Gross1.jpg"
+  },
+  "01 Anna Wysen": {
+    "filename": "Wysen01",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Wysen1.jpg"
+  },
+  "01 Ashleigh Buch": {
+    "filename": "Buch01",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Buch1.jpg"
+  },
+  "01 Ashleigh Jentilet": {
+    "filename": "Jentilet01",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Jentilet1.jpg"
+  },
+  "01 Charlie Hawkins": {
+    "filename": "Hawkins01",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Hawkins1.jpg"
+  },
+  "01 Elizabeth Diamond": {
+    "filename": "Diamond01",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "01 Emily Shields": {
+    "filename": "Shields01",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "01 Greta Friedrichs": {
+    "filename": "Friedrichs01",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "01 Jenny Wang": {
+    "filename": "Wang01",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Wang1.jpg"
+  },
+  "01 Lindsay Soo": {
+    "filename": "Soo01",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "01 Maggie O'Connor": {
+    "filename": "OConnor01",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "01 Meg Zeng": {
+    "filename": "Zeng01",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "01 Quincy Booth": {
+    "filename": "Booth01",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Booth1.jpg"
+  },
+  "01 Tori Radcliffe": {
+    "filename": "Radcliffe01",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "01 Zella Sahar": {
+    "filename": "Sahar01",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Sahar1.jpeg"
+  },
+  "02 Annie Phan": {
+    "filename": "Phan02",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Phan2.jpg"
+  },
+  "02 Brittany Kaplan": {
+    "filename": "Kaplan02",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Kaplan2.jpg"
+  },
+  "02 Carolyn Normile": {
+    "filename": "Normile02",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Normile2.jpg"
+  },
+  "02 Claire Bidigare-Curtis": {
+    "filename": "Bidigare-Curtis02",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Bidigare-Curtis2.jpeg"
+  },
+  "02 Cori Bradham": {
+    "filename": "Bradham02",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Bradham2.jpg"
+  },
+  "02 Donna Johnston": {
+    "filename": "Johnston02",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Johnston2.jpg"
+  },
+  "02 Edi Lam": {
+    "filename": "Lam02",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Lam2.jpg"
+  },
+  "02 Elise Bjork": {
+    "filename": "Bjork02",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Bjork2.png"
+  },
+  "02 Elizabeth Wu": {
+    "filename": "Wu02",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Wu2.jpg"
+  },
+  "02 Iman Haq": {
+    "filename": "Haq02",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "02 Jesse Shofner": {
+    "filename": "Shofner02",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Shofner2.png"
+  },
+  "02 Jolene Zheng": {
+    "filename": "Zheng02",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "02 Katina Russell": {
+    "filename": "Russell02",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Russell2.jpg"
+  },
+  "02 Maketa Mattimore": {
+    "filename": "Mattimore02",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Mattimore2.jpg"
+  },
+  "02 Marie Perivier": {
+    "filename": "Perivier02",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Perivier2.jpg"
+  },
+  "02 Melanie Thomas": {
+    "filename": "Thomas02",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Thomas2.jpg"
+  },
+  "02 Natalie Barnhart": {
+    "filename": "Barnhart02",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Barnhart2.jpg"
+  },
+  "02 Rachel Joy-Rocha": {
+    "filename": "Joy-Rocha02",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "02 Sierra Rimmer": {
+    "filename": "Rimmer02",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "02 Steph Wood": {
+    "filename": "Wood02",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Wood2.jpg"
+  },
+  "02 Stephanie Wood": {
+    "filename": "Wood02",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Wood2.jpg"
+  },
+  "02 Wilhelmina Graff": {
+    "filename": "Graff02",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Graff2.png"
+  },
+  "02 Zo\u00eb Lewis": {
+    "filename": "Lewis02",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Lewis2.jpg"
+  },
+  "03 Abby Cheng": {
+    "filename": "Cheng03",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Cheng3.jpg"
+  },
+  "03 Alex Krueger": {
+    "filename": "Krueger03",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "03 Allison Maddux": {
+    "filename": "Maddux03",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Maddux3.jpg"
+  },
+  "03 Chip Yen": {
+    "filename": "Yen03",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "03 Dana Bidot": {
+    "filename": "Bidot03",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Bidot3.jpg"
+  },
+  "03 Erika Watson": {
+    "filename": "Watson03",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "03 Grace Conerly": {
+    "filename": "Conerly03",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Conerly3.jpg"
+  },
+  "03 Liv Player": {
+    "filename": "Player03",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "03 Lyra Olson": {
+    "filename": "Olson03",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Olson3.jpeg"
+  },
+  "03 Madi Cannon": {
+    "filename": "Cannon03",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "03 Madison Cannon": {
+    "filename": "Cannon03",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "03 Makella Daley": {
+    "filename": "Daley03",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Daley3.jpg"
+  },
+  "03 Mary Timmons": {
+    "filename": "Timmons03",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Timmons3.jpg"
+  },
+  "03 Metta Devine-Qin": {
+    "filename": "Devine-Qin03",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Devine-Qin3.png"
+  },
+  "03 Rachel Alfano": {
+    "filename": "Alfano03",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Alfano3.jpg"
+  },
+  "03 Sami Smalling": {
+    "filename": "Smalling03",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Smalling3.jpg"
+  },
+  "03 Sara Mog": {
+    "filename": "Mog03",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Mog3.jpg"
+  },
+  "04 Aasta Thurman": {
+    "filename": "Thurman04",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Thurman4.jpg"
+  },
+  "04 Adelle Pitsas": {
+    "filename": "Pitsas04",
+    "team": "Portland Rising",
+    "headshot": null
+  },
+  "04 Agatha Scales": {
+    "filename": "Scales04",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Scales4.jpg"
+  },
+  "04 Amy Lee": {
+    "filename": "Lee04",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "04 Ana Harnage": {
+    "filename": "Harnage04",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Harnage4.jpg"
+  },
+  "04 Ashley Powell": {
+    "filename": "Powell04",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Powell4.jpg"
+  },
+  "04 Ashley West": {
+    "filename": "West04",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/West4.png"
+  },
+  "04 Ashley powell": {
+    "filename": "powell04",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Powell4.jpg"
+  },
+  "04 Cassidy Kummrow": {
+    "filename": "Kummrow04",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Kummrow4.jpg"
+  },
+  "04 Chloe Greene": {
+    "filename": "Greene04",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "04 Eliana Harnage": {
+    "filename": "Harnage04",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Harnage4.jpg"
+  },
+  "04 Ellen Mueller": {
+    "filename": "Mueller04",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Mueller4.jpg"
+  },
+  "04 Erica Baken": {
+    "filename": "Baken04",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "04 Hayley Banas": {
+    "filename": "Banas04",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Banas4.jpg"
+  },
+  "04 Isabella Bevans": {
+    "filename": "Bevans04",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Bevans4.jpeg"
+  },
+  "04 MC Robbins": {
+    "filename": "Robbins04",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Robbins4.png"
+  },
+  "04 Makk": {
+    "filename": "Makk04",
+    "team": "Portland Rising",
+    "headshot": null
+  },
+  "04 Margo Stanger": {
+    "filename": "Stanger04",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Stanger4.jpg"
+  },
+  "04 Mari\u00e9 Weverka": {
+    "filename": "Weverka04",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Weverka4.jpg"
+  },
+  "04 Mary Clare Robbins": {
+    "filename": "Robbins04",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Robbins4.png"
+  },
+  "04 Rachel Mast": {
+    "filename": "Mast04",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Mast4.jpg"
+  },
+  "04 Raha Mozaffari": {
+    "filename": "Mozaffari04",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Mozaffari4.jpg"
+  },
+  "04 Regina Barcio": {
+    "filename": "Barcio04",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "04 Stazi Tangherlini": {
+    "filename": "Tangherlini04",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Tangherlini4.jpg"
+  },
+  "05 Alexandra Mitchell": {
+    "filename": "Mitchell05",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Mitchell5.jpg"
+  },
+  "05 Dre Esparza": {
+    "filename": "Esparza05",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Esparza5.png"
+  },
+  "05 Elise Erickson": {
+    "filename": "Erickson05",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "05 Elise Franke": {
+    "filename": "Franke05",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Franke5.jpg"
+  },
+  "05 Emily Wang": {
+    "filename": "Wang05",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "05 Lily Ponitz": {
+    "filename": "Ponitz05",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Ponitz5.jpg"
+  },
+  "05 Lindsay McKenna": {
+    "filename": "McKenna05",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Mckenna5.jpg"
+  },
+  "05 Lizzie Tilden": {
+    "filename": "Tilden05",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Tilden5.jpg"
+  },
+  "05 Marie Perivier": {
+    "filename": "Perivier05",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "05 Megan Jarriel": {
+    "filename": "Jarriel05",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Jarriel5.jpg"
+  },
+  "05 Rose Glinka": {
+    "filename": "Glinka05",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Glinka5.jpg"
+  },
+  "05 Sharon Tseng": {
+    "filename": "Tseng05",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "05 Steph Rupp": {
+    "filename": "Rupp05",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Rupp5.jpg"
+  },
+  "05 Stephanie Rupp": {
+    "filename": "Rupp05",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Rupp5.jpg"
+  },
+  "05 Sydney Stelzer": {
+    "filename": "Stelzer05",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Stelzer5.jpg"
+  },
+  "06 Audrey Parrott": {
+    "filename": "Parrott06",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Parrott6.jpg"
+  },
+  "06 Carly Eckstrom": {
+    "filename": "Eckstrom06",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Eckstrom6.jpg"
+  },
+  "06 Chlo\u00eb Rowse": {
+    "filename": "Rowse06",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Rowse6.jpg"
+  },
+  "06 Christine Goh": {
+    "filename": "Goh06",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Goh6.jpg"
+  },
+  "06 Corinn Pruitt": {
+    "filename": "Pruitt06",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Pruitt6.jpg"
+  },
+  "06 Gwen Rauch": {
+    "filename": "Rauch06",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Rauch6.jpg"
+  },
+  "06 Jane Zheng": {
+    "filename": "Zheng06",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Zheng6.jpg"
+  },
+  "06 Jenny Wei": {
+    "filename": "Wei06",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Wei6.jpeg"
+  },
+  "06 Laureen Johnson": {
+    "filename": "Johnson06",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "06 Lo Guerin": {
+    "filename": "Guerin06",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "06 Lylah Bannister": {
+    "filename": "Bannister06",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "06 Micah Roberts": {
+    "filename": "Roberts06",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "06 Morgan Lally": {
+    "filename": "Lally06",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Lally6.jpg"
+  },
+  "06 Natalie Wilson": {
+    "filename": "Wilson06",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Wilson6.jpg"
+  },
+  "06 Rebecca Fagan": {
+    "filename": "Fagan06",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Fagan6.jpg"
+  },
+  "06 Renata Pepi": {
+    "filename": "Pepi06",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Pepi6.jpg"
+  },
+  "06 Risa Umeno": {
+    "filename": "Umeno06",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Umeno6.jpg"
+  },
+  "06 Rowse": {
+    "filename": "Rowse06",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Rowse6.jpg"
+  },
+  "06 Willy (Natalie Wilson)": {
+    "filename": "Wilson06",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Wilson6.jpg"
+  },
+  "07 Abby Hecko": {
+    "filename": "Hecko07",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Hecko7.jpg"
+  },
+  "07 Allison Murphy": {
+    "filename": "Murphy07",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Murphy7.jpg"
+  },
+  "07 Allison Reilly": {
+    "filename": "Reilly07",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Reilly7.jpg"
+  },
+  "07 Annie Meilink": {
+    "filename": "Meilink07",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Meilink7.jpg"
+  },
+  "07 Annie Melink": {
+    "filename": "Melink07",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "07 Danielle Byers": {
+    "filename": "Byers07",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Byers7.jpg"
+  },
+  "07 Danielle Simonelli": {
+    "filename": "Simonelli07",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "07 Delaney Marsalek": {
+    "filename": "Marsalek07",
+    "team": "Columbus Pride",
+    "headshot": null
+  },
+  "07 Fay Epstein": {
+    "filename": "Epstein07",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Epstein7.jpg"
+  },
+  "07 Jessica Martinez": {
+    "filename": "Martinez07",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "07 Kami Groom": {
+    "filename": "Groom07",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "07 Luisa Neves": {
+    "filename": "Neves07",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Neves7.jpg"
+  },
+  "07 Mary Cowart": {
+    "filename": "Cowart07",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "07 Nikki Ross": {
+    "filename": "Ross07",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "07 Nikki Tucker": {
+    "filename": "Tucker07",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Tucker7.jpg"
+  },
+  "07 Shiru Liu": {
+    "filename": "Liu07",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Liu7.jpg"
+  },
+  "07 Sydney Stelzer": {
+    "filename": "Stelzer07",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "08 Alex Hu": {
+    "filename": "Hu08",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Hu8.jpg"
+  },
+  "08 Becky Moore": {
+    "filename": "Moore08",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Moore8.jpg"
+  },
+  "08 Catherine Chen": {
+    "filename": "Chen08",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Chen8.jpg"
+  },
+  "08 Dani Ortiz": {
+    "filename": "Ortiz08",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Ortiz8.jpg"
+  },
+  "08 Emma Soiles": {
+    "filename": "Soiles08",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Soiles8.jpg"
+  },
+  "08 Eugenia Garza": {
+    "filename": "Garza08",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "08 Georgia Tse": {
+    "filename": "Tse08",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Tse8.jpeg"
+  },
+  "08 Georgia Tso": {
+    "filename": "Tso08",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "08 Grace Robinson": {
+    "filename": "Robinson08",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "08 Haley Challgren": {
+    "filename": "Challgren08",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Challgren8.jpg"
+  },
+  "08 Jamie Smets": {
+    "filename": "Smets08",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "08 Joanna Maida": {
+    "filename": "Maida08",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "08 Kat Ritzmann": {
+    "filename": "Ritzmann08",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Ritzmann8.jpg"
+  },
+  "08 Kathryn Ritzman": {
+    "filename": "Ritzman08",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "08 Kelly Hyland": {
+    "filename": "Hyland08",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Hyland8.jpg"
+  },
+  "08 Kendall Brown": {
+    "filename": "Brown08",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Brown8.jpg"
+  },
+  "08 ManHua Zhu": {
+    "filename": "Zhu08",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "08 Mandy Radike": {
+    "filename": "Radike08",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Radike8.jpg"
+  },
+  "08 Manuela Cardenas": {
+    "filename": "Cardenas08",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "08 Margie Quinn": {
+    "filename": "Quinn08",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Quinn8.png"
+  },
+  "08 Mindy Radike": {
+    "filename": "Radike08",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Radike8.jpg"
+  },
+  "08 Nicki Chan": {
+    "filename": "Chan08",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Chan8.png"
+  },
+  "08 Sophia Wang": {
+    "filename": "Wang08",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Wang8.jpg"
+  },
+  "08 Sowmya Ragothaman": {
+    "filename": "Ragothaman08",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Ragothaman8.jpg"
+  },
+  "09 Abby Faulhaber": {
+    "filename": "Faulhaber09",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Faulhaber9.jpg"
+  },
+  "09 Amanda Giles": {
+    "filename": "Giles09",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Giles9.png"
+  },
+  "09 Annelise Peters": {
+    "filename": "Peters09",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Peters9.jpg"
+  },
+  "09 Arenaria Cramer": {
+    "filename": "Cramer09",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "09 Becky Malinowski": {
+    "filename": "Malinowski09",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Malinowski9.jpg"
+  },
+  "09 Cassandra Brown": {
+    "filename": "Brown09",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Brown9.jpg"
+  },
+  "09 Cassie Brown": {
+    "filename": "Brown09",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Brown9.jpg"
+  },
+  "09 Corinn Rains": {
+    "filename": "Rains09",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Rains9.jpg"
+  },
+  "09 Emily Evans": {
+    "filename": "Evans09",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Evans9.jpeg"
+  },
+  "09 Emma Patterson": {
+    "filename": "Patterson09",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "09 Fiona Cashin": {
+    "filename": "Cashin09",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Cashin9.jpg"
+  },
+  "09 Isabel Demo": {
+    "filename": "Demo09",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "09 Jinny Riedel": {
+    "filename": "Riedel09",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Riedel9.jpeg"
+  },
+  "09 Liv Ford": {
+    "filename": "Ford09",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Ford9.jpg"
+  },
+  "09 Lulu Nicks": {
+    "filename": "Nicks09",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Nicks9.jpg"
+  },
+  "09 Sara Helm": {
+    "filename": "Helm09",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Helm9.jpg"
+  },
+  "09 Sarah Hirannet": {
+    "filename": "Hirannet09",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Hirannet9.jpg"
+  },
+  "09 Summer Wilson": {
+    "filename": "Wilson09",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Wilson9.jpg"
+  },
+  "09 Sydney Rehder": {
+    "filename": "Rehder09",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "10 Alice Wang": {
+    "filename": "Wang10",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Wang10.jpg"
+  },
+  "10 Andrea DeSabato": {
+    "filename": "DeSabato10",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Desabato10.jpg"
+  },
+  "10 Ariel Choi": {
+    "filename": "Choi10",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "10 Cara Tinson": {
+    "filename": "Tinson10",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Tinson10.jpg"
+  },
+  "10 Charlette Peyer": {
+    "filename": "Peyer10",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Peyer10.jpg"
+  },
+  "10 Chelsea Twohig": {
+    "filename": "Twohig10",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "10 Dayla Woller": {
+    "filename": "Woller10",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Woller10.jpeg"
+  },
+  "10 Elise Freedman": {
+    "filename": "Freedman10",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Freedman10.jpeg"
+  },
+  "10 Ella Juengst": {
+    "filename": "Juengst10",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "10 Emilie Garnier": {
+    "filename": "Garnier10",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Garnier10.jpg"
+  },
+  "10 Gabriella Cuina": {
+    "filename": "Cuina10",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Cuina10.png"
+  },
+  "10 Gaby Cuina": {
+    "filename": "Cuina10",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Cuina10.png"
+  },
+  "10 Jane Koch": {
+    "filename": "Koch10",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Koch10.jpg"
+  },
+  "10 Jenny Fey": {
+    "filename": "Fey10",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Fey10.jpg"
+  },
+  "10 Lauren Baecher": {
+    "filename": "Baecher10",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Baecher10.jpg"
+  },
+  "10 Lexie Thomas": {
+    "filename": "Thomas10",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Thomas10.jpg"
+  },
+  "10 Mary Otten": {
+    "filename": "Otten10",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Otten10.jpg"
+  },
+  "10 Mia Griner": {
+    "filename": "Griner10",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Griner10.jpg"
+  },
+  "10 Neena Kashyap": {
+    "filename": "Kashyap10",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Kashyap10.jpg"
+  },
+  "10 Paige Carver": {
+    "filename": "Carver10",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "10 Sydney Rehder": {
+    "filename": "Rehder10",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Rehder10.jpg"
+  },
+  "10 Tori Taylor": {
+    "filename": "Taylor10",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Taylor10.png"
+  },
+  "11 Adriana Oceguera": {
+    "filename": "Oceguera11",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Oceguera11.jpg"
+  },
+  "11 Allegra Donadio": {
+    "filename": "Donadio11",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "11 Beata Artz": {
+    "filename": "Artz11",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Artz11.jpg"
+  },
+  "11 Brenna Murray": {
+    "filename": "Murray11",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Murray11.jpeg"
+  },
+  "11 Dawn Culton": {
+    "filename": "Culton11",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Culton11.jpg"
+  },
+  "11 Emily Ash": {
+    "filename": "Ash11",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "11 Emma Berrigan": {
+    "filename": "Berrigan11",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "11 Jamie Ferrie": {
+    "filename": "Ferrie11",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "11 Jasmine Childress": {
+    "filename": "Childress11",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Childress11.jpg"
+  },
+  "11 Lisha Chen": {
+    "filename": "Chen11",
+    "team": "Columbus Pride",
+    "headshot": null
+  },
+  "11 Nola Kim-Mayer": {
+    "filename": "Kim-Mayer11",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Kim-Mayer11.jpg"
+  },
+  "11 Quincy Booth": {
+    "filename": "Booth11",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Booth11.jpg"
+  },
+  "11 Rachel Johnson": {
+    "filename": "Johnson11",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Johnson11.jpg"
+  },
+  "11 Rachel Lensing": {
+    "filename": "Lensing11",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Lensing11.jpg"
+  },
+  "11 Sadie Jezierski": {
+    "filename": "Jezierski11",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Jezierski11.jpg"
+  },
+  "11 Sara Liang": {
+    "filename": "Liang11",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Liang11.jpg"
+  },
+  "11 Tayara Romero": {
+    "filename": "Romero11",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "11 Tayara Romero Pena": {
+    "filename": "Pena11",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "11 Tayara Romero Pe\u00f1a": {
+    "filename": "Pea11",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "11 Tracey Lo": {
+    "filename": "Lo11",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Lo11.jpg"
+  },
+  "12 Amy Zhou": {
+    "filename": "Zhou12",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Zhou12.jpg"
+  },
+  "12 Annie Ortiz": {
+    "filename": "Ortiz12",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Ortiz12.png"
+  },
+  "12 Casey Banta-Ryan": {
+    "filename": "Banta-Ryan12",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "12 Clare Frantz": {
+    "filename": "Frantz12",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Frantz12.jpg"
+  },
+  "12 Emily Andre": {
+    "filename": "Andre12",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Andre12.jpg"
+  },
+  "12 Emma Jaschke": {
+    "filename": "Jaschke12",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Jaschke12.jpg"
+  },
+  "12 Evie Clement": {
+    "filename": "Clement12",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Clement12.jpg"
+  },
+  "12 Hannah Cheng": {
+    "filename": "Cheng12",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Cheng12.jpg"
+  },
+  "12 Holly Sillivant": {
+    "filename": "Sillivant12",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Sillivant12.jpg"
+  },
+  "12 Kara Morrison": {
+    "filename": "Morrison12",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "12 Katie Backus Meilstrup": {
+    "filename": "Meilstrup12",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "12 Meaghan Creamer": {
+    "filename": "Creamer12",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "12 Morgan Johnson": {
+    "filename": "Johnson12",
+    "team": "Columbus Pride",
+    "headshot": null
+  },
+  "12 Rachel Bova": {
+    "filename": "Bova12",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Bova12.jpg"
+  },
+  "12 Sally Roberts": {
+    "filename": "Roberts12",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "12 Sarah Russek": {
+    "filename": "Russek12",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Russek12.jpg"
+  },
+  "12 Sarak Russek": {
+    "filename": "Russek12",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Russek12.jpg"
+  },
+  "12 Shelby Meyer": {
+    "filename": "Meyer12",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Meyer12.jpg"
+  },
+  "12 Sydney French": {
+    "filename": "French12",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/French12.jpg"
+  },
+  "12 Sydney Olund": {
+    "filename": "Olund12",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Olund12.jpg"
+  },
+  "13 Cassandra Doody": {
+    "filename": "Doody13",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Doody13.jpg"
+  },
+  "13 Cassie Doody": {
+    "filename": "Doody13",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Doody13.jpg"
+  },
+  "13 Christie Lawry": {
+    "filename": "Lawry13",
+    "team": "Columbus Pride",
+    "headshot": null
+  },
+  "13 Emelia Marshall": {
+    "filename": "Marshall13",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "13 Emma Jones": {
+    "filename": "Jones13",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Jones13.jpg"
+  },
+  "13 Erin Newman": {
+    "filename": "Newman13",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "13 Hannah Abraham": {
+    "filename": "Abraham13",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "13 Julia Schmaltz": {
+    "filename": "Schmaltz13",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Schmaltz13.png"
+  },
+  "13 Kat Harper": {
+    "filename": "Harper13",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "13 Kath Ratcliff": {
+    "filename": "Ratcliff13",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Ratcliff13.jpg"
+  },
+  "13 Kristin Thomas": {
+    "filename": "Thomas13",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Thomas13.jpg"
+  },
+  "13 Maggie Fan": {
+    "filename": "Fan13",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Fan13.jpg"
+  },
+  "13 Maggie Peck": {
+    "filename": "Peck13",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Peck13.jpg"
+  },
+  "13 Melinda Alvey": {
+    "filename": "Alvey13",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Alvey13.jpg"
+  },
+  "13 Naomi Anderson": {
+    "filename": "Anderson13",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Anderson13.jpeg"
+  },
+  "13 Olympia Walker": {
+    "filename": "Walker13",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Walker13.jpg"
+  },
+  "13 Samantha Munson": {
+    "filename": "Munson13",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Munson13.png"
+  },
+  "13 Sami Smalling": {
+    "filename": "Smalling13",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "13 Sandy Taylor": {
+    "filename": "Taylor13",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "13 Stella Dziedzic": {
+    "filename": "Dziedzic13",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "13 Tyler Smith": {
+    "filename": "Smith13",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Smith13.jpg"
+  },
+  "14 Briana Burriss": {
+    "filename": "Burriss14",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Burriss14.jpg"
+  },
+  "14 Charlotte Doran": {
+    "filename": "Doran14",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Doran14.jpg"
+  },
+  "14 Ellen Yu": {
+    "filename": "Yu14",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Yu14.jpeg"
+  },
+  "14 Emma Berrigan": {
+    "filename": "Berrigan14",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Berrigan14.png"
+  },
+  "14 Hanna McClain": {
+    "filename": "McClain14",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "14 Jess Hendrickson": {
+    "filename": "Hendrickson14",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Hendrickson14.jpg"
+  },
+  "14 Jessica Hendrickson": {
+    "filename": "Hendrickson14",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Hendrickson14.jpg"
+  },
+  "14 Kayla Ferguson": {
+    "filename": "Ferguson14",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Ferguson14.png"
+  },
+  "14 Lina Montenegro": {
+    "filename": "Montenegro14",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Montenegro14.jpg"
+  },
+  "14 Lindsay Allman": {
+    "filename": "Allman14",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Allman14.jpg"
+  },
+  "14 Lindsi Allman": {
+    "filename": "Allman14",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Allman14.jpg"
+  },
+  "14 Nada Tramonte": {
+    "filename": "Tramonte14",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Tramonte14.jpg"
+  },
+  "14 Sarah Spall": {
+    "filename": "Spall14",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Spall14.jpg"
+  },
+  "14 Tulsa Douglas": {
+    "filename": "Douglas14",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Douglas14.jpg"
+  },
+  "15 Anna McClurkan": {
+    "filename": "McClurkan15",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Mcclurkan15.jpg"
+  },
+  "15 Caitlin Fitzgerald": {
+    "filename": "Fitzgerald15",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Fitzgerald15.jpg"
+  },
+  "15 Carmen Tormey": {
+    "filename": "Tormey15",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "15 Chelsea Semper": {
+    "filename": "Semper15",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "15 Elise Franke": {
+    "filename": "Franke15",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Franke15.png"
+  },
+  "15 Elizabeth Mosquera": {
+    "filename": "Mosquera15",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "15 Elizabeth Mosquera Aguilar": {
+    "filename": "Aguilar15",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "15 Emelia Marshall": {
+    "filename": "Marshall15",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Marshall15.jpg"
+  },
+  "15 Emma Cole": {
+    "filename": "Cole15",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Cole15.jpg"
+  },
+  "15 Florence Brooks": {
+    "filename": "Brooks15",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "15 Frankie Saraniti": {
+    "filename": "Saraniti15",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Saraniti15.jpg"
+  },
+  "15 Hannah Cheng": {
+    "filename": "Cheng15",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "15 Julia Harris": {
+    "filename": "Harris15",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Harris15.jpg"
+  },
+  "15 Justine Neville": {
+    "filename": "Neville15",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Neville15.jpg"
+  },
+  "15 Katie Godfrey": {
+    "filename": "Godfrey15",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Godfrey15.jpg"
+  },
+  "15 Layne Dodge": {
+    "filename": "Dodge15",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Dodge15.jpg"
+  },
+  "15 Meta Leary": {
+    "filename": "Leary15",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "15 Rachel Burzynski": {
+    "filename": "Burzynski15",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Burzynski15.jpg"
+  },
+  "15 Sydney Loughran": {
+    "filename": "Loughran15",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Loughran15.jpg"
+  },
+  "15 Sylvia Brown": {
+    "filename": "Brown15",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Brown15.jpg"
+  },
+  "15 Violet Wei": {
+    "filename": "Wei15",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "16 Charlie Andreasen": {
+    "filename": "Andreasen16",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Andreasen16.jpg"
+  },
+  "16 Cristina Mussiett": {
+    "filename": "Mussiett16",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Mussiett16.jpg"
+  },
+  "16 Ellie Thomson": {
+    "filename": "Thomson16",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Thomson16.jpg"
+  },
+  "16 Emily Branson": {
+    "filename": "Branson16",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Branson16.png"
+  },
+  "16 Erin Rea": {
+    "filename": "Rea16",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Rea16.jpg"
+  },
+  "16 Grace Maroon": {
+    "filename": "Maroon16",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "16 Kalli Poletto": {
+    "filename": "Poletto16",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Poletto16.jpg"
+  },
+  "16 Karli Steiner": {
+    "filename": "Steiner16",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "16 Kelly Kulig": {
+    "filename": "Kulig16",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Kulig16.jpg"
+  },
+  "16 Kinsey Neas": {
+    "filename": "Neas16",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "16 Margaret Walker": {
+    "filename": "Walker16",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Walker16.jpg"
+  },
+  "16 Marge Walker": {
+    "filename": "Walker16",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Walker16.jpg"
+  },
+  "16 Meg Wadlinger": {
+    "filename": "Wadlinger16",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Wadlinger16.jpg"
+  },
+  "16 Poppy Wagner": {
+    "filename": "Wagner16",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Wagner16.jpg"
+  },
+  "16 Riely Kuznicki": {
+    "filename": "Kuznicki16",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Kuznicki16.jpg"
+  },
+  "16 Sarah Levinn": {
+    "filename": "Levinn16",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Levinn16.png"
+  },
+  "16 Tania Proksch": {
+    "filename": "Proksch16",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Proksch16.jpeg"
+  },
+  "17 Adrienne Baker": {
+    "filename": "Baker17",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Baker17.jpg"
+  },
+  "17 Allie Milligan": {
+    "filename": "Milligan17",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Milligan17.jpg"
+  },
+  "17 Boost Barr": {
+    "filename": "Barr17",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Barr17.jpg"
+  },
+  "17 Caitlin Duffner": {
+    "filename": "Duffner17",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Duffner17.jpg"
+  },
+  "17 Candy Bolte": {
+    "filename": "Bolte17",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "17 Christina \"Tuna\" Marsicano": {
+    "filename": "Marsicano17",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Marsicano17.jpg"
+  },
+  "17 Christina Marsicano": {
+    "filename": "Marsicano17",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Marsicano17.jpg"
+  },
+  "17 Emily Przykucki": {
+    "filename": "Przykucki17",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Przykucki17.jpg"
+  },
+  "17 Erica Birdsong": {
+    "filename": "Birdsong17",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Birdsong17.jpeg"
+  },
+  "17 Evelina Pierce": {
+    "filename": "Pierce17",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "17 Karen Ehrhardt": {
+    "filename": "Ehrhardt17",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "17 Katrina McGuire": {
+    "filename": "McGuire17",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Mcguire17.jpg"
+  },
+  "17 Kelsey Devlin": {
+    "filename": "Devlin17",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Devlin17.jpg"
+  },
+  "17 Kristin Dudley": {
+    "filename": "Dudley17",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Dudley17.jpg"
+  },
+  "17 Madelyn Lander": {
+    "filename": "Lander17",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "17 Maggie Pendleton": {
+    "filename": "Pendleton17",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "17 Olympia Walker": {
+    "filename": "Walker17",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "17 Rachel Barr": {
+    "filename": "Barr17",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Barr17.jpg"
+  },
+  "17 Rachel Johnston": {
+    "filename": "Johnston17",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "17 Shirlee Wohl": {
+    "filename": "Wohl17",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Wohl17.jpg"
+  },
+  "17 Susan Matthews": {
+    "filename": "Matthews17",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "18 Ashley Wright": {
+    "filename": "Wright18",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Wright18.jpg"
+  },
+  "18 Avery DeOcampo": {
+    "filename": "DeOcampo18",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Deocampo18.jpg"
+  },
+  "18 Briana Taylor": {
+    "filename": "Taylor18",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "18 Caroline Tornquist": {
+    "filename": "Tornquist18",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "18 Eliana \"El\" Norton": {
+    "filename": "Norton18",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Norton18.jpg"
+  },
+  "18 Erica Collin": {
+    "filename": "Collin18",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Collin18.jpg"
+  },
+  "18 Grace Robinson": {
+    "filename": "Robinson18",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Robinson18.jpg"
+  },
+  "18 Grace Zucchero": {
+    "filename": "Zucchero18",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Zucchero18.jpg"
+  },
+  "18 Kylie Chesner": {
+    "filename": "Chesner18",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Chesner18.jpg"
+  },
+  "18 Kylie Sterling": {
+    "filename": "Sterling18",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "18 Laura Gerencser": {
+    "filename": "Gerencser18",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Gerencser18.jpg"
+  },
+  "18 Meghan Bartlett": {
+    "filename": "Bartlett18",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Bartlett18.jpg"
+  },
+  "18 Mithalee Thakkar": {
+    "filename": "Thakkar18",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Thakkar18.jpg"
+  },
+  "18 Morgan Butts": {
+    "filename": "Butts18",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Butts18.png"
+  },
+  "18 Naomi Anderson": {
+    "filename": "Anderson18",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Anderson18.jpg"
+  },
+  "18 Sarah McKee": {
+    "filename": "McKee18",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Mckee18.jpeg"
+  },
+  "18 Sarah Mckee": {
+    "filename": "Mckee18",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Mckee18.jpeg"
+  },
+  "18 Sumi Onoe": {
+    "filename": "Onoe18",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Onoe18.jpg"
+  },
+  "18 Yvonne Tang": {
+    "filename": "Tang18",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "19 Allie Wallace": {
+    "filename": "Wallace19",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Wallace19.jpg"
+  },
+  "19 Bethany Bailey": {
+    "filename": "Bailey19",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "19 Claire Williams": {
+    "filename": "Williams19",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "19 Eastelle Ding": {
+    "filename": "Ding19",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "19 Elle Mayer": {
+    "filename": "Mayer19",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Mayer19.jpg"
+  },
+  "19 Emily Cohen": {
+    "filename": "Cohen19",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Cohen19.jpg"
+  },
+  "19 Grace Maroon": {
+    "filename": "Maroon19",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Maroon19.jpg"
+  },
+  "19 Jenna Dahl": {
+    "filename": "Dahl19",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Dahl19.jpg"
+  },
+  "19 Megan Randall": {
+    "filename": "Randall19",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "19 Melissa Gibbs": {
+    "filename": "Gibbs19",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "19 Olivia Hampton": {
+    "filename": "Hampton19",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Hampton19.jpg"
+  },
+  "19 Rani Shah": {
+    "filename": "Shah19",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Shah19.jpeg"
+  },
+  "19 Ria Stevens": {
+    "filename": "Stevens19",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Stevens19.jpg"
+  },
+  "19 Sadie Reding": {
+    "filename": "Reding19",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Reding19.jpg"
+  },
+  "19 Sophie Havranek": {
+    "filename": "Havranek19",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "19 Stellah Marienthal-LeGendre": {
+    "filename": "Marienthal-LeGendre19",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "19 Sydney Kelley": {
+    "filename": "Kelley19",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Kelley19.jpeg"
+  },
+  "19 Tori Radcliffe": {
+    "filename": "Radcliffe19",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Radcliffe19.jpg"
+  },
+  "19 Vanessa Bacorn": {
+    "filename": "Bacorn19",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "20 Abby Smith": {
+    "filename": "Smith20",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Smith20.jpg"
+  },
+  "20 Aria Kischner": {
+    "filename": "Kischner20",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Kischner20.jpg"
+  },
+  "20 Bridget Mizener": {
+    "filename": "Mizener20",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Mizener20.jpg"
+  },
+  "20 Danielle Walsh": {
+    "filename": "Walsh20",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Walsh20.jpg"
+  },
+  "20 Kira Flores": {
+    "filename": "Flores20",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Flores20.jpg"
+  },
+  "20 Linnea Fraser": {
+    "filename": "Fraser20",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Fraser20.jpg"
+  },
+  "20 Madee Shade": {
+    "filename": "Shade20",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "20 Madison Lang": {
+    "filename": "Lang20",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Lang20.jpg"
+  },
+  "20 Noel Holmes": {
+    "filename": "Holmes20",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Holmes20.jpg"
+  },
+  "20 Sanja Royall": {
+    "filename": "Royall20",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Royall20.jpg"
+  },
+  "20 Sanja Stojcic": {
+    "filename": "Stojcic20",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Stojcic20.png"
+  },
+  "20 Shirley Saunders": {
+    "filename": "Saunders20",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Saunders20.jpg"
+  },
+  "20 Soju Hokari": {
+    "filename": "Hokari20",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "20 Yina Cartagena": {
+    "filename": "Cartagena20",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Cartagena20.jpg"
+  },
+  "21 Anne Shriver": {
+    "filename": "Shriver21",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Shriver21.jpg"
+  },
+  "21 Annie Shriver": {
+    "filename": "Shriver21",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Shriver21.jpg"
+  },
+  "21 Claire Gust": {
+    "filename": "Gust21",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Gust21.jpg"
+  },
+  "21 Elena Rubino": {
+    "filename": "Rubino21",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Rubino21.jpg"
+  },
+  "21 Elizabeth Burkhardt": {
+    "filename": "Burkhardt21",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "21 Jess Oh": {
+    "filename": "Oh21",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Oh21.jpg"
+  },
+  "21 Julia Hoffmann": {
+    "filename": "Hoffmann21",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Hoffmann21.jpeg"
+  },
+  "21 Linda Morse": {
+    "filename": "Morse21",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Morse21.jpg"
+  },
+  "21 Mal Griffith": {
+    "filename": "Griffith21",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Griffith21.jpeg"
+  },
+  "21 Montana Roberts": {
+    "filename": "Roberts21",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Roberts21.jpg"
+  },
+  "21 Sam Li": {
+    "filename": "Li21",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Li21.jpg"
+  },
+  "21 Samantha Li": {
+    "filename": "Li21",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Li21.jpg"
+  },
+  "21 Sarah Mondschein": {
+    "filename": "Mondschein21",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Mondschein21.jpg"
+  },
+  "21 Theresa Yu": {
+    "filename": "Yu21",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Yu21.jpg"
+  },
+  "22 Alex Ballinger": {
+    "filename": "Ballinger22",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Ballinger22.jpg"
+  },
+  "22 Anna Gustafson": {
+    "filename": "Gustafson22",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Gustafson22.jpg"
+  },
+  "22 Becca Henley": {
+    "filename": "Henley22",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Henley22.png"
+  },
+  "22 Danni Cordes": {
+    "filename": "Cordes22",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Cordes22.jpg"
+  },
+  "22 Emily Wyckoff": {
+    "filename": "Wyckoff22",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Wyckoff22.jpg"
+  },
+  "22 Emily Wycoff": {
+    "filename": "Wycoff22",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "22 Emma Lowenstein": {
+    "filename": "Lowenstein22",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Lowenstein22.png"
+  },
+  "22 Erin McCann": {
+    "filename": "McCann22",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Mccann22.jpeg"
+  },
+  "22 Heather Zimmerman": {
+    "filename": "Zimmerman22",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Zimmerman22.jpg"
+  },
+  "22 Julia Zwierzynski": {
+    "filename": "Zwierzynski22",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Zwierzynski22.jpeg"
+  },
+  "22 Juliette Warga": {
+    "filename": "Warga22",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Warga22.jpg"
+  },
+  "22 Liz Hart": {
+    "filename": "Hart22",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Hart22.jpg"
+  },
+  "22 Mary Turner": {
+    "filename": "Turner22",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Turner22.jpg"
+  },
+  "22 Millie Wright": {
+    "filename": "Wright22",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Wright22.jpg"
+  },
+  "22 Rebecca Henley": {
+    "filename": "Henley22",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Henley22.png"
+  },
+  "22 Savannah Sillivant": {
+    "filename": "Sillivant22",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Sillivant22.jpg"
+  },
+  "22 Sydney Loughran": {
+    "filename": "Loughran22",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "22 Sydney Overman": {
+    "filename": "Overman22",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Overman22.png"
+  },
+  "22 Tiffany Schumacher": {
+    "filename": "Schumacher22",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Schumacher22.jpg"
+  },
+  "23 Allie Mueting": {
+    "filename": "Mueting23",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Mueting23.jpg"
+  },
+  "23 Allison Mueting": {
+    "filename": "Mueting23",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Mueting23.jpg"
+  },
+  "23 Bella Russell": {
+    "filename": "Russell23",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "23 Breanna Snipes": {
+    "filename": "Snipes23",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Snipes23.jpg"
+  },
+  "23 Caitlin Aycock": {
+    "filename": "Aycock23",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Aycock23.jpg"
+  },
+  "23 Colette Pellegrini": {
+    "filename": "Pellegrini23",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Pellegrini23.png"
+  },
+  "23 Frances Lebar": {
+    "filename": "Lebar23",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "23 Grace Fielder": {
+    "filename": "Fielder23",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Fielder23.png"
+  },
+  "23 Jane Frankel": {
+    "filename": "Frankel23",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Frankel23.jpg"
+  },
+  "23 Lili Hobday": {
+    "filename": "Hobday23",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "23 Linnea Soo": {
+    "filename": "Soo23",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "23 Lisa Dang": {
+    "filename": "Dang23",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Dang23.jpg"
+  },
+  "23 Lyla Stanland": {
+    "filename": "Stanland23",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Stanland23.jpeg"
+  },
+  "23 Madelyn Lander": {
+    "filename": "Lander23",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Lander23.jpg"
+  },
+  "23 Melissa Gibbs": {
+    "filename": "Gibbs23",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Gibbs23.jpg"
+  },
+  "23 Natalie Bova": {
+    "filename": "Bova23",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Bova23.jpg"
+  },
+  "23 Nicole Patterson": {
+    "filename": "Patterson23",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "23 Nicole Petersen": {
+    "filename": "Petersen23",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "23 Rachel Yeager": {
+    "filename": "Yeager23",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Yeager23.png"
+  },
+  "24 Abby Swensen": {
+    "filename": "Swensen24",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Swensen24.jpg"
+  },
+  "24 Adi Malav\u00e9": {
+    "filename": "Malav24",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "24 Advika Basden": {
+    "filename": "Basden24",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Basden24.jpg"
+  },
+  "24 Allegra Johnson McKee": {
+    "filename": "McKee24",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "24 Annika Chan": {
+    "filename": "Chan24",
+    "team": "Portland Rising",
+    "headshot": null
+  },
+  "24 Avalon Igawa": {
+    "filename": "Igawa24",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "24 Casey Gorman": {
+    "filename": "Gorman24",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Gorman24.jpg"
+  },
+  "24 Chandler Shelton": {
+    "filename": "Shelton24",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Shelton24.jpg"
+  },
+  "24 Eliza Hutchings": {
+    "filename": "Hutchings24",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Hutchings24.jpg"
+  },
+  "24 Hannah Boettcher": {
+    "filename": "Boettcher24",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Boettcher24.jpeg"
+  },
+  "24 Hannah Grace Morrison": {
+    "filename": "Morrison24",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Morrison24.jpg"
+  },
+  "24 Heidi Umhoefer": {
+    "filename": "Umhoefer24",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "24 Jamie Eriksson": {
+    "filename": "Eriksson24",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "24 Jesse Shofner": {
+    "filename": "Shofner24",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "24 Jolie Krebs": {
+    "filename": "Krebs24",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Krebs24.jpeg"
+  },
+  "24 Mia Letterie": {
+    "filename": "Letterie24",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Letterie24.png"
+  },
+  "25 Anna Wozniak": {
+    "filename": "Wozniak25",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "25 Anneke Vermaak": {
+    "filename": "Vermaak25",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Vermaak25.jpg"
+  },
+  "25 Carmen Ly": {
+    "filename": "Ly25",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "25 Erin Goding": {
+    "filename": "Goding25",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Goding25.jpg"
+  },
+  "25 Eva Fischer": {
+    "filename": "Fischer25",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Fischer25.jpg"
+  },
+  "25 Gerene Taylor": {
+    "filename": "Taylor25",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Taylor25.jpg"
+  },
+  "25 Jasmine Anand": {
+    "filename": "Anand25",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "25 Jess Sourbeer": {
+    "filename": "Sourbeer25",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Sourbeer25.jpg"
+  },
+  "25 Katie Sanders": {
+    "filename": "Sanders25",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Sanders25.jpg"
+  },
+  "25 Meg Manning": {
+    "filename": "Manning25",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "25 Nadine Rowen": {
+    "filename": "Rowen25",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Rowen25.png"
+  },
+  "25 Sabrina Bonaci": {
+    "filename": "Bonaci25",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Bonaci25.jpg"
+  },
+  "25 Samantha Wool": {
+    "filename": "Wool25",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "26 Amy Broome": {
+    "filename": "Broome26",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "26 Anna Stubbs": {
+    "filename": "Stubbs26",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "26 Cameron Helm": {
+    "filename": "Helm26",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "26 Cara Sieber": {
+    "filename": "Sieber26",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Sieber26.jpg"
+  },
+  "26 Chlo\u00eb Greene": {
+    "filename": "Greene26",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Greene26.jpg"
+  },
+  "26 Emma Peaslee": {
+    "filename": "Peaslee26",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Peaslee26.jpg"
+  },
+  "26 Gigi Paulig": {
+    "filename": "Paulig26",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "26 Jessica Sourbeer": {
+    "filename": "Sourbeer26",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "26 Justine Neville": {
+    "filename": "Neville26",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Neville26.jpg"
+  },
+  "26 Leah Shorb": {
+    "filename": "Shorb26",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Shorb26.jpg"
+  },
+  "26 Mari Malin": {
+    "filename": "Malin26",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Malin26.jpg"
+  },
+  "26 Mariabelen Restrepo": {
+    "filename": "Restrepo26",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "26 Mariana Malin": {
+    "filename": "Malin26",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Malin26.jpg"
+  },
+  "26 Morgan Lally": {
+    "filename": "Lally26",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Lally26.jpg"
+  },
+  "26 Rachael Westgate": {
+    "filename": "Westgate26",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Westgate26.jpg"
+  },
+  "26 Reshmi Patel": {
+    "filename": "Patel26",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "27 Akina Younge": {
+    "filename": "Younge27",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "27 Alex Hughes": {
+    "filename": "Hughes27",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Hughes27.jpeg"
+  },
+  "27 Blaise Sevier": {
+    "filename": "Sevier27",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "27 Carly Atwell": {
+    "filename": "Atwell27",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Atwell27.jpg"
+  },
+  "27 Connie Chan": {
+    "filename": "Chan27",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "27 Eliza Hutchins": {
+    "filename": "Hutchins27",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "27 Jess Sourbeer": {
+    "filename": "Sourbeer27",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "27 Jocelyn Jessop": {
+    "filename": "Jessop27",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "27 Katharine Gilbert": {
+    "filename": "Gilbert27",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Gilbert27.jpg"
+  },
+  "27 Kit Asterin": {
+    "filename": "Asterin27",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "27 Mary Rippe": {
+    "filename": "Rippe27",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Rippe27.jpeg"
+  },
+  "27 Rita Feder": {
+    "filename": "Feder27",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Feder27.jpg"
+  },
+  "27 Sierra Jensen": {
+    "filename": "Jensen27",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Jensen27.png"
+  },
+  "27 Stef Bugasch": {
+    "filename": "Bugasch27",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Bugasch27.jpg"
+  },
+  "27 Stef Bugasch Scopoline": {
+    "filename": "Scopoline27",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "27 Therese Doebler": {
+    "filename": "Doebler27",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Doebler27.jpg"
+  },
+  "28 Angela Zhu": {
+    "filename": "Zhu28",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Zhu28.jpg"
+  },
+  "28 Bailey Perkins": {
+    "filename": "Perkins28",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Perkins28.jpeg"
+  },
+  "28 Claire Lee": {
+    "filename": "Lee28",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Lee28.jpg"
+  },
+  "28 Claire Revere": {
+    "filename": "Revere28",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Revere28.jpeg"
+  },
+  "28 Emma Peaslee": {
+    "filename": "Peaslee28",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Peaslee28.jpg"
+  },
+  "28 Jess Sourbeer": {
+    "filename": "Sourbeer28",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Sourbeer28.jpg"
+  },
+  "28 Maddy Boyle": {
+    "filename": "Boyle28",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Boyle28.jpg"
+  },
+  "28 Margie Quinn": {
+    "filename": "Quinn28",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "28 Stacy Lu": {
+    "filename": "Lu28",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Lu28.jpg"
+  },
+  "28 Taylor Conroy": {
+    "filename": "Conroy28",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Conroy28.jpg"
+  },
+  "29 Blaise Sevier": {
+    "filename": "Sevier29",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Sevier29.jpg"
+  },
+  "29 Charlotte Doran": {
+    "filename": "Doran29",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "29 Elana Schwam": {
+    "filename": "Schwam29",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Schwam29.png"
+  },
+  "29 Emily Hess": {
+    "filename": "Hess29",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Hess29.jpg"
+  },
+  "29 Emily Schloneger": {
+    "filename": "Schloneger29",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Schloneger29.jpg"
+  },
+  "29 Hanae Oda": {
+    "filename": "Oda29",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "29 Meghan Rutledge": {
+    "filename": "Rutledge29",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Rutledge29.png"
+  },
+  "29 Sara Liang": {
+    "filename": "Liang29",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "29 Soju Hokari": {
+    "filename": "Hokari29",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "30 Emily Wehrwein": {
+    "filename": "Wehrwein30",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Wehrwein30.jpg"
+  },
+  "30 Jean Huang": {
+    "filename": "Huang30",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Huang30.jpg"
+  },
+  "30 Jenn Stewart": {
+    "filename": "Stewart30",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Stewart30.png"
+  },
+  "30 Liv Monroe": {
+    "filename": "Monroe30",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Monroe30.jpg"
+  },
+  "30 Louise Beck": {
+    "filename": "Beck30",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Beck30.jpg"
+  },
+  "30 Sesha McMinn": {
+    "filename": "McMinn30",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Mcminn30.jpg"
+  },
+  "31 Amber Heffernan": {
+    "filename": "Heffernan31",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Heffernan31.jpg"
+  },
+  "31 Caitlin Aycock": {
+    "filename": "Aycock31",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "31 Eli Presberg": {
+    "filename": "Presberg31",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Presberg31.jpeg"
+  },
+  "31 Hailey Gassiot": {
+    "filename": "Gassiot31",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "31 Lily Johnson": {
+    "filename": "Johnson31",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Johnson31.jpg"
+  },
+  "31 Mar\u00eda Vargas": {
+    "filename": "Vargas31",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "31 Nikki Gilbert": {
+    "filename": "Gilbert31",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Gilbert31.png"
+  },
+  "31 Phoebe Hulbert": {
+    "filename": "Hulbert31",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Hulbert31.jpg"
+  },
+  "32 Annie Bocko": {
+    "filename": "Bocko32",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "32 Chaily Derecskey": {
+    "filename": "Derecskey32",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "32 Kate Weidmann": {
+    "filename": "Weidmann32",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Weidmann32.jpg"
+  },
+  "32 Megan Wilson": {
+    "filename": "Wilson32",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Wilson32.jpg"
+  },
+  "32 Melissa LaFrance": {
+    "filename": "LaFrance32",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Lafrance32.jpg"
+  },
+  "32 Mickela Heilicher": {
+    "filename": "Heilicher32",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Heilicher32.jpg"
+  },
+  "32 Rebecca Driver": {
+    "filename": "Driver32",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Driver32.jpg"
+  },
+  "32 Shani Rosenthal": {
+    "filename": "Rosenthal32",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "32 Therese Doebler": {
+    "filename": "Doebler32",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "33 Amanda Murphy": {
+    "filename": "Murphy33",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Murphy33.jpg"
+  },
+  "33 Brenda Orellana": {
+    "filename": "Orellana33",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "33 Brianna Stedman": {
+    "filename": "Stedman33",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Stedman33.png"
+  },
+  "33 Cate McAfee": {
+    "filename": "McAfee33",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Mcafee33.jpg"
+  },
+  "33 Emily Barrett": {
+    "filename": "Barrett33",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Barrett33.jpg"
+  },
+  "33 Emily Heyman": {
+    "filename": "Heyman33",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Heyman33.jpg"
+  },
+  "33 Emily Przykucki": {
+    "filename": "Przykucki33",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Przykucki33.jpeg"
+  },
+  "33 Erica Birdsong": {
+    "filename": "Birdsong33",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Birdsong33.jpg"
+  },
+  "33 Georgia Tse": {
+    "filename": "Tse33",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "33 Jalyn Baumgartner": {
+    "filename": "Baumgartner33",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Baumgartner33.jpg"
+  },
+  "33 Jana Graham": {
+    "filename": "Graham33",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Graham33.jpg"
+  },
+  "33 Julia Hill": {
+    "filename": "Hill33",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Hill33.jpg"
+  },
+  "33 Kayla Blanek": {
+    "filename": "Blanek33",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Blanek33.jpg"
+  },
+  "33 Madison Cannon": {
+    "filename": "Cannon33",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Cannon33.jpg"
+  },
+  "33 Paige Carver": {
+    "filename": "Carver33",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Carver33.jpg"
+  },
+  "33 Valeria Cardenas": {
+    "filename": "Cardenas33",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "33 Valeria C\u00e1rdenas": {
+    "filename": "Crdenas33",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "33 Yuge Xiao": {
+    "filename": "Xiao33",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Xiao33.jpg"
+  },
+  "34 Alex Barnett": {
+    "filename": "Barnett34",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Barnett34.jpg"
+  },
+  "34 Amanda Ring": {
+    "filename": "Ring34",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "34 Carley Garrett": {
+    "filename": "Garrett34",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "34 Kenzie Carpenter": {
+    "filename": "Carpenter34",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Carpenter34.jpg"
+  },
+  "34 Lauren Kitten": {
+    "filename": "Kitten34",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Kitten34.jpg"
+  },
+  "34 Liv Steinberg": {
+    "filename": "Steinberg34",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Steinberg34.jpg"
+  },
+  "34 Mackenzie Carpenter": {
+    "filename": "Carpenter34",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Carpenter34.jpg"
+  },
+  "35 Grace Conerly": {
+    "filename": "Conerly35",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "35 Jordan Sorensen": {
+    "filename": "Sorensen35",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "35 Tess McGrew": {
+    "filename": "McGrew35",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Mcgrew35.jpg"
+  },
+  "36 Abby Thompson": {
+    "filename": "Thompson36",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Thompson36.jpg"
+  },
+  "36 Adilina Malave": {
+    "filename": "Malave36",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "36 Carolyn Normile": {
+    "filename": "Normile36",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Normile36.jpg"
+  },
+  "36 Jaelee Cruz": {
+    "filename": "Cruz36",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Cruz36.png"
+  },
+  "36 Kelsea Fitzpatrick": {
+    "filename": "Fitzpatrick36",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Fitzpatrick36.jpg"
+  },
+  "37 Claire Trop": {
+    "filename": "Trop37",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Trop37.jpg"
+  },
+  "37 Elleythea Smith": {
+    "filename": "Smith37",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Smith37.jpg"
+  },
+  "37 Hannah Henkin": {
+    "filename": "Henkin37",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Henkin37.jpg"
+  },
+  "37 Krista Holden": {
+    "filename": "Holden37",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "37 Kristin Bolte Baxter": {
+    "filename": "Baxter37",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Baxter37.jpg"
+  },
+  "37 Nariah-Belle Sims": {
+    "filename": "Sims37",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Sims37.jpg"
+  },
+  "38 Jenny Perry": {
+    "filename": "Perry38",
+    "team": "Columbus Pride",
+    "headshot": "Columbus/2023/Perry38.jpg"
+  },
+  "38 Jessica Wu": {
+    "filename": "Wu38",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Wu38.jpeg"
+  },
+  "40 Claire Milton": {
+    "filename": "Milton40",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Milton40.jpg"
+  },
+  "40 Dorothy DiMascio-Donohue": {
+    "filename": "DiMascio-Donohue40",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Dimascio-Donohue40.jpeg"
+  },
+  "40 Veronica Yee": {
+    "filename": "Yee40",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "41 Lina Montenegro": {
+    "filename": "Montenegro41",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Montenegro41.jpg"
+  },
+  "41 Natalie So": {
+    "filename": "So41",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "42 Ashley Welsh": {
+    "filename": "Welsh42",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Welsh42.jpg"
+  },
+  "42 Chelsea Twohig": {
+    "filename": "Twohig42",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "42 Emma Patterson": {
+    "filename": "Patterson42",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "42 Kelly Kerker": {
+    "filename": "Kerker42",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Kerker42.jpg"
+  },
+  "42 Lisi Lohre": {
+    "filename": "Lohre42",
+    "team": "DC Shadow",
+    "headshot": "DC/2023/Lohre42.jpg"
+  },
+  "42 Martha Wilber": {
+    "filename": "Wilber42",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Wilber42.jpg"
+  },
+  "42 Meg Duffy": {
+    "filename": "Duffy42",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Duffy42.jpg"
+  },
+  "42 Megan Duffy": {
+    "filename": "Duffy42",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Duffy42.png"
+  },
+  "42 Rachel Kramer": {
+    "filename": "Kramer42",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Kramer42.png"
+  },
+  "43 Claire Hackl": {
+    "filename": "Hackl43",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Hackl43.jpeg"
+  },
+  "43 Emily Xu": {
+    "filename": "Xu43",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Xu43.jpg"
+  },
+  "43 Lauren Ma": {
+    "filename": "Ma43",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Ma43.jpg"
+  },
+  "44 Anastasia Foster": {
+    "filename": "Foster44",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Foster44.jpg"
+  },
+  "44 Chloe Green": {
+    "filename": "Green44",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "44 Chloe Greene": {
+    "filename": "Greene44",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "44 Colleen Morton": {
+    "filename": "Morton44",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Morton44.jpg"
+  },
+  "44 Hannah Frank": {
+    "filename": "Frank44",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Frank44.jpg"
+  },
+  "44 Jordan Harn": {
+    "filename": "Harn44",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "44 Katia Krupa": {
+    "filename": "Krupa44",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "44 Kayla Seeger": {
+    "filename": "Seeger44",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "44 Nadine Meister": {
+    "filename": "Meister44",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "44 Sarah Meckstroth": {
+    "filename": "Meckstroth44",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Meckstroth44.jpg"
+  },
+  "44 Tatum Cubrilovic": {
+    "filename": "Cubrilovic44",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "44 Zasha Medina": {
+    "filename": "Medina44",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Medina44.jpg"
+  },
+  "45 Anna Lee": {
+    "filename": "Lee45",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Lee45.jpg"
+  },
+  "45 Caitlin Gross": {
+    "filename": "Gross45",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Gross45.jpeg"
+  },
+  "45 Emery Otopalik": {
+    "filename": "Otopalik45",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "45 Jennifer Lin": {
+    "filename": "Lin45",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "45 Sarah Jeung": {
+    "filename": "Jeung45",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Jeung45.png"
+  },
+  "45 Sylvia Brown": {
+    "filename": "Brown45",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "45 Zoe Costanza": {
+    "filename": "Costanza45",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Costanza45.jpg"
+  },
+  "46 Dena Elimelech": {
+    "filename": "Elimelech46",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Elimelech46.jpg"
+  },
+  "46 Graham Cunningham": {
+    "filename": "Cunningham46",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Cunningham46.jpg"
+  },
+  "47 Alex Rowell": {
+    "filename": "Rowell47",
+    "team": "Portland Rising",
+    "headshot": null
+  },
+  "47 Kay Chiang": {
+    "filename": "Chiang47",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Chiang47.jpg"
+  },
+  "47 Penelope Wu": {
+    "filename": "Wu47",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "47 Penny Wu": {
+    "filename": "Wu47",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "47 Tori Gray": {
+    "filename": "Gray47",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "48 Caroline Weinberg": {
+    "filename": "Weinberg48",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "48 Lisa Kowalski": {
+    "filename": "Kowalski48",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Kowalski48.jpg"
+  },
+  "48 Natalie Baumgarten": {
+    "filename": "Baumgarten48",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Baumgarten48.jpeg"
+  },
+  "49 Elly Fireside-Ostergaard": {
+    "filename": "Fireside-Ostergaard49",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "49 Robyn Fennig": {
+    "filename": "Fennig49",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Fennig49.jpg"
+  },
+  "50 Anna Thorn": {
+    "filename": "Thorn50",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Thorn50.jpg"
+  },
+  "50 Ella Mullin": {
+    "filename": "Mullin50",
+    "team": "Minnesota Strike",
+    "headshot": null
+  },
+  "50 Lilet Brooks": {
+    "filename": "Brooks50",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "51 Grace Xiang": {
+    "filename": "Xiang51",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Xiang51.jpeg"
+  },
+  "51 Lilli Gerber": {
+    "filename": "Gerber51",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Gerber51.jpg"
+  },
+  "51 Lilli Popovich": {
+    "filename": "Popovich51",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "51 Tess Johnson": {
+    "filename": "Johnson51",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Johnson51.png"
+  },
+  "52 Annie Shriver": {
+    "filename": "Shriver52",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Shriver52.jpg"
+  },
+  "52 Caitlin Connell": {
+    "filename": "Connell52",
+    "team": "Portland Rising",
+    "headshot": null
+  },
+  "52 Caitlin O'Connell": {
+    "filename": "OConnell52",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Oconnell52.jpg"
+  },
+  "52 Erynn Schroeder": {
+    "filename": "Schroeder52",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Schroeder52.jpg"
+  },
+  "52 Sydney Harris": {
+    "filename": "Harris52",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Harris52.jpg"
+  },
+  "53 Emma Piorier": {
+    "filename": "Piorier53",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Piorier53.jpg"
+  },
+  "54 Liv Ford": {
+    "filename": "Ford54",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "55 Courtney Walbe": {
+    "filename": "Walbe55",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Walbe55.jpg"
+  },
+  "55 Grace Feehan": {
+    "filename": "Feehan55",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "55 Mia Wieben": {
+    "filename": "Wieben55",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "55 Molly Roy": {
+    "filename": "Roy55",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "55 Sophie Knowles": {
+    "filename": "Knowles55",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Knowles55.jpg"
+  },
+  "55 Trystan Grzyll": {
+    "filename": "Grzyll55",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "56 Kate Blankenship": {
+    "filename": "Blankenship56",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "57 Ellie \"Jello\" Jose": {
+    "filename": "Jose57",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Jose57.jpg"
+  },
+  "57 Ellie Jose": {
+    "filename": "Jose57",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Jose57.jpg"
+  },
+  "57 Ximena Montana": {
+    "filename": "Montana57",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Montana57.jpg"
+  },
+  "57 Ximena Monta\u00f1a": {
+    "filename": "Montaa57",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "59 Audrey Lyman": {
+    "filename": "Lyman59",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Lyman59.jpeg"
+  },
+  "59 Bianca Champenois": {
+    "filename": "Champenois59",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Champenois59.jpg"
+  },
+  "59 Maple Adkins-Threats": {
+    "filename": "Adkins-Threats59",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "61 Madison Oakman": {
+    "filename": "Oakman61",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Oakman61.jpg"
+  },
+  "61 Megan Randall": {
+    "filename": "Randall61",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2023/Randall61.jpg"
+  },
+  "62 Casey Banta-Ryan": {
+    "filename": "Banta-Ryan62",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "62 Sophia Thayer": {
+    "filename": "Thayer62",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Thayer62.jpeg"
+  },
+  "64 Rachel Hildebrand": {
+    "filename": "Hildebrand64",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Hildebrand64.jpg"
+  },
+  "64 Tracey Lum": {
+    "filename": "Lum64",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Lum64.jpg"
+  },
+  "65 Anna Lieberman": {
+    "filename": "Lieberman65",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "65 Kali Wicklund": {
+    "filename": "Wicklund65",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Wicklund65.jpg"
+  },
+  "66 Jackie Wang": {
+    "filename": "Wang66",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Wang66.jpg"
+  },
+  "66 Janine Hlavaty": {
+    "filename": "Hlavaty66",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Hlavaty66.jpg"
+  },
+  "66 Jess Brand": {
+    "filename": "Brand66",
+    "team": "Philadelphia Surge",
+    "headshot": null
+  },
+  "66 Mya Hernandez": {
+    "filename": "Hernandez66",
+    "team": "Indy Red",
+    "headshot": "Indy/2023/Hernandez66.jpg"
+  },
+  "66 Natalie Wilson": {
+    "filename": "Wilson66",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Wilson66.jpeg"
+  },
+  "66 Rachel Graber": {
+    "filename": "Graber66",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Graber66.jpg"
+  },
+  "69 Jaime Estes": {
+    "filename": "Estes69",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Estes69.jpg"
+  },
+  "69 Tahlia Quartin": {
+    "filename": "Quartin69",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Quartin69.png"
+  },
+  "70 Benish Benjamin": {
+    "filename": "Benjamin70",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Benjamin70.jpg"
+  },
+  "70 Kas Gonzalez": {
+    "filename": "Gonzalez70",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "71 Mattea Swegles": {
+    "filename": "Swegles71",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "71 Shirlee Wohl": {
+    "filename": "Wohl71",
+    "team": "Portland Rising",
+    "headshot": null
+  },
+  "71 Wren Vogel": {
+    "filename": "Vogel71",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "72 Annalise Paul": {
+    "filename": "Paul72",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "72 Anne Saba": {
+    "filename": "Saba72",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Saba72.jpg"
+  },
+  "72 Grace Castro": {
+    "filename": "Castro72",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "72 Jacqueline Jarik": {
+    "filename": "Jarik72",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Jarik72.jpg"
+  },
+  "73 Abi Keuhn": {
+    "filename": "Keuhn73",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Keuhn73.jpg"
+  },
+  "73 Chelsea Semper": {
+    "filename": "Semper73",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Semper73.jpg"
+  },
+  "73 Clara Stewart": {
+    "filename": "Stewart73",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "73 Maya Kikuchi": {
+    "filename": "Kikuchi73",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Kikuchi73.jpg"
+  },
+  "74 Sam Harris": {
+    "filename": "Harris74",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Harris74.jpg"
+  },
+  "75 Sarah Kingsley": {
+    "filename": "Kingsley75",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Kingsley75.jpg"
+  },
+  "75 Sarah Kingsley-Hart": {
+    "filename": "Kingsley-Hart75",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "76 Emma Palacio": {
+    "filename": "Palacio76",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Palacio76.jpg"
+  },
+  "77 Anik Regan": {
+    "filename": "Regan77",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Regan77.jpg"
+  },
+  "77 Anna Tortorici": {
+    "filename": "Tortorici77",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Tortorici77.jpeg"
+  },
+  "77 Greta Becker": {
+    "filename": "Becker77",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "77 Katrina McGuire": {
+    "filename": "McGuire77",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "77 Katrina Mcguire": {
+    "filename": "Mcguire77",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "77 Kerry Younts": {
+    "filename": "Younts77",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Younts77.png"
+  },
+  "77 Liz Gardner": {
+    "filename": "Gardner77",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Gardner77.jpg"
+  },
+  "77 Marika Koppinen": {
+    "filename": "Koppinen77",
+    "team": "DC Shadow",
+    "headshot": null
+  },
+  "77 Marika Korpinen": {
+    "filename": "Korpinen77",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Korpinen77.jpg"
+  },
+  "77 Melissa Gronske": {
+    "filename": "Gronske77",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Gronske77.png"
+  },
+  "80 Kelsea LeBeau": {
+    "filename": "LeBeau80",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Lebeau80.jpg"
+  },
+  "81 Mackenzie Bailey": {
+    "filename": "Bailey81",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Bailey81.jpg"
+  },
+  "81 Mckenzie Bailey": {
+    "filename": "Bailey81",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Bailey81.jpg"
+  },
+  "81 Rachael Kern": {
+    "filename": "Kern81",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Kern81.jpg"
+  },
+  "81 Sumi Onoe": {
+    "filename": "Onoe81",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Onoe81.jpg"
+  },
+  "82 Claire Yeager Schmitt": {
+    "filename": "Schmitt82",
+    "team": "Milwaukee Monarchs",
+    "headshot": null
+  },
+  "82 Mary Turner": {
+    "filename": "Turner82",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "82 Riley Dickson": {
+    "filename": "Dickson82",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Dickson82.jpg"
+  },
+  "82 Sarah Downing": {
+    "filename": "Downing82",
+    "team": "Austin Torch",
+    "headshot": null
+  },
+  "83 Zoe Hecht": {
+    "filename": "Hecht83",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Hecht83.jpg"
+  },
+  "84 Sarah Lipscomb": {
+    "filename": "Lipscomb84",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Lipscomb84.jpg"
+  },
+  "86 Connie Cui": {
+    "filename": "Cui86",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Cui86.jpg"
+  },
+  "87 Amanda Borders": {
+    "filename": "Borders87",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2023/Borders87.png"
+  },
+  "87 Austin Prucha": {
+    "filename": "Prucha87",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Prucha87.jpg"
+  },
+  "87 Christina Marsciano": {
+    "filename": "Marsciano87",
+    "team": "Atlanta Soul",
+    "headshot": null
+  },
+  "87 Christina Marsicano": {
+    "filename": "Marsicano87",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2023/Marsicano87.jpg"
+  },
+  "87 Emma Chin": {
+    "filename": "Chin87",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Chin87.jpg"
+  },
+  "88 Bella Pearson": {
+    "filename": "Pearson88",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "88 Brittany Wright": {
+    "filename": "Wright88",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Wright88.jpg"
+  },
+  "88 Christine Bookhout": {
+    "filename": "Bookhout88",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Bookhout88.jpg"
+  },
+  "88 Claire Kelley": {
+    "filename": "Kelley88",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2023/Kelley88.jpg"
+  },
+  "88 Grace Hodges": {
+    "filename": "Hodges88",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2023/Hodges88.jpg"
+  },
+  "88 Maddie Pletzke": {
+    "filename": "Pletzke88",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Pletzke88.jpeg"
+  },
+  "88 Maddy Easton": {
+    "filename": "Easton88",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Easton88.jpg"
+  },
+  "88 Madelyn Easton": {
+    "filename": "Easton88",
+    "team": "Austin Torch",
+    "headshot": "Austin/2026/Easton88.jpg"
+  },
+  "88 Nikki Hair": {
+    "filename": "Hair88",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Hair88.jpg"
+  },
+  "89 Lexy Roy": {
+    "filename": "Roy89",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "90 Hayley Soohoo": {
+    "filename": "Soohoo90",
+    "team": "Portland Rising",
+    "headshot": "Portland/2023/Soohoo90.png"
+  },
+  "90 Qxhna Titcomb": {
+    "filename": "Titcomb90",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Titcomb90.jpg"
+  },
+  "90 Qxnha Titcomb": {
+    "filename": "Titcomb90",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2023/Titcomb90.jpg"
+  },
+  "91 Claire Williams": {
+    "filename": "Williams91",
+    "team": "Nashville NightShade",
+    "headshot": "Nashville/2026/Williams91.jpg"
+  },
+  "91 Sadie Reding": {
+    "filename": "Reding91",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Reding91.jpg"
+  },
+  "91 Samantha Philips": {
+    "filename": "Philips91",
+    "team": "Indy Red",
+    "headshot": null
+  },
+  "91 Samantha Phillips": {
+    "filename": "Phillips91",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Phillips91.jpg"
+  },
+  "91 Savannah Sillivant": {
+    "filename": "Sillivant91",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "92 Charlotte Wilson": {
+    "filename": "Wilson92",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Wilson92.jpg"
+  },
+  "92 Tori Taylor": {
+    "filename": "Taylor92",
+    "team": "Atlanta Soul",
+    "headshot": "Atlanta/2026/Taylor92.jpg"
+  },
+  "93 Chris \"Spoon\" Nelson": {
+    "filename": "Nelson93",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2026/Nelson93.jpg"
+  },
+  "93 Naomi Guzman": {
+    "filename": "Guzman93",
+    "team": "LA Astra",
+    "headshot": null
+  },
+  "95 Megan Mendieta": {
+    "filename": "Mendieta95",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Mendieta95.png"
+  },
+  "96 Natalie Wilson": {
+    "filename": "Wilson96",
+    "team": "Nashville NightShade",
+    "headshot": null
+  },
+  "96 Nina Finley": {
+    "filename": "Finley96",
+    "team": "New York Gridlock",
+    "headshot": "New York City/2023/Finley96.jpg"
+  },
+  "96 Sadie Cutler": {
+    "filename": "Cutler96",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Cutler96.jpeg"
+  },
+  "97 Eileen Bequette": {
+    "filename": "Bequette97",
+    "team": "Indy Red",
+    "headshot": "Indy/2026/Bequette97.jpg"
+  },
+  "97 Hannah Glick": {
+    "filename": "Glick97",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "98 Mia Beeman-Weber": {
+    "filename": "Beeman-Weber98",
+    "team": "Minnesota Strike",
+    "headshot": "Minnesota/2026/Beeman-Weber98.jpg"
+  },
+  "99 Carmen Tormey": {
+    "filename": "Tormey99",
+    "team": "Raleigh Radiance",
+    "headshot": null
+  },
+  "99 Chelsea Leeder": {
+    "filename": "Leeder99",
+    "team": "New York Gridlock",
+    "headshot": null
+  },
+  "99 Dana Demmert": {
+    "filename": "Demmert99",
+    "team": "Milwaukee Monarchs",
+    "headshot": "Milwaukee/2026/Demmert99.jpg"
+  },
+  "99 Emily Kiver": {
+    "filename": "Kiver99",
+    "team": "DC Shadow",
+    "headshot": "DC/2026/Kiver99.jpg"
+  },
+  "99 Macy Hudson": {
+    "filename": "Hudson99",
+    "team": "Raleigh Radiance",
+    "headshot": "Raleigh/2026/Hudson99.jpeg"
+  },
+  "99 Sierra Rimmer": {
+    "filename": "Rimmer99",
+    "team": "Austin Torch",
+    "headshot": "Austin/2023/Rimmer99.png"
+  },
+  "99 Veronica Kolegue-Spalaris": {
+    "filename": "Kolegue-Spalaris99",
+    "team": "Philadelphia Surge",
+    "headshot": "Philadelphia/2026/Kolegue-Spalaris99.jpg"
+  }
+}

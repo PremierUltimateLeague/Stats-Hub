@@ -2,43 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
+
 import { seasons } from '../config/seasons';
+import { teamLogos, teamColors } from '../utils/teams';
 
 const standingsBySeason: Record<string, any[]> = {};
-
-// Team logo mapping
-const teamLogos: Record<string, string> = {
-  'Atlanta Soul': 'atlanta.png',
-  'Austin Torch': 'austin.png',
-  'Columbus Pride': 'columbus.png',
-  'DC Shadow': 'dc.png',
-  'Indy Red': 'indy.png',
-  'LA Astra': 'la.png',
-  'Medellin Revolution': 'medellin.png',
-  'Milwaukee Monarchs': 'milwaukee.png',
-  'Minnesota Strike': 'minnesota.png',
-  'Nashville NightShade': 'nashville.png',
-  'New York Gridlock': 'new-york.png',
-  'Philadelphia Surge': 'philadelphia.png',
-  'Portland Rising': 'portland.png',
-  'Raleigh Radiance': 'raleigh.png',
-};
-
-// Team colors for row accents
-const teamColors: Record<string, string> = {
-  'Atlanta Soul': '#E31837',
-  'Austin Torch': '#FF6B00',
-  'DC Shadow': '#000000',
-  'Indy Red': '#ED1C24',
-  'LA Astra': '#6B5B95',
-  'Milwaukee Monarchs': '#1E3A5F',
-  'Minnesota Strike': '#00A3E0',
-  'Nashville NightShade': '#4B0082',
-  'New York Gridlock': '#FF1493',
-  'Philadelphia Surge': '#0077B6',
-  'Portland Rising': '#2E8B57',
-  'Raleigh Radiance': '#00A651',
-};
 
 // Load Seasons
 seasons.forEach(season => {

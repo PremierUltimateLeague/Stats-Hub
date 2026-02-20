@@ -157,27 +157,34 @@ try {
         return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
       }
 
-      // Search players - prioritize starts-with over contains
+// Search players - prioritize first name prefix > any word prefix > contains
       const normalizedQuery = normalizeString(q);
-      const startsWithMatches = [];
+      const firstNameMatches = [];
+      const wordMatches = [];
       const containsMatches = [];
       
       allPlayers.forEach((p) => {
         const normalizedPlayer = p.player ? normalizeString(p.player) : '';
         const normalizedTeam = p.team ? normalizeString(p.team) : '';
         
-        // Check if any word in the name starts with the query
-        const words = normalizedPlayer.split(/\s+/);
-        const wordStartsWith = words.some(w => w.startsWith(normalizedQuery));
+        // Extract name parts (strip jersey number)
+        const nameWords = normalizedPlayer.replace(/^\d+\s+/, '').split(/\s+/);
         
-        if (wordStartsWith || normalizedTeam.startsWith(normalizedQuery)) {
-          startsWithMatches.push(p);
-        } else if (normalizedPlayer.includes(normalizedQuery) || normalizedTeam.includes(normalizedQuery)) {
+        // First name starts with query (highest priority)
+        if (nameWords[0]?.startsWith(normalizedQuery)) {
+          firstNameMatches.push(p);
+        }
+        // Any other word starts with query
+        else if (nameWords.some(w => w.startsWith(normalizedQuery)) || normalizedTeam.startsWith(normalizedQuery)) {
+          wordMatches.push(p);
+        }
+        // Contains anywhere
+        else if (normalizedPlayer.includes(normalizedQuery) || normalizedTeam.includes(normalizedQuery)) {
           containsMatches.push(p);
         }
       });
       
-      const matchedPlayers = [...startsWithMatches, ...containsMatches].slice(0, 20);
+      const matchedPlayers = [...firstNameMatches, ...wordMatches, ...containsMatches].slice(0, 20);
 
       // Show/hide sections
       if (matchedTeams.length === 0 && matchedPlayers.length === 0) {

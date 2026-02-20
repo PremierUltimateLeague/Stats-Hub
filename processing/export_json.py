@@ -382,8 +382,8 @@ def export_standings(csv_path: Path, json_path: Path) -> None:
 
         # Calculate last 5 games (sorted by week, most recent last)
         results = sorted(game_results[team], key=lambda x: x[0])
-        last_5_results = [r[1] for r in results[-5:]]
-        team_data["last5"] = last_5_results
+        last_6_results = [r[1] for r in results[-6:]]
+        team_data["last6"] = last_6_results
 
         # Convert numpy types to Python types
         team_data["wins"] = int(team_data["wins"])

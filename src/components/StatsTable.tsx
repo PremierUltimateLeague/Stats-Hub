@@ -58,7 +58,18 @@ export function StatsTable<T extends Record<string, unknown>>({
         uniqueValues.add(String(value));
       }
     });
-    return Array.from(uniqueValues).sort();
+    const values = Array.from(uniqueValues);
+
+    // Sort numerically for week-like values
+    if (filterColumn === 'week') {
+      return values.sort((a, b) => {
+        const numA = parseInt(a.replace(/\D/g, '') || '0');
+        const numB = parseInt(b.replace(/\D/g, '') || '0');
+        return numA - numB;
+      });
+    }
+
+    return values.sort();
   }, [data, filterColumn]);
 
   // Filter data by column filter first
@@ -91,6 +102,31 @@ export function StatsTable<T extends Record<string, unknown>>({
           }
         }
       });
+    });
+
+    // Sort: prioritize matches where search is prefix of first meaningful word
+    matches.sort((a, b) => {
+      const aNorm = normalizeString(a);
+      const bNorm = normalizeString(b);
+
+      // For player names like "00 Chelsea Smith", extract name parts
+      const aWords = aNorm.replace(/^\d+\s+/, '').split(/\s+/);
+      const bWords = bNorm.replace(/^\d+\s+/, '').split(/\s+/);
+
+      // Check if search is prefix of first name (highest priority)
+      const aFirstName = aWords[0]?.startsWith(search);
+      const bFirstName = bWords[0]?.startsWith(search);
+      if (aFirstName && !bFirstName) return -1;
+      if (!aFirstName && bFirstName) return 1;
+
+      // Then prefix of any word
+      const aAnyWord = aWords.some(w => w.startsWith(search));
+      const bAnyWord = bWords.some(w => w.startsWith(search));
+      if (aAnyWord && !bAnyWord) return -1;
+      if (!aAnyWord && bAnyWord) return 1;
+
+      // Then alphabetical
+      return aNorm.localeCompare(bNorm);
     });
 
     return matches.slice(0, 8);

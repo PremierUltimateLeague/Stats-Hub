@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import EmptySeasonState from '../components/EmptySeasonState.astro';
 
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
@@ -215,12 +216,9 @@ for (const seasonKey of [...seasons, 'career']) {
             })}
           </div>
         ) : playersBySeason[season].length > 0 ? (
-          <div class="text-center py-12">
-            <p class="text-pul-gray text-lg mb-2">🏟️ Season hasn't started yet</p>
-            <p class="text-pul-gray text-sm">Leaders will appear once games are played</p>
-          </div>
+          <EmptySeasonState type="leaders" />
         ) : (
-          <p class="text-pul-gray py-8">No player data available for {season}.</p>
+          <EmptySeasonState type="player" />
         )}
       </div>
     ))}

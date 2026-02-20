@@ -1,53 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { StatsTable } from '../components/StatsTable';
-import fs from 'node:fs';
-import path from 'node:path';
+import EmptySeasonState from '../components/EmptySeasonState.astro';
 
-import { loadSeasonData } from '../utils/seasonLoader';
+import { StatsTable } from '../components/StatsTable';
+import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
 
 const playersOverallBySeason = loadSeasonData(seasons, 'players_season.json');
 const playersGamesBySeason = loadSeasonData(seasons, 'players_games.json');
 
-// Load 2025
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_season.json'), 'utf-8');
-  playersOverallBySeason['2025'] = JSON.parse(data);
-} catch (e) {
-  playersOverallBySeason['2025'] = [];
-}
-
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'players_games.json'), 'utf-8');
-  playersGamesBySeason['2025'] = JSON.parse(data);
-} catch (e) {
-  playersGamesBySeason['2025'] = [];
-}
-
-// Load 2024
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'players_season.json'), 'utf-8');
-  playersOverallBySeason['2024'] = JSON.parse(data);
-} catch (e) {
-  playersOverallBySeason['2024'] = [];
-}
-
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2024', 'players_games.json'), 'utf-8');
-  playersGamesBySeason['2024'] = JSON.parse(data);
-} catch (e) {
-  playersGamesBySeason['2024'] = [];
-}
-
-for (const season of seasons) {
-  if (!playersOverallBySeason[season]) {
-    playersOverallBySeason[season] = [];
-  }
-  if (!playersGamesBySeason[season]) {
-    playersGamesBySeason[season] = [];
-  }
-}
+const defaultSeason = findDefaultSeason(
+  seasons,
+  playersOverallBySeason,
+  ['goals', 'assists', 'blocks']
+);
 
 const overallColumns = [
   { accessorKey: 'player', header: 'Player', size: 200 },
@@ -76,10 +42,12 @@ const gameColumns = [
 <Layout title="Player Stats">
   <div class="space-y-6">
     <div class="flex items-baseline justify-between flex-wrap gap-4">
-      <h1 class="text-3xl font-semibold">Player Stats</h1>
+      <h1 class="text-3xl font-semibold">
+        <span id="players-title">{defaultSeason}</span> Player Stats
+      </h1>
       <select id="season-select" class="search-input text-sm">
         {seasons.map(season => (
-          <option value={season}>{season} Season</option>
+          <option value={season} selected={season === defaultSeason}>{season} Season</option>
         ))}
       </select>
     </div>
@@ -99,27 +67,27 @@ const gameColumns = [
     <!-- Season View -->
     <div id="season-view">
       {seasons.map(season => (
-        <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+        <div data-season={season} class={season === defaultSeason ? '' : 'hidden'}>
           <!-- Overall Tab -->
           <div data-tab-content="overall">
-            {playersOverallBySeason[season].length > 0 ? (
-              <StatsTable 
-                client:load
-                data={playersOverallBySeason[season]}
-                columns={overallColumns}
-                searchPlaceholder="Search players..."
-                searchableColumns={['player']}
-                filterColumn="team"
-                filterLabel="Teams"
-                linkColumn="team"
-                linkPrefix="/Stats-Hub/teams/"
-                playerLinkColumn="player"
-                gameLinkColumn="match"
-              />
-            ) : (
-              <p class="text-pul-gray py-8">No player data available for {season}.</p>
-            )}
-          </div>
+           {playersOverallBySeason[season].some(p => (p.goals || 0) + (p.assists || 0) + (p.blocks || 0) > 0) ? (
+          <StatsTable 
+            client:load
+            data={playersOverallBySeason[season]}
+            columns={overallColumns}
+            searchPlaceholder="Search players..."
+            searchableColumns={['player']}
+            filterColumn="team"
+            filterLabel="Teams"
+            linkColumn="team"
+            linkPrefix="/Stats-Hub/teams/"
+            playerLinkColumn="player"
+            gameLinkColumn="match"
+          />
+        ) : (
+          <EmptySeasonState type="player" />
+        )}
+        </div>
 
         <!-- By Game Tab -->
         <div data-tab-content="by-game" class="hidden">
@@ -137,7 +105,7 @@ const gameColumns = [
             playerLinkColumn="player"
           />
           ) : (
-            <p class="text-pul-gray py-8">No game data available for {season}.</p>
+          <EmptySeasonState type="game" />
           )}
         </div>
       </div>
@@ -145,12 +113,17 @@ const gameColumns = [
   </div>
 
   <script>
-    // Season switcher
     const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
     const seasonDivs = document.querySelectorAll('[data-season]');
+    const playersTitle = document.getElementById('players-title');
     
     seasonSelect?.addEventListener('change', () => {
       const selected = seasonSelect.value;
+      
+      if (playersTitle) {
+        playersTitle.textContent = selected;
+      }
+      
       seasonDivs.forEach(div => {
         if (div.getAttribute('data-season') === selected) {
           div.classList.remove('hidden');
@@ -167,7 +140,6 @@ const gameColumns = [
       btn.addEventListener('click', () => {
         const tab = btn.getAttribute('data-tab');
         
-        // Update button styles
         tabBtns.forEach(b => {
           b.classList.remove('border-pul-black', 'text-pul-black');
           b.classList.add('border-transparent', 'text-pul-gray');
@@ -175,7 +147,6 @@ const gameColumns = [
         btn.classList.remove('border-transparent', 'text-pul-gray');
         btn.classList.add('border-pul-black', 'text-pul-black');
         
-        // Show/hide content for all seasons
         document.querySelectorAll('[data-tab-content]').forEach(content => {
           if (content.getAttribute('data-tab-content') === tab) {
             content.classList.remove('hidden');

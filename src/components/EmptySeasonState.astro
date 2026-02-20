@@ -1,0 +1,20 @@
+---
+interface Props {
+  type?: 'team' | 'player' | 'game' | 'roster' | 'leaders';
+}
+
+const messages: Record<string, string> = {
+  team: 'Team stats will appear once games are played.',
+  player: 'Player stats will appear once games are played.',
+  game: 'Game data will appear once games are played.',
+  roster: 'Roster will appear once players are announced.',
+  leaders: 'Leaders will appear once games are played.',
+};
+
+const { type = 'team' } = Astro.props;
+---
+
+<div class="text-center py-12">
+  <p class="text-2xl mb-2">🏟️ Season hasn't started yet</p>
+  <p class="text-pul-gray">{messages[type]}</p>
+</div>

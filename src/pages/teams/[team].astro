@@ -1,10 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import EmptySeasonState from '../../components/EmptySeasonState.astro';
 import { StatsTable } from '../../components/StatsTable';
+
 import fs from 'node:fs';
 import path from 'node:path';
+
 import { seasons } from '../../config/seasons';
-import { teamLogos, teamColors, teamFolders } from '../../utils/teams';
+import { teamLogos, teamColors } from '../../utils/teams';
+import { findDefaultSeason } from '../../utils/seasonLoader';
 
 // Get the team from the URL
 const { team } = Astro.params;
@@ -21,6 +25,7 @@ const logoPath = logoFile ? `/Stats-Hub/images/teams/${logoFile}` : null;
 const playersBySeason: Record<string, any[]> = {};
 const teamStatsBySeason: Record<string, any> = {};
 const standingsBySeason: Record<string, any> = {};
+const gameLogBySeason: Record<string, any[]> = {};
 
 for (const season of seasons) {
   // Players
@@ -58,7 +63,31 @@ for (const season of seasons) {
   } catch (e) {
     standingsBySeason[season] = null;
   }
+
+// Game log (team games)
+  try {
+    const dataPath = path.join(process.cwd(), 'data', season, 'teams_games.json');
+    const rawData = fs.readFileSync(dataPath, 'utf-8');
+    const allGames = JSON.parse(rawData);
+    gameLogBySeason[season] = allGames
+      .filter((g: any) => g.team === decodedTeam)
+      .map((g: any) => ({
+        ...g,
+        weekNum: parseInt(String(g.week).replace(/\D/g, '') || '0')
+      }))
+      .sort((a: any, b: any) => a.weekNum - b.weekNum);
+  } catch (e) {
+    gameLogBySeason[season] = [];
+  }
 }
+
+// Find default season (first season with actual data)
+const defaultSeason = findDefaultSeason(
+  seasons,
+  // Build a combined lookup — use playersBySeason since it's an array
+  Object.fromEntries(seasons.map(s => [s, playersBySeason[s] || []])),
+  ['goals', 'assists', 'blocks']
+);
 
 // Generate static paths for all teams
 export async function getStaticPaths() {
@@ -89,14 +118,32 @@ const playerColumns = [
   { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
   { accessorKey: 'touches', header: 'Touches', size: 90 },
 ];
+
+const gameLogColumns = [
+  { accessorKey: 'match', header: 'Match', size: 180 },
+  { accessorKey: 'week', header: 'Week', size: 80 },
+  { accessorKey: 'goals', header: 'Goals', size: 70 },
+  { accessorKey: 'breakGoals', header: 'Break Goals', size: 100 },
+  { accessorKey: 'holds', header: 'Holds', size: 70 },
+  { accessorKey: 'cleanHolds', header: 'Clean Holds', size: 100 },
+  { accessorKey: 'blocks', header: 'Blocks', size: 80 },
+  { accessorKey: 'passAttempts', header: 'Pass Att.', size: 90 },
+  { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+  { accessorKey: 'completedPasses', header: 'Comp. Passes', size: 110 },
+  { accessorKey: 'completionRate', header: 'Comp. %', size: 80 },
+  { accessorKey: 'hucks', header: 'Hucks', size: 70 },
+];
 ---
 
 <Layout title={decodedTeam}>
   <div class="space-y-8">
-    <!-- Back link -->
-    <a href="/Stats-Hub/teams" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
-      ← Back to all teams
-    </a>
+    <!-- Back link (uses history.back with fallback) -->
+    <button 
+      onclick="if (document.referrer && document.referrer.includes('/Stats-Hub')) { history.back(); } else { window.location.href = '/Stats-Hub/teams'; }"
+      class="text-sm text-pul-gray hover:text-pul-black transition-colors cursor-pointer"
+    >
+      ← Back
+    </button>
 
     <!-- Team Hero Banner -->
     <div 
@@ -114,15 +161,15 @@ const playerColumns = [
         <div class="text-white flex-1">
           <h1 class="text-3xl sm:text-4xl font-bold drop-shadow-md">{decodedTeam}</h1>
           <p id="team-subtitle" class="text-white/80 mt-1 drop-shadow">
-            {standingsBySeason['2025'] 
-              ? `${standingsBySeason['2025'].wins}-${standingsBySeason['2025'].losses} • ${standingsBySeason['2025'].division} Division`
-              : '2025 Season'
+            {standingsBySeason[defaultSeason] 
+              ? `${standingsBySeason[defaultSeason].wins}-${standingsBySeason[defaultSeason].losses} • ${standingsBySeason[defaultSeason].division} Division`
+              : `${defaultSeason} Season`
             }
           </p>
         </div>
         <select id="season-select" class="search-input text-sm bg-white/90 text-pul-black border-white/50 rounded-lg px-3 py-2">
           {seasons.map(season => (
-            <option value={season}>{season} Season</option>
+            <option value={season} selected={season === defaultSeason}>{season} Season</option>
           ))}
         </select>
       </div>
@@ -131,12 +178,12 @@ const playerColumns = [
     {seasons.map(season => {
       const teamStats = teamStatsBySeason[season];
       const teamPlayers = playersBySeason[season];
-      const teamRecord = standingsBySeason[season];
+      const teamGames = gameLogBySeason[season];
       
       return (
-        <div data-season={season} class={season === '2025' ? '' : 'hidden'}>
+        <div data-season={season} class={season === defaultSeason ? '' : 'hidden'}>
           <!-- Team Stats Summary -->
-          {teamStats ? (
+          {teamStats && ((teamStats.goals || 0) + (teamStats.blocks || 0) + (teamStats.breakGoals || 0) > 0) ? (
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
               <div class="p-4 border border-pul-border rounded">
                 <div class="text-2xl font-semibold">{teamStats.goals || 0}</div>
@@ -192,12 +239,23 @@ const playerColumns = [
               )}
             </div>
           ) : (
-            <p class="text-pul-gray mb-8">No team stats available for {season}.</p>
+            <EmptySeasonState type="team" />
           )}
 
-          <!-- Players Table -->
-          <div>
-            <h2 class="text-xl font-semibold mb-4">Players ({teamPlayers.length})</h2>
+          <!-- Tabs: Roster / Game Log -->
+          <div class="border-b border-pul-border mb-4">
+            <nav class="flex gap-6">
+              <button class="tab-btn py-3 text-sm font-medium border-b-2 border-pul-black" data-tab="roster">
+                Roster ({teamPlayers.length})
+              </button>
+              <button class="tab-btn py-3 text-sm font-medium border-b-2 border-transparent text-pul-gray hover:text-pul-black" data-tab="game-log">
+                Game Log ({teamGames.length})
+              </button>
+            </nav>
+          </div>
+
+          <!-- Roster Tab -->
+          <div data-tab-content="roster">
             {teamPlayers.length > 0 ? (
               <StatsTable 
                 client:load
@@ -208,7 +266,25 @@ const playerColumns = [
                 playerLinkColumn="player"
               />
             ) : (
-              <p class="text-pul-gray">No player data available for {season}.</p>
+              <EmptySeasonState type="roster" />
+            )}
+          </div>
+
+          <!-- Game Log Tab -->
+          <div data-tab-content="game-log" class="hidden">
+            {teamGames.length > 0 ? (
+              <StatsTable 
+                client:load
+                data={teamGames}
+                columns={gameLogColumns}
+                searchPlaceholder="Search matchups..."
+                searchableColumns={['match']}
+                filterColumn="week"
+                filterLabel="Weeks"
+                gameLinkColumn="match"
+              />
+            ) : (
+              <EmptySeasonState type="game" />
             )}
           </div>
         </div>
@@ -219,12 +295,15 @@ const playerColumns = [
 <script>
     const seasonSelect = document.getElementById('season-select');
     const seasonDivs = document.querySelectorAll('div[data-season]');
-    const recordDivs = document.querySelectorAll('div[data-record-season]');
+    
+    // Subtitle data for season switching
+    const subtitleData = JSON.parse(document.getElementById('subtitle-data')?.textContent || '{}');
+    const teamSubtitle = document.getElementById('team-subtitle');
     
     seasonSelect?.addEventListener('change', (e) => {
       const selected = (e.target as HTMLSelectElement).value;
       
-      // Show/hide content
+      // Show/hide season content
       seasonDivs.forEach(div => {
         if (div.getAttribute('data-season') === selected) {
           div.classList.remove('hidden');
@@ -233,14 +312,49 @@ const playerColumns = [
         }
       });
       
-      // Show/hide record
-      recordDivs.forEach(div => {
-        if (div.getAttribute('data-record-season') === selected) {
-          div.classList.remove('hidden');
+      // Update subtitle
+      if (teamSubtitle && subtitleData[selected]) {
+        teamSubtitle.textContent = subtitleData[selected];
+      } else if (teamSubtitle) {
+        teamSubtitle.textContent = `${selected} Season`;
+      }
+    });
+
+    // Tab switcher (scoped to visible season)
+    document.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.tab-btn');
+      if (!btn) return;
+      
+      const tab = btn.getAttribute('data-tab');
+      const seasonDiv = btn.closest('[data-season]');
+      if (!seasonDiv) return;
+      
+      // Update button styles within this season
+      seasonDiv.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('border-pul-black', 'text-pul-black');
+        b.classList.add('border-transparent', 'text-pul-gray');
+      });
+      btn.classList.remove('border-transparent', 'text-pul-gray');
+      btn.classList.add('border-pul-black', 'text-pul-black');
+      
+      // Show/hide tab content within this season
+      seasonDiv.querySelectorAll('[data-tab-content]').forEach(content => {
+        if (content.getAttribute('data-tab-content') === tab) {
+          content.classList.remove('hidden');
         } else {
-          div.classList.add('hidden');
+          content.classList.add('hidden');
         }
       });
     });
-  </script>
+</script>
+
+<!-- Inline data for subtitle updates -->
+<script id="subtitle-data" type="application/json" set:html={JSON.stringify(
+  Object.fromEntries(seasons.map(s => [
+    s, 
+    standingsBySeason[s] 
+      ? `${standingsBySeason[s].wins}-${standingsBySeason[s].losses} • ${standingsBySeason[s].division} Division`
+      : `${s} Season`
+  ]))
+)} />
 </Layout>

@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { StatsTable } from '../components/StatsTable';
+import EmptySeasonState from '../components/EmptySeasonState.astro';
 
+import { StatsTable } from '../components/StatsTable';
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
 
@@ -75,7 +76,7 @@ const gameColumns = [
       <div data-season={season} class={season === defaultSeason ? '' : 'hidden'}>
         <!-- Overall Tab -->
         <div data-tab-content="overall">
-          {teamsOverallBySeason[season].length > 0 ? (
+          {teamsOverallBySeason[season].some(t => (t.goals || 0) + (t.blocks || 0) + (t.breakGoals || 0) > 0) ? (
             <StatsTable 
               client:load
               data={teamsOverallBySeason[season]}
@@ -87,30 +88,30 @@ const gameColumns = [
               showTeamLogos={true}
             />
           ) : (
-            <p class="text-pul-gray py-8">No team data available for {season}.</p>
+            <EmptySeasonState type="team" />
           )}
         </div>
 
-        <!-- By Game Tab -->
-        <div data-tab-content="by-game" class="hidden">
-          {teamsGamesBySeason[season].length > 0 ? (
-            <StatsTable 
-            client:load
-            data={teamsGamesBySeason[season]}
-            columns={gameColumns}
-            searchPlaceholder="Search teams or matches..."
-            searchableColumns={['team', 'match']}
-            filterColumn="week"
-            filterLabel="Weeks"
-            showTeamLogos={true}
-            linkColumn="team"
-            linkPrefix="/Stats-Hub/teams/"
-            gameLinkColumn="match"
-          />
-          ) : (
-            <p class="text-pul-gray py-8">No game data available for {season}.</p>
-          )}
-        </div>
+      <!-- By Game Tab -->
+      <div data-tab-content="by-game" class="hidden">
+        {teamsGamesBySeason[season].some(t => (t.goals || 0) + (t.blocks || 0) + (t.breakGoals || 0) > 0) ? (
+          <StatsTable 
+          client:load
+          data={teamsGamesBySeason[season]}
+          columns={gameColumns}
+          searchPlaceholder="Search teams or matches..."
+          searchableColumns={['team', 'match']}
+          filterColumn="week"
+          filterLabel="Weeks"
+          showTeamLogos={true}
+          linkColumn="team"
+          linkPrefix="/Stats-Hub/teams/"
+          gameLinkColumn="match"
+        />
+        ) : (
+          <EmptySeasonState type="game" />
+        )}
+      </div>
       </div>
     ))}
   </div>

@@ -4,7 +4,7 @@ import { StatsTable } from '../../components/StatsTable';
 import fs from 'node:fs';
 import path from 'node:path';
 import { seasons } from '../../config/seasons';
-import { teamLogos, teamColors, teamFolders } from '../../utils/teams';
+import { teamLogos, teamColors } from '../../utils/teams';
 
 // Get the player from the URL
 const { player } = Astro.params;
@@ -43,72 +43,23 @@ for (const season of seasons) {
   } catch (e) {}
 }
 
-// Get current team from most recent season
-const currentTeam = Object.values(playerSeasonStats)[0]?.team || '';
-const teamFolder = teamFolders[currentTeam] || '';
-
-// Generate headshot filename variations
-const nameParts = playerName.split(' ');
-let lastName = nameParts[nameParts.length - 1];
-
-// Handle compound last names like "De Jesus" -> "DeJesus"
-if (nameParts.length >= 2) {
-  const secondLast = nameParts[nameParts.length - 2]?.toLowerCase();
-  if (['de', 'van', 'von', 'la', 'le', 'del', 'di', 'da'].includes(secondLast)) {
-    lastName = nameParts[nameParts.length - 2] + lastName;
-  }
-}
-
-// Create base versions of the last name
-const lastNameWithHyphen = lastName
-  .replace(/'/g, '')
-  .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-  .replace(/[^a-zA-Z-]/g, '');
-
-const lastNameNoHyphen = lastNameWithHyphen.replace(/-/g, '');
-
-// Generate all possible variations
-const baseNames = [
-  lastNameWithHyphen,
-  lastNameNoHyphen,
-  lastNameWithHyphen.charAt(0).toUpperCase() + lastNameWithHyphen.slice(1), // Capitalize first
-  lastNameNoHyphen.toLowerCase(),                     
-];
-
-const extensions = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG'];
-const numbers = [playerNumber || '', (playerNumber || '').replace(/^0+/, '')]; // Try with and without leading zeros
-
-// Build all variations
-const variations: string[] = [];
-for (const baseName of baseNames) {
-  for (const num of numbers) {
-    for (const ext of extensions) {
-      variations.push(`${baseName}${num}${ext}`);
-    }
-  }
-}
-
-// Remove duplicates
-const uniqueVariations = [...new Set(variations)];
-
-// Check which file exists
-let headshotFile = '';
+// Load headshot mapping
+let headshotPath = '';
 let hasHeadshot = false;
 
-for (const filename of uniqueVariations) {
-  try {
-    const filePath = path.join(process.cwd(), 'public', 'images', 'players', teamFolder, filename);
+try {
+  const mapData = fs.readFileSync(path.join(process.cwd(), 'data', 'headshot_map.json'), 'utf-8');
+  const headshotMap = JSON.parse(mapData);
+  const playerEntry = headshotMap[decodedPlayer];
+  
+  if (playerEntry?.headshot) {
+    const filePath = path.join(process.cwd(), 'public', 'images', 'players', playerEntry.headshot);
     if (fs.existsSync(filePath)) {
-      headshotFile = filename;
       hasHeadshot = true;
-      break;
+      headshotPath = `/Stats-Hub/images/players/${playerEntry.headshot}`;
     }
-  } catch (e) {}
-}
-
-const headshotPath = hasHeadshot 
-  ? `/Stats-Hub/images/players/${encodeURIComponent(teamFolder)}/${headshotFile}`
-  : '';
+  }
+} catch (e) {}
 
 // Get teams played for
 const teamsPlayed = Object.entries(playerSeasonStats).map(([season, stats]) => ({
@@ -174,9 +125,12 @@ const gameColumns = [
 <Layout title={playerName}>
   <div class="space-y-8">
     <!-- Back link -->
-    <a href="/Stats-Hub/players" class="text-sm text-pul-gray hover:text-pul-black transition-colors">
-      ← Back to all players
-    </a>
+    <button 
+      onclick="if (document.referrer && document.referrer.includes('/Stats-Hub')) { history.back(); } else { window.location.href = '/Stats-Hub/players'; }"
+      class="text-sm text-pul-gray hover:text-pul-black transition-colors cursor-pointer"
+    >
+      ← Back
+    </button>
 
     <!-- Player Header -->  
     <div class="flex items-center gap-6">

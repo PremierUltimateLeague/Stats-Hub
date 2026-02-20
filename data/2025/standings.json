@@ -10,7 +10,8 @@
     "games": 6,
     "winPct": 83.3,
     "pointDiff": 20,
-    "last5": [
+    "last6": [
+      "L",
       "W",
       "W",
       "W",
@@ -29,7 +30,8 @@
     "games": 6,
     "winPct": 83.3,
     "pointDiff": 16,
-    "last5": [
+    "last6": [
+      "W",
       "W",
       "W",
       "W",
@@ -48,7 +50,8 @@
     "games": 6,
     "winPct": 66.7,
     "pointDiff": 13,
-    "last5": [
+    "last6": [
+      "W",
       "L",
       "W",
       "W",
@@ -67,7 +70,7 @@
     "games": 5,
     "winPct": 40.0,
     "pointDiff": -7,
-    "last5": [
+    "last6": [
       "L",
       "L",
       "W",
@@ -86,7 +89,7 @@
     "games": 5,
     "winPct": 0.0,
     "pointDiff": -26,
-    "last5": [
+    "last6": [
       "L",
       "L",
       "L",
@@ -105,7 +108,8 @@
     "games": 6,
     "winPct": 100.0,
     "pointDiff": 63,
-    "last5": [
+    "last6": [
+      "W",
       "W",
       "W",
       "W",
@@ -124,7 +128,8 @@
     "games": 6,
     "winPct": 66.7,
     "pointDiff": 16,
-    "last5": [
+    "last6": [
+      "W",
       "W",
       "L",
       "L",
@@ -143,7 +148,8 @@
     "games": 6,
     "winPct": 50.0,
     "pointDiff": -3,
-    "last5": [
+    "last6": [
+      "W",
       "L",
       "L",
       "L",
@@ -162,7 +168,8 @@
     "games": 6,
     "winPct": 33.3,
     "pointDiff": -4,
-    "last5": [
+    "last6": [
+      "L",
       "L",
       "W",
       "W",
@@ -181,7 +188,8 @@
     "games": 6,
     "winPct": 16.7,
     "pointDiff": -28,
-    "last5": [
+    "last6": [
+      "L",
       "W",
       "L",
       "L",
@@ -200,7 +208,8 @@
     "games": 6,
     "winPct": 0.0,
     "pointDiff": -60,
-    "last5": [
+    "last6": [
+      "L",
       "L",
       "L",
       "L",
