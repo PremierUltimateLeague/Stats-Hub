@@ -1,8 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { StatsTable } from '../../components/StatsTable';
+import BackButton from '../../components/BackButton.astro';
+
 import fs from 'node:fs';
 import path from 'node:path';
+
 import { seasons } from '../../config/seasons';
 import { teamLogos, teamColors } from '../../utils/teams';
 
@@ -125,12 +128,7 @@ const gameColumns = [
 <Layout title={playerName}>
   <div class="space-y-8">
     <!-- Back link -->
-    <button 
-      onclick="if (document.referrer && document.referrer.includes('/Stats-Hub')) { history.back(); } else { window.location.href = '/Stats-Hub/players'; }"
-      class="text-sm text-pul-gray hover:text-pul-black transition-colors cursor-pointer"
-    >
-      ← Back
-    </button>
+    <BackButton fallback="/Stats-Hub/players" />
 
     <!-- Player Header -->  
     <div class="flex items-center gap-6">

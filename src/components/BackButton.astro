@@ -1,0 +1,28 @@
+---
+interface Props {
+  fallback?: string;
+}
+
+const { fallback = '/Stats-Hub/teams' } = Astro.props;
+---
+
+<button 
+  data-back-btn
+  data-fallback={fallback}
+  class="text-sm text-pul-gray hover:text-pul-black transition-colors cursor-pointer"
+>
+  ← Back
+</button>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-back-btn]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const fallback = btn.dataset.fallback || '/Stats-Hub/teams';
+      if (document.referrer && document.referrer.includes('/Stats-Hub')) {
+        history.back();
+      } else {
+        window.location.href = fallback;
+      }
+    });
+  });
+</script>

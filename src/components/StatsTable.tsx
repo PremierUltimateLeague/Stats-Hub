@@ -12,6 +12,7 @@ import {
 interface StatsTableProps<T extends Record<string, unknown>> {
   data: T[];
   columns: ColumnDef<T, unknown>[];
+  teamLogos?: Record<string, string>;
   searchPlaceholder?: string;
   searchableColumns?: string[];
   filterColumn?: string;
@@ -26,6 +27,7 @@ interface StatsTableProps<T extends Record<string, unknown>> {
 export function StatsTable<T extends Record<string, unknown>>({
   data,
   columns,
+  teamLogos = {},
   searchPlaceholder = "Search...",
   searchableColumns = [],
   filterColumn,
@@ -192,24 +194,6 @@ export function StatsTable<T extends Record<string, unknown>>({
 
   const getColumnId = (header: any): string => {
     return header.column.columnDef.accessorKey || header.id;
-  };
-
-  // Team logos for badges
-  const teamLogos: Record<string, string> = {
-    'Atlanta Soul': 'atlanta.png',
-    'Austin Torch': 'austin.png',
-    'Columbus Pride': 'columbus.png',
-    'DC Shadow': 'dc.png',
-    'Indy Red': 'indy.png',
-    'LA Astra': 'la.png',
-    'Medellin Revolution': 'medellin.png',
-    'Milwaukee Monarchs': 'milwaukee.png',
-    'Minnesota Strike': 'minnesota.png',
-    'Nashville NightShade': 'nashville.png',
-    'New York Gridlock': 'new-york.png',
-    'Philadelphia Surge': 'philadelphia.png',
-    'Portland Rising': 'portland.png',
-    'Raleigh Radiance': 'raleigh.png',
   };
 
   // Render cell content, with optional link and team color

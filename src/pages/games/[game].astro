@@ -1,7 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import BackButton from '../../components/BackButton.astro';
+import { teamLogos, teamNames } from '../../utils/teams';
+
 import fs from 'node:fs';
 import path from 'node:path';
+
 import { seasons } from '../../config/seasons';
 
 // Generate static paths for all games - MUST be before using Astro.params
@@ -23,43 +27,6 @@ export async function getStaticPaths() {
     params: { game: game }
   }));
 }
-
-// Team logo mapping
-const teamLogos: Record<string, string> = {
-  'Atlanta Soul': 'atlanta.png',
-  'Austin Torch': 'austin.png',
-  'Columbus Pride': 'columbus.png',
-  'DC Shadow': 'dc.png',
-  'Indy Red': 'indy.png',
-  'LA Astra': 'la.png',
-  'Medellin Revolution': 'medellin.png',
-  'Milwaukee Monarchs': 'milwaukee.png',
-  'Minnesota Strike': 'minnesota.png',
-  'Nashville NightShade': 'nashville.png',
-  'New York Gridlock': 'new-york.png',
-  'Philadelphia Surge': 'philadelphia.png',
-  'Portland Rising': 'portland.png',
-  'Raleigh Radiance': 'raleigh.png',
-};
-
-// Team abbreviation to full name
-const teamNames: Record<string, string> = {
-  'ATL': 'Atlanta Soul',
-  'ATX': 'Austin Torch',
-  'DC': 'DC Shadow',
-  'IND': 'Indy Red',
-  'INDY': 'Indy Red',
-  'LA': 'LA Astra',
-  'MKE': 'Milwaukee Monarchs',
-  'MIN': 'Minnesota Strike',
-  'MINN': 'Minnesota Strike',
-  'NSH': 'Nashville NightShade',
-  'NASH': 'Nashville NightShade',
-  'NY': 'New York Gridlock',
-  'PHL': 'Philadelphia Surge',
-  'PORT': 'Portland Rising',
-  'RAL': 'Raleigh Radiance',
-};
 
 // Get the game from the URL
 const { game } = Astro.params;
@@ -120,12 +87,7 @@ const homeWon = homeGoals > awayGoals;
 <Layout title={decodedGame}>
   <div class="space-y-8">
     <!-- Back link -->
-    <button 
-      onclick="if (document.referrer && document.referrer.includes('/Stats-Hub')) { history.back(); } else { window.location.href = '/Stats-Hub/teams'; }"
-      class="text-sm text-pul-gray hover:text-pul-black transition-colors cursor-pointer"
-    >
-      ← Back
-    </button>
+    <BackButton fallback="/Stats-Hub/teams" />
 
     <!-- Game Header -->
     <div class="text-center">

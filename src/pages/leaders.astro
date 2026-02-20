@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import EmptySeasonState from '../components/EmptySeasonState.astro';
+import SeasonSelect from '../components/SeasonSelect.astro';
 
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
@@ -150,12 +151,12 @@ for (const seasonKey of [...seasons, 'career']) {
         <h1 class="text-3xl font-semibold"><span id="leaders-title">{defaultSeason}</span> Season Leaders</h1>
         <p class="text-pul-gray mt-1">Top performers in key statistical categories</p>
       </div>
-      <select id="season-select" class="search-input text-sm">
-        {seasons.map(season => (
-          <option value={season} selected={season === defaultSeason}>{season} Season</option>
-        ))}
-        <option value="career">Career Totals</option>  
-      </select>
+      <SeasonSelect 
+        seasons={seasons} 
+        defaultSeason={defaultSeason} 
+        titleId="leaders-title"
+        extraOptions={[{ value: 'career', label: 'Career Totals' }]}
+      />
     </div>
 
     {seasons.map(season => (
@@ -296,31 +297,24 @@ for (const seasonKey of [...seasons, 'career']) {
     const leadersTitle = document.getElementById('leaders-title');
     const toast = document.getElementById('toast');
     
-    seasonSelect?.addEventListener('change', () => {
-      const selected = seasonSelect.value;
-      
-      if (leadersTitle && leadersTitle.parentElement) {
-        if (selected === 'career') {
-          leadersTitle.textContent = 'Career';
-          leadersTitle.parentElement.childNodes.forEach(node => {
-            if (node.nodeType === 3) node.textContent = ' Leaders';
-          });
-        } else {
-          leadersTitle.textContent = selected;
-          leadersTitle.parentElement.childNodes.forEach(node => {
-            if (node.nodeType === 3) node.textContent = ' Season Leaders';
-          });
-        }
+    // Career vs Season title handling
+    document.addEventListener('seasonchange', ((e: CustomEvent) => {
+      const selected = e.detail.season;
+      const leadersTitle = document.getElementById('leaders-title');
+      if (!leadersTitle?.parentElement) return;
+
+      if (selected === 'career') {
+        leadersTitle.textContent = 'Career';
+        leadersTitle.parentElement.childNodes.forEach(node => {
+          if (node.nodeType === 3) node.textContent = ' Leaders';
+        });
+      } else {
+        leadersTitle.textContent = selected;
+        leadersTitle.parentElement.childNodes.forEach(node => {
+          if (node.nodeType === 3) node.textContent = ' Season Leaders';
+        });
       }
-      
-      seasonDivs.forEach(div => {
-        if (div.getAttribute('data-season') === selected) {
-          div.classList.remove('hidden');
-        } else {
-          div.classList.add('hidden');
-        }
-      });
-    });
+    }) as EventListener);
 
     // Share button handlers
     const shareBtns = document.querySelectorAll('.share-btn');

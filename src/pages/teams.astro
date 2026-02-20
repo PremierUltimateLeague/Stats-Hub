@@ -1,10 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import EmptySeasonState from '../components/EmptySeasonState.astro';
+import SeasonSelect from '../components/SeasonSelect.astro';
 
 import { StatsTable } from '../components/StatsTable';
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
+import { teamLogos } from '../utils/teams';
 
 const teamsOverallBySeason = loadSeasonData(seasons, 'teams_season.json');
 const teamsGamesBySeason = loadSeasonData(seasons, 'teams_games.json');
@@ -51,13 +53,11 @@ const gameColumns = [
     <div class="flex items-baseline justify-between flex-wrap gap-4">
       <h1 class="text-3xl font-semibold">
       <span id="teams-title">{defaultSeason}</span> Team Stats</h1>
-      <select id="season-select" class="search-input text-sm">
-        {seasons.map(season => (
-        <option value={season} selected={season === defaultSeason}>
-          {season} Season
-        </option>
-        ))}
-      </select>
+      <SeasonSelect 
+        seasons={seasons} 
+        defaultSeason={defaultSeason} 
+        titleId="teams-title" 
+      />
     </div>
 
     <!-- Tabs -->
@@ -86,6 +86,7 @@ const gameColumns = [
               linkColumn="team"
               linkPrefix="/Stats-Hub/teams/"
               showTeamLogos={true}
+              teamLogos={teamLogos}
             />
           ) : (
             <EmptySeasonState type="team" />
@@ -104,6 +105,7 @@ const gameColumns = [
           filterColumn="week"
           filterLabel="Weeks"
           showTeamLogos={true}
+          teamLogos={teamLogos}
           linkColumn="team"
           linkPrefix="/Stats-Hub/teams/"
           gameLinkColumn="match"
@@ -116,52 +118,7 @@ const gameColumns = [
     ))}
   </div>
 
-  <script>
-    // Season switcher
-    const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
-    const seasonDivs = document.querySelectorAll('[data-season]');
-    const teamsTitle = document.getElementById('teams-title');
-    
-    seasonSelect?.addEventListener('change', () => {
-      const selected = seasonSelect.value;
-      
-      // Update title
-      if (teamsTitle) {
-        teamsTitle.textContent = selected;
-      }
-      
-      // Show/hide content
-      seasonDivs.forEach(div => {
-        if (div.getAttribute('data-season') === selected) {
-          div.classList.remove('hidden');
-        } else {
-          div.classList.add('hidden');
-        }
-      });
-    });
-
-    // Tab switcher
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tab = btn.getAttribute('data-tab');
-        
-        tabBtns.forEach(b => {
-          b.classList.remove('border-pul-black', 'text-pul-black');
-          b.classList.add('border-transparent', 'text-pul-gray');
-        });
-        btn.classList.remove('border-transparent', 'text-pul-gray');
-        btn.classList.add('border-pul-black', 'text-pul-black');
-        
-        document.querySelectorAll('[data-tab-content]').forEach(content => {
-          if (content.getAttribute('data-tab-content') === tab) {
-            content.classList.remove('hidden');
-          } else {
-            content.classList.add('hidden');
-          }
-        });
-      });
-    });
-  </script>
+<script>
+  import '../scripts/tabSwitcher';
+</script>
 </Layout>

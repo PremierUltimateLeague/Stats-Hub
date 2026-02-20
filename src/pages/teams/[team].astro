@@ -2,6 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import EmptySeasonState from '../../components/EmptySeasonState.astro';
 import { StatsTable } from '../../components/StatsTable';
+import BackButton from '../../components/BackButton.astro';
+import SeasonSelect from '../../components/SeasonSelect.astro';
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -138,12 +140,7 @@ const gameLogColumns = [
 <Layout title={decodedTeam}>
   <div class="space-y-8">
     <!-- Back link (uses history.back with fallback) -->
-    <button 
-      onclick="if (document.referrer && document.referrer.includes('/Stats-Hub')) { history.back(); } else { window.location.href = '/Stats-Hub/teams'; }"
-      class="text-sm text-pul-gray hover:text-pul-black transition-colors cursor-pointer"
-    >
-      ← Back
-    </button>
+      <BackButton fallback="/Stats-Hub/teams" />
 
     <!-- Team Hero Banner -->
     <div 
@@ -167,11 +164,11 @@ const gameLogColumns = [
             }
           </p>
         </div>
-        <select id="season-select" class="search-input text-sm bg-white/90 text-pul-black border-white/50 rounded-lg px-3 py-2">
-          {seasons.map(season => (
-            <option value={season} selected={season === defaultSeason}>{season} Season</option>
-          ))}
-        </select>
+        <SeasonSelect 
+          seasons={seasons} 
+          defaultSeason={defaultSeason}
+          class="search-input text-sm bg-white/90 text-pul-black border-white/50 rounded-lg px-3 py-2"
+        />
       </div>
     </div>
 
@@ -261,6 +258,7 @@ const gameLogColumns = [
                 client:load
                 data={teamPlayers}
                 columns={playerColumns}
+                teamLogos={teamLogos}
                 searchPlaceholder="Search players..."
                 searchableColumns={['player']}
                 playerLinkColumn="player"
@@ -277,6 +275,7 @@ const gameLogColumns = [
                 client:load
                 data={teamGames}
                 columns={gameLogColumns}
+                teamLogos={teamLogos}
                 searchPlaceholder="Search matchups..."
                 searchableColumns={['match']}
                 filterColumn="week"
@@ -293,59 +292,18 @@ const gameLogColumns = [
   </div>
 
 <script>
-    const seasonSelect = document.getElementById('season-select');
-    const seasonDivs = document.querySelectorAll('div[data-season]');
-    
-    // Subtitle data for season switching
-    const subtitleData = JSON.parse(document.getElementById('subtitle-data')?.textContent || '{}');
-    const teamSubtitle = document.getElementById('team-subtitle');
-    
-    seasonSelect?.addEventListener('change', (e) => {
-      const selected = (e.target as HTMLSelectElement).value;
-      
-      // Show/hide season content
-      seasonDivs.forEach(div => {
-        if (div.getAttribute('data-season') === selected) {
-          div.classList.remove('hidden');
-        } else {
-          div.classList.add('hidden');
-        }
-      });
-      
-      // Update subtitle
-      if (teamSubtitle && subtitleData[selected]) {
-        teamSubtitle.textContent = subtitleData[selected];
-      } else if (teamSubtitle) {
-        teamSubtitle.textContent = `${selected} Season`;
-      }
-    });
+  import '../../scripts/tabSwitcher';
 
-    // Tab switcher (scoped to visible season)
-    document.addEventListener('click', (e) => {
-      const btn = (e.target as HTMLElement).closest('.tab-btn');
-      if (!btn) return;
-      
-      const tab = btn.getAttribute('data-tab');
-      const seasonDiv = btn.closest('[data-season]');
-      if (!seasonDiv) return;
-      
-      // Update button styles within this season
-      seasonDiv.querySelectorAll('.tab-btn').forEach(b => {
-        b.classList.remove('border-pul-black', 'text-pul-black');
-        b.classList.add('border-transparent', 'text-pul-gray');
-      });
-      btn.classList.remove('border-transparent', 'text-pul-gray');
-      btn.classList.add('border-pul-black', 'text-pul-black');
-      
-      // Show/hide tab content within this season
-      seasonDiv.querySelectorAll('[data-tab-content]').forEach(content => {
-        if (content.getAttribute('data-tab-content') === tab) {
-          content.classList.remove('hidden');
-        } else {
-          content.classList.add('hidden');
-        }
-      });
-    });
+  // Page-specific: update subtitle on season change
+  const subtitleData = JSON.parse(document.getElementById('subtitle-data')?.textContent || '{}');
+  const teamSubtitle = document.getElementById('team-subtitle');
+
+  document.addEventListener('seasonchange', ((e: CustomEvent) => {
+    const selected = e.detail.season;
+    if (teamSubtitle) {
+      teamSubtitle.textContent = subtitleData[selected] || `${selected} Season`;
+    }
+  }) as EventListener);
 </script>
 
 <!-- Inline data for subtitle updates -->

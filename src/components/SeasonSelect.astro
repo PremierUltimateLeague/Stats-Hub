@@ -1,0 +1,75 @@
+---
+/**
+ * Shared season dropdown + switcher.
+ * 
+ * Handles:
+ *  - Rendering the <select> with correct default
+ *  - Showing/hiding [data-season] divs on change
+ *  - Optionally updating a title element's text
+ *  - Dispatching a custom 'seasonchange' event for page-specific logic
+ * 
+ * Props:
+ *  - seasons: string[] — list of season keys
+ *  - defaultSeason: string — which season is selected initially
+ *  - extraOptions?: { value: string; label: string }[] — e.g. "Career Totals"
+ *  - titleId?: string — ID of a <span> whose textContent gets set to the selected season
+ *  - class?: string — additional classes on the <select>
+ */
+interface Props {
+  seasons: string[];
+  defaultSeason: string;
+  extraOptions?: { value: string; label: string }[];
+  titleId?: string;
+  class?: string;
+}
+
+const { 
+  seasons, 
+  defaultSeason, 
+  extraOptions = [], 
+  titleId,
+  class: className = 'search-input text-sm',
+} = Astro.props;
+---
+
+<select 
+  data-season-select
+  data-title-id={titleId || ''}
+  class={className}
+>
+  {seasons.map(season => (
+    <option value={season} selected={season === defaultSeason}>{season} Season</option>
+  ))}
+  {extraOptions.map(opt => (
+    <option value={opt.value}>{opt.label}</option>
+  ))}
+</select>
+
+<script>
+  document.querySelectorAll<HTMLSelectElement>('[data-season-select]').forEach(select => {
+    const titleId = select.dataset.titleId;
+    const titleEl = titleId ? document.getElementById(titleId) : null;
+    const seasonDivs = document.querySelectorAll<HTMLElement>('[data-season]');
+
+    select.addEventListener('change', () => {
+      const selected = select.value;
+
+      // Show/hide season content
+      seasonDivs.forEach(div => {
+        div.classList.toggle('hidden', div.dataset.season !== selected);
+      });
+
+      // Update title text if configured
+      if (titleEl) {
+        titleEl.textContent = selected;
+      }
+
+      // Dispatch custom event for page-specific logic (e.g. subtitle updates, 
+      // career vs season title text)
+      select.dispatchEvent(new CustomEvent('seasonchange', {
+        detail: { season: selected },
+        bubbles: true,
+      }));
+    });
+  });
+</script>

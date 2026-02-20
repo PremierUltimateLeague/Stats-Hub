@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import EmptySeasonState from '../components/EmptySeasonState.astro';
+import SeasonSelect from '../components/SeasonSelect.astro';
 
 import { StatsTable } from '../components/StatsTable';
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
@@ -45,11 +46,11 @@ const gameColumns = [
       <h1 class="text-3xl font-semibold">
         <span id="players-title">{defaultSeason}</span> Player Stats
       </h1>
-      <select id="season-select" class="search-input text-sm">
-        {seasons.map(season => (
-          <option value={season} selected={season === defaultSeason}>{season} Season</option>
-        ))}
-      </select>
+      <SeasonSelect 
+        seasons={seasons} 
+        defaultSeason={defaultSeason} 
+        titleId="players-title" 
+      />
     </div>
 
     <!-- Tabs -->
@@ -113,48 +114,6 @@ const gameColumns = [
   </div>
 
   <script>
-    const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
-    const seasonDivs = document.querySelectorAll('[data-season]');
-    const playersTitle = document.getElementById('players-title');
-    
-    seasonSelect?.addEventListener('change', () => {
-      const selected = seasonSelect.value;
-      
-      if (playersTitle) {
-        playersTitle.textContent = selected;
-      }
-      
-      seasonDivs.forEach(div => {
-        if (div.getAttribute('data-season') === selected) {
-          div.classList.remove('hidden');
-        } else {
-          div.classList.add('hidden');
-        }
-      });
-    });
-
-    // Tab switcher
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tab = btn.getAttribute('data-tab');
-        
-        tabBtns.forEach(b => {
-          b.classList.remove('border-pul-black', 'text-pul-black');
-          b.classList.add('border-transparent', 'text-pul-gray');
-        });
-        btn.classList.remove('border-transparent', 'text-pul-gray');
-        btn.classList.add('border-pul-black', 'text-pul-black');
-        
-        document.querySelectorAll('[data-tab-content]').forEach(content => {
-          if (content.getAttribute('data-tab-content') === tab) {
-            content.classList.remove('hidden');
-          } else {
-            content.classList.add('hidden');
-          }
-        });
-      });
-    });
-  </script>
+  import '../scripts/tabSwitcher';
+</script>
 </Layout>
