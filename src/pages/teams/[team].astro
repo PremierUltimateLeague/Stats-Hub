@@ -11,6 +11,8 @@ import path from 'node:path';
 import { seasons } from '../../config/seasons';
 import { teamLogos, teamColors } from '../../utils/teams';
 import { findDefaultSeason } from '../../utils/seasonLoader';
+import { teamMeta , getStatusLabel, getStatusClasses} from '../../config/teamMeta';
+import { getTeamDivision } from '../../config/divisions';
 
 // Get the team from the URL
 const { team } = Astro.params;
@@ -22,6 +24,11 @@ const colors = teamColors[decodedTeam] || { primary: '#1C1C1C', secondary: '#666
 // Get logo path
 const logoFile = teamLogos[decodedTeam];
 const logoPath = logoFile ? `/Stats-Hub/images/teams/${logoFile}` : null;
+
+// Team metadata
+const meta = teamMeta[decodedTeam];
+const seasonsCount = meta?.seasonsActive.length ?? 0;
+const isInactive = meta && meta.status !== 'active';
 
 // Load data for all seasons
 const playersBySeason: Record<string, any[]> = {};
@@ -147,23 +154,36 @@ const gameLogColumns = [
       class="relative -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-8 mb-8"
       style={`background: linear-gradient(135deg, ${colors.primary} 0%, ${colors.primary}dd 50%, ${colors.secondary} 100%);`}
     >
-      <div class="flex items-center gap-6">
-        {logoPath && (
-          <img 
-            src={logoPath} 
-            alt={`${decodedTeam} logo`}
-            class="w-20 h-20 sm:w-24 sm:h-24 object-contain bg-white rounded-full p-2 shadow-lg"
-          />
-        )}
-        <div class="text-white flex-1">
+    <div class="flex items-center gap-6">
+      {logoPath && (
+        <img 
+          src={logoPath} 
+          alt={`${decodedTeam} logo`}
+          class="w-20 h-20 sm:w-24 sm:h-24 object-contain bg-white rounded-full p-2 shadow-lg"
+        />
+      )}
+      <div class="text-white flex-1">
+        <div class="flex items-center gap-3 flex-wrap">
           <h1 class="text-3xl sm:text-4xl font-bold drop-shadow-md">{decodedTeam}</h1>
-          <p id="team-subtitle" class="text-white/80 mt-1 drop-shadow">
-            {standingsBySeason[defaultSeason] 
-              ? `${standingsBySeason[defaultSeason].wins}-${standingsBySeason[defaultSeason].losses} • ${standingsBySeason[defaultSeason].division} Division`
-              : `${defaultSeason} Season`
-            }
-          </p>
+          {isInactive && meta && (
+            <span class={`text-xs font-semibold px-2 py-0.5 rounded-full ${getStatusClasses(meta.status)}`}>
+              {getStatusLabel(meta.status)}
+            </span>
+          )}
         </div>
+        <p id="team-subtitle" class="text-white/80 mt-1 drop-shadow">
+          {standingsBySeason[defaultSeason] 
+            ? `${standingsBySeason[defaultSeason].wins}-${standingsBySeason[defaultSeason].losses} • ${standingsBySeason[defaultSeason].division} Division`
+            : `${defaultSeason} Season`
+          }
+        </p>
+        {meta && (
+          <p class="text-white/60 text-sm mt-1 drop-shadow">
+            {meta.location} • Est. {meta.founded} • {seasonsCount} {seasonsCount === 1 ? 'season' : 'seasons'}
+            {meta.statusNote ? ` • ${meta.statusNote}` : ''}
+          </p>
+        )}
+      </div>
         <SeasonSelect 
           seasons={seasons} 
           defaultSeason={defaultSeason}
@@ -312,7 +332,9 @@ const gameLogColumns = [
     s, 
     standingsBySeason[s] 
       ? `${standingsBySeason[s].wins}-${standingsBySeason[s].losses} • ${standingsBySeason[s].division} Division`
-      : `${s} Season`
+      : getTeamDivision(decodedTeam, s)
+        ? `${s} • ${getTeamDivision(decodedTeam, s)} Division`
+        : `${s} Season`
   ]))
 )} />
 </Layout>
