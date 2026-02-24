@@ -4,6 +4,8 @@ import EmptySeasonState from '../components/EmptySeasonState.astro';
 import SeasonSelect from '../components/SeasonSelect.astro';
 
 import { StatsTable } from '../components/StatsTable';
+import { PostseasonToggleTable } from '../components/PostseasonToggleTable';
+import { PostseasonFilterTable } from '../components/PostseasonFilterTable';
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
 
@@ -21,10 +23,37 @@ const overallColumns = [
   { accessorKey: 'team', header: 'Team', size: 160 },
   { accessorKey: 'goals', header: 'Goals', size: 70 },
   { accessorKey: 'assists', header: 'Assists', size: 80 },
+  { accessorKey: 'secondaryAssists', header: '2nd Assists', size: 100 },
   { accessorKey: 'blocks', header: 'Blocks', size: 80 },
   { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
   { accessorKey: 'touches', header: 'Touches', size: 90 },
   { accessorKey: '+/-', header: '+/-', size: 70 },
+  { accessorKey: 'throws', header: 'Throws', size: 80 },
+  { accessorKey: 'catches', header: 'Catches', size: 80 },
+  { accessorKey: 'offensePoints', header: 'O-Pts', size: 70 },
+  { accessorKey: 'defensePoints', header: 'D-Pts', size: 70 },
+  { accessorKey: 'possessionsInitiated', header: 'Poss. Init.', size: 90 },
+  { accessorKey: 'throwerErrors', header: 'Throw Err', size: 90 },
+  { accessorKey: 'receiverErrors', header: 'Recv Err', size: 85 },
+  { accessorKey: 'totalThrowYards', header: 'Throw Yds', size: 95 },
+  { accessorKey: 'avgThrowYards', header: 'Avg Throw Yds', size: 115 },
+  { accessorKey: 'totalCatchYards', header: 'Catch Yds', size: 95 },
+  { accessorKey: 'avgCatchYards', header: 'Avg Catch Yds', size: 115 },
+];
+
+const overallHiddenByDefault = [
+  'secondaryAssists',
+  'throws',
+  'catches',
+  'offensePoints',
+  'defensePoints',
+  'possessionsInitiated',
+  'throwerErrors',
+  'receiverErrors',
+  'totalThrowYards',
+  'avgThrowYards',
+  'totalCatchYards',
+  'avgCatchYards',
 ];
 
 const gameColumns = [
@@ -34,9 +63,38 @@ const gameColumns = [
   { accessorKey: 'week', header: 'Week', size: 80 },
   { accessorKey: 'goals', header: 'Goals', size: 70 },
   { accessorKey: 'assists', header: 'Assists', size: 80 },
+  { accessorKey: 'secondaryAssists', header: '2nd Assists', size: 100 },
   { accessorKey: 'blocks', header: 'Blocks', size: 80 },
   { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+  { accessorKey: 'touches', header: 'Touches', size: 90 },
   { accessorKey: '+/-', header: '+/-', size: 70 },
+  { accessorKey: 'throws', header: 'Throws', size: 80 },
+  { accessorKey: 'catches', header: 'Catches', size: 80 },
+  { accessorKey: 'offensePoints', header: 'O-Pts', size: 70 },
+  { accessorKey: 'defensePoints', header: 'D-Pts', size: 70 },
+  { accessorKey: 'possessionsInitiated', header: 'Poss. Init.', size: 90 },
+  { accessorKey: 'throwerErrors', header: 'Throw Err', size: 90 },
+  { accessorKey: 'receiverErrors', header: 'Recv Err', size: 85 },
+  { accessorKey: 'totalThrowYards', header: 'Throw Yds', size: 95 },
+  { accessorKey: 'avgThrowYards', header: 'Avg Throw Yds', size: 115 },
+  { accessorKey: 'totalCatchYards', header: 'Catch Yds', size: 95 },
+  { accessorKey: 'avgCatchYards', header: 'Avg Catch Yds', size: 115 },
+];
+
+const gameHiddenByDefault = [
+  'secondaryAssists',
+  'touches',
+  'throws',
+  'catches',
+  'offensePoints',
+  'defensePoints',
+  'possessionsInitiated',
+  'throwerErrors',
+  'receiverErrors',
+  'totalThrowYards',
+  'avgThrowYards',
+  'totalCatchYards',
+  'avgCatchYards',
 ];
 ---
 
@@ -72,10 +130,13 @@ const gameColumns = [
           <!-- Overall Tab -->
           <div data-tab-content="overall">
            {playersOverallBySeason[season].some(p => (p.goals || 0) + (p.assists || 0) + (p.blocks || 0) > 0) ? (
-          <StatsTable 
+          <PostseasonToggleTable 
             client:load
-            data={playersOverallBySeason[season]}
+            regularSeasonData={playersOverallBySeason[season]}
+            gamesData={playersGamesBySeason[season]}
+            aggregationMode="player"
             columns={overallColumns}
+            defaultHiddenColumns={overallHiddenByDefault}
             searchPlaceholder="Search players..."
             searchableColumns={['player']}
             filterColumn="team"
@@ -93,10 +154,11 @@ const gameColumns = [
         <!-- By Game Tab -->
         <div data-tab-content="by-game" class="hidden">
           {playersGamesBySeason[season].length > 0 ? (
-            <StatsTable 
+            <PostseasonFilterTable 
             client:load
             data={playersGamesBySeason[season]}
             columns={gameColumns}
+            defaultHiddenColumns={gameHiddenByDefault}
             searchPlaceholder="Search players..."
             searchableColumns={['player']}
             filterColumn="team"

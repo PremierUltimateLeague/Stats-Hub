@@ -65,28 +65,44 @@ try {
 } catch (e) {}
 
 // Get teams played for
-const teamsPlayed = Object.entries(playerSeasonStats).map(([season, stats]) => ({
-  season,
-  team: stats.team,
-  logo: teamLogos[stats.team] ? `/Stats-Hub/images/teams/${teamLogos[stats.team]}` : null,
-}));
+const teamsPlayed = seasons.filter(s => playerSeasonStats[s]).map(season => ({
+    season,
+    team: playerSeasonStats[season].team,
+    logo: teamLogos[playerSeasonStats[season].team] ? `/Stats-Hub/images/teams/${teamLogos[playerSeasonStats[season].team]}` : null,
+  }));
 
 // Calculate career totals
 const careerStats = {
   goals: 0,
   assists: 0,
+  secondaryAssists: 0,
   blocks: 0,
   turnovers: 0,
   touches: 0,
+  throws: 0,
+  catches: 0,
+  offensePoints: 0,
+  defensePoints: 0,
+  throwerErrors: 0,
+  receiverErrors: 0,
   games: 0,
+  plusMinus: 0,
 };
 
 Object.values(playerSeasonStats).forEach((stats: any) => {
   careerStats.goals += stats.goals || 0;
   careerStats.assists += stats.assists || 0;
+  careerStats.secondaryAssists += stats.secondaryAssists || 0;
   careerStats.blocks += stats.blocks || 0;
   careerStats.turnovers += stats.turnovers || 0;
   careerStats.touches += stats.touches || 0;
+  careerStats.throws += stats.throws || 0;
+  careerStats.catches += stats.catches || 0;
+  careerStats.offensePoints += stats.offensePoints || 0;
+  careerStats.defensePoints += stats.defensePoints || 0;
+  careerStats.throwerErrors += stats.throwerErrors || 0;
+  careerStats.receiverErrors += stats.receiverErrors || 0;
+  careerStats.plusMinus += stats['+/-'] || 0;
 });
 
 Object.values(playerGameStats).forEach((games: any[]) => {
@@ -120,8 +136,38 @@ const gameColumns = [
   { accessorKey: 'week', header: 'Week', size: 80 },
   { accessorKey: 'goals', header: 'Goals', size: 70 },
   { accessorKey: 'assists', header: 'Assists', size: 80 },
+  { accessorKey: 'secondaryAssists', header: '2nd Assists', size: 100 },
   { accessorKey: 'blocks', header: 'Blocks', size: 80 },
   { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+  { accessorKey: 'touches', header: 'Touches', size: 90 },
+  { accessorKey: '+/-', header: '+/-', size: 70 },
+  { accessorKey: 'throws', header: 'Throws', size: 80 },
+  { accessorKey: 'catches', header: 'Catches', size: 80 },
+  { accessorKey: 'offensePoints', header: 'O-Pts', size: 70 },
+  { accessorKey: 'defensePoints', header: 'D-Pts', size: 70 },
+  { accessorKey: 'possessionsInitiated', header: 'Poss. Init.', size: 90 },
+  { accessorKey: 'throwerErrors', header: 'Throw Err', size: 90 },
+  { accessorKey: 'receiverErrors', header: 'Recv Err', size: 85 },
+  { accessorKey: 'totalThrowYards', header: 'Throw Yds', size: 95 },
+  { accessorKey: 'avgThrowYards', header: 'Avg Throw Yds', size: 115 },
+  { accessorKey: 'totalCatchYards', header: 'Catch Yds', size: 95 },
+  { accessorKey: 'avgCatchYards', header: 'Avg Catch Yds', size: 115 },
+];
+
+const gameHiddenByDefault = [
+  'secondaryAssists',
+  'touches',
+  'throws',
+  'catches',
+  'offensePoints',
+  'defensePoints',
+  'possessionsInitiated',
+  'throwerErrors',
+  'receiverErrors',
+  'totalThrowYards',
+  'avgThrowYards',
+  'totalCatchYards',
+  'avgCatchYards',
 ];
 ---
 
@@ -177,7 +223,7 @@ const gameColumns = [
     <!-- Career Stats -->
     <div>
       <h2 class="text-lg font-semibold mb-3">Career Stats</h2>
-      <div class="grid grid-cols-3 sm:grid-cols-6 gap-4">
+      <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-4">
         <div class="p-4 border border-pul-border rounded text-center">
           <div class="text-2xl font-semibold">{careerStats.games}</div>
           <div class="text-sm text-pul-gray">Games</div>
@@ -202,6 +248,14 @@ const gameColumns = [
           <div class="text-2xl font-semibold">{careerStats.touches}</div>
           <div class="text-sm text-pul-gray">Touches</div>
         </div>
+        <div class="p-4 border border-pul-border rounded text-center">
+          <div class="text-2xl font-semibold">{careerStats.plusMinus}</div>
+          <div class="text-sm text-pul-gray">+/-</div>
+        </div>
+        <div class="p-4 border border-pul-border rounded text-center">
+          <div class="text-2xl font-semibold">{careerStats.offensePoints + careerStats.defensePoints}</div>
+          <div class="text-sm text-pul-gray">Pts Played</div>
+        </div>
       </div>
     </div>
 
@@ -218,26 +272,32 @@ const gameColumns = [
                 <th class="text-right">Goals</th>
                 <th class="text-right">Assists</th>
                 <th class="text-right">Blocks</th>
-                <th class="text-right">Turnovers</th>
+                <th class="text-right">TO</th>
                 <th class="text-right">Touches</th>
+                <th class="text-right">+/-</th>
+                <th class="text-right">O-Pts</th>
+                <th class="text-right">D-Pts</th>
               </tr>
             </thead>
             <tbody>
-              {Object.entries(playerSeasonStats).map(([season, stats]: [string, any]) => (
-                <tr>
-                  <td>{season}</td>
-                  <td>
-                    <a href={`/Stats-Hub/teams/${encodeURIComponent(stats.team)}`} class="hover:underline">
-                      {stats.team}
-                    </a>
-                  </td>
-                  <td class="text-right tabular-nums">{stats.goals}</td>
-                  <td class="text-right tabular-nums">{stats.assists}</td>
-                  <td class="text-right tabular-nums">{stats.blocks}</td>
-                  <td class="text-right tabular-nums">{stats.turnovers}</td>
-                  <td class="text-right tabular-nums">{stats.touches}</td>
-                </tr>
-              ))}
+            {seasons.filter(s => playerSeasonStats[s]).map(season => (
+              <tr>
+                <td>{season}</td>
+                <td>
+                  <a href={`/Stats-Hub/teams/${encodeURIComponent(playerSeasonStats[season].team)}`} class="hover:underline">
+                    {playerSeasonStats[season].team}
+                  </a>
+                </td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].goals}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].assists}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].blocks}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].turnovers}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].touches}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season]['+/-']}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].offensePoints}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].defensePoints}</td>
+              </tr>
+            ))}
             </tbody>
           </table>
         </div>
@@ -245,13 +305,14 @@ const gameColumns = [
     )}
 
     <!-- Game-by-Game Stats -->
-    {Object.entries(playerGameStats).map(([season, games]) => (
+   {seasons.filter(s => playerGameStats[s]).map(season => (
       <div>
         <h2 class="text-lg font-semibold mb-3">{season} Game Log</h2>
         <StatsTable 
           client:load
-          data={games}
+          data={playerGameStats[season]}
           columns={gameColumns}
+          defaultHiddenColumns={gameHiddenByDefault}
           searchPlaceholder="Search games..."
           searchableColumns={['match']}
           gameLinkColumn="match"

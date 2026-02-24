@@ -31,11 +31,55 @@ TEAM_NAMES = {
     "RAL": "Raleigh Radiance",
 }
 
+# Column rename mapping shared by player exports
+PLAYER_COLUMN_RENAMES = {
+    "team": "teamAbbrev",
+    "team_full": "team",
+    "Player": "player",
+    "Touches": "touches",
+    "Throws": "throws",
+    "Catches": "catches",
+    "Defensive blocks": "blocks",
+    "Goals": "goals",
+    "Turnovers": "turnovers",
+    "Assists": "assists",
+    "Secondary assists": "secondaryAssists",
+    "Offense points played": "offensePoints",
+    "Defense points played": "defensePoints",
+    "Possessions initiated": "possessionsInitiated",
+    "Thrower errors": "throwerErrors",
+    "Receiver errors": "receiverErrors",
+    "Total completed throw gain (yd)": "totalThrowYards",
+    "Average completed throw gain (yd)": "avgThrowYards",
+    "Total caught pass gain (yd)": "totalCatchYards",
+    "Average caught pass gain (yd)": "avgCatchYards",
+}
+
 
 def ensure_output_dir(year: int) -> Path:
     output_dir = OUTPUT_DIR / str(year)
     output_dir.mkdir(parents=True, exist_ok=True)
     return output_dir
+
+
+def compute_plus_minus(df: pd.DataFrame) -> pd.Series:
+    """Compute +/- = Goals + Assists + Blocks - Turnovers - Thrower Errors - Receiver Errors"""
+    plus = df.get("goals", 0) + df.get("assists", 0) + df.get("blocks", 0)
+    minus = (
+        df.get("turnovers", 0)
+        + df.get("throwerErrors", 0)
+        + df.get("receiverErrors", 0)
+    )
+    return plus - minus
+
+
+def round_yard_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Round yardage columns to 1 decimal place for cleaner display."""
+    yard_cols = ["totalThrowYards", "avgThrowYards", "totalCatchYards", "avgCatchYards"]
+    for col in yard_cols:
+        if col in df.columns:
+            df[col] = df[col].round(1)
+    return df
 
 
 def export_teams_overall(csv_path: Path, json_path: Path) -> None:
@@ -122,23 +166,7 @@ def export_players_overall(csv_path: Path, json_path: Path) -> None:
     df = pd.read_csv(csv_path)
     df["team_full"] = df["team"].map(TEAM_NAMES).fillna(df["team"])
 
-    df = df.rename(
-        columns={
-            "team": "teamAbbrev",
-            "team_full": "team",
-            "Player": "player",
-            "Touches": "touches",
-            "Throws": "throws",
-            "Catches": "catches",
-            "Defensive blocks": "blocks",
-            "Goals": "goals",
-            "Turnovers": "turnovers",
-            "Assists": "assists",
-            "Secondary assists": "secondaryAssists",
-            "Offense points played": "offensePoints",
-            "Defense points played": "defensePoints",
-        }
-    )
+    df = df.rename(columns=PLAYER_COLUMN_RENAMES)
 
     columns_to_keep = [
         "player",
@@ -146,6 +174,7 @@ def export_players_overall(csv_path: Path, json_path: Path) -> None:
         "teamAbbrev",
         "goals",
         "assists",
+        "secondaryAssists",
         "blocks",
         "turnovers",
         "touches",
@@ -153,13 +182,21 @@ def export_players_overall(csv_path: Path, json_path: Path) -> None:
         "catches",
         "offensePoints",
         "defensePoints",
+        "possessionsInitiated",
+        "throwerErrors",
+        "receiverErrors",
+        "totalThrowYards",
+        "avgThrowYards",
+        "totalCatchYards",
+        "avgCatchYards",
     ]
     columns_to_keep = [c for c in columns_to_keep if c in df.columns]
     df = df[columns_to_keep]
 
-    df["+/-"] = df["goals"] + df["assists"] + df["blocks"] - df["turnovers"]
-
+    df = round_yard_columns(df)
     df = df.fillna(0)
+    df["+/-"] = compute_plus_minus(df)
+
     records = df.to_dict(orient="records")
 
     with open(json_path, "w") as f:
@@ -176,25 +213,7 @@ def export_players_by_game(csv_path: Path, json_path: Path) -> None:
     df = pd.read_csv(csv_path)
     df["team_full"] = df["team"].map(TEAM_NAMES).fillna(df["team"])
 
-    df = df.rename(
-        columns={
-            "team": "teamAbbrev",
-            "team_full": "team",
-            "Player": "player",
-            "week": "week",
-            "match": "match",
-            "Touches": "touches",
-            "Throws": "throws",
-            "Catches": "catches",
-            "Defensive blocks": "blocks",
-            "Goals": "goals",
-            "Turnovers": "turnovers",
-            "Assists": "assists",
-            "Secondary assists": "secondaryAssists",
-            "Offense points played": "offensePoints",
-            "Defense points played": "defensePoints",
-        }
-    )
+    df = df.rename(columns=PLAYER_COLUMN_RENAMES)
 
     columns_to_keep = [
         "player",
@@ -204,18 +223,29 @@ def export_players_by_game(csv_path: Path, json_path: Path) -> None:
         "match",
         "goals",
         "assists",
+        "secondaryAssists",
         "blocks",
         "turnovers",
         "touches",
+        "throws",
+        "catches",
         "offensePoints",
         "defensePoints",
+        "possessionsInitiated",
+        "throwerErrors",
+        "receiverErrors",
+        "totalThrowYards",
+        "avgThrowYards",
+        "totalCatchYards",
+        "avgCatchYards",
     ]
     columns_to_keep = [c for c in columns_to_keep if c in df.columns]
     df = df[columns_to_keep]
 
-    df["+/-"] = df["goals"] + df["assists"] + df["blocks"] - df["turnovers"]
-
+    df = round_yard_columns(df)
     df = df.fillna(0)
+    df["+/-"] = compute_plus_minus(df)
+
     records = df.to_dict(orient="records")
 
     with open(json_path, "w") as f:
@@ -380,7 +410,7 @@ def export_standings(csv_path: Path, json_path: Path) -> None:
         )
         team_data["pointDiff"] = team_data["pointsFor"] - team_data["pointsAgainst"]
 
-        # Calculate last 5 games (sorted by week, most recent last)
+        # Calculate last 6 games (sorted by week, most recent last)
         results = sorted(game_results[team], key=lambda x: x[0])
         last_6_results = [r[1] for r in results[-6:]]
         team_data["last6"] = last_6_results

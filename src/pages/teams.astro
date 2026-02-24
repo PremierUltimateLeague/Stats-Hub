@@ -4,6 +4,8 @@ import EmptySeasonState from '../components/EmptySeasonState.astro';
 import SeasonSelect from '../components/SeasonSelect.astro';
 
 import { StatsTable } from '../components/StatsTable';
+import PostseasonToggleTable from '../components/PostseasonToggleTable';
+import PostseasonFilterTable from '../components/PostseasonFilterTable';
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
 import { teamLogos } from '../utils/teams';
@@ -24,11 +26,16 @@ const overallColumns = [
   { accessorKey: 'blocks', header: 'Blocks', size: 80 },
   { accessorKey: 'holds', header: 'Holds', size: 70 },
   { accessorKey: 'cleanHolds', header: 'Clean Holds', size: 100 },
-  { accessorKey: 'passAttempts', header: 'Pass Att.', size: 90 },
   { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+  { accessorKey: 'passAttempts', header: 'Pass Att.', size: 90 },
   { accessorKey: 'completedPasses', header: 'Comp. Passes', size: 110 },
   { accessorKey: 'completionRate', header: 'Comp. %', size: 90 },
   { accessorKey: 'hucks', header: 'Hucks', size: 70 },
+];
+
+const overallHiddenByDefault = [
+  'passAttempts',
+  'completedPasses',
 ];
 
 const gameColumns = [
@@ -40,11 +47,16 @@ const gameColumns = [
   { accessorKey: 'holds', header: 'Holds', size: 70 },
   { accessorKey: 'cleanHolds', header: 'Clean Holds', size: 100 },
   { accessorKey: 'blocks', header: 'Blocks', size: 80 },
-  { accessorKey: 'passAttempts', header: 'Pass Att.', size: 90 },
   { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
+  { accessorKey: 'passAttempts', header: 'Pass Att.', size: 90 },
   { accessorKey: 'completedPasses', header: 'Comp. Passes', size: 110 },
   { accessorKey: 'completionRate', header: 'Comp. %', size: 80 },
   { accessorKey: 'hucks', header: 'Hucks', size: 70 },
+];
+
+const gameHiddenByDefault = [
+  'passAttempts',
+  'completedPasses',
 ];
 ---
 
@@ -77,10 +89,13 @@ const gameColumns = [
         <!-- Overall Tab -->
         <div data-tab-content="overall">
           {teamsOverallBySeason[season].some(t => (t.goals || 0) + (t.blocks || 0) + (t.breakGoals || 0) > 0) ? (
-            <StatsTable 
+            <PostseasonToggleTable 
               client:load
-              data={teamsOverallBySeason[season]}
+              regularSeasonData={teamsOverallBySeason[season]}
+              gamesData={teamsGamesBySeason[season]}
+              aggregationMode="team"
               columns={overallColumns}
+              defaultHiddenColumns={overallHiddenByDefault}
               searchPlaceholder="Search teams..."
               searchableColumns={['team']}
               linkColumn="team"
@@ -96,10 +111,11 @@ const gameColumns = [
       <!-- By Game Tab -->
       <div data-tab-content="by-game" class="hidden">
         {teamsGamesBySeason[season].some(t => (t.goals || 0) + (t.blocks || 0) + (t.breakGoals || 0) > 0) ? (
-          <StatsTable 
+          <PostseasonFilterTable 
           client:load
           data={teamsGamesBySeason[season]}
           columns={gameColumns}
+          defaultHiddenColumns={gameHiddenByDefault}
           searchPlaceholder="Search teams or matches..."
           searchableColumns={['team', 'match']}
           filterColumn="week"

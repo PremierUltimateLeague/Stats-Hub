@@ -1022,5 +1022,77 @@
     "completionRate": 90.4,
     "hucks": 9,
     "team": "Raleigh Radiance"
+  },
+  {
+    "team": "DC Shadow",
+    "abbrev": "DC",
+    "match": "DC @ NY",
+    "week": "Semifinals",
+    "goals": 22,
+    "blocks": 9,
+    "turnovers": 12,
+    "holds": 12,
+    "cleanHolds": 8,
+    "breakGoals": 10
+  },
+  {
+    "team": "New York Gridlock",
+    "abbrev": "NY",
+    "match": "DC @ NY",
+    "week": "Semifinals",
+    "goals": 14,
+    "blocks": 5,
+    "turnovers": 18,
+    "holds": 12,
+    "cleanHolds": 10,
+    "breakGoals": 2
+  },
+  {
+    "team": "Indy Red",
+    "abbrev": "INDY",
+    "match": "INDY @ RAL",
+    "week": "Semifinals",
+    "goals": 12,
+    "blocks": 7,
+    "turnovers": 24,
+    "holds": 12,
+    "cleanHolds": 7,
+    "breakGoals": 1
+  },
+  {
+    "team": "Raleigh Radiance",
+    "abbrev": "RAL",
+    "match": "INDY @ RAL",
+    "week": "Semifinals",
+    "goals": 24,
+    "blocks": 11,
+    "turnovers": 14,
+    "holds": 12,
+    "cleanHolds": 10,
+    "breakGoals": 10
+  },
+  {
+    "team": "DC Shadow",
+    "abbrev": "DC",
+    "match": "DC @ RAL",
+    "week": "Finals",
+    "goals": 17,
+    "blocks": 6,
+    "turnovers": 19,
+    "holds": 12,
+    "cleanHolds": 9,
+    "breakGoals": 6
+  },
+  {
+    "team": "Raleigh Radiance",
+    "abbrev": "RAL",
+    "match": "DC @ RAL",
+    "week": "Finals",
+    "goals": 17,
+    "blocks": 8,
+    "turnovers": 17,
+    "holds": 13,
+    "cleanHolds": 10,
+    "breakGoals": 4
   }
 ]

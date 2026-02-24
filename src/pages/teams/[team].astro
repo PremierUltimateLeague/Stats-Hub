@@ -123,9 +123,37 @@ const playerColumns = [
   { accessorKey: 'player', header: 'Player', size: 200 },
   { accessorKey: 'goals', header: 'Goals', size: 70 },
   { accessorKey: 'assists', header: 'Assists', size: 80 },
+  { accessorKey: 'secondaryAssists', header: '2nd Assists', size: 100 },
   { accessorKey: 'blocks', header: 'Blocks', size: 80 },
   { accessorKey: 'turnovers', header: 'Turnovers', size: 90 },
   { accessorKey: 'touches', header: 'Touches', size: 90 },
+  { accessorKey: '+/-', header: '+/-', size: 70 },
+  { accessorKey: 'throws', header: 'Throws', size: 80 },
+  { accessorKey: 'catches', header: 'Catches', size: 80 },
+  { accessorKey: 'offensePoints', header: 'O-Pts', size: 70 },
+  { accessorKey: 'defensePoints', header: 'D-Pts', size: 70 },
+  { accessorKey: 'possessionsInitiated', header: 'Poss. Init.', size: 90 },
+  { accessorKey: 'throwerErrors', header: 'Throw Err', size: 90 },
+  { accessorKey: 'receiverErrors', header: 'Recv Err', size: 85 },
+  { accessorKey: 'totalThrowYards', header: 'Throw Yds', size: 95 },
+  { accessorKey: 'avgThrowYards', header: 'Avg Throw Yds', size: 115 },
+  { accessorKey: 'totalCatchYards', header: 'Catch Yds', size: 95 },
+  { accessorKey: 'avgCatchYards', header: 'Avg Catch Yds', size: 115 },
+];
+
+const playerHiddenByDefault = [
+  'secondaryAssists',
+  'throws',
+  'catches',
+  'offensePoints',
+  'defensePoints',
+  'possessionsInitiated',
+  'throwerErrors',
+  'receiverErrors',
+  'totalThrowYards',
+  'avgThrowYards',
+  'totalCatchYards',
+  'avgCatchYards',
 ];
 
 const gameLogColumns = [
@@ -141,6 +169,11 @@ const gameLogColumns = [
   { accessorKey: 'completedPasses', header: 'Comp. Passes', size: 110 },
   { accessorKey: 'completionRate', header: 'Comp. %', size: 80 },
   { accessorKey: 'hucks', header: 'Hucks', size: 70 },
+];
+
+const gameLogHiddenByDefault = [
+  'passAttempts',
+  'completedPasses',
 ];
 ---
 
@@ -278,6 +311,7 @@ const gameLogColumns = [
                 client:load
                 data={teamPlayers}
                 columns={playerColumns}
+                defaultHiddenColumns={playerHiddenByDefault}
                 teamLogos={teamLogos}
                 searchPlaceholder="Search players..."
                 searchableColumns={['player']}
@@ -295,6 +329,7 @@ const gameLogColumns = [
                 client:load
                 data={teamGames}
                 columns={gameLogColumns}
+                defaultHiddenColumns={gameLogHiddenByDefault}
                 teamLogos={teamLogos}
                 searchPlaceholder="Search matchups..."
                 searchableColumns={['match']}

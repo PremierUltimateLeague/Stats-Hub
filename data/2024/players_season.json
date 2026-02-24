@@ -5,6 +5,7 @@
     "teamAbbrev": "MINN",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 3.0,
     "blocks": 0.0,
     "turnovers": 4.0,
     "touches": 54.0,
@@ -12,7 +13,14 @@
     "catches": 44.0,
     "offensePoints": 13.0,
     "defensePoints": 41.0,
-    "+/-": -3.0
+    "possessionsInitiated": 10.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 556.3,
+    "avgThrowYards": 11.1,
+    "totalCatchYards": -59.0,
+    "avgCatchYards": -1.3,
+    "+/-": -7.0
   },
   {
     "player": "00 Donna Johnston",
@@ -20,6 +28,7 @@
     "teamAbbrev": "MKE",
     "goals": 1.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 6.0,
     "touches": 33.0,
@@ -27,7 +36,14 @@
     "catches": 31.0,
     "offensePoints": 9.0,
     "defensePoints": 44.0,
-    "+/-": -4.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 104.9,
+    "avgThrowYards": 3.7,
+    "totalCatchYards": 162.6,
+    "avgCatchYards": 5.2,
+    "+/-": -10.0
   },
   {
     "player": "00 Emilie Mohler",
@@ -35,6 +51,7 @@
     "teamAbbrev": "PHL",
     "goals": 6.0,
     "assists": 3.0,
+    "secondaryAssists": 4.0,
     "blocks": 4.0,
     "turnovers": 2.0,
     "touches": 33.0,
@@ -42,7 +59,14 @@
     "catches": 27.0,
     "offensePoints": 2.0,
     "defensePoints": 30.0,
-    "+/-": 11.0
+    "possessionsInitiated": 6.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 260.3,
+    "avgThrowYards": 10.4,
+    "totalCatchYards": 135.8,
+    "avgCatchYards": 5.0,
+    "+/-": 9.0
   },
   {
     "player": "00 Emma Jones",
@@ -50,6 +74,7 @@
     "teamAbbrev": "DC",
     "goals": 0.0,
     "assists": 3.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 34.0,
@@ -57,7 +82,14 @@
     "catches": 27.0,
     "offensePoints": 5.0,
     "defensePoints": 35.0,
-    "+/-": 3.0
+    "possessionsInitiated": 7.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 206.9,
+    "avgThrowYards": 6.3,
+    "totalCatchYards": 125.0,
+    "avgCatchYards": 4.6,
+    "+/-": 2.0
   },
   {
     "player": "00 Genny De Jesus",
@@ -65,6 +97,7 @@
     "teamAbbrev": "NY",
     "goals": 26.0,
     "assists": 5.0,
+    "secondaryAssists": 13.0,
     "blocks": 6.0,
     "turnovers": 5.0,
     "touches": 157.0,
@@ -72,7 +105,14 @@
     "catches": 153.0,
     "offensePoints": 85.0,
     "defensePoints": 35.0,
-    "+/-": 32.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 108.4,
+    "avgThrowYards": 0.9,
+    "totalCatchYards": 1350.9,
+    "avgCatchYards": 8.8,
+    "+/-": 27.0
   },
   {
     "player": "00 Maggie Rowell",
@@ -80,6 +120,7 @@
     "teamAbbrev": "ATX",
     "goals": 6.0,
     "assists": 1.0,
+    "secondaryAssists": 5.0,
     "blocks": 7.0,
     "turnovers": 4.0,
     "touches": 46.0,
@@ -87,7 +128,14 @@
     "catches": 43.0,
     "offensePoints": 30.0,
     "defensePoints": 25.0,
-    "+/-": 10.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 105.0,
+    "avgThrowYards": 3.1,
+    "totalCatchYards": 486.8,
+    "avgCatchYards": 11.3,
+    "+/-": 6.0
   },
   {
     "player": "01 Amelia Zdechlik",
@@ -95,6 +143,7 @@
     "teamAbbrev": "MINN",
     "goals": 0.0,
     "assists": 2.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 13.0,
@@ -102,7 +151,14 @@
     "catches": 13.0,
     "offensePoints": 5.0,
     "defensePoints": 46.0,
-    "+/-": 1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 155.3,
+    "avgThrowYards": 12.9,
+    "totalCatchYards": 67.8,
+    "avgCatchYards": 5.2,
+    "+/-": 0.0
   },
   {
     "player": "01 Ashleigh Jentilet",
@@ -110,6 +166,7 @@
     "teamAbbrev": "DC",
     "goals": 12.0,
     "assists": 9.0,
+    "secondaryAssists": 2.0,
     "blocks": 10.0,
     "turnovers": 15.0,
     "touches": 64.0,
@@ -117,7 +174,14 @@
     "catches": 58.0,
     "offensePoints": 12.0,
     "defensePoints": 48.0,
-    "+/-": 16.0
+    "possessionsInitiated": 6.0,
+    "throwerErrors": 12.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 402.5,
+    "avgThrowYards": 10.6,
+    "totalCatchYards": 833.0,
+    "avgCatchYards": 14.4,
+    "+/-": 1.0
   },
   {
     "player": "01 Emily Shields",
@@ -125,6 +189,7 @@
     "teamAbbrev": "PHL",
     "goals": 13.0,
     "assists": 9.0,
+    "secondaryAssists": 9.0,
     "blocks": 4.0,
     "turnovers": 9.0,
     "touches": 85.0,
@@ -132,7 +197,14 @@
     "catches": 83.0,
     "offensePoints": 67.0,
     "defensePoints": 13.0,
-    "+/-": 17.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 397.2,
+    "avgThrowYards": 6.3,
+    "totalCatchYards": 1138.4,
+    "avgCatchYards": 13.7,
+    "+/-": 8.0
   },
   {
     "player": "01 Lindsay Soo",
@@ -140,6 +212,7 @@
     "teamAbbrev": "RAL",
     "goals": 5.0,
     "assists": 2.0,
+    "secondaryAssists": 2.0,
     "blocks": 5.0,
     "turnovers": 2.0,
     "touches": 36.0,
@@ -147,7 +220,14 @@
     "catches": 34.0,
     "offensePoints": 17.0,
     "defensePoints": 12.0,
-    "+/-": 10.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 72.5,
+    "avgThrowYards": 2.5,
+    "totalCatchYards": 480.9,
+    "avgCatchYards": 14.1,
+    "+/-": 8.0
   },
   {
     "player": "01 Quincy Booth",
@@ -155,6 +235,7 @@
     "teamAbbrev": "ATL",
     "goals": 3.0,
     "assists": 5.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 5.0,
     "touches": 63.0,
@@ -162,7 +243,14 @@
     "catches": 46.0,
     "offensePoints": 23.0,
     "defensePoints": 9.0,
-    "+/-": 3.0
+    "possessionsInitiated": 17.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 433.0,
+    "avgThrowYards": 8.0,
+    "totalCatchYards": 238.7,
+    "avgCatchYards": 5.2,
+    "+/-": -2.0
   },
   {
     "player": "02 Claire Bidigare-Curtis",
@@ -170,6 +258,7 @@
     "teamAbbrev": "RAL",
     "goals": 9.0,
     "assists": 3.0,
+    "secondaryAssists": 5.0,
     "blocks": 4.0,
     "turnovers": 13.0,
     "touches": 94.0,
@@ -177,7 +266,14 @@
     "catches": 92.0,
     "offensePoints": 63.0,
     "defensePoints": 8.0,
-    "+/-": 3.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 10.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 465.1,
+    "avgThrowYards": 6.4,
+    "totalCatchYards": 956.8,
+    "avgCatchYards": 10.4,
+    "+/-": -10.0
   },
   {
     "player": "02 Elise Bjork",
@@ -185,6 +281,7 @@
     "teamAbbrev": "ATX",
     "goals": 3.0,
     "assists": 5.0,
+    "secondaryAssists": 5.0,
     "blocks": 1.0,
     "turnovers": 12.0,
     "touches": 171.0,
@@ -192,7 +289,14 @@
     "catches": 132.0,
     "offensePoints": 57.0,
     "defensePoints": 10.0,
-    "+/-": -3.0
+    "possessionsInitiated": 39.0,
+    "throwerErrors": 12.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 884.8,
+    "avgThrowYards": 5.7,
+    "totalCatchYards": 215.0,
+    "avgCatchYards": 1.6,
+    "+/-": -15.0
   },
   {
     "player": "02 Jolene Zheng",
@@ -200,6 +304,7 @@
     "teamAbbrev": "NY",
     "goals": 9.0,
     "assists": 4.0,
+    "secondaryAssists": 4.0,
     "blocks": 2.0,
     "turnovers": 8.0,
     "touches": 60.0,
@@ -207,7 +312,14 @@
     "catches": 60.0,
     "offensePoints": 79.0,
     "defensePoints": 15.0,
-    "+/-": 7.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 4.0,
+    "totalThrowYards": 149.3,
+    "avgThrowYards": 3.3,
+    "totalCatchYards": 790.8,
+    "avgCatchYards": 13.2,
+    "+/-": -1.0
   },
   {
     "player": "02 Maketa Mattimore",
@@ -215,6 +327,7 @@
     "teamAbbrev": "INDY",
     "goals": 2.0,
     "assists": 11.0,
+    "secondaryAssists": 7.0,
     "blocks": 3.0,
     "turnovers": 12.0,
     "touches": 196.0,
@@ -222,7 +335,14 @@
     "catches": 157.0,
     "offensePoints": 45.0,
     "defensePoints": 45.0,
-    "+/-": 4.0
+    "possessionsInitiated": 38.0,
+    "throwerErrors": 11.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 1287.6,
+    "avgThrowYards": 7.1,
+    "totalCatchYards": -151.5,
+    "avgCatchYards": -1.0,
+    "+/-": -8.0
   },
   {
     "player": "02 Sierra Rimmer",
@@ -230,6 +350,7 @@
     "teamAbbrev": "NASH",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 3.0,
     "touches": 18.0,
@@ -237,7 +358,14 @@
     "catches": 12.0,
     "offensePoints": 3.0,
     "defensePoints": 11.0,
-    "+/-": -2.0
+    "possessionsInitiated": 6.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 93.3,
+    "avgThrowYards": 6.2,
+    "totalCatchYards": -3.0,
+    "avgCatchYards": -0.2,
+    "+/-": -5.0
   },
   {
     "player": "02 Stephanie Wood",
@@ -245,6 +373,7 @@
     "teamAbbrev": "MINN",
     "goals": 8.0,
     "assists": 13.0,
+    "secondaryAssists": 12.0,
     "blocks": 5.0,
     "turnovers": 9.0,
     "touches": 111.0,
@@ -252,7 +381,14 @@
     "catches": 110.0,
     "offensePoints": 80.0,
     "defensePoints": 17.0,
-    "+/-": 17.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 8.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 718.0,
+    "avgThrowYards": 7.6,
+    "totalCatchYards": 1159.6,
+    "avgCatchYards": 10.5,
+    "+/-": 8.0
   },
   {
     "player": "03 Alex Krueger",
@@ -260,6 +396,7 @@
     "teamAbbrev": "ATL",
     "goals": 3.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 10.0,
     "touches": 60.0,
@@ -267,7 +404,14 @@
     "catches": 59.0,
     "offensePoints": 34.0,
     "defensePoints": 26.0,
-    "+/-": -7.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 10.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 81.8,
+    "avgThrowYards": 1.8,
+    "totalCatchYards": 269.4,
+    "avgCatchYards": 4.6,
+    "+/-": -17.0
   },
   {
     "player": "03 Grace Conerly",
@@ -275,6 +419,7 @@
     "teamAbbrev": "RAL",
     "goals": 2.0,
     "assists": 2.0,
+    "secondaryAssists": 3.0,
     "blocks": 0.0,
     "turnovers": 11.0,
     "touches": 40.0,
@@ -282,7 +427,14 @@
     "catches": 25.0,
     "offensePoints": 6.0,
     "defensePoints": 23.0,
-    "+/-": -7.0
+    "possessionsInitiated": 15.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 258.9,
+    "avgThrowYards": 8.6,
+    "totalCatchYards": 48.1,
+    "avgCatchYards": 1.9,
+    "+/-": -18.0
   },
   {
     "player": "03 Liv Player",
@@ -290,6 +442,7 @@
     "teamAbbrev": "PORT",
     "goals": 6.0,
     "assists": 5.0,
+    "secondaryAssists": 5.0,
     "blocks": 8.0,
     "turnovers": 10.0,
     "touches": 61.0,
@@ -297,7 +450,14 @@
     "catches": 50.0,
     "offensePoints": 5.0,
     "defensePoints": 56.0,
-    "+/-": 9.0
+    "possessionsInitiated": 11.0,
+    "throwerErrors": 8.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 474.7,
+    "avgThrowYards": 11.3,
+    "totalCatchYards": 459.7,
+    "avgCatchYards": 9.2,
+    "+/-": -1.0
   },
   {
     "player": "03 Madi Cannon",
@@ -305,6 +465,7 @@
     "teamAbbrev": "ATX",
     "goals": 14.0,
     "assists": 10.0,
+    "secondaryAssists": 4.0,
     "blocks": 5.0,
     "turnovers": 8.0,
     "touches": 121.0,
@@ -312,7 +473,14 @@
     "catches": 119.0,
     "offensePoints": 56.0,
     "defensePoints": 12.0,
-    "+/-": 21.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 395.4,
+    "avgThrowYards": 4.0,
+    "totalCatchYards": 1087.9,
+    "avgCatchYards": 9.1,
+    "+/-": 13.0
   },
   {
     "player": "03 Makella Daley",
@@ -320,6 +488,7 @@
     "teamAbbrev": "MINN",
     "goals": 2.0,
     "assists": 13.0,
+    "secondaryAssists": 17.0,
     "blocks": 0.0,
     "turnovers": 15.0,
     "touches": 226.0,
@@ -327,7 +496,14 @@
     "catches": 161.0,
     "offensePoints": 83.0,
     "defensePoints": 12.0,
-    "+/-": 0.0
+    "possessionsInitiated": 65.0,
+    "throwerErrors": 11.0,
+    "receiverErrors": 4.0,
+    "totalThrowYards": 1551.8,
+    "avgThrowYards": 7.5,
+    "totalCatchYards": 143.8,
+    "avgCatchYards": 0.9,
+    "+/-": -15.0
   },
   {
     "player": "03 Mary Timmons",
@@ -335,6 +511,7 @@
     "teamAbbrev": "INDY",
     "goals": 4.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 4.0,
     "touches": 26.0,
@@ -342,7 +519,14 @@
     "catches": 26.0,
     "offensePoints": 11.0,
     "defensePoints": 48.0,
-    "+/-": 3.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 73.8,
+    "avgThrowYards": 4.6,
+    "totalCatchYards": 313.2,
+    "avgCatchYards": 12.0,
+    "+/-": -1.0
   },
   {
     "player": "03 Metta Devine-Qin",
@@ -350,6 +534,7 @@
     "teamAbbrev": "NASH",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 0.0,
@@ -357,6 +542,13 @@
     "catches": 0.0,
     "offensePoints": 1.0,
     "defensePoints": 5.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 0.0,
+    "avgCatchYards": 0.0,
     "+/-": 0.0
   },
   {
@@ -365,6 +557,7 @@
     "teamAbbrev": "PHL",
     "goals": 10.0,
     "assists": 5.0,
+    "secondaryAssists": 4.0,
     "blocks": 2.0,
     "turnovers": 5.0,
     "touches": 75.0,
@@ -372,7 +565,14 @@
     "catches": 75.0,
     "offensePoints": 63.0,
     "defensePoints": 12.0,
-    "+/-": 12.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 276.4,
+    "avgThrowYards": 4.6,
+    "totalCatchYards": 848.7,
+    "avgCatchYards": 11.3,
+    "+/-": 7.0
   },
   {
     "player": "04 Adelle Pitsas",
@@ -380,6 +580,7 @@
     "teamAbbrev": "PORT",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 1.0,
     "touches": 9.0,
@@ -387,7 +588,14 @@
     "catches": 9.0,
     "offensePoints": 2.0,
     "defensePoints": 27.0,
-    "+/-": 2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 13.3,
+    "avgThrowYards": 1.7,
+    "totalCatchYards": 122.9,
+    "avgCatchYards": 13.7,
+    "+/-": 1.0
   },
   {
     "player": "04 Ashley Powell",
@@ -395,6 +603,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 2.0,
@@ -402,6 +611,13 @@
     "catches": 2.0,
     "offensePoints": 3.0,
     "defensePoints": 0.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -3.5,
+    "avgThrowYards": -1.7,
+    "totalCatchYards": 15.6,
+    "avgCatchYards": 7.8,
     "+/-": 0.0
   },
   {
@@ -410,6 +626,7 @@
     "teamAbbrev": "NASH",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 10.0,
@@ -417,7 +634,14 @@
     "catches": 8.0,
     "offensePoints": 11.0,
     "defensePoints": 15.0,
-    "+/-": -1.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 22.7,
+    "avgThrowYards": 2.5,
+    "totalCatchYards": 23.2,
+    "avgCatchYards": 2.9,
+    "+/-": -3.0
   },
   {
     "player": "04 Ellen Mueller",
@@ -425,6 +649,7 @@
     "teamAbbrev": "DC",
     "goals": 9.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 4.0,
     "touches": 35.0,
@@ -432,7 +657,14 @@
     "catches": 35.0,
     "offensePoints": 7.0,
     "defensePoints": 37.0,
-    "+/-": 7.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 84.9,
+    "avgThrowYards": 3.4,
+    "totalCatchYards": 523.2,
+    "avgCatchYards": 14.9,
+    "+/-": 3.0
   },
   {
     "player": "04 Erica Baken",
@@ -440,6 +672,7 @@
     "teamAbbrev": "MINN",
     "goals": 4.0,
     "assists": 19.0,
+    "secondaryAssists": 9.0,
     "blocks": 3.0,
     "turnovers": 20.0,
     "touches": 191.0,
@@ -447,7 +680,14 @@
     "catches": 146.0,
     "offensePoints": 67.0,
     "defensePoints": 10.0,
-    "+/-": 6.0
+    "possessionsInitiated": 45.0,
+    "throwerErrors": 19.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 2015.7,
+    "avgThrowYards": 12.2,
+    "totalCatchYards": 405.2,
+    "avgCatchYards": 2.8,
+    "+/-": -14.0
   },
   {
     "player": "04 Rachel Mast",
@@ -455,6 +695,7 @@
     "teamAbbrev": "INDY",
     "goals": 7.0,
     "assists": 7.0,
+    "secondaryAssists": 7.0,
     "blocks": 5.0,
     "turnovers": 10.0,
     "touches": 86.0,
@@ -462,7 +703,14 @@
     "catches": 85.0,
     "offensePoints": 56.0,
     "defensePoints": 15.0,
-    "+/-": 9.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 417.7,
+    "avgThrowYards": 6.1,
+    "totalCatchYards": 982.9,
+    "avgCatchYards": 11.6,
+    "+/-": -1.0
   },
   {
     "player": "04 Raha Mozaffari",
@@ -470,6 +718,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 11.0,
+    "secondaryAssists": 10.0,
     "blocks": 4.0,
     "turnovers": 15.0,
     "touches": 139.0,
@@ -477,7 +726,14 @@
     "catches": 81.0,
     "offensePoints": 9.0,
     "defensePoints": 77.0,
-    "+/-": 0.0
+    "possessionsInitiated": 58.0,
+    "throwerErrors": 14.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 705.0,
+    "avgThrowYards": 6.0,
+    "totalCatchYards": 131.5,
+    "avgCatchYards": 1.6,
+    "+/-": -15.0
   },
   {
     "player": "04 Regina Barcio",
@@ -485,6 +741,7 @@
     "teamAbbrev": "MKE",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 0.0,
@@ -492,6 +749,13 @@
     "catches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 5.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 7.8,
+    "totalCatchYards": 0.0,
+    "avgCatchYards": 10.4,
     "+/-": 0.0
   },
   {
@@ -500,6 +764,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 24.0,
@@ -507,7 +772,14 @@
     "catches": 20.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 70.4,
+    "avgThrowYards": 3.4,
+    "totalCatchYards": -24.0,
+    "avgCatchYards": -1.2,
+    "+/-": -1.0
   },
   {
     "player": "05 Elise Erickson",
@@ -515,6 +787,7 @@
     "teamAbbrev": "ATL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 5.0,
@@ -522,7 +795,14 @@
     "catches": 5.0,
     "offensePoints": 3.0,
     "defensePoints": 1.0,
-    "+/-": -1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 26.8,
+    "avgThrowYards": 6.7,
+    "totalCatchYards": 41.0,
+    "avgCatchYards": 8.2,
+    "+/-": -2.0
   },
   {
     "player": "05 Emily Wang",
@@ -530,6 +810,7 @@
     "teamAbbrev": "NY",
     "goals": 2.0,
     "assists": 2.0,
+    "secondaryAssists": 3.0,
     "blocks": 0.0,
     "turnovers": 4.0,
     "touches": 34.0,
@@ -537,7 +818,14 @@
     "catches": 33.0,
     "offensePoints": 3.0,
     "defensePoints": 43.0,
-    "+/-": 0.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 213.8,
+    "avgThrowYards": 7.6,
+    "totalCatchYards": 214.4,
+    "avgCatchYards": 6.5,
+    "+/-": -4.0
   },
   {
     "player": "05 Lindsay McKenna",
@@ -545,6 +833,7 @@
     "teamAbbrev": "PHL",
     "goals": 4.0,
     "assists": 1.0,
+    "secondaryAssists": 4.0,
     "blocks": 6.0,
     "turnovers": 1.0,
     "touches": 22.0,
@@ -552,7 +841,14 @@
     "catches": 20.0,
     "offensePoints": 1.0,
     "defensePoints": 41.0,
-    "+/-": 10.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 56.3,
+    "avgThrowYards": 3.3,
+    "totalCatchYards": 261.6,
+    "avgCatchYards": 13.1,
+    "+/-": 9.0
   },
   {
     "player": "05 Marie Perivier",
@@ -560,6 +856,7 @@
     "teamAbbrev": "DC",
     "goals": 5.0,
     "assists": 7.0,
+    "secondaryAssists": 6.0,
     "blocks": 6.0,
     "turnovers": 10.0,
     "touches": 61.0,
@@ -567,7 +864,14 @@
     "catches": 59.0,
     "offensePoints": 23.0,
     "defensePoints": 36.0,
-    "+/-": 8.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 6.0,
+    "totalThrowYards": 252.1,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 562.1,
+    "avgCatchYards": 9.5,
+    "+/-": -2.0
   },
   {
     "player": "05 Megan Jarriel",
@@ -575,6 +879,7 @@
     "teamAbbrev": "ATL",
     "goals": 3.0,
     "assists": 3.0,
+    "secondaryAssists": 5.0,
     "blocks": 5.0,
     "turnovers": 5.0,
     "touches": 104.0,
@@ -582,7 +887,14 @@
     "catches": 103.0,
     "offensePoints": 54.0,
     "defensePoints": 37.0,
-    "+/-": 6.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 213.4,
+    "avgThrowYards": 2.2,
+    "totalCatchYards": 650.6,
+    "avgCatchYards": 6.3,
+    "+/-": 1.0
   },
   {
     "player": "05 Rose Glinka",
@@ -590,6 +902,7 @@
     "teamAbbrev": "MKE",
     "goals": 3.0,
     "assists": 5.0,
+    "secondaryAssists": 5.0,
     "blocks": 1.0,
     "turnovers": 7.0,
     "touches": 99.0,
@@ -597,7 +910,14 @@
     "catches": 73.0,
     "offensePoints": 61.0,
     "defensePoints": 4.0,
-    "+/-": 2.0
+    "possessionsInitiated": 26.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 843.9,
+    "avgThrowYards": 9.5,
+    "totalCatchYards": 335.0,
+    "avgCatchYards": 4.6,
+    "+/-": -5.0
   },
   {
     "player": "05 Stephanie Rupp",
@@ -605,6 +925,7 @@
     "teamAbbrev": "MINN",
     "goals": 3.0,
     "assists": 5.0,
+    "secondaryAssists": 7.0,
     "blocks": 2.0,
     "turnovers": 7.0,
     "touches": 133.0,
@@ -612,7 +933,14 @@
     "catches": 92.0,
     "offensePoints": 68.0,
     "defensePoints": 12.0,
-    "+/-": 3.0
+    "possessionsInitiated": 41.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 775.9,
+    "avgThrowYards": 6.3,
+    "totalCatchYards": 164.3,
+    "avgCatchYards": 1.8,
+    "+/-": -4.0
   },
   {
     "player": "06 Carly Eckstrom",
@@ -620,6 +948,7 @@
     "teamAbbrev": "MINN",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 2.0,
     "touches": 6.0,
@@ -627,7 +956,14 @@
     "catches": 4.0,
     "offensePoints": 0.0,
     "defensePoints": 9.0,
-    "+/-": -1.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 44.2,
+    "avgThrowYards": 11.1,
+    "totalCatchYards": -21.3,
+    "avgCatchYards": -5.3,
+    "+/-": -3.0
   },
   {
     "player": "06 Gwen Rauch",
@@ -635,6 +971,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 0.0,
     "touches": 1.0,
@@ -642,6 +979,13 @@
     "catches": 1.0,
     "offensePoints": 0.0,
     "defensePoints": 3.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -4.1,
+    "avgThrowYards": -4.1,
+    "totalCatchYards": 7.1,
+    "avgCatchYards": 7.1,
     "+/-": 1.0
   },
   {
@@ -650,6 +994,7 @@
     "teamAbbrev": "RAL",
     "goals": 2.0,
     "assists": 4.0,
+    "secondaryAssists": 4.0,
     "blocks": 1.0,
     "turnovers": 9.0,
     "touches": 61.0,
@@ -657,7 +1002,14 @@
     "catches": 59.0,
     "offensePoints": 40.0,
     "defensePoints": 8.0,
-    "+/-": -2.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 257.5,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 488.9,
+    "avgCatchYards": 8.3,
+    "+/-": -11.0
   },
   {
     "player": "06 Laureen Johnson",
@@ -665,6 +1017,7 @@
     "teamAbbrev": "DC",
     "goals": 8.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 3.0,
     "turnovers": 1.0,
     "touches": 23.0,
@@ -672,7 +1025,14 @@
     "catches": 23.0,
     "offensePoints": 9.0,
     "defensePoints": 25.0,
-    "+/-": 12.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 50.3,
+    "avgThrowYards": 3.6,
+    "totalCatchYards": 329.3,
+    "avgCatchYards": 14.3,
+    "+/-": 11.0
   },
   {
     "player": "06 Micah Roberts",
@@ -680,6 +1040,7 @@
     "teamAbbrev": "NASH",
     "goals": 5.0,
     "assists": 1.0,
+    "secondaryAssists": 2.0,
     "blocks": 5.0,
     "turnovers": 6.0,
     "touches": 44.0,
@@ -687,7 +1048,14 @@
     "catches": 44.0,
     "offensePoints": 31.0,
     "defensePoints": 28.0,
-    "+/-": 5.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 119.9,
+    "avgThrowYards": 3.6,
+    "totalCatchYards": 637.3,
+    "avgCatchYards": 14.5,
+    "+/-": -1.0
   },
   {
     "player": "06 Risa Umeno",
@@ -695,6 +1063,7 @@
     "teamAbbrev": "INDY",
     "goals": 1.0,
     "assists": 3.0,
+    "secondaryAssists": 2.0,
     "blocks": 3.0,
     "turnovers": 7.0,
     "touches": 97.0,
@@ -702,7 +1071,14 @@
     "catches": 68.0,
     "offensePoints": 18.0,
     "defensePoints": 53.0,
-    "+/-": 0.0
+    "possessionsInitiated": 29.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 286.5,
+    "avgThrowYards": 3.3,
+    "totalCatchYards": -44.1,
+    "avgCatchYards": -0.6,
+    "+/-": -7.0
   },
   {
     "player": "06 Rowse",
@@ -710,6 +1086,7 @@
     "teamAbbrev": "PORT",
     "goals": 7.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 11.0,
     "turnovers": 8.0,
     "touches": 35.0,
@@ -717,7 +1094,14 @@
     "catches": 30.0,
     "offensePoints": 13.0,
     "defensePoints": 38.0,
-    "+/-": 10.0
+    "possessionsInitiated": 5.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 6.0,
+    "totalThrowYards": -90.7,
+    "avgThrowYards": -3.5,
+    "totalCatchYards": 537.7,
+    "avgCatchYards": 17.9,
+    "+/-": 2.0
   },
   {
     "player": "06 Willy (Natalie Wilson)",
@@ -725,6 +1109,7 @@
     "teamAbbrev": "ATL",
     "goals": 5.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 2.0,
     "touches": 22.0,
@@ -732,7 +1117,14 @@
     "catches": 22.0,
     "offensePoints": 23.0,
     "defensePoints": 12.0,
-    "+/-": 5.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 125.3,
+    "avgThrowYards": 8.4,
+    "totalCatchYards": 236.5,
+    "avgCatchYards": 10.7,
+    "+/-": 3.0
   },
   {
     "player": "07 Allison Reilly",
@@ -740,6 +1132,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 18.0,
@@ -747,7 +1140,14 @@
     "catches": 12.0,
     "offensePoints": 11.0,
     "defensePoints": 0.0,
-    "+/-": -1.0
+    "possessionsInitiated": 6.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 153.3,
+    "avgThrowYards": 9.0,
+    "totalCatchYards": 16.6,
+    "avgCatchYards": 1.4,
+    "+/-": -2.0
   },
   {
     "player": "07 Danielle Byers",
@@ -755,6 +1155,7 @@
     "teamAbbrev": "MINN",
     "goals": 13.0,
     "assists": 6.0,
+    "secondaryAssists": 4.0,
     "blocks": 1.0,
     "turnovers": 17.0,
     "touches": 91.0,
@@ -762,7 +1163,14 @@
     "catches": 91.0,
     "offensePoints": 82.0,
     "defensePoints": 11.0,
-    "+/-": 3.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 10.0,
+    "receiverErrors": 7.0,
+    "totalThrowYards": 162.2,
+    "avgThrowYards": 2.4,
+    "totalCatchYards": 1458.7,
+    "avgCatchYards": 16.0,
+    "+/-": -14.0
   },
   {
     "player": "07 Kami Groom",
@@ -770,6 +1178,7 @@
     "teamAbbrev": "DC",
     "goals": 13.0,
     "assists": 8.0,
+    "secondaryAssists": 8.0,
     "blocks": 12.0,
     "turnovers": 5.0,
     "touches": 115.0,
@@ -777,7 +1186,14 @@
     "catches": 106.0,
     "offensePoints": 13.0,
     "defensePoints": 56.0,
-    "+/-": 28.0
+    "possessionsInitiated": 9.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 493.7,
+    "avgThrowYards": 5.3,
+    "totalCatchYards": 983.4,
+    "avgCatchYards": 9.3,
+    "+/-": 23.0
   },
   {
     "player": "07 Mary Cowart",
@@ -785,6 +1201,7 @@
     "teamAbbrev": "NASH",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 6.0,
@@ -792,6 +1209,13 @@
     "catches": 6.0,
     "offensePoints": 9.0,
     "defensePoints": 19.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 23.9,
+    "avgThrowYards": 4.8,
+    "totalCatchYards": 69.5,
+    "avgCatchYards": 11.6,
     "+/-": 1.0
   },
   {
@@ -800,6 +1224,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 3.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 2.0,
     "touches": 29.0,
@@ -807,7 +1232,14 @@
     "catches": 19.0,
     "offensePoints": 10.0,
     "defensePoints": 2.0,
-    "+/-": 2.0
+    "possessionsInitiated": 10.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 238.8,
+    "avgThrowYards": 9.2,
+    "totalCatchYards": -30.0,
+    "avgCatchYards": -1.6,
+    "+/-": 0.0
   },
   {
     "player": "07 Shiru Liu",
@@ -815,6 +1247,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 10.0,
+    "secondaryAssists": 2.0,
     "blocks": 2.0,
     "turnovers": 20.0,
     "touches": 116.0,
@@ -822,7 +1255,14 @@
     "catches": 78.0,
     "offensePoints": 24.0,
     "defensePoints": 41.0,
-    "+/-": -8.0
+    "possessionsInitiated": 38.0,
+    "throwerErrors": 17.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 1030.2,
+    "avgThrowYards": 10.6,
+    "totalCatchYards": 36.3,
+    "avgCatchYards": 0.5,
+    "+/-": -28.0
   },
   {
     "player": "07 Sydney Stelzer",
@@ -830,6 +1270,7 @@
     "teamAbbrev": "MKE",
     "goals": 4.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 6.0,
     "touches": 11.0,
@@ -837,7 +1278,14 @@
     "catches": 11.0,
     "offensePoints": 22.0,
     "defensePoints": 15.0,
-    "+/-": -2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 5.0,
+    "totalThrowYards": 8.4,
+    "avgThrowYards": 1.4,
+    "totalCatchYards": 146.7,
+    "avgCatchYards": 13.3,
+    "+/-": -8.0
   },
   {
     "player": "08 Dani Ortiz",
@@ -845,6 +1293,7 @@
     "teamAbbrev": "ATL",
     "goals": 1.0,
     "assists": 9.0,
+    "secondaryAssists": 6.0,
     "blocks": 1.0,
     "turnovers": 16.0,
     "touches": 126.0,
@@ -852,7 +1301,14 @@
     "catches": 110.0,
     "offensePoints": 66.0,
     "defensePoints": 15.0,
-    "+/-": -5.0
+    "possessionsInitiated": 16.0,
+    "throwerErrors": 15.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 485.4,
+    "avgThrowYards": 4.5,
+    "totalCatchYards": 447.1,
+    "avgCatchYards": 4.1,
+    "+/-": -21.0
   },
   {
     "player": "08 Emma Soiles",
@@ -860,6 +1316,7 @@
     "teamAbbrev": "PHL",
     "goals": 8.0,
     "assists": 8.0,
+    "secondaryAssists": 3.0,
     "blocks": 8.0,
     "turnovers": 8.0,
     "touches": 49.0,
@@ -867,7 +1324,14 @@
     "catches": 45.0,
     "offensePoints": 7.0,
     "defensePoints": 67.0,
-    "+/-": 16.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 266.4,
+    "avgThrowYards": 8.6,
+    "totalCatchYards": 638.3,
+    "avgCatchYards": 14.2,
+    "+/-": 8.0
   },
   {
     "player": "08 Georgia Tse",
@@ -875,6 +1339,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 0.0,
@@ -882,6 +1347,13 @@
     "catches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 1.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 0.0,
+    "avgCatchYards": 0.0,
     "+/-": 0.0
   },
   {
@@ -890,6 +1362,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 5.0,
@@ -897,7 +1370,14 @@
     "catches": 5.0,
     "offensePoints": 3.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 22.6,
+    "avgThrowYards": 5.7,
+    "totalCatchYards": 36.6,
+    "avgCatchYards": 7.3,
+    "+/-": -1.0
   },
   {
     "player": "08 Grace Robinson",
@@ -905,6 +1385,7 @@
     "teamAbbrev": "NASH",
     "goals": 4.0,
     "assists": 2.0,
+    "secondaryAssists": 7.0,
     "blocks": 2.0,
     "turnovers": 13.0,
     "touches": 148.0,
@@ -912,7 +1393,14 @@
     "catches": 126.0,
     "offensePoints": 68.0,
     "defensePoints": 18.0,
-    "+/-": -5.0
+    "possessionsInitiated": 22.0,
+    "throwerErrors": 11.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 660.7,
+    "avgThrowYards": 5.2,
+    "totalCatchYards": 483.9,
+    "avgCatchYards": 3.8,
+    "+/-": -18.0
   },
   {
     "player": "08 Jamie Smets",
@@ -920,6 +1408,7 @@
     "teamAbbrev": "INDY",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 8.0,
@@ -927,7 +1416,14 @@
     "catches": 8.0,
     "offensePoints": 2.0,
     "defensePoints": 15.0,
-    "+/-": 2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -0.1,
+    "avgThrowYards": -0.0,
+    "totalCatchYards": 202.6,
+    "avgCatchYards": 25.3,
+    "+/-": 1.0
   },
   {
     "player": "08 Kathryn Ritzman",
@@ -935,6 +1431,7 @@
     "teamAbbrev": "DC",
     "goals": 4.0,
     "assists": 3.0,
+    "secondaryAssists": 5.0,
     "blocks": 2.0,
     "turnovers": 7.0,
     "touches": 53.0,
@@ -942,7 +1439,14 @@
     "catches": 50.0,
     "offensePoints": 17.0,
     "defensePoints": 17.0,
-    "+/-": 2.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 4.0,
+    "totalThrowYards": 242.7,
+    "avgThrowYards": 5.5,
+    "totalCatchYards": 439.0,
+    "avgCatchYards": 8.8,
+    "+/-": -5.0
   },
   {
     "player": "08 ManHua Zhu",
@@ -950,6 +1454,7 @@
     "teamAbbrev": "MKE",
     "goals": 0.0,
     "assists": 2.0,
+    "secondaryAssists": 3.0,
     "blocks": 0.0,
     "turnovers": 7.0,
     "touches": 67.0,
@@ -957,7 +1462,14 @@
     "catches": 47.0,
     "offensePoints": 30.0,
     "defensePoints": 18.0,
-    "+/-": -5.0
+    "possessionsInitiated": 20.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 291.0,
+    "avgThrowYards": 5.3,
+    "totalCatchYards": 47.7,
+    "avgCatchYards": 1.1,
+    "+/-": -12.0
   },
   {
     "player": "08 Mandy Radike",
@@ -965,6 +1477,7 @@
     "teamAbbrev": "ATX",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 2.0,
     "touches": 13.0,
@@ -972,7 +1485,14 @@
     "catches": 8.0,
     "offensePoints": 2.0,
     "defensePoints": 13.0,
-    "+/-": 0.0
+    "possessionsInitiated": 5.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 78.6,
+    "avgThrowYards": 7.9,
+    "totalCatchYards": 10.4,
+    "avgCatchYards": 1.3,
+    "+/-": -2.0
   },
   {
     "player": "08 Manuela Cardenas",
@@ -980,6 +1500,7 @@
     "teamAbbrev": "NY",
     "goals": 2.0,
     "assists": 3.0,
+    "secondaryAssists": 6.0,
     "blocks": 3.0,
     "turnovers": 3.0,
     "touches": 58.0,
@@ -987,7 +1508,14 @@
     "catches": 57.0,
     "offensePoints": 6.0,
     "defensePoints": 34.0,
-    "+/-": 5.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 193.5,
+    "avgThrowYards": 3.7,
+    "totalCatchYards": 327.9,
+    "avgCatchYards": 5.8,
+    "+/-": 2.0
   },
   {
     "player": "08 Mindy Radike",
@@ -995,6 +1523,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 3.0,
     "touches": 22.0,
@@ -1002,7 +1531,14 @@
     "catches": 18.0,
     "offensePoints": 5.0,
     "defensePoints": 11.0,
-    "+/-": -3.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 107.2,
+    "avgThrowYards": 5.6,
+    "totalCatchYards": -40.0,
+    "avgCatchYards": -2.2,
+    "+/-": -6.0
   },
   {
     "player": "08 Nicki Chan",
@@ -1010,6 +1546,7 @@
     "teamAbbrev": "PORT",
     "goals": 4.0,
     "assists": 1.0,
+    "secondaryAssists": 5.0,
     "blocks": 5.0,
     "turnovers": 6.0,
     "touches": 29.0,
@@ -1017,7 +1554,14 @@
     "catches": 28.0,
     "offensePoints": 3.0,
     "defensePoints": 54.0,
-    "+/-": 4.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 5.0,
+    "totalThrowYards": 114.7,
+    "avgThrowYards": 5.2,
+    "totalCatchYards": 331.2,
+    "avgCatchYards": 11.8,
+    "+/-": -2.0
   },
   {
     "player": "09 Annelise Peters",
@@ -1025,6 +1569,7 @@
     "teamAbbrev": "DC",
     "goals": 2.0,
     "assists": 6.0,
+    "secondaryAssists": 6.0,
     "blocks": 3.0,
     "turnovers": 9.0,
     "touches": 58.0,
@@ -1032,7 +1577,14 @@
     "catches": 39.0,
     "offensePoints": 6.0,
     "defensePoints": 32.0,
-    "+/-": 2.0
+    "possessionsInitiated": 19.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 607.7,
+    "avgThrowYards": 13.2,
+    "totalCatchYards": 138.5,
+    "avgCatchYards": 3.6,
+    "+/-": -7.0
   },
   {
     "player": "09 Cassandra Brown",
@@ -1040,6 +1592,7 @@
     "teamAbbrev": "NY",
     "goals": 2.0,
     "assists": 13.0,
+    "secondaryAssists": 8.0,
     "blocks": 5.0,
     "turnovers": 14.0,
     "touches": 147.0,
@@ -1047,7 +1600,14 @@
     "catches": 99.0,
     "offensePoints": 23.0,
     "defensePoints": 76.0,
-    "+/-": 6.0
+    "possessionsInitiated": 48.0,
+    "throwerErrors": 13.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 1339.8,
+    "avgThrowYards": 10.2,
+    "totalCatchYards": 329.2,
+    "avgCatchYards": 3.3,
+    "+/-": -8.0
   },
   {
     "player": "09 Emma Patterson",
@@ -1055,6 +1615,7 @@
     "teamAbbrev": "NASH",
     "goals": 0.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 6.0,
     "touches": 45.0,
@@ -1062,7 +1623,14 @@
     "catches": 29.0,
     "offensePoints": 12.0,
     "defensePoints": 41.0,
-    "+/-": -3.0
+    "possessionsInitiated": 16.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 483.2,
+    "avgThrowYards": 12.7,
+    "totalCatchYards": 51.0,
+    "avgCatchYards": 1.8,
+    "+/-": -9.0
   },
   {
     "player": "09 Fiona Cashin",
@@ -1070,6 +1638,7 @@
     "teamAbbrev": "ATL",
     "goals": 1.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 13.0,
@@ -1077,7 +1646,14 @@
     "catches": 13.0,
     "offensePoints": 7.0,
     "defensePoints": 9.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 84.3,
+    "avgThrowYards": 8.4,
+    "totalCatchYards": 91.9,
+    "avgCatchYards": 7.1,
+    "+/-": -2.0
   },
   {
     "player": "09 Jinny Riedel",
@@ -1085,6 +1661,7 @@
     "teamAbbrev": "RAL",
     "goals": 5.0,
     "assists": 0.0,
+    "secondaryAssists": 3.0,
     "blocks": 2.0,
     "turnovers": 3.0,
     "touches": 35.0,
@@ -1092,7 +1669,14 @@
     "catches": 32.0,
     "offensePoints": 6.0,
     "defensePoints": 42.0,
-    "+/-": 4.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 148.5,
+    "avgThrowYards": 4.9,
+    "totalCatchYards": 104.6,
+    "avgCatchYards": 3.3,
+    "+/-": 1.0
   },
   {
     "player": "09 Sara Helm",
@@ -1100,6 +1684,7 @@
     "teamAbbrev": "MINN",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 1.0,
     "touches": 6.0,
@@ -1107,7 +1692,14 @@
     "catches": 6.0,
     "offensePoints": 6.0,
     "defensePoints": 46.0,
-    "+/-": 2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -4.5,
+    "avgThrowYards": -1.1,
+    "totalCatchYards": 110.1,
+    "avgCatchYards": 18.4,
+    "+/-": 1.0
   },
   {
     "player": "09 Sarah Hirannet",
@@ -1115,6 +1707,7 @@
     "teamAbbrev": "PHL",
     "goals": 12.0,
     "assists": 4.0,
+    "secondaryAssists": 6.0,
     "blocks": 0.0,
     "turnovers": 3.0,
     "touches": 61.0,
@@ -1122,7 +1715,14 @@
     "catches": 61.0,
     "offensePoints": 64.0,
     "defensePoints": 13.0,
-    "+/-": 13.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 213.7,
+    "avgThrowYards": 4.5,
+    "totalCatchYards": 914.3,
+    "avgCatchYards": 15.0,
+    "+/-": 10.0
   },
   {
     "player": "09 Summer Wilson",
@@ -1130,6 +1730,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 4.0,
     "blocks": 2.0,
     "turnovers": 12.0,
     "touches": 87.0,
@@ -1137,7 +1738,14 @@
     "catches": 69.0,
     "offensePoints": 24.0,
     "defensePoints": 20.0,
-    "+/-": -10.0
+    "possessionsInitiated": 18.0,
+    "throwerErrors": 11.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 561.2,
+    "avgThrowYards": 7.7,
+    "totalCatchYards": 108.6,
+    "avgCatchYards": 1.6,
+    "+/-": -22.0
   },
   {
     "player": "10 Andrea DeSabato",
@@ -1145,6 +1753,7 @@
     "teamAbbrev": "PHL",
     "goals": 2.0,
     "assists": 4.0,
+    "secondaryAssists": 5.0,
     "blocks": 0.0,
     "turnovers": 13.0,
     "touches": 227.0,
@@ -1152,7 +1761,14 @@
     "catches": 185.0,
     "offensePoints": 68.0,
     "defensePoints": 13.0,
-    "+/-": -7.0
+    "possessionsInitiated": 42.0,
+    "throwerErrors": 10.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 908.6,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": -50.6,
+    "avgCatchYards": -0.3,
+    "+/-": -20.0
   },
   {
     "player": "10 Ariel Choi",
@@ -1160,6 +1776,7 @@
     "teamAbbrev": "INDY",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 3.0,
@@ -1167,7 +1784,14 @@
     "catches": 3.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
-    "+/-": -1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 10.2,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 17.8,
+    "avgCatchYards": 5.9,
+    "+/-": -2.0
   },
   {
     "player": "10 Chelsea Twohig",
@@ -1175,6 +1799,7 @@
     "teamAbbrev": "MKE",
     "goals": 6.0,
     "assists": 8.0,
+    "secondaryAssists": 2.0,
     "blocks": 4.0,
     "turnovers": 9.0,
     "touches": 65.0,
@@ -1182,7 +1807,14 @@
     "catches": 48.0,
     "offensePoints": 33.0,
     "defensePoints": 24.0,
-    "+/-": 9.0
+    "possessionsInitiated": 17.0,
+    "throwerErrors": 8.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 530.4,
+    "avgThrowYards": 10.4,
+    "totalCatchYards": 508.0,
+    "avgCatchYards": 10.6,
+    "+/-": 0.0
   },
   {
     "player": "10 Gaby Cuina",
@@ -1190,6 +1822,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 1.0,
     "touches": 17.0,
@@ -1197,7 +1830,14 @@
     "catches": 17.0,
     "offensePoints": 20.0,
     "defensePoints": 23.0,
-    "+/-": 2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 99.5,
+    "avgThrowYards": 7.1,
+    "totalCatchYards": 193.7,
+    "avgCatchYards": 11.4,
+    "+/-": 1.0
   },
   {
     "player": "10 Jane Koch",
@@ -1205,6 +1845,7 @@
     "teamAbbrev": "MINN",
     "goals": 5.0,
     "assists": 7.0,
+    "secondaryAssists": 0.0,
     "blocks": 4.0,
     "turnovers": 4.0,
     "touches": 35.0,
@@ -1212,7 +1853,14 @@
     "catches": 32.0,
     "offensePoints": 9.0,
     "defensePoints": 41.0,
-    "+/-": 12.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 157.1,
+    "avgThrowYards": 5.6,
+    "totalCatchYards": 431.2,
+    "avgCatchYards": 13.5,
+    "+/-": 8.0
   },
   {
     "player": "10 Lauren Baecher",
@@ -1220,6 +1868,7 @@
     "teamAbbrev": "PORT",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 3.0,
     "touches": 14.0,
@@ -1227,7 +1876,14 @@
     "catches": 11.0,
     "offensePoints": 6.0,
     "defensePoints": 12.0,
-    "+/-": -2.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 89.4,
+    "avgThrowYards": 7.5,
+    "totalCatchYards": 34.2,
+    "avgCatchYards": 3.1,
+    "+/-": -5.0
   },
   {
     "player": "10 Mia Griner",
@@ -1235,6 +1891,7 @@
     "teamAbbrev": "ATL",
     "goals": 9.0,
     "assists": 8.0,
+    "secondaryAssists": 8.0,
     "blocks": 6.0,
     "turnovers": 13.0,
     "touches": 152.0,
@@ -1242,7 +1899,14 @@
     "catches": 105.0,
     "offensePoints": 50.0,
     "defensePoints": 46.0,
-    "+/-": 10.0
+    "possessionsInitiated": 47.0,
+    "throwerErrors": 13.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 616.7,
+    "avgThrowYards": 4.8,
+    "totalCatchYards": 706.2,
+    "avgCatchYards": 6.7,
+    "+/-": -3.0
   },
   {
     "player": "10 Paige Carver",
@@ -1250,6 +1914,7 @@
     "teamAbbrev": "RAL",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 8.0,
@@ -1257,7 +1922,14 @@
     "catches": 8.0,
     "offensePoints": 5.0,
     "defensePoints": 23.0,
-    "+/-": -1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 10.1,
+    "avgThrowYards": 1.4,
+    "totalCatchYards": 91.5,
+    "avgCatchYards": 11.4,
+    "+/-": -3.0
   },
   {
     "player": "10 Tori Taylor",
@@ -1265,6 +1937,7 @@
     "teamAbbrev": "NASH",
     "goals": 12.0,
     "assists": 22.0,
+    "secondaryAssists": 8.0,
     "blocks": 12.0,
     "turnovers": 15.0,
     "touches": 160.0,
@@ -1272,7 +1945,14 @@
     "catches": 153.0,
     "offensePoints": 86.0,
     "defensePoints": 17.0,
-    "+/-": 31.0
+    "possessionsInitiated": 7.0,
+    "throwerErrors": 12.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 902.5,
+    "avgThrowYards": 6.6,
+    "totalCatchYards": 1305.1,
+    "avgCatchYards": 8.5,
+    "+/-": 16.0
   },
   {
     "player": "11 Dawn Culton",
@@ -1280,6 +1960,7 @@
     "teamAbbrev": "RAL",
     "goals": 3.0,
     "assists": 5.0,
+    "secondaryAssists": 3.0,
     "blocks": 0.0,
     "turnovers": 5.0,
     "touches": 37.0,
@@ -1287,7 +1968,14 @@
     "catches": 34.0,
     "offensePoints": 8.0,
     "defensePoints": 25.0,
-    "+/-": 3.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 295.9,
+    "avgThrowYards": 10.6,
+    "totalCatchYards": 358.3,
+    "avgCatchYards": 10.5,
+    "+/-": -2.0
   },
   {
     "player": "11 Emma Berrigan",
@@ -1295,6 +1983,7 @@
     "teamAbbrev": "NY",
     "goals": 1.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 5.0,
     "turnovers": 0.0,
     "touches": 9.0,
@@ -1302,6 +1991,13 @@
     "catches": 6.0,
     "offensePoints": 9.0,
     "defensePoints": 37.0,
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 46.4,
+    "avgThrowYards": -1.5,
+    "totalCatchYards": 93.8,
+    "avgCatchYards": 15.6,
     "+/-": 7.0
   },
   {
@@ -1310,6 +2006,7 @@
     "teamAbbrev": "NASH",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 4.0,
     "touches": 11.0,
@@ -1317,7 +2014,14 @@
     "catches": 10.0,
     "offensePoints": 2.0,
     "defensePoints": 24.0,
-    "+/-": -3.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": -35.2,
+    "avgThrowYards": -3.9,
+    "totalCatchYards": 120.8,
+    "avgCatchYards": 12.1,
+    "+/-": -7.0
   },
   {
     "player": "11 Rachel Johnson",
@@ -1325,6 +2029,7 @@
     "teamAbbrev": "MINN",
     "goals": 1.0,
     "assists": 6.0,
+    "secondaryAssists": 9.0,
     "blocks": 1.0,
     "turnovers": 12.0,
     "touches": 94.0,
@@ -1332,7 +2037,14 @@
     "catches": 50.0,
     "offensePoints": 24.0,
     "defensePoints": 53.0,
-    "+/-": -4.0
+    "possessionsInitiated": 44.0,
+    "throwerErrors": 12.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 790.7,
+    "avgThrowYards": 10.1,
+    "totalCatchYards": 77.7,
+    "avgCatchYards": 1.6,
+    "+/-": -16.0
   },
   {
     "player": "11 Sara Liang",
@@ -1340,6 +2052,7 @@
     "teamAbbrev": "PHL",
     "goals": 1.0,
     "assists": 12.0,
+    "secondaryAssists": 5.0,
     "blocks": 7.0,
     "turnovers": 5.0,
     "touches": 123.0,
@@ -1347,7 +2060,14 @@
     "catches": 81.0,
     "offensePoints": 11.0,
     "defensePoints": 87.0,
-    "+/-": 15.0
+    "possessionsInitiated": 42.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 1025.2,
+    "avgThrowYards": 9.0,
+    "totalCatchYards": -11.2,
+    "avgCatchYards": -0.1,
+    "+/-": 10.0
   },
   {
     "player": "11 Tayara Romero Pena",
@@ -1355,6 +2075,7 @@
     "teamAbbrev": "DC",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 2.0,
@@ -1362,7 +2083,14 @@
     "catches": 2.0,
     "offensePoints": 0.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 22.2,
+    "avgThrowYards": 11.1,
+    "totalCatchYards": 14.6,
+    "avgCatchYards": 7.3,
+    "+/-": -1.0
   },
   {
     "player": "11 Tracey Lo",
@@ -1370,6 +2098,7 @@
     "teamAbbrev": "INDY",
     "goals": 5.0,
     "assists": 7.0,
+    "secondaryAssists": 3.0,
     "blocks": 2.0,
     "turnovers": 7.0,
     "touches": 77.0,
@@ -1377,7 +2106,14 @@
     "catches": 48.0,
     "offensePoints": 37.0,
     "defensePoints": 19.0,
-    "+/-": 7.0
+    "possessionsInitiated": 29.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 476.3,
+    "avgThrowYards": 7.6,
+    "totalCatchYards": 310.3,
+    "avgCatchYards": 6.5,
+    "+/-": 0.0
   },
   {
     "player": "12 Annie Ortiz",
@@ -1385,6 +2121,7 @@
     "teamAbbrev": "ATX",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 3.0,
     "turnovers": 3.0,
     "touches": 70.0,
@@ -1392,7 +2129,14 @@
     "catches": 47.0,
     "offensePoints": 30.0,
     "defensePoints": 24.0,
-    "+/-": 1.0
+    "possessionsInitiated": 23.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 175.8,
+    "avgThrowYards": 2.6,
+    "totalCatchYards": 166.3,
+    "avgCatchYards": 3.5,
+    "+/-": -2.0
   },
   {
     "player": "12 Clare Frantz",
@@ -1400,6 +2144,7 @@
     "teamAbbrev": "DC",
     "goals": 6.0,
     "assists": 3.0,
+    "secondaryAssists": 4.0,
     "blocks": 1.0,
     "turnovers": 3.0,
     "touches": 36.0,
@@ -1407,7 +2152,14 @@
     "catches": 36.0,
     "offensePoints": 16.0,
     "defensePoints": 25.0,
-    "+/-": 7.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 60.5,
+    "avgThrowYards": 2.2,
+    "totalCatchYards": 447.8,
+    "avgCatchYards": 12.4,
+    "+/-": 4.0
   },
   {
     "player": "12 Emma Jaschke",
@@ -1415,6 +2167,7 @@
     "teamAbbrev": "ATL",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 5.0,
     "touches": 43.0,
@@ -1422,7 +2175,14 @@
     "catches": 40.0,
     "offensePoints": 17.0,
     "defensePoints": 33.0,
-    "+/-": -3.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 104.1,
+    "avgThrowYards": 2.7,
+    "totalCatchYards": 32.4,
+    "avgCatchYards": 0.8,
+    "+/-": -8.0
   },
   {
     "player": "12 Katie Backus Meilstrup",
@@ -1430,6 +2190,7 @@
     "teamAbbrev": "RAL",
     "goals": 7.0,
     "assists": 4.0,
+    "secondaryAssists": 6.0,
     "blocks": 4.0,
     "turnovers": 5.0,
     "touches": 68.0,
@@ -1437,7 +2198,14 @@
     "catches": 65.0,
     "offensePoints": 42.0,
     "defensePoints": 7.0,
-    "+/-": 10.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 268.9,
+    "avgThrowYards": 4.9,
+    "totalCatchYards": 764.8,
+    "avgCatchYards": 11.8,
+    "+/-": 5.0
   },
   {
     "player": "12 Meaghan Creamer",
@@ -1445,6 +2213,7 @@
     "teamAbbrev": "NASH",
     "goals": 1.0,
     "assists": 2.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 12.0,
@@ -1452,7 +2221,14 @@
     "catches": 12.0,
     "offensePoints": 16.0,
     "defensePoints": 25.0,
-    "+/-": 3.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 67.8,
+    "avgThrowYards": 6.2,
+    "totalCatchYards": 122.1,
+    "avgCatchYards": 10.2,
+    "+/-": 2.0
   },
   {
     "player": "12 Sally Roberts",
@@ -1460,6 +2236,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 0.0,
@@ -1467,6 +2244,13 @@
     "catches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 1.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 0.0,
+    "avgCatchYards": 0.0,
     "+/-": 0.0
   },
   {
@@ -1475,6 +2259,7 @@
     "teamAbbrev": "MKE",
     "goals": 9.0,
     "assists": 3.0,
+    "secondaryAssists": 3.0,
     "blocks": 9.0,
     "turnovers": 14.0,
     "touches": 66.0,
@@ -1482,7 +2267,14 @@
     "catches": 53.0,
     "offensePoints": 32.0,
     "defensePoints": 44.0,
-    "+/-": 7.0
+    "possessionsInitiated": 13.0,
+    "throwerErrors": 11.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 365.2,
+    "avgThrowYards": 8.9,
+    "totalCatchYards": 616.8,
+    "avgCatchYards": 11.6,
+    "+/-": -7.0
   },
   {
     "player": "13 Erin Newman",
@@ -1490,6 +2282,7 @@
     "teamAbbrev": "MKE",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 10.0,
@@ -1497,7 +2290,14 @@
     "catches": 10.0,
     "offensePoints": 35.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 22.4,
+    "avgThrowYards": 4.5,
+    "totalCatchYards": 161.5,
+    "avgCatchYards": 16.2,
+    "+/-": -2.0
   },
   {
     "player": "13 Hannah Abraham",
@@ -1505,6 +2305,7 @@
     "teamAbbrev": "ATL",
     "goals": 6.0,
     "assists": 1.0,
+    "secondaryAssists": 2.0,
     "blocks": 4.0,
     "turnovers": 4.0,
     "touches": 62.0,
@@ -1512,7 +2313,14 @@
     "catches": 57.0,
     "offensePoints": 25.0,
     "defensePoints": 36.0,
-    "+/-": 7.0
+    "possessionsInitiated": 5.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 200.7,
+    "avgThrowYards": 3.9,
+    "totalCatchYards": 312.4,
+    "avgCatchYards": 5.5,
+    "+/-": 3.0
   },
   {
     "player": "13 Kat Harper",
@@ -1520,6 +2328,7 @@
     "teamAbbrev": "PHL",
     "goals": 7.0,
     "assists": 2.0,
+    "secondaryAssists": 3.0,
     "blocks": 4.0,
     "turnovers": 2.0,
     "touches": 37.0,
@@ -1527,7 +2336,14 @@
     "catches": 35.0,
     "offensePoints": 5.0,
     "defensePoints": 57.0,
-    "+/-": 11.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 181.5,
+    "avgThrowYards": 6.5,
+    "totalCatchYards": 400.5,
+    "avgCatchYards": 11.4,
+    "+/-": 9.0
   },
   {
     "player": "13 Samantha Munson",
@@ -1535,6 +2351,7 @@
     "teamAbbrev": "PORT",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 1.0,
@@ -1542,7 +2359,14 @@
     "catches": 1.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 48.1,
+    "avgCatchYards": 48.1,
+    "+/-": -1.0
   },
   {
     "player": "13 Sami Smalling",
@@ -1550,6 +2374,7 @@
     "teamAbbrev": "DC",
     "goals": 1.0,
     "assists": 5.0,
+    "secondaryAssists": 7.0,
     "blocks": 3.0,
     "turnovers": 3.0,
     "touches": 81.0,
@@ -1557,7 +2382,14 @@
     "catches": 65.0,
     "offensePoints": 11.0,
     "defensePoints": 35.0,
-    "+/-": 6.0
+    "possessionsInitiated": 16.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 637.0,
+    "avgThrowYards": 8.3,
+    "totalCatchYards": 78.1,
+    "avgCatchYards": 1.2,
+    "+/-": 3.0
   },
   {
     "player": "13 Tyler Smith",
@@ -1565,6 +2397,7 @@
     "teamAbbrev": "RAL",
     "goals": 6.0,
     "assists": 14.0,
+    "secondaryAssists": 8.0,
     "blocks": 4.0,
     "turnovers": 27.0,
     "touches": 248.0,
@@ -1572,7 +2405,14 @@
     "catches": 185.0,
     "offensePoints": 62.0,
     "defensePoints": 15.0,
-    "+/-": -3.0
+    "possessionsInitiated": 63.0,
+    "throwerErrors": 25.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 1472.5,
+    "avgThrowYards": 6.8,
+    "totalCatchYards": 477.9,
+    "avgCatchYards": 2.6,
+    "+/-": -30.0
   },
   {
     "player": "14 Briana Burriss",
@@ -1580,6 +2420,7 @@
     "teamAbbrev": "INDY",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 3.0,
     "turnovers": 1.0,
     "touches": 20.0,
@@ -1587,7 +2428,14 @@
     "catches": 17.0,
     "offensePoints": 11.0,
     "defensePoints": 50.0,
-    "+/-": 3.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 69.5,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": 99.5,
+    "avgCatchYards": 5.9,
+    "+/-": 2.0
   },
   {
     "player": "14 Jessica Hendrickson",
@@ -1595,6 +2443,7 @@
     "teamAbbrev": "MINN",
     "goals": 3.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 5.0,
     "turnovers": 1.0,
     "touches": 19.0,
@@ -1602,7 +2451,14 @@
     "catches": 19.0,
     "offensePoints": 2.0,
     "defensePoints": 48.0,
-    "+/-": 7.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 24.5,
+    "avgThrowYards": 1.5,
+    "totalCatchYards": 196.8,
+    "avgCatchYards": 10.4,
+    "+/-": 6.0
   },
   {
     "player": "14 Lindsay Allman",
@@ -1610,6 +2466,7 @@
     "teamAbbrev": "ATL",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 3.0,
     "touches": 28.0,
@@ -1617,7 +2474,14 @@
     "catches": 21.0,
     "offensePoints": 12.0,
     "defensePoints": 0.0,
-    "+/-": -2.0
+    "possessionsInitiated": 7.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 146.4,
+    "avgThrowYards": 6.1,
+    "totalCatchYards": 27.8,
+    "avgCatchYards": 1.3,
+    "+/-": -5.0
   },
   {
     "player": "14 Sarah Spall",
@@ -1625,6 +2489,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 0.0,
     "touches": 2.0,
@@ -1632,6 +2497,13 @@
     "catches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 0.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 4.8,
+    "avgThrowYards": 2.4,
+    "totalCatchYards": 27.1,
+    "avgCatchYards": 13.6,
     "+/-": 1.0
   },
   {
@@ -1640,6 +2512,7 @@
     "teamAbbrev": "PORT",
     "goals": 2.0,
     "assists": 5.0,
+    "secondaryAssists": 2.0,
     "blocks": 2.0,
     "turnovers": 4.0,
     "touches": 38.0,
@@ -1647,7 +2520,14 @@
     "catches": 37.0,
     "offensePoints": 20.0,
     "defensePoints": 31.0,
-    "+/-": 5.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 171.6,
+    "avgThrowYards": 5.0,
+    "totalCatchYards": 410.2,
+    "avgCatchYards": 11.1,
+    "+/-": 1.0
   },
   {
     "player": "15 Chelsea Semper",
@@ -1655,6 +2535,7 @@
     "teamAbbrev": "MINN",
     "goals": 1.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 7.0,
     "touches": 56.0,
@@ -1662,7 +2543,14 @@
     "catches": 32.0,
     "offensePoints": 19.0,
     "defensePoints": 44.0,
-    "+/-": -2.0
+    "possessionsInitiated": 24.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 235.9,
+    "avgThrowYards": 4.8,
+    "totalCatchYards": 108.0,
+    "avgCatchYards": 3.4,
+    "+/-": -9.0
   },
   {
     "player": "15 Elise Franke",
@@ -1670,6 +2558,7 @@
     "teamAbbrev": "ATX",
     "goals": 6.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 6.0,
     "turnovers": 1.0,
     "touches": 45.0,
@@ -1677,7 +2566,14 @@
     "catches": 43.0,
     "offensePoints": 15.0,
     "defensePoints": 44.0,
-    "+/-": 11.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 0.6,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 551.8,
+    "avgCatchYards": 12.8,
+    "+/-": 10.0
   },
   {
     "player": "15 Florence Brooks",
@@ -1685,6 +2581,7 @@
     "teamAbbrev": "DC",
     "goals": 9.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 4.0,
     "turnovers": 4.0,
     "touches": 31.0,
@@ -1692,7 +2589,14 @@
     "catches": 30.0,
     "offensePoints": 9.0,
     "defensePoints": 28.0,
-    "+/-": 11.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 52.5,
+    "avgThrowYards": 2.5,
+    "totalCatchYards": 445.6,
+    "avgCatchYards": 14.9,
+    "+/-": 7.0
   },
   {
     "player": "15 Justine Neville",
@@ -1700,6 +2604,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 3.0,
     "turnovers": 0.0,
     "touches": 6.0,
@@ -1707,6 +2612,13 @@
     "catches": 5.0,
     "offensePoints": 6.0,
     "defensePoints": 22.0,
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 12.1,
+    "avgThrowYards": 2.0,
+    "totalCatchYards": 43.8,
+    "avgCatchYards": 8.8,
     "+/-": 4.0
   },
   {
@@ -1715,6 +2627,7 @@
     "teamAbbrev": "PHL",
     "goals": 5.0,
     "assists": 2.0,
+    "secondaryAssists": 6.0,
     "blocks": 6.0,
     "turnovers": 1.0,
     "touches": 29.0,
@@ -1722,7 +2635,14 @@
     "catches": 26.0,
     "offensePoints": 8.0,
     "defensePoints": 62.0,
-    "+/-": 12.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 167.5,
+    "avgThrowYards": 7.3,
+    "totalCatchYards": 254.6,
+    "avgCatchYards": 9.8,
+    "+/-": 11.0
   },
   {
     "player": "16 Emily Branson",
@@ -1730,6 +2650,7 @@
     "teamAbbrev": "NASH",
     "goals": 8.0,
     "assists": 3.0,
+    "secondaryAssists": 4.0,
     "blocks": 1.0,
     "turnovers": 16.0,
     "touches": 138.0,
@@ -1737,7 +2658,14 @@
     "catches": 117.0,
     "offensePoints": 63.0,
     "defensePoints": 13.0,
-    "+/-": -4.0
+    "possessionsInitiated": 21.0,
+    "throwerErrors": 14.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 811.5,
+    "avgThrowYards": 7.1,
+    "totalCatchYards": 246.3,
+    "avgCatchYards": 2.1,
+    "+/-": -20.0
   },
   {
     "player": "16 Erin Rea",
@@ -1745,6 +2673,7 @@
     "teamAbbrev": "PORT",
     "goals": 6.0,
     "assists": 2.0,
+    "secondaryAssists": 5.0,
     "blocks": 4.0,
     "turnovers": 12.0,
     "touches": 52.0,
@@ -1752,7 +2681,14 @@
     "catches": 50.0,
     "offensePoints": 55.0,
     "defensePoints": 6.0,
-    "+/-": 0.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 6.0,
+    "totalThrowYards": 214.6,
+    "avgThrowYards": 5.6,
+    "totalCatchYards": 600.5,
+    "avgCatchYards": 12.0,
+    "+/-": -12.0
   },
   {
     "player": "16 Grace Maroon",
@@ -1760,6 +2696,7 @@
     "teamAbbrev": "PHL",
     "goals": 7.0,
     "assists": 4.0,
+    "secondaryAssists": 11.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 78.0,
@@ -1767,7 +2704,14 @@
     "catches": 76.0,
     "offensePoints": 42.0,
     "defensePoints": 12.0,
-    "+/-": 11.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 258.9,
+    "avgThrowYards": 3.7,
+    "totalCatchYards": 720.0,
+    "avgCatchYards": 9.5,
+    "+/-": 10.0
   },
   {
     "player": "16 Kinsey Neas",
@@ -1775,6 +2719,7 @@
     "teamAbbrev": "ATX",
     "goals": 3.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 2.0,
     "turnovers": 5.0,
     "touches": 30.0,
@@ -1782,7 +2727,14 @@
     "catches": 29.0,
     "offensePoints": 6.0,
     "defensePoints": 32.0,
-    "+/-": 0.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 24.1,
+    "avgThrowYards": 1.0,
+    "totalCatchYards": 373.5,
+    "avgCatchYards": 12.9,
+    "+/-": -5.0
   },
   {
     "player": "16 Margaret Walker",
@@ -1790,6 +2742,7 @@
     "teamAbbrev": "DC",
     "goals": 2.0,
     "assists": 7.0,
+    "secondaryAssists": 4.0,
     "blocks": 3.0,
     "turnovers": 8.0,
     "touches": 112.0,
@@ -1797,7 +2750,14 @@
     "catches": 87.0,
     "offensePoints": 21.0,
     "defensePoints": 21.0,
-    "+/-": 4.0
+    "possessionsInitiated": 25.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 664.8,
+    "avgThrowYards": 6.6,
+    "totalCatchYards": 176.8,
+    "avgCatchYards": 2.0,
+    "+/-": -4.0
   },
   {
     "player": "16 Riely Kuznicki",
@@ -1805,6 +2765,7 @@
     "teamAbbrev": "INDY",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 3.0,
     "turnovers": 1.0,
     "touches": 2.0,
@@ -1812,7 +2773,14 @@
     "catches": 2.0,
     "offensePoints": 2.0,
     "defensePoints": 10.0,
-    "+/-": 2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -3.3,
+    "avgThrowYards": -3.3,
+    "totalCatchYards": 19.5,
+    "avgCatchYards": 9.7,
+    "+/-": 1.0
   },
   {
     "player": "16 Tania Proksch",
@@ -1820,6 +2788,7 @@
     "teamAbbrev": "RAL",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 4.0,
     "touches": 6.0,
@@ -1827,7 +2796,14 @@
     "catches": 6.0,
     "offensePoints": 7.0,
     "defensePoints": 23.0,
-    "+/-": -2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 19.3,
+    "avgThrowYards": 6.4,
+    "totalCatchYards": 128.7,
+    "avgCatchYards": 21.4,
+    "+/-": -6.0
   },
   {
     "player": "17 Allie Milligan",
@@ -1835,6 +2811,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 8.0,
@@ -1842,7 +2819,14 @@
     "catches": 3.0,
     "offensePoints": 2.0,
     "defensePoints": 16.0,
-    "+/-": -2.0
+    "possessionsInitiated": 5.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 32.1,
+    "avgThrowYards": 5.3,
+    "totalCatchYards": -6.1,
+    "avgCatchYards": -2.0,
+    "+/-": -4.0
   },
   {
     "player": "17 Caitlin Duffner",
@@ -1850,6 +2834,7 @@
     "teamAbbrev": "MKE",
     "goals": 7.0,
     "assists": 1.0,
+    "secondaryAssists": 5.0,
     "blocks": 9.0,
     "turnovers": 8.0,
     "touches": 69.0,
@@ -1857,7 +2842,14 @@
     "catches": 67.0,
     "offensePoints": 67.0,
     "defensePoints": 8.0,
-    "+/-": 9.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 6.0,
+    "totalThrowYards": 75.6,
+    "avgThrowYards": 1.3,
+    "totalCatchYards": 784.4,
+    "avgCatchYards": 11.7,
+    "+/-": 1.0
   },
   {
     "player": "17 Candy Bolte",
@@ -1865,6 +2857,7 @@
     "teamAbbrev": "ATL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 5.0,
@@ -1872,7 +2865,14 @@
     "catches": 5.0,
     "offensePoints": 3.0,
     "defensePoints": 2.0,
-    "+/-": -2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 18.7,
+    "avgThrowYards": 6.2,
+    "totalCatchYards": -2.3,
+    "avgCatchYards": -0.5,
+    "+/-": -4.0
   },
   {
     "player": "17 Emily Przykucki",
@@ -1880,6 +2880,7 @@
     "teamAbbrev": "RAL",
     "goals": 1.0,
     "assists": 2.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 3.0,
     "touches": 20.0,
@@ -1887,7 +2888,14 @@
     "catches": 15.0,
     "offensePoints": 3.0,
     "defensePoints": 13.0,
-    "+/-": 2.0
+    "possessionsInitiated": 5.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 95.7,
+    "avgThrowYards": 6.0,
+    "totalCatchYards": -3.5,
+    "avgCatchYards": -0.2,
+    "+/-": -1.0
   },
   {
     "player": "17 Evelina Pierce",
@@ -1895,6 +2903,7 @@
     "teamAbbrev": "ATL",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 2.0,
@@ -1902,6 +2911,13 @@
     "catches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 1.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 11.4,
+    "avgThrowYards": 5.7,
+    "totalCatchYards": 43.7,
+    "avgCatchYards": 21.9,
     "+/-": 1.0
   },
   {
@@ -1910,6 +2926,7 @@
     "teamAbbrev": "PORT",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 6.0,
     "blocks": 0.0,
     "turnovers": 12.0,
     "touches": 169.0,
@@ -1917,7 +2934,14 @@
     "catches": 117.0,
     "offensePoints": 47.0,
     "defensePoints": 6.0,
-    "+/-": -11.0
+    "possessionsInitiated": 52.0,
+    "throwerErrors": 10.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 763.1,
+    "avgThrowYards": 5.0,
+    "totalCatchYards": -129.5,
+    "avgCatchYards": -1.1,
+    "+/-": -23.0
   },
   {
     "player": "17 Kristin Dudley",
@@ -1925,6 +2949,7 @@
     "teamAbbrev": "INDY",
     "goals": 3.0,
     "assists": 5.0,
+    "secondaryAssists": 4.0,
     "blocks": 0.0,
     "turnovers": 10.0,
     "touches": 114.0,
@@ -1932,7 +2957,14 @@
     "catches": 88.0,
     "offensePoints": 40.0,
     "defensePoints": 9.0,
-    "+/-": -2.0
+    "possessionsInitiated": 26.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 578.0,
+    "avgThrowYards": 5.9,
+    "totalCatchYards": 83.2,
+    "avgCatchYards": 0.9,
+    "+/-": -12.0
   },
   {
     "player": "17 Olympia Walker",
@@ -1940,6 +2972,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 1.0,
@@ -1947,6 +2980,13 @@
     "catches": 1.0,
     "offensePoints": 1.0,
     "defensePoints": 3.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 44.5,
+    "avgThrowYards": 44.5,
+    "totalCatchYards": 14.4,
+    "avgCatchYards": 14.4,
     "+/-": 0.0
   },
   {
@@ -1955,6 +2995,7 @@
     "teamAbbrev": "NASH",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 4.0,
     "touches": 12.0,
@@ -1962,7 +3003,14 @@
     "catches": 12.0,
     "offensePoints": 18.0,
     "defensePoints": 17.0,
-    "+/-": -4.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": -29.9,
+    "avgThrowYards": -3.0,
+    "totalCatchYards": 112.3,
+    "avgCatchYards": 9.4,
+    "+/-": -8.0
   },
   {
     "player": "18 Caroline Tornquist",
@@ -1970,6 +3018,7 @@
     "teamAbbrev": "DC",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 10.0,
@@ -1977,7 +3026,14 @@
     "catches": 10.0,
     "offensePoints": 10.0,
     "defensePoints": 6.0,
-    "+/-": 3.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 63.7,
+    "avgThrowYards": 8.0,
+    "totalCatchYards": 106.6,
+    "avgCatchYards": 10.7,
+    "+/-": 2.0
   },
   {
     "player": "18 Kylie Sterling",
@@ -1985,6 +3041,7 @@
     "teamAbbrev": "NY",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 6.0,
     "touches": 18.0,
@@ -1992,7 +3049,14 @@
     "catches": 18.0,
     "offensePoints": 3.0,
     "defensePoints": 29.0,
-    "+/-": -2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 33.7,
+    "avgThrowYards": -0.7,
+    "totalCatchYards": 200.2,
+    "avgCatchYards": 12.3,
+    "+/-": -8.0
   },
   {
     "player": "18 Laura Gerencser",
@@ -2000,6 +3064,7 @@
     "teamAbbrev": "INDY",
     "goals": 2.0,
     "assists": 5.0,
+    "secondaryAssists": 8.0,
     "blocks": 1.0,
     "turnovers": 2.0,
     "touches": 124.0,
@@ -2007,7 +3072,14 @@
     "catches": 101.0,
     "offensePoints": 53.0,
     "defensePoints": 9.0,
-    "+/-": 6.0
+    "possessionsInitiated": 23.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 512.0,
+    "avgThrowYards": 4.4,
+    "totalCatchYards": -51.0,
+    "avgCatchYards": -0.5,
+    "+/-": 4.0
   },
   {
     "player": "18 Naomi Anderson",
@@ -2015,6 +3087,7 @@
     "teamAbbrev": "ATL",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 3.0,
     "turnovers": 10.0,
     "touches": 40.0,
@@ -2022,7 +3095,14 @@
     "catches": 26.0,
     "offensePoints": 12.0,
     "defensePoints": 17.0,
-    "+/-": -5.0
+    "possessionsInitiated": 12.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 167.6,
+    "avgThrowYards": 6.4,
+    "totalCatchYards": -7.2,
+    "avgCatchYards": -0.3,
+    "+/-": -15.0
   },
   {
     "player": "18 Sarah McKee",
@@ -2030,6 +3110,7 @@
     "teamAbbrev": "RAL",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 3.0,
     "touches": 18.0,
@@ -2037,7 +3118,14 @@
     "catches": 17.0,
     "offensePoints": 10.0,
     "defensePoints": 33.0,
-    "+/-": 1.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 64.5,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": 304.2,
+    "avgCatchYards": 17.9,
+    "+/-": -2.0
   },
   {
     "player": "18 Sumi Onoe",
@@ -2045,6 +3133,7 @@
     "teamAbbrev": "PHL",
     "goals": 3.0,
     "assists": 1.0,
+    "secondaryAssists": 3.0,
     "blocks": 1.0,
     "turnovers": 8.0,
     "touches": 54.0,
@@ -2052,7 +3141,14 @@
     "catches": 53.0,
     "offensePoints": 9.0,
     "defensePoints": 53.0,
-    "+/-": -3.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 5.0,
+    "totalThrowYards": 245.6,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 368.8,
+    "avgCatchYards": 7.0,
+    "+/-": -11.0
   },
   {
     "player": "19 Allie Wallace",
@@ -2060,6 +3156,7 @@
     "teamAbbrev": "DC",
     "goals": 8.0,
     "assists": 7.0,
+    "secondaryAssists": 4.0,
     "blocks": 1.0,
     "turnovers": 2.0,
     "touches": 62.0,
@@ -2067,7 +3164,14 @@
     "catches": 60.0,
     "offensePoints": 20.0,
     "defensePoints": 39.0,
-    "+/-": 14.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 478.8,
+    "avgThrowYards": 9.0,
+    "totalCatchYards": 604.8,
+    "avgCatchYards": 10.1,
+    "+/-": 12.0
   },
   {
     "player": "19 Bethany Bailey",
@@ -2075,6 +3179,7 @@
     "teamAbbrev": "NASH",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 1.0,
@@ -2082,6 +3187,13 @@
     "catches": 1.0,
     "offensePoints": 4.0,
     "defensePoints": 14.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -1.0,
+    "avgThrowYards": -1.0,
+    "totalCatchYards": 6.4,
+    "avgCatchYards": 6.4,
     "+/-": 0.0
   },
   {
@@ -2090,6 +3202,7 @@
     "teamAbbrev": "NY",
     "goals": 4.0,
     "assists": 4.0,
+    "secondaryAssists": 3.0,
     "blocks": 2.0,
     "turnovers": 2.0,
     "touches": 36.0,
@@ -2097,7 +3210,14 @@
     "catches": 36.0,
     "offensePoints": 13.0,
     "defensePoints": 58.0,
-    "+/-": 8.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 110.4,
+    "avgThrowYards": 4.1,
+    "totalCatchYards": 282.9,
+    "avgCatchYards": 7.9,
+    "+/-": 6.0
   },
   {
     "player": "19 Elle Mayer",
@@ -2105,6 +3225,7 @@
     "teamAbbrev": "ATL",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 3.0,
     "touches": 21.0,
@@ -2112,7 +3233,14 @@
     "catches": 20.0,
     "offensePoints": 18.0,
     "defensePoints": 4.0,
-    "+/-": -2.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 38.6,
+    "avgThrowYards": 2.3,
+    "totalCatchYards": 80.5,
+    "avgCatchYards": 4.0,
+    "+/-": -5.0
   },
   {
     "player": "19 Emily Cohen",
@@ -2120,6 +3248,7 @@
     "teamAbbrev": "MKE",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 6.0,
@@ -2127,7 +3256,14 @@
     "catches": 6.0,
     "offensePoints": 7.0,
     "defensePoints": 1.0,
-    "+/-": -1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 2.0,
+    "avgThrowYards": 0.4,
+    "totalCatchYards": 118.3,
+    "avgCatchYards": 19.7,
+    "+/-": -2.0
   },
   {
     "player": "19 Megan Randall",
@@ -2135,6 +3271,7 @@
     "teamAbbrev": "MINN",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 4.0,
@@ -2142,6 +3279,13 @@
     "catches": 4.0,
     "offensePoints": 2.0,
     "defensePoints": 18.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -22.5,
+    "avgThrowYards": -5.6,
+    "totalCatchYards": 33.9,
+    "avgCatchYards": 8.5,
     "+/-": 0.0
   },
   {
@@ -2150,6 +3294,7 @@
     "teamAbbrev": "PORT",
     "goals": 7.0,
     "assists": 3.0,
+    "secondaryAssists": 4.0,
     "blocks": 5.0,
     "turnovers": 10.0,
     "touches": 65.0,
@@ -2157,7 +3302,14 @@
     "catches": 61.0,
     "offensePoints": 19.0,
     "defensePoints": 36.0,
-    "+/-": 5.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 228.8,
+    "avgThrowYards": 4.6,
+    "totalCatchYards": 537.9,
+    "avgCatchYards": 8.8,
+    "+/-": -5.0
   },
   {
     "player": "19 Sydney Kelley",
@@ -2165,6 +3317,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 2.0,
@@ -2172,7 +3325,14 @@
     "catches": 1.0,
     "offensePoints": 6.0,
     "defensePoints": 10.0,
-    "+/-": -2.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 14.1,
+    "avgCatchYards": 14.1,
+    "+/-": -4.0
   },
   {
     "player": "19 Vanessa Bacorn",
@@ -2180,6 +3340,7 @@
     "teamAbbrev": "ATX",
     "goals": 5.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 5.0,
     "turnovers": 5.0,
     "touches": 32.0,
@@ -2187,7 +3348,14 @@
     "catches": 32.0,
     "offensePoints": 9.0,
     "defensePoints": 35.0,
-    "+/-": 6.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 4.0,
+    "totalThrowYards": 56.8,
+    "avgThrowYards": 2.3,
+    "totalCatchYards": 622.1,
+    "avgCatchYards": 19.4,
+    "+/-": 1.0
   },
   {
     "player": "20 Bridget Mizener",
@@ -2195,6 +3363,7 @@
     "teamAbbrev": "RAL",
     "goals": 1.0,
     "assists": 3.0,
+    "secondaryAssists": 3.0,
     "blocks": 2.0,
     "turnovers": 2.0,
     "touches": 37.0,
@@ -2202,7 +3371,14 @@
     "catches": 22.0,
     "offensePoints": 2.0,
     "defensePoints": 16.0,
-    "+/-": 4.0
+    "possessionsInitiated": 15.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 287.2,
+    "avgThrowYards": 8.7,
+    "totalCatchYards": 52.4,
+    "avgCatchYards": 2.4,
+    "+/-": 2.0
   },
   {
     "player": "20 Danielle Walsh",
@@ -2210,6 +3386,7 @@
     "teamAbbrev": "PHL",
     "goals": 1.0,
     "assists": 13.0,
+    "secondaryAssists": 14.0,
     "blocks": 3.0,
     "turnovers": 17.0,
     "touches": 231.0,
@@ -2217,7 +3394,14 @@
     "catches": 188.0,
     "offensePoints": 55.0,
     "defensePoints": 11.0,
-    "+/-": 0.0
+    "possessionsInitiated": 43.0,
+    "throwerErrors": 14.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 1321.0,
+    "avgThrowYards": 6.1,
+    "totalCatchYards": 261.1,
+    "avgCatchYards": 1.4,
+    "+/-": -17.0
   },
   {
     "player": "20 Madison Lang",
@@ -2225,6 +3409,7 @@
     "teamAbbrev": "MKE",
     "goals": 1.0,
     "assists": 3.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 7.0,
     "touches": 69.0,
@@ -2232,7 +3417,14 @@
     "catches": 52.0,
     "offensePoints": 30.0,
     "defensePoints": 4.0,
-    "+/-": -3.0
+    "possessionsInitiated": 17.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 330.9,
+    "avgThrowYards": 5.7,
+    "totalCatchYards": 131.0,
+    "avgCatchYards": 2.5,
+    "+/-": -10.0
   },
   {
     "player": "20 Noel Holmes",
@@ -2240,6 +3432,7 @@
     "teamAbbrev": "NASH",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 4.0,
     "blocks": 1.0,
     "turnovers": 5.0,
     "touches": 39.0,
@@ -2247,7 +3440,14 @@
     "catches": 33.0,
     "offensePoints": 22.0,
     "defensePoints": 23.0,
-    "+/-": -3.0
+    "possessionsInitiated": 6.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 191.3,
+    "avgThrowYards": 5.8,
+    "totalCatchYards": 64.3,
+    "avgCatchYards": 2.0,
+    "+/-": -8.0
   },
   {
     "player": "20 Shirley Saunders",
@@ -2255,6 +3455,7 @@
     "teamAbbrev": "INDY",
     "goals": 3.0,
     "assists": 2.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 3.0,
     "touches": 23.0,
@@ -2262,7 +3463,14 @@
     "catches": 23.0,
     "offensePoints": 27.0,
     "defensePoints": 14.0,
-    "+/-": 3.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 67.0,
+    "avgThrowYards": 3.9,
+    "totalCatchYards": 302.3,
+    "avgCatchYards": 13.1,
+    "+/-": 0.0
   },
   {
     "player": "20 Soju Hokari",
@@ -2270,6 +3478,7 @@
     "teamAbbrev": "ATL",
     "goals": 0.0,
     "assists": 3.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 6.0,
     "touches": 61.0,
@@ -2277,7 +3486,14 @@
     "catches": 46.0,
     "offensePoints": 29.0,
     "defensePoints": 11.0,
-    "+/-": -1.0
+    "possessionsInitiated": 15.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 296.7,
+    "avgThrowYards": 5.4,
+    "totalCatchYards": 244.0,
+    "avgCatchYards": 5.3,
+    "+/-": -7.0
   },
   {
     "player": "20 Yina Cartagena",
@@ -2285,6 +3501,7 @@
     "teamAbbrev": "NY",
     "goals": 5.0,
     "assists": 37.0,
+    "secondaryAssists": 21.0,
     "blocks": 3.0,
     "turnovers": 11.0,
     "touches": 297.0,
@@ -2292,7 +3509,14 @@
     "catches": 253.0,
     "offensePoints": 86.0,
     "defensePoints": 29.0,
-    "+/-": 34.0
+    "possessionsInitiated": 44.0,
+    "throwerErrors": 10.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 3080.8,
+    "avgThrowYards": 11.1,
+    "totalCatchYards": 1065.1,
+    "avgCatchYards": 4.2,
+    "+/-": 23.0
   },
   {
     "player": "21 Annie Shriver",
@@ -2300,6 +3524,7 @@
     "teamAbbrev": "MKE",
     "goals": 4.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 5.0,
     "turnovers": 19.0,
     "touches": 61.0,
@@ -2307,7 +3532,14 @@
     "catches": 56.0,
     "offensePoints": 59.0,
     "defensePoints": 8.0,
-    "+/-": -8.0
+    "possessionsInitiated": 5.0,
+    "throwerErrors": 16.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 165.0,
+    "avgThrowYards": 4.1,
+    "totalCatchYards": 545.5,
+    "avgCatchYards": 9.7,
+    "+/-": -27.0
   },
   {
     "player": "21 Elena Rubino",
@@ -2315,6 +3547,7 @@
     "teamAbbrev": "NASH",
     "goals": 6.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 7.0,
     "turnovers": 3.0,
     "touches": 18.0,
@@ -2322,7 +3555,14 @@
     "catches": 18.0,
     "offensePoints": 20.0,
     "defensePoints": 37.0,
-    "+/-": 12.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 24.6,
+    "avgThrowYards": 3.1,
+    "totalCatchYards": 424.9,
+    "avgCatchYards": 23.6,
+    "+/-": 9.0
   },
   {
     "player": "21 Elizabeth Burkhardt",
@@ -2330,6 +3570,7 @@
     "teamAbbrev": "INDY",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 15.0,
@@ -2337,7 +3578,14 @@
     "catches": 11.0,
     "offensePoints": 4.0,
     "defensePoints": 18.0,
-    "+/-": 0.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 38.3,
+    "avgThrowYards": 3.5,
+    "totalCatchYards": 45.8,
+    "avgCatchYards": 4.2,
+    "+/-": -1.0
   },
   {
     "player": "21 Jess Oh",
@@ -2345,6 +3593,7 @@
     "teamAbbrev": "DC",
     "goals": 3.0,
     "assists": 7.0,
+    "secondaryAssists": 11.0,
     "blocks": 3.0,
     "turnovers": 5.0,
     "touches": 112.0,
@@ -2352,7 +3601,14 @@
     "catches": 94.0,
     "offensePoints": 10.0,
     "defensePoints": 49.0,
-    "+/-": 8.0
+    "possessionsInitiated": 18.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 716.7,
+    "avgThrowYards": 6.8,
+    "totalCatchYards": 225.3,
+    "avgCatchYards": 2.4,
+    "+/-": 3.0
   },
   {
     "player": "21 Linda Morse",
@@ -2360,6 +3616,7 @@
     "teamAbbrev": "PHL",
     "goals": 9.0,
     "assists": 11.0,
+    "secondaryAssists": 5.0,
     "blocks": 3.0,
     "turnovers": 10.0,
     "touches": 70.0,
@@ -2367,7 +3624,14 @@
     "catches": 69.0,
     "offensePoints": 27.0,
     "defensePoints": 43.0,
-    "+/-": 13.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 519.7,
+    "avgThrowYards": 10.0,
+    "totalCatchYards": 873.9,
+    "avgCatchYards": 12.7,
+    "+/-": 3.0
   },
   {
     "player": "21 Montana Roberts",
@@ -2375,6 +3639,7 @@
     "teamAbbrev": "NY",
     "goals": 2.0,
     "assists": 4.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 2.0,
     "touches": 19.0,
@@ -2382,7 +3647,14 @@
     "catches": 19.0,
     "offensePoints": 24.0,
     "defensePoints": 30.0,
-    "+/-": 5.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 105.3,
+    "avgThrowYards": 7.0,
+    "totalCatchYards": 218.0,
+    "avgCatchYards": 11.5,
+    "+/-": 3.0
   },
   {
     "player": "21 Samantha Li",
@@ -2390,6 +3662,7 @@
     "teamAbbrev": "ATL",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 4.0,
     "touches": 57.0,
@@ -2397,7 +3670,14 @@
     "catches": 50.0,
     "offensePoints": 46.0,
     "defensePoints": 2.0,
-    "+/-": -2.0
+    "possessionsInitiated": 7.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 200.7,
+    "avgThrowYards": 4.0,
+    "totalCatchYards": 203.2,
+    "avgCatchYards": 4.1,
+    "+/-": -6.0
   },
   {
     "player": "21 Sarah Mondschein",
@@ -2405,6 +3685,7 @@
     "teamAbbrev": "MINN",
     "goals": 6.0,
     "assists": 6.0,
+    "secondaryAssists": 4.0,
     "blocks": 4.0,
     "turnovers": 12.0,
     "touches": 42.0,
@@ -2412,7 +3693,14 @@
     "catches": 38.0,
     "offensePoints": 26.0,
     "defensePoints": 65.0,
-    "+/-": 4.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 5.0,
+    "totalThrowYards": 211.0,
+    "avgThrowYards": 7.3,
+    "totalCatchYards": 530.7,
+    "avgCatchYards": 14.0,
+    "+/-": -8.0
   },
   {
     "player": "22 Alex Ballinger",
@@ -2420,6 +3708,7 @@
     "teamAbbrev": "MKE",
     "goals": 0.0,
     "assists": 4.0,
+    "secondaryAssists": 12.0,
     "blocks": 8.0,
     "turnovers": 11.0,
     "touches": 99.0,
@@ -2427,7 +3716,14 @@
     "catches": 75.0,
     "offensePoints": 31.0,
     "defensePoints": 55.0,
-    "+/-": 1.0
+    "possessionsInitiated": 24.0,
+    "throwerErrors": 10.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 419.6,
+    "avgThrowYards": 4.9,
+    "totalCatchYards": 319.7,
+    "avgCatchYards": 4.3,
+    "+/-": -10.0
   },
   {
     "player": "22 Emily Wycoff",
@@ -2435,6 +3731,7 @@
     "teamAbbrev": "INDY",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 3.0,
     "turnovers": 3.0,
     "touches": 23.0,
@@ -2442,7 +3739,14 @@
     "catches": 22.0,
     "offensePoints": 16.0,
     "defensePoints": 47.0,
-    "+/-": 0.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 101.6,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 186.1,
+    "avgCatchYards": 8.5,
+    "+/-": -3.0
   },
   {
     "player": "22 Erin McCann",
@@ -2450,6 +3754,7 @@
     "teamAbbrev": "DC",
     "goals": 2.0,
     "assists": 4.0,
+    "secondaryAssists": 4.0,
     "blocks": 9.0,
     "turnovers": 1.0,
     "touches": 43.0,
@@ -2457,7 +3762,14 @@
     "catches": 40.0,
     "offensePoints": 12.0,
     "defensePoints": 40.0,
-    "+/-": 14.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 197.2,
+    "avgThrowYards": 5.3,
+    "totalCatchYards": 388.4,
+    "avgCatchYards": 9.7,
+    "+/-": 13.0
   },
   {
     "player": "22 Julia Zwierzynski",
@@ -2465,6 +3777,7 @@
     "teamAbbrev": "RAL",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 3.0,
     "turnovers": 4.0,
     "touches": 10.0,
@@ -2472,7 +3785,14 @@
     "catches": 10.0,
     "offensePoints": 9.0,
     "defensePoints": 25.0,
-    "+/-": 2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 51.1,
+    "avgThrowYards": 8.5,
+    "totalCatchYards": 188.5,
+    "avgCatchYards": 18.9,
+    "+/-": -2.0
   },
   {
     "player": "22 Liz Hart",
@@ -2480,6 +3800,7 @@
     "teamAbbrev": "PHL",
     "goals": 4.0,
     "assists": 6.0,
+    "secondaryAssists": 2.0,
     "blocks": 2.0,
     "turnovers": 5.0,
     "touches": 53.0,
@@ -2487,7 +3808,14 @@
     "catches": 53.0,
     "offensePoints": 36.0,
     "defensePoints": 9.0,
-    "+/-": 7.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 399.1,
+    "avgThrowYards": 8.7,
+    "totalCatchYards": 444.8,
+    "avgCatchYards": 8.4,
+    "+/-": 2.0
   },
   {
     "player": "22 Rebecca Henley",
@@ -2495,6 +3823,7 @@
     "teamAbbrev": "NASH",
     "goals": 9.0,
     "assists": 2.0,
+    "secondaryAssists": 4.0,
     "blocks": 5.0,
     "turnovers": 3.0,
     "touches": 74.0,
@@ -2502,7 +3831,14 @@
     "catches": 72.0,
     "offensePoints": 71.0,
     "defensePoints": 14.0,
-    "+/-": 13.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 145.0,
+    "avgThrowYards": 2.3,
+    "totalCatchYards": 940.8,
+    "avgCatchYards": 13.1,
+    "+/-": 10.0
   },
   {
     "player": "22 Sydney Loughran",
@@ -2510,6 +3846,7 @@
     "teamAbbrev": "ATX",
     "goals": 5.0,
     "assists": 4.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 6.0,
     "touches": 44.0,
@@ -2517,7 +3854,14 @@
     "catches": 42.0,
     "offensePoints": 24.0,
     "defensePoints": 26.0,
-    "+/-": 5.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 115.8,
+    "avgThrowYards": 3.6,
+    "totalCatchYards": 417.5,
+    "avgCatchYards": 9.9,
+    "+/-": -1.0
   },
   {
     "player": "23 Allie Mueting",
@@ -2525,6 +3869,7 @@
     "teamAbbrev": "MKE",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 0.0,
     "touches": 5.0,
@@ -2532,6 +3877,13 @@
     "catches": 5.0,
     "offensePoints": 7.0,
     "defensePoints": 24.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 3.9,
+    "avgThrowYards": 1.0,
+    "totalCatchYards": 104.1,
+    "avgCatchYards": 20.8,
     "+/-": 2.0
   },
   {
@@ -2540,6 +3892,7 @@
     "teamAbbrev": "NASH",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 7.0,
@@ -2547,7 +3900,14 @@
     "catches": 7.0,
     "offensePoints": 9.0,
     "defensePoints": 21.0,
-    "+/-": 1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -48.0,
+    "avgThrowYards": -9.6,
+    "totalCatchYards": 73.4,
+    "avgCatchYards": 10.5,
+    "+/-": 0.0
   },
   {
     "player": "23 Colette Pellegrini",
@@ -2555,6 +3915,7 @@
     "teamAbbrev": "PORT",
     "goals": 8.0,
     "assists": 10.0,
+    "secondaryAssists": 5.0,
     "blocks": 4.0,
     "turnovers": 9.0,
     "touches": 67.0,
@@ -2562,7 +3923,14 @@
     "catches": 65.0,
     "offensePoints": 51.0,
     "defensePoints": 6.0,
-    "+/-": 13.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 7.0,
+    "totalThrowYards": 264.2,
+    "avgThrowYards": 4.9,
+    "totalCatchYards": 673.4,
+    "avgCatchYards": 10.4,
+    "+/-": 4.0
   },
   {
     "player": "23 Lili Hobday",
@@ -2570,6 +3938,7 @@
     "teamAbbrev": "INDY",
     "goals": 3.0,
     "assists": 3.0,
+    "secondaryAssists": 2.0,
     "blocks": 2.0,
     "turnovers": 4.0,
     "touches": 61.0,
@@ -2577,7 +3946,14 @@
     "catches": 52.0,
     "offensePoints": 13.0,
     "defensePoints": 49.0,
-    "+/-": 4.0
+    "possessionsInitiated": 9.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 192.3,
+    "avgThrowYards": 3.6,
+    "totalCatchYards": 484.0,
+    "avgCatchYards": 9.3,
+    "+/-": 0.0
   },
   {
     "player": "23 Linnea Soo",
@@ -2585,6 +3961,7 @@
     "teamAbbrev": "NY",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 5.0,
     "touches": 26.0,
@@ -2592,7 +3969,14 @@
     "catches": 25.0,
     "offensePoints": 27.0,
     "defensePoints": 7.0,
-    "+/-": 0.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 52.6,
+    "avgThrowYards": 2.6,
+    "totalCatchYards": 280.8,
+    "avgCatchYards": 11.2,
+    "+/-": -5.0
   },
   {
     "player": "23 Lisa Dang",
@@ -2600,6 +3984,7 @@
     "teamAbbrev": "DC",
     "goals": 0.0,
     "assists": 4.0,
+    "secondaryAssists": 9.0,
     "blocks": 3.0,
     "turnovers": 6.0,
     "touches": 151.0,
@@ -2607,7 +3992,14 @@
     "catches": 117.0,
     "offensePoints": 26.0,
     "defensePoints": 26.0,
-    "+/-": 1.0
+    "possessionsInitiated": 34.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 840.6,
+    "avgThrowYards": 6.0,
+    "totalCatchYards": 99.7,
+    "avgCatchYards": 0.9,
+    "+/-": -5.0
   },
   {
     "player": "23 Natalie Bova",
@@ -2615,6 +4007,7 @@
     "teamAbbrev": "PHL",
     "goals": 8.0,
     "assists": 11.0,
+    "secondaryAssists": 6.0,
     "blocks": 2.0,
     "turnovers": 4.0,
     "touches": 134.0,
@@ -2622,7 +4015,14 @@
     "catches": 120.0,
     "offensePoints": 53.0,
     "defensePoints": 11.0,
-    "+/-": 17.0
+    "possessionsInitiated": 14.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 615.5,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 381.4,
+    "avgCatchYards": 3.2,
+    "+/-": 13.0
   },
   {
     "player": "23 Nicole Patterson",
@@ -2630,6 +4030,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 0.0,
     "touches": 3.0,
@@ -2637,6 +4038,13 @@
     "catches": 2.0,
     "offensePoints": 3.0,
     "defensePoints": 9.0,
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 31.0,
+    "avgThrowYards": 10.3,
+    "totalCatchYards": 26.3,
+    "avgCatchYards": 13.2,
     "+/-": 2.0
   },
   {
@@ -2645,6 +4053,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 0.0,
@@ -2652,6 +4061,13 @@
     "catches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 5.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 0.0,
+    "avgCatchYards": 0.0,
     "+/-": 0.0
   },
   {
@@ -2660,6 +4076,7 @@
     "teamAbbrev": "INDY",
     "goals": 16.0,
     "assists": 8.0,
+    "secondaryAssists": 5.0,
     "blocks": 6.0,
     "turnovers": 8.0,
     "touches": 62.0,
@@ -2667,7 +4084,14 @@
     "catches": 61.0,
     "offensePoints": 55.0,
     "defensePoints": 21.0,
-    "+/-": 22.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 4.0,
+    "totalThrowYards": 249.9,
+    "avgThrowYards": 6.1,
+    "totalCatchYards": 942.2,
+    "avgCatchYards": 15.7,
+    "+/-": 14.0
   },
   {
     "player": "24 Allegra Johnson McKee",
@@ -2675,6 +4099,7 @@
     "teamAbbrev": "MINN",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 2.0,
@@ -2682,6 +4107,13 @@
     "catches": 2.0,
     "offensePoints": 5.0,
     "defensePoints": 11.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 9.7,
+    "avgThrowYards": 4.9,
+    "totalCatchYards": 22.4,
+    "avgCatchYards": 11.2,
     "+/-": 1.0
   },
   {
@@ -2690,6 +4122,7 @@
     "teamAbbrev": "PORT",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 3.0,
     "touches": 35.0,
@@ -2697,7 +4130,14 @@
     "catches": 21.0,
     "offensePoints": 10.0,
     "defensePoints": 20.0,
-    "+/-": -1.0
+    "possessionsInitiated": 14.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 194.3,
+    "avgThrowYards": 6.3,
+    "totalCatchYards": -29.6,
+    "avgCatchYards": -1.4,
+    "+/-": -4.0
   },
   {
     "player": "24 Casey Gorman",
@@ -2705,6 +4145,7 @@
     "teamAbbrev": "PHL",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 6.0,
     "turnovers": 6.0,
     "touches": 12.0,
@@ -2712,7 +4153,14 @@
     "catches": 11.0,
     "offensePoints": 2.0,
     "defensePoints": 37.0,
-    "+/-": 3.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 64.4,
+    "avgThrowYards": 10.7,
+    "totalCatchYards": 111.9,
+    "avgCatchYards": 10.2,
+    "+/-": -3.0
   },
   {
     "player": "24 Hannah Boettcher",
@@ -2720,6 +4168,7 @@
     "teamAbbrev": "RAL",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 5.0,
     "blocks": 2.0,
     "turnovers": 8.0,
     "touches": 37.0,
@@ -2727,7 +4176,14 @@
     "catches": 35.0,
     "offensePoints": 9.0,
     "defensePoints": 41.0,
-    "+/-": -4.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 53.6,
+    "avgThrowYards": 2.0,
+    "totalCatchYards": 364.6,
+    "avgCatchYards": 10.4,
+    "+/-": -12.0
   },
   {
     "player": "24 Heidi Umhoefer",
@@ -2735,6 +4191,7 @@
     "teamAbbrev": "MKE",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 0.0,
     "touches": 12.0,
@@ -2742,6 +4199,13 @@
     "catches": 11.0,
     "offensePoints": 10.0,
     "defensePoints": 19.0,
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 44.2,
+    "avgThrowYards": 4.2,
+    "totalCatchYards": 175.3,
+    "avgCatchYards": 15.3,
     "+/-": 4.0
   },
   {
@@ -2750,6 +4214,7 @@
     "teamAbbrev": "DC",
     "goals": 4.0,
     "assists": 5.0,
+    "secondaryAssists": 3.0,
     "blocks": 4.0,
     "turnovers": 6.0,
     "touches": 37.0,
@@ -2757,7 +4222,14 @@
     "catches": 34.0,
     "offensePoints": 6.0,
     "defensePoints": 26.0,
-    "+/-": 7.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 330.6,
+    "avgThrowYards": 11.4,
+    "totalCatchYards": 389.3,
+    "avgCatchYards": 11.5,
+    "+/-": 1.0
   },
   {
     "player": "24 Jesse Shofner",
@@ -2765,6 +4237,7 @@
     "teamAbbrev": "NASH",
     "goals": 1.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 23.0,
@@ -2772,7 +4245,14 @@
     "catches": 16.0,
     "offensePoints": 6.0,
     "defensePoints": 11.0,
-    "+/-": 1.0
+    "possessionsInitiated": 7.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 213.1,
+    "avgThrowYards": 10.7,
+    "totalCatchYards": 37.7,
+    "avgCatchYards": 2.4,
+    "+/-": -1.0
   },
   {
     "player": "24 Jolie Krebs",
@@ -2780,6 +4260,7 @@
     "teamAbbrev": "NY",
     "goals": 16.0,
     "assists": 11.0,
+    "secondaryAssists": 11.0,
     "blocks": 6.0,
     "turnovers": 8.0,
     "touches": 139.0,
@@ -2787,7 +4268,14 @@
     "catches": 133.0,
     "offensePoints": 59.0,
     "defensePoints": 41.0,
-    "+/-": 25.0
+    "possessionsInitiated": 6.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 936.0,
+    "avgThrowYards": 8.1,
+    "totalCatchYards": 1214.1,
+    "avgCatchYards": 9.1,
+    "+/-": 17.0
   },
   {
     "player": "24 Mia Letterie",
@@ -2795,6 +4283,7 @@
     "teamAbbrev": "NASH",
     "goals": 1.0,
     "assists": 4.0,
+    "secondaryAssists": 3.0,
     "blocks": 4.0,
     "turnovers": 14.0,
     "touches": 108.0,
@@ -2802,7 +4291,14 @@
     "catches": 74.0,
     "offensePoints": 38.0,
     "defensePoints": 44.0,
-    "+/-": -5.0
+    "possessionsInitiated": 34.0,
+    "throwerErrors": 14.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 625.5,
+    "avgThrowYards": 7.0,
+    "totalCatchYards": -92.0,
+    "avgCatchYards": -1.2,
+    "+/-": -19.0
   },
   {
     "player": "25 Anna Wozniak",
@@ -2810,6 +4306,7 @@
     "teamAbbrev": "MKE",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 0.0,
     "touches": 6.0,
@@ -2817,6 +4314,13 @@
     "catches": 6.0,
     "offensePoints": 4.0,
     "defensePoints": 17.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -11.2,
+    "avgThrowYards": -2.8,
+    "totalCatchYards": 128.2,
+    "avgCatchYards": 21.4,
     "+/-": 4.0
   },
   {
@@ -2825,6 +4329,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 2.0,
@@ -2832,6 +4337,13 @@
     "catches": 1.0,
     "offensePoints": 0.0,
     "defensePoints": 3.0,
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 20.1,
+    "avgThrowYards": 10.0,
+    "totalCatchYards": 0.4,
+    "avgCatchYards": 0.4,
     "+/-": 0.0
   },
   {
@@ -2840,6 +4352,7 @@
     "teamAbbrev": "RAL",
     "goals": 3.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 4.0,
     "touches": 35.0,
@@ -2847,7 +4360,14 @@
     "catches": 35.0,
     "offensePoints": 19.0,
     "defensePoints": 26.0,
-    "+/-": 2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 105.2,
+    "avgThrowYards": 3.6,
+    "totalCatchYards": 437.9,
+    "avgCatchYards": 12.5,
+    "+/-": -2.0
   },
   {
     "player": "25 Nadine Rowen",
@@ -2855,6 +4375,7 @@
     "teamAbbrev": "NASH",
     "goals": 2.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 4.0,
     "turnovers": 6.0,
     "touches": 38.0,
@@ -2862,7 +4383,14 @@
     "catches": 36.0,
     "offensePoints": 31.0,
     "defensePoints": 15.0,
-    "+/-": 2.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 137.3,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": 437.7,
+    "avgCatchYards": 12.2,
+    "+/-": -4.0
   },
   {
     "player": "25 Sabrina Bonaci",
@@ -2870,6 +4398,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 1.0,
@@ -2877,7 +4406,14 @@
     "catches": 1.0,
     "offensePoints": 1.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 9.9,
+    "avgCatchYards": 9.9,
+    "+/-": -2.0
   },
   {
     "player": "26 Amy Broome",
@@ -2885,6 +4421,7 @@
     "teamAbbrev": "ATX",
     "goals": 1.0,
     "assists": 3.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 10.0,
     "touches": 73.0,
@@ -2892,7 +4429,14 @@
     "catches": 45.0,
     "offensePoints": 27.0,
     "defensePoints": 29.0,
-    "+/-": -5.0
+    "possessionsInitiated": 28.0,
+    "throwerErrors": 8.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 376.8,
+    "avgThrowYards": 6.1,
+    "totalCatchYards": 109.8,
+    "avgCatchYards": 2.4,
+    "+/-": -15.0
   },
   {
     "player": "26 Gigi Paulig",
@@ -2900,6 +4444,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 3.0,
@@ -2907,6 +4452,13 @@
     "catches": 3.0,
     "offensePoints": 0.0,
     "defensePoints": 1.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 45.5,
+    "avgThrowYards": 15.2,
+    "totalCatchYards": 12.5,
+    "avgCatchYards": 4.2,
     "+/-": 0.0
   },
   {
@@ -2915,6 +4467,7 @@
     "teamAbbrev": "DC",
     "goals": 1.0,
     "assists": 6.0,
+    "secondaryAssists": 6.0,
     "blocks": 2.0,
     "turnovers": 8.0,
     "touches": 96.0,
@@ -2922,7 +4475,14 @@
     "catches": 67.0,
     "offensePoints": 11.0,
     "defensePoints": 36.0,
-    "+/-": 1.0
+    "possessionsInitiated": 29.0,
+    "throwerErrors": 8.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 623.4,
+    "avgThrowYards": 7.6,
+    "totalCatchYards": 63.3,
+    "avgCatchYards": 0.9,
+    "+/-": -7.0
   },
   {
     "player": "26 Leah Shorb",
@@ -2930,6 +4490,7 @@
     "teamAbbrev": "NASH",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 1.0,
     "touches": 12.0,
@@ -2937,7 +4498,14 @@
     "catches": 11.0,
     "offensePoints": 9.0,
     "defensePoints": 26.0,
-    "+/-": 4.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 29.8,
+    "avgThrowYards": 3.7,
+    "totalCatchYards": 217.0,
+    "avgCatchYards": 19.7,
+    "+/-": 3.0
   },
   {
     "player": "26 Mariabelen Restrepo",
@@ -2945,6 +4513,7 @@
     "teamAbbrev": "NY",
     "goals": 4.0,
     "assists": 3.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 5.0,
     "touches": 35.0,
@@ -2952,7 +4521,14 @@
     "catches": 32.0,
     "offensePoints": 7.0,
     "defensePoints": 66.0,
-    "+/-": 4.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 99.6,
+    "avgThrowYards": 4.0,
+    "totalCatchYards": 398.3,
+    "avgCatchYards": 12.4,
+    "+/-": -1.0
   },
   {
     "player": "26 Morgan Lally",
@@ -2960,6 +4536,7 @@
     "teamAbbrev": "ATL",
     "goals": 5.0,
     "assists": 6.0,
+    "secondaryAssists": 9.0,
     "blocks": 5.0,
     "turnovers": 4.0,
     "touches": 101.0,
@@ -2967,7 +4544,14 @@
     "catches": 98.0,
     "offensePoints": 32.0,
     "defensePoints": 51.0,
-    "+/-": 12.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 306.6,
+    "avgThrowYards": 3.3,
+    "totalCatchYards": 862.2,
+    "avgCatchYards": 8.8,
+    "+/-": 8.0
   },
   {
     "player": "27 Jocelyn Jessop",
@@ -2975,6 +4559,7 @@
     "teamAbbrev": "ATX",
     "goals": 5.0,
     "assists": 4.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 6.0,
     "touches": 60.0,
@@ -2982,7 +4567,14 @@
     "catches": 58.0,
     "offensePoints": 31.0,
     "defensePoints": 23.0,
-    "+/-": 4.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 312.8,
+    "avgThrowYards": 6.4,
+    "totalCatchYards": 393.5,
+    "avgCatchYards": 6.8,
+    "+/-": -2.0
   },
   {
     "player": "27 Katharine Gilbert",
@@ -2990,6 +4582,7 @@
     "teamAbbrev": "NASH",
     "goals": 4.0,
     "assists": 3.0,
+    "secondaryAssists": 9.0,
     "blocks": 3.0,
     "turnovers": 30.0,
     "touches": 319.0,
@@ -2997,7 +4590,14 @@
     "catches": 255.0,
     "offensePoints": 91.0,
     "defensePoints": 19.0,
-    "+/-": -20.0
+    "possessionsInitiated": 64.0,
+    "throwerErrors": 28.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 872.8,
+    "avgThrowYards": 3.1,
+    "totalCatchYards": 1027.3,
+    "avgCatchYards": 4.0,
+    "+/-": -50.0
   },
   {
     "player": "27 Mary Rippe",
@@ -3005,6 +4605,7 @@
     "teamAbbrev": "RAL",
     "goals": 9.0,
     "assists": 2.0,
+    "secondaryAssists": 9.0,
     "blocks": 1.0,
     "turnovers": 5.0,
     "touches": 58.0,
@@ -3012,7 +4613,14 @@
     "catches": 56.0,
     "offensePoints": 37.0,
     "defensePoints": 6.0,
-    "+/-": 7.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 162.3,
+    "avgThrowYards": 3.6,
+    "totalCatchYards": 700.3,
+    "avgCatchYards": 12.5,
+    "+/-": 2.0
   },
   {
     "player": "27 Stef Bugasch",
@@ -3020,6 +4628,7 @@
     "teamAbbrev": "MKE",
     "goals": 3.0,
     "assists": 1.0,
+    "secondaryAssists": 2.0,
     "blocks": 2.0,
     "turnovers": 5.0,
     "touches": 41.0,
@@ -3027,7 +4636,14 @@
     "catches": 34.0,
     "offensePoints": 37.0,
     "defensePoints": 2.0,
-    "+/-": 1.0
+    "possessionsInitiated": 7.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 90.1,
+    "avgThrowYards": 2.9,
+    "totalCatchYards": 246.6,
+    "avgCatchYards": 7.3,
+    "+/-": -4.0
   },
   {
     "player": "27 Therese Doebler",
@@ -3035,6 +4651,7 @@
     "teamAbbrev": "ATL",
     "goals": 1.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 3.0,
     "touches": 46.0,
@@ -3042,7 +4659,14 @@
     "catches": 44.0,
     "offensePoints": 33.0,
     "defensePoints": 25.0,
-    "+/-": 2.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 45.9,
+    "avgThrowYards": 1.1,
+    "totalCatchYards": 273.5,
+    "avgCatchYards": 6.2,
+    "+/-": -1.0
   },
   {
     "player": "28 Claire Revere",
@@ -3050,6 +4674,7 @@
     "teamAbbrev": "RAL",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 23.0,
@@ -3057,7 +4682,14 @@
     "catches": 20.0,
     "offensePoints": 8.0,
     "defensePoints": 12.0,
-    "+/-": 3.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 56.1,
+    "avgThrowYards": 3.0,
+    "totalCatchYards": 121.5,
+    "avgCatchYards": 6.1,
+    "+/-": 2.0
   },
   {
     "player": "28 Emma Peaslee",
@@ -3065,6 +4697,7 @@
     "teamAbbrev": "MINN",
     "goals": 5.0,
     "assists": 1.0,
+    "secondaryAssists": 3.0,
     "blocks": 4.0,
     "turnovers": 5.0,
     "touches": 39.0,
@@ -3072,7 +4705,14 @@
     "catches": 39.0,
     "offensePoints": 46.0,
     "defensePoints": 8.0,
-    "+/-": 5.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 62.0,
+    "avgThrowYards": 2.0,
+    "totalCatchYards": 348.3,
+    "avgCatchYards": 8.9,
+    "+/-": 0.0
   },
   {
     "player": "28 Margie Quinn",
@@ -3080,6 +4720,7 @@
     "teamAbbrev": "NASH",
     "goals": 3.0,
     "assists": 13.0,
+    "secondaryAssists": 8.0,
     "blocks": 1.0,
     "turnovers": 10.0,
     "touches": 205.0,
@@ -3087,7 +4728,14 @@
     "catches": 168.0,
     "offensePoints": 38.0,
     "defensePoints": 10.0,
-    "+/-": 7.0
+    "possessionsInitiated": 37.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 1464.6,
+    "avgThrowYards": 7.7,
+    "totalCatchYards": -77.0,
+    "avgCatchYards": -0.5,
+    "+/-": -3.0
   },
   {
     "player": "29 Charlotte Doran",
@@ -3095,6 +4743,7 @@
     "teamAbbrev": "ATL",
     "goals": 3.0,
     "assists": 1.0,
+    "secondaryAssists": 4.0,
     "blocks": 3.0,
     "turnovers": 7.0,
     "touches": 87.0,
@@ -3102,7 +4751,14 @@
     "catches": 63.0,
     "offensePoints": 27.0,
     "defensePoints": 14.0,
-    "+/-": 0.0
+    "possessionsInitiated": 24.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 524.7,
+    "avgThrowYards": 7.1,
+    "totalCatchYards": 150.2,
+    "avgCatchYards": 2.4,
+    "+/-": -7.0
   },
   {
     "player": "29 Elana Schwam",
@@ -3110,6 +4766,7 @@
     "teamAbbrev": "PORT",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 3.0,
     "blocks": 2.0,
     "turnovers": 4.0,
     "touches": 21.0,
@@ -3117,7 +4774,14 @@
     "catches": 20.0,
     "offensePoints": 21.0,
     "defensePoints": 0.0,
-    "+/-": -1.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 104.8,
+    "avgThrowYards": 6.5,
+    "totalCatchYards": 199.9,
+    "avgCatchYards": 10.0,
+    "+/-": -5.0
   },
   {
     "player": "29 Emily Schloneger",
@@ -3125,6 +4789,7 @@
     "teamAbbrev": "INDY",
     "goals": 3.0,
     "assists": 3.0,
+    "secondaryAssists": 8.0,
     "blocks": 1.0,
     "turnovers": 5.0,
     "touches": 64.0,
@@ -3132,7 +4797,14 @@
     "catches": 63.0,
     "offensePoints": 63.0,
     "defensePoints": 15.0,
-    "+/-": 2.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 230.1,
+    "avgThrowYards": 4.1,
+    "totalCatchYards": 587.3,
+    "avgCatchYards": 9.3,
+    "+/-": -3.0
   },
   {
     "player": "30 Jean Huang",
@@ -3140,6 +4812,7 @@
     "teamAbbrev": "PORT",
     "goals": 3.0,
     "assists": 2.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 7.0,
     "touches": 71.0,
@@ -3147,7 +4820,14 @@
     "catches": 53.0,
     "offensePoints": 18.0,
     "defensePoints": 14.0,
-    "+/-": -1.0
+    "possessionsInitiated": 18.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 470.7,
+    "avgThrowYards": 8.0,
+    "totalCatchYards": 50.1,
+    "avgCatchYards": 0.9,
+    "+/-": -8.0
   },
   {
     "player": "30 Louise Beck",
@@ -3155,6 +4835,7 @@
     "teamAbbrev": "MINN",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 3.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 15.0,
@@ -3162,7 +4843,14 @@
     "catches": 13.0,
     "offensePoints": 14.0,
     "defensePoints": 0.0,
-    "+/-": 0.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 30.5,
+    "avgThrowYards": 2.3,
+    "totalCatchYards": 4.6,
+    "avgCatchYards": 0.4,
+    "+/-": -1.0
   },
   {
     "player": "31 Caitlin Aycock",
@@ -3170,6 +4858,7 @@
     "teamAbbrev": "ATL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 2.0,
@@ -3177,7 +4866,14 @@
     "catches": 1.0,
     "offensePoints": 6.0,
     "defensePoints": 3.0,
-    "+/-": -2.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": -8.1,
+    "avgThrowYards": -8.1,
+    "totalCatchYards": 53.9,
+    "avgCatchYards": 53.9,
+    "+/-": -4.0
   },
   {
     "player": "31 Eli Presberg",
@@ -3185,6 +4881,7 @@
     "teamAbbrev": "NY",
     "goals": 6.0,
     "assists": 4.0,
+    "secondaryAssists": 9.0,
     "blocks": 5.0,
     "turnovers": 7.0,
     "touches": 110.0,
@@ -3192,7 +4889,14 @@
     "catches": 91.0,
     "offensePoints": 28.0,
     "defensePoints": 49.0,
-    "+/-": 8.0
+    "possessionsInitiated": 19.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 449.0,
+    "avgThrowYards": 4.7,
+    "totalCatchYards": 366.3,
+    "avgCatchYards": 4.0,
+    "+/-": 1.0
   },
   {
     "player": "31 Mar\u00eda Vargas",
@@ -3200,6 +4904,7 @@
     "teamAbbrev": "ATL",
     "goals": 1.0,
     "assists": 3.0,
+    "secondaryAssists": 2.0,
     "blocks": 3.0,
     "turnovers": 5.0,
     "touches": 85.0,
@@ -3207,7 +4912,14 @@
     "catches": 59.0,
     "offensePoints": 23.0,
     "defensePoints": 11.0,
-    "+/-": 2.0
+    "possessionsInitiated": 23.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 434.1,
+    "avgThrowYards": 5.8,
+    "totalCatchYards": 233.4,
+    "avgCatchYards": 3.9,
+    "+/-": -3.0
   },
   {
     "player": "31 Nikki Gilbert",
@@ -3215,6 +4927,7 @@
     "teamAbbrev": "ATX",
     "goals": 12.0,
     "assists": 6.0,
+    "secondaryAssists": 7.0,
     "blocks": 4.0,
     "turnovers": 9.0,
     "touches": 88.0,
@@ -3222,7 +4935,14 @@
     "catches": 84.0,
     "offensePoints": 54.0,
     "defensePoints": 18.0,
-    "+/-": 13.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 298.5,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": 870.8,
+    "avgCatchYards": 10.4,
+    "+/-": 4.0
   },
   {
     "player": "32 Annie Bocko",
@@ -3230,6 +4950,7 @@
     "teamAbbrev": "RAL",
     "goals": 3.0,
     "assists": 2.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 6.0,
     "touches": 70.0,
@@ -3237,7 +4958,14 @@
     "catches": 42.0,
     "offensePoints": 48.0,
     "defensePoints": 13.0,
-    "+/-": -1.0
+    "possessionsInitiated": 28.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 353.7,
+    "avgThrowYards": 5.7,
+    "totalCatchYards": 94.1,
+    "avgCatchYards": 2.2,
+    "+/-": -7.0
   },
   {
     "player": "32 Megan Wilson",
@@ -3245,6 +4973,7 @@
     "teamAbbrev": "PORT",
     "goals": 2.0,
     "assists": 6.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 7.0,
     "touches": 31.0,
@@ -3252,7 +4981,14 @@
     "catches": 30.0,
     "offensePoints": 2.0,
     "defensePoints": 53.0,
-    "+/-": 2.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 298.5,
+    "avgThrowYards": 12.4,
+    "totalCatchYards": 297.2,
+    "avgCatchYards": 9.9,
+    "+/-": -5.0
   },
   {
     "player": "32 Mickela Heilicher",
@@ -3260,6 +4996,7 @@
     "teamAbbrev": "MKE",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 4.0,
     "blocks": 1.0,
     "turnovers": 9.0,
     "touches": 43.0,
@@ -3267,7 +5004,14 @@
     "catches": 21.0,
     "offensePoints": 13.0,
     "defensePoints": 25.0,
-    "+/-": -7.0
+    "possessionsInitiated": 22.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 283.8,
+    "avgThrowYards": 9.2,
+    "totalCatchYards": 127.4,
+    "avgCatchYards": 6.1,
+    "+/-": -16.0
   },
   {
     "player": "32 Shani Rosenthal",
@@ -3275,6 +5019,7 @@
     "teamAbbrev": "INDY",
     "goals": 6.0,
     "assists": 6.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 6.0,
     "touches": 40.0,
@@ -3282,7 +5027,14 @@
     "catches": 40.0,
     "offensePoints": 32.0,
     "defensePoints": 9.0,
-    "+/-": 6.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 220.0,
+    "avgThrowYards": 7.9,
+    "totalCatchYards": 546.9,
+    "avgCatchYards": 13.7,
+    "+/-": 0.0
   },
   {
     "player": "33 Amanda Murphy",
@@ -3290,6 +5042,7 @@
     "teamAbbrev": "DC",
     "goals": 7.0,
     "assists": 3.0,
+    "secondaryAssists": 3.0,
     "blocks": 3.0,
     "turnovers": 5.0,
     "touches": 56.0,
@@ -3297,7 +5050,14 @@
     "catches": 44.0,
     "offensePoints": 9.0,
     "defensePoints": 20.0,
-    "+/-": 8.0
+    "possessionsInitiated": 12.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 361.8,
+    "avgThrowYards": 8.4,
+    "totalCatchYards": 406.1,
+    "avgCatchYards": 9.2,
+    "+/-": 3.0
   },
   {
     "player": "33 Erica Birdsong",
@@ -3305,6 +5065,7 @@
     "teamAbbrev": "RAL",
     "goals": 1.0,
     "assists": 2.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 4.0,
     "touches": 17.0,
@@ -3312,7 +5073,14 @@
     "catches": 16.0,
     "offensePoints": 6.0,
     "defensePoints": 11.0,
-    "+/-": 0.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 18.0,
+    "avgThrowYards": 1.5,
+    "totalCatchYards": 162.6,
+    "avgCatchYards": 10.2,
+    "+/-": -4.0
   },
   {
     "player": "33 Jalyn Baumgartner",
@@ -3320,6 +5088,7 @@
     "teamAbbrev": "INDY",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 3.0,
     "touches": 10.0,
@@ -3327,7 +5096,14 @@
     "catches": 10.0,
     "offensePoints": 9.0,
     "defensePoints": 34.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": -9.1,
+    "avgThrowYards": -1.1,
+    "totalCatchYards": 113.4,
+    "avgCatchYards": 11.3,
+    "+/-": -3.0
   },
   {
     "player": "33 Jana Graham",
@@ -3335,6 +5111,7 @@
     "teamAbbrev": "PHL",
     "goals": 8.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 3.0,
     "turnovers": 6.0,
     "touches": 18.0,
@@ -3342,7 +5119,14 @@
     "catches": 18.0,
     "offensePoints": 7.0,
     "defensePoints": 59.0,
-    "+/-": 5.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 4.0,
+    "totalThrowYards": 34.0,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": 274.4,
+    "avgCatchYards": 15.2,
+    "+/-": -1.0
   },
   {
     "player": "33 Julia Hill",
@@ -3350,6 +5134,7 @@
     "teamAbbrev": "MINN",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 3.0,
     "touches": 19.0,
@@ -3357,7 +5142,14 @@
     "catches": 17.0,
     "offensePoints": 1.0,
     "defensePoints": 43.0,
-    "+/-": 2.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 80.5,
+    "avgThrowYards": 5.7,
+    "totalCatchYards": 129.9,
+    "avgCatchYards": 7.6,
+    "+/-": -1.0
   },
   {
     "player": "33 Valeria Cardenas",
@@ -3365,6 +5157,7 @@
     "teamAbbrev": "NY",
     "goals": 8.0,
     "assists": 14.0,
+    "secondaryAssists": 15.0,
     "blocks": 6.0,
     "turnovers": 19.0,
     "touches": 234.0,
@@ -3372,7 +5165,14 @@
     "catches": 182.0,
     "offensePoints": 57.0,
     "defensePoints": 42.0,
-    "+/-": 9.0
+    "possessionsInitiated": 52.0,
+    "throwerErrors": 16.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 1750.4,
+    "avgThrowYards": 8.4,
+    "totalCatchYards": 727.9,
+    "avgCatchYards": 4.0,
+    "+/-": -10.0
   },
   {
     "player": "33 Yuge Xiao",
@@ -3380,6 +5180,7 @@
     "teamAbbrev": "PORT",
     "goals": 7.0,
     "assists": 11.0,
+    "secondaryAssists": 4.0,
     "blocks": 8.0,
     "turnovers": 12.0,
     "touches": 148.0,
@@ -3387,7 +5188,14 @@
     "catches": 139.0,
     "offensePoints": 55.0,
     "defensePoints": 14.0,
-    "+/-": 14.0
+    "possessionsInitiated": 9.0,
+    "throwerErrors": 10.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 849.8,
+    "avgThrowYards": 7.1,
+    "totalCatchYards": 1130.2,
+    "avgCatchYards": 8.1,
+    "+/-": 2.0
   },
   {
     "player": "34 Alex Barnett",
@@ -3395,6 +5203,7 @@
     "teamAbbrev": "RAL",
     "goals": 2.0,
     "assists": 5.0,
+    "secondaryAssists": 3.0,
     "blocks": 3.0,
     "turnovers": 9.0,
     "touches": 96.0,
@@ -3402,7 +5211,14 @@
     "catches": 68.0,
     "offensePoints": 22.0,
     "defensePoints": 20.0,
-    "+/-": 1.0
+    "possessionsInitiated": 28.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 549.1,
+    "avgThrowYards": 6.5,
+    "totalCatchYards": 36.9,
+    "avgCatchYards": 0.5,
+    "+/-": -8.0
   },
   {
     "player": "34 Lauren Kitten",
@@ -3410,6 +5226,7 @@
     "teamAbbrev": "INDY",
     "goals": 3.0,
     "assists": 5.0,
+    "secondaryAssists": 5.0,
     "blocks": 3.0,
     "turnovers": 15.0,
     "touches": 99.0,
@@ -3417,7 +5234,14 @@
     "catches": 73.0,
     "offensePoints": 27.0,
     "defensePoints": 43.0,
-    "+/-": -4.0
+    "possessionsInitiated": 26.0,
+    "throwerErrors": 14.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 517.8,
+    "avgThrowYards": 6.5,
+    "totalCatchYards": 109.1,
+    "avgCatchYards": 1.5,
+    "+/-": -19.0
   },
   {
     "player": "36 Adilina Malave",
@@ -3425,6 +5249,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 5.0,
     "touches": 8.0,
@@ -3432,7 +5257,14 @@
     "catches": 7.0,
     "offensePoints": 1.0,
     "defensePoints": 13.0,
-    "+/-": -5.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 15.0,
+    "avgThrowYards": 5.0,
+    "totalCatchYards": 32.3,
+    "avgCatchYards": 4.6,
+    "+/-": -10.0
   },
   {
     "player": "36 Carolyn Normile",
@@ -3440,6 +5272,7 @@
     "teamAbbrev": "DC",
     "goals": 5.0,
     "assists": 3.0,
+    "secondaryAssists": 6.0,
     "blocks": 4.0,
     "turnovers": 8.0,
     "touches": 97.0,
@@ -3447,7 +5280,14 @@
     "catches": 75.0,
     "offensePoints": 22.0,
     "defensePoints": 22.0,
-    "+/-": 4.0
+    "possessionsInitiated": 22.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 353.8,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": 392.5,
+    "avgCatchYards": 5.2,
+    "+/-": -4.0
   },
   {
     "player": "36 Jaelee Cruz",
@@ -3455,6 +5295,7 @@
     "teamAbbrev": "PORT",
     "goals": 9.0,
     "assists": 4.0,
+    "secondaryAssists": 8.0,
     "blocks": 4.0,
     "turnovers": 17.0,
     "touches": 117.0,
@@ -3462,7 +5303,14 @@
     "catches": 113.0,
     "offensePoints": 47.0,
     "defensePoints": 8.0,
-    "+/-": 0.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 12.0,
+    "receiverErrors": 5.0,
+    "totalThrowYards": 470.4,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 773.4,
+    "avgCatchYards": 6.8,
+    "+/-": -17.0
   },
   {
     "player": "37 Claire Trop",
@@ -3470,6 +5318,7 @@
     "teamAbbrev": "DC",
     "goals": 6.0,
     "assists": 6.0,
+    "secondaryAssists": 4.0,
     "blocks": 3.0,
     "turnovers": 8.0,
     "touches": 58.0,
@@ -3477,7 +5326,14 @@
     "catches": 54.0,
     "offensePoints": 14.0,
     "defensePoints": 17.0,
-    "+/-": 7.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 241.4,
+    "avgThrowYards": 5.5,
+    "totalCatchYards": 562.0,
+    "avgCatchYards": 10.4,
+    "+/-": -1.0
   },
   {
     "player": "37 Hannah Henkin",
@@ -3485,6 +5341,7 @@
     "teamAbbrev": "PORT",
     "goals": 0.0,
     "assists": 3.0,
+    "secondaryAssists": 4.0,
     "blocks": 1.0,
     "turnovers": 9.0,
     "touches": 91.0,
@@ -3492,7 +5349,14 @@
     "catches": 68.0,
     "offensePoints": 10.0,
     "defensePoints": 53.0,
-    "+/-": -5.0
+    "possessionsInitiated": 23.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 699.0,
+    "avgThrowYards": 8.4,
+    "totalCatchYards": 28.3,
+    "avgCatchYards": 0.4,
+    "+/-": -14.0
   },
   {
     "player": "40 Claire Milton",
@@ -3500,6 +5364,7 @@
     "teamAbbrev": "INDY",
     "goals": 13.0,
     "assists": 11.0,
+    "secondaryAssists": 6.0,
     "blocks": 2.0,
     "turnovers": 8.0,
     "touches": 88.0,
@@ -3507,7 +5372,14 @@
     "catches": 87.0,
     "offensePoints": 63.0,
     "defensePoints": 20.0,
-    "+/-": 18.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 751.6,
+    "avgThrowYards": 10.9,
+    "totalCatchYards": 1015.4,
+    "avgCatchYards": 11.7,
+    "+/-": 10.0
   },
   {
     "player": "42 Kelly Kerker",
@@ -3515,6 +5387,7 @@
     "teamAbbrev": "INDY",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 4.0,
     "touches": 22.0,
@@ -3522,7 +5395,14 @@
     "catches": 22.0,
     "offensePoints": 11.0,
     "defensePoints": 44.0,
-    "+/-": -1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 21.1,
+    "avgThrowYards": 1.1,
+    "totalCatchYards": 241.3,
+    "avgCatchYards": 11.0,
+    "+/-": -5.0
   },
   {
     "player": "42 Lisi Lohre",
@@ -3530,6 +5410,7 @@
     "teamAbbrev": "DC",
     "goals": 3.0,
     "assists": 3.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 5.0,
     "touches": 33.0,
@@ -3537,7 +5418,14 @@
     "catches": 31.0,
     "offensePoints": 8.0,
     "defensePoints": 23.0,
-    "+/-": 2.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 183.0,
+    "avgThrowYards": 7.3,
+    "totalCatchYards": 253.5,
+    "avgCatchYards": 8.2,
+    "+/-": -3.0
   },
   {
     "player": "42 Martha Wilber",
@@ -3545,6 +5433,7 @@
     "teamAbbrev": "ATL",
     "goals": 3.0,
     "assists": 6.0,
+    "secondaryAssists": 3.0,
     "blocks": 3.0,
     "turnovers": 15.0,
     "touches": 97.0,
@@ -3552,7 +5441,14 @@
     "catches": 78.0,
     "offensePoints": 36.0,
     "defensePoints": 15.0,
-    "+/-": -3.0
+    "possessionsInitiated": 17.0,
+    "throwerErrors": 14.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 490.1,
+    "avgThrowYards": 6.4,
+    "totalCatchYards": 510.6,
+    "avgCatchYards": 6.5,
+    "+/-": -18.0
   },
   {
     "player": "42 Meg Duffy",
@@ -3560,6 +5456,7 @@
     "teamAbbrev": "ATX",
     "goals": 1.0,
     "assists": 3.0,
+    "secondaryAssists": 3.0,
     "blocks": 0.0,
     "turnovers": 8.0,
     "touches": 39.0,
@@ -3567,7 +5464,14 @@
     "catches": 30.0,
     "offensePoints": 18.0,
     "defensePoints": 17.0,
-    "+/-": -4.0
+    "possessionsInitiated": 9.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 208.6,
+    "avgThrowYards": 6.5,
+    "totalCatchYards": 51.2,
+    "avgCatchYards": 1.7,
+    "+/-": -12.0
   },
   {
     "player": "44 Chloe Green",
@@ -3575,6 +5479,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 3.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 21.0,
@@ -3582,7 +5487,14 @@
     "catches": 20.0,
     "offensePoints": 1.0,
     "defensePoints": 9.0,
-    "+/-": -2.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 108.1,
+    "avgThrowYards": 6.0,
+    "totalCatchYards": 32.9,
+    "avgCatchYards": 1.6,
+    "+/-": -4.0
   },
   {
     "player": "44 Chloe Greene",
@@ -3590,6 +5502,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 3.0,
     "touches": 32.0,
@@ -3597,7 +5510,14 @@
     "catches": 27.0,
     "offensePoints": 6.0,
     "defensePoints": 6.0,
-    "+/-": -3.0
+    "possessionsInitiated": 5.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 61.3,
+    "avgThrowYards": 2.3,
+    "totalCatchYards": 14.7,
+    "avgCatchYards": 0.5,
+    "+/-": -6.0
   },
   {
     "player": "44 Jordan Harn",
@@ -3605,6 +5525,7 @@
     "teamAbbrev": "ATL",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 3.0,
     "blocks": 3.0,
     "turnovers": 10.0,
     "touches": 57.0,
@@ -3612,7 +5533,14 @@
     "catches": 55.0,
     "offensePoints": 20.0,
     "defensePoints": 34.0,
-    "+/-": -6.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 120.6,
+    "avgThrowYards": 2.6,
+    "totalCatchYards": 219.3,
+    "avgCatchYards": 4.0,
+    "+/-": -16.0
   },
   {
     "player": "44 Kayla Seeger",
@@ -3620,6 +5548,7 @@
     "teamAbbrev": "NY",
     "goals": 1.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 9.0,
@@ -3627,7 +5556,14 @@
     "catches": 7.0,
     "offensePoints": 0.0,
     "defensePoints": 18.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 64.4,
+    "avgThrowYards": 12.9,
+    "totalCatchYards": 171.8,
+    "avgCatchYards": 13.7,
+    "+/-": -2.0
   },
   {
     "player": "44 Sarah Meckstroth",
@@ -3635,6 +5571,7 @@
     "teamAbbrev": "MINN",
     "goals": 14.0,
     "assists": 7.0,
+    "secondaryAssists": 1.0,
     "blocks": 3.0,
     "turnovers": 20.0,
     "touches": 70.0,
@@ -3642,7 +5579,14 @@
     "catches": 68.0,
     "offensePoints": 43.0,
     "defensePoints": 9.0,
-    "+/-": 4.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 13.0,
+    "receiverErrors": 7.0,
+    "totalThrowYards": 213.8,
+    "avgThrowYards": 5.5,
+    "totalCatchYards": 997.9,
+    "avgCatchYards": 14.7,
+    "+/-": -16.0
   },
   {
     "player": "45 Caitlin Gross",
@@ -3650,6 +5594,7 @@
     "teamAbbrev": "RAL",
     "goals": 5.0,
     "assists": 6.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 14.0,
     "touches": 81.0,
@@ -3657,7 +5602,14 @@
     "catches": 75.0,
     "offensePoints": 50.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "possessionsInitiated": 6.0,
+    "throwerErrors": 12.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 454.6,
+    "avgThrowYards": 7.2,
+    "totalCatchYards": 472.3,
+    "avgCatchYards": 6.3,
+    "+/-": -15.0
   },
   {
     "player": "45 Emery Otopalik",
@@ -3665,6 +5617,7 @@
     "teamAbbrev": "MINN",
     "goals": 4.0,
     "assists": 5.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 10.0,
     "touches": 32.0,
@@ -3672,7 +5625,14 @@
     "catches": 32.0,
     "offensePoints": 33.0,
     "defensePoints": 36.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 202.1,
+    "avgThrowYards": 9.6,
+    "totalCatchYards": 434.5,
+    "avgCatchYards": 13.6,
+    "+/-": -10.0
   },
   {
     "player": "45 Jennifer Lin",
@@ -3680,6 +5640,7 @@
     "teamAbbrev": "ATL",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 19.0,
@@ -3687,7 +5648,14 @@
     "catches": 19.0,
     "offensePoints": 13.0,
     "defensePoints": 6.0,
-    "+/-": -1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 30.5,
+    "avgThrowYards": 1.9,
+    "totalCatchYards": 124.0,
+    "avgCatchYards": 6.5,
+    "+/-": -3.0
   },
   {
     "player": "45 Sarah Jeung",
@@ -3695,6 +5663,7 @@
     "teamAbbrev": "PORT",
     "goals": 3.0,
     "assists": 3.0,
+    "secondaryAssists": 1.0,
     "blocks": 5.0,
     "turnovers": 5.0,
     "touches": 45.0,
@@ -3702,7 +5671,14 @@
     "catches": 42.0,
     "offensePoints": 18.0,
     "defensePoints": 32.0,
-    "+/-": 6.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 380.6,
+    "avgThrowYards": 10.6,
+    "totalCatchYards": 369.8,
+    "avgCatchYards": 8.8,
+    "+/-": 1.0
   },
   {
     "player": "45 Sylvia Brown",
@@ -3710,6 +5686,7 @@
     "teamAbbrev": "NASH",
     "goals": 6.0,
     "assists": 3.0,
+    "secondaryAssists": 7.0,
     "blocks": 4.0,
     "turnovers": 21.0,
     "touches": 169.0,
@@ -3717,7 +5694,14 @@
     "catches": 141.0,
     "offensePoints": 49.0,
     "defensePoints": 36.0,
-    "+/-": -8.0
+    "possessionsInitiated": 28.0,
+    "throwerErrors": 19.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 757.3,
+    "avgThrowYards": 5.3,
+    "totalCatchYards": 415.8,
+    "avgCatchYards": 2.9,
+    "+/-": -29.0
   },
   {
     "player": "46 Graham Cunningham",
@@ -3725,6 +5709,7 @@
     "teamAbbrev": "DC",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 2.0,
     "touches": 34.0,
@@ -3732,7 +5717,14 @@
     "catches": 32.0,
     "offensePoints": 5.0,
     "defensePoints": 27.0,
-    "+/-": 3.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 203.3,
+    "avgThrowYards": 6.6,
+    "totalCatchYards": 249.4,
+    "avgCatchYards": 7.8,
+    "+/-": 1.0
   },
   {
     "player": "47 Alex Rowell",
@@ -3740,6 +5732,7 @@
     "teamAbbrev": "PORT",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 3.0,
@@ -3747,6 +5740,13 @@
     "catches": 2.0,
     "offensePoints": 1.0,
     "defensePoints": 11.0,
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 8.3,
+    "avgThrowYards": 2.8,
+    "totalCatchYards": 16.5,
+    "avgCatchYards": 8.2,
     "+/-": 0.0
   },
   {
@@ -3755,6 +5755,7 @@
     "teamAbbrev": "MKE",
     "goals": 0.0,
     "assists": 10.0,
+    "secondaryAssists": 2.0,
     "blocks": 5.0,
     "turnovers": 30.0,
     "touches": 101.0,
@@ -3762,7 +5763,14 @@
     "catches": 61.0,
     "offensePoints": 14.0,
     "defensePoints": 44.0,
-    "+/-": -15.0
+    "possessionsInitiated": 40.0,
+    "throwerErrors": 29.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 987.0,
+    "avgThrowYards": 13.9,
+    "totalCatchYards": 48.7,
+    "avgCatchYards": 0.8,
+    "+/-": -45.0
   },
   {
     "player": "47 Tori Gray",
@@ -3770,6 +5778,7 @@
     "teamAbbrev": "MINN",
     "goals": 6.0,
     "assists": 2.0,
+    "secondaryAssists": 4.0,
     "blocks": 6.0,
     "turnovers": 10.0,
     "touches": 44.0,
@@ -3777,7 +5786,14 @@
     "catches": 40.0,
     "offensePoints": 18.0,
     "defensePoints": 50.0,
-    "+/-": 4.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 8.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 238.1,
+    "avgThrowYards": 8.5,
+    "totalCatchYards": 565.8,
+    "avgCatchYards": 14.1,
+    "+/-": -6.0
   },
   {
     "player": "48 Caroline Weinberg",
@@ -3785,6 +5801,7 @@
     "teamAbbrev": "PHL",
     "goals": 1.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 3.0,
@@ -3792,6 +5809,13 @@
     "catches": 3.0,
     "offensePoints": 0.0,
     "defensePoints": 7.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 44.9,
+    "avgThrowYards": 22.4,
+    "totalCatchYards": 62.0,
+    "avgCatchYards": 20.7,
     "+/-": 2.0
   },
   {
@@ -3800,6 +5824,7 @@
     "teamAbbrev": "RAL",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 9.0,
@@ -3807,7 +5832,14 @@
     "catches": 9.0,
     "offensePoints": 0.0,
     "defensePoints": 11.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 26.1,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": 103.1,
+    "avgCatchYards": 11.5,
+    "+/-": -2.0
   },
   {
     "player": "49 Elly Fireside-Ostergaard",
@@ -3815,6 +5847,7 @@
     "teamAbbrev": "MINN",
     "goals": 6.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 17.0,
@@ -3822,7 +5855,14 @@
     "catches": 16.0,
     "offensePoints": 16.0,
     "defensePoints": 48.0,
-    "+/-": 6.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -16.8,
+    "avgThrowYards": -1.7,
+    "totalCatchYards": 194.8,
+    "avgCatchYards": 12.2,
+    "+/-": 5.0
   },
   {
     "player": "51 Lilli Popovich",
@@ -3830,6 +5870,7 @@
     "teamAbbrev": "ATL",
     "goals": 6.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 3.0,
     "turnovers": 4.0,
     "touches": 33.0,
@@ -3837,7 +5878,14 @@
     "catches": 31.0,
     "offensePoints": 28.0,
     "defensePoints": 15.0,
-    "+/-": 6.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 152.8,
+    "avgThrowYards": 6.1,
+    "totalCatchYards": 387.7,
+    "avgCatchYards": 12.5,
+    "+/-": 2.0
   },
   {
     "player": "51 Tess Johnson",
@@ -3845,6 +5893,7 @@
     "teamAbbrev": "PORT",
     "goals": 1.0,
     "assists": 1.0,
+    "secondaryAssists": 5.0,
     "blocks": 1.0,
     "turnovers": 4.0,
     "touches": 65.0,
@@ -3852,7 +5901,14 @@
     "catches": 45.0,
     "offensePoints": 17.0,
     "defensePoints": 23.0,
-    "+/-": -1.0
+    "possessionsInitiated": 20.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 299.3,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 243.9,
+    "avgCatchYards": 5.4,
+    "+/-": -5.0
   },
   {
     "player": "52 Caitlin Connell",
@@ -3860,6 +5916,7 @@
     "teamAbbrev": "PORT",
     "goals": 6.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 3.0,
     "touches": 22.0,
@@ -3867,7 +5924,14 @@
     "catches": 21.0,
     "offensePoints": 44.0,
     "defensePoints": 8.0,
-    "+/-": 5.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 17.8,
+    "avgThrowYards": 1.3,
+    "totalCatchYards": 380.7,
+    "avgCatchYards": 18.1,
+    "+/-": 2.0
   },
   {
     "player": "52 Erynn Schroeder",
@@ -3875,6 +5939,7 @@
     "teamAbbrev": "MKE",
     "goals": 0.0,
     "assists": 15.0,
+    "secondaryAssists": 5.0,
     "blocks": 5.0,
     "turnovers": 54.0,
     "touches": 219.0,
@@ -3882,7 +5947,14 @@
     "catches": 136.0,
     "offensePoints": 77.0,
     "defensePoints": 10.0,
-    "+/-": -34.0
+    "possessionsInitiated": 83.0,
+    "throwerErrors": 50.0,
+    "receiverErrors": 4.0,
+    "totalThrowYards": 1893.9,
+    "avgThrowYards": 11.5,
+    "totalCatchYards": 187.3,
+    "avgCatchYards": 1.4,
+    "+/-": -88.0
   },
   {
     "player": "53 Emma Piorier",
@@ -3890,6 +5962,7 @@
     "teamAbbrev": "MINN",
     "goals": 15.0,
     "assists": 2.0,
+    "secondaryAssists": 8.0,
     "blocks": 3.0,
     "turnovers": 9.0,
     "touches": 66.0,
@@ -3897,7 +5970,14 @@
     "catches": 65.0,
     "offensePoints": 64.0,
     "defensePoints": 10.0,
-    "+/-": 11.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 226.2,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 1069.6,
+    "avgCatchYards": 16.5,
+    "+/-": 2.0
   },
   {
     "player": "54 Liv Ford",
@@ -3905,6 +5985,7 @@
     "teamAbbrev": "ATL",
     "goals": 1.0,
     "assists": 12.0,
+    "secondaryAssists": 3.0,
     "blocks": 3.0,
     "turnovers": 22.0,
     "touches": 125.0,
@@ -3912,7 +5993,14 @@
     "catches": 94.0,
     "offensePoints": 43.0,
     "defensePoints": 29.0,
-    "+/-": -6.0
+    "possessionsInitiated": 31.0,
+    "throwerErrors": 19.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 1412.6,
+    "avgThrowYards": 13.7,
+    "totalCatchYards": 133.3,
+    "avgCatchYards": 1.4,
+    "+/-": -28.0
   },
   {
     "player": "55 Courtney Walbe",
@@ -3920,6 +6008,7 @@
     "teamAbbrev": "MINN",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 7.0,
     "touches": 24.0,
@@ -3927,7 +6016,14 @@
     "catches": 20.0,
     "offensePoints": 6.0,
     "defensePoints": 40.0,
-    "+/-": -5.0
+    "possessionsInitiated": 4.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 187.4,
+    "avgThrowYards": 9.9,
+    "totalCatchYards": 6.2,
+    "avgCatchYards": 0.3,
+    "+/-": -12.0
   },
   {
     "player": "55 Mia Wieben",
@@ -3935,6 +6031,7 @@
     "teamAbbrev": "MKE",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 4.0,
@@ -3942,7 +6039,14 @@
     "catches": 4.0,
     "offensePoints": 5.0,
     "defensePoints": 9.0,
-    "+/-": -1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 23.3,
+    "avgThrowYards": 7.8,
+    "totalCatchYards": 36.1,
+    "avgCatchYards": 9.0,
+    "+/-": -2.0
   },
   {
     "player": "55 Molly Roy",
@@ -3950,6 +6054,7 @@
     "teamAbbrev": "DC",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 8.0,
@@ -3957,7 +6062,14 @@
     "catches": 6.0,
     "offensePoints": 3.0,
     "defensePoints": 5.0,
-    "+/-": -1.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 46.8,
+    "avgThrowYards": 6.7,
+    "totalCatchYards": 17.7,
+    "avgCatchYards": 3.0,
+    "+/-": -2.0
   },
   {
     "player": "55 Sophie Knowles",
@@ -3965,6 +6077,7 @@
     "teamAbbrev": "PORT",
     "goals": 2.0,
     "assists": 10.0,
+    "secondaryAssists": 3.0,
     "blocks": 5.0,
     "turnovers": 10.0,
     "touches": 91.0,
@@ -3972,7 +6085,14 @@
     "catches": 65.0,
     "offensePoints": 8.0,
     "defensePoints": 59.0,
-    "+/-": 7.0
+    "possessionsInitiated": 26.0,
+    "throwerErrors": 10.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 788.7,
+    "avgThrowYards": 10.5,
+    "totalCatchYards": 266.7,
+    "avgCatchYards": 4.1,
+    "+/-": -3.0
   },
   {
     "player": "55 Trystan Grzyll",
@@ -3980,6 +6100,7 @@
     "teamAbbrev": "ATL",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 14.0,
@@ -3987,7 +6108,14 @@
     "catches": 13.0,
     "offensePoints": 16.0,
     "defensePoints": 25.0,
-    "+/-": 1.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 29.7,
+    "avgThrowYards": 2.3,
+    "totalCatchYards": 130.7,
+    "avgCatchYards": 10.1,
+    "+/-": 0.0
   },
   {
     "player": "59 Audrey Lyman",
@@ -3995,6 +6123,7 @@
     "teamAbbrev": "RAL",
     "goals": 3.0,
     "assists": 7.0,
+    "secondaryAssists": 5.0,
     "blocks": 2.0,
     "turnovers": 18.0,
     "touches": 132.0,
@@ -4002,7 +6131,14 @@
     "catches": 84.0,
     "offensePoints": 18.0,
     "defensePoints": 54.0,
-    "+/-": -6.0
+    "possessionsInitiated": 48.0,
+    "throwerErrors": 16.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 1009.4,
+    "avgThrowYards": 9.1,
+    "totalCatchYards": 108.4,
+    "avgCatchYards": 1.3,
+    "+/-": -24.0
   },
   {
     "player": "59 Maple Adkins-Threats",
@@ -4010,6 +6146,7 @@
     "teamAbbrev": "INDY",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 4.0,
@@ -4017,7 +6154,14 @@
     "catches": 3.0,
     "offensePoints": 1.0,
     "defensePoints": 15.0,
-    "+/-": 0.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 23.4,
+    "avgThrowYards": 7.8,
+    "totalCatchYards": 27.0,
+    "avgCatchYards": 9.0,
+    "+/-": -1.0
   },
   {
     "player": "62 Casey Banta-Ryan",
@@ -4025,6 +6169,7 @@
     "teamAbbrev": "NY",
     "goals": 4.0,
     "assists": 0.0,
+    "secondaryAssists": 3.0,
     "blocks": 6.0,
     "turnovers": 3.0,
     "touches": 32.0,
@@ -4032,7 +6177,14 @@
     "catches": 29.0,
     "offensePoints": 10.0,
     "defensePoints": 47.0,
-    "+/-": 7.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": -37.1,
+    "avgThrowYards": -1.4,
+    "totalCatchYards": 391.8,
+    "avgCatchYards": 13.5,
+    "+/-": 4.0
   },
   {
     "player": "64 Rachel Hildebrand",
@@ -4040,6 +6192,7 @@
     "teamAbbrev": "MKE",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 3.0,
@@ -4047,7 +6200,14 @@
     "catches": 2.0,
     "offensePoints": 3.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 9.9,
+    "avgThrowYards": 5.0,
+    "totalCatchYards": 3.2,
+    "avgCatchYards": 1.6,
+    "+/-": -2.0
   },
   {
     "player": "65 Anna Lieberman",
@@ -4055,6 +6215,7 @@
     "teamAbbrev": "NY",
     "goals": 1.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 1.0,
     "turnovers": 3.0,
     "touches": 9.0,
@@ -4062,7 +6223,14 @@
     "catches": 9.0,
     "offensePoints": 0.0,
     "defensePoints": 41.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 32.5,
+    "avgThrowYards": 4.6,
+    "totalCatchYards": 98.3,
+    "avgCatchYards": 10.9,
+    "+/-": -3.0
   },
   {
     "player": "66 Jackie Wang",
@@ -4070,6 +6238,7 @@
     "teamAbbrev": "DC",
     "goals": 2.0,
     "assists": 7.0,
+    "secondaryAssists": 10.0,
     "blocks": 7.0,
     "turnovers": 6.0,
     "touches": 117.0,
@@ -4077,7 +6246,14 @@
     "catches": 87.0,
     "offensePoints": 11.0,
     "defensePoints": 48.0,
-    "+/-": 10.0
+    "possessionsInitiated": 30.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 739.4,
+    "avgThrowYards": 6.8,
+    "totalCatchYards": 302.8,
+    "avgCatchYards": 3.5,
+    "+/-": 4.0
   },
   {
     "player": "66 Janine Hlavaty",
@@ -4085,6 +6261,7 @@
     "teamAbbrev": "NY",
     "goals": 6.0,
     "assists": 4.0,
+    "secondaryAssists": 1.0,
     "blocks": 3.0,
     "turnovers": 6.0,
     "touches": 47.0,
@@ -4092,7 +6269,14 @@
     "catches": 47.0,
     "offensePoints": 42.0,
     "defensePoints": 14.0,
-    "+/-": 7.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 5.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 205.5,
+    "avgThrowYards": 5.7,
+    "totalCatchYards": 462.0,
+    "avgCatchYards": 9.8,
+    "+/-": 1.0
   },
   {
     "player": "66 Jess Brand",
@@ -4100,6 +6284,7 @@
     "teamAbbrev": "PHL",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 0.0,
     "touches": 4.0,
@@ -4107,6 +6292,13 @@
     "catches": 4.0,
     "offensePoints": 3.0,
     "defensePoints": 29.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 19.6,
+    "avgThrowYards": 6.5,
+    "totalCatchYards": 68.2,
+    "avgCatchYards": 17.1,
     "+/-": 3.0
   },
   {
@@ -4115,6 +6307,7 @@
     "teamAbbrev": "INDY",
     "goals": 6.0,
     "assists": 2.0,
+    "secondaryAssists": 4.0,
     "blocks": 3.0,
     "turnovers": 7.0,
     "touches": 64.0,
@@ -4122,7 +6315,14 @@
     "catches": 63.0,
     "offensePoints": 38.0,
     "defensePoints": 18.0,
-    "+/-": 4.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 226.4,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": 737.9,
+    "avgCatchYards": 11.7,
+    "+/-": -3.0
   },
   {
     "player": "69 Jaime Estes",
@@ -4130,6 +6330,7 @@
     "teamAbbrev": "ATX",
     "goals": 6.0,
     "assists": 6.0,
+    "secondaryAssists": 7.0,
     "blocks": 2.0,
     "turnovers": 10.0,
     "touches": 87.0,
@@ -4137,7 +6338,14 @@
     "catches": 84.0,
     "offensePoints": 59.0,
     "defensePoints": 10.0,
-    "+/-": 4.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 98.9,
+    "avgThrowYards": 1.3,
+    "totalCatchYards": 890.1,
+    "avgCatchYards": 10.6,
+    "+/-": -6.0
   },
   {
     "player": "69 Tahlia Quartin",
@@ -4145,6 +6353,7 @@
     "teamAbbrev": "PORT",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 3.0,
     "touches": 10.0,
@@ -4152,7 +6361,14 @@
     "catches": 4.0,
     "offensePoints": 11.0,
     "defensePoints": 0.0,
-    "+/-": -2.0
+    "possessionsInitiated": 6.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 24.7,
+    "avgThrowYards": 3.1,
+    "totalCatchYards": -7.7,
+    "avgCatchYards": -1.9,
+    "+/-": -5.0
   },
   {
     "player": "70 Benish Benjamin",
@@ -4160,6 +6376,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 1.0,
@@ -4167,6 +6384,13 @@
     "catches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 4.0,
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 4.6,
+    "avgThrowYards": 4.5,
+    "totalCatchYards": 0.0,
+    "avgCatchYards": 0.0,
     "+/-": 0.0
   },
   {
@@ -4175,6 +6399,7 @@
     "teamAbbrev": "NASH",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 2.0,
     "touches": 9.0,
@@ -4182,7 +6407,14 @@
     "catches": 8.0,
     "offensePoints": 11.0,
     "defensePoints": 18.0,
-    "+/-": -1.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": -6.7,
+    "avgThrowYards": -0.8,
+    "totalCatchYards": 125.2,
+    "avgCatchYards": 15.6,
+    "+/-": -3.0
   },
   {
     "player": "71 Shirlee Wohl",
@@ -4190,6 +6422,7 @@
     "teamAbbrev": "PORT",
     "goals": 0.0,
     "assists": 12.0,
+    "secondaryAssists": 6.0,
     "blocks": 1.0,
     "turnovers": 12.0,
     "touches": 176.0,
@@ -4197,7 +6430,14 @@
     "catches": 140.0,
     "offensePoints": 46.0,
     "defensePoints": 3.0,
-    "+/-": 1.0
+    "possessionsInitiated": 36.0,
+    "throwerErrors": 8.0,
+    "receiverErrors": 4.0,
+    "totalThrowYards": 916.1,
+    "avgThrowYards": 5.5,
+    "totalCatchYards": 212.6,
+    "avgCatchYards": 1.5,
+    "+/-": -11.0
   },
   {
     "player": "71 Wren Vogel",
@@ -4205,6 +6445,7 @@
     "teamAbbrev": "ATX",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 5.0,
     "touches": 8.0,
@@ -4212,7 +6453,14 @@
     "catches": 8.0,
     "offensePoints": 11.0,
     "defensePoints": 10.0,
-    "+/-": -2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": -0.1,
+    "avgThrowYards": -0.0,
+    "totalCatchYards": 91.5,
+    "avgCatchYards": 11.4,
+    "+/-": -7.0
   },
   {
     "player": "72 Annalise Paul",
@@ -4220,6 +6468,7 @@
     "teamAbbrev": "ATL",
     "goals": 2.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 3.0,
     "turnovers": 3.0,
     "touches": 28.0,
@@ -4227,7 +6476,14 @@
     "catches": 26.0,
     "offensePoints": 12.0,
     "defensePoints": 22.0,
-    "+/-": 2.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 125.7,
+    "avgThrowYards": 5.2,
+    "totalCatchYards": 58.1,
+    "avgCatchYards": 2.2,
+    "+/-": -1.0
   },
   {
     "player": "72 Grace Castro",
@@ -4235,6 +6491,7 @@
     "teamAbbrev": "NASH",
     "goals": 4.0,
     "assists": 7.0,
+    "secondaryAssists": 6.0,
     "blocks": 0.0,
     "turnovers": 6.0,
     "touches": 87.0,
@@ -4242,7 +6499,14 @@
     "catches": 87.0,
     "offensePoints": 71.0,
     "defensePoints": 13.0,
-    "+/-": 5.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 363.1,
+    "avgThrowYards": 4.9,
+    "totalCatchYards": 888.4,
+    "avgCatchYards": 10.2,
+    "+/-": -1.0
   },
   {
     "player": "72 Jacqueline Jarik",
@@ -4250,6 +6514,7 @@
     "teamAbbrev": "MKE",
     "goals": 6.0,
     "assists": 7.0,
+    "secondaryAssists": 2.0,
     "blocks": 9.0,
     "turnovers": 17.0,
     "touches": 61.0,
@@ -4257,7 +6522,14 @@
     "catches": 55.0,
     "offensePoints": 44.0,
     "defensePoints": 33.0,
-    "+/-": 5.0
+    "possessionsInitiated": 6.0,
+    "throwerErrors": 12.0,
+    "receiverErrors": 5.0,
+    "totalThrowYards": 465.4,
+    "avgThrowYards": 11.6,
+    "totalCatchYards": 673.0,
+    "avgCatchYards": 12.2,
+    "+/-": -12.0
   },
   {
     "player": "73 Clara Stewart",
@@ -4265,6 +6537,7 @@
     "teamAbbrev": "ATX",
     "goals": 1.0,
     "assists": 10.0,
+    "secondaryAssists": 10.0,
     "blocks": 3.0,
     "turnovers": 15.0,
     "touches": 201.0,
@@ -4272,7 +6545,14 @@
     "catches": 164.0,
     "offensePoints": 56.0,
     "defensePoints": 14.0,
-    "+/-": -1.0
+    "possessionsInitiated": 34.0,
+    "throwerErrors": 11.0,
+    "receiverErrors": 4.0,
+    "totalThrowYards": 1531.8,
+    "avgThrowYards": 8.4,
+    "totalCatchYards": 129.4,
+    "avgCatchYards": 0.8,
+    "+/-": -16.0
   },
   {
     "player": "75 Sarah Kingsley-Hart",
@@ -4280,6 +6560,7 @@
     "teamAbbrev": "ATL",
     "goals": 5.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 1.0,
     "turnovers": 1.0,
     "touches": 33.0,
@@ -4287,7 +6568,14 @@
     "catches": 33.0,
     "offensePoints": 35.0,
     "defensePoints": 10.0,
-    "+/-": 5.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 67.0,
+    "avgThrowYards": 2.5,
+    "totalCatchYards": 182.3,
+    "avgCatchYards": 5.5,
+    "+/-": 4.0
   },
   {
     "player": "76 Emma Palacio",
@@ -4295,6 +6583,7 @@
     "teamAbbrev": "PORT",
     "goals": 3.0,
     "assists": 1.0,
+    "secondaryAssists": 2.0,
     "blocks": 0.0,
     "turnovers": 3.0,
     "touches": 22.0,
@@ -4302,7 +6591,14 @@
     "catches": 22.0,
     "offensePoints": 17.0,
     "defensePoints": 21.0,
-    "+/-": 1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 74.1,
+    "avgThrowYards": 4.1,
+    "totalCatchYards": 282.2,
+    "avgCatchYards": 12.8,
+    "+/-": -2.0
   },
   {
     "player": "77 Anna Tortorici",
@@ -4310,6 +6606,7 @@
     "teamAbbrev": "RAL",
     "goals": 3.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 9.0,
@@ -4317,7 +6614,14 @@
     "catches": 9.0,
     "offensePoints": 0.0,
     "defensePoints": 12.0,
-    "+/-": 2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -10.0,
+    "avgThrowYards": -2.0,
+    "totalCatchYards": 150.5,
+    "avgCatchYards": 16.7,
+    "+/-": 1.0
   },
   {
     "player": "77 Katrina Mcguire",
@@ -4325,6 +6629,7 @@
     "teamAbbrev": "INDY",
     "goals": 2.0,
     "assists": 6.0,
+    "secondaryAssists": 2.0,
     "blocks": 1.0,
     "turnovers": 9.0,
     "touches": 56.0,
@@ -4332,7 +6637,14 @@
     "catches": 55.0,
     "offensePoints": 26.0,
     "defensePoints": 25.0,
-    "+/-": 0.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 8.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 429.9,
+    "avgThrowYards": 9.3,
+    "totalCatchYards": 335.7,
+    "avgCatchYards": 6.1,
+    "+/-": -9.0
   },
   {
     "player": "77 Kerry Younts",
@@ -4340,6 +6652,7 @@
     "teamAbbrev": "ATX",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 1.0,
     "touches": 5.0,
@@ -4347,7 +6660,14 @@
     "catches": 5.0,
     "offensePoints": 1.0,
     "defensePoints": 7.0,
-    "+/-": 2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 25.6,
+    "avgThrowYards": 8.5,
+    "totalCatchYards": 57.4,
+    "avgCatchYards": 11.5,
+    "+/-": 1.0
   },
   {
     "player": "77 Melissa Gronske",
@@ -4355,6 +6675,7 @@
     "teamAbbrev": "NASH",
     "goals": 2.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 4.0,
     "touches": 15.0,
@@ -4362,7 +6683,14 @@
     "catches": 15.0,
     "offensePoints": 44.0,
     "defensePoints": 7.0,
-    "+/-": 1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 76.8,
+    "avgThrowYards": 7.7,
+    "totalCatchYards": 222.5,
+    "avgCatchYards": 14.8,
+    "+/-": -3.0
   },
   {
     "player": "81 Mackenzie Bailey",
@@ -4370,6 +6698,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 19.0,
@@ -4377,6 +6706,13 @@
     "catches": 19.0,
     "offensePoints": 11.0,
     "defensePoints": 8.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 83.5,
+    "avgThrowYards": 4.4,
+    "totalCatchYards": 106.4,
+    "avgCatchYards": 5.6,
     "+/-": 1.0
   },
   {
@@ -4385,6 +6721,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 6.0,
@@ -4392,7 +6729,14 @@
     "catches": 6.0,
     "offensePoints": 2.0,
     "defensePoints": 2.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 60.6,
+    "avgThrowYards": 12.1,
+    "totalCatchYards": 6.5,
+    "avgCatchYards": 1.1,
+    "+/-": -1.0
   },
   {
     "player": "82 Mary Turner",
@@ -4400,6 +6744,7 @@
     "teamAbbrev": "NASH",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 2.0,
     "blocks": 3.0,
     "turnovers": 5.0,
     "touches": 25.0,
@@ -4407,7 +6752,14 @@
     "catches": 22.0,
     "offensePoints": 27.0,
     "defensePoints": 19.0,
-    "+/-": -1.0
+    "possessionsInitiated": 3.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 59.7,
+    "avgThrowYards": 3.1,
+    "totalCatchYards": 144.9,
+    "avgCatchYards": 6.6,
+    "+/-": -6.0
   },
   {
     "player": "87 Christina Marsciano",
@@ -4415,6 +6767,7 @@
     "teamAbbrev": "ATL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 2.0,
     "turnovers": 1.0,
     "touches": 2.0,
@@ -4422,7 +6775,14 @@
     "catches": 2.0,
     "offensePoints": 4.0,
     "defensePoints": 5.0,
-    "+/-": 1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 14.9,
+    "avgCatchYards": 7.5,
+    "+/-": 0.0
   },
   {
     "player": "88 Claire Kelley",
@@ -4430,6 +6790,7 @@
     "teamAbbrev": "MKE",
     "goals": 3.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 18.0,
@@ -4437,7 +6798,14 @@
     "catches": 18.0,
     "offensePoints": 19.0,
     "defensePoints": 0.0,
-    "+/-": 1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 19.2,
+    "avgThrowYards": 1.6,
+    "totalCatchYards": 319.4,
+    "avgCatchYards": 17.7,
+    "+/-": -1.0
   },
   {
     "player": "88 Grace Hodges",
@@ -4445,6 +6813,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 3.0,
@@ -4452,7 +6821,14 @@
     "catches": 3.0,
     "offensePoints": 0.0,
     "defensePoints": 4.0,
-    "+/-": -1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -1.3,
+    "avgThrowYards": -0.6,
+    "totalCatchYards": 22.0,
+    "avgCatchYards": 7.3,
+    "+/-": -2.0
   },
   {
     "player": "88 Maddie Pletzke",
@@ -4460,6 +6836,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 1.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 4.0,
     "touches": 11.0,
@@ -4467,7 +6844,14 @@
     "catches": 11.0,
     "offensePoints": 6.0,
     "defensePoints": 27.0,
-    "+/-": -3.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 11.4,
+    "avgThrowYards": 1.6,
+    "totalCatchYards": 121.3,
+    "avgCatchYards": 11.0,
+    "+/-": -7.0
   },
   {
     "player": "88 Maddy Easton",
@@ -4475,6 +6859,7 @@
     "teamAbbrev": "ATX",
     "goals": 2.0,
     "assists": 5.0,
+    "secondaryAssists": 5.0,
     "blocks": 0.0,
     "turnovers": 9.0,
     "touches": 39.0,
@@ -4482,7 +6867,14 @@
     "catches": 38.0,
     "offensePoints": 25.0,
     "defensePoints": 32.0,
-    "+/-": -2.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 261.1,
+    "avgThrowYards": 9.7,
+    "totalCatchYards": 435.7,
+    "avgCatchYards": 11.5,
+    "+/-": -11.0
   },
   {
     "player": "88 Nikki Hair",
@@ -4490,6 +6882,7 @@
     "teamAbbrev": "NY",
     "goals": 6.0,
     "assists": 2.0,
+    "secondaryAssists": 3.0,
     "blocks": 2.0,
     "turnovers": 3.0,
     "touches": 28.0,
@@ -4497,7 +6890,14 @@
     "catches": 27.0,
     "offensePoints": 11.0,
     "defensePoints": 75.0,
-    "+/-": 7.0
+    "possessionsInitiated": 1.0,
+    "throwerErrors": 2.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 101.8,
+    "avgThrowYards": 5.1,
+    "totalCatchYards": 502.8,
+    "avgCatchYards": 18.6,
+    "+/-": 4.0
   },
   {
     "player": "90 Qxhna Titcomb",
@@ -4505,6 +6905,7 @@
     "teamAbbrev": "RAL",
     "goals": 3.0,
     "assists": 10.0,
+    "secondaryAssists": 3.0,
     "blocks": 7.0,
     "turnovers": 10.0,
     "touches": 78.0,
@@ -4512,7 +6913,14 @@
     "catches": 65.0,
     "offensePoints": 42.0,
     "defensePoints": 6.0,
-    "+/-": 10.0
+    "possessionsInitiated": 13.0,
+    "throwerErrors": 9.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 595.0,
+    "avgThrowYards": 9.3,
+    "totalCatchYards": 280.9,
+    "avgCatchYards": 4.3,
+    "+/-": 0.0
   },
   {
     "player": "90 Qxnha Titcomb",
@@ -4520,6 +6928,7 @@
     "teamAbbrev": "RAL",
     "goals": 0.0,
     "assists": 5.0,
+    "secondaryAssists": 4.0,
     "blocks": 1.0,
     "turnovers": 2.0,
     "touches": 35.0,
@@ -4527,7 +6936,14 @@
     "catches": 30.0,
     "offensePoints": 8.0,
     "defensePoints": 6.0,
-    "+/-": 4.0
+    "possessionsInitiated": 5.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 389.1,
+    "avgThrowYards": 11.4,
+    "totalCatchYards": 22.8,
+    "avgCatchYards": 0.8,
+    "+/-": 2.0
   },
   {
     "player": "91 Samantha Philips",
@@ -4535,6 +6951,7 @@
     "teamAbbrev": "INDY",
     "goals": 2.0,
     "assists": 2.0,
+    "secondaryAssists": 5.0,
     "blocks": 1.0,
     "turnovers": 5.0,
     "touches": 111.0,
@@ -4542,7 +6959,14 @@
     "catches": 98.0,
     "offensePoints": 36.0,
     "defensePoints": 16.0,
-    "+/-": 0.0
+    "possessionsInitiated": 13.0,
+    "throwerErrors": 3.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": 348.1,
+    "avgThrowYards": 3.3,
+    "totalCatchYards": 77.4,
+    "avgCatchYards": 0.8,
+    "+/-": -5.0
   },
   {
     "player": "92 Charlotte Wilson",
@@ -4550,6 +6974,7 @@
     "teamAbbrev": "INDY",
     "goals": 1.0,
     "assists": 2.0,
+    "secondaryAssists": 3.0,
     "blocks": 0.0,
     "turnovers": 2.0,
     "touches": 98.0,
@@ -4557,7 +6982,14 @@
     "catches": 76.0,
     "offensePoints": 45.0,
     "defensePoints": 21.0,
-    "+/-": 1.0
+    "possessionsInitiated": 21.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 404.8,
+    "avgThrowYards": 4.3,
+    "totalCatchYards": -13.8,
+    "avgCatchYards": -0.1,
+    "+/-": -1.0
   },
   {
     "player": "95 Megan Mendieta",
@@ -4565,6 +6997,7 @@
     "teamAbbrev": "ATX",
     "goals": 0.0,
     "assists": 2.0,
+    "secondaryAssists": 1.0,
     "blocks": 2.0,
     "turnovers": 4.0,
     "touches": 39.0,
@@ -4572,7 +7005,14 @@
     "catches": 30.0,
     "offensePoints": 0.0,
     "defensePoints": 18.0,
-    "+/-": 0.0
+    "possessionsInitiated": 9.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 372.7,
+    "avgThrowYards": 11.3,
+    "totalCatchYards": 37.8,
+    "avgCatchYards": 1.3,
+    "+/-": -4.0
   },
   {
     "player": "96 Nina Finley",
@@ -4580,6 +7020,7 @@
     "teamAbbrev": "NY",
     "goals": 14.0,
     "assists": 9.0,
+    "secondaryAssists": 11.0,
     "blocks": 5.0,
     "turnovers": 10.0,
     "touches": 200.0,
@@ -4587,7 +7028,14 @@
     "catches": 137.0,
     "offensePoints": 75.0,
     "defensePoints": 58.0,
-    "+/-": 18.0
+    "possessionsInitiated": 63.0,
+    "throwerErrors": 7.0,
+    "receiverErrors": 3.0,
+    "totalThrowYards": 1265.3,
+    "avgThrowYards": 7.1,
+    "totalCatchYards": 478.4,
+    "avgCatchYards": 3.5,
+    "+/-": 8.0
   },
   {
     "player": "97 Eileen Bequette",
@@ -4595,6 +7043,7 @@
     "teamAbbrev": "MKE",
     "goals": 8.0,
     "assists": 2.0,
+    "secondaryAssists": 2.0,
     "blocks": 9.0,
     "turnovers": 6.0,
     "touches": 25.0,
@@ -4602,7 +7051,14 @@
     "catches": 20.0,
     "offensePoints": 23.0,
     "defensePoints": 39.0,
-    "+/-": 13.0
+    "possessionsInitiated": 5.0,
+    "throwerErrors": 4.0,
+    "receiverErrors": 2.0,
+    "totalThrowYards": -17.5,
+    "avgThrowYards": -0.9,
+    "totalCatchYards": 676.8,
+    "avgCatchYards": 33.8,
+    "+/-": 7.0
   },
   {
     "player": "97 Hannah Glick",
@@ -4610,6 +7066,7 @@
     "teamAbbrev": "NY",
     "goals": 1.0,
     "assists": 1.0,
+    "secondaryAssists": 1.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 12.0,
@@ -4617,7 +7074,14 @@
     "catches": 12.0,
     "offensePoints": 13.0,
     "defensePoints": 22.0,
-    "+/-": 1.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 1.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": -58.6,
+    "avgThrowYards": -5.9,
+    "totalCatchYards": 181.0,
+    "avgCatchYards": 15.1,
+    "+/-": 0.0
   },
   {
     "player": "99 Carmen Tormey",
@@ -4625,6 +7089,7 @@
     "teamAbbrev": "RAL",
     "goals": 1.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 1.0,
     "touches": 12.0,
@@ -4632,7 +7097,14 @@
     "catches": 12.0,
     "offensePoints": 3.0,
     "defensePoints": 17.0,
-    "+/-": 0.0
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 1.0,
+    "totalThrowYards": 75.2,
+    "avgThrowYards": 7.5,
+    "totalCatchYards": 191.1,
+    "avgCatchYards": 15.9,
+    "+/-": -1.0
   },
   {
     "player": "99 Dana Demmert",
@@ -4640,6 +7112,7 @@
     "teamAbbrev": "MKE",
     "goals": 3.0,
     "assists": 1.0,
+    "secondaryAssists": 2.0,
     "blocks": 3.0,
     "turnovers": 12.0,
     "touches": 48.0,
@@ -4647,7 +7120,14 @@
     "catches": 46.0,
     "offensePoints": 40.0,
     "defensePoints": 27.0,
-    "+/-": -5.0
+    "possessionsInitiated": 2.0,
+    "throwerErrors": 6.0,
+    "receiverErrors": 6.0,
+    "totalThrowYards": 8.2,
+    "avgThrowYards": 0.2,
+    "totalCatchYards": 369.1,
+    "avgCatchYards": 8.0,
+    "+/-": -17.0
   },
   {
     "player": "99 Veronica Kolegue-Spalaris",
@@ -4655,6 +7135,7 @@
     "teamAbbrev": "PHL",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 1.0,
@@ -4662,6 +7143,13 @@
     "catches": 1.0,
     "offensePoints": 0.0,
     "defensePoints": 7.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 12.3,
+    "avgThrowYards": 12.3,
+    "totalCatchYards": 14.7,
+    "avgCatchYards": 14.7,
     "+/-": 0.0
   },
   {
@@ -4670,6 +7158,7 @@
     "teamAbbrev": "INDY",
     "goals": 0.0,
     "assists": 0.0,
+    "secondaryAssists": 0.0,
     "blocks": 0.0,
     "turnovers": 0.0,
     "touches": 0.0,
@@ -4677,6 +7166,13 @@
     "catches": 0.0,
     "offensePoints": 0.0,
     "defensePoints": 0.0,
+    "possessionsInitiated": 0.0,
+    "throwerErrors": 0.0,
+    "receiverErrors": 0.0,
+    "totalThrowYards": 0.0,
+    "avgThrowYards": 0.0,
+    "totalCatchYards": 0.0,
+    "avgCatchYards": 0.0,
     "+/-": 0.0
   }
 ]

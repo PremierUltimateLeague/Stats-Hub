@@ -1054,5 +1054,59 @@
     "completionRate": 87.6,
     "hucks": 12.0,
     "team": "Raleigh Radiance"
+  },
+  {
+    "team": "DC Shadow",
+    "abbrev": "DC",
+    "match": "DC @ PHL",
+    "week": "Semifinals",
+    "goals": 20,
+    "blocks": 8,
+    "turnovers": 23
+  },
+  {
+    "team": "Philadelphia Surge",
+    "abbrev": "PHL",
+    "match": "DC @ PHL",
+    "week": "Semifinals",
+    "goals": 13,
+    "blocks": 10,
+    "turnovers": 32
+  },
+  {
+    "team": "New York Gridlock",
+    "abbrev": "NY",
+    "match": "NY @ ATX",
+    "week": "Semifinals",
+    "goals": 20,
+    "blocks": 21,
+    "turnovers": 28
+  },
+  {
+    "team": "Austin Torch",
+    "abbrev": "ATX",
+    "match": "NY @ ATX",
+    "week": "Semifinals",
+    "goals": 9,
+    "blocks": 15,
+    "turnovers": 36
+  },
+  {
+    "team": "DC Shadow",
+    "abbrev": "DC",
+    "match": "DC @ NY",
+    "week": "Finals",
+    "goals": 10,
+    "blocks": 8,
+    "turnovers": 37
+  },
+  {
+    "team": "New York Gridlock",
+    "abbrev": "NY",
+    "match": "DC @ NY",
+    "week": "Finals",
+    "goals": 16,
+    "blocks": 13,
+    "turnovers": 29
   }
 ]
