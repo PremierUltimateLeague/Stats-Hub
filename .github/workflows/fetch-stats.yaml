@@ -1,0 +1,44 @@
+name: Fetch PUL Stats
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 6 * * *'
+
+jobs:
+  fetch-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Install Python dependencies
+        run: pip install pandas
+
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: 'projects/592898536132/locations/global/workloadIdentityPools/pul-stats-hub-github-actions/providers/github'
+          service_account: 'pul-stats-pipeline@pul-stats-hub.iam.gserviceaccount.com'
+
+      - name: Fetch CSVs from Drive
+        run: node processing/fetch-drive-data.js
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.auth.outputs.credentials_file_path }}
+
+      - name: Export to JSON
+        run: python processing/export.py
