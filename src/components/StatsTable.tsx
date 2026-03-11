@@ -1,4 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
+import { normalizeString } from '../utils/statsUtils';
 
 const ALWAYS_VISIBLE_COLUMNS = new Set(['player', 'team', 'match', 'week']);
 import {
@@ -105,9 +106,6 @@ export function StatsTable<T extends Record<string, unknown>>({
   const suggestions = useMemo(() => {
     if (!globalFilter || globalFilter.length < 2) return [];
 
-    const normalizeString = (str: string) =>
-      str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-
     const search = normalizeString(globalFilter);
     const matches: string[] = [];
 
@@ -196,9 +194,6 @@ export function StatsTable<T extends Record<string, unknown>>({
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     globalFilterFn: (row, _columnId, filterValue) => {
-      const normalizeString = (str: string) =>
-        str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-
       const columnsToSearch = searchableColumns.length > 0
         ? searchableColumns
         : columns.map(c => (c as { accessorKey?: string }).accessorKey).filter(Boolean);

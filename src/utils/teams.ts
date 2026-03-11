@@ -16,23 +16,6 @@ export const teamLogos: Record<string, string> = {
   'Raleigh Radiance': 'raleigh.png',
 };
 
-// Team abbreviations
-export const teamAbbrevs: Record<string, string> = {
-  'Atlanta Soul': 'ATL',
-  'Austin Torch': 'ATX',
-  'DC Shadow': 'DC',
-  'Indy Red': 'IND',
-  'LA Astra': 'LA',
-  'Medellin Revolution': 'MED',
-  'Milwaukee Monarchs': 'MKE',
-  'Minnesota Strike': 'MIN',
-  'Nashville NightShade': 'NSH',
-  'New York Gridlock': 'NY',
-  'Philadelphia Surge': 'PHL',
-  'Portland Rising': 'PORT',
-  'Raleigh Radiance': 'RAL',
-};
-
 // Abbreviation to full team name (reverse + variants)
 export const teamNames: Record<string, string> = {
   'ATL': 'Atlanta Soul',

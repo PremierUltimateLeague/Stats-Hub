@@ -71,7 +71,9 @@ for (const season of seasons) {
       
       break;
     }
-  } catch (e) {}
+  } catch (e) {
+    console.error(`Error loading game data for season ${season}:`, e);
+  }
 }
 
 const awayLogo = teamLogos[awayTeam] ? `/Stats-Hub/images/teams/${teamLogos[awayTeam]}` : null;
@@ -89,8 +91,15 @@ const homeWon = homeGoals > awayGoals;
     <!-- Back link -->
     <BackButton fallback="/Stats-Hub/teams" />
 
+    {!gameSeason && (
+      <div class="text-center py-16">
+        <p class="text-xl font-semibold text-pul-gray">Game not found</p>
+        <p class="text-pul-gray mt-2">Stats for this game could not be loaded.</p>
+      </div>
+    )}
+
     <!-- Game Header -->
-    <div class="text-center">
+    {gameSeason && <div class="text-center">
       <div class="text-sm text-pul-gray mb-2">{gameSeason} • {week}</div>
       
       <div class="flex items-center justify-center gap-6 sm:gap-12">
@@ -121,7 +130,7 @@ const homeWon = homeGoals > awayGoals;
       <div class="mt-2 text-sm text-pul-gray">
         {awayWon ? `${awayTeam} wins` : homeWon ? `${homeTeam} wins` : 'Tie'}
       </div>
-    </div>
+    </div>}
 
     <!-- Team Stats Comparison -->
     {awayTeamStats && homeTeamStats && (

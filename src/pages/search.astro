@@ -7,6 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 import { seasons } from '../config/seasons';
+import { normalizeString } from '../utils/statsUtils';
 
 // Load teams
 const allTeams: any[] = [];
@@ -34,7 +35,7 @@ for (const season of seasons) {
     players.forEach((p: any) => {
       if (p.player && typeof p.player === 'string') {
         // Normalize for dedup check
-        const normalizedName = p.player.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        const normalizedName = normalizeString(p.player);
         if (!seenPlayers.has(normalizedName)) {
           seenPlayers.add(normalizedName);
           allPlayers.push({ ...p, season });
@@ -46,16 +47,20 @@ for (const season of seasons) {
   }
 }
 
-// Load standings for team records
+// Load standings for team records — use the most recent season that has a standings file
 const standingsByTeam: Record<string, any> = {};
-try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2025', 'standings.json'), 'utf-8');
-  const standings = JSON.parse(data);
-  standings.forEach((s: any) => {
-    standingsByTeam[s.team] = s;
-  });
-} catch (e) {
-  console.error('Failed to load standings.json for 2025:', e);
+for (const season of seasons) {
+  const standingsPath = path.join(process.cwd(), 'data', season, 'standings.json');
+  if (fs.existsSync(standingsPath)) {
+    try {
+      const data = fs.readFileSync(standingsPath, 'utf-8');
+      const standings = JSON.parse(data);
+      standings.forEach((s: any) => { standingsByTeam[s.team] = s; });
+    } catch (e) {
+      console.error(`Failed to load standings.json for season ${season}:`, e);
+    }
+    break;
+  }
 }
 ---
 

@@ -273,7 +273,7 @@ def export_season(year: int, stats_dir: Path) -> None:
         stats_dir / "player-stats-game.csv", output_dir / "players_games.json"
     )
 
-    export_standings(stats_dir / "team-stats-game.csv", output_dir / "standings.json")
+    export_standings(stats_dir / "team-stats-game.csv", output_dir / "standings.json", year)
 
     metadata = {
         "season": year,
@@ -300,7 +300,7 @@ def main() -> None:
     print("\nDone!")
 
 
-def export_standings(csv_path: Path, json_path: Path) -> None:
+def export_standings(csv_path: Path, json_path: Path, year: int) -> None:
     """Calculate standings from game-by-game stats."""
     if not csv_path.exists():
         print(f"Warning: {csv_path} not found, skipping standings")
@@ -308,23 +308,15 @@ def export_standings(csv_path: Path, json_path: Path) -> None:
 
     df = pd.read_csv(csv_path)
 
-    # Division assignments (2024-2025 structure)
-    north_division = [
-        "New York Gridlock",
-        "Indy Red",
-        "Minnesota Strike",
-        "Milwaukee Monarchs",
-        "Philadelphia Surge",
-        "Portland Rising",
-    ]
-    south_division = [
-        "Atlanta Soul",
-        "Austin Torch",
-        "DC Shadow",
-        "Nashville NightShade",
-        "Raleigh Radiance",
-        "LA Astra",
-    ]
+    # Load division assignments from shared config
+    divisions_path = Path(__file__).parent / "divisions.json"
+    division_map: dict[str, str] = {}
+    if divisions_path.exists():
+        with open(divisions_path) as f:
+            all_divisions = json.load(f)
+        division_map = all_divisions.get(str(year), {})
+    else:
+        print(f"Warning: divisions.json not found, all teams will have division 'Unknown'")
 
     # Get unique matches
     matches = df["match"].unique()
@@ -361,13 +353,7 @@ def export_standings(csv_path: Path, json_path: Path) -> None:
         for team in [team1_name, team2_name]:
             if team not in standings:
                 team_full = TEAM_NAMES.get(team, team)
-                division = (
-                    "North"
-                    if team_full in north_division
-                    else "South"
-                    if team_full in south_division
-                    else "Unknown"
-                )
+                division = division_map.get(team_full, "Unknown")
                 standings[team] = {
                     "abbrev": team,
                     "team": team_full,

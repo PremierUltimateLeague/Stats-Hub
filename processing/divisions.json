@@ -1,0 +1,56 @@
+{
+  "2022": {
+    "Columbus Pride": "East",
+    "DC Shadow": "East",
+    "Medellin Revolution": "East",
+    "New York Gridlock": "East",
+    "Portland Rising": "East",
+    "Indy Red": "Midwest",
+    "Milwaukee Monarchs": "Midwest",
+    "Minnesota Strike": "Midwest",
+    "Atlanta Soul": "South",
+    "Austin Torch": "South",
+    "Nashville NightShade": "South",
+    "Raleigh Radiance": "South"
+  },
+  "2023": {
+    "Columbus Pride": "East",
+    "DC Shadow": "East",
+    "New York Gridlock": "East",
+    "Philadelphia Surge": "East",
+    "Portland Rising": "East",
+    "Indy Red": "Midwest",
+    "Milwaukee Monarchs": "Midwest",
+    "Minnesota Strike": "Midwest",
+    "Atlanta Soul": "South",
+    "Austin Torch": "South",
+    "Nashville NightShade": "South",
+    "Raleigh Radiance": "South"
+  },
+  "2024": {
+    "DC Shadow": "North",
+    "Indy Red": "North",
+    "Milwaukee Monarchs": "North",
+    "Minnesota Strike": "North",
+    "New York Gridlock": "North",
+    "Portland Rising": "North",
+    "Atlanta Soul": "South",
+    "Austin Torch": "South",
+    "Nashville NightShade": "South",
+    "Philadelphia Surge": "South",
+    "Raleigh Radiance": "South"
+  },
+  "2025": {
+    "DC Shadow": "North",
+    "Indy Red": "North",
+    "Milwaukee Monarchs": "North",
+    "Minnesota Strike": "North",
+    "New York Gridlock": "North",
+    "Atlanta Soul": "South",
+    "Austin Torch": "South",
+    "LA Astra": "South",
+    "Nashville NightShade": "South",
+    "Philadelphia Surge": "South",
+    "Raleigh Radiance": "South"
+  }
+}

@@ -1,4 +1,12 @@
 /**
+ * Normalize a string for accent-insensitive comparison.
+ * e.g. "Ángel" -> "angel"
+ */
+export function normalizeString(str: string): string {
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
+/**
  * Get top N players by a stat with proper tied rankings.
  * Players with the same stat value receive the same rank.
  * If the last included player is tied with the next, those are included too.

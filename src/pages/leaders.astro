@@ -6,6 +6,7 @@ import DataNotice from '../components/DataNotice.astro';
 
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
+import { getLeadersWithRanks, padLeadersToMatch, normalizeString } from '../utils/statsUtils';
 
 const playersBySeason = loadSeasonData(seasons, 'players_season.json');
 
@@ -21,7 +22,7 @@ const careerPlayers: Map<string, any> = new Map();
 for (const season of seasons) {
   (playersBySeason[season] || []).forEach((player: any) => {
     if (!player.player || typeof player.player !== 'string') return;
-    const key = player.player.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const key = normalizeString(player.player);
     
     if (careerPlayers.has(key)) {
       const existing = careerPlayers.get(key);
@@ -49,7 +50,7 @@ careerPlayers.forEach((player, key) => {
   let seasonCount = 0;
   for (const season of seasons) {
     if ((playersBySeason[season] || []).some((p: any) => 
-      p.player && typeof p.player === 'string' && p.player.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === key
+      p.player && typeof p.player === 'string' && normalizeString(p.player) === key
     )) {
       seasonCount++;
     }
@@ -61,36 +62,6 @@ careerPlayers.forEach((player, key) => {
 
 playersBySeason['career'] = Array.from(careerPlayers.values());
 
-// Helper to get top N players by a stat with tied rankings
-const getLeadersWithRanks = (players: any[], stat: string, n: number = 5) => {
-  const sorted = [...players]
-    .sort((a, b) => (b[stat] || 0) - (a[stat] || 0));
-  
-  const result: any[] = [];
-  let rank = 1;
-  
-  for (let i = 0; i < sorted.length && result.length < n; i++) {
-    const value = sorted[i][stat] || 0;
-    // If same value as previous, same rank
-    if (i > 0 && value === (sorted[i - 1][stat] || 0)) {
-      result.push({ ...sorted[i], rank: result[result.length - 1].rank });
-    } else {
-      result.push({ ...sorted[i], rank: i + 1 });
-    }
-  }
-  
-  // If the last included player is tied with the next one, include those too
-  const lastValue = result.length > 0 ? result[result.length - 1][stat] : -1;
-  for (let i = result.length; i < sorted.length; i++) {
-    if ((sorted[i][stat] || 0) === lastValue) {
-      result.push({ ...sorted[i], rank: result[result.length - 1].rank });
-    } else {
-      break;
-    }
-  }
-  
-  return result;
-};
 
 // Define leader categories
 const categories = [
@@ -110,37 +81,19 @@ for (const seasonKey of [...seasons, 'career']) {
     continue;
   }
   
-  // Get raw leaders per category
   const rawLeaders: Record<string, any[]> = {};
   categories.forEach(cat => {
     rawLeaders[cat.key] = getLeadersWithRanks(seasonPlayers, cat.key);
   });
-  
-  // Find max count across categories
-  const maxCount = Math.max(...Object.values(rawLeaders).map(l => l.length));
-  
-  // Pad shorter lists
-  const padded: Record<string, any[]> = {};
-  categories.forEach(cat => {
-    const leaders = rawLeaders[cat.key];
-    const sorted = [...seasonPlayers].sort((a, b) => (b[cat.key] || 0) - (a[cat.key] || 0));
-    const result = [...leaders];
-    let nextIndex = result.length;
-    
-    while (result.length < maxCount && nextIndex < sorted.length) {
-      const value = sorted[nextIndex][cat.key] || 0;
-      const prevValue = sorted[nextIndex - 1]?.[cat.key] || 0;
-      if (value === prevValue) {
-        result.push({ ...sorted[nextIndex], rank: result[result.length - 1].rank });
-      } else {
-        result.push({ ...sorted[nextIndex], rank: nextIndex + 1 });
-      }
-      nextIndex++;
-    }
-    padded[cat.key] = result;
-  });
-  
-  leadersBySeason[seasonKey] = padded;
+
+  const sortedByCategory = Object.fromEntries(
+    categories.map(cat => [
+      cat.key,
+      [...seasonPlayers].sort((a, b) => (b[cat.key] || 0) - (a[cat.key] || 0)),
+    ])
+  );
+
+  leadersBySeason[seasonKey] = padLeadersToMatch(rawLeaders, sortedByCategory, categories.map(c => c.key));
 }
 ---
 
