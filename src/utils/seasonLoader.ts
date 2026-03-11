@@ -15,6 +15,7 @@ export function loadSeasonData(
       );
       result[season] = JSON.parse(data);
     } catch (e) {
+      console.error(`Failed to load ${filename} for season ${season}:`, e);
       result[season] = [];
     }
   }

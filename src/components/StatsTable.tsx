@@ -1,4 +1,6 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
+
+const ALWAYS_VISIBLE_COLUMNS = new Set(['player', 'team', 'match', 'week']);
 import {
   useReactTable,
   getCoreRowModel,
@@ -8,6 +10,9 @@ import {
   type ColumnDef,
   type SortingState,
   type VisibilityState,
+  type Row,
+  type Header,
+  type Cell,
 } from '@tanstack/react-table';
 
 interface StatsTableProps<T extends Record<string, unknown>> {
@@ -45,7 +50,7 @@ export function StatsTable<T extends Record<string, unknown>>({
 }: StatsTableProps<T>) {
   const [sorting, setSorting] = useState<SortingState>(() => {
     const hasWeekColumn = columns.some(
-      (col) => (col as any).accessorKey === 'week'
+      (col) => (col as ColumnDef<T, unknown> & { accessorKey?: string }).accessorKey === 'week'
     );
     return hasWeekColumn ? [{ id: 'week', desc: false }] : [];
   });
@@ -79,9 +84,10 @@ export function StatsTable<T extends Record<string, unknown>>({
     const values = Array.from(uniqueValues);
 
     if (filterColumn === 'week') {
+      const postseasonOrder: Record<string, number> = { Semifinals: 998, Finals: 999 };
       return values.sort((a, b) => {
-        const numA = parseInt(a.replace(/\D/g, '') || '0');
-        const numB = parseInt(b.replace(/\D/g, '') || '0');
+        const numA = postseasonOrder[a] ?? parseInt(a.replace(/\D/g, '') || '0');
+        const numB = postseasonOrder[b] ?? parseInt(b.replace(/\D/g, '') || '0');
         return numA - numB;
       });
     }
@@ -157,13 +163,16 @@ export function StatsTable<T extends Record<string, unknown>>({
   // Add custom sorting for columns with week-like values
   const enhancedColumns = useMemo(() => {
     return columns.map(col => {
-      const accessorKey = (col as any).accessorKey;
+      const accessorKey = (col as ColumnDef<T, unknown> & { accessorKey?: string }).accessorKey;
       if (accessorKey === 'week') {
         return {
           ...col,
-          sortingFn: (rowA: any, rowB: any) => {
-            const a = parseInt(rowA.original.week?.replace(/\D/g, '') || '0');
-            const b = parseInt(rowB.original.week?.replace(/\D/g, '') || '0');
+          sortingFn: (rowA: Row<T>, rowB: Row<T>) => {
+            const postseasonOrder: Record<string, number> = { Semifinals: 998, Finals: 999 };
+            const weekA = (rowA.original as Record<string, unknown>).week ?? '';
+            const weekB = (rowB.original as Record<string, unknown>).week ?? '';
+            const a = postseasonOrder[String(weekA)] ?? parseInt(String(weekA).replace(/\D/g, '') || '0');
+            const b = postseasonOrder[String(weekB)] ?? parseInt(String(weekB).replace(/\D/g, '') || '0');
             return a - b;
           },
         };
@@ -204,18 +213,15 @@ export function StatsTable<T extends Record<string, unknown>>({
     },
   });
 
-  const getColumnId = (header: any): string => {
-    return header.column.columnDef.accessorKey || header.id;
+  const getColumnId = (header: Header<T, unknown>): string => {
+    return (header.column.columnDef as ColumnDef<T, unknown> & { accessorKey?: string }).accessorKey || header.id;
   };
-
-  // Columns that should never appear in the toggle (always visible)
-  const alwaysVisibleColumns = new Set(['player', 'team', 'match', 'week']);
 
   // Get toggleable columns for the column picker
   const toggleableColumns = useMemo(() => {
     return table.getAllColumns().filter(col => {
       const id = col.id;
-      return !alwaysVisibleColumns.has(id) && col.getCanHide();
+      return !ALWAYS_VISIBLE_COLUMNS.has(id) && col.getCanHide();
     });
   }, [table, columns]);
 
@@ -223,8 +229,8 @@ export function StatsTable<T extends Record<string, unknown>>({
   const hiddenCount = toggleableColumns.filter(col => !col.getIsVisible()).length;
 
   // Render cell content, with optional link and team color
-  const renderCell = (cell: any) => {
-    const colId = cell.column.columnDef.accessorKey || cell.column.id;
+  const renderCell = (cell: Cell<T, unknown>) => {
+    const colId = (cell.column.columnDef as ColumnDef<T, unknown> & { accessorKey?: string }).accessorKey || cell.column.id;
     const value = cell.getValue();
 
     const isTeamColumn = colId === 'team' && showTeamLogos;
@@ -337,6 +343,7 @@ export function StatsTable<T extends Record<string, unknown>>({
             onFocus={() => setShowSuggestions(true)}
             onKeyDown={handleKeyDown}
             placeholder={searchPlaceholder}
+            aria-label={searchPlaceholder}
             className="search-input w-full max-w-xs"
           />
 
@@ -466,7 +473,7 @@ export function StatsTable<T extends Record<string, unknown>>({
 
       {/* Table */}
       <div className="overflow-x-auto border border-pul-border rounded">
-        <table className="stats-table table-fixed w-full">
+        <table className="stats-table table-fixed w-full" aria-label="Stats table">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
@@ -477,6 +484,7 @@ export function StatsTable<T extends Record<string, unknown>>({
                     <th
                       key={header.id}
                       onClick={header.column.getToggleSortingHandler()}
+                      aria-label={`Sort by ${typeof header.column.columnDef.header === 'string' ? header.column.columnDef.header : header.id}`}
                       style={{
                         width: header.getSize(),
                         textAlign: isNumeric ? 'right' : 'left',
@@ -511,13 +519,16 @@ export function StatsTable<T extends Record<string, unknown>>({
             {table.getRowModel().rows.map((row) => (
               <tr key={row.id}>
                 {row.getVisibleCells().map((cell) => {
-                  const isNumeric = typeof cell.getValue() === 'number';
+                  const value = cell.getValue();
+                  const colId = (cell.column.columnDef as any).accessorKey || cell.column.id;
+                  const isNumericColumn = numericColumns.has(colId);
+                  const isNumeric = isNumericColumn || typeof value === 'number';
                   return (
                     <td
                       key={cell.id}
                       className={isNumeric ? 'text-right tabular-nums' : ''}
                     >
-                      {renderCell(cell)}
+                      {isNumericColumn && value == null ? 0 : renderCell(cell)}
                     </td>
                   );
                 })}

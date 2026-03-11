@@ -50,6 +50,7 @@ for (const season of seasons) {
         return numA - numB;
       });
   } catch (e) {
+    console.error(`Failed to load players_season.json for season ${season}:`, e);
     playersBySeason[season] = [];
   }
 
@@ -60,6 +61,7 @@ for (const season of seasons) {
     const allTeams = JSON.parse(rawData);
     teamStatsBySeason[season] = allTeams.find((t: any) => t.team === decodedTeam);
   } catch (e) {
+    console.error(`Failed to load teams_season.json for season ${season}:`, e);
     teamStatsBySeason[season] = null;
   }
 
@@ -70,6 +72,7 @@ for (const season of seasons) {
     const standings = JSON.parse(rawData);
     standingsBySeason[season] = standings.find((t: any) => t.team === decodedTeam);
   } catch (e) {
+    console.error(`Failed to load standings.json for season ${season}:`, e);
     standingsBySeason[season] = null;
   }
 
@@ -86,6 +89,7 @@ for (const season of seasons) {
       }))
       .sort((a: any, b: any) => a.weekNum - b.weekNum);
   } catch (e) {
+    console.error(`Failed to load teams_games.json for season ${season}:`, e);
     gameLogBySeason[season] = [];
   }
 }
@@ -111,7 +115,9 @@ export async function getStaticPaths() {
       const rawData = fs.readFileSync(dataPath, 'utf-8');
       const teamsData = JSON.parse(rawData);
       teamsData.forEach((t: any) => teams.add(t.team));
-    } catch (e) {}
+    } catch (e) {
+      console.error(`Failed to load teams_season.json for season ${season} in getStaticPaths:`, e);
+    }
   }
   
   return Array.from(teams).map(team => ({

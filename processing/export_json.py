@@ -57,15 +57,15 @@ PLAYER_COLUMN_RENAMES = {
 
 
 def ensure_output_dir(year: int) -> Path:
-    output_dir = OUTPUT_DIR / str(year)
+    output_dir: Path = OUTPUT_DIR / str(year)
     output_dir.mkdir(parents=True, exist_ok=True)
     return output_dir
 
 
 def compute_plus_minus(df: pd.DataFrame) -> pd.Series:
     """Compute +/- = Goals + Assists + Blocks - Turnovers - Thrower Errors - Receiver Errors"""
-    plus = df.get("goals", 0) + df.get("assists", 0) + df.get("blocks", 0)
-    minus = (
+    plus: pd.Series = df.get("goals", 0) + df.get("assists", 0) + df.get("blocks", 0)
+    minus: pd.Series = (
         df.get("turnovers", 0)
         + df.get("throwerErrors", 0)
         + df.get("receiverErrors", 0)
@@ -75,7 +75,7 @@ def compute_plus_minus(df: pd.DataFrame) -> pd.Series:
 
 def round_yard_columns(df: pd.DataFrame) -> pd.DataFrame:
     """Round yardage columns to 1 decimal place for cleaner display."""
-    yard_cols = ["totalThrowYards", "avgThrowYards", "totalCatchYards", "avgCatchYards"]
+    yard_cols: list[str] = ["totalThrowYards", "avgThrowYards", "totalCatchYards", "avgCatchYards"]    
     for col in yard_cols:
         if col in df.columns:
             df[col] = df[col].round(1)
@@ -286,13 +286,13 @@ def export_season(year: int, stats_dir: Path) -> None:
     print(f"Exported season {year} metadata")
 
 
-def main():
-    stats_2024 = SOURCE_DIR / "2024"
+def main() -> None:
+    stats_2024: Path = SOURCE_DIR / "2024"
     if stats_2024.exists() and (stats_2024 / "team-stats-overall.csv").exists():
         print("\nExporting 2024 season...")
         export_season(2024, stats_2024)
 
-    stats_2025 = SOURCE_DIR / "2025"
+    stats_2025: Path = SOURCE_DIR / "2025"
     if stats_2025.exists() and (stats_2025 / "team-stats-overall.csv").exists():
         print("\nExporting 2025 season...")
         export_season(2025, stats_2025)

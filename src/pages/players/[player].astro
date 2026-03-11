@@ -2,12 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import { StatsTable } from '../../components/StatsTable';
 import BackButton from '../../components/BackButton.astro';
+import DataNotice from '../../components/DataNotice.astro';
 
 import fs from 'node:fs';
 import path from 'node:path';
 
 import { seasons } from '../../config/seasons';
-import { teamLogos, teamColors } from '../../utils/teams';
+import { teamLogos } from '../../utils/teams';
 
 // Get the player from the URL
 const { player } = Astro.params;
@@ -175,6 +176,7 @@ const gameHiddenByDefault = [
   <div class="space-y-8">
     <!-- Back link -->
     <BackButton fallback="/Stats-Hub/players" />
+    <DataNotice />
 
     <!-- Player Header -->  
     <div class="flex items-center gap-6">
@@ -200,7 +202,9 @@ const gameHiddenByDefault = [
     <!-- Teams Played For -->
     {teamsPlayed.length > 0 && (
       <div>
-        <h2 class="text-lg font-semibold mb-3">Teams</h2>
+        <h2 class="text-lg font-semibold mb-3">Teams
+          <DataNotice />
+        </h2>
         <div class="flex flex-wrap gap-4">
           {teamsPlayed.map(({ season, team, logo }) => (
             <a 
@@ -222,7 +226,9 @@ const gameHiddenByDefault = [
 
     <!-- Career Stats -->
     <div>
-      <h2 class="text-lg font-semibold mb-3">Career Stats</h2>
+      <h2 class="text-lg font-semibold mb-3">Career Stats
+        <DataNotice />
+      </h2>
       <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-4">
         <div class="p-4 border border-pul-border rounded text-center">
           <div class="text-2xl font-semibold">{careerStats.games}</div>
@@ -288,14 +294,14 @@ const gameHiddenByDefault = [
                     {playerSeasonStats[season].team}
                   </a>
                 </td>
-                <td class="text-right tabular-nums">{playerSeasonStats[season].goals}</td>
-                <td class="text-right tabular-nums">{playerSeasonStats[season].assists}</td>
-                <td class="text-right tabular-nums">{playerSeasonStats[season].blocks}</td>
-                <td class="text-right tabular-nums">{playerSeasonStats[season].turnovers}</td>
-                <td class="text-right tabular-nums">{playerSeasonStats[season].touches}</td>
-                <td class="text-right tabular-nums">{playerSeasonStats[season]['+/-']}</td>
-                <td class="text-right tabular-nums">{playerSeasonStats[season].offensePoints}</td>
-                <td class="text-right tabular-nums">{playerSeasonStats[season].defensePoints}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].goals ?? 0}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].assists ?? 0}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].blocks ?? 0}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].turnovers ?? 0}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].touches ?? 0}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season]['+/-'] ?? 0}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].offensePoints ?? 0}</td>
+                <td class="text-right tabular-nums">{playerSeasonStats[season].defensePoints ?? 0}</td>
               </tr>
             ))}
             </tbody>

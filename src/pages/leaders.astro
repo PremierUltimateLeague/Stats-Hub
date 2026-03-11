@@ -2,10 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import EmptySeasonState from '../components/EmptySeasonState.astro';
 import SeasonSelect from '../components/SeasonSelect.astro';
+import DataNotice from '../components/DataNotice.astro';
 
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
-import { teamLogos } from '../utils/teams';
 
 const playersBySeason = loadSeasonData(seasons, 'players_season.json');
 
@@ -225,6 +225,10 @@ for (const seasonKey of [...seasons, 'career']) {
     ))}
 
     <div data-season="career" class="hidden">
+        <p class="text-sm text-pul-gray mb-4 inline-flex items-center gap-1">
+          Career totals (2023–Present)
+          <DataNotice />
+        </p>
         {playersBySeason['career'].length > 0 ? (
           <div class="grid md:grid-cols-2 gap-6">
             {categories.map(cat => {

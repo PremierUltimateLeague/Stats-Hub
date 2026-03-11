@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { teamLogos } from '../utils/teams';
+import DataNotice from '../components/DataNotice.astro';
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -18,7 +19,9 @@ for (const season of seasons) {
         allTeams.push({ ...t, season });
       }
     });
-  } catch (e) {}
+  } catch (e) {
+    console.error(`Failed to load teams_season.json for season ${season}:`, e);
+  }
 }
 
 // Load players (deduplicated)
@@ -38,7 +41,9 @@ for (const season of seasons) {
         }
       }
     });
-  } catch (e) {}
+  } catch (e) {
+    console.error(`Failed to load players_season.json for season ${season}:`, e);
+  }
 }
 
 // Load standings for team records
@@ -49,14 +54,19 @@ try {
   standings.forEach((s: any) => {
     standingsByTeam[s.team] = s;
   });
-} catch (e) {}
+} catch (e) {
+  console.error('Failed to load standings.json for 2025:', e);
+}
 ---
 
 <Layout title="Search">
   <div class="space-y-6">
     <div>
       <h1 class="text-3xl font-semibold">Search</h1>
-      <p class="text-pul-gray mt-1">Find players, teams, and stats</p>
+      <p class="text-pul-gray mt-1 inline-flex items-center gap-1">
+        Find players, teams, and stats (2023–Present)
+        <DataNotice />
+      </p>
     </div>
 
     <!-- Search Input -->

@@ -6,7 +6,11 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..");
 
-const FOLDER_ID = "1IiZ3dplsTZQzObibSS0OTN0IU3hcfjiP";
+const FOLDER_ID = process.env.DRIVE_FOLDER_ID;
+if (!FOLDER_ID) {
+    console.error("❌ DRIVE_FOLDER_ID environment variable is not set");
+    process.exit(1);
+}
 const OUTPUT_DIR = path.join(REPO_ROOT, "input_data");
 
 // File types and how to handle them
@@ -35,6 +39,23 @@ const FILE_HANDLERS = {
 };
 
 const SUPPORTED_TYPES = Object.keys(FILE_HANDLERS);
+
+async function withRetry(fn, maxAttempts = 3, baseDelayMs = 1000) {
+    let lastError;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+        try {
+            return await fn();
+        } catch (err) {
+            lastError = err;
+            if (attempt < maxAttempts) {
+                const delay = baseDelayMs * Math.pow(2, attempt - 1);
+                console.warn(`   ⚠️  Attempt ${attempt}/${maxAttempts} failed: ${err.message}. Retrying in ${delay}ms...`);
+                await new Promise((resolve) => setTimeout(resolve, delay));
+            }
+        }
+    }
+    throw lastError;
+}
 
 async function authenticate() {
     const auth = new google.auth.GoogleAuth({
@@ -72,7 +93,7 @@ async function downloadFile(drive, file) {
         return null;
     }
 
-    const response = await handler.download(drive, file.id);
+    const response = await withRetry(() => handler.download(drive, file.id));
 
     const baseName = path.parse(file.name).name;
     const outputName = `${baseName}${handler.extension}`;

@@ -3,27 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
 
+import { teamLogos } from '../utils/teams';
+import DataNotice from '../components/DataNotice.astro';
+
 // Load all player data from all seasons
 import { seasons } from '../config/seasons';
 const allPlayerStats: Map<string, any> = new Map();
-
-// Team logo mapping
-const teamLogos: Record<string, string> = {
-  'Atlanta Soul': 'atlanta.png',
-  'Austin Torch': 'austin.png',
-  'Columbus Pride': 'columbus.png',
-  'DC Shadow': 'dc.png',
-  'Indy Red': 'indy.png',
-  'LA Astra': 'la.png',
-  'Medellin Revolution': 'medellin.png',
-  'Milwaukee Monarchs': 'milwaukee.png',
-  'Minnesota Strike': 'minnesota.png',
-  'Nashville NightShade': 'nashville.png',
-  'New York Gridlock': 'new-york.png',
-  'Philadelphia Surge': 'philadelphia.png',
-  'Portland Rising': 'portland.png',
-  'Raleigh Radiance': 'raleigh.png',
-};
 
 // Aggregate stats across seasons
 for (const season of seasons) {
@@ -80,7 +65,10 @@ const categories = [
   <div class="space-y-8">
     <div>
       <h1 class="text-3xl font-semibold">League Records</h1>
-      <p class="text-pul-gray mt-1">All-time career leaders across all PUL seasons</p>
+      <p class="text-pul-gray mt-1 inline-flex items-center gap-1">
+        All-time career leaders (2023–Present)
+        <DataNotice />
+      </p>
     </div>
 
     <div class="grid lg:grid-cols-2 gap-6">
@@ -96,9 +84,8 @@ const categories = [
             </div>
             <div class="divide-y divide-pul-border">
               {leaders.map((player, index) => {
-                const logo = teamLogos[player.currentTeam] 
-                  ? `/Stats-Hub/images/teams/${teamLogos[player.currentTeam]}` 
-                  : null;
+                const logoFile = teamLogos[player.currentTeam];
+                const logo = logoFile ? `/Stats-Hub/images/teams/${logoFile}` : null;
                 const seasonsPlayed = player.seasons.length;
                 
                 return (

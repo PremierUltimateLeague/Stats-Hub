@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { StatsTable } from './StatsTable';
+import { ToggleSwitch } from './ToggleSwitch';
 import type { ColumnDef } from '@tanstack/react-table';
 
 interface PostseasonFilterTableProps<T extends Record<string, unknown>> {
@@ -33,7 +34,7 @@ export function PostseasonFilterTable<T extends Record<string, unknown>>({
   playerLinkColumn,
   gameLinkColumn,
 }: PostseasonFilterTableProps<T>) {
-  const [includePostseason, setIncludePostseason] = useState(true);
+  const [includePostseason, setIncludePostseason] = useState(false);
 
   const hasChampionshipData = useMemo(() => {
     return data.some(g => g.week === 'Semifinals' || g.week === 'Finals');
@@ -45,26 +46,11 @@ export function PostseasonFilterTable<T extends Record<string, unknown>>({
   }, [data, includePostseason]);
 
   const toggle = hasChampionshipData ? (
-    <label className="inline-flex items-center gap-2 cursor-pointer text-sm select-none">
-      <button
-        type="button"
-        role="switch"
-        aria-checked={includePostseason}
-        onClick={() => setIncludePostseason(!includePostseason)}
-        className={`relative inline-flex h-5 w-9 shrink-0 rounded-full transition-colors duration-200 ease-in-out ${
-          includePostseason ? 'bg-pul-black' : 'bg-pul-border'
-        }`}
-      >
-        <span
-          className={`pointer-events-none inline-block h-4 w-4 rounded-full bg-white shadow transform transition duration-200 ease-in-out mt-0.5 ${
-            includePostseason ? 'translate-x-[18px]' : 'translate-x-0.5'
-          }`}
-        />
-      </button>
-      <span className={includePostseason ? 'text-pul-black font-medium' : 'text-pul-gray'}>
-        Postseason
-      </span>
-    </label>
+    <ToggleSwitch
+      checked={includePostseason}
+      onChange={setIncludePostseason}
+      label="Postseason"
+    />
   ) : undefined;
 
   return (

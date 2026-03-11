@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
+import DataNotice from '../components/DataNotice.astro';
+
 import { seasons } from '../config/seasons';
 import { teamLogos } from '../utils/teams';
 
@@ -73,8 +75,9 @@ const playerList = Array.from(allPlayers.values())
       </div>
       <select id="compare-season" class="search-input text-sm">
         <option value="career">Career Totals</option>
-        <option value="2025">2025 Season</option>
-        <option value="2024">2024 Season</option>
+        {seasons.map(season => (
+          <option value={season}>{season} Season</option>
+        ))}
       </select>
     </div>
 
@@ -142,7 +145,10 @@ const playerList = Array.from(allPlayers.values())
 
     <!-- Comparison Results -->
     <div id="comparison" class="hidden">
-      <p id="compare-subtitle" class="text-sm text-pul-gray mb-3">Comparing career totals across all seasons</p>
+        <p id="compare-subtitle" class="text-sm text-pul-gray mb-3 inline-flex items-center gap-1">
+          <span id="compare-subtitle-text">Comparing career totals (2023–Present)</span>
+          <span id="compare-notice"><DataNotice /></span>
+        </p>
         <div class="border border-pul-border rounded-lg overflow-hidden">
         <div id="player-headers" class="grid border-b border-pul-border bg-pul-light"></div>
         <div id="stats-rows" class="divide-y divide-pul-border"></div>
@@ -565,9 +571,15 @@ const playerList = Array.from(allPlayers.values())
       // Update subtitle
       const subtitle = document.getElementById('compare-subtitle');
       if (subtitle) {
-        subtitle.textContent = currentSeason === 'career' 
-          ? 'Comparing career totals across all seasons'
-          : `Comparing ${currentSeason} season stats`;
+        const subtitleText = document.getElementById('compare-subtitle-text');
+        const notice = document.getElementById('compare-notice');
+        if (currentSeason === 'career') {
+          subtitleText.textContent = 'Comparing career totals (2023–Present)';
+          notice?.classList.remove('hidden');
+        } else {
+          subtitleText.textContent = `Comparing ${currentSeason} season stats`;
+          notice?.classList.add('hidden');
+        }
       }
 
       const numPlayers = players.length;

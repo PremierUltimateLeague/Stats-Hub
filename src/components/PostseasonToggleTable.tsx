@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { StatsTable } from './StatsTable';
+import { ToggleSwitch } from './ToggleSwitch';
 import type { ColumnDef } from '@tanstack/react-table';
 
 type AggregationMode = 'player' | 'team';
@@ -51,13 +52,13 @@ function aggregateWithPostseason<T extends Record<string, unknown>>(
   // Clone regular season data into a lookup
   const combined = new Map<string, Record<string, unknown>>();
   for (const row of regularData) {
-    const key = `${row[keyField]}||${row.team || ''}`;
+    const key = mode === 'player' ? `${row[keyField]}||${row.team || ''}` : String(row[keyField]);
     combined.set(key, { ...row });
   }
 
   // Add championship stats
   for (const game of champGames) {
-    const key = `${game[keyField]}||${game.team || ''}`;
+    const key = mode === 'player' ? `${game[keyField]}||${game.team || ''}` : String(game[keyField]);
     let record = combined.get(key);
 
     if (!record) {
@@ -149,26 +150,11 @@ export function PostseasonToggleTable<T extends Record<string, unknown>>({
         playerLinkColumn={playerLinkColumn}
         gameLinkColumn={gameLinkColumn}
         extraFilters={hasChampionshipData ? (
-          <label className="inline-flex items-center gap-2 cursor-pointer text-sm select-none">
-            <button
-              type="button"
-              role="switch"
-              aria-checked={includePostseason}
-              onClick={() => setIncludePostseason(!includePostseason)}
-              className={`relative inline-flex h-5 w-9 shrink-0 rounded-full transition-colors duration-200 ease-in-out ${
-                includePostseason ? 'bg-pul-black' : 'bg-pul-border'
-              }`}
-            >
-              <span
-                className={`pointer-events-none inline-block h-4 w-4 rounded-full bg-white shadow transform transition duration-200 ease-in-out mt-0.5 ${
-                  includePostseason ? 'translate-x-[18px]' : 'translate-x-0.5'
-                }`}
-              />
-            </button>
-            <span className={includePostseason ? 'text-pul-black font-medium' : 'text-pul-gray'}>
-              Postseason
-            </span>
-          </label>
+          <ToggleSwitch
+            checked={includePostseason}
+            onChange={setIncludePostseason}
+            label="Postseason"
+          />
         ) : undefined}
       />
     </div>

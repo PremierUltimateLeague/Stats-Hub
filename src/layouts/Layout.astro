@@ -165,6 +165,13 @@ const navItems = [
       button?.addEventListener('click', () => {
         menu?.classList.toggle('hidden');
       });
+
+      // Close mobile nav when a link is clicked
+      menu?.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          menu.classList.add('hidden');
+        });
+      });
     </script>
   </body>
 </html>

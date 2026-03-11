@@ -15,6 +15,14 @@ import openpyxl
 from pathlib import Path
 from typing import Any
 
+def _safe_int(value, default: int = 0) -> int:
+     """Convert value to int, returning default for None, empty, or non-numeric values."""
+     try:
+         return int(value or default)
+     except (ValueError, TypeError):
+        return default
+
+
 REPO_ROOT = Path(__file__).parent.parent
 DATA_DIR = REPO_ROOT / "data"
 CHAMP_DIR = REPO_ROOT / "input_data" / "championship"
@@ -95,10 +103,10 @@ def process_2025_xlsx(filepath: Path, away: str, home: str, week: str) -> tuple[
             name = row_dict["Full Name"]
             player_name = f"{jersey.zfill(2)} {name}" if jersey else name
 
-            goals = int(row_dict.get("Goals", 0) or 0)
-            assists = int(row_dict.get("Assists", 0) or 0)
-            blocks = int(row_dict.get("Blocks", 0) or 0)
-            turnovers = int(row_dict.get("Turnovers", 0) or 0)
+            goals = _safe_int(row_dict.get("Goals"))
+            assists = _safe_int(row_dict.get("Assists"))
+            blocks = _safe_int(row_dict.get("Blocks"))
+            turnovers = _safe_int(row_dict.get("Turnovers"))
 
             team_goals += goals
             team_assists += assists
@@ -140,7 +148,7 @@ def process_2025_xlsx(filepath: Path, away: str, home: str, week: str) -> tuple[
     return player_rows, team_summaries
 
 
-def _enrich_team_stats_from_points(ws, team_summaries: list[dict], away: str, home: str):
+def _enrich_team_stats_from_points(ws: Any, team_summaries: list[dict], away: str, home: str) -> None:
     """Derive holds, breaks, clean holds from the Points sheet."""
     away_full = TEAM_NAMES.get(away, away)
     home_full = TEAM_NAMES.get(home, home)
@@ -259,11 +267,6 @@ def process_2024_folder(base_dir: Path, folder: str, away: str, home: str, week:
             - df.get("receiverErrors", 0)
         )
 
-        # Round yard columns
-        for col in ["totalThrowYards", "avgThrowYards", "totalCatchYards", "avgCatchYards"]:
-            if col in df.columns:
-                df[col] = df[col].round(1)
-
         # Select columns that exist
         keep_cols = [
             "player", "team", "teamAbbrev", "week", "match",
@@ -295,25 +298,25 @@ def process_2024_folder(base_dir: Path, folder: str, away: str, home: str, week:
 
 # ─── Main pipeline ────────────────────────────────────────────────────────────
 
-def load_json(path: Path) -> list[dict]:
+def load_json(path: Path) -> list[dict[str, Any]]:
     if path.exists():
         with open(path) as f:
             return json.load(f)
     return []
 
 
-def save_json(data: list[dict], path: Path) -> None:
+def save_json(data: list[dict[str, Any]], path: Path) -> None:
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
     print(f"  Saved {len(data)} records to {path}")
 
 
-def remove_championship_records(data: list[dict]) -> list[dict]:
+def remove_championship_records(data: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Remove any existing championship records so we can re-append cleanly."""
     return [r for r in data if r.get("week") not in ("Semifinals", "Finals")]
 
 
-def process_season(year: int):
+def process_season(year: int) -> None:
     """Process championship data for a given season and append to existing JSON."""
     data_dir = DATA_DIR / str(year)
     champ_source = CHAMP_DIR / str(year)
@@ -371,14 +374,14 @@ def process_season(year: int):
     print(f"  {year} championship: {len(all_player_games)} player records, {len(all_team_games)} team records")
 
 
-def _update_standings_with_championship(standings_path: Path, team_games: list[dict]):
+def _update_standings_with_championship(standings_path: Path, team_games: list[dict[str, Any]]) -> None:
     """Optionally mark championship results in standings (not affecting W-L record)."""
-    # Championship games don't count toward regular season standings,
-    # but we could add a 'championshipResults' field later if desired.
+    # TODO: add a 'championshipResults' field to standings if desired.
+    # Championship games intentionally do not affect W-L records.
     pass
 
 
-def main():
+def main() -> None:
     process_season(2024)
     process_season(2025)
     print("\nDone!")

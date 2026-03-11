@@ -11,6 +11,7 @@ export default {
           'gray': '#666666',
           'dark-gray': '#333333',
           'black': '#000000',
+          'blue': '#89CFF0',
         },
         'teams': {
           'new-york': '#FF6B35',
