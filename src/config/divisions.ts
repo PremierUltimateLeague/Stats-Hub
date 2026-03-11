@@ -95,6 +95,18 @@ export const teamDivisions: Record<string, DivisionMap> = {
     'Philadelphia Surge': 'South',
     'Raleigh Radiance': 'South',
   },
+  '2026': {
+    'Indy Red': 'North',
+    'Milwaukee Monarchs': 'North',
+    'Minnesota Strike': 'North',
+    'New York Gridlock': 'North',
+    'Philadelphia Surge': 'North',
+    'Atlanta Soul': 'South',
+    'Austin Torch': 'South',
+    'DC Shadow': 'South',
+    'Nashville NightShade': 'South',
+    'Raleigh Radiance': 'South',
+  },
 };
 
 /**

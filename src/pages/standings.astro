@@ -5,6 +5,7 @@ import path from 'node:path';
 
 import { seasons } from '../config/seasons';
 import { teamLogos, teamColors } from '../utils/teams';
+import { teamDivisions } from '../config/divisions';
 
 const standingsBySeason: Record<string, any[]> = {};
 
@@ -25,13 +26,23 @@ seasons.forEach(season => {
 });
 
 // Find the latest season with actual stats for default selection
-let defaultSeason = seasons[0];
-for (const season of seasons) {
-  if (standingsBySeason[season] && standingsBySeason[season].length > 0) {
-    defaultSeason = season;
-    break;
+// Always default to the most recent season (even if no data yet)
+const defaultSeason = seasons[0];
+
+// Build pre-season team list for seasons without standings data
+const preseasonBySeason: Record<string, Record<string, string[]>> = {};
+seasons.forEach(season => {
+  if (standingsBySeason[season].length === 0 && teamDivisions[season]) {
+    const divMap = teamDivisions[season];
+    const byDiv: Record<string, string[]> = {};
+    Object.entries(divMap).forEach(([team, div]) => {
+      if (!byDiv[div]) byDiv[div] = [];
+      byDiv[div].push(team);
+    });
+    Object.values(byDiv).forEach(teams => teams.sort());
+    preseasonBySeason[season] = byDiv;
   }
-}
+});
 
 // Group by division
 const groupByDivision = (standings: any[]) => {
@@ -72,7 +83,7 @@ const groupByDivision = (standings: any[]) => {
               {['North', 'South'].map(divisionName => {
                 const teams = divisions[divisionName] || [];
                 if (teams.length === 0) return null;
-                
+
                 return (
                   <div>
                     <h2 class="text-lg font-semibold mb-3 text-pul-gray">{divisionName} Division</h2>
@@ -96,12 +107,12 @@ const groupByDivision = (standings: any[]) => {
                             const logo = teamLogos[team.team] ? `/Stats-Hub/images/teams/${teamLogos[team.team]}` : null;
                             const color = teamColors[team.team] || '#666666';
                             const last6 = team.last6 || [];
-                            
+
                             return (
                               <tr style={`border-left: 4px solid ${color};`}>
                                 <td class="font-semibold text-pul-gray">{index + 1}</td>
                                 <td>
-                                  <a 
+                                  <a
                                     href={`/Stats-Hub/teams/${encodeURIComponent(team.team)}`}
                                     class="flex items-center gap-3 hover:underline"
                                   >
@@ -117,12 +128,12 @@ const groupByDivision = (standings: any[]) => {
                                 <td class="text-center">
                                   <div class="flex justify-center gap-1">
                                     {last6.map((result: string, i: number) => (
-                                      <span 
+                                      <span
                                         class={`w-6 h-6 rounded text-xs font-bold flex items-center justify-center ${
-                                          result === 'W' 
-                                            ? 'bg-green-100 text-green-700' 
-                                            : result === 'L' 
-                                            ? 'bg-red-100 text-red-700' 
+                                          result === 'W'
+                                            ? 'bg-green-100 text-green-700'
+                                            : result === 'L'
+                                            ? 'bg-red-100 text-red-700'
                                             : 'bg-gray-100 text-gray-700'
                                         }`}
                                       >
@@ -136,6 +147,53 @@ const groupByDivision = (standings: any[]) => {
                                 <td class={`text-center tabular-nums font-semibold ${team.pointDiff > 0 ? 'text-green-600' : team.pointDiff < 0 ? 'text-red-500' : ''}`}>
                                   {team.pointDiff > 0 ? '+' : ''}{team.pointDiff}
                                 </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : preseasonBySeason[season] ? (
+            <div class="space-y-8">
+              <div class="px-4 py-3 bg-pul-light border border-pul-border rounded-lg text-sm text-pul-gray">
+                The {season} season hasn't started yet. Standings will appear here once games are played.
+              </div>
+              {['North', 'South'].map(divisionName => {
+                const teams = preseasonBySeason[season][divisionName] || [];
+                if (teams.length === 0) return null;
+                return (
+                  <div>
+                    <h2 class="text-lg font-semibold mb-3 text-pul-gray">{divisionName} Division</h2>
+                    <div class="overflow-x-auto border border-pul-border rounded-lg">
+                      <table class="stats-table w-full">
+                        <thead>
+                          <tr>
+                            <th class="text-left">Team</th>
+                            <th class="text-center">W</th>
+                            <th class="text-center">L</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {teams.map((teamName: string) => {
+                            const logo = teamLogos[teamName] ? `/Stats-Hub/images/teams/${teamLogos[teamName]}` : null;
+                            const color = teamColors[teamName]?.primary || '#666666';
+                            return (
+                              <tr style={`border-left: 4px solid ${color};`}>
+                                <td>
+                                  <a
+                                    href={`/Stats-Hub/teams/${encodeURIComponent(teamName)}`}
+                                    class="flex items-center gap-3 hover:underline"
+                                  >
+                                    {logo && <img src={logo} alt={teamName} class="w-8 h-8 object-contain" />}
+                                    <span class="font-medium">{teamName}</span>
+                                  </a>
+                                </td>
+                                <td class="text-center tabular-nums text-pul-gray">0</td>
+                                <td class="text-center tabular-nums text-pul-gray">0</td>
                               </tr>
                             );
                           })}
