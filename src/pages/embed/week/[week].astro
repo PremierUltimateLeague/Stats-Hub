@@ -1,6 +1,10 @@
 ---
 import fs from 'node:fs';
 import path from 'node:path';
+import { seasons } from '../../../config/seasons';
+
+const baseUrl = `${import.meta.env.SITE}${import.meta.env.BASE_URL}`.replace(/\/$/, '');
+const currentSeason = seasons[0];
 
 // Team logo mapping
 const teamLogos: Record<string, string> = {
@@ -19,7 +23,7 @@ const teamLogos: Record<string, string> = {
 // Load schedule
 let schedule: any[] = [];
 try {
-  const data = fs.readFileSync(path.join(process.cwd(), 'data', '2026', 'schedule.json'), 'utf-8');
+  const data = fs.readFileSync(path.join(process.cwd(), 'data', currentSeason, 'schedule.json'), 'utf-8');
   schedule = JSON.parse(data);
 } catch (e) {}
 
@@ -35,7 +39,7 @@ export async function getStaticPaths() {
   
   let schedule: any[] = [];
   try {
-    const data = fs.readFileSync(path.join(process.cwd(), 'data', '2026', 'schedule.json'), 'utf-8');
+    const data = fs.readFileSync(path.join(process.cwd(), 'data', currentSeason, 'schedule.json'), 'utf-8');
     schedule = JSON.parse(data);
   } catch (e) {}
   
@@ -231,7 +235,7 @@ export async function getStaticPaths() {
                   <div class="team-info">
                     {awayLogo && (
                       <img 
-                        src={`https://premierultimateleague.github.io/Stats-Hub/images/teams/${awayLogo}`}
+                        src={`${baseUrl}/images/teams/${awayLogo}`}
                         alt={game.away}
                         class="team-logo"
                       />
@@ -248,8 +252,8 @@ export async function getStaticPaths() {
                 <div class={`team-row ${homeWon ? 'winner' : ''}`}>
                   <div class="team-info">
                     {homeLogo && (
-                      <img 
-                        src={`https://premierultimateleague.github.io/Stats-Hub/images/teams/${homeLogo}`}
+                      <img
+                        src={`${baseUrl}/images/teams/${homeLogo}`}
                         alt={game.home}
                         class="team-logo"
                       />
@@ -263,7 +267,7 @@ export async function getStaticPaths() {
 
                 <div class="game-footer">
                   {hasScore ? (
-                    <a href={`https://premierultimateleague.github.io/Stats-Hub/games/${game.awayAbbrev}%20@%20${game.homeAbbrev}`} target="_blank">
+                    <a href={`${baseUrl}/games/${game.awayAbbrev}%20@%20${game.homeAbbrev}`} target="_blank">
                       View game stats →
                     </a>
                   ) : (
@@ -277,7 +281,7 @@ export async function getStaticPaths() {
       </div>
 
       <div class="powered-by">
-        Powered by <a href="https://premierultimateleague.github.io/Stats-Hub/" target="_blank">PUL Stats Hub</a>
+        Powered by <a href={`${baseUrl}/`} target="_blank">PUL Stats Hub</a>
       </div>
     </div>
   ) : (
