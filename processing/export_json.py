@@ -8,28 +8,11 @@ import pandas as pd
 from pathlib import Path
 from datetime import datetime
 
+from utils import TEAM_NAMES
+
 REPO_ROOT = Path(__file__).parent.parent
 SOURCE_DIR = REPO_ROOT / "input_data"
 OUTPUT_DIR = REPO_ROOT / "data"
-
-
-TEAM_NAMES = {
-    "ATL": "Atlanta Soul",
-    "ATX": "Austin Torch",
-    "DC": "DC Shadow",
-    "IND": "Indy Red",
-    "INDY": "Indy Red",
-    "LA": "LA Astra",
-    "MKE": "Milwaukee Monarchs",
-    "MIN": "Minnesota Strike",
-    "MINN": "Minnesota Strike",
-    "NSH": "Nashville NightShade",
-    "NASH": "Nashville NightShade",
-    "NY": "New York Gridlock",
-    "PHL": "Philadelphia Surge",
-    "PORT": "Portland Rising",
-    "RAL": "Raleigh Radiance",
-}
 
 # Column rename mapping shared by player exports
 PLAYER_COLUMN_RENAMES = {

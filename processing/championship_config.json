@@ -1,0 +1,18 @@
+{
+  "2024": {
+    "format": "stato_csv_folders",
+    "games": [
+      { "folder": "Championship Weekend Semi_ DC @ PHL", "away": "DC", "home": "PHL", "week": "Semifinals" },
+      { "folder": "Championship Weekend Semi_ NY @ ATX", "away": "NY", "home": "ATX", "week": "Semifinals" },
+      { "folder": "Championship Final_ DC @ NY",         "away": "DC", "home": "NY",  "week": "Finals"     }
+    ]
+  },
+  "2025": {
+    "format": "xlsx",
+    "games": [
+      { "file": "DC_vs_NY_stats_2025_Champs.xlsx",   "away": "DC",   "home": "NY",  "week": "Semifinals" },
+      { "file": "INDY_vs_RAL_stats_2025_Champs.xlsx", "away": "INDY", "home": "RAL", "week": "Semifinals" },
+      { "file": "Finals_stats_2025_Champs.xlsx",      "away": "DC",   "home": "RAL", "week": "Finals"     }
+    ]
+  }
+}
