@@ -250,8 +250,6 @@ for (const seasonKey of [...seasons, 'career']) {
 
   <script>
     const seasonSelect = document.getElementById('season-select') as HTMLSelectElement;
-    const seasonDivs = document.querySelectorAll('[data-season]');
-    const leadersTitle = document.getElementById('leaders-title');
     const toast = document.getElementById('toast');
     
     // Career vs Season title handling
@@ -293,7 +291,7 @@ for (const seasonKey of [...seasons, 'career']) {
               url: url
             });
             return;
-          } catch (err) {
+          } catch {
             // User cancelled or share failed, fall back to clipboard
           }
         }
@@ -302,7 +300,7 @@ for (const seasonKey of [...seasons, 'career']) {
         try {
           await navigator.clipboard.writeText(url);
           showToast();
-        } catch (err) {
+        } catch {
           // Fallback for older browsers
           const textarea = document.createElement('textarea');
           textarea.value = url;

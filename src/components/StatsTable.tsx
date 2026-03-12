@@ -515,7 +515,7 @@ export function StatsTable<T extends Record<string, unknown>>({
               <tr key={row.id}>
                 {row.getVisibleCells().map((cell) => {
                   const value = cell.getValue();
-                  const colId = (cell.column.columnDef as any).accessorKey || cell.column.id;
+                  const colId = (cell.column.columnDef as { accessorKey?: string }).accessorKey || cell.column.id;
                   const isNumericColumn = numericColumns.has(colId);
                   const isNumeric = isNumericColumn || typeof value === 'number';
                   return (

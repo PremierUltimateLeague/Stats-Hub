@@ -4,7 +4,9 @@ import astroPlugin from 'eslint-plugin-astro';
 
 export default [
   {
-    ignores: ['dist/**', 'node_modules/**', '.astro/**'],
+    // dist, node_modules, generated files, and pages using <script define:vars>
+    // (eslint-plugin-astro does not support the define:vars directive)
+    ignores: ['dist/**', 'node_modules/**', '.astro/**', 'src/pages/compare.astro'],
   },
   {
     files: ['**/*.{ts,tsx}'],
