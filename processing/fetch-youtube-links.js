@@ -1,16 +1,22 @@
 /**
  * fetch-youtube-links.js
  *
- * Fetches video URLs from the PUL YouTube channel and updates schedule.json
- * with youtubeUrl for each matched game.
+ * Fetches video URLs from the PUL YouTube channel and writes youtubeUrl
+ * into the season's game data.
+ *
+ * - Seasons WITH schedule.json (e.g. 2026): updates youtubeUrl in schedule.json
+ *   (used by schedule page + home sidebar Watch buttons)
+ * - Seasons WITHOUT schedule.json (e.g. 2024, 2025): writes youtube_links.json
+ *   (used by individual game pages)
  *
  * Usage:
- *   node processing/fetch-youtube-links.js               # updates schedule.json
- *   node processing/fetch-youtube-links.js --dry-run     # prints matches, no writes
- *   node processing/fetch-youtube-links.js --season 2025 # specific season
+ *   node --env-file=.env processing/fetch-youtube-links.js
+ *   node --env-file=.env processing/fetch-youtube-links.js --dry-run
+ *   node --env-file=.env processing/fetch-youtube-links.js --season=2025
+ *   node --env-file=.env processing/fetch-youtube-links.js --season=2025 --dry-run
  *
  * Required env var:
- *   YOUTUBE_API_KEY — YouTube Data API v3 key (store in .env or GitHub secret)
+ *   YOUTUBE_API_KEY — YouTube Data API v3 key
  */
 
 import fs from 'node:fs';
@@ -31,17 +37,42 @@ const DRY_RUN = args.includes('--dry-run');
 const SEASON = args.find(a => a.startsWith('--season='))?.split('=')[1]
   ?? String(new Date().getFullYear());
 
+// Abbreviation → full team name (covers all historical seasons)
+const ABBREV_TO_NAME = {
+  'ATL':  'Atlanta Soul',
+  'ATX':  'Austin Torch',
+  'DC':   'DC Shadow',
+  'INDY': 'Indy Red',
+  'IND':  'Indy Red',
+  'LA':   'LA Astra',
+  'MED':  'Medellin Revolution',
+  'MKE':  'Milwaukee Monarchs',
+  'MIN':  'Minnesota Strike',
+  'MINN': 'Minnesota Strike',
+  'NSH':  'Nashville NightShade',
+  'NASH': 'Nashville NightShade',
+  'NY':   'New York Gridlock',
+  'NYC':  'New York Gridlock',
+  'PHL':  'Philadelphia Surge',
+  'PHI':  'Philadelphia Surge',
+  'PORT': 'Portland Rising',
+  'RAL':  'Raleigh Radiance',
+};
+
 // Keywords used to identify each team in a video title
 const TEAM_KEYWORDS = {
   'Atlanta Soul':         ['atlanta', 'soul'],
   'Austin Torch':         ['austin', 'torch'],
   'DC Shadow':            ['dc shadow', 'shadow'],
   'Indy Red':             ['indy', 'indy red'],
+  'LA Astra':             ['la astra', 'astra'],
+  'Medellin Revolution':  ['medellin', 'revolution'],
   'Milwaukee Monarchs':   ['milwaukee', 'monarchs'],
   'Minnesota Strike':     ['minnesota', 'strike'],
   'Nashville NightShade': ['nashville', 'nightshade', 'night shade'],
   'New York Gridlock':    ['new york', 'gridlock', 'nyc'],
   'Philadelphia Surge':   ['philadelphia', 'surge', 'philly'],
+  'Portland Rising':      ['portland', 'rising'],
   'Raleigh Radiance':     ['raleigh', 'radiance'],
 };
 
@@ -107,21 +138,21 @@ function titleContainsTeam(title, teamName) {
 
 function matchVideoToGame(video, games) {
   const lower = video.title.toLowerCase();
+
   const candidates = games.filter(game =>
-    titleContainsTeam(video.title, game.away) &&
-    titleContainsTeam(video.title, game.home)
+    titleContainsTeam(video.title, game.awayName) &&
+    titleContainsTeam(video.title, game.homeName)
   );
 
   if (candidates.length === 1) return candidates[0];
 
-  // If multiple candidates (e.g. same matchup different weeks), try week number
   if (candidates.length > 1) {
     for (const game of candidates) {
-      if (lower.includes(`week ${game.week}`) || lower.includes(`wk ${game.week}`)) {
+      const weekNum = game.weekNum;
+      if (weekNum && (lower.includes(`week ${weekNum}`) || lower.includes(`wk ${weekNum}`))) {
         return game;
       }
     }
-    // Still ambiguous — return null rather than guess wrong
     console.warn(`  ⚠ Ambiguous match for: "${video.title}" (${candidates.length} candidates)`);
     return null;
   }
@@ -129,38 +160,92 @@ function matchVideoToGame(video, games) {
   return null;
 }
 
+// ── Season helpers ────────────────────────────────────────────────────────────
+
+function loadGamesFromSchedule(schedulePath) {
+  const schedule = JSON.parse(fs.readFileSync(schedulePath, 'utf-8'));
+  const games = [];
+  for (const week of schedule) {
+    for (const game of week.games) {
+      if (!game.youtubeUrl) {
+        games.push({
+          match: `${game.awayAbbrev} @ ${game.homeAbbrev}`,
+          awayAbbrev: game.awayAbbrev,
+          homeAbbrev: game.homeAbbrev,
+          awayName: ABBREV_TO_NAME[game.awayAbbrev] ?? game.away,
+          homeName: ABBREV_TO_NAME[game.homeAbbrev] ?? game.home,
+          weekNum: week.week,
+          _scheduleWeek: week,
+          _scheduleGame: game,
+        });
+      }
+    }
+  }
+  return { type: 'schedule', schedule, games };
+}
+
+function loadGamesFromTeamGames(teamGamesPath, existingLinks) {
+  const teamGames = JSON.parse(fs.readFileSync(teamGamesPath, 'utf-8'));
+  const seen = new Set();
+  const games = [];
+  for (const g of teamGames) {
+    if (seen.has(g.match) || existingLinks[g.match]) continue;
+    seen.add(g.match);
+    const [awayAbbrev, homeAbbrev] = g.match.split(' @ ');
+    const weekNum = parseInt(String(g.week).replace(/\D/g, '') || '0') || null;
+    games.push({
+      match: g.match,
+      awayAbbrev,
+      homeAbbrev,
+      awayName: ABBREV_TO_NAME[awayAbbrev] ?? awayAbbrev,
+      homeName: ABBREV_TO_NAME[homeAbbrev] ?? homeAbbrev,
+      weekNum,
+    });
+  }
+  return { type: 'links', games };
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
   if (!API_KEY) {
     console.error('❌ YOUTUBE_API_KEY environment variable is not set.');
-    console.error('   Add it to your .env file or pass it inline:');
-    console.error('   YOUTUBE_API_KEY=your_key node processing/fetch-youtube-links.js');
+    console.error('   Run with: node --env-file=.env processing/fetch-youtube-links.js');
     process.exit(1);
   }
 
-  const schedulePath = path.join(REPO_ROOT, 'data', SEASON, 'schedule.json');
-  if (!fs.existsSync(schedulePath)) {
-    console.error(`❌ No schedule.json found for season ${SEASON} at ${schedulePath}`);
+  const dataDir = path.join(REPO_ROOT, 'data', SEASON);
+  if (!fs.existsSync(dataDir)) {
+    console.error(`❌ No data directory found for season ${SEASON} at ${dataDir}`);
     process.exit(1);
   }
+
+  const schedulePath = path.join(dataDir, 'schedule.json');
+  const teamGamesPath = path.join(dataDir, 'teams_games.json');
+  const linksPath = path.join(dataDir, 'youtube_links.json');
 
   console.log(`\n🎬 Fetching YouTube links for ${SEASON} season${DRY_RUN ? ' (dry run)' : ''}...\n`);
 
-  // Load schedule
-  const schedule = JSON.parse(fs.readFileSync(schedulePath, 'utf-8'));
-
-  // Flatten all games that don't yet have a youtubeUrl
-  const gamesNeedingLinks = [];
-  for (const week of schedule) {
-    for (const game of week.games) {
-      if (!game.youtubeUrl) {
-        gamesNeedingLinks.push({ ...game, week: week.week });
-      }
-    }
+  // Load season game list
+  let seasonData;
+  if (fs.existsSync(schedulePath)) {
+    console.log(`  Using schedule.json (${SEASON} has a full schedule)\n`);
+    seasonData = loadGamesFromSchedule(schedulePath);
+  } else if (fs.existsSync(teamGamesPath)) {
+    const existingLinks = fs.existsSync(linksPath)
+      ? JSON.parse(fs.readFileSync(linksPath, 'utf-8'))
+      : {};
+    console.log(`  Using teams_games.json (no schedule.json for ${SEASON})\n`);
+    seasonData = loadGamesFromTeamGames(teamGamesPath, existingLinks);
+    seasonData.existingLinks = existingLinks;
+  } else {
+    console.error(`❌ No schedule.json or teams_games.json found for season ${SEASON}`);
+    process.exit(1);
   }
-  console.log(`  ${gamesNeedingLinks.length} game(s) without a YouTube link\n`);
-  if (gamesNeedingLinks.length === 0) {
+
+  const { games } = seasonData;
+  console.log(`  ${games.length} game(s) without a YouTube link\n`);
+  if (games.length === 0) {
     console.log('  Nothing to do — all games already have links.');
     return;
   }
@@ -173,64 +258,51 @@ async function main() {
   // Find the season playlist
   console.log(`  Fetching playlists...`);
   const playlists = await getPlaylists(channelId);
-  const seasonPlaylist = playlists.find(p =>
-    p.snippet.title.includes(SEASON)
-  );
+  const seasonPlaylist = playlists.find(p => p.snippet.title.includes(SEASON));
 
   if (!seasonPlaylist) {
     console.error(`❌ No playlist found containing "${SEASON}" in its title.`);
     console.log('\n  Available playlists:');
     playlists.forEach(p => console.log(`    • ${p.snippet.title}`));
-    console.log('\n  Use --season=YEAR to target a different year, or check the playlist name above.');
     process.exit(1);
   }
-
   console.log(`  Found playlist: "${seasonPlaylist.snippet.title}"\n`);
 
-  // Fetch all videos in playlist
+  // Fetch all videos
   console.log(`  Fetching videos...`);
   const videos = await getPlaylistVideos(seasonPlaylist.id);
   console.log(`  Found ${videos.length} video(s)\n`);
 
-  // Match videos to games
+  // Match and write
   let matched = 0;
-  let unmatched = 0;
+  const remaining = [...games];
+  const newLinks = { ...(seasonData.existingLinks ?? {}) };
 
   for (const video of videos) {
-    const game = matchVideoToGame(video, gamesNeedingLinks);
-    if (!game) {
-      unmatched++;
-      continue;
+    const game = matchVideoToGame(video, remaining);
+    if (!game) continue;
+
+    console.log(`  ✓ "${video.title}"`);
+    console.log(`    → ${game.match}`);
+    console.log(`    → ${video.url}\n`);
+
+    if (seasonData.type === 'schedule') {
+      game._scheduleGame.youtubeUrl = video.url;
+    } else {
+      newLinks[game.match] = video.url;
     }
 
-    console.log(`  ✓ Matched: "${video.title}"`);
-    console.log(`         → Week ${game.week}: ${game.away} @ ${game.home}`);
-    console.log(`         → ${video.url}\n`);
-
-    // Write back into schedule
-    for (const week of schedule) {
-      if (week.week !== game.week) continue;
-      for (const g of week.games) {
-        if (g.awayAbbrev === game.awayAbbrev && g.homeAbbrev === game.homeAbbrev) {
-          g.youtubeUrl = video.url;
-          matched++;
-        }
-      }
-    }
-
-    // Remove from candidates so it can't match twice
-    const idx = gamesNeedingLinks.indexOf(game);
-    if (idx !== -1) gamesNeedingLinks.splice(idx, 1);
+    remaining.splice(remaining.indexOf(game), 1);
+    matched++;
   }
 
-  // Report unmatched games
-  if (gamesNeedingLinks.length > 0) {
-    console.log(`  ⚠ ${gamesNeedingLinks.length} game(s) had no matching video:`);
-    gamesNeedingLinks.forEach(g => console.log(`    • Week ${g.week}: ${g.away} @ ${g.home}`));
+  if (remaining.length > 0) {
+    console.log(`  ⚠ ${remaining.length} game(s) had no matching video:`);
+    remaining.forEach(g => console.log(`    • ${g.match}`));
     console.log();
   }
 
-  console.log(`  Summary: ${matched} link(s) found, ${gamesNeedingLinks.length} game(s) unmatched\n`);
+  console.log(`  Summary: ${matched} link(s) found, ${remaining.length} unmatched\n`);
 
   if (matched === 0) {
     console.log('  No changes to write.');
@@ -242,8 +314,13 @@ async function main() {
     return;
   }
 
-  fs.writeFileSync(schedulePath, JSON.stringify(schedule, null, 2));
-  console.log(`  ✅ Updated ${schedulePath}`);
+  if (seasonData.type === 'schedule') {
+    fs.writeFileSync(schedulePath, JSON.stringify(seasonData.schedule, null, 2));
+    console.log(`  ✅ Updated ${schedulePath}`);
+  } else {
+    fs.writeFileSync(linksPath, JSON.stringify(newLinks, null, 2));
+    console.log(`  ✅ Updated ${linksPath}`);
+  }
 }
 
 main().catch(err => {

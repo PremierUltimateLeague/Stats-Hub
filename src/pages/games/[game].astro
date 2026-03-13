@@ -80,7 +80,7 @@ for (const season of seasons) {
 const awayLogo = teamLogos[awayTeam] ? `/Stats-Hub/images/teams/${teamLogos[awayTeam]}` : null;
 const homeLogo = teamLogos[homeTeam] ? `/Stats-Hub/images/teams/${teamLogos[homeTeam]}` : null;
 
-// Find YouTube URL from schedule.json
+// Find YouTube URL — check schedule.json (2026+) then youtube_links.json (historical)
 let youtubeUrl: string | null = null;
 if (gameSeason) {
   try {
@@ -97,6 +97,15 @@ if (gameSeason) {
       }
     }
   } catch {}
+
+  if (!youtubeUrl) {
+    try {
+      const links = JSON.parse(
+        fs.readFileSync(path.join(process.cwd(), 'data', gameSeason, 'youtube_links.json'), 'utf-8')
+      );
+      youtubeUrl = links[decodedGame] ?? null;
+    } catch {}
+  }
 }
 
 // Determine winner
