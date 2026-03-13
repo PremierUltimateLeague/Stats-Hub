@@ -11,6 +11,7 @@ import path from 'node:path';
 import { seasons } from '../../config/seasons';
 import { teamLogos, teamColors } from '../../utils/teams';
 import { findDefaultSeason } from '../../utils/seasonLoader';
+import { weekWord, weekDisplay } from '../../utils/weekWord';
 import { teamMeta , getStatusLabel, getStatusClasses} from '../../config/teamMeta';
 import { getTeamDivision } from '../../config/divisions';
 
@@ -85,6 +86,7 @@ for (const season of seasons) {
       .filter((g: any) => g.team === decodedTeam)
       .map((g: any) => ({
         ...g,
+        week: weekDisplay(String(g.week)),
         weekNum: parseInt(String(g.week).replace(/\D/g, '') || '0')
       }))
       .sort((a: any, b: any) => a.weekNum - b.weekNum);
@@ -373,7 +375,7 @@ const gameLogHiddenByDefault = [
                     return (
                       <div class="flex items-center justify-between px-4 py-3 hover:bg-pul-light transition-colors">
                         <div class="flex items-center gap-3">
-                          <span class="text-xs font-medium text-pul-gray w-14">Wk {game.week}</span>
+                          <span class="text-xs font-medium text-pul-gray w-14">Wk {weekWord(game.week)}</span>
                           {opponentLogo && (
                             <img src={`/Stats-Hub/images/teams/${opponentLogo}`} alt={game.opponent} class="w-8 h-8 object-contain" />
                           )}

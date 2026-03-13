@@ -8,9 +8,18 @@ import { PostseasonFilterTable } from '../components/PostseasonFilterTable';
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
 import { teamLogos } from '../utils/teams';
+import { weekDisplay } from '../utils/weekWord';
 
 const teamsOverallBySeason = loadSeasonData(seasons, 'teams_season.json');
-const teamsGamesBySeason = loadSeasonData(seasons, 'teams_games.json');
+const rawTeamsGamesBySeason = loadSeasonData(seasons, 'teams_games.json');
+
+// Transform "Week 1" → "Week One" in the week column for display
+const teamsGamesBySeason = Object.fromEntries(
+  Object.entries(rawTeamsGamesBySeason).map(([season, data]) => [
+    season,
+    data.map(row => ({ ...row, week: weekDisplay(String(row.week)) })),
+  ])
+);
 
 const defaultSeason = findDefaultSeason(
   seasons,

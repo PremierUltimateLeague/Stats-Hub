@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { loadSeasonData, findDefaultSeason } from '../utils/seasonLoader';
 import { seasons } from '../config/seasons';
 import { teamLogos } from '../utils/teams';
+import { weekWord } from '../utils/weekWord';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -104,7 +105,7 @@ try {
     {upcomingGames.length > 0 && (
       <aside class="hidden lg:block sticky top-6">
         <p class="text-xs font-semibold uppercase tracking-widest text-pul-gray mb-2">Upcoming</p>
-        <h2 class="text-base font-semibold">Week {upcomingGames[0].week}</h2>
+        <h2 class="text-base font-semibold">Week {weekWord(upcomingGames[0].week)}</h2>
         <p class="text-sm text-pul-gray mb-4">{upcomingGames[0].weekend}</p>
 
         <div class="space-y-2.5">
@@ -212,7 +213,7 @@ try {
               <div class="flex items-center gap-3">
                 <span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span>
                 <span class="text-sm font-semibold">
-                  Week {upcomingGames[0].week} Upcoming
+                  Week {weekWord(upcomingGames[0].week)} Upcoming
                   <span class="font-normal text-pul-gray"> · {upcomingGames[0].weekend}</span>
                 </span>
               </div>

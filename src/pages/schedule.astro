@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { teamLogos } from '../utils/teams';
 import { seasons } from '../config/seasons';
+import { weekWord } from '../utils/weekWord';
 
 // Load schedule — use the most recent season
 const scheduleSeason = seasons[0];
@@ -51,7 +52,7 @@ const currentWeekNum = currentWeek?.week || 1;
               : 'border-pul-border hover:border-pul-black'
           }`}
         >
-          Week {week.week}
+          Week {weekWord(week.week)}
         </button>
       ))}
     </div>
@@ -64,7 +65,7 @@ const currentWeekNum = currentWeek?.week || 1;
         class={`space-y-4 ${week.week !== currentWeekNum ? 'hidden' : ''}`}
       >
         <div class="flex items-baseline justify-between">
-          <h2 class="text-xl font-semibold">Week {week.week}</h2>
+          <h2 class="text-xl font-semibold">Week {weekWord(week.week)}</h2>
           <span class="text-sm text-pul-gray">{week.weekend}</span>
         </div>
 

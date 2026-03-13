@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { seasons } from '../../../config/seasons';
+import { weekWord } from '../../../utils/weekWord';
 
 const baseUrl = `${import.meta.env.SITE}${import.meta.env.BASE_URL}`.replace(/\/$/, '');
 const currentSeason = seasons[0];
@@ -54,7 +55,7 @@ export async function getStaticPaths() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week {weekNum} - PUL Stats</title>
+  <title>Week {weekWord(weekNum)} - PUL Stats</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -201,7 +202,7 @@ export async function getStaticPaths() {
   {weekData ? (
     <div>
       <div class="week-header">
-        <h1 class="week-title">Week {weekNum}</h1>
+        <h1 class="week-title">Week {weekWord(weekNum)}</h1>
         <p class="week-date">{weekData.weekend}</p>
       </div>
 
