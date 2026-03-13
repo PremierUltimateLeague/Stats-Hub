@@ -46,6 +46,7 @@ jobs:
         run: python processing/export.py
 
       - name: Fetch YouTube links
+        if: ${{ secrets.YOUTUBE_API_KEY != '' }}
         run: node processing/fetch-youtube-links.js
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
