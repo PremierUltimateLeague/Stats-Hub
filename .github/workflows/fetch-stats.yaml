@@ -44,3 +44,8 @@ jobs:
 
       - name: Export to JSON
         run: python processing/export.py
+
+      - name: Fetch YouTube links
+        run: node processing/fetch-youtube-links.js
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
